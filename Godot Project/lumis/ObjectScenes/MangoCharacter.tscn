@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d141gk5umir7l"]
+
+[ext_resource type="PackedScene" uid="uid://b43bco0rqsnjq" path="res://Meshes/MangoMesh.tscn" id="1_35p00"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_qccra"]
+radius = 1.00177
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+
+[node name="MangoMeshImport" parent="." instance=ExtResource("1_35p00")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_qccra")
