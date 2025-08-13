@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://d141gk5umir7l"]
+[gd_scene load_steps=4 format=3 uid="uid://d141gk5umir7l"]
 
 [ext_resource type="PackedScene" uid="uid://b43bco0rqsnjq" path="res://Meshes/MangoMesh.tscn" id="1_35p00"]
+[ext_resource type="Script" uid="uid://crub8m7rjahjq" path="res://ObjectScenes/mango_character_controller.gd" id="1_qccra"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_qccra"]
 radius = 1.00177
 
 [node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_qccra")
 
 [node name="MangoMeshImport" parent="." instance=ExtResource("1_35p00")]
 

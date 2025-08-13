@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6prodcf7c5ho"]
+
+[ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_k8817"]
+
+[node name="ExperimentRoom" type="Node3D"]
+
+[node name="Mango" parent="." instance=ExtResource("1_k8817")]
