@@ -1,7 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6prodcf7c5ho"]
+[gd_scene load_steps=4 format=3 uid="uid://b6prodcf7c5ho"]
 
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_k8817"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k8817"]
+size = Vector3(34.2747, 1, 26.2849)
+
+[sub_resource type="BoxMesh" id="BoxMesh_k8817"]
 
 [node name="ExperimentRoom" type="Node3D"]
 
 [node name="Mango" parent="." instance=ExtResource("1_k8817")]
+transform = Transform3D(0.57911, 0, -0.815249, 0, 1, 0, 0.815249, 0, 0.57911, 0.00737429, 3.24235, -0.0102501)
+speed = 3
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.93023, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.47375, 0, -2.32938)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_k8817")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(-69.6431, 0, 0, 0, 1, 0, 0, 0, -56.7467, 0, 0, 0)
+mesh = SubResource("BoxMesh_k8817")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]

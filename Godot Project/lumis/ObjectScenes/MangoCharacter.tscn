@@ -6,10 +6,22 @@
 [sub_resource type="SphereShape3D" id="SphereShape3D_qccra"]
 radius = 1.00177
 
-[node name="CharacterBody3D" type="CharacterBody3D"]
+[node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "camPivot", "cam")]
 script = ExtResource("1_qccra")
+mesh = NodePath("MangoMeshImport")
+camPivot = NodePath("CameraPivot")
+cam = NodePath("CameraPivot/SpringArm3D/Camera3D")
 
 [node name="MangoMeshImport" parent="." instance=ExtResource("1_35p00")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_qccra")
+
+[node name="CameraPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+top_level = true
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot"]
+spring_length = 3.0
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D"]
