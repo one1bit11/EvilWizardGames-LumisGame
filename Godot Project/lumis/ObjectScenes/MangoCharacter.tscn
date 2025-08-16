@@ -1,20 +1,22 @@
 [gd_scene load_steps=4 format=3 uid="uid://d141gk5umir7l"]
 
-[ext_resource type="PackedScene" uid="uid://b43bco0rqsnjq" path="res://Meshes/MangoMesh.tscn" id="1_35p00"]
 [ext_resource type="Script" uid="uid://crub8m7rjahjq" path="res://ObjectScenes/mango_character_controller.gd" id="1_qccra"]
+[ext_resource type="PackedScene" uid="uid://cmhvntnt2oi8r" path="res://Meshes/MangoMeshFinal.tscn" id="2_qccra"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_qccra"]
 radius = 1.00177
 
 [node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "camPivot", "cam")]
 script = ExtResource("1_qccra")
-mesh = NodePath("MangoMeshImport")
+rotVal = 0.2
+mesh = NodePath("MangoMeshFinal")
 camPivot = NodePath("CameraPivot")
 cam = NodePath("CameraPivot/SpringArm3D/Camera3D")
 
-[node name="MangoMeshImport" parent="." instance=ExtResource("1_35p00")]
+[node name="MangoMeshFinal" parent="." instance=ExtResource("2_qccra")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.718814, 0, 0, 0, 1, 0, 0.00259268, 0)
 shape = SubResource("SphereShape3D_qccra")
 
 [node name="CameraPivot" type="Node3D" parent="."]

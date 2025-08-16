@@ -1,18 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://b43bco0rqsnjq"]
+[gd_scene load_steps=2 format=3 uid="uid://dnl30rgt5y47n"]
 
-[ext_resource type="PackedScene" uid="uid://cap50rnyjmcug" path="res://Meshes/MangoMeshImport.glb" id="1_t6jpe"]
+[ext_resource type="PackedScene" uid="uid://doico478du05s" path="res://Meshes/MangoMeshOvalImport.glb" id="1_ee2a5"]
 
-[node name="MangoMeshImport" instance=ExtResource("1_t6jpe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04733, 0, 0)
-
-[node name="Armature" parent="." index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8087, -0.485676, 0)
-
-[node name="Skeleton3D" parent="Armature" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0435319, 0, 0)
+[node name="MangoMeshOvalImport" instance=ExtResource("1_ee2a5")]
 
 [node name="SpringBoneSimulator3D" type="SpringBoneSimulator3D" parent="Armature/Skeleton3D" index="1"]
-transform = Transform3D(1, 0, 0, 0, 1.49676, 0, 0, 0, 1, 0.15964, 0.485676, 0)
 setting_count = 6
 settings/0/root_bone_name = "Bone.001"
 settings/0/root_bone = 0
@@ -26,9 +18,9 @@ settings/0/radius/value = 0.02
 settings/0/radius/damping_curve = null
 settings/0/stiffness/value = 2.0
 settings/0/stiffness/damping_curve = null
-settings/0/drag/value = 0.05
+settings/0/drag/value = 0.4
 settings/0/drag/damping_curve = null
-settings/0/gravity/value = 1.0
+settings/0/gravity/value = 0.0
 settings/0/gravity/damping_curve = null
 settings/0/gravity/direction = Vector3(0, -1, 0)
 settings/0/enable_all_child_collisions = true
@@ -45,9 +37,9 @@ settings/1/radius/value = 0.02
 settings/1/radius/damping_curve = null
 settings/1/stiffness/value = 2.0
 settings/1/stiffness/damping_curve = null
-settings/1/drag/value = 0.1
+settings/1/drag/value = 0.4
 settings/1/drag/damping_curve = null
-settings/1/gravity/value = 1.0
+settings/1/gravity/value = 0.0
 settings/1/gravity/damping_curve = null
 settings/1/gravity/direction = Vector3(0, -1, 0)
 settings/1/enable_all_child_collisions = true
@@ -64,9 +56,9 @@ settings/2/radius/value = 0.02
 settings/2/radius/damping_curve = null
 settings/2/stiffness/value = 2.0
 settings/2/stiffness/damping_curve = null
-settings/2/drag/value = 0.1
+settings/2/drag/value = 0.4
 settings/2/drag/damping_curve = null
-settings/2/gravity/value = 1.0
+settings/2/gravity/value = 0.0
 settings/2/gravity/damping_curve = null
 settings/2/gravity/direction = Vector3(0, -1, 0)
 settings/2/enable_all_child_collisions = true
@@ -83,9 +75,9 @@ settings/3/radius/value = 0.02
 settings/3/radius/damping_curve = null
 settings/3/stiffness/value = 2.0
 settings/3/stiffness/damping_curve = null
-settings/3/drag/value = 0.1
+settings/3/drag/value = 0.4
 settings/3/drag/damping_curve = null
-settings/3/gravity/value = 1.0
+settings/3/gravity/value = 0.0
 settings/3/gravity/damping_curve = null
 settings/3/gravity/direction = Vector3(0, -1, 0)
 settings/3/enable_all_child_collisions = true
@@ -102,9 +94,9 @@ settings/4/radius/value = 0.02
 settings/4/radius/damping_curve = null
 settings/4/stiffness/value = 2.0
 settings/4/stiffness/damping_curve = null
-settings/4/drag/value = 0.1
+settings/4/drag/value = 0.4
 settings/4/drag/damping_curve = null
-settings/4/gravity/value = 1.0
+settings/4/gravity/value = 0.0
 settings/4/gravity/damping_curve = null
 settings/4/gravity/direction = Vector3(0, -1, 0)
 settings/4/enable_all_child_collisions = true
@@ -121,9 +113,9 @@ settings/5/radius/value = 0.02
 settings/5/radius/damping_curve = null
 settings/5/stiffness/value = 2.0
 settings/5/stiffness/damping_curve = null
-settings/5/drag/value = 0.1
+settings/5/drag/value = 0.4
 settings/5/drag/damping_curve = null
-settings/5/gravity/value = 1.0
+settings/5/gravity/value = 0.0
 settings/5/gravity/damping_curve = null
 settings/5/gravity/direction = Vector3(0, -1, 0)
 settings/5/enable_all_child_collisions = true

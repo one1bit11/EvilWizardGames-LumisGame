@@ -2,15 +2,16 @@ extends CharacterBody3D
 
 @export_group("Movement")
 #speed value, adjust in the inspector
-@export var speed = 1
+@export var speed = 1.0
 #the value for rotation when rolling
 @export var rotVal:float
 #acceleration variable
-@export var acc = 1
-#rotation speed
-@export var rotSpeed = 12.0
+@export var acc = 1.0
+#turning speed 
+@export var turnSpeed = 12.0
 #Mango mesh
 @export var mesh:Node3D
+
 
 @export_group("Camera")
 #camera control relevant gameobjects
@@ -26,7 +27,8 @@ extends CharacterBody3D
 
 
 
-
+func _ready() -> void:
+	cam
 
 
 func get_move_input(delta):
@@ -41,15 +43,19 @@ func get_move_input(delta):
 	velocity = lerp(velocity, dir * speed, acc * delta)
 	#set the vertical velocity to the same as it was
 	velocity.y = vy
+	#rotate in the right direction
+	rotate(-dir.normalized(),rotVal)
+	
 
 func _physics_process(delta: float) -> void:
 	#Because the camera is top level, this allows it to still follow the player without inheriting the rotation
 	camPivot.global_position = Vector3(global_position.x,global_position.y + camPivotHeight, global_position.z)
 	get_move_input(delta)
+	velocity += get_gravity()
 	move_and_slide()
 	#allows the movement angles to be more consistent and sets rotation to a set speed for the character
 	if velocity.length() > 1.0:
-		rotation.y = lerp_angle(rotation.y, camPivot.rotation.y, rotSpeed * delta)
+		rotation.y = lerp_angle(rotation.y, camPivot.rotation.y, turnSpeed * delta)
 
 #Camera control with mouse, currently researching controller as well. I don't have a controller to test with 
 func _unhandled_input(event: InputEvent) -> void:
@@ -59,8 +65,8 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		#Move the camera with the mouse in proportion to sensitivity
 		camPivot.rotation.x -= event.relative.y * mouseSensitivity
-		#rotate the player and the camera so that forwards is always the way the player is looking
-		camPivot.rotation.y += event.relative.x * mouseSensitivity
+		#rotate the camera same as before
+		camPivot.rotation.y -= event.relative.x * mouseSensitivity
 		#clamp the values so the camera doesn't spin
 		camPivot.rotation.x = clampf(camPivot.rotation.x, -tiltLimit, tiltLimit)
 		

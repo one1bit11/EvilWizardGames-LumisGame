@@ -1,18 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://b43bco0rqsnjq"]
+[gd_scene load_steps=2 format=3 uid="uid://cmhvntnt2oi8r"]
 
-[ext_resource type="PackedScene" uid="uid://cap50rnyjmcug" path="res://Meshes/MangoMeshImport.glb" id="1_t6jpe"]
+[ext_resource type="PackedScene" uid="uid://u70xxmn8i37n" path="res://Meshes/MangoMeshFinalImport.glb" id="1_ixlrw"]
 
-[node name="MangoMeshImport" instance=ExtResource("1_t6jpe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04733, 0, 0)
+[node name="MangoMeshFinal" instance=ExtResource("1_ixlrw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.228648, 0, 0)
 
 [node name="Armature" parent="." index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8087, -0.485676, 0)
-
-[node name="Skeleton3D" parent="Armature" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0435319, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.668108, 0, 0, 0, 1, 0.0758188, 0, 0)
 
 [node name="SpringBoneSimulator3D" type="SpringBoneSimulator3D" parent="Armature/Skeleton3D" index="1"]
-transform = Transform3D(1, 0, 0, 0, 1.49676, 0, 0, 0, 1, 0.15964, 0.485676, 0)
+transform = Transform3D(1, 0, 0, 0, 1.49676, 0, 0, 0, 1, 0, 0, 0)
 setting_count = 6
 settings/0/root_bone_name = "Bone.001"
 settings/0/root_bone = 0
