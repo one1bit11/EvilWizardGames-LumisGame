@@ -3,7 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://u70xxmn8i37n" path="res://Meshes/MangoMeshFinalImport.glb" id="1_ixlrw"]
 
 [node name="MangoMeshFinal" instance=ExtResource("1_ixlrw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.228648, 0, 0)
 
 [node name="Armature" parent="." index="0"]
 transform = Transform3D(1, 0, 0, 0, 0.668108, 0, 0, 0, 1, 0.0758188, 0, 0)

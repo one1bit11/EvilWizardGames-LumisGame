@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://b6prodcf7c5ho"]
+[gd_scene load_steps=7 format=3 uid="uid://b6prodcf7c5ho"]
 
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_k8817"]
 [ext_resource type="Script" uid="uid://caypftosno0ua" path="res://LevelScenes/LevelControl.gd" id="1_uoman"]
@@ -8,6 +8,8 @@
 size = Vector3(34.2747, 1, 26.2849)
 
 [sub_resource type="BoxMesh" id="BoxMesh_k8817"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_v6ti7"]
 
 [node name="ExperimentRoom" type="Node3D"]
 script = ExtResource("1_uoman")
@@ -31,6 +33,20 @@ shape = SubResource("BoxShape3D_k8817")
 transform = Transform3D(-69.6431, 0, 0, 0, 1, 0, 0, 0, -56.7467, 0, 0, 0)
 mesh = SubResource("BoxMesh_k8817")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="StaticBody3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -5.47375, 0, -2.32938)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/StaticBody3D"]
+shape = SubResource("BoxShape3D_k8817")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D/StaticBody3D"]
+transform = Transform3D(-34.8645, 3.55271e-15, 0, 1.13687e-13, 1, 0, 0, 0, -26.7521, 0, 0, 0)
+mesh = SubResource("BoxMesh_k8817")
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 
 [node name="MangoMeshImport" parent="." instance=ExtResource("3_v6ti7")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5769, 0, 0)
+mesh = SubResource("BoxMesh_v6ti7")
