@@ -11,6 +11,8 @@ extends CharacterBody3D
 @export var turnSpeed = 12.0
 #Mango mesh
 @export var mesh:Node3D
+#jump velocity
+@export var jumpVelocity = 10.0
 
 
 @export_group("Camera")
@@ -27,8 +29,7 @@ extends CharacterBody3D
 
 
 
-func _ready() -> void:
-	cam
+
 
 
 func get_move_input(delta):
@@ -44,7 +45,7 @@ func get_move_input(delta):
 	#set the vertical velocity to the same as it was
 	velocity.y = vy
 	#rotate in the right direction
-	rotate(-dir.normalized(),rotVal)
+	##rotate(-dir.normalized(),rotVal)
 	
 
 func _physics_process(delta: float) -> void:
@@ -71,3 +72,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		camPivot.rotation.x = clampf(camPivot.rotation.x, -tiltLimit, tiltLimit)
 		
 		
+
+func _input(event: InputEvent) -> void:
+	if Input.is_action_just_pressed("Jump") && is_on_floor():
+		velocity.y += jumpVelocity	

@@ -16,6 +16,7 @@ script = ExtResource("1_uoman")
 transform = Transform3D(0.57911, 0, -0.815249, 0, 1, 0, 0.815249, 0, 0.57911, 0.00737429, 3.24235, -0.0102501)
 speed = 12.0
 acc = 2.0
+jumpVelocity = 40.0
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.93023, 0)
