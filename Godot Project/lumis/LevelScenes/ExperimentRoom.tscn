@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://b6prodcf7c5ho"]
+[gd_scene load_steps=7 format=3 uid="uid://b6prodcf7c5ho"]
 
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_k8817"]
 [ext_resource type="Script" uid="uid://caypftosno0ua" path="res://LevelScenes/LevelControl.gd" id="1_uoman"]
-[ext_resource type="PackedScene" uid="uid://b43bco0rqsnjq" path="res://Meshes/MangoMesh.tscn" id="3_v6ti7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_k8817"]
 size = Vector3(34.2747, 1, 26.2849)
@@ -16,13 +15,6 @@ size = Vector3(34.2747, 1, 26.2849)
 [node name="ExperimentRoom" type="Node3D"]
 script = ExtResource("1_uoman")
 
-[node name="Mango" parent="." instance=ExtResource("1_k8817")]
-transform = Transform3D(0.57911, 0, -0.815249, 0, 1, 0, 0.815249, 0, 0.57911, 0.00737429, 3.24235, -0.0102501)
-speed = 12.0
-acc = 2.0
-jumpVelocity = 40.0
-mouseSensitivity = 0.3
-
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.93023, 0)
 
@@ -34,6 +26,7 @@ shape = SubResource("BoxShape3D_k8817")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(-69.6431, 0, 0, 0, 1, 0, 0, 0, -56.7467, 0, 0, 0)
+visible = false
 mesh = SubResource("BoxMesh_k8817")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="StaticBody3D"]
@@ -44,6 +37,7 @@ shape = SubResource("BoxShape3D_k8817")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D/StaticBody3D"]
 transform = Transform3D(-34.8645, 3.55271e-15, 0, 1.13687e-13, 1, 0, 0, 0, -26.7521, 0, 0, 0)
+visible = false
 mesh = SubResource("BoxMesh_k8817")
 
 [node name="RigidBody3D" type="RigidBody3D" parent="StaticBody3D"]
@@ -55,8 +49,19 @@ debug_color = Color(1.2514e-06, 0.635024, 0.422144, 0.42)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 
-[node name="MangoMeshImport" parent="." instance=ExtResource("3_v6ti7")]
-
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5769, 0, 0)
 mesh = SubResource("BoxMesh_v6ti7")
+
+[node name="SliderJoint3D" type="SliderJoint3D" parent="."]
+node_a = NodePath("../StaticBody3D")
+node_b = NodePath("../Mango")
+exclude_nodes_from_collision = false
+
+[node name="Mango" parent="." instance=ExtResource("1_k8817")]
+transform = Transform3D(0.57911, 0, -0.815249, 0, 1, 0, 0.815249, 0, 0.57911, 1.60892, 3.24235, -5.44591)
+speed = 12.0
+acc = 2.0
+jumpVelocity = 40.0
+stickStrength = 12.0
+mouseSensitivity = 0.3

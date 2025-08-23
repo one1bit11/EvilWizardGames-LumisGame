@@ -25,15 +25,23 @@ extends CharacterBody3D
 @export var FCLength := -1.5
 #used to get the surfaces that are being stuck to to have the FC target them
 @export var stickRadius:Area3D
+#how much force is applied to stick in one spot
+@export var stickStrength:float
 #sticky mode toggle
 var stickyMode = false
 #is actively sticking to something
 var isSticking = false
 #used later to move along walls or the floor
+#checks which of the objects facechecker is colliding with is the one that is best
+var currentSurface:Node3D
+#which of the surfaces is it
+var currentSurfaceVal:int
+#the point at which the force is aiming
+var stickPoint:Vector3
+#the direction to the stick point
+var stickPointDir:Vector3
 
-
-var stickTarget:Node3D
-
+@export var test:Node3D
 
 
 
@@ -73,8 +81,8 @@ func _get_move_input(delta):
 	#assign a value to each input, should work with controller too
 	var input = Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
 	#set the diraction based on the value and the camera rotation
-	if stickyMode:
-		rot = -(atan2(faceChecker.get_collision_normal(1).z, faceChecker.get_collision_normal(1).x) -PI/2)
+	if isSticking:
+		rot = -(atan2(faceChecker.get_collision_normal(currentSurfaceVal).z, faceChecker.get_collision_normal(currentSurfaceVal).x) -PI/2)
 		var fInput = Input.get_action_strength("MoveForward") - Input.get_action_strength("MoveBackwards")
 		var hInput = Input.get_action_strength("MoveRight") -  Input.get_action_strength("MoveLeft")
 		dir = Vector3(hInput, fInput, 0).rotated(Vector3.UP,rot).normalized()
@@ -95,13 +103,21 @@ func _physics_process(delta: float) -> void:
 	
 	#call the climb function each frame, we don't have to worry that much about hardware efficiency rn
 	_stick()
-	if stickyMode:
-		velocity += faceChecker.get_collision_point(0) - global_position
+	
+	if isSticking:
+		
+		stickPointDir = (position.move_toward(-stickPoint,0.0001))
+		#global_position = stickPointDir
+		velocity -= stickPointDir
+		#global_position = stickPoint
+		print("point" , stickPointDir)
+		print("pos" , global_position)
 	
 	#Because the camera is top level, this allows it to still follow the player without inheriting the rotation
 	camPivot.global_position = Vector3(global_position.x,global_position.y + camPivotHeight, global_position.z)
 	_get_move_input(delta)
-	velocity += get_gravity()
+	if !isSticking:
+		velocity += get_gravity()
 	move_and_slide()
 	#allows the movement angles to be more consistent and sets rotation to a set speed for the character
 	if velocity.length() > 1.0:
@@ -109,20 +125,8 @@ func _physics_process(delta: float) -> void:
 
 
 func _process(delta: float) -> void:
+	pass
 	#move the face checker to check the surface the player is on
-	
-	
-	if stickTarget != null:
-		faceChecker.look_at(stickTarget.global_position)
-		#print((stickTarget.global_position))
-	
-	
-	#if is_on_floor():
-	#	faceChecker.target_position = Vector3(0,FCLength,0)
-	#elif is_on_wall():
-	#	faceChecker.target_position = Vector3(0,0,FCLength)
-	#elif is_on_ceiling():
-	#	faceChecker.target_position = Vector3(0,-FCLength,0)
 
 
 
@@ -148,11 +152,6 @@ func _input(event: InputEvent) -> void:
 		velocity.y += jumpVelocity
 
 
-func _on_stick_radius_body_entered(body: Node3D) -> void:
-	
-	if body!= self:
-		stickTarget = body
-		
 
 
 #func _on_stick_radius_body_exited(body: Node3D) -> void:
@@ -161,16 +160,45 @@ func _on_stick_radius_body_entered(body: Node3D) -> void:
 
 
 func _stick():
+	
+	
+	
+
+	
+	
 	# set sticky mode to true while button is held, can be changed to toggle if/when we add settings
 	if Input.is_action_pressed("StickMode"):
 		stickyMode = true
+		
+		
+		#checks which point is closer
+		for i in faceChecker.get_collision_count():
+			if faceChecker.get_collision_count() > 1 && i-1 >= 0:
+				if (self.global_position - faceChecker.get_collision_point(i)) < (self.global_position - faceChecker.get_collision_point(i-1)):
+					currentSurface = faceChecker.get_collider(i)
+					print(faceChecker.get_collision_point(i))
+					currentSurfaceVal = i
+					stickPoint = faceChecker.get_collision_point(i)
+					isSticking = true
+					#test.global_position = faceChecker.get_collision_point(i)
+			elif faceChecker.get_collision_count() == 1:
+				currentSurface = faceChecker.get_collider(i)
+				#test.global_position = faceChecker.get_collision_point(i)
+				
+				currentSurfaceVal = i
+				stickPoint = faceChecker.get_collision_point(i)
+				isSticking = true
+			if faceChecker.get_collision_count() == 0:
+				isSticking = false
+				
+
+		
+		
+		
+		
 	else:
 		stickyMode = false
+		isSticking = false
 	
 	
 	
-	pass
-
-
-func _on_stick_radius_body_exited(body: Node3D) -> void:
-	pass # Replace with function body.
