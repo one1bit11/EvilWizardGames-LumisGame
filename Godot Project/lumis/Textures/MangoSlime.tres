@@ -4,7 +4,7 @@
 
 [resource]
 transparency = 1
-albedo_color = Color(0.752941, 1, 1, 0.827451)
+albedo_color = Color(0.752941, 1, 1, 0.905882)
 albedo_texture = ExtResource("1_icbao")
 metallic = 0.03
 metallic_specular = 0.35
