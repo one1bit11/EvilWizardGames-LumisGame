@@ -1,11 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://cmhvntnt2oi8r"]
+[gd_scene load_steps=3 format=3 uid="uid://cmhvntnt2oi8r"]
 
 [ext_resource type="PackedScene" uid="uid://u70xxmn8i37n" path="res://Meshes/MangoMeshFinalImport.glb" id="1_ixlrw"]
+[ext_resource type="Material" uid="uid://b54gkvgqk346p" path="res://Textures/MangoSlime.tres" id="2_88734"]
 
 [node name="MangoMeshFinal" instance=ExtResource("1_ixlrw")]
 
 [node name="Armature" parent="." index="0"]
 transform = Transform3D(1, 0, 0, 0, 0.668108, 0, 0, 0, 1, 0.0758188, 0, 0)
+
+[node name="Sphere_001" parent="Armature/Skeleton3D" index="0"]
+surface_material_override/0 = ExtResource("2_88734")
 
 [node name="SpringBoneSimulator3D" type="SpringBoneSimulator3D" parent="Armature/Skeleton3D" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1.49676, 0, 0, 0, 1, 0, 0, 0)
