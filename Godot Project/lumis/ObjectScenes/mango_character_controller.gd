@@ -106,7 +106,7 @@ func _physics_process(delta: float) -> void:
 	
 	if isSticking:
 		
-		stickPointDir = (position.move_toward(-stickPoint,0.0001))
+		stickPointDir = position - stickPoint
 		#global_position = stickPointDir
 		velocity -= stickPointDir
 		#global_position = stickPoint
