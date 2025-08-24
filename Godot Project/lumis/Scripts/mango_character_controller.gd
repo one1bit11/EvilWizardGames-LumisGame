@@ -46,9 +46,9 @@ var stickPoint:Vector3
 #the direction to the stick point
 var stickPointDir:Vector3
 
-var jumpAngle := Vector3.ZERO
 
-var avrNorm := Vector3.ZERO
+
+
 
 
 
@@ -89,10 +89,11 @@ func _get_move_input(delta):
 	if isSticking:
 		#set the direction based on the values of the wall
 		#rot = faceChecker.get_collision_normal(currentSurfaceVal)*90
-		#rot = -(atan2(faceChecker.get_collision_normal(currentSurfaceVal).z, faceChecker.get_collision_normal(currentSurfaceVal).x) - PI/2)
+		rot = -(atan2(faceChecker.get_collision_normal(currentSurfaceVal).z, faceChecker.get_collision_normal(currentSurfaceVal).x) - PI/2)
+		print()
 		#var fInput = Input.get_action_strength("MoveForward") - Input.get_action_strength("MoveBackwards")
 		#var hInput = Input.get_action_strength("MoveRight") -  Input.get_action_strength("MoveLeft")
-		dir = _get_dir()
+		dir = Vector3(input.x,0,input.y).rotated(faceChecker.get_collision_normal(currentSurfaceVal),rot).normalized()
 		
 		#lerp the velocity for smoother movement and acceleration
 		velocity = dir * (speed/stickSlow)
@@ -181,20 +182,21 @@ func _stick():
 	if Input.is_action_pressed("StickMode"):
 		stickyMode = true
 		
+
 		
-		var collidingRays := 0
-		for ray in stickRayHolder.get_children():
-			var r : RayCast3D = ray
-			if r.is_colliding():
-				collidingRays += 1
-				avrNorm += r.get_collision_normal()
-		if avrNorm:
-			avrNorm /= collidingRays
-			avrNorm = avrNorm.normalized()
-			jumpAngle = avrNorm * 50
-		avrNorm = Vector3.UP
-		jumpAngle = avrNorm * 50
-			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		#checks which point is closer
@@ -231,22 +233,3 @@ func _allign_with_surface(normal):
 	temptrans.basis.x = -temptrans.basis.z.cross(normal)
 	temptrans.basis = temptrans.basis.orthonormalized()
 	global_transform = temptrans
-	
-	
-	
-
-func _get_dir() -> Vector3:
-	var dir = Vector3.ZERO
-	
-	if Input.is_action_pressed("MoveForward"):
-		dir = avrNorm.normalized().rotated(avrNorm.normalized(), -PI/2)
-
-	if Input.is_action_pressed("MoveBackwards"):
-		dir = avrNorm.normalized().rotated(avrNorm.normalized(), PI/2)
-		
-	if Input.is_action_pressed("MoveLeft"):
-		dir = avrNorm.normalized()
-
-	if Input.is_action_pressed("MoveRight"):
-		dir = avrNorm.normalized().rotated(avrNorm.normalized(), PI)
-	return dir.normalized()
