@@ -1,5 +1,6 @@
-[gd_scene load_steps=14 format=3 uid="uid://c0ucevgv5mma2"]
+[gd_scene load_steps=15 format=3 uid="uid://crkw0ipgncv40"]
 
+[ext_resource type="Script" uid="uid://caypftosno0ua" path="res://LevelScenes/LevelControl.gd" id="1_devkk"]
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_qsq0f"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rbjp0"]
@@ -27,6 +28,7 @@
 [sub_resource type="SphereMesh" id="SphereMesh_kuari"]
 
 [node name="LVL0" type="Node3D"]
+script = ExtResource("1_devkk")
 
 [node name="Node3D" type="Node3D" parent="."]
 
@@ -266,3 +268,5 @@ shape = SubResource("BoxShape3D_8v1ft")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D3"]
 mesh = SubResource("BoxMesh_y7wyu")
+
+[node name="MangoRoot" parent="." instance=ExtResource("1_qsq0f")]

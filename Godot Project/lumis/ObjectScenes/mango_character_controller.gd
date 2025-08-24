@@ -27,6 +27,9 @@ extends CharacterBody3D
 @export var stickRadius:Area3D
 #how much force is applied to stick in one spot
 @export var stickStrength:float
+#the value that 
+@export var stickSlow := 2.0
+
 #sticky mode toggle
 var stickyMode = false
 #is actively sticking to something
@@ -40,8 +43,6 @@ var currentSurfaceVal:int
 var stickPoint:Vector3
 #the direction to the stick point
 var stickPointDir:Vector3
-
-@export var test:Node3D
 
 
 
@@ -80,19 +81,23 @@ func _get_move_input(delta):
 	velocity.y = 0
 	#assign a value to each input, should work with controller too
 	var input = Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
-	#set the diraction based on the value and the camera rotation
+	
 	if isSticking:
+		#set the direction based on the values of the wall
 		rot = -(atan2(faceChecker.get_collision_normal(currentSurfaceVal).z, faceChecker.get_collision_normal(currentSurfaceVal).x) -PI/2)
 		var fInput = Input.get_action_strength("MoveForward") - Input.get_action_strength("MoveBackwards")
 		var hInput = Input.get_action_strength("MoveRight") -  Input.get_action_strength("MoveLeft")
 		dir = Vector3(hInput, fInput, 0).rotated(Vector3.UP,rot).normalized()
+		#lerp the velocity for smoother movement and acceleration
+		velocity = dir * (speed/stickSlow)
 	else:
+		#set the diraction based on the value and the camera rotation
 		rot = camPivot.rotation.y
-		
 		dir = Vector3(input.x, 0, input.y).rotated(Vector3.UP, rot)
+		#lerp the velocity for smoother movement and acceleration
+		velocity = lerp(velocity, dir * speed, acc * delta)
 	
-	#lerp the velocity for smoother movement and acceleration
-	velocity = lerp(velocity, dir * speed, acc * delta)
+
 	#set the vertical velocity to the same as it was
 	velocity.y = vy
 	#rotate in the right direction
@@ -105,19 +110,25 @@ func _physics_process(delta: float) -> void:
 	_stick()
 	
 	if isSticking:
-		
+		#pulls the player towards the nearest point of the nearest stickable object
 		stickPointDir = position - stickPoint
-		#global_position = stickPointDir
 		velocity -= stickPointDir
-		#global_position = stickPoint
-		print("point" , stickPointDir)
-		print("pos" , global_position)
+
+
 	
 	#Because the camera is top level, this allows it to still follow the player without inheriting the rotation
 	camPivot.global_position = Vector3(global_position.x,global_position.y + camPivotHeight, global_position.z)
 	_get_move_input(delta)
 	if !isSticking:
 		velocity += get_gravity()
+	#if is not sticking and is on floor, alligns with floor
+	if is_on_floor():
+		print(faceChecker.get_collision_normal(0))
+		for o in faceChecker.get_collision_count():
+			if faceChecker.get_collision_normal(o) == Vector3(0,1,0):
+				_allign_with_surface(faceChecker.get_collision_normal(o))
+		
+	
 	move_and_slide()
 	#allows the movement angles to be more consistent and sets rotation to a set speed for the character
 	if velocity.length() > 1.0:
@@ -152,19 +163,13 @@ func _input(event: InputEvent) -> void:
 		velocity.y += jumpVelocity
 
 
-
-
-#func _on_stick_radius_body_exited(body: Node3D) -> void:
-	#if body == stickTarget:
-	#	stickTarget = null
-
-
 func _stick():
 	
 	
 	
-
-	
+#temporary fix to the sliding problem
+	if Input.is_action_just_pressed("StickMode") && faceChecker.get_collision_count() > 0:
+		velocity = Vector3.ZERO
 	
 	# set sticky mode to true while button is held, can be changed to toggle if/when we add settings
 	if Input.is_action_pressed("StickMode"):
@@ -173,32 +178,35 @@ func _stick():
 		
 		#checks which point is closer
 		for i in faceChecker.get_collision_count():
+			#if theres 2 or more objects
 			if faceChecker.get_collision_count() > 1 && i-1 >= 0:
+				#if this point is closer than the last point, use its details instead
 				if (self.global_position - faceChecker.get_collision_point(i)) < (self.global_position - faceChecker.get_collision_point(i-1)):
 					currentSurface = faceChecker.get_collider(i)
 					print(faceChecker.get_collision_point(i))
 					currentSurfaceVal = i
 					stickPoint = faceChecker.get_collision_point(i)
 					isSticking = true
-					#test.global_position = faceChecker.get_collision_point(i)
+					_allign_with_surface(faceChecker.get_collision_normal(i))
+			#if theres exactly one object
 			elif faceChecker.get_collision_count() == 1:
 				currentSurface = faceChecker.get_collider(i)
-				#test.global_position = faceChecker.get_collision_point(i)
-				
 				currentSurfaceVal = i
 				stickPoint = faceChecker.get_collision_point(i)
 				isSticking = true
+				_allign_with_surface(faceChecker.get_collision_normal(i))
+				#if there are no objects
 			if faceChecker.get_collision_count() == 0:
 				isSticking = false
-				
 
-		
-		
-		
-		
 	else:
 		stickyMode = false
 		isSticking = false
-	
-	
-	
+
+#alligns the player's base with the surface being stuck to
+func _allign_with_surface(normal):
+	var temptrans = global_transform
+	temptrans.basis.y = normal
+	temptrans.basis.x = -temptrans.basis.z.cross(normal)
+	temptrans.basis = temptrans.basis.orthonormalized()
+	global_transform = temptrans
