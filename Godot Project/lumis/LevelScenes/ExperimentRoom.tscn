@@ -1,7 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://b6prodcf7c5ho"]
+[gd_scene load_steps=9 format=3 uid="uid://b6prodcf7c5ho"]
 
-[ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_k8817"]
-[ext_resource type="Script" uid="uid://caypftosno0ua" path="res://LevelScenes/LevelControl.gd" id="1_uoman"]
+[ext_resource type="Script" uid="uid://caypftosno0ua" path="res://Scripts/evil_wizard.gd" id="1_uoman"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_k8817"]
 
@@ -80,16 +79,7 @@ shadow_caster_mask = 4294967293
 [node name="SliderJoint3D" type="SliderJoint3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00842762, -9.53674e-07, 0.00404954)
 node_a = NodePath("../Floor")
-node_b = NodePath("../Mango")
 exclude_nodes_from_collision = false
-
-[node name="Mango" parent="." instance=ExtResource("1_k8817")]
-transform = Transform3D(0.57911, 0, -0.815249, 0, 1, 0, 0.815249, 0, 0.57911, 1.60892, 3.24235, -5.44591)
-speed = 12.0
-acc = 2.0
-jumpVelocity = 40.0
-stickStrength = 12.0
-mouseSensitivity = 0.3
 
 [node name="Capsule" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.095, 0, 0, 0, 4.095, 0, 0, 0, 4.095, 21.1181, 10.6514, 12.0763)
