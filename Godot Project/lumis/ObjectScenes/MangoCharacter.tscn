@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://d141gk5umir7l"]
 
-[ext_resource type="Script" uid="uid://crub8m7rjahjq" path="res://Scripts/mango_character_controller.gd" id="1_qccra"]
+[ext_resource type="Script" uid="uid://b155oiu0fqn3q" path="res://ObjectScenes/mango_character_controller.gd" id="1_qccra"]
 [ext_resource type="PackedScene" uid="uid://cmhvntnt2oi8r" path="res://Meshes/MangoMeshFinal.tscn" id="2_qccra"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_qccra"]
@@ -12,21 +12,12 @@ radius = 1.4
 [node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "faceChecker", "stickRayHolder", "camPivot", "cam")]
 collision_priority = 0.1
 script = ExtResource("1_qccra")
-speed = null
 rotVal = 0.2
-acc = null
-turnSpeed = null
 mesh = NodePath("MangoMeshFinal")
-jumpVelocity = null
 faceChecker = NodePath("PlayerAngleManager")
-FCLength = null
-stickStrength = null
-stickSlow = null
 stickRayHolder = NodePath("StickRayHolder")
 camPivot = NodePath("CameraPivot")
 cam = NodePath("CameraPivot/SpringArm3D/Camera3D")
-mouseSensitivity = null
-tiltLimit = null
 camPivotHeight = 1
 
 [node name="MangoMeshFinal" parent="." instance=ExtResource("2_qccra")]
