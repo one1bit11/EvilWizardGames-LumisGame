@@ -23,12 +23,12 @@ extends CharacterBody3D
 @export var faceChecker:ShapeCast3D
 #the length of the raycast to stick to something, keep negative
 @export var FCLength := -1.5
-#used to get the surfaces that are being stuck to to have the FC target them
-@export var stickRadius:Area3D
 #how much force is applied to stick in one spot
 @export var stickStrength:float
 #the value that 
 @export var stickSlow := 2.0
+#the raycast holder
+@export var stickRayHolder:Node3D
 
 #sticky mode toggle
 var stickyMode = false
@@ -84,10 +84,13 @@ func _get_move_input(delta):
 	
 	if isSticking:
 		#set the direction based on the values of the wall
-		rot = -(atan2(faceChecker.get_collision_normal(currentSurfaceVal).z, faceChecker.get_collision_normal(currentSurfaceVal).x) -PI/2)
-		var fInput = Input.get_action_strength("MoveForward") - Input.get_action_strength("MoveBackwards")
-		var hInput = Input.get_action_strength("MoveRight") -  Input.get_action_strength("MoveLeft")
-		dir = Vector3(hInput, fInput, 0).rotated(Vector3.UP,rot).normalized()
+		#rot = faceChecker.get_collision_normal(currentSurfaceVal)*90
+		rot = -(atan2(faceChecker.get_collision_normal(currentSurfaceVal).z, faceChecker.get_collision_normal(currentSurfaceVal).x) - PI/2)
+		print()
+		#var fInput = Input.get_action_strength("MoveForward") - Input.get_action_strength("MoveBackwards")
+		#var hInput = Input.get_action_strength("MoveRight") -  Input.get_action_strength("MoveLeft")
+		dir = Vector3(input.x,0,input.y).rotated(faceChecker.get_collision_normal(currentSurfaceVal),rot).normalized()
+		
 		#lerp the velocity for smoother movement and acceleration
 		velocity = dir * (speed/stickSlow)
 	else:
@@ -123,7 +126,7 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity()
 	#if is not sticking and is on floor, alligns with floor
 	if is_on_floor():
-		print(faceChecker.get_collision_normal(0))
+		#print(faceChecker.get_collision_normal(0))
 		for o in faceChecker.get_collision_count():
 			if faceChecker.get_collision_normal(o) == Vector3(0,1,0):
 				_allign_with_surface(faceChecker.get_collision_normal(o))
@@ -175,6 +178,30 @@ func _stick():
 	if Input.is_action_pressed("StickMode"):
 		stickyMode = true
 		
+		var avrNorm := Vector3.ZERO
+		var collidingRays := 0
+		for ray in stickRayHolder.get_children():
+			var r : RayCast3D = ray
+			if r.is_colliding():
+				collidingRays += 1
+				avrNorm += r.get_collision_normal()
+		if avrNorm:
+			avrNorm /= numof
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		#checks which point is closer
 		for i in faceChecker.get_collision_count():
@@ -183,7 +210,7 @@ func _stick():
 				#if this point is closer than the last point, use its details instead
 				if (self.global_position - faceChecker.get_collision_point(i)) < (self.global_position - faceChecker.get_collision_point(i-1)):
 					currentSurface = faceChecker.get_collider(i)
-					print(faceChecker.get_collision_point(i))
+					#print(faceChecker.get_collision_point(i))
 					currentSurfaceVal = i
 					stickPoint = faceChecker.get_collision_point(i)
 					isSticking = true
