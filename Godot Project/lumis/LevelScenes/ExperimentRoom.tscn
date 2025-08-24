@@ -49,6 +49,17 @@ shape = SubResource("BoxShape3D_uoman")
 transform = Transform3D(-34.8645, 3.55271e-15, 0, 1.13687e-13, 1, 0, 0, 0, -26.7521, 0, 0, 0)
 mesh = SubResource("BoxMesh_k8817")
 
+[node name="Wall" type="StaticBody3D" parent="Wall"]
+transform = Transform3D(-0.0111174, 0.999938, 0, -0.999938, -0.0111174, 0, 0, 0, 1, 18.4817, 16.0466, -4.65876)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/Wall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.36669, 0.00236702, -0.00839996)
+shape = SubResource("BoxShape3D_uoman")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Wall/Wall"]
+transform = Transform3D(-34.8645, 3.55271e-15, 0, 1.13687e-13, 1, 0, 0, 0, -26.7521, 0, 0, 0)
+mesh = SubResource("BoxMesh_k8817")
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.546034, 0.327718, 0.771004, -0.00900132, -0.922555, 0.38576, 0.837714, 0.203698, 0.506697, 31.9126, 15.5758, 27.1321)
 shadow_enabled = true
