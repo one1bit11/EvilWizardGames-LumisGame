@@ -186,7 +186,8 @@ func _stick():
 				collidingRays += 1
 				avrNorm += r.get_collision_normal()
 		if avrNorm:
-			avrNorm /= numof
+			#avrNorm /= numof
+			pass
 		
 		
 		
