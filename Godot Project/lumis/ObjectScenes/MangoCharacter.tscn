@@ -9,12 +9,12 @@ radius = 1.00177
 [sub_resource type="SphereShape3D" id="SphereShape3D_q3my7"]
 radius = 1.4
 
-[node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "faceChecker", "stickRayHolder", "camPivot", "cam")]
+[node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "faceChecker", "upwards", "camPivot", "cam")]
 collision_priority = 0.1
 script = ExtResource("1_qccra")
 mesh = NodePath("MangoMeshFinal")
 faceChecker = NodePath("PlayerAngleManager")
-stickRayHolder = NodePath("StickRayHolder")
+upwards = NodePath("RelativeUpwards")
 camPivot = NodePath("CameraPivot")
 cam = NodePath("CameraPivot/SpringArm3D/Camera3D")
 
@@ -39,70 +39,5 @@ shape = SubResource("SphereShape3D_q3my7")
 target_position = Vector3(0, 0, 0)
 debug_shape_custom_color = Color(1.27546e-06, 0.351102, 0.201291, 1)
 
-[node name="StickRayHolder" type="Node3D" parent="."]
-
-[node name="StickRay" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(0, -1.5, 0)
-
-[node name="StickRay2" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(0, 1.5, 0)
-
-[node name="StickRay3" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(1.5, 0, 0)
-
-[node name="StickRay4" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(-1.5, 0, 0)
-
-[node name="StickRay5" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(0, 0, 1.5)
-
-[node name="StickRay6" type="RayCast3D" parent="StickRayHolder"]
+[node name="RelativeUpwards" type="RayCast3D" parent="."]
 target_position = Vector3(0, 0, -1.5)
-
-[node name="StickRay7" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(-1.5, -1.5, 0)
-
-[node name="StickRay8" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(-1.5, 1.5, 0)
-
-[node name="StickRay11" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(-1.5, 0, 1.5)
-
-[node name="StickRay12" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(-1.5, 0, -1.5)
-
-[node name="StickRay9" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(1.5, -1.5, 0)
-
-[node name="StickRay10" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(1.5, 1.5, 0)
-
-[node name="StickRay13" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(1.5, 0, 1.5)
-
-[node name="StickRay14" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(1.5, 0, -1.5)
-
-[node name="StickRay17" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(1.5, 1.5, 0)
-
-[node name="StickRay18" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(-1.5, 1.5, 0)
-
-[node name="StickRay19" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(0, 1.5, 1.5)
-
-[node name="StickRay20" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(0, 1.5, -1.5)
-
-[node name="StickRay21" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(1.5, -1.5, 0)
-
-[node name="StickRay22" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(-1.5, -1.5, 0)
-
-[node name="StickRay23" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(0, -1.5, 1.5)
-
-[node name="StickRay24" type="RayCast3D" parent="StickRayHolder"]
-target_position = Vector3(0, -1.5, -1.5)

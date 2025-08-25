@@ -9,7 +9,7 @@
 size = Vector3(69.6504, 1, 56.7462)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_uoman"]
-size = Vector3(18.1533, 1.01574, 26.7714)
+size = Vector3(36.519, 1.01574, 26.7714)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_uoman"]
 
@@ -54,7 +54,7 @@ mesh = SubResource("BoxMesh_k8817")
 transform = Transform3D(-0.0111174, 0.999938, 0, -0.999938, -0.0111174, 0, 0, 0, 1, 18.4817, 16.0466, -4.65876)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/Wall"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.36669, 0.00236702, -0.00839996)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6306, -12.1926, -0.00839996)
 shape = SubResource("BoxShape3D_uoman")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Wall/Wall"]
