@@ -168,10 +168,11 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity()
 	#if is not sticking and is on floor, alligns with floor
 	if is_on_floor():
-		#print(faceChecker.get_collision_normal(0))
+		
 		for o in faceChecker.get_collision_count():
-			if faceChecker.get_collision_normal(o) == Vector3(0,1,0):
-				_allign_with_surface(faceChecker.get_collision_normal(o))
+			
+			print("faceChecker.get_collision_normal(0)EV")
+			_allign_with_surface(faceChecker.get_collision_normal(o))
 		
 	print(velocity)
 	if Input.is_action_just_pressed("Jump") && is_on_floor() && !isSticking:
