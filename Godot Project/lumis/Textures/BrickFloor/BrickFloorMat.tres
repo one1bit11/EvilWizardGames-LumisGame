@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://crefmsqyangc6"]
+
+[ext_resource type="Texture2D" uid="uid://mwj2hnua8m2l" path="res://Textures/BrickFloor/IMG_2501.png" id="1_at1cv"]
+
+[resource]
+albedo_texture = ExtResource("1_at1cv")
+uv1_scale = Vector3(100.36, 100.36, 100.36)
