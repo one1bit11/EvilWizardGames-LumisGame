@@ -135,7 +135,7 @@ func _get_move_input(delta):
 		
 		
 		
-		#lerp the velocity for smoother movement and acceleration
+		#lerp the   for smoother movement and acceleration
 		velocity = dir * (speed/stickSlow)
 	else:
 		#set the diraction based on the value and the camera rotation
@@ -158,6 +158,7 @@ func _physics_process(delta: float) -> void:
 	
 
 
+
 	if faceChecker.get_collision_count() == 0:
 		isSticking = false
 	#Because the camera is top level, this allows it to still follow the player without inheriting the rotation
@@ -172,7 +173,16 @@ func _physics_process(delta: float) -> void:
 			if faceChecker.get_collision_normal(o) == Vector3(0,1,0):
 				_allign_with_surface(faceChecker.get_collision_normal(o))
 		
-	
+	print(velocity)
+	if Input.is_action_just_pressed("Jump") && is_on_floor() && !isSticking:
+		
+		velocity.y += jumpVelocity
+	if Input.is_action_just_pressed("Jump") && isSticking:
+		
+		velocity += (faceChecker.get_collision_normal(currentSurfaceVal) * jumpVelocity)
+		velocity.y += jumpVelocity/2
+		#print(velocity)
+
 	move_and_slide()
 	#allows the movement angles to be more consistent and sets rotation to a set speed for the character
 	if velocity.length() > 1.0:
@@ -202,9 +212,8 @@ func _unhandled_input(event: InputEvent) -> void:
 		
 		
 
-func _input(event: InputEvent) -> void:
-	if Input.is_action_just_pressed("Jump") && is_on_floor():
-		velocity.y += jumpVelocity
+
+
 
 
 func _stick():
