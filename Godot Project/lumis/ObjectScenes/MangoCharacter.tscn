@@ -1,13 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://d141gk5umir7l"]
+[gd_scene load_steps=7 format=3 uid="uid://d141gk5umir7l"]
 
 [ext_resource type="Script" uid="uid://crub8m7rjahjq" path="res://Scripts/mango_character_controller.gd" id="1_qccra"]
 [ext_resource type="PackedScene" uid="uid://cmhvntnt2oi8r" path="res://Meshes/MangoMeshFinal.tscn" id="2_qccra"]
+[ext_resource type="Material" uid="uid://bn3ea0tykiugl" path="res://Textures/MangoEye.tres" id="3_shwng"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_qccra"]
-radius = 1.00177
+radius = 0.846402
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_q3my7"]
 radius = 1.0
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_qccra"]
 
 [node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "faceChecker", "upwards", "camPivot", "cam")]
 collision_priority = 0.1
@@ -22,7 +25,7 @@ cam = NodePath("CameraPivot/SpringArm3D/Camera3D")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0683109, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.00259268, 0)
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.121511, 0)
 shape = SubResource("SphereShape3D_qccra")
 
 [node name="CameraPivot" type="Node3D" parent="."]
@@ -41,3 +44,18 @@ debug_shape_custom_color = Color(1.27546e-06, 0.351102, 0.201291, 1)
 
 [node name="RelativeUpwards" type="RayCast3D" parent="."]
 target_position = Vector3(0, 0, -1.5)
+
+[node name="Eyes" type="Node3D" parent="RelativeUpwards"]
+transform = Transform3D(1.24889, 0, 0, 0, 1.30043, -0.0221316, 0, 0.0221316, 1.30043, 0, -0.127044, 0.337938)
+
+[node name="Eye1" type="MeshInstance3D" parent="RelativeUpwards/Eyes"]
+transform = Transform3D(0.0789635, 0, 0, 0, 0.0876602, 0, 0, 0, 0.0555136, 0.188555, 0.314674, -0.91842)
+material_override = ExtResource("3_shwng")
+mesh = SubResource("CapsuleMesh_qccra")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/MangoRoot/RelativeUpwards")
+
+[node name="Eye2" type="MeshInstance3D" parent="RelativeUpwards/Eyes"]
+transform = Transform3D(0.079, 0, 0, 0, 0.088, 0, 0, 0, 0.056, -0.189, 0.315, -0.918)
+material_override = ExtResource("3_shwng")
+mesh = SubResource("CapsuleMesh_qccra")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/MangoRoot/RelativeUpwards")
