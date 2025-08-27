@@ -175,14 +175,15 @@ func _physics_process(delta: float) -> void:
 			_allign_with_surface(faceChecker.get_collision_normal(o))
 		
 	print(velocity)
-	if Input.is_action_just_pressed("Jump") && is_on_floor() && !isSticking:
-		
-		velocity.y += jumpVelocity
 	if Input.is_action_just_pressed("Jump") && isSticking:
 		
 		velocity += (faceChecker.get_collision_normal(currentSurfaceVal) * jumpVelocity)
+
 		velocity.y += jumpVelocity/2
-		#print(velocity)
+	if Input.is_action_just_pressed("Jump") && is_on_floor() && !isSticking:
+		
+		velocity.y += jumpVelocity + (jumpVelocity/2)
+
 
 	move_and_slide()
 	#allows the movement angles to be more consistent and sets rotation to a set speed for the character

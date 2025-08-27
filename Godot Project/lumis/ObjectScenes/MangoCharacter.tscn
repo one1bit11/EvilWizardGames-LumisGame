@@ -16,6 +16,7 @@ radius = 1.0
 collision_priority = 0.1
 script = ExtResource("1_qccra")
 mesh = NodePath("MangoMeshFinal")
+jumpVelocity = 7.5
 faceChecker = NodePath("PlayerAngleManager")
 upwards = NodePath("RelativeUpwards")
 camPivot = NodePath("CameraPivot")
