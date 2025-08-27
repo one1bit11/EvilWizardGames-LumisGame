@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://crkw0ipgncv40"]
+[gd_scene load_steps=20 format=3 uid="uid://crkw0ipgncv40"]
 
 [ext_resource type="Script" uid="uid://cj85o6a542cv1" path="res://LevelScenes/LevelControl.gd" id="1_devkk"]
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_qsq0f"]
@@ -19,6 +19,16 @@
 
 [sub_resource type="SphereMesh" id="SphereMesh_rbjp0"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_devkk"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aw7jd"]
+albedo_color = Color(1, 0.472756, 0.400393, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pcp1x"]
+vertex_color_is_srgb = true
+albedo_color = Color(1, 0.482353, 0.223529, 1)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_8v1ft"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_y7wyu"]
@@ -27,8 +37,20 @@
 
 [sub_resource type="SphereMesh" id="SphereMesh_kuari"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_devkk"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_aw7jd"]
+
 [node name="LVL0" type="Node3D"]
 script = ExtResource("1_devkk")
+
+[node name="Mango" parent="." instance=ExtResource("1_qsq0f")]
+transform = Transform3D(0.57911, 0, -0.815249, 0, 1, 0, 0.815249, 0, 0.57911, 54.3771, 1.41163, 65.7055)
+speed = 12.0
+acc = 2.0
+jumpVelocity = 40.0
+stickStrength = 12.0
+mouseSensitivity = 0.3
 
 [node name="Node3D" type="Node3D" parent="."]
 
@@ -50,16 +72,9 @@ shape = SubResource("BoxShape3D_rbjp0")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D2"]
 mesh = SubResource("BoxMesh_buhot")
 
-[node name="Mango" parent="." instance=ExtResource("1_qsq0f")]
-transform = Transform3D(0.57911, 0, -0.815249, 0, 1, 0, 0.815249, 0, 0.57911, -95.0557, 1.41163, 95.3991)
-speed = 12.0
-acc = 2.0
-jumpVelocity = 40.0
-stickStrength = 12.0
-mouseSensitivity = 0.3
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.707354, 0.70686, 0, -0.70686, 0.707354, 0, 21.2708, 0)
+transform = Transform3D(0.82279, 0.56389, -0.0710316, -0.390169, 0.651291, 0.650836, 0.413262, -0.507787, 0.755888, 43.7525, 54.3082, 80.9338)
+shadow_enabled = true
 
 [node name="StaticBody3D3" type="StaticBody3D" parent="."]
 transform = Transform3D(16, 0, 0, 0, 63.35, 0, 0, 0, 16, -49.8147, 7.57217, -31.8211)
@@ -196,6 +211,7 @@ shape = SubResource("BoxShape3D_buhot")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D10"]
 mesh = SubResource("BoxMesh_kuari")
+surface_material_override/0 = SubResource("StandardMaterial3D_devkk")
 
 [node name="StaticBody3D12" type="StaticBody3D" parent="."]
 transform = Transform3D(3.85, 0, 0, 0, 0.698902, -13.0491, 0, 0.715217, 12.7515, 26.5261, 2.37, 14.9199)
@@ -205,6 +221,7 @@ shape = SubResource("BoxShape3D_buhot")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D12"]
 mesh = SubResource("BoxMesh_kuari")
+surface_material_override/0 = SubResource("StandardMaterial3D_aw7jd")
 
 [node name="StaticBody3D13" type="StaticBody3D" parent="."]
 transform = Transform3D(3.85, 0, 0, 0, 0.803701, -10.8564, 0, 0.595033, 14.6635, 22.4925, 2.37, 14.9199)
@@ -214,6 +231,7 @@ shape = SubResource("BoxShape3D_buhot")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D13"]
 mesh = SubResource("BoxMesh_kuari")
+surface_material_override/0 = SubResource("StandardMaterial3D_pcp1x")
 
 [node name="StaticBody3D11" type="StaticBody3D" parent="."]
 transform = Transform3D(3.85, 0, 0, 0, 0.992812, -2.18368, 0, 0.119686, 18.1138, 36.317, 0.971288, 14.9199)
@@ -269,4 +287,20 @@ shape = SubResource("BoxShape3D_8v1ft")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D3"]
 mesh = SubResource("BoxMesh_y7wyu")
 
-[node name="MangoRoot" parent="." instance=ExtResource("1_qsq0f")]
+[node name="StaticBody3D18" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 98.7564, 7.24604, -97.3248)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D18"]
+shape = SubResource("BoxShape3D_devkk")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D18"]
+mesh = SubResource("BoxMesh_aw7jd")
+
+[node name="StaticBody3D22" type="StaticBody3D" parent="."]
+transform = Transform3D(-13.2899, 0, 5.99915, 0, 4.43, 0, -14.8118, 0, -5.38273, 97.6856, 4.25169, -95.8135)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D22"]
+shape = SubResource("BoxShape3D_devkk")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D22"]
+mesh = SubResource("BoxMesh_aw7jd")

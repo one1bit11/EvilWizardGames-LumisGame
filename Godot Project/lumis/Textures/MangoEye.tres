@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bn3ea0tykiugl"]
+
+[resource]
+transparency = 1
+albedo_color = Color(0.11, 0.11, 0.11, 1)
+metallic_specular = 0.15
+roughness = 0.33
+rim = 0.15
+rim_tint = 1.0
+clearcoat = 0.16
+clearcoat_roughness = 1.0
+anisotropy = -0.57
+ao_light_affect = 1.0
+heightmap_scale = 4.95
+subsurf_scatter_strength = 0.5
+subsurf_scatter_skin_mode = true
+backlight = Color(0, 0.146521, 0.244129, 1)
+grow_amount = 2.72
+proximity_fade_distance = 134.45
