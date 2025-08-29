@@ -6,7 +6,7 @@
 [ext_resource type="Material" uid="uid://dk8mgn1adphu1" path="res://Textures/BrickFloor/BrickFloorMatPlatform.tres" id="3_5wmf4"]
 [ext_resource type="Material" uid="uid://w7xc8nptdhij" path="res://Textures/SolidColours/Grey.tres" id="3_ggrjs"]
 [ext_resource type="Material" uid="uid://bdfiwjb4aafi5" path="res://Textures/BrickWall/BrickDarkMat.tres" id="3_lu157"]
-[ext_resource type="Material" uid="uid://slf1xk4kg5nr" path="res://Textures/SolidColours/Black.tres" id="4_0nj31"]
+[ext_resource type="Material" uid="uid://slf1xk4kg5nr" path="res://Textures/SolidColours/LightGrey.tres" id="4_0nj31"]
 [ext_resource type="Material" uid="uid://bxtn1jfbuf7y8" path="res://Textures/SolidColours/Orange.tres" id="5_gisyu"]
 [ext_resource type="Material" uid="uid://by1grc8rg6fbw" path="res://Textures/SolidColours/Pink.tres" id="5_hlbvm"]
 [ext_resource type="Material" uid="uid://pnix3qp1ve4d" path="res://Textures/BrickWall/BrickMatPlatform.tres" id="6_cv5lt"]
