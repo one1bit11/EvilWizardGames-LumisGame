@@ -7,10 +7,10 @@
 [node name="EvilWizard" type="Node"]
 script = ExtResource("1_umxvf")
 
-[node name="LVL1" parent="." instance=ExtResource("2_umxvf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0929718, -1.90735e-06, -0.0761318)
-
 [node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_umxvf")
+volume_db = 24.0
 panning_strength = 0.0
 parameters/looping = true
+
+[node name="LVL1" parent="." instance=ExtResource("2_umxvf")]
