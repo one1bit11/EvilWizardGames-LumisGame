@@ -1,6 +1,6 @@
 # Blender 4.3.2
 # www.blender.org
-mtllib Spikes(with curves)_unwrapped.mtl
+mtllib Spike (with curves).mtl
 o Base
 v -0.597938 -0.023734 0.112321
 v -0.597938 0.023734 0.112321
