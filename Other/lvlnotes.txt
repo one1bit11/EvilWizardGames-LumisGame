@@ -1,0 +1,18 @@
+LVL1
+- LVL0 start
+- platforming room
+- sticking and nonstick
+- sticking/nonstick and platforming
+- grates
+- a combo of all 4 rooms
+LVL2
+- intro pipes/movement in them
+- no walls cos rooftops
+- more bottomless pits/more floating platforms
+- intro absorbing (mainly magnests) + a few grates to show dropping via grate
+LVL3
+- walls return cos inside clocktower
+- moving cogs intro
+- final few rooms combine all previously taught mechanics
+	- room with absorb and grates
+	- room with sticking and moving cogs/grates
