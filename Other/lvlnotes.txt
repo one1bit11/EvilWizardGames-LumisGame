@@ -9,7 +9,7 @@ LVL2
 - intro pipes/movement in them
 - no walls cos rooftops
 - more bottomless pits/more floating platforms
-- intro absorbing (mainly magnests) + a few grates to show dropping via grate
+- intro absorbing (mainly magnets) + a few grates to show dropping via grate
 LVL3
 - walls return cos inside clocktower
 - moving cogs intro
