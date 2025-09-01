@@ -18,4 +18,4 @@ LVL3
 	- room with sticking and moving cogs/grates
 
 all lvls
-- avoid using slopes mango doesn't like going down slopes atm
+- avoid using slopes mango doesn't like going down slopes atm msinly big tall slopes
