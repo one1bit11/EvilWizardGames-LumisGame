@@ -857,10 +857,10 @@ height = 32.061
 sides = 32
 
 [node name="CSGCylinder3D7" type="CSGCylinder3D" parent="ROOMS/Room15/GiantPipe3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.98475, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.49237, 0)
 operation = 2
 radius = 3.586
-height = 36.0305
+height = 37.0153
 sides = 32
 
 [node name="GiantPipe4" type="CSGCylinder3D" parent="ROOMS/Room15"]
