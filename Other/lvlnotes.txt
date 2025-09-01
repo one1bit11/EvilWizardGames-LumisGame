@@ -20,4 +20,4 @@ LVL3
 	- room with cogs and conveyors
 
 all lvls
-- avoid using slopes mango doesn't like going down slopes atm msinly big tall slopes
+- avoid using slopes mango doesn't like going down slopes atm mainly big tall slopes
