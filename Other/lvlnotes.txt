@@ -16,3 +16,6 @@ LVL3
 - final few rooms combine all previously taught mechanics
 	- room with absorb and grates
 	- room with sticking and moving cogs/grates
+
+all lvls
+- avoid using slopes mango doesn't like going down slopes atm
