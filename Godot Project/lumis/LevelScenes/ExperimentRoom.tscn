@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://b6prodcf7c5ho"]
 
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_k8817"]
-[ext_resource type="Script" uid="uid://cj85o6a542cv1" path="res://LevelScenes/LevelControl.gd" id="1_uoman"]
+[ext_resource type="Script" uid="uid://caypftosno0ua" path="res://LevelScenes/LevelControl.gd" id="1_uoman"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_k8817"]
 
