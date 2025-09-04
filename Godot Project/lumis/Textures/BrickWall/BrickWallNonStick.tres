@@ -1,9 +1,14 @@
 [gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bhk2tqasi546k"]
 
-[ext_resource type="Texture2D" uid="uid://bgd4q6byud8rr" path="res://Textures/BrickWall/IMG_2524.png" id="1_wfgfk"]
+[ext_resource type="Texture2D" uid="uid://bw0pswpldcsub" path="res://Textures/BrickWall/IMG_2535.png" id="1_wfgfk"]
 
 [resource]
+albedo_color = Color(0.947199, 0.947199, 0.947199, 1)
 albedo_texture = ExtResource("1_wfgfk")
-uv1_scale = Vector3(0.25, 0.25, 0.25)
+ao_light_affect = 0.85
+subsurf_scatter_strength = 1.0
+refraction_scale = 1.0
+uv1_scale = Vector3(0.18, 0.18, 0.18)
 uv1_triplanar = true
 uv1_world_triplanar = true
+grow_amount = 16.0
