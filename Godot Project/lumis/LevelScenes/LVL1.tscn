@@ -175,7 +175,7 @@ transform = Transform3D(1, 0, 0, 1.13687e-13, 1, 0, 0, 0, 1, -8.64267e-07, 405, 
 mesh = SubResource("PlaneMesh_isujd")
 
 [node name="Mango" parent="." instance=ExtResource("1_xlif7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -36.9, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -149, -19.9, -48)
 speed = 12.0
 acc = 4.0
 jumpVelocity = 30.0
@@ -187,7 +187,6 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 60,
 visible = false
 
 [node name="DebugLights" type="Node3D" parent="."]
-visible = false
 
 [node name="TempDirectionalLight3D" type="DirectionalLight3D" parent="DebugLights"]
 transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 2, 50, 0)
@@ -205,6 +204,239 @@ light_color = Color(0.43, 0.43, 0.43, 1)
 
 [node name="Room1" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -38, 0)
+
+[node name="Create" parent="ROOMS/Room1" instance=ExtResource("11_0denb")]
+transform = Transform3D(1.7145, 0, 0.207684, 0, 1.54239, 0, -0.219207, 0, 1.62438, 10.4985, 0.507198, 12.7035)
+
+[node name="Create3" parent="ROOMS/Room1" instance=ExtResource("11_0denb")]
+transform = Transform3D(0.507238, 0, 0.677021, 0, 1.20761, 0, -0.861806, 0, 0.398477, -10.9747, 0.507198, 12.066)
+
+[node name="Create2" parent="ROOMS/Room1" instance=ExtResource("11_0denb")]
+transform = Transform3D(1.26802, 0, -0.404743, 0, 1, 0, 0.561246, 0, 0.914431, 5.65521, 0.507198, 11.9185)
+
+[node name="PipeCluster1" type="StaticBody3D" parent="ROOMS/Room1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 38, -6.02455)
+
+[node name="Tubelong" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1"]
+transform = Transform3D(1.91069e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 14.6119, -28.25, 2.7054)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Ring2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539851, 0.0118694, -1.78159)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring4" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539827, 0.0118713, 0.961907)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring5" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539851, 0.0118704, -0.177448)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Tubelong2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1"]
+transform = Transform3D(-8.74228e-08, -2, 1.88483e-07, 0, -8.74228e-08, -4.312, 2, -8.74228e-08, 8.23888e-15, 14.6119, -28.25, 1.2054)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Ring6" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1/Tubelong2"]
+transform = Transform3D(-3.82475e-08, -3.8913e-08, 0.875, -0.875, -3.8913e-08, -3.82475e-08, 3.82475e-08, -0.890227, -3.82475e-08, -0.00269938, 0.00593281, -1.78698)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring8" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1/Tubelong2"]
+transform = Transform3D(-3.82475e-08, -3.8913e-08, 0.875, -0.875, -3.8913e-08, -3.82475e-08, 3.82475e-08, -0.890227, -3.82475e-08, -0.00269938, 0.00593328, 0.248023)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring7" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1/Tubelong2"]
+transform = Transform3D(-3.82475e-08, -3.8913e-08, 0.875, -0.875, -3.8913e-08, -3.82475e-08, 3.82475e-08, -0.890227, -3.82475e-08, -0.00269938, 0.00593281, 2.12553)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="PipeCluster2" type="StaticBody3D" parent="ROOMS/Room1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 38, 1.38323)
+
+[node name="Tubelong" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2"]
+transform = Transform3D(1.91069e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 14.6119, -28.25, 2.7054)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Ring2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539923, 0.0118704, -1.78159)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring4" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539827, 0.0118713, 0.961907)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring5" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539875, 0.0118694, -0.873181)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Tubelong2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2"]
+transform = Transform3D(1.91069e-15, -1, 9.87551e-08, -4.37114e-08, -4.37114e-08, -2.25925, 1, 0, -9.87551e-08, 14.612, -32.39, 6.41305)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Tubelong3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/Tubelong2"]
+transform = Transform3D(-4.37114e-08, -4.37114e-08, -0.499205, 4.37114e-08, 1, -2.18209e-08, 0.442624, -1.93477e-08, -9.65848e-09, -1.78342, -9.53674e-07, -2.70384)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../../..")
+
+[node name="HalfTube" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/Tubelong2"]
+transform = Transform3D(1.91069e-15, 1, -3.55271e-15, -1, 1.91069e-15, 4.37114e-08, 1.93477e-08, 1.77636e-15, 0.442624, -0.171384, 0, -2.6284)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("16_0o8k2")
+skeleton = NodePath("../../../../..")
+
+[node name="TJunction" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2"]
+transform = Transform3D(1.07201, 0, 0, 0, 1.07201, 0, 0, 0, 1.07201, 14.612, -26.277, 2.89437)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("16_u084n")
+
+[node name="Valve1001" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/TJunction"]
+transform = Transform3D(-2.64771e-08, -0.605725, 0, 0.605725, -2.64771e-08, 0, 0, 0, 0.605725, -0.582771, 0.0311232, -0.207373)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("18_fi3mb")
+skeleton = NodePath("../..")
+
+[node name="Stand" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/TJunction/Valve1001"]
+transform = Transform3D(4.37114e-08, 1, 3.82137e-15, 1, -4.37114e-08, 8.74228e-08, 8.74228e-08, 0, -1, 0.0123901, -0.434514, 0.00271797)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("19_u72js")
+skeleton = NodePath("../../../../../..")
+
+[node name="PipeCluster3" type="StaticBody3D" parent="ROOMS/Room1"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.37511, 38, -4.78751)
+
+[node name="Tubelong" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3"]
+transform = Transform3D(3.55271e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 14.6119, -28.25, 0.705399)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Ring2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong"]
+transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00540066, 0.0118713, -1.78159)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="TJunction2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong"]
+transform = Transform3D(-9.82665e-08, 4.38482e-08, -1.12404, 1.12404, -4.91332e-08, -9.82665e-08, -1.13945e-08, -0.260677, 1.13945e-08, -0.188139, -0.000297546, -0.956964)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("16_u084n")
+skeleton = NodePath("../../../PipeCluster2")
+
+[node name="Tubesleeve" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong"]
+transform = Transform3D(2.13163e-14, -1.02611, -1.55438e-07, -1.02611, -3.90799e-14, 6.93593e-08, 1.04019e-08, 2.08037e-08, -0.412339, -0.00252438, 0.0207367, -0.105011)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("20_usjop")
+skeleton = NodePath("../../../../..")
+
+[node name="Tubelong3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3"]
+transform = Transform3D(4.37114e-08, -1, -2.84217e-14, 1, 4.37114e-08, -1.42109e-14, 1.91069e-15, 0, 4.312, 14.6119, -24.1174, -10.4354)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Ring2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong3"]
+transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00540066, 0.0118713, -2.40869)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong3"]
+transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.0053978, 0.0118713, 2.39645)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Tubelong4" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3"]
+transform = Transform3D(0, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88484e-07, 14.6119, -29.824, -15.174)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Ring2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong4"]
+transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00540066, 0.0118713, -2.15007)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong4"]
+transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 1.76951)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Tubelong2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3"]
+transform = Transform3D(3.55271e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 14.6119, -28.25, 3.7054)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Ring2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong2"]
+transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.0053997, 0.0118713, -1.78159)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong2"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring5" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong2"]
+transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539875, 0.0118713, 0.518284)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="4Junctionthick" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3"]
+transform = Transform3D(-1.08814, 0, 9.51279e-08, 0, 1.08814, 0, -9.51279e-08, 0, -1.08814, 14.6159, -24.1167, -15.175)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("20_u72js")
+skeleton = NodePath("../../../..")
 
 [node name="ManholeFrame" type="CSGCylinder3D" parent="ROOMS/Room1"]
 transform = Transform3D(6.1196e-08, 3.41858e-06, 1.4, -2.11394e-07, -39.104, 1.22392e-07, 1.4, -5.90454e-06, -6.11959e-08, 0, 56.2394, 4)
@@ -501,11 +733,23 @@ size = Vector3(35, 8.5, 8)
 
 [node name="Room4" type="Node3D" parent="ROOMS"]
 
+[node name="Water" type="CSGBox3D" parent="ROOMS/Room4"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -176, -23, -51.5)
+material_override = ExtResource("3_v23sc")
+size = Vector3(28, 2, 10)
+
 [node name="Floor" type="CSGBox3D" parent="ROOMS/Room4"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -173.5, -22, -57.5)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -173.5, -23, -57.5)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
-size = Vector3(40, 1, 41)
+size = Vector3(40, 3, 41)
+
+[node name="WaterGap" type="CSGBox3D" parent="ROOMS/Room4/Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 1, -3)
+material_override = ExtResource("6_xc2n4")
+operation = 2
+use_collision = true
+size = Vector3(28, 2, 9)
 
 [node name="Wall" type="CSGBox3D" parent="ROOMS/Room4"]
 transform = Transform3D(-1, 3.82137e-15, -8.74228e-08, 8.74228e-08, 4.37114e-08, -1, 0, -1, -4.37114e-08, -169, -8, -38.5)
@@ -520,7 +764,7 @@ use_collision = true
 size = Vector3(40, 1, 30)
 
 [node name="Wall3" type="CSGBox3D" parent="ROOMS/Room4"]
-transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 8.74228e-08, 4.37114e-08, -1, 1, -4.37114e-08, 8.74228e-08, -188.945, -8.5, -59)
+transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 8.74228e-08, 4.37114e-08, -1, 1, -4.37114e-08, 8.74228e-08, -180.945, -8.5, -59)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(48, 0.1, 29)
@@ -532,15 +776,16 @@ size = Vector3(3, 8.78418, 8)
 
 [node name="Ceiling" type="CSGBox3D" parent="ROOMS/Room4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -170, 5.5, -58)
+visible = false
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(44, 1, 43)
 
 [node name="EndPlatform" type="CSGBox3D" parent="ROOMS/Room4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -184.5, -14.5, -67)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -175, -14.5, -71)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
-size = Vector3(9, 16, 13)
+size = Vector3(12, 16, 13)
 
 [node name="Non-Stick Label" type="Label3D" parent="ROOMS/Room4"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -179.9, -14, -67)
@@ -554,6 +799,31 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -169.318, -0.296902, -58.7297
 light_color = Color(1, 0.883034, 0.804188, 1)
 light_energy = 5.905
 omni_range = 65.829
+
+[node name="CSGBox3D" type="CSGBox3D" parent="ROOMS/Room4"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -156.5, -21, -56.5)
+use_collision = true
+size = Vector3(4, 3, 4)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="ROOMS/Room4"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -156.5, -19.5, -60.5)
+use_collision = true
+size = Vector3(4, 6, 4)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="ROOMS/Room4"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -156.5, -18, -64.5)
+use_collision = true
+size = Vector3(4, 9, 4)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="ROOMS/Room4"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -156.5, -16.5, -71.5)
+use_collision = true
+size = Vector3(4, 12, 4)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="ROOMS/Room4"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -164.5, -9, -70.75)
+use_collision = true
+size = Vector3(5, 1, 5)
 
 [node name="Room4-5" type="Node3D" parent="ROOMS"]
 
@@ -1175,236 +1445,3 @@ sides = 32
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 144, 48.5, 0)
 visible = false
 size = Vector3(858, 20, 1000)
-
-[node name="Create" parent="." instance=ExtResource("11_0denb")]
-transform = Transform3D(1.7145, 0, 0.207684, 0, 1.54239, 0, -0.219207, 0, 1.62438, 10.4985, -37.4928, 12.7035)
-
-[node name="Create3" parent="." instance=ExtResource("11_0denb")]
-transform = Transform3D(0.507238, 0, 0.677021, 0, 1.20761, 0, -0.861806, 0, 0.398477, -10.9747, -37.4928, 12.066)
-
-[node name="Create2" parent="." instance=ExtResource("11_0denb")]
-transform = Transform3D(1.26802, 0, -0.404743, 0, 1, 0, 0.561246, 0, 0.914431, 5.65521, -37.4928, 11.9185)
-
-[node name="PipeCluster1" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -6.02455)
-
-[node name="Tubelong" type="MeshInstance3D" parent="PipeCluster1"]
-transform = Transform3D(1.91069e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 14.6119, -28.25, 2.7054)
-material_override = ExtResource("14_ksloc")
-mesh = ExtResource("12_c0owb")
-skeleton = NodePath("../..")
-
-[node name="Ring2" type="MeshInstance3D" parent="PipeCluster1/Tubelong"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539851, 0.0118694, -1.78159)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Ring3" type="MeshInstance3D" parent="PipeCluster1/Tubelong"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Ring4" type="MeshInstance3D" parent="PipeCluster1/Tubelong"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539827, 0.0118713, 0.961907)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Ring5" type="MeshInstance3D" parent="PipeCluster1/Tubelong"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539851, 0.0118704, -0.177448)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Tubelong2" type="MeshInstance3D" parent="PipeCluster1"]
-transform = Transform3D(-8.74228e-08, -2, 1.88483e-07, 0, -8.74228e-08, -4.312, 2, -8.74228e-08, 8.23888e-15, 14.6119, -28.25, 1.2054)
-material_override = ExtResource("14_ksloc")
-mesh = ExtResource("12_c0owb")
-skeleton = NodePath("../..")
-
-[node name="Ring6" type="MeshInstance3D" parent="PipeCluster1/Tubelong2"]
-transform = Transform3D(-3.82475e-08, -3.8913e-08, 0.875, -0.875, -3.8913e-08, -3.82475e-08, 3.82475e-08, -0.890227, -3.82475e-08, -0.00269938, 0.00593281, -1.78698)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Ring8" type="MeshInstance3D" parent="PipeCluster1/Tubelong2"]
-transform = Transform3D(-3.82475e-08, -3.8913e-08, 0.875, -0.875, -3.8913e-08, -3.82475e-08, 3.82475e-08, -0.890227, -3.82475e-08, -0.00269938, 0.00593328, 0.248023)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Ring7" type="MeshInstance3D" parent="PipeCluster1/Tubelong2"]
-transform = Transform3D(-3.82475e-08, -3.8913e-08, 0.875, -0.875, -3.8913e-08, -3.82475e-08, 3.82475e-08, -0.890227, -3.82475e-08, -0.00269938, 0.00593281, 2.12553)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="PipeCluster2" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1.38323)
-
-[node name="Tubelong" type="MeshInstance3D" parent="PipeCluster2"]
-transform = Transform3D(1.91069e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 14.6119, -28.25, 2.7054)
-material_override = ExtResource("14_ksloc")
-mesh = ExtResource("12_c0owb")
-skeleton = NodePath("../..")
-
-[node name="Ring2" type="MeshInstance3D" parent="PipeCluster2/Tubelong"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539923, 0.0118704, -1.78159)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Ring3" type="MeshInstance3D" parent="PipeCluster2/Tubelong"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Ring4" type="MeshInstance3D" parent="PipeCluster2/Tubelong"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539827, 0.0118713, 0.961907)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Ring5" type="MeshInstance3D" parent="PipeCluster2/Tubelong"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539875, 0.0118694, -0.873181)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Tubelong2" type="MeshInstance3D" parent="PipeCluster2"]
-transform = Transform3D(1.91069e-15, -1, 9.87551e-08, -4.37114e-08, -4.37114e-08, -2.25925, 1, 0, -9.87551e-08, 14.612, -32.39, 6.41305)
-material_override = ExtResource("14_ksloc")
-mesh = ExtResource("12_c0owb")
-skeleton = NodePath("../..")
-
-[node name="Tubelong3" type="MeshInstance3D" parent="PipeCluster2/Tubelong2"]
-transform = Transform3D(-4.37114e-08, -4.37114e-08, -0.499205, 4.37114e-08, 1, -2.18209e-08, 0.442624, -1.93477e-08, -9.65848e-09, -1.78342, -9.53674e-07, -2.70384)
-material_override = ExtResource("14_ksloc")
-mesh = ExtResource("12_c0owb")
-skeleton = NodePath("../../..")
-
-[node name="HalfTube" type="MeshInstance3D" parent="PipeCluster2/Tubelong2"]
-transform = Transform3D(1.91069e-15, 1, -3.55271e-15, -1, 1.91069e-15, 4.37114e-08, 1.93477e-08, 1.77636e-15, 0.442624, -0.171384, 0, -2.6284)
-material_override = ExtResource("14_ksloc")
-mesh = ExtResource("16_0o8k2")
-skeleton = NodePath("../../..")
-
-[node name="TJunction" type="MeshInstance3D" parent="PipeCluster2"]
-transform = Transform3D(1.07201, 0, 0, 0, 1.07201, 0, 0, 0, 1.07201, 14.612, -26.277, 2.89437)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("16_u084n")
-
-[node name="Valve1001" type="MeshInstance3D" parent="PipeCluster2/TJunction"]
-transform = Transform3D(-2.64771e-08, -0.605725, 0, 0.605725, -2.64771e-08, 0, 0, 0, 0.605725, -0.582771, 0.0311232, -0.207373)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("18_fi3mb")
-skeleton = NodePath("../..")
-
-[node name="Stand" type="MeshInstance3D" parent="PipeCluster2/TJunction/Valve1001"]
-transform = Transform3D(4.37114e-08, 1, 3.82137e-15, 1, -4.37114e-08, 8.74228e-08, 8.74228e-08, 0, -1, 0.0123901, -0.434514, 0.00271797)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("19_u72js")
-skeleton = NodePath("../../../..")
-
-[node name="PipeCluster3" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.37511, 0, -4.78751)
-
-[node name="Tubelong" type="MeshInstance3D" parent="PipeCluster3"]
-transform = Transform3D(3.55271e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 14.6119, -28.25, 0.705399)
-material_override = ExtResource("14_ksloc")
-mesh = ExtResource("12_c0owb")
-skeleton = NodePath("../..")
-
-[node name="Ring2" type="MeshInstance3D" parent="PipeCluster3/Tubelong"]
-transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00540066, 0.0118713, -1.78159)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Ring3" type="MeshInstance3D" parent="PipeCluster3/Tubelong"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="TJunction2" type="MeshInstance3D" parent="PipeCluster3/Tubelong"]
-transform = Transform3D(-9.82665e-08, 4.38482e-08, -1.12404, 1.12404, -4.91332e-08, -9.82665e-08, -1.13945e-08, -0.260677, 1.13945e-08, -0.188139, -0.000297546, -0.956964)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("16_u084n")
-skeleton = NodePath("../../../PipeCluster2")
-
-[node name="Tubesleeve" type="MeshInstance3D" parent="PipeCluster3/Tubelong"]
-transform = Transform3D(2.13163e-14, -1.02611, -1.55438e-07, -1.02611, -3.90799e-14, 6.93593e-08, 1.04019e-08, 2.08037e-08, -0.412339, -0.00252438, 0.0207367, -0.105011)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("20_usjop")
-skeleton = NodePath("../../..")
-
-[node name="Tubelong3" type="MeshInstance3D" parent="PipeCluster3"]
-transform = Transform3D(4.37114e-08, -1, -2.84217e-14, 1, 4.37114e-08, -1.42109e-14, 1.91069e-15, 0, 4.312, 14.6119, -24.1174, -10.4354)
-material_override = ExtResource("14_ksloc")
-mesh = ExtResource("12_c0owb")
-skeleton = NodePath("../..")
-
-[node name="Ring2" type="MeshInstance3D" parent="PipeCluster3/Tubelong3"]
-transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00540066, 0.0118713, -2.40869)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Ring3" type="MeshInstance3D" parent="PipeCluster3/Tubelong3"]
-transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.0053978, 0.0118713, 2.39645)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Tubelong4" type="MeshInstance3D" parent="PipeCluster3"]
-transform = Transform3D(0, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88484e-07, 14.6119, -29.824, -15.174)
-material_override = ExtResource("14_ksloc")
-mesh = ExtResource("12_c0owb")
-skeleton = NodePath("../..")
-
-[node name="Ring2" type="MeshInstance3D" parent="PipeCluster3/Tubelong4"]
-transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00540066, 0.0118713, -2.15007)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Ring3" type="MeshInstance3D" parent="PipeCluster3/Tubelong4"]
-transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 1.76951)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Tubelong2" type="MeshInstance3D" parent="PipeCluster3"]
-transform = Transform3D(3.55271e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 14.6119, -28.25, 3.7054)
-material_override = ExtResource("14_ksloc")
-mesh = ExtResource("12_c0owb")
-skeleton = NodePath("../..")
-
-[node name="Ring2" type="MeshInstance3D" parent="PipeCluster3/Tubelong2"]
-transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.0053997, 0.0118713, -1.78159)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Ring3" type="MeshInstance3D" parent="PipeCluster3/Tubelong2"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="Ring5" type="MeshInstance3D" parent="PipeCluster3/Tubelong2"]
-transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539875, 0.0118713, 0.518284)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("13_yi7or")
-skeleton = NodePath("../..")
-
-[node name="4Junctionthick" type="MeshInstance3D" parent="PipeCluster3"]
-transform = Transform3D(-1.08814, 0, 9.51279e-08, 0, 1.08814, 0, -9.51279e-08, 0, -1.08814, 14.6159, -24.1167, -15.175)
-material_override = ExtResource("15_ty564")
-mesh = ExtResource("20_u72js")
-skeleton = NodePath("../..")
