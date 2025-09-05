@@ -1,10 +1,28 @@
-[gd_scene load_steps=12 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=35 format=3 uid="uid://kw6trwjmxryo"]
 
+[ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_xlif7"]
 [ext_resource type="Material" uid="uid://bje7sds7fpef2" path="res://Textures/SolidColours/Brown.tres" id="2_short"]
-[ext_resource type="Material" uid="uid://slf1xk4kg5nr" path="res://Textures/SolidColours/LightGrey.tres" id="3_exj2k"]
+[ext_resource type="Material" uid="uid://cymxly51ml176" path="res://Textures/SolidColours/BrownAlt.tres" id="3_5jpfr"]
+[ext_resource type="Material" uid="uid://cp52667yf3kt1" path="res://Textures/BrickWall/BrickWall 2.tres" id="3_gmyoy"]
 [ext_resource type="Material" uid="uid://b8cr53cav36y3" path="res://Textures/SolidColours/Blue.tres" id="3_v23sc"]
 [ext_resource type="Material" uid="uid://dxx4w8c5j14ti" path="res://Textures/SolidColours/Purple.tres" id="4_isujd"]
+[ext_resource type="Texture2D" uid="uid://bgsqk85rqbtd1" path="res://Textures/Gradient.png" id="5_5twom"]
+[ext_resource type="Material" uid="uid://bhvmxm3376jvn" path="res://Textures/BrickWall/BrickWall.tres" id="5_nldwi"]
+[ext_resource type="Material" uid="uid://w7xc8nptdhij" path="res://Textures/SolidColours/Grey.tres" id="6_hhrt6"]
+[ext_resource type="Material" uid="uid://dmc7etf6fkm64" path="res://Textures/BrickFloor/BrickFloor.tres" id="6_xc2n4"]
+[ext_resource type="Material" uid="uid://bhk2tqasi546k" path="res://Textures/BrickWall/BrickWallNonStick.tres" id="7_xc2n4"]
+[ext_resource type="PackedScene" uid="uid://cnglve84q3h6n" path="res://ObjectScenes/CreateObj.tscn" id="11_0denb"]
+[ext_resource type="ArrayMesh" uid="uid://etreb7j0o7o8" path="res://Meshes/Models/LV1Test/Pipes/TUBELONG.obj" id="12_c0owb"]
+[ext_resource type="ArrayMesh" uid="uid://dl10hjiywjtlj" path="res://Meshes/Models/LV1Test/Pipes/RING2.obj" id="13_yi7or"]
+[ext_resource type="Material" uid="uid://bny8ptv3b72gi" path="res://Textures/SolidColours/Gold.tres" id="14_ksloc"]
+[ext_resource type="Material" uid="uid://cqb4p11delyqg" path="res://Textures/SolidColours/GoldAlt.tres" id="15_ty564"]
+[ext_resource type="ArrayMesh" uid="uid://5fxngc5ou85" path="res://Meshes/Models/LV1Test/Pipes/HALF_TUBE.obj" id="16_0o8k2"]
+[ext_resource type="ArrayMesh" uid="uid://dbialkarvmqib" path="res://Meshes/Models/LV1Test/Pipes/T_JUNCTION.obj" id="16_u084n"]
+[ext_resource type="ArrayMesh" uid="uid://ctoxufp2xvfan" path="res://Meshes/Models/LV1Test/Pipes/VALVE1_001.obj" id="18_fi3mb"]
+[ext_resource type="ArrayMesh" uid="uid://drntmn70wdolg" path="res://Meshes/Models/LV1Test/Pipes/STAND.obj" id="19_u72js"]
+[ext_resource type="ArrayMesh" uid="uid://c30lijpdad1gk" path="res://Meshes/Models/LV1Test/Pipes/4_JUNCTIONTHICK.obj" id="20_u72js"]
+[ext_resource type="ArrayMesh" uid="uid://dpj4b71lmkhlg" path="res://Meshes/Models/LV1Test/Pipes/TUBESLEEVE.obj" id="20_usjop"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xlif7"]
 
@@ -18,8 +36,40 @@
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_isujd"]
 
+[sub_resource type="CylinderMesh" id="CylinderMesh_usjop"]
+top_radius = 4.8
+bottom_radius = 3.0
+height = 19.708
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_usjop"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.0392157)
+metallic_specular = 1.0
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 16.0
+emission_operator = 1
+emission_texture = ExtResource("5_5twom")
+anisotropy = 0.02
+proximity_fade_enabled = true
+proximity_fade_distance = 5.0
+distance_fade_mode = 1
+distance_fade_min_distance = 6.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_5twom"]
+top_radius = 1.0
+bottom_radius = 1.0
+
+[sub_resource type="PrismMesh" id="PrismMesh_5twom"]
+left_to_right = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ukhrk"]
+
 [node name="LVL1" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("1_ir167")
 
 [node name="Old Room" type="Node3D" parent="."]
 visible = false
@@ -125,7 +175,7 @@ transform = Transform3D(1, 0, 0, 1.13687e-13, 1, 0, 0, 0, 1, -8.64267e-07, 405, 
 mesh = SubResource("PlaneMesh_isujd")
 
 [node name="Mango" parent="." instance=ExtResource("1_xlif7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -215, -12, -166)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -149, -19.9, -48)
 speed = 12.0
 acc = 4.0
 jumpVelocity = 30.0
@@ -155,48 +205,331 @@ light_color = Color(0.43, 0.43, 0.43, 1)
 [node name="Room1" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -38, 0)
 
+[node name="Create" parent="ROOMS/Room1" instance=ExtResource("11_0denb")]
+transform = Transform3D(1.7145, 0, 0.207684, 0, 1.54239, 0, -0.219207, 0, 1.62438, 10.4985, 0.507198, 12.7035)
+
+[node name="Create3" parent="ROOMS/Room1" instance=ExtResource("11_0denb")]
+transform = Transform3D(0.507238, 0, 0.677021, 0, 1.20761, 0, -0.861806, 0, 0.398477, -10.9747, 0.507198, 12.066)
+
+[node name="Create2" parent="ROOMS/Room1" instance=ExtResource("11_0denb")]
+transform = Transform3D(1.26802, 0, -0.404743, 0, 1, 0, 0.561246, 0, 0.914431, 5.65521, 0.507198, 11.9185)
+
+[node name="PipeCluster1" type="StaticBody3D" parent="ROOMS/Room1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 38, -6.02455)
+
+[node name="Tubelong" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1"]
+transform = Transform3D(1.91069e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 14.6119, -28.25, 2.7054)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Ring2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539851, 0.0118694, -1.78159)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring4" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539827, 0.0118713, 0.961907)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring5" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539851, 0.0118704, -0.177448)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Tubelong2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1"]
+transform = Transform3D(-8.74228e-08, -2, 1.88483e-07, 0, -8.74228e-08, -4.312, 2, -8.74228e-08, 8.23888e-15, 14.6119, -28.25, 1.2054)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Ring6" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1/Tubelong2"]
+transform = Transform3D(-3.82475e-08, -3.8913e-08, 0.875, -0.875, -3.8913e-08, -3.82475e-08, 3.82475e-08, -0.890227, -3.82475e-08, -0.00269938, 0.00593281, -1.78698)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring8" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1/Tubelong2"]
+transform = Transform3D(-3.82475e-08, -3.8913e-08, 0.875, -0.875, -3.8913e-08, -3.82475e-08, 3.82475e-08, -0.890227, -3.82475e-08, -0.00269938, 0.00593328, 0.248023)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring7" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster1/Tubelong2"]
+transform = Transform3D(-3.82475e-08, -3.8913e-08, 0.875, -0.875, -3.8913e-08, -3.82475e-08, 3.82475e-08, -0.890227, -3.82475e-08, -0.00269938, 0.00593281, 2.12553)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="PipeCluster2" type="StaticBody3D" parent="ROOMS/Room1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 38, 1.38323)
+
+[node name="Tubelong" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2"]
+transform = Transform3D(1.91069e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 14.6119, -28.25, 2.7054)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Ring2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539923, 0.0118704, -1.78159)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring4" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539827, 0.0118713, 0.961907)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring5" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539875, 0.0118694, -0.873181)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Tubelong2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2"]
+transform = Transform3D(1.91069e-15, -1, 9.87551e-08, -4.37114e-08, -4.37114e-08, -2.25925, 1, 0, -9.87551e-08, 14.612, -32.39, 6.41305)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Tubelong3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/Tubelong2"]
+transform = Transform3D(-4.37114e-08, -4.37114e-08, -0.499205, 4.37114e-08, 1, -2.18209e-08, 0.442624, -1.93477e-08, -9.65848e-09, -1.78342, -9.53674e-07, -2.70384)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../../..")
+
+[node name="HalfTube" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/Tubelong2"]
+transform = Transform3D(1.91069e-15, 1, -3.55271e-15, -1, 1.91069e-15, 4.37114e-08, 1.93477e-08, 1.77636e-15, 0.442624, -0.171384, 0, -2.6284)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("16_0o8k2")
+skeleton = NodePath("../../../../..")
+
+[node name="TJunction" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2"]
+transform = Transform3D(1.07201, 0, 0, 0, 1.07201, 0, 0, 0, 1.07201, 14.612, -26.277, 2.89437)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("16_u084n")
+
+[node name="Valve1001" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/TJunction"]
+transform = Transform3D(-2.64771e-08, -0.605725, 0, 0.605725, -2.64771e-08, 0, 0, 0, 0.605725, -0.582771, 0.0311232, -0.207373)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("18_fi3mb")
+skeleton = NodePath("../..")
+
+[node name="Stand" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster2/TJunction/Valve1001"]
+transform = Transform3D(4.37114e-08, 1, 3.82137e-15, 1, -4.37114e-08, 8.74228e-08, 8.74228e-08, 0, -1, 0.0123901, -0.434514, 0.00271797)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("19_u72js")
+skeleton = NodePath("../../../../../..")
+
+[node name="PipeCluster3" type="StaticBody3D" parent="ROOMS/Room1"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.37511, 38, -4.78751)
+
+[node name="Tubelong" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3"]
+transform = Transform3D(3.55271e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 14.6119, -28.25, 0.705399)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Ring2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong"]
+transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00540066, 0.0118713, -1.78159)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="TJunction2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong"]
+transform = Transform3D(-9.82665e-08, 4.38482e-08, -1.12404, 1.12404, -4.91332e-08, -9.82665e-08, -1.13945e-08, -0.260677, 1.13945e-08, -0.188139, -0.000297546, -0.956964)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("16_u084n")
+skeleton = NodePath("../../../PipeCluster2")
+
+[node name="Tubesleeve" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong"]
+transform = Transform3D(2.13163e-14, -1.02611, -1.55438e-07, -1.02611, -3.90799e-14, 6.93593e-08, 1.04019e-08, 2.08037e-08, -0.412339, -0.00252438, 0.0207367, -0.105011)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("20_usjop")
+skeleton = NodePath("../../../../..")
+
+[node name="Tubelong3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3"]
+transform = Transform3D(4.37114e-08, -1, -2.84217e-14, 1, 4.37114e-08, -1.42109e-14, 1.91069e-15, 0, 4.312, 14.6119, -24.1174, -10.4354)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Ring2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong3"]
+transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00540066, 0.0118713, -2.40869)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong3"]
+transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.0053978, 0.0118713, 2.39645)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Tubelong4" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3"]
+transform = Transform3D(0, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88484e-07, 14.6119, -29.824, -15.174)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Ring2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong4"]
+transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00540066, 0.0118713, -2.15007)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong4"]
+transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 1.76951)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Tubelong2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3"]
+transform = Transform3D(3.55271e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 14.6119, -28.25, 3.7054)
+material_override = ExtResource("14_ksloc")
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../../..")
+
+[node name="Ring2" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong2"]
+transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.0053997, 0.0118713, -1.78159)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring3" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong2"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring5" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3/Tubelong2"]
+transform = Transform3D(3.55271e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539875, 0.0118713, 0.518284)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="4Junctionthick" type="MeshInstance3D" parent="ROOMS/Room1/PipeCluster3"]
+transform = Transform3D(-1.08814, 0, 9.51279e-08, 0, 1.08814, 0, -9.51279e-08, 0, -1.08814, 14.6159, -24.1167, -15.175)
+material_override = ExtResource("15_ty564")
+mesh = ExtResource("20_u72js")
+skeleton = NodePath("../../../..")
+
+[node name="ManholeFrame" type="CSGCylinder3D" parent="ROOMS/Room1"]
+transform = Transform3D(6.1196e-08, 3.41858e-06, 1.4, -2.11394e-07, -39.104, 1.22392e-07, 1.4, -5.90454e-06, -6.11959e-08, 0, 56.2394, 4)
+radius = 2.425
+sides = 64
+material = ExtResource("3_5jpfr")
+
+[node name="Manholehole (hehehe)" type="CSGCylinder3D" parent="ROOMS/Room1/ManholeFrame"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.55294e-22, 0, -8.35186e-23, 1, 0, 0, 0)
+operation = 2
+radius = 2.247
+height = 2.03
+sides = 64
+material = ExtResource("3_5jpfr")
+
 [node name="Ceiling" type="CSGBox3D" parent="ROOMS/Room1"]
-transform = Transform3D(1.91069e-15, 8.74228e-08, 1, -4.37114e-08, -1, 8.74228e-08, 1, -4.37114e-08, 3.55271e-15, -5.73207e-15, 20, 3.5)
+transform = Transform3D(1.91069e-15, 8.74228e-08, 1, -4.37114e-08, -1, 8.74228e-08, 1, -4.37114e-08, 3.55271e-15, -5.73207e-15, 18, -2.5)
+material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(51, 1, 43)
 
 [node name="Manhole" type="CSGCylinder3D" parent="ROOMS/Room1/Ceiling"]
-transform = Transform3D(1, 0, 0, 0, 1, -1.55294e-22, 0, -8.35186e-23, 1, 8.5, 0, 0)
+transform = Transform3D(1.33563, 0, 0, 0, 1.33563, -2.07415e-22, -2.11758e-22, -1.1155e-22, 1.33563, 6.5, 0, 0)
 operation = 2
 radius = 2.425
-sides = 16
+sides = 64
 
 [node name="Wall4" type="CSGBox3D" parent="ROOMS/Room1"]
-transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -16, 10, 0)
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -14, 10, 0)
+material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(20, 1, 48)
 
 [node name="Wall5" type="CSGBox3D" parent="ROOMS/Room1"]
-transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 16, 10, 0)
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 14, 10, 0)
+material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(20, 1, 48)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="ROOMS/Room1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13, 12)
-omni_range = 20.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 2.42377)
+light_color = Color(1, 0.973954, 0.943936, 1)
+light_energy = 1.3
+shadow_enabled = true
+omni_range = 36.0386
 
 [node name="Wall3" type="CSGBox3D" parent="ROOMS/Room1"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, 0, 10, 22)
+transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, 0, 10, 16)
+material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(20, 1, 40)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="ROOMS/Room1"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 20, 12)
-light_energy = 10.0
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 124.627, 4)
+light_energy = 48.21
 shadow_enabled = true
-spot_range = 31.0
-spot_angle = 32.0957
+spot_range = 156.873
+spot_angle = 7.32455
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="ROOMS/Room1"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 20.0943, 4)
+light_energy = 30.0
+shadow_blur = 3.872
+spot_range = 28.584
+spot_angle = 13.77
+spot_angle_attenuation = 0.287175
+
+[node name="Godray" type="MeshInstance3D" parent="ROOMS/Room1"]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 8.97964, 4)
+mesh = SubResource("CylinderMesh_usjop")
+surface_material_override/0 = SubResource("StandardMaterial3D_usjop")
 
 [node name="Room1-2" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -38, 0)
 
+[node name="TunnelFrame" type="CSGMesh3D" parent="ROOMS/Room1-2"]
+transform = Transform3D(4.5738, 0, 0, 0, -7.99709e-08, -7.31808, 0, 1.82952, -3.19883e-07, 0, 1, -21)
+material_override = ExtResource("6_hhrt6")
+mesh = SubResource("CylinderMesh_5twom")
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="ROOMS/Room1-2/TunnelFrame"]
+transform = Transform3D(0.81, 0, 0, 0, 1.944, 0, 0, 0, 0.81, 0, 0, 0)
+operation = 2
+mesh = SubResource("CylinderMesh_5twom")
+
+[node name="CSGMesh3D3" type="CSGMesh3D" parent="ROOMS/Room1-2/TunnelFrame"]
+transform = Transform3D(1.296, 0, 0, 0, 1.944, 7.10543e-15, 0, -7.10543e-15, 0.7128, 0, 0, 0.65591)
+operation = 2
+mesh = SubResource("CylinderMesh_5twom")
+
 [node name="Tunnel" type="CSGBox3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4.23195e-07, 8, -34)
+material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(28, 24, 40)
 
@@ -204,6 +537,18 @@ size = Vector3(28, 24, 40)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.5, -7.94603e-09)
 operation = 2
 size = Vector3(28, 15, 8)
+
+[node name="Corner" type="CSGMesh3D" parent="ROOMS/Room1-2/Tunnel"]
+transform = Transform3D(1.9233e-07, 1.6814e-14, 4.4, 3.8466e-07, -4.4, -3.72695e-21, 4.4, 3.8466e-07, -1.9233e-07, 11.8, -1.2, 2)
+mesh = SubResource("PrismMesh_5twom")
+
+[node name="Corner3" type="CSGMesh3D" parent="ROOMS/Room1-2/Tunnel"]
+transform = Transform3D(1.9233e-07, 1.6814e-14, 4.4, 3.8466e-07, -4.4, -3.72695e-21, 4.4, 3.8466e-07, -1.9233e-07, 11.8, 1.8, -1.28469e-06)
+mesh = SubResource("BoxMesh_ukhrk")
+
+[node name="Corner2" type="CSGMesh3D" parent="ROOMS/Room1-2/Tunnel"]
+transform = Transform3D(1.9233e-07, 1.6814e-14, -4.4, 3.8466e-07, -4.4, -2.36036e-21, -4.4, -3.8466e-07, -1.9233e-07, 11.8, -1.2, -2)
+mesh = SubResource("PrismMesh_5twom")
 
 [node name="Tunnel2" type="CSGBox3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -25.5, 17.5, -44.5)
@@ -232,6 +577,7 @@ size = Vector3(14, 2, 24)
 
 [node name="1-2Floor" type="CSGBox3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, -3.5, -26)
+material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(118, 8, 112)
 
@@ -242,6 +588,7 @@ size = Vector3(10, 3, 37)
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, -56)
+visible = false
 omni_range = 20.0
 
 [node name="Room2" type="Node3D" parent="ROOMS"]
@@ -374,57 +721,75 @@ omni_range = 65.829
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -38, 0)
 
 [node name="Tunnel" type="CSGBox3D" parent="ROOMS/Room3-4"]
-transform = Transform3D(4.37114e-08, -1, 8.74228e-08, -1, -4.37114e-08, 0, 3.82137e-15, -8.74228e-08, -1, -141, 26, -50)
+transform = Transform3D(4.37114e-08, -1, 8.74228e-08, 4.37114e-08, -8.74228e-08, -1, 1, 4.37114e-08, 4.37114e-08, -141, 27, -51)
+material_override = ExtResource("3_gmyoy")
 use_collision = true
-size = Vector3(38, 24, 58)
+size = Vector3(58, 24, 40)
 
 [node name="Hole" type="CSGBox3D" parent="ROOMS/Room3-4/Tunnel"]
-transform = Transform3D(-4.37114e-08, -1, 4.23516e-22, 1, -4.37114e-08, -7.10543e-15, 7.10543e-15, 0, 1, 5.25, -0.5, -1)
+transform = Transform3D(-1.31134e-07, 4.37114e-08, -1, 1, -8.74228e-08, -1.31134e-07, -8.74228e-08, -1, -4.37114e-08, 2, -0.5, 6.25)
 operation = 2
 size = Vector3(35, 8.5, 8)
 
 [node name="Room4" type="Node3D" parent="ROOMS"]
 
+[node name="Water" type="CSGBox3D" parent="ROOMS/Room4"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -176, -23, -51.5)
+material_override = ExtResource("3_v23sc")
+size = Vector3(28, 2, 10)
+
 [node name="Floor" type="CSGBox3D" parent="ROOMS/Room4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -171.5, -22, -59)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -173.5, -23, -57.5)
+material_override = ExtResource("6_xc2n4")
 use_collision = true
-size = Vector3(37, 1, 45)
+size = Vector3(40, 3, 41)
+
+[node name="WaterGap" type="CSGBox3D" parent="ROOMS/Room4/Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 1, -3)
+material_override = ExtResource("6_xc2n4")
+operation = 2
+use_collision = true
+size = Vector3(28, 2, 9)
 
 [node name="Wall" type="CSGBox3D" parent="ROOMS/Room4"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -169, -8, -38.5)
+transform = Transform3D(-1, 3.82137e-15, -8.74228e-08, 8.74228e-08, 4.37114e-08, -1, 0, -1, -4.37114e-08, -169, -8, -38.5)
+material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(50, 1, 30)
 
 [node name="Wall2" type="CSGBox3D" parent="ROOMS/Room4"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -171, -9, -77.5)
-material_override = ExtResource("3_exj2k")
+transform = Transform3D(1, 0, 0, 0, 1.31134e-07, -1, 0, 1, 1.31134e-07, -171, -9, -77.5)
+material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(40, 1, 30)
 
 [node name="Wall3" type="CSGBox3D" parent="ROOMS/Room4"]
-transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, -188.945, -8.5, -59)
-material_override = ExtResource("3_exj2k")
+transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 8.74228e-08, 4.37114e-08, -1, 1, -4.37114e-08, 8.74228e-08, -180.945, -8.5, -59)
+material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(48, 0.1, 29)
 
 [node name="Hole5" type="CSGBox3D" parent="ROOMS/Room4/Wall3"]
-transform = Transform3D(1.31134e-07, 0, 1, 1, -4.37114e-08, -1.31134e-07, 4.37114e-08, 1, -5.73206e-15, 8, 0, 6.1079)
+transform = Transform3D(-4.37112e-08, 8.74228e-08, -1, 1, 4.37114e-08, -4.37112e-08, 4.37114e-08, -1, -8.74228e-08, -8, 0, -6.1079)
 operation = 2
 size = Vector3(3, 8.78418, 8)
 
 [node name="Ceiling" type="CSGBox3D" parent="ROOMS/Room4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -170, 5.5, -58)
+visible = false
+material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(44, 1, 43)
 
 [node name="EndPlatform" type="CSGBox3D" parent="ROOMS/Room4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -184.5, -14.5, -67)
-material_override = ExtResource("3_exj2k")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -175, -14.5, -71)
+material_override = ExtResource("7_xc2n4")
 use_collision = true
-size = Vector3(9, 16, 13)
+size = Vector3(12, 16, 13)
 
 [node name="Non-Stick Label" type="Label3D" parent="ROOMS/Room4"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -179.9, -14, -67)
+visible = false
 pixel_size = 0.05
 text = "NON-STICK
 SURFACE"
@@ -435,10 +800,36 @@ light_color = Color(1, 0.883034, 0.804188, 1)
 light_energy = 5.905
 omni_range = 65.829
 
+[node name="CSGBox3D" type="CSGBox3D" parent="ROOMS/Room4"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -156.5, -21, -56.5)
+use_collision = true
+size = Vector3(4, 3, 4)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="ROOMS/Room4"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -156.5, -19.5, -60.5)
+use_collision = true
+size = Vector3(4, 6, 4)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="ROOMS/Room4"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -156.5, -18, -64.5)
+use_collision = true
+size = Vector3(4, 9, 4)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="ROOMS/Room4"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -156.5, -16.5, -71.5)
+use_collision = true
+size = Vector3(4, 12, 4)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="ROOMS/Room4"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -164.5, -9, -70.75)
+use_collision = true
+size = Vector3(5, 1, 5)
+
 [node name="Room4-5" type="Node3D" parent="ROOMS"]
 
 [node name="Tunnel" type="CSGBox3D" parent="ROOMS/Room4-5"]
 transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 3.55271e-15, -208.5, -8, -80)
+material_override = ExtResource("5_nldwi")
 use_collision = true
 size = Vector3(43, 39, 32)
 
@@ -480,6 +871,7 @@ size = Vector3(67, 1, 89)
 
 [node name="Ledge2" type="CSGBox3D" parent="ROOMS/Room5-6-7-8"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 2.07523e-20, -1, 0, 1.31134e-07, -218.5, -12.25, -134.5)
+use_collision = true
 size = Vector3(6, 11.5, 12)
 
 [node name="Wall" type="CSGBox3D" parent="ROOMS/Room5-6-7-8"]
@@ -913,7 +1305,7 @@ size = Vector3(1.5, 3, 2)
 [node name="ROOMLABELS" type="Node3D" parent="."]
 
 [node name="STARTLABEL" type="Label3D" parent="ROOMLABELS"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 134, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 134, 40)
 pixel_size = 0.5
 billboard = 2
 text = "START"
@@ -925,7 +1317,7 @@ billboard = 2
 text = "END"
 
 [node name="ROOM1LABEL" type="Label3D" parent="ROOMLABELS"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 27, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 27, 33.6916)
 pixel_size = 0.2
 billboard = 2
 text = "ROOM 1

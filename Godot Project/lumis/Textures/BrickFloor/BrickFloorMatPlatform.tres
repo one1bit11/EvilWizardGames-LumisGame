@@ -1,8 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dk8mgn1adphu1"]
-
-[ext_resource type="Texture2D" uid="uid://br82cxgnaiawn" path="res://Textures/BrickFloor/IMG_2499.png" id="1_u3wcc"]
-
-[resource]
-albedo_texture = ExtResource("1_u3wcc")
-metallic_specular = 0.0
-uv1_scale = Vector3(12.695, 12.695, 12.695)
