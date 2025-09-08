@@ -105,7 +105,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.49448)
 mesh = SubResource("BoxMesh_kuari")
 
 [node name="StaticBody3D9" type="StaticBody3D" parent="."]
-transform = Transform3D(2.84, 0, 0, 0, 2.84, 0, 0, 0, 2.84, 0, 0.376227, 18.2674)
+transform = Transform3D(12.6822, 0, 0, 0, 12.6822, 0, 0, 0, 12.6822, 0, 0.376227, 18.2674)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D9"]
 shape = SubResource("SphereShape3D_p7k0k")
@@ -214,7 +214,7 @@ mesh = SubResource("BoxMesh_kuari")
 surface_material_override/0 = SubResource("StandardMaterial3D_devkk")
 
 [node name="StaticBody3D12" type="StaticBody3D" parent="."]
-transform = Transform3D(3.85, 0, 0, 0, 0.698902, -13.0491, 0, 0.715217, 12.7515, 26.5261, 2.37, 14.9199)
+transform = Transform3D(3.85, 0, 0, 0, 0.707107, -12.9012, 0, 0.707107, 12.9012, 26.5261, 2.37, 14.9199)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D12"]
 shape = SubResource("BoxShape3D_buhot")
