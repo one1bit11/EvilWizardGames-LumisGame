@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cedj2q1u0eie1"
+path="res://.godot/imported/RING1.obj-708700e6290118992bfd9bba03a3a2fd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/RING1.obj-708700e6290118992bfd9bba03a3a2fd.mesh"]
+
+source_file="res://Meshes/Models/Pipes/RING1.obj"
+dest_files=["res://.godot/imported/RING1.obj-708700e6290118992bfd9bba03a3a2fd.mesh", "res://.godot/imported/RING1.obj-708700e6290118992bfd9bba03a3a2fd.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

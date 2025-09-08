@@ -15,4 +15,5 @@ func _input(event: InputEvent) -> void:
 	
 	## Teleports Mango to a set position
 	if Input.is_key_pressed(KEY_0):
-		$Mango.global_position = Vector3(1.609, 3.242, -5.446)
+		#$Mango.global_position = Vector3(1.609, 3.242, -5.446)
+		get_tree().reload_current_scene()
