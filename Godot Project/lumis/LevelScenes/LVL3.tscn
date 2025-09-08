@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://u06uwhj2ubx2"]
+
+[ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_o7gq1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dahmt"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_o7gq1"]
+
+[node name="Lvl3" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(10.015, 0, 0, 0, 0.34, 0, 0, 0, 10.015, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_dahmt")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_o7gq1")
+
+[node name="Mango" parent="." instance=ExtResource("1_o7gq1")]
+transform = Transform3D(0.57911, 0, -0.815249, 0, 1, 0, 0.815249, 0, 0.57911, 0, 1.75, 0)
+speed = 12.0
+acc = 2.0
+jumpVelocity = 40.0
+stickStrength = 12.0
+mouseSensitivity = 0.3
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.446198, 0.894934, 0, -0.894934, -0.446198, 0, 0, 0)

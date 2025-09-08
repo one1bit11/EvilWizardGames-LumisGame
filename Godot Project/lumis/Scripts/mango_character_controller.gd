@@ -5,45 +5,48 @@ extends CharacterBody3D
 
 
 @export_group("Movement")
-#speed value, adjust in the inspector
+##speed value
 @export var speed := 1.0
-#the value for rotation when rolling
+##the value for rotation when rolling
 @export var rotVal:float
-#acceleration variable
+##acceleration variable
 @export var acc := 1.0
-#turning speed 
+##turning speed 
 @export var turnSpeed := 12.0
-#Mango mesh
+##Mango mesh
 @export var mesh:Node3D
-#jump velocity
+##jump velocity
 @export var jumpVelocity := 10.0
+##how steep down a ramp can be to allign (without sticking)
+@export var allignRampDown := 0.5
+##how steep up a ramp can be to allign (without sticking)
+@export var allignRampUp := 1.5
+
 
 @export_subgroup("Sticking")
-#raycast to detect surface details
+##raycast to detect surface details
 @export var faceChecker:ShapeCast3D
-#the length of the raycast to stick to something, keep negative
+##the length of the raycast to stick to something, keep negative
 @export var FCLength := -1.5
-#how much force is applied to stick in one spot
+##how much force is applied to stick in one spot
 @export var stickStrength:float
-#the value that 
+##the value that modifies movement speed while sticking
 @export var stickSlow := 2.0
-#the raycast holder
-#@export var stickRayHolder:Node3D
-#the forward direction
+##the forward direction
 @export var upwards:RayCast3D
 
-#sticky mode toggle
+##sticky mode toggle
 var stickyMode = false
-#is actively sticking to something
+##is actively sticking to something
 var isSticking = false
 #used later to move along walls or the floor
-#checks which of the objects facechecker is colliding with is the one that is best
+##checks which of the objects facechecker is colliding with is the one that is best
 var currentSurface:Node3D
-#which of the surfaces is it
+##which of the surfaces is it
 var currentSurfaceVal:int
-#the point at which the force is aiming
+##the point at which the force is aiming
 var stickPoint:Vector3
-#the direction to the stick point
+##the direction to the stick point
 var stickPointDir:Vector3
 
 
@@ -171,18 +174,20 @@ func _physics_process(delta: float) -> void:
 		
 		for o in faceChecker.get_collision_count():
 			
-			print("faceChecker.get_collision_normal(0)EV")
-			_allign_with_surface(faceChecker.get_collision_normal(o))
+			print("angle" , faceChecker.get_collision_normal(o))
+			if faceChecker.get_collision_normal(o).y >= 0.75 && faceChecker.get_collision_normal(o).y <= 1.25:
+				_allign_with_surface(faceChecker.get_collision_normal(o))
 		
 	print(velocity)
-	if Input.is_action_just_pressed("Jump") && is_on_floor() && !isSticking:
-		
-		velocity.y += jumpVelocity
 	if Input.is_action_just_pressed("Jump") && isSticking:
 		
 		velocity += (faceChecker.get_collision_normal(currentSurfaceVal) * jumpVelocity)
+
 		velocity.y += jumpVelocity/2
-		#print(velocity)
+	if Input.is_action_just_pressed("Jump") && is_on_floor() && !isSticking:
+		
+		velocity.y += jumpVelocity + (jumpVelocity/2)
+
 
 	move_and_slide()
 	#allows the movement angles to be more consistent and sets rotation to a set speed for the character

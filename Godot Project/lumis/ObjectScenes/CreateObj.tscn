@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnglve84q3h6n"]
+
+[ext_resource type="Material" uid="uid://bje7sds7fpef2" path="res://Textures/SolidColours/Brown.tres" id="1_adgqk"]
+[ext_resource type="ArrayMesh" uid="uid://d1dl65em4t8gv" path="res://Meshes/Models/LV1Test/crate.obj" id="2_reb8w"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c0owb"]
+size = Vector3(2.07495, 2.0759, 3.21851)
+
+[node name="Create" type="StaticBody3D"]
+
+[node name="Crate" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.33805, 0, 0, 0, 3.33805, 0, 0, 0, 3.33805, 0, 1.08055, 0)
+material_override = ExtResource("1_adgqk")
+mesh = ExtResource("2_reb8w")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00012207, 1.08162, 0.0032959)
+shape = SubResource("BoxShape3D_c0owb")

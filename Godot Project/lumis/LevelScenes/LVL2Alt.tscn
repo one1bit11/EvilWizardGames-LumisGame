@@ -1,0 +1,118 @@
+[gd_scene load_steps=4 format=3 uid="uid://xc8dfxwe1wbv"]
+
+[ext_resource type="Material" uid="uid://b8cr53cav36y3" path="res://Textures/SolidColours/Blue.tres" id="1_es6pr"]
+[ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_y8wpu"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_es6pr"]
+size = Vector3(12, 4, 12)
+
+[node name="LVL2" type="Node3D"]
+
+[node name="StreetsFloor" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -25, 0)
+use_collision = true
+size = Vector3(1000, 50, 1949)
+
+[node name="RiverHole" type="CSGBox3D" parent="StreetsFloor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, -40)
+operation = 2
+use_collision = true
+size = Vector3(900, 30, 20)
+
+[node name="RiverWater" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.5, -40)
+use_collision = true
+size = Vector3(900, 29, 20)
+material = ExtResource("1_es6pr")
+
+[node name="Mango" parent="." instance=ExtResource("1_y8wpu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+speed = 12.0
+acc = 4.0
+jumpVelocity = 30.0
+stickStrength = 12.0
+mouseSensitivity = 0.3
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 100, -800)
+use_collision = true
+size = Vector3(50, 200, 50)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 218, 0)
+visible = false
+
+[node name="DebugLights" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 172, 0)
+
+[node name="TempDirectionalLight3D" type="DirectionalLight3D" parent="DebugLights"]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 2, 50, 0)
+light_color = Color(0.64, 0.64, 0.64, 1)
+
+[node name="TempDirectionalLight3D2" type="DirectionalLight3D" parent="DebugLights"]
+transform = Transform3D(-0.707107, 0.5, -0.5, 0, 0.707107, 0.707107, 0.707107, 0.5, -0.5, -2, 50, 0)
+light_color = Color(0.88, 0.773227, 0.6336, 1)
+
+[node name="TempDirectionalLight3D3" type="DirectionalLight3D" parent="DebugLights"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 50, 0)
+light_color = Color(0.43, 0.43, 0.43, 1)
+
+[node name="BuildingBase" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62, 2.5, -12)
+use_collision = true
+size = Vector3(10, 15, 10)
+
+[node name="BuildingRoof" type="CSGMesh3D" parent="BuildingBase"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.5, 0)
+mesh = SubResource("PrismMesh_es6pr")
+
+[node name="BuildingBase2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -102)
+use_collision = true
+size = Vector3(10, 15, 10)
+
+[node name="BuildingRoof" type="CSGMesh3D" parent="BuildingBase2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.5, 0)
+mesh = SubResource("PrismMesh_es6pr")
+
+[node name="RoofHole" type="CSGBox3D" parent="BuildingBase2/BuildingRoof"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+operation = 2
+size = Vector3(5, 2, 12)
+
+[node name="StreetBoundary" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 5, -43.5)
+size = Vector3(5, 10, 124)
+
+[node name="StreetBoundary2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 5, -43.5)
+size = Vector3(5, 10, 124)
+
+[node name="StreetBoundary3" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, 16.5)
+size = Vector3(5, 10, 40)
+
+[node name="StreetBoundary4" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, -103.5)
+size = Vector3(5, 10, 40)
+
+[node name="ROOMLABELS" type="Node3D" parent="."]
+
+[node name="STARTLABEL" type="Label3D" parent="ROOMLABELS"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 134, 0)
+pixel_size = 0.5
+billboard = 2
+text = "START"
+
+[node name="SECTION1LABEL" type="Label3D" parent="ROOMLABELS"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 27, 0)
+pixel_size = 0.2
+billboard = 2
+text = "SECTION 1
+(START)"
+
+[node name="SECTION2LABEL" type="Label3D" parent="ROOMLABELS"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 27, -74)
+pixel_size = 0.2
+billboard = 2
+text = "SECTION 2"

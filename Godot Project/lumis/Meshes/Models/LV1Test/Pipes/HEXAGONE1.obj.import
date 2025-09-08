@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwv8h1le6hm6r"
+path="res://.godot/imported/HEXAGONE1.obj-968e47cf7ad2454bd5a84609ee882432.mesh"
+
+[deps]
+
+files=["res://.godot/imported/HEXAGONE1.obj-968e47cf7ad2454bd5a84609ee882432.mesh"]
+
+source_file="res://Meshes/Models/LV1Test/Pipes/HEXAGONE1.obj"
+dest_files=["res://.godot/imported/HEXAGONE1.obj-968e47cf7ad2454bd5a84609ee882432.mesh", "res://.godot/imported/HEXAGONE1.obj-968e47cf7ad2454bd5a84609ee882432.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
