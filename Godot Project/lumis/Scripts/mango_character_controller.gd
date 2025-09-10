@@ -116,20 +116,43 @@ func _get_move_input(delta):
 
 		#set the direction based on the values of the wall
 		#rot = faceChecker.get_collision_normal(currentSurfaceVal)*90
+		var test = faceChecker.get_collision_normal(currentSurfaceVal).y
+		var ygreater : bool
+		var yequal : bool
 		
 		
 		
 		
-		print(stickRot)
+		#print("colnorm" ,faceChecker.get_collision_normal(currentSurfaceVal))
+		#print("test", Vector3(0, 1 - test,0))
 		
 		
 		
-		
+		if faceChecker.get_collision_normal(currentSurfaceVal).y > faceChecker.get_collision_normal(currentSurfaceVal).z:
+			ygreater = true
+			yequal = false
+		elif faceChecker.get_collision_normal(currentSurfaceVal).y < faceChecker.get_collision_normal(currentSurfaceVal).z:
+			ygreater = false
+			yequal = false
+		elif faceChecker.get_collision_normal(currentSurfaceVal).y == faceChecker.get_collision_normal(currentSurfaceVal).z:
+			yequal = true
+			ygreater = false
 		
 		#temporary
 		if !is_on_floor():
+			if ygreater:
+				print("greatur")
+				dir = Vector3(input.x,-(1 - input.y / faceChecker.get_collision_normal(currentSurfaceVal).y),input.y/ faceChecker.get_collision_normal(currentSurfaceVal).y).rotated(Vector3(0,1 - test,0),rot).normalized()
+				print("y+",dir)
+			elif !ygreater:
+				
+				dir = Vector3(input.x,-(input.y / faceChecker.get_collision_normal(currentSurfaceVal).y),1 - input.y/ faceChecker.get_collision_normal(currentSurfaceVal).y).rotated(Vector3(0,1 - test,0),rot).normalized()
+				print("y-",dir)
+			elif yequal:
+				dir = Vector3(input.x,-(input.y/2),input.y/2).rotated(Vector3(0,1 - test,0),rot).normalized()
+				
 			## IDEA clamp campivot results to only be on the same plane that you're moving across while sticking to prevent falling off
-			dir = Vector3(input.x,-input.y,0).rotated(Vector3.UP,rot).normalized()
+			#dir = Vector3(input.x,-input.y,0).rotated(Vector3(0,1 - test,0),rot).normalized()
 		else:
 			
 			rot = camPivot.rotation.y
@@ -174,16 +197,16 @@ func _physics_process(delta: float) -> void:
 		
 		for o in faceChecker.get_collision_count():
 			
-			print("angle" , faceChecker.get_collision_normal(o))
+			#print("angle" , faceChecker.get_collision_normal(o))
 			if faceChecker.get_collision_normal(o).y >= 0.75 && faceChecker.get_collision_normal(o).y <= 1.25:
 				_allign_with_surface(faceChecker.get_collision_normal(o))
 		
-	print(velocity)
+	#print(velocity)
 	if Input.is_action_just_pressed("Jump") && isSticking:
 		
 		velocity += (faceChecker.get_collision_normal(currentSurfaceVal) * jumpVelocity)
 
-		velocity.y += jumpVelocity/2
+		velocity.y += jumpVelocity/2 
 	if Input.is_action_just_pressed("Jump") && is_on_floor() && !isSticking:
 		
 		velocity.y += jumpVelocity + (jumpVelocity/2)
