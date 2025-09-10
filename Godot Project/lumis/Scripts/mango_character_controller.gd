@@ -107,6 +107,15 @@ func _get_move_input(delta):
 		velocity = Vector3.ZERO
 		input = Vector3.ZERO
 		input = Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		rot = -(atan2(faceChecker.get_collision_normal(currentSurfaceVal).z, faceChecker.get_collision_normal(currentSurfaceVal).x) - PI/2)
 		
 		#global_transform.basis.get_euler().y
@@ -126,33 +135,11 @@ func _get_move_input(delta):
 		#print("colnorm" ,faceChecker.get_collision_normal(currentSurfaceVal))
 		#print("test", Vector3(0, 1 - test,0))
 		
-		
-		
-		if faceChecker.get_collision_normal(currentSurfaceVal).y > faceChecker.get_collision_normal(currentSurfaceVal).z:
-			ygreater = true
-			yequal = false
-		elif faceChecker.get_collision_normal(currentSurfaceVal).y < faceChecker.get_collision_normal(currentSurfaceVal).z:
-			ygreater = false
-			yequal = false
-		elif faceChecker.get_collision_normal(currentSurfaceVal).y == faceChecker.get_collision_normal(currentSurfaceVal).z:
-			yequal = true
-			ygreater = false
-		
 		#temporary
 		if !is_on_floor():
-			if ygreater:
-				print("greatur")
-				dir = Vector3(input.x,-(1 - input.y / faceChecker.get_collision_normal(currentSurfaceVal).y),input.y/ faceChecker.get_collision_normal(currentSurfaceVal).y).rotated(Vector3(0,1 - test,0),rot).normalized()
-				print("y+",dir)
-			elif !ygreater:
-				
-				dir = Vector3(input.x,-(input.y / faceChecker.get_collision_normal(currentSurfaceVal).y),1 - input.y/ faceChecker.get_collision_normal(currentSurfaceVal).y).rotated(Vector3(0,1 - test,0),rot).normalized()
-				print("y-",dir)
-			elif yequal:
-				dir = Vector3(input.x,-(input.y/2),input.y/2).rotated(Vector3(0,1 - test,0),rot).normalized()
 				
 			## IDEA clamp campivot results to only be on the same plane that you're moving across while sticking to prevent falling off
-			#dir = Vector3(input.x,-input.y,0).rotated(Vector3(0,1 - test,0),rot).normalized()
+			dir = Vector3(input.x,-input.y,0).rotated(Vector3(0,1 - test,0),rot).normalized()
 		else:
 			
 			rot = camPivot.rotation.y
