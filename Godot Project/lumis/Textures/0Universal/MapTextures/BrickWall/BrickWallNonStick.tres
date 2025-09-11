@@ -9,7 +9,6 @@ albedo_color = Color(0.947199, 0.947199, 0.947199, 1)
 albedo_texture = ExtResource("1_bpips")
 metallic = 0.6
 metallic_texture = ExtResource("3_jim58")
-roughness = 0.92
 roughness_texture = ExtResource("3_jim58")
 roughness_texture_channel = 1
 emission_operator = 1
