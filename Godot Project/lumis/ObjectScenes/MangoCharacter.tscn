@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://d141gk5umir7l"]
 
 [ext_resource type="Script" uid="uid://crub8m7rjahjq" path="res://Scripts/mango_character_controller.gd" id="1_qccra"]
-[ext_resource type="PackedScene" uid="uid://cmhvntnt2oi8r" path="res://Meshes/MangoMeshFinal.tscn" id="2_qccra"]
-[ext_resource type="Material" uid="uid://bn3ea0tykiugl" path="res://Textures/MangoEye.tres" id="3_shwng"]
+[ext_resource type="PackedScene" uid="uid://cmhvntnt2oi8r" path="res://Meshes/Other/Mango/MangoMeshFinal.tscn" id="2_qccra"]
+[ext_resource type="Material" uid="uid://bn3ea0tykiugl" path="res://Textures/Other/MangoEye.tres" id="3_shwng"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_qccra"]
 radius = 0.846402
@@ -14,6 +14,7 @@ radius = 1.0
 
 [node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "faceChecker", "upwards", "camPivot", "cam")]
 collision_priority = 0.1
+platform_wall_layers = 1
 script = ExtResource("1_qccra")
 mesh = NodePath("MangoMeshFinal")
 jumpVelocity = 7.5
