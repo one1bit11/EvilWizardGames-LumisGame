@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=47 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_xlif7"]
@@ -26,6 +26,9 @@
 [ext_resource type="PackedScene" uid="uid://bcfs8wj21428r" path="res://ObjectScenes/PlaceholderFenceObj.tscn" id="25_o83hb"]
 [ext_resource type="Material" uid="uid://w7xc8nptdhij" path="res://Textures/Other/SolidColours/Grey.tres" id="25_soyx7"]
 [ext_resource type="Material" uid="uid://slf1xk4kg5nr" path="res://Textures/Other/SolidColours/LightGrey.tres" id="25_sp4ew"]
+[ext_resource type="ArrayMesh" uid="uid://7uwdnx4owqp3" path="res://Meshes/0Universal/Pipes/RING1.obj" id="27_ef30m"]
+[ext_resource type="ArrayMesh" uid="uid://cbx30gmewtuct" path="res://Meshes/0Universal/Pipes/SLEEVE2.obj" id="28_kjly1"]
+[ext_resource type="ArrayMesh" uid="uid://dm15j0rjpfclu" path="res://Meshes/0Universal/Pipes/RING4.obj" id="29_sgs7q"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xlif7"]
 
@@ -294,7 +297,6 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 60,
 visible = false
 
 [node name="DebugLights" type="Node3D" parent="."]
-visible = false
 
 [node name="TempDirectionalLight3D" type="DirectionalLight3D" parent="DebugLights"]
 transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 2, 50, 0)
@@ -1476,7 +1478,7 @@ spot_angle = 16.2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -84, -7)
 
 [node name="Water" type="CSGBox3D" parent="ROOMS/Room9+10"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -367.5, 62, -172.5)
+transform = Transform3D(0.999045, 0, 0, 0, 0.999045, 0, 0, 0, 0.999045, -367.505, 62.0017, -172.489)
 material_override = ExtResource("3_v23sc")
 size = Vector3(10, 3, 66)
 
@@ -1884,6 +1886,297 @@ libraries = {
 &"": SubResource("AnimationLibrary_lmwpc")
 }
 autoplay = "LV1R10Creates"
+
+[node name="Ring2" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(15.1098, 0, 0, 0, 0.0776172, 16.4246, 0, -9.22627, 0.138174, -367.552, 64.5873, -153.653)
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring3" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(15.1098, 0, 0, 0, 0.0776172, 16.4246, 0, -9.22627, 0.138174, -367.552, 64.5873, -191.294)
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring4" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(15.1098, 0, 0, 0, 0.0776172, 16.4246, 0, -9.22627, 0.138174, -387.429, 64.5873, -191.294)
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring5" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(15.1098, 0, 0, 0, 0.0776172, 16.4246, 0, -9.22627, 0.138174, -397.325, 64.5873, -191.294)
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring9" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(15.1098, 0, 0, 0, 0.0776172, 16.4246, 0, -9.22627, 0.138174, -387.429, 64.5873, -153.669)
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring10" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(15.1098, 0, 0, 0, 0.0776172, 16.4246, 0, -9.22627, 0.138174, -397.325, 64.5873, -153.669)
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring6" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(15.1098, 0, 0, 0, 0.0776172, 16.4246, 0, -9.22627, 0.138174, -417.621, 64.5873, -191.294)
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring7" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(15.1098, 0, 0, 0, 0.0776172, 16.4246, 0, -9.22627, 0.138174, -427.682, 64.5873, -191.294)
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring8" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(15.1098, 0, 0, 0, 0.0776172, 16.4246, 0, -9.22627, 0.138174, -437.461, 64.5873, -191.294)
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring11" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(15.1098, 0, 0, 0, 0.0776172, 16.4246, 0, -9.22627, 0.138174, -417.621, 64.5873, -153.756)
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring12" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(15.1098, 0, 0, 0, 0.0776172, 16.4246, 0, -9.22627, 0.138174, -427.682, 64.5873, -153.756)
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Ring13" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(15.1098, 0, 0, 0, 0.0776172, 16.4246, 0, -9.22627, 0.138174, -437.461, 64.5873, -153.756)
+mesh = ExtResource("13_yi7or")
+skeleton = NodePath("../..")
+
+[node name="Tubelong" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.02937e-07, 0, 21.8908, 0, 2.35493, 0, -2.35493, 0, -9.56878e-07, -403.141, 73.6978, -190.604)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong2" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.02937e-07, 0, 21.8908, 0, 2.35493, 0, -2.35493, 0, -9.56878e-07, -403.141, 75.361, -190.604)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong6" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-6.57516e-08, 0, 10.886, 0, 1.50422, 0, -1.50422, 0, -4.75842e-07, -419.768, 71.8278, -191.696)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong4" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-6.57516e-08, 0, 3.98929, 0, 1.50422, 0, -1.50422, 0, -1.74377e-07, -405.219, 78.1177, -191.696)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong7" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.23477e-15, 1.50726, -1.66225e-08, 6.58844e-08, -6.58845e-08, -0.380279, -1.50726, 0, -1.66225e-08, -415.74, 79.8385, -191.696)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong8" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.21816e-15, 1.38127, -2.5327e-08, 6.57516e-08, -6.03773e-08, -0.579414, -1.50422, 0, -2.5327e-08, -394.793, 79.7835, -191.696)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong12" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.21816e-15, 1.50422, -5.87482e-08, 6.57516e-08, -6.57516e-08, -1.344, -1.50422, 0, -5.87482e-08, -408.046, 67.7145, -191.696)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong13" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.21816e-15, 1.50422, -5.54576e-08, 6.57516e-08, -6.57516e-08, -1.26872, -1.50422, 0, -5.54576e-08, -447.244, 67.7145, -191.936)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong5" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.21816e-15, 1.50422, -8.16128e-08, 6.57516e-08, -6.57516e-08, -1.86708, -1.50422, 0, -8.16128e-08, -390.402, 77.1913, -189.703)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong24" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.21816e-15, 1.50422, -2.45259e-07, -1.50422, 8.21816e-15, 4.71543e-14, -1.42109e-14, 6.57516e-08, 5.61087, -390.312, 82.4623, -204.254)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong25" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.21816e-15, 1.50422, -5.13217e-08, 6.57515e-08, 6.57516e-08, 1.1741, 1.50422, -5.74819e-15, -5.13217e-08, -390.312, 85.7399, -217.128)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong9" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.21816e-15, 1.50422, -1.54724e-07, 6.57516e-08, -6.57516e-08, -3.53968, -1.50422, 0, -1.54724e-07, -374.999, 73.2105, -191.569)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong19" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(6.57516e-08, -1.31503e-07, -5.88253, -1.10922e-14, -1.50422, 5.14267e-07, -1.50422, 0, -2.57133e-07, -360.202, 82.6283, -193.406)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong20" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(6.57516e-08, -1.31503e-07, -6.18806, -1.10922e-14, -1.50422, 5.40977e-07, -1.50422, 0, -2.70488e-07, -361.354, 82.6283, -195.881)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong21" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(6.57516e-08, -1.31503e-07, -6.71754, -1.10922e-14, -1.50422, 5.87266e-07, -1.50422, 0, -2.93633e-07, -362.249, 82.6846, -199.023)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong22" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.50422, 1.64363e-14, -5.68434e-15, -1.10922e-14, -1.50422, -1.17453e-07, -1.42109e-14, 1.31503e-07, -1.34351, -379.475, 82.6416, -195.294)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong23" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.50422, 1.64363e-14, -2.90818e-15, -1.10922e-14, -1.50422, -6.00906e-08, -1.42109e-14, 1.31503e-07, -0.687356, -377.198, 82.6416, -193.648)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong10" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.21816e-15, 1.50422, -1.54724e-07, 6.57516e-08, -6.57516e-08, -3.53968, -1.50422, 0, -1.54724e-07, -377.214, 73.2105, -191.569)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong11" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.21816e-15, 1.50422, -1.54724e-07, 6.57516e-08, -6.57516e-08, -3.53968, -1.50422, 0, -1.54724e-07, -379.483, 73.2105, -191.569)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="HalfTube" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-7.08124e-08, 0, 1.62, 0, 1.62, 0, -1.62, 0, -7.08124e-08, -446.963, 71.4798, -191.938)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube9" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.09051e-07, 0, 2.4948, 2.4948, -1.09051e-07, 1.09051e-07, 1.09051e-07, 2.4948, 4.76678e-15, -457.593, 73.6628, -191.127)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube10" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.09051e-07, 0, 2.4948, 2.4948, -1.09051e-07, 1.09051e-07, 1.09051e-07, 2.4948, 4.76678e-15, -457.627, 75.3807, -191.127)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube12" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(1.09051e-07, 2.4948, -1.09051e-07, 2.4948, -1.09051e-07, 1.09051e-07, 1.09051e-07, -1.09051e-07, -2.4948, -348.685, 75.305, -191.1)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube13" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(1.09051e-07, 2.4948, -1.09051e-07, 2.4948, -1.09051e-07, 1.09051e-07, 1.09051e-07, -1.09051e-07, -2.4948, -348.685, 73.6668, -191.1)
+mesh = ExtResource("16_0o8k2")
+
+[node name="TJunction" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-7.95547e-08, 1.82, 0, 7.95547e-08, 3.47745e-15, -1.82, -1.82, -7.95547e-08, -7.95547e-08, -408.047, 71.5287, -191.678)
+mesh = ExtResource("16_u084n")
+skeleton = NodePath("../../..")
+
+[node name="HalfTube2" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-7.1068e-08, 1.62585, 0, -1.62585, -7.1068e-08, 0, 0, 0, 1.62585, -392.55, 71.8192, -191.443)
+mesh = ExtResource("16_0o8k2")
+skeleton = NodePath("../../..")
+
+[node name="HalfTube3" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(7.1068e-08, -1.62585, 1.42136e-07, -1.62585, -7.1068e-08, 0, 6.21296e-15, -1.42136e-07, -1.62585, -392.021, 71.8192, -189.985)
+mesh = ExtResource("16_0o8k2")
+skeleton = NodePath("../../..")
+
+[node name="HalfTube4" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(7.1068e-08, 1.62585, -1.42136e-07, 0.0394678, 1.40369e-07, 1.62537, 1.62537, -7.44974e-08, -0.0394678, -390.674, 72.1036, -189.708)
+mesh = ExtResource("16_0o8k2")
+skeleton = NodePath("../../..")
+
+[node name="HalfTube22" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.62537, 3.42945e-09, 0.0394677, -1.70426e-09, 1.62585, -2.11458e-07, -0.0394677, -2.11437e-07, -1.62537, -390.412, 82.1776, -189.991)
+mesh = ExtResource("16_0o8k2")
+skeleton = NodePath("../../..")
+
+[node name="HalfTube23" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.62537, 1.45565e-07, 0.0394676, -1.4039e-07, -1.62585, 2.14908e-07, 0.0394676, 2.11437e-07, 1.62537, -390.29, 82.765, -216.943)
+mesh = ExtResource("16_0o8k2")
+skeleton = NodePath("../../..")
+
+[node name="HalfTube24" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.62537, 1.45565e-07, 0.0394676, 1.3694e-07, 1.62585, -3.57002e-07, -0.0394676, -3.53573e-07, -1.62537, -390.29, 88.7167, -217.397)
+mesh = ExtResource("16_0o8k2")
+skeleton = NodePath("../../..")
+
+[node name="HalfTube5" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(3.60874e-15, -1.3851, -6.05446e-08, -8.25584e-08, -6.05446e-08, 1.3851, -1.3851, 0, -8.25584e-08, -415.5, 78.3905, -191.608)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube15" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.3851, 6.05446e-08, -8.25584e-08, 6.05446e-08, 1.3851, 7.10543e-15, 8.25584e-08, 0, -1.3851, -415.717, 81.3441, -191.897)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube25" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.3851, 6.05446e-08, -8.25584e-08, 6.05446e-08, 1.3851, 7.10543e-15, 8.25584e-08, 0, -1.3851, -394.813, 81.3441, -191.897)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube6" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.25584e-08, 1.21089e-07, -1.3851, 7.21748e-15, -1.3851, -1.21089e-07, -1.3851, 0, -8.25584e-08, -395.018, 78.3905, -191.608)
+mesh = ExtResource("16_0o8k2")
+
+[node name="Tubelong14" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-6.57516e-08, 0, 4.79656, 0, 1.50422, 0, -1.50422, 0, -2.09664e-07, -405.735, 76.8326, -191.696)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong15" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.21816e-15, 1.80861, -3.84928e-08, 6.57516e-08, -7.9057e-08, -0.880614, -1.50422, 0, -3.84928e-08, -418.327, 79.7902, -191.696)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong16" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.21816e-15, 1.77424, -4.23098e-08, 6.57516e-08, -7.75545e-08, -0.967936, -1.50422, 0, -4.23098e-08, -393.185, 79.9445, -191.696)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong17" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.21816e-15, 1.77424, -2.25274e-07, -1.50422, -2.91335e-15, 5.67482e-14, -7.10543e-15, 7.75545e-08, 5.15368, -393.194, 82.9593, -205.008)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="Tubelong18" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(9.617e-15, 1.77424, -2.25274e-07, -1.76026, -2.91335e-15, 5.67482e-14, -8.31487e-15, 7.75545e-08, 5.15368, -418.317, 82.9225, -205.008)
+mesh = ExtResource("12_c0owb")
+skeleton = NodePath("../../..")
+
+[node name="HalfTube7" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(3.60874e-15, -1.66539, -6.05446e-08, -8.25584e-08, -7.27964e-08, 1.3851, -1.3851, 0, -8.25584e-08, -418.088, 77.1054, -191.604)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube11" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.84401, 7.27964e-08, -8.25584e-08, 8.06042e-08, 1.66539, 7.10543e-15, 1.09911e-07, 7.10543e-15, -1.3851, -418.326, 82.6354, -191.93)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube14" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.84401, 7.27964e-08, -8.25584e-08, 8.06042e-08, 1.66539, 7.10543e-15, 1.09911e-07, 7.10543e-15, -1.3851, -393.166, 82.6354, -191.93)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube8" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(8.25584e-08, 1.21089e-07, -1.66539, 7.21748e-15, -1.3851, -1.45593e-07, -1.3851, 0, -9.92648e-08, -393.47, 77.1054, -191.608)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube16" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.5, 0, -1.31134e-07, 0, 1.5, 0, 1.31134e-07, 0, -1.5, -379.477, 82.407, -191.85)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube17" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.5, 0, -1.31134e-07, 0, 1.5, 0, 1.31134e-07, 0, -1.5, -377.21, 82.407, -191.85)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube18" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.5, 0, -1.31134e-07, 0, 1.5, 0, 1.31134e-07, 0, -1.5, -374.977, 82.407, -191.85)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube19" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.31134e-07, 6.55671e-08, 1.5, -1.5, -6.55671e-08, -1.31134e-07, 6.55671e-08, -1.5, 6.55671e-08, -374.73, 82.6473, -193.13)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube20" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.31134e-07, 6.55671e-08, 1.5, -1.5, -6.55671e-08, -1.31134e-07, 6.55671e-08, -1.5, 6.55671e-08, -376.944, 82.6473, -195.626)
+mesh = ExtResource("16_0o8k2")
+
+[node name="HalfTube21" type="MeshInstance3D" parent="ROOMS/Room9+10"]
+transform = Transform3D(-1.31134e-07, 6.55671e-08, 1.5, -1.5, -6.55671e-08, -1.31134e-07, 6.55671e-08, -1.5, 6.55671e-08, -379.231, 82.6473, -198.787)
+mesh = ExtResource("16_0o8k2")
 
 [node name="Room11" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -22, -7)
@@ -2870,3 +3163,215 @@ light_color = Color(1, 0.953788, 0.941996, 1)
 light_energy = 40.0
 spot_range = 4096.0
 spot_angle = 90.0
+
+[node name="Ring1" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.7633, 0, 0, 0, 0.133192, -1.75826, 0, 1.75826, 0.133192, -389.195, -1.03494, -224.272)
+mesh = ExtResource("27_ef30m")
+
+[node name="Ring2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.7633, 0, 0, 0, 0.133192, -1.75826, 0, 1.75826, 0.133192, -414.31, -1.03494, -224.272)
+mesh = ExtResource("27_ef30m")
+
+[node name="Ring3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.48045, 0, 0, 0, -0.0221689, -1.48029, 0, 1.48029, -0.0221689, -386.273, 4.93047, -224.371)
+mesh = ExtResource("27_ef30m")
+
+[node name="Ring4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.47127e-08, -1.48029, 0.0221689, 0, -0.0221689, -1.48029, 1.48045, -6.47054e-08, 9.69034e-10, -342.105, -1.21031, -206.075)
+mesh = ExtResource("27_ef30m")
+
+[node name="Ring5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.47127e-08, -1.48029, 0.0221689, 0, -0.0221689, -1.48029, 1.48045, -6.47054e-08, 9.69034e-10, -342.105, -1.38626, -202.889)
+mesh = ExtResource("27_ef30m")
+
+[node name="Ring6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.47127e-08, -1.48029, 0.0221689, 0, -0.0221689, -1.48029, 1.48045, -6.47054e-08, 9.69034e-10, -342.105, -1.32144, -200.448)
+mesh = ExtResource("27_ef30m")
+
+[node name="Ring7" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.50052, 0, 0, 1.01795e-16, -0.0374438, -2.50024, 0, 2.50024, -0.0374438, -344.304, -8.7033, -198.853)
+mesh = ExtResource("27_ef30m")
+
+[node name="Ring8" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.50052, 0, 0, 1.01795e-16, -0.0374438, -2.50024, 0, 2.50024, -0.0374438, -344.255, -10.3253, -198.853)
+mesh = ExtResource("27_ef30m")
+
+[node name="Ring9" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.4206, 0, 0, 2.17246e-24, -1.42044, 0.0212727, 5.78317e-17, -0.0212727, -1.42044, -370.998, -19.4057, -198.566)
+mesh = ExtResource("27_ef30m")
+
+[node name="Ring10" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.4206, 0, 0, 2.17246e-24, -1.42044, 0.0212727, 5.78317e-17, -0.0212727, -1.42044, -373.201, -19.4057, -198.566)
+mesh = ExtResource("27_ef30m")
+
+[node name="Ring11" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.4206, 0, 0, 2.17246e-24, -1.42044, 0.0212727, 5.78317e-17, -0.0212727, -1.42044, -375.487, -19.4057, -198.566)
+mesh = ExtResource("27_ef30m")
+
+[node name="Ring12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.34777, 0, 0, 2.06109e-24, -1.10669, 0.0202417, 5.48669e-17, -0.0165739, -1.3516, -404.048, -19.4057, -198.688)
+mesh = ExtResource("27_ef30m")
+
+[node name="Ring13" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.34777, 0, 0, 2.06109e-24, -1.10669, 0.0202417, 5.48669e-17, -0.0165739, -1.3516, -443.261, -19.4057, -198.887)
+mesh = ExtResource("27_ef30m")
+
+[node name="Sleeve2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.09969e-07, 0, -7.0024, 0, 2.16888, 0, 2.51579, 0, -3.06085e-07, -419.337, -10.2884, -197.712)
+mesh = ExtResource("28_kjly1")
+
+[node name="Sleeve3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.09969e-07, 0, -7.0024, 0, 2.16888, 0, 2.51579, 0, -3.06085e-07, -402.395, -8.65734, -197.712)
+mesh = ExtResource("28_kjly1")
+
+[node name="Sleeve4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.09969e-07, 0, -3.12661, 0, 2.16888, 0, 2.51579, 0, -1.36668e-07, -368.025, -8.65734, -197.712)
+mesh = ExtResource("28_kjly1")
+
+[node name="Tubesleeve" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.71702e-08, 0, -2.09043, 0, 1.58201, 0, 1.53668, 0, -9.13757e-08, -430.332, -12.1535, -198.702)
+mesh = ExtResource("20_usjop")
+
+[node name="Tubesleeve2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.71702e-08, 0, -4.47138, 0, 1.58201, 0, 1.53668, 0, -1.9545e-07, -396.849, -12.1535, -198.702)
+mesh = ExtResource("20_usjop")
+
+[node name="Tubesleeve3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.02316e-07, 0, -4.47138, -2.33208, 0.195821, 1.94729e-07, 0.200872, 2.27343, -1.67729e-08, -375.416, -10.2155, -197.466)
+mesh = ExtResource("20_usjop")
+
+[node name="Sleeve5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.45007, 0, 0, 0, -7.66598e-08, -4.19973, 0, 1.75377, -1.83576e-07, -386.399, -6.48417, -196.735)
+mesh = ExtResource("28_kjly1")
+
+[node name="Sleeve6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.30327e-08, 6.78164e-08, 3.49837, 1.44202, 1.39881e-14, 1.52918e-07, 0, 1.55146, -1.52918e-07, -405.858, -5.81961, -198.636)
+mesh = ExtResource("28_kjly1")
+
+[node name="Sleeve7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.30327e-08, 6.78164e-08, 3.49837, 1.44202, 1.39881e-14, 1.52918e-07, 0, 1.55146, -1.52918e-07, -399.41, -7.12279, -198.636)
+mesh = ExtResource("28_kjly1")
+
+[node name="Sleeve8" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.44202, 1.10238e-14, 1.42109e-14, 7.10543e-15, -6.78164e-08, -3.49837, -2.23937e-22, 1.55146, -1.52918e-07, -443.226, -15.0964, -198.935)
+mesh = ExtResource("28_kjly1")
+
+[node name="Ring14" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.57121e-08, 0, 3.3129, 0, 1.44794, 0, -1.50332, 0, -1.44811e-07, -442.317, -12.1889, -198.764)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring15" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.57121e-08, 0, 3.3129, 0, 1.44794, 0, -1.50332, 0, -1.44811e-07, -389.358, -12.1889, -198.764)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring16" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.50332, 0, -1.42109e-14, 0, 1.44794, 0, 0, 0, 3.3129, -388.326, -12.1889, -197.835)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring17" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.50332, 0, -1.42109e-14, 0, -6.32916e-08, 3.3129, 0, -1.44794, -1.44811e-07, -386.388, -11.267, -196.773)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring18" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.50332, 0, -1.42109e-14, 0, -6.32916e-08, 3.3129, 0, -1.44794, -1.44811e-07, -386.4, -2.50348, -196.689)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring19" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.50332, -2.6805e-29, -1.42109e-14, 6.3668e-22, -1.44794, -2.89623e-07, 6.3668e-22, 1.26583e-07, -3.3129, -386.419, -1.57041, -197.713)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring20" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.50332, -2.6805e-29, -1.42109e-14, -6.3668e-22, -6.32916e-08, 3.3129, 6.3668e-22, -1.44794, -1.44811e-07, -375.491, -2.10253, -198.603)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring21" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.50332, -2.6805e-29, -1.42109e-14, -6.3668e-22, -6.32916e-08, 3.3129, 6.3668e-22, -1.44794, -1.44811e-07, -373.184, -2.10253, -198.603)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring22" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.50332, -2.6805e-29, -1.42109e-14, -6.3668e-22, -6.32916e-08, 3.3129, 6.3668e-22, -1.44794, -1.44811e-07, -371.006, -2.10253, -198.603)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring23" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.57121e-08, -6.32916e-08, 3.3129, -1.50332, 2.76656e-15, -1.44811e-07, 6.3668e-22, -1.44794, -1.44811e-07, -370.064, -1.3633, -200.415)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring24" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.57121e-08, -6.32916e-08, 3.3129, -1.50332, 2.76656e-15, -1.44811e-07, 6.3668e-22, -1.44794, -1.44811e-07, -372.428, -1.3633, -202.854)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring25" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.57121e-08, -6.32916e-08, 3.3129, -1.50332, 2.76656e-15, -1.44811e-07, 6.3668e-22, -1.44794, -1.44811e-07, -374.697, -1.3633, -206.097)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring26" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.70177, 0, -1.12717e-14, 0, -5.79369e-08, 2.6277, 7.20726e-22, -1.32544, -1.14861e-07, -389.179, -1.79773, -198.673)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring27" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.70177, 2.99452e-29, -1.12717e-14, -1.51461e-28, -1.61757, -2.29721e-07, -7.20727e-22, 1.41412e-07, -2.6277, -389.179, -1.09536, -199.575)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring28" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.30849, 6.7951e-29, -2.26468e-14, 1.10833e-21, -5.34816e-08, 5.27952, 5.54165e-22, -1.22352, -2.30775e-07, -390.799, -3.0236, -198.576)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring37" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.30849, 6.7951e-29, -2.26468e-14, 1.10833e-21, -5.34816e-08, 5.27952, 5.54165e-22, -1.22352, -2.30775e-07, -411.698, -3.0236, -198.576)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring38" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.30849, 6.7951e-29, -8.97553e-15, 1.10833e-21, -5.34816e-08, 2.09242, 5.54165e-22, -1.22352, -9.14625e-08, -411.698, -5.07209, -198.576)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring39" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.71957e-08, 5.34816e-08, -2.09242, 1.30849, 2.33775e-15, -9.14624e-08, 5.54165e-22, -1.22352, -9.14625e-08, -410.946, -5.81441, -198.576)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring40" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.0059e-07, 1.02126e-07, -4.9993, 2.30123, 4.46407e-15, -2.18526e-07, 9.74609e-22, -2.33637, -2.18526e-07, -452.765, -8.62869, -197.579)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring41" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.0059e-07, 1.02126e-07, -4.9993, 2.30123, 4.46407e-15, -2.18526e-07, 9.74609e-22, -2.33637, -2.18526e-07, -452.679, -10.3561, -197.579)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring42" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.0059e-07, 1.02126e-07, -4.9993, 2.30123, 4.46407e-15, -2.18526e-07, 9.74609e-22, -2.33637, -2.18526e-07, -345.759, -10.3561, -197.579)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring43" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.0059e-07, 1.02126e-07, -4.9993, 2.30123, 4.46407e-15, -2.18526e-07, 9.74609e-22, -2.33637, -2.18526e-07, -345.759, -8.70932, -197.579)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring29" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.95055e-08, -5.34816e-08, 2.6277, -1.36133, 2.33775e-15, -1.14861e-07, 5.76545e-22, -1.22352, -1.14861e-07, -391.532, -5.84346, -198.654)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring30" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.36133, 4.67551e-15, -2.29721e-07, 1.19011e-07, 5.34816e-08, -2.6277, 8.64817e-22, -1.22352, -1.14861e-07, -390.8, -5.07726, -198.654)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring31" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.63323, 5.16628e-15, -2.1855e-07, 1.42782e-07, 5.90953e-08, -2.49992, 1.03755e-21, -1.35194, -1.09275e-07, -389.196, -6.33802, -198.573)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring32" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.14173e-07, 5.90953e-08, -2.49992, 1.63323, -7.74941e-15, 3.27825e-07, 1.03755e-21, -1.35194, -1.09275e-07, -390.085, -7.07547, -198.607)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring33" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.84166e-07, 5.90953e-08, -2.49992, 1.40441, -7.74941e-15, 3.27825e-07, 8.92187e-22, -1.35194, -1.09275e-07, -413.329, -7.14611, -198.607)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring34" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.6543, -1.03326e-14, 4.371e-07, -2.89247e-07, -5.90953e-08, 2.49992, 1.75156e-21, -1.35194, -1.09275e-07, -414.335, -6.40755, -198.655)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring35" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.6543, -1.03326e-14, 4.371e-07, -2.89247e-07, -5.90953e-08, 2.49992, 1.75156e-21, -1.35194, -1.09275e-07, -414.335, -2.10966, -198.655)
+mesh = ExtResource("29_sgs7q")
+
+[node name="Ring36" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.78529, -1.11507e-14, 4.71709e-07, 1.36445e-14, -1.45899, -2.35855e-07, 3.1215e-07, 1.27549e-07, -2.69786, -414.335, -1.03838, -199.512)
+mesh = ExtResource("29_sgs7q")
