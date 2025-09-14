@@ -1,16 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://no8yualfj0vs"]
+[gd_scene load_steps=4 format=3 uid="uid://no8yualfj0vs"]
 
 [ext_resource type="Script" uid="uid://caypftosno0ua" path="res://Scripts/evil_wizard.gd" id="1_ff6bn"]
 [ext_resource type="AudioStream" uid="uid://cmtkjpmkep4wm" path="res://Sounds/Music/Chill Sewers.ogg" id="2_8cw4p"]
 [ext_resource type="PackedScene" uid="uid://kw6trwjmxryo" path="res://LevelScenes/1. LVL1.tscn" id="3_acntm"]
-[ext_resource type="ArrayMesh" uid="uid://b7tkgpjprtpco" path="res://Meshes/1Sewers/Door Frame.obj" id="4_d5akh"]
-[ext_resource type="ArrayMesh" uid="uid://ddbtc6w66k0h5" path="res://Meshes/0Universal/Lantern.obj" id="5_xi8tt"]
-[ext_resource type="ArrayMesh" uid="uid://d1dl65em4t8gv" path="res://Meshes/0Universal/Crate.obj" id="6_xrdy1"]
-[ext_resource type="ArrayMesh" uid="uid://etreb7j0o7o8" path="res://Meshes/0Universal/Pipes/TUBELONG.obj" id="7_e3y8p"]
-[ext_resource type="ArrayMesh" uid="uid://dpj4b71lmkhlg" path="res://Meshes/0Universal/Pipes/TUBESLEEVE.obj" id="8_0341q"]
-[ext_resource type="ArrayMesh" uid="uid://ctoxufp2xvfan" path="res://Meshes/0Universal/Pipes/VALVE1_001.obj" id="9_5gatk"]
-[ext_resource type="ArrayMesh" uid="uid://bj0hyaxgcluch" path="res://Meshes/0Universal/Pipes/TUBE_BEND.obj" id="10_0jivp"]
-[ext_resource type="ArrayMesh" uid="uid://cbx30gmewtuct" path="res://Meshes/0Universal/Pipes/SLEEVE2.obj" id="11_q66uy"]
 
 [node name="EvilWizard" type="Node"]
 script = ExtResource("1_ff6bn")
@@ -22,75 +14,3 @@ panning_strength = 0.0
 parameters/looping = true
 
 [node name="LVL1" parent="." instance=ExtResource("3_acntm")]
-
-[node name="DoorFrame" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.0782153, 0, 2.91498, 0, 2.91603, 0, -2.91498, 0, 0.0782153, -176.552, 17.7722, -39.3253)
-mesh = ExtResource("4_d5akh")
-
-[node name="Lantern" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.0218362, -0.0062991, 12.0205, -0.0406595, 12.0205, 0.00622509, -12.0204, -0.0406481, -0.0218574, -156.526, 32.3417, -78.1571)
-mesh = ExtResource("5_xi8tt")
-
-[node name="Crate" type="MeshInstance3D" parent="."]
-transform = Transform3D(4.11534, 0, -2.52267, 0, 4.82699, 0, 2.52267, 0, 4.11534, -166.064, 18.0416, -76.5177)
-mesh = ExtResource("6_xrdy1")
-
-[node name="Crate2" type="MeshInstance3D" parent="."]
-transform = Transform3D(5.51333, 0, 0, 0, 5.51333, 0, 0, 0, 5.51333, -166.633, 18.6984, -70.3776)
-mesh = ExtResource("6_xrdy1")
-
-[node name="Lantern2" type="MeshInstance3D" parent="."]
-transform = Transform3D(-5.16582e-07, 0, 11.818, 0, 11.818, 0, -11.818, 0, -5.16582e-07, -161.568, 22.8753, -41.0773)
-mesh = ExtResource("5_xi8tt")
-
-[node name="Tubelong" type="MeshInstance3D" parent="."]
-transform = Transform3D(2.09074, 0, 0, 0, -9.13893e-08, -3.47181, 0, 2.09074, -1.51757e-07, -154.998, 24.6771, -39.9757)
-mesh = ExtResource("7_e3y8p")
-
-[node name="Tubesleeve" type="MeshInstance3D" parent="."]
-transform = Transform3D(2.06801, 0, 0, 0, -9.03956e-08, 2.06801, 0, -2.06801, -9.03956e-08, -154.993, 20.3578, -39.9656)
-mesh = ExtResource("8_0341q")
-
-[node name="Tubelong2" type="MeshInstance3D" parent="."]
-transform = Transform3D(-6.74673e-08, 0, 5.86537, 0, 1.54347, 0, -1.54347, 0, -2.56384e-07, -167.078, 31.9592, -39.9652)
-mesh = ExtResource("7_e3y8p")
-
-[node name="Tubelong3" type="MeshInstance3D" parent="."]
-transform = Transform3D(2.27406, 0, 0, 0, -9.94022e-08, 3.46388, 0, -2.27406, -1.51411e-07, -167.806, 24.7706, -40.4578)
-mesh = ExtResource("7_e3y8p")
-
-[node name="Valve1001" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.71336, 0, 0, 0, -7.48934e-08, 1.71336, 0, -1.71336, -7.48934e-08, -167.884, 23.7967, -41.2175)
-mesh = ExtResource("9_5gatk")
-
-[node name="Crate3" type="MeshInstance3D" parent="."]
-transform = Transform3D(4.77277, 0, -1.35335, 0, 4.96094, 0, 1.35335, 0, 4.77277, -166.639, 21.1112, -75.8415)
-mesh = ExtResource("6_xrdy1")
-
-[node name="Tubesleeve2" type="MeshInstance3D" parent="."]
-transform = Transform3D(-7.1356e-08, 0, -1.8613, 1.57681, 0.433621, -7.85879e-08, 0.422505, -1.6183, -2.10576e-08, -158.696, 31.9646, -39.9564)
-mesh = ExtResource("8_0341q")
-
-[node name="TubeBend" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.61799, 0, 0, 0, -6.34836e-08, 1.5593, 0, -1.45233, -6.81592e-08, -167.948, 33.2682, -56.0617)
-mesh = ExtResource("10_0jivp")
-
-[node name="Tubelong4" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.60095, 0, 0, 0, 1.60095, 0, 0, 0, 3.3826, -167.952, 30.6197, -47.2177)
-mesh = ExtResource("7_e3y8p")
-
-[node name="Tubelong5" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.3483, 0, 0, 0, 1.3483, 0, 0, 0, 3.1599, -161.174, 31.9743, -47.61)
-mesh = ExtResource("7_e3y8p")
-
-[node name="TubeBend2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.33887, 0, 0, 0, -5.59411e-08, 1.32828, 0, -1.27978, -5.8061e-08, -161.176, 34.2253, -55.8624)
-mesh = ExtResource("10_0jivp")
-
-[node name="Sleeve2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.27028, 0, 0, 0, 1.25549, 0, 0, 0, 1.41076, -161.176, 31.9561, -53.264)
-mesh = ExtResource("11_q66uy")
-
-[node name="Tubelong6" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.85596, 0, 0, 0, 0, -3.0749, 0, 1.85596, 0, -158.692, 24.0513, -39.8948)
-mesh = ExtResource("7_e3y8p")

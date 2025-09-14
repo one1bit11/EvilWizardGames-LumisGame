@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8w00a0qo06c6"
-path.s3tc="res://.godot/imported/Gradient.png-3e16803545dcbf4a4a35e77e66764040.s3tc.ctex"
+uid="uid://dq3fh4v4ncn17"
+path.s3tc="res://.godot/imported/0021.png-79ef81474d1d0f408a9b1e0c579f10ed.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/0Universal/MapTextures/BrickWall/Gradient.png"
-dest_files=["res://.godot/imported/Gradient.png-3e16803545dcbf4a4a35e77e66764040.s3tc.ctex"]
+source_file="res://Textures/Other/PlaceholderWater/0021.png"
+dest_files=["res://.godot/imported/0021.png-79ef81474d1d0f408a9b1e0c579f10ed.s3tc.ctex"]
 
 [params]
 

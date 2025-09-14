@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://stqurjxktqro"]
+
+[ext_resource type="Texture2D" uid="uid://pcun4swklm10" path="res://Textures/0Universal/ObjTextures/DoorFrameTexture/Door Frame_Door_Frame_BaseColor.png" id="1_xy8jc"]
+
+[resource]
+albedo_texture = ExtResource("1_xy8jc")
