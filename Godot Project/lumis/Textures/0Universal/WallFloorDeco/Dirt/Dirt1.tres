@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dac7osybaoltj"]
+
+[ext_resource type="Texture2D" uid="uid://bqq5hrihtu3hc" path="res://Textures/0Universal/WallFloorDeco/Dirt/IMG_2558.png" id="1_rfs4g"]
+
+[resource]
+transparency = 1
+albedo_texture = ExtResource("1_rfs4g")
+uv1_triplanar = true
