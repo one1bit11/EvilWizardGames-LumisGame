@@ -1,0 +1,199 @@
+[gd_scene load_steps=19 format=3 uid="uid://bcgf7soy16gps"]
+
+[ext_resource type="Texture2D" uid="uid://ccmdrlg03areq" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_BaseColorALT.png" id="1_p7b06"]
+[ext_resource type="Texture2D" uid="uid://b04cuerkpc81e" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_Metallic.png" id="2_v5rbe"]
+[ext_resource type="Texture2D" uid="uid://b2akwwjkf8a5b" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_Roughness.png" id="3_7xbu1"]
+[ext_resource type="ArrayMesh" uid="uid://etreb7j0o7o8" path="res://Meshes/0Universal/Pipes/TUBELONG.obj" id="4_kbi6c"]
+[ext_resource type="Material" uid="uid://b83t5toylwmq8" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Metalic.tres" id="5_3bvhc"]
+[ext_resource type="ArrayMesh" uid="uid://dl10hjiywjtlj" path="res://Meshes/0Universal/Pipes/RING2.obj" id="6_6mgbp"]
+[ext_resource type="ArrayMesh" uid="uid://5fxngc5ou85" path="res://Meshes/0Universal/Pipes/HALF_TUBE.obj" id="7_csg8g"]
+[ext_resource type="ArrayMesh" uid="uid://dpj4b71lmkhlg" path="res://Meshes/0Universal/Pipes/TUBESLEEVE.obj" id="8_ji1f5"]
+[ext_resource type="ArrayMesh" uid="uid://ctoxufp2xvfan" path="res://Meshes/0Universal/Pipes/VALVE1_001.obj" id="9_b8s7q"]
+[ext_resource type="ArrayMesh" uid="uid://drntmn70wdolg" path="res://Meshes/0Universal/Pipes/STAND.obj" id="10_78ns6"]
+[ext_resource type="ArrayMesh" uid="uid://dbialkarvmqib" path="res://Meshes/0Universal/Pipes/T_JUNCTION.obj" id="11_sgfmr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lbovu"]
+albedo_texture = ExtResource("1_p7b06")
+metallic = 1.0
+metallic_texture = ExtResource("2_v5rbe")
+roughness_texture = ExtResource("3_7xbu1")
+uv1_scale = Vector3(1, 0.2, 0.24)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 2.37841
+uv1_world_triplanar = true
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_que7j"]
+height = 9.21387
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_06lcm"]
+height = 7.5
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_is40e"]
+height = 10.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_7v6p4"]
+height = 10.4573
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_mt1lo"]
+height = 10.5
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_tig2w"]
+height = 2.85645
+
+[node name="pipes_overandunder" type="Node3D"]
+
+[node name="Tubelong4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3.55271e-14, -1, 2.26937e-07, -0.999999, -9.23706e-14, 4.53875e-07, -8.74228e-08, -4.37114e-08, -5.19173, -0.0658994, 9.7187, 2.31286)
+material_override = SubResource("StandardMaterial3D_lbovu")
+mesh = ExtResource("4_kbi6c")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tubelong4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong4/StaticBody3D"]
+transform = Transform3D(0.6, 0, -1.69407e-21, 3.41566e-19, -2.62268e-08, 0.6, 0, -0.6, -2.62268e-08, -1.90735e-06, 0, -0.23584)
+shape = SubResource("CylinderShape3D_que7j")
+
+[node name="Tubelong3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.91069e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, -0.0659995, 7.75, -10.9114)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("4_kbi6c")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1")
+
+[node name="Ring2" type="MeshInstance3D" parent="Tubelong3"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, -2.69173e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.0053997, 0.0118694, -2.24541)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("6_6mgbp")
+skeleton = NodePath("../../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room1/PipeCluster2")
+
+[node name="Ring3" type="MeshInstance3D" parent="Tubelong3"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 2.95475e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00540066, 0.0118694, -1.11246)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("6_6mgbp")
+skeleton = NodePath("../../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room1/PipeCluster2")
+
+[node name="Ring4" type="MeshInstance3D" parent="Tubelong3"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, -2.69173e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539875, 0.0118713, 1.65764)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("6_6mgbp")
+skeleton = NodePath("../../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room1/PipeCluster2")
+
+[node name="Ring5" type="MeshInstance3D" parent="Tubelong3"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, -2.69173e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.0053997, 0.0118685, -1.80083)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("6_6mgbp")
+skeleton = NodePath("../../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room1/PipeCluster2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tubelong3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong3/StaticBody3D"]
+transform = Transform3D(0.6, 1.1309e-07, -4.94331e-15, -2.9104e-19, -2.62268e-08, -0.6, -1.1309e-07, 0.6, -2.62268e-08, 0, 0, -0.450001)
+shape = SubResource("CylinderShape3D_06lcm")
+
+[node name="Tubelong6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -0.0659995, 2.75, -2.91137)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("4_kbi6c")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1")
+
+[node name="HalfTube" type="MeshInstance3D" parent="Tubelong6"]
+transform = Transform3D(-4.37114e-08, 0, 1, -1, -4.37114e-08, -4.37114e-08, 4.37114e-08, -1, 1.91069e-15, 0.168971, -0.00498772, -2.84346)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("7_csg8g")
+skeleton = NodePath("")
+
+[node name="Tubelong7" type="MeshInstance3D" parent="Tubelong6"]
+transform = Transform3D(-1, 8.74228e-08, -3.82137e-15, -8.74228e-08, -1, 8.74228e-08, 3.82137e-15, 8.74228e-08, 1, 7, 0, 0)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("4_kbi6c")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1")
+
+[node name="HalfTube2" type="MeshInstance3D" parent="Tubelong6/Tubelong7"]
+transform = Transform3D(-4.37114e-08, 0, 1, -1, -4.37114e-08, -4.37114e-08, 4.37114e-08, -1, 1.91069e-15, 0.171974, -0.00499821, -2.843)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("7_csg8g")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tubelong6/Tubelong7"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong6/Tubelong7/StaticBody3D"]
+transform = Transform3D(0.6, -7.86805e-08, 0, 0, -2.62268e-08, 0.6, -7.86805e-08, -0.6, -2.62268e-08, 0, 0, 2.38419e-07)
+shape = SubResource("CylinderShape3D_is40e")
+
+[node name="Tubelong8" type="MeshInstance3D" parent="Tubelong6"]
+transform = Transform3D(4.37114e-08, -3.55271e-15, 1.20833, -8.74228e-08, -1, 3.55271e-15, 1, -8.74228e-08, -5.28176e-08, 3.46807, 0, -3.01526)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("4_kbi6c")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1")
+
+[node name="Tubesleeve" type="MeshInstance3D" parent="Tubelong6/Tubelong8"]
+transform = Transform3D(1.31134e-07, -1, 4.37114e-08, 1, 1.31134e-07, 4.37114e-08, -3.61752e-08, 3.61752e-08, 0.827591, 0.000438213, -0.0127926, 0.163374)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("8_ji1f5")
+skeleton = NodePath("../..")
+
+[node name="Valve1001" type="MeshInstance3D" parent="Tubelong6/Tubelong8/Tubesleeve"]
+transform = Transform3D(2.64771e-08, 0.605725, 5.29542e-08, 0.605725, -2.64771e-08, 1.01179e-22, 2.3147e-15, 5.29542e-08, -0.605725, 0.607449, 0.0311232, 0.0273095)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("9_b8s7q")
+skeleton = NodePath("../..")
+
+[node name="Stand" type="MeshInstance3D" parent="Tubelong6/Tubelong8/Tubesleeve/Valve1001"]
+transform = Transform3D(4.37114e-08, 1, 3.82137e-15, 1, -4.37114e-08, 8.74228e-08, 8.74228e-08, 0, -1, 0.0123901, -0.434514, 0.00271797)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("10_78ns6")
+skeleton = NodePath("../../../../../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tubelong6/Tubelong8"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong6/Tubelong8/StaticBody3D"]
+transform = Transform3D(0.599991, -4.69899e-08, 2.10631e-13, 1.26839e-12, -2.62258e-08, -0.599991, 4.6991e-08, 0.6, -2.62266e-08, 0, 0, 0.0286925)
+shape = SubResource("CylinderShape3D_7v6p4")
+
+[node name="Ring2" type="MeshInstance3D" parent="Tubelong6"]
+transform = Transform3D(7.10543e-15, -1.62921e-07, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -1.62921e-07, -0.0053997, 0.0118694, 2.23363)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("6_6mgbp")
+skeleton = NodePath("../../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room1/PipeCluster2")
+
+[node name="Ring3" type="MeshInstance3D" parent="Tubelong6"]
+transform = Transform3D(7.10543e-15, -1.62921e-07, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -1.62921e-07, 6.9946, 0.0118694, 2.23363)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("6_6mgbp")
+skeleton = NodePath("../../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room1/PipeCluster2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tubelong6"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong6/StaticBody3D"]
+transform = Transform3D(0.6, -2.62265e-08, 1.77636e-15, 0, -2.62268e-08, -0.6, 2.62268e-08, 0.6, -2.62268e-08, 0, 0, -0.15)
+shape = SubResource("CylinderShape3D_mt1lo")
+
+[node name="TJunction2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.07201, 0, 0, 0, 1.07201, 0, 0, 0, 1.07201, -0.0658994, 9.723, -10.7224)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("11_sgfmr")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room1/PipeCluster2")
+
+[node name="Tubelong5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3.55271e-14, -1, 2.26937e-07, -4.37115e-08, -4.37114e-08, -5.19173, 0.999999, 9.42812e-14, -2.26938e-07, -0.0658994, 22.9385, 5.6974)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("4_kbi6c")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tubelong5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong5/StaticBody3D"]
+transform = Transform3D(0.6, 0, 1.42302e-18, 0, -2.62268e-08, -0.6, -4.44089e-16, 0.6, -2.62268e-08, 4.76837e-07, 0, 1.69046)
+shape = SubResource("CylinderShape3D_tig2w")
+
+[node name="TJunction4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.07201, 0, 0, 0, -4.6859e-08, 1.07201, 0, -1.07201, -4.6859e-08, -0.0658994, 9.9032, 5.69306)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("11_sgfmr")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room1/PipeCluster2")
+
+[node name="TJunction3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.07201, 0, 0, 0, -1.07201, 9.37181e-08, 0, -9.37181e-08, -1.07201, -0.0658994, 9.723, 14.8776)
+material_override = ExtResource("5_3bvhc")
+mesh = ExtResource("11_sgfmr")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room1/PipeCluster2")

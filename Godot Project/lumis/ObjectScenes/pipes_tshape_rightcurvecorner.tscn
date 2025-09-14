@@ -1,0 +1,138 @@
+[gd_scene load_steps=20 format=3 uid="uid://d07pbbog3u2cq"]
+
+[ext_resource type="ArrayMesh" uid="uid://etreb7j0o7o8" path="res://Meshes/0Universal/Pipes/TUBELONG.obj" id="1_otmq0"]
+[ext_resource type="Texture2D" uid="uid://ccmdrlg03areq" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_BaseColorALT.png" id="2_0cyib"]
+[ext_resource type="Texture2D" uid="uid://b04cuerkpc81e" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_Metallic.png" id="3_4wr31"]
+[ext_resource type="Texture2D" uid="uid://b2akwwjkf8a5b" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_Roughness.png" id="4_yr8ou"]
+[ext_resource type="ArrayMesh" uid="uid://dl10hjiywjtlj" path="res://Meshes/0Universal/Pipes/RING2.obj" id="5_8r0s5"]
+[ext_resource type="ArrayMesh" uid="uid://7uwdnx4owqp3" path="res://Meshes/0Universal/Pipes/RING1.obj" id="6_6ddxe"]
+[ext_resource type="ArrayMesh" uid="uid://c30lijpdad1gk" path="res://Meshes/0Universal/Pipes/4_JUNCTIONTHICK.obj" id="7_iwsqy"]
+[ext_resource type="ArrayMesh" uid="uid://5fxngc5ou85" path="res://Meshes/0Universal/Pipes/HALF_TUBE.obj" id="8_o8aju"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5006w"]
+albedo_texture = ExtResource("2_0cyib")
+metallic = 1.0
+metallic_texture = ExtResource("3_4wr31")
+roughness_texture = ExtResource("4_yr8ou")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3l6v7"]
+albedo_texture = ExtResource("2_0cyib")
+metallic = 1.0
+metallic_texture = ExtResource("3_4wr31")
+roughness_texture = ExtResource("4_yr8ou")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uvlwu"]
+albedo_texture = ExtResource("2_0cyib")
+metallic = 1.0
+metallic_texture = ExtResource("3_4wr31")
+roughness_texture = ExtResource("4_yr8ou")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6kctm"]
+albedo_texture = ExtResource("2_0cyib")
+metallic = 1.0
+metallic_texture = ExtResource("3_4wr31")
+roughness_texture = ExtResource("4_yr8ou")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dno5h"]
+albedo_texture = ExtResource("2_0cyib")
+metallic = 1.0
+metallic_texture = ExtResource("3_4wr31")
+roughness_texture = ExtResource("4_yr8ou")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_4bvgn"]
+height = 8.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ulxk5"]
+albedo_texture = ExtResource("2_0cyib")
+metallic = 1.0
+metallic_texture = ExtResource("3_4wr31")
+roughness_texture = ExtResource("4_yr8ou")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6qbqr"]
+albedo_texture = ExtResource("2_0cyib")
+metallic = 1.0
+metallic_texture = ExtResource("3_4wr31")
+roughness_texture = ExtResource("4_yr8ou")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2v00b"]
+albedo_texture = ExtResource("2_0cyib")
+metallic = 1.0
+metallic_texture = ExtResource("3_4wr31")
+roughness_texture = ExtResource("4_yr8ou")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_624ml"]
+albedo_texture = ExtResource("2_0cyib")
+metallic = 1.0
+metallic_texture = ExtResource("3_4wr31")
+roughness_texture = ExtResource("4_yr8ou")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_vbkhu"]
+height = 8.875
+
+[node name="pipes_tshape_rightcurvecorner" type="Node3D"]
+
+[node name="Tubelong2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 5.04067, 0, -1, -2.20334e-07, 19, 13.3187, -6)
+mesh = ExtResource("1_otmq0")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5006w")
+
+[node name="Ring4" type="MeshInstance3D" parent="Tubelong2"]
+transform = Transform3D(1, 0, 0, 0, -4.37113e-08, -1, 0, 0.198386, -8.67174e-09, 0, -1.90735e-06, 2.30648)
+mesh = ExtResource("5_8r0s5")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_3l6v7")
+
+[node name="Ring1" type="MeshInstance3D" parent="Tubelong2"]
+transform = Transform3D(1, 0, 0, 0, -4.37113e-08, -1, 0, 0.198386, -8.67174e-09, 0, 0, -0.0632257)
+mesh = ExtResource("6_6ddxe")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_uvlwu")
+
+[node name="Ring3" type="MeshInstance3D" parent="Tubelong2"]
+transform = Transform3D(1, 0, 0, 0, -4.37113e-08, -1, 0, 0.198386, -8.67174e-09, 0, 0, -1.16695)
+mesh = ExtResource("5_8r0s5")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_6kctm")
+
+[node name="Ring2" type="MeshInstance3D" parent="Tubelong2"]
+transform = Transform3D(1, 0, 0, 0, -4.37113e-08, -1, 0, 0.198386, -8.67174e-09, 0, 0, -2.03771)
+mesh = ExtResource("5_8r0s5")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_dno5h")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tubelong2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong2/StaticBody3D"]
+transform = Transform3D(0.6, 0, 0, 0, -2.62257e-08, -0.6, 0, 0.6, -2.62268e-08, 0, -3.8147e-06, -0.15)
+shape = SubResource("CylinderShape3D_4bvgn")
+
+[node name="4Junctionthick" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 19, 21, -6)
+mesh = ExtResource("7_iwsqy")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_ulxk5")
+
+[node name="Tubelong3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -6.38657, 0, 1, 0, 1, 0, -2.79166e-07, 6.4892, 21, -6)
+mesh = ExtResource("1_otmq0")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_6qbqr")
+
+[node name="Ring5" type="MeshInstance3D" parent="Tubelong3"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 6.84427e-09, 0.156579, -6.84427e-09, -0.0223007, 0.0214005, -2.33254)
+mesh = ExtResource("5_8r0s5")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2v00b")
+
+[node name="HalfTube" type="MeshInstance3D" parent="Tubelong3"]
+transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -5.98346e-16, -1.36885e-08, -0.156579, -0.174198, 0, 2.48791)
+mesh = ExtResource("8_o8aju")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_624ml")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tubelong3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong3/StaticBody3D"]
+transform = Transform3D(0.6, 1.675e-07, -7.32151e-15, 0, -2.62268e-08, -0.6, -1.675e-07, 0.6, -2.62268e-08, 0, 0, -0.187498)
+shape = SubResource("CylinderShape3D_vbkhu")
