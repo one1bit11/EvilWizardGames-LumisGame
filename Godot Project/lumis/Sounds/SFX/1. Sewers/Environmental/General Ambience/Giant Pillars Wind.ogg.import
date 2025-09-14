@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dda1fp5dqdf4g"
+path="res://.godot/imported/Giant Pillars Wind.ogg-c0a650a455be841abc4b15077c5107c6.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sounds/SFX/1. Sewers/Environmental/General Ambience/Giant Pillars Wind.ogg"
+dest_files=["res://.godot/imported/Giant Pillars Wind.ogg-c0a650a455be841abc4b15077c5107c6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

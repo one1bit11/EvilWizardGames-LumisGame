@@ -1,4 +1,4 @@
-[gd_scene load_steps=172 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=178 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_xlif7"]
@@ -107,6 +107,11 @@
 [ext_resource type="Texture2D" uid="uid://bxdvquxthjyb6" path="res://Textures/Other/PlaceholderWater/0039.png" id="71_pxsad"]
 [ext_resource type="PackedScene" uid="uid://d07pbbog3u2cq" path="res://ObjectScenes/pipes_tshape_rightcurvecorner.tscn" id="87_38avk"]
 [ext_resource type="PackedScene" uid="uid://b3asth456be2q" path="res://ObjectScenes/pipe_threevertical_leftempty_corner.tscn" id="88_38avk"]
+[ext_resource type="AudioStream" uid="uid://1ifr2ursl2kv" path="res://Sounds/SFX/1. Sewers/Environmental/Water Flowing/Water Flowing.ogg" id="96_6kctm"]
+[ext_resource type="AudioStream" uid="uid://cl5dfver3fr8l" path="res://Sounds/SFX/1. Sewers/Environmental/Object Sounds/Floating Platform Fan.ogg" id="106_dno5h"]
+[ext_resource type="AudioStream" uid="uid://dc4pijnfoaqgs" path="res://Sounds/SFX/1. Sewers/Environmental/General Ambience/Sewer Ambience.ogg" id="108_5006w"]
+[ext_resource type="AudioStream" uid="uid://dvdtintoqyvgs" path="res://Sounds/SFX/1. Sewers/Environmental/Object Sounds/Wind coming from surface pipes.ogg" id="109_3l6v7"]
+[ext_resource type="AudioStream" uid="uid://b6c7xcic46wkk" path="res://Sounds/SFX/1. Sewers/Environmental/General Ambience/Water Drips.ogg" id="110_uvlwu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xlif7"]
 
@@ -119,6 +124,11 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_v23sc"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_isujd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3l6v7"]
+emission_enabled = true
+emission = Color(0.2, 1, 1, 1)
+emission_energy_multiplier = 16.0
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_8osxr"]
 
@@ -485,7 +495,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 25.1327, 0)]
+"values": [Vector3(0, 0, 0), Vector3(0, 37.6991, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -789,6 +799,11 @@ height = 2.03
 sides = 64
 material = ExtResource("3_5jpfr")
 
+[node name="CSGBox3D" type="CSGBox3D" parent="ROOMS/Room1/ManholeFrame"]
+transform = Transform3D(1, 0, 7.10543e-15, -8.88178e-16, 1, -4.29833e-16, -7.10543e-15, -7.64406e-11, 1, -6.67572e-06, -1.90765, 3.55936e-06)
+size = Vector3(50, 0.1, 50)
+material = SubResource("StandardMaterial3D_3l6v7")
+
 [node name="Ceiling" type="CSGBox3D" parent="ROOMS/Room1"]
 transform = Transform3D(1.91069e-15, 8.74228e-08, 1, -4.37114e-08, -1, 8.74228e-08, 1, -4.37114e-08, 3.55271e-15, -5.73207e-15, 18, -2.5)
 material_override = ExtResource("3_gmyoy")
@@ -1005,6 +1020,24 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0398067, 0.102376, -19.372
 
 [node name="pipes_overandunder" parent="ROOMS/Room1" instance=ExtResource("22_38avk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6432, -0.026809, 1.03526)
+
+[node name="Room1Wind" type="AudioStreamPlayer3D" parent="ROOMS/Room1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 28, 4)
+stream = ExtResource("109_3l6v7")
+volume_db = 4.0
+unit_size = 25.0
+autoplay = true
+max_distance = 30.0
+parameters/looping = true
+
+[node name="Room1Drips" type="AudioStreamPlayer3D" parent="ROOMS/Room1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14, -1)
+stream = ExtResource("110_uvlwu")
+volume_db = 17.778
+unit_size = 1.55
+autoplay = true
+panning_strength = 0.1
+parameters/looping = true
 
 [node name="Room1-2" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -38, 0)
@@ -1971,6 +2004,24 @@ material_override = ExtResource("7_yv5qi")
 mesh = ExtResource("19_u72js")
 skeleton = NodePath("../../../../../..")
 
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0, -66)
+stream = ExtResource("96_6kctm")
+unit_size = 12.0
+autoplay = true
+max_distance = 30.0
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0, -35)
+stream = ExtResource("96_6kctm")
+unit_size = 12.0
+autoplay = true
+max_distance = 50.0
+panning_strength = 0.5
+parameters/looping = true
+
 [node name="Room2-3" type="Node3D" parent="ROOMS"]
 
 [node name="Tunnel" type="CSGBox3D" parent="ROOMS/Room2-3"]
@@ -2422,6 +2473,15 @@ libraries = {
 &"": SubResource("AnimationLibrary_20g8i")
 }
 autoplay = "Spin"
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room5/FloatingPlat"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+stream = ExtResource("106_dno5h")
+volume_db = 1.105
+unit_size = 1.4
+autoplay = true
+max_distance = 22.4
+parameters/looping = true
 
 [node name="Water" type="CSGBox3D" parent="ROOMS/Room5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218.5, 19, -119.5)
@@ -5183,6 +5243,13 @@ light_energy = 40.0
 spot_range = 4096.0
 spot_angle = 90.0
 
+[node name="SpotLight3D5" type="SpotLight3D" parent="SewerBlocks"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -134.996, 154.087, 192.785)
+light_color = Color(1, 0.953788, 0.941996, 1)
+light_energy = 40.0
+spot_range = 4096.0
+spot_angle = 90.0
+
 [node name="SpotLight3D4" type="SpotLight3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -142.685, 106.087, 189.347)
 visible = false
@@ -5190,3 +5257,16 @@ light_color = Color(1, 0.953788, 0.941996, 1)
 light_energy = 40.0
 spot_range = 4096.0
 spot_angle = 90.0
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="Ambiance" type="Node" parent="Audio"]
+
+[node name="SewerAmbiance" type="AudioStreamPlayer2D" parent="Audio/Ambiance"]
+stream = ExtResource("108_5006w")
+volume_db = -15.0
+autoplay = true
+panning_strength = 0.0
+parameters/looping = true
+
+[node name="SFX" type="Node" parent="Audio"]
