@@ -21,6 +21,13 @@ extends CharacterBody3D
 @export var allignRampDown := 0.5
 ##how steep up a ramp can be to allign (without sticking)
 @export var allignRampUp := 1.5
+##gravity strength (keep negative)
+@export var gravityStr := -3
+
+##gravity
+var grav := Vector3(0,-3,0)
+##average normals of the surfaces nearby
+var avgnormal := Vector3.ZERO
 
 
 @export_subgroup("Sticking")
@@ -48,6 +55,8 @@ var currentSurfaceVal:int
 var stickPoint:Vector3
 ##the direction to the stick point
 var stickPointDir:Vector3
+##which body is the most recent one contacted
+var currentBody
 
 
 
@@ -86,60 +95,38 @@ func _get_move_input(delta):
 	var stickRot:Vector3
 	#save velocity.y
 	var vy = velocity.y
-	#prevent movement in the vertical based on camera
 	#assign a value to each input, should work with controller too
 	var input = Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
-	
-
-	
 	var input3 := Vector3(input.x,0,input.y)
 	if isSticking:
-		
-		
 		stickRot = faceChecker.get_collision_normal(currentSurfaceVal)
-		#stickRot.y = stickRot.x
-		#stickRot.z = stickRot.z
-		
-		
-		
-		
 		
 		velocity = Vector3.ZERO
 		input = Vector3.ZERO
 		input = Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
-		
-		
-		
-		
-		
+		var forwardDir = camPivot.rotation
+
 		
 		
 		
 		
 		rot = -(atan2(faceChecker.get_collision_normal(currentSurfaceVal).z, faceChecker.get_collision_normal(currentSurfaceVal).x) - PI/2)
 		
-		#global_transform.basis.get_euler().y
-
-		#dir = Vector3(input.x, 0, input.y).rotated(faceChecker.get_collision_normal(currentSurfaceVal), rot)
-		#dir = transform.basis * input3
-
-		#set the direction based on the values of the wall
-		#rot = faceChecker.get_collision_normal(currentSurfaceVal)*90
 		var test = faceChecker.get_collision_normal(currentSurfaceVal).y
 		var ygreater : bool
 		var yequal : bool
 		
-		
-		
-		
-		#print("colnorm" ,faceChecker.get_collision_normal(currentSurfaceVal))
-		#print("test", Vector3(0, 1 - test,0))
-		
-		#temporary
 		if !is_on_floor():
-				
-			## IDEA clamp campivot results to only be on the same plane that you're moving across while sticking to prevent falling off
-			dir = Vector3(input.x,-input.y,0).rotated(Vector3(0,1 - test,0),rot).normalized()
+			if Input.is_action_pressed("MoveForward"):
+				dir = avgnormal.cross(forwardDir).normalized().rotated(avgnormal.normalized(), - PI/2)
+			if Input.is_action_pressed("MoveBackwards"):
+				dir = avgnormal.cross(forwardDir).normalized().rotated(avgnormal.normalized(), PI/2)
+			if Input.is_action_pressed("MoveLeft"):
+				dir = avgnormal.cross(forwardDir).normalized()
+			if Input.is_action_pressed("MoveRight"):
+				dir = avgnormal.cross(forwardDir).normalized().rotated(avgnormal.normalized(), PI)
+				## IDEA clamp campivot results to only be on the same plane that you're moving across while sticking to prevent falling off
+				#dir = Vector3(input.x,-input.y,0).rotated(Vector3(0,1 - test,0),rot).normalized()
 		else:
 			
 			rot = camPivot.rotation.y
@@ -177,8 +164,8 @@ func _physics_process(delta: float) -> void:
 	#Because the camera is top level, this allows it to still follow the player without inheriting the rotation
 	camPivot.global_position = Vector3(global_position.x,global_position.y + camPivotHeight, global_position.z)
 	_get_move_input(delta)
-	if !isSticking:
-		velocity += get_gravity()
+	#if !isSticking:
+	velocity += grav
 	#if is not sticking and is on floor, alligns with floor
 	if is_on_floor():
 		
@@ -206,6 +193,7 @@ func _physics_process(delta: float) -> void:
 
 
 func _process(delta: float) -> void:
+	print(global_position)
 	pass
 	#move the face checker to check the surface the player is on
 
@@ -233,8 +221,25 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _stick():
-	
-	
+	#check raycasts
+	grav = Vector3.ZERO
+	var raysColliding := 0
+	if stickyMode:
+		for ray in $RayHolder.get_children():
+			if ray.is_colliding():
+				raysColliding += 1
+				avgnormal += ray.get_collision_normal()
+			if avgnormal:
+				avgnormal /= raysColliding
+				avgnormal = avgnormal.normalized()
+				grav = avgnormal * gravityStr
+			else:
+				avgnormal = Vector3.UP
+				grav = avgnormal * gravityStr
+	else:
+		avgnormal = Vector3.UP
+		grav = avgnormal * gravityStr
+	 
 	
 #temporary fix to the sliding problem
 	#if Input.is_action_just_pressed("StickMode") && faceChecker.get_collision_count() > 0:
@@ -295,3 +300,8 @@ func _allign_with_surface(normal):
 	temptrans.basis.x = -temptrans.basis.z.cross(normal)
 	temptrans.basis = temptrans.basis.orthonormalized()
 	global_transform = temptrans
+
+
+func _on_stick_detection_range_body_entered(body: Node3D) -> void:
+	if body != currentBody:
+		currentBody = body
