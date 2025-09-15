@@ -1580,7 +1580,7 @@ script = ExtResource("2_4bvgn")
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Room2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 24, -50)
-light_color = Color(1, 0.960165, 0.945213, 1)
+light_color = Color(0.794772, 0.515762, 0.552216, 1)
 light_energy = 5.905
 omni_range = 65.829
 
@@ -2143,6 +2143,14 @@ autoplay = true
 max_distance = 50.0
 panning_strength = 0.5
 parameters/looping = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.5758, 0.834467, -41.5879)
+light_color = Color(1, 0.788235, 0.443137, 1)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.4458, 3.64352, -39.9202)
+light_color = Color(1, 0.788235, 0.443137, 1)
 
 [node name="Room2-3" type="Node3D" parent="ROOMS"]
 
