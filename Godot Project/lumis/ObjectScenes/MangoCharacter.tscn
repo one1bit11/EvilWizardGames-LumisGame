@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://d141gk5umir7l"]
+[gd_scene load_steps=9 format=3 uid="uid://d141gk5umir7l"]
 
 [ext_resource type="Script" uid="uid://crub8m7rjahjq" path="res://Scripts/mango_character_controller.gd" id="1_qccra"]
 [ext_resource type="PackedScene" uid="uid://cmhvntnt2oi8r" path="res://Meshes/Other/Mango/MangoMeshFinal.tscn" id="2_qccra"]
@@ -13,6 +13,8 @@ radius = 1.0
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_qccra"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_shwng"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_syw4e"]
 
 [node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "faceChecker", "upwards", "camPivot", "cam")]
 collision_priority = 0.1
@@ -125,5 +127,10 @@ transform = Transform3D(4.805, 0, 0, 0, 4.805, 0, 0, 0, 4.805, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StickDetectionRange"]
 shape = SubResource("SphereShape3D_shwng")
+
+[node name="MangoTrigger" type="Area3D" parent="."]
+
+[node name="MangoTrigger" type="CollisionShape3D" parent="MangoTrigger"]
+shape = SubResource("SphereShape3D_syw4e")
 
 [connection signal="body_entered" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_entered"]

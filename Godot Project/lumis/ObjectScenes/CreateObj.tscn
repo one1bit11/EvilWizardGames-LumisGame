@@ -17,7 +17,7 @@ metallic = 0.83
 roughness = 0.43
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_c0owb"]
-size = Vector3(2.07495, 2.0759, 3.21851)
+size = Vector3(2, 2.0759, 3.21997)
 
 [node name="Create" type="StaticBody3D"]
 
