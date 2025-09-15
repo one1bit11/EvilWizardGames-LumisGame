@@ -1,7 +1,8 @@
-[gd_scene load_steps=178 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=179 format=3 uid="uid://kw6trwjmxryo"]
 
-[ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
+[ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://other/BlackWorldEnvironment.tres" id="1_ir167"]
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_xlif7"]
+[ext_resource type="Script" uid="uid://cthhsvlwdylva" path="res://Scripts/object_properties.gd" id="2_4bvgn"]
 [ext_resource type="Material" uid="uid://bje7sds7fpef2" path="res://Textures/Other/SolidColours/Brown.tres" id="2_short"]
 [ext_resource type="Material" uid="uid://cymxly51ml176" path="res://Textures/Other/SolidColours/BrownAlt.tres" id="3_5jpfr"]
 [ext_resource type="Material" uid="uid://cp52667yf3kt1" path="res://Textures/0Universal/MapTextures/BrickWall/BrickWall 2.tres" id="3_gmyoy"]
@@ -645,6 +646,7 @@ visible = false
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Old Room"]
 transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 100, -1185.3, 26.1849, 1362)
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Old Room/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05, 0, 0)
@@ -657,6 +659,7 @@ mesh = SubResource("BoxMesh_short")
 [node name="start" type="StaticBody3D" parent="Old Room"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1135.23, 28, 1362)
 visible = false
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Old Room/start"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 405, 0, 0)
@@ -668,6 +671,7 @@ mesh = SubResource("BoxMesh_v23sc")
 
 [node name="StaticBody3D3" type="StaticBody3D" parent="Old Room"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1173.63, 36.6934, 1369.02)
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Old Room/StaticBody3D3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 405, 0, 0)
@@ -679,6 +683,7 @@ mesh = SubResource("BoxMesh_v23sc")
 
 [node name="StaticBody3D4" type="StaticBody3D" parent="Old Room"]
 transform = Transform3D(7, 0, 0, 0, 1, 0, 0, 0, 7, -1160.69, 30.2209, 1364.72)
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Old Room/StaticBody3D4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.8571, 0, 0)
@@ -690,6 +695,7 @@ mesh = SubResource("BoxMesh_v23sc")
 
 [node name="StaticBody3D5" type="StaticBody3D" parent="Old Room"]
 transform = Transform3D(7, 0, 0, 0, 1, 0, 0, 0, 7, -1151.06, 28.4696, 1360.45)
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Old Room/StaticBody3D5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.8571, 0, 0)
@@ -701,6 +707,7 @@ mesh = SubResource("BoxMesh_v23sc")
 
 [node name="StaticBody3D6" type="StaticBody3D" parent="Old Room"]
 transform = Transform3D(7, 0, 0, 0, 1, 0, 0, 0, 7, -1171.9, 32.7693, 1360.45)
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Old Room/StaticBody3D6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.8571, 0, 0)
@@ -712,6 +719,7 @@ mesh = SubResource("BoxMesh_v23sc")
 
 [node name="wall" type="StaticBody3D" parent="Old Room"]
 transform = Transform3D(54.745, 0, 0, 0, -4.37114e-08, 10.8, 0, -1, -4.72083e-07, -1185.3, 34.9572, 1411.86)
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Old Room/wall"]
 transform = Transform3D(2.085, 0, 0, 0, 0.025, 0, 0, 0, 1.985, 7.39794, 0, 0)
@@ -723,6 +731,7 @@ mesh = SubResource("PlaneMesh_isujd")
 
 [node name="wall4" type="StaticBody3D" parent="Old Room"]
 transform = Transform3D(55.425, 0, 0, 0, -4.37114e-08, -13.55, 0, 1, -5.92289e-07, -1185.3, 34.9572, 1312.08)
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Old Room/wall4"]
 transform = Transform3D(2.085, 0, 0, 0, 0.025, 4.54747e-13, 0, 0, 1.985, 7.30717, 0, 0)
@@ -734,6 +743,7 @@ mesh = SubResource("PlaneMesh_isujd")
 
 [node name="wall2" type="StaticBody3D" parent="Old Room"]
 transform = Transform3D(-8.59147e-07, 1, 0, -19.655, -4.37114e-08, 0, 0, 0, 101.7, -1235.37, 34.9572, 1364.69)
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Old Room/wall2"]
 transform = Transform3D(2.085, 0, 0, 4.54747e-13, 0.025, 0, 0, 0, 1.985, -8.64267e-07, 405, 0)
@@ -777,12 +787,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -38, 0)
 
 [node name="Create" parent="ROOMS/Room1" instance=ExtResource("11_0denb")]
 transform = Transform3D(1.7145, 0, 0.207684, 0, 1.54239, 0, -0.219207, 0, 1.62438, 10.4985, 0.507198, 12.7035)
+script = ExtResource("2_4bvgn")
 
 [node name="Create3" parent="ROOMS/Room1" instance=ExtResource("11_0denb")]
 transform = Transform3D(0.507238, 0, 0.677021, 0, 1.20761, 0, -0.861806, 0, 0.398477, -10.9747, 0.507198, 12.066)
+script = ExtResource("2_4bvgn")
 
 [node name="Create2" parent="ROOMS/Room1" instance=ExtResource("11_0denb")]
 transform = Transform3D(1.26802, 0, -0.404743, 0, 1, 0, 0.561246, 0, 0.914431, 5.65521, 0.507198, 11.9185)
+script = ExtResource("2_4bvgn")
 
 [node name="ManholeFrame" type="CSGCylinder3D" parent="ROOMS/Room1"]
 transform = Transform3D(6.1196e-08, 3.41858e-06, 1.4, -2.11394e-07, -39.104, 1.22392e-07, 1.4, -5.90454e-06, -6.11959e-08, 0, 56.2394, 4)
@@ -790,6 +803,7 @@ use_collision = true
 radius = 2.425
 sides = 64
 material = ExtResource("3_5jpfr")
+script = ExtResource("2_4bvgn")
 
 [node name="Manholehole (hehehe)" type="CSGCylinder3D" parent="ROOMS/Room1/ManholeFrame"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.55294e-22, 0, -8.35186e-23, 1, 0, 0, 0)
@@ -798,35 +812,41 @@ radius = 2.247
 height = 2.03
 sides = 64
 material = ExtResource("3_5jpfr")
+script = ExtResource("2_4bvgn")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="ROOMS/Room1/ManholeFrame"]
 transform = Transform3D(1, 0, 7.10543e-15, -8.88178e-16, 1, -4.29833e-16, -7.10543e-15, -7.64406e-11, 1, -6.67572e-06, -1.90765, 3.55936e-06)
 size = Vector3(50, 0.1, 50)
 material = SubResource("StandardMaterial3D_3l6v7")
+script = ExtResource("2_4bvgn")
 
 [node name="Ceiling" type="CSGBox3D" parent="ROOMS/Room1"]
 transform = Transform3D(1.91069e-15, 8.74228e-08, 1, -4.37114e-08, -1, 8.74228e-08, 1, -4.37114e-08, 3.55271e-15, -5.73207e-15, 18, -2.5)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(51, 1, 43)
+script = ExtResource("2_4bvgn")
 
 [node name="Manhole" type="CSGCylinder3D" parent="ROOMS/Room1/Ceiling"]
 transform = Transform3D(1.33563, 0, 0, 0, 1.33563, -2.07415e-22, -2.11758e-22, -1.1155e-22, 1.33563, 6.5, 0, 0)
 operation = 2
 radius = 2.425
 sides = 64
+script = ExtResource("2_4bvgn")
 
 [node name="Wall4" type="CSGBox3D" parent="ROOMS/Room1"]
 transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -14, 10, 0)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(20, 1, 48)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall5" type="CSGBox3D" parent="ROOMS/Room1"]
 transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 14, 10, 0)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(20, 1, 48)
+script = ExtResource("2_4bvgn")
 
 [node name="DirtDeco" type="MeshInstance3D" parent="ROOMS/Room1/Wall5"]
 transform = Transform3D(5.31033, 3.37908e-07, 1.55687, 4.74014e-07, -5.53385, -4.15731e-07, 1.55687, 5.32297e-07, -5.31033, 3.7776, -0.501961, -14.5813)
@@ -870,6 +890,7 @@ transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.3
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(20, 1, 40)
+script = ExtResource("2_4bvgn")
 
 [node name="DirtDeco4" type="MeshInstance3D" parent="ROOMS/Room1/Wall3"]
 transform = Transform3D(2.551, 7.66408e-07, -7.4875, 3.27058e-08, -7.91014, -7.98525e-07, -7.4875, 2.26564e-07, -2.551, 0.983957, -0.506603, 0.970795)
@@ -918,6 +939,7 @@ spot_angle_attenuation = 0.287175
 transform = Transform3D(2.576, 0, 0, 0, 1.8032, 0, 0, 0, 2.576, -10.8, 2.2, -17.2)
 material_override = ExtResource("25_sp4ew")
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="Godray" type="MeshInstance3D" parent="ROOMS/Room1"]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 8.97964, 4)
@@ -1004,6 +1026,7 @@ mesh = ExtResource("13_yi7or")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room1/Tubelong3"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room1/Tubelong3/StaticBody3D"]
 transform = Transform3D(0.6, -1.44843e-19, -3.55271e-15, -3.55271e-15, -2.62268e-08, -0.6, -5.29396e-23, 0.6, -2.62268e-08, 0, 4.76837e-07, -0.0184208)
@@ -1045,9 +1068,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -38, 0)
 [node name="Barrel2" type="CSGCylinder3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(2.576, 0, 0, 0, 1.8032, 0, 0, 0, 2.576, 5.5, 2.2, -60.5)
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="DoorFrame" type="StaticBody3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
+script = ExtResource("2_4bvgn")
 
 [node name="DoorFrameMesh" type="MeshInstance3D" parent="ROOMS/Room1-2/DoorFrame"]
 transform = Transform3D(-1.3638e-07, 0, -3.12, 0, 3.12, 0, 3.12, 0, -1.3638e-07, 0, 2.3, 0)
@@ -1060,6 +1085,7 @@ shape = SubResource("ConcavePolygonShape3D_o83hb")
 
 [node name="DoorFrame2" type="StaticBody3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -48)
+script = ExtResource("2_4bvgn")
 
 [node name="DoorFrameMesh" type="MeshInstance3D" parent="ROOMS/Room1-2/DoorFrame2"]
 transform = Transform3D(-1.3638e-07, 0, -3.12, 0, 3.12, 0, 3.12, 0, -1.3638e-07, 0, 2.3, 0)
@@ -1072,6 +1098,7 @@ shape = SubResource("ConcavePolygonShape3D_o83hb")
 
 [node name="DoorFrame3" type="StaticBody3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.5, 0, -55.5)
+script = ExtResource("2_4bvgn")
 
 [node name="DoorFrameMesh" type="MeshInstance3D" parent="ROOMS/Room1-2/DoorFrame3"]
 transform = Transform3D(-1.3638e-07, 0, -3.12, 0, 3.12, 0, 3.12, 0, -1.3638e-07, 0, 2.3, 0)
@@ -1084,6 +1111,7 @@ shape = SubResource("ConcavePolygonShape3D_o83hb")
 
 [node name="DoorFrame4" type="StaticBody3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -43.5, 0, -55.5)
+script = ExtResource("2_4bvgn")
 
 [node name="DoorFrameMesh" type="MeshInstance3D" parent="ROOMS/Room1-2/DoorFrame4"]
 transform = Transform3D(-1.3638e-07, 0, -3.12, 0, 3.12, 0, 3.12, 0, -1.3638e-07, 0, 2.3, 0)
@@ -1100,6 +1128,7 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4.2319
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(28, 24, 40)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole" type="CSGCylinder3D" parent="ROOMS/Room1-2/Tunnel"]
 transform = Transform3D(-1.54767e-07, 1, 1.46083e-07, -3.54066, -4.37114e-08, 1.46083e-07, 1.54767e-07, -4.37114e-08, 3.342, 0.14048, -5.65406, -6.14091e-09)
@@ -1107,12 +1136,14 @@ operation = 2
 radius = 1.249
 height = 33.623
 sides = 48
+script = ExtResource("2_4bvgn")
 
 [node name="Tunnel2" type="CSGBox3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -25.5, 17.5, -44.5)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(36, 34, 48)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole" type="CSGCylinder3D" parent="ROOMS/Room1-2/Tunnel2"]
 transform = Transform3D(-1.54767e-07, 1, 1.46084e-07, -3.54066, -4.37114e-08, 1.46083e-07, 1.54767e-07, -4.37114e-08, 3.342, -0.406, -15.154, 11.01)
@@ -1120,48 +1151,57 @@ operation = 2
 radius = 1.249
 height = 37.8115
 sides = 48
+script = ExtResource("2_4bvgn")
 
 [node name="Ceiling2" type="CSGBox3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, -1, -8.74228e-08, 1.91069e-15, -2.18557e-08, 12.5, -55.5)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(23, 2, 24)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall7" type="CSGBox3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, -1, 7, -64)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(14, 2, 22)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall6" type="CSGBox3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 8.5, 7, -54)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(14, 2, 24)
+script = ExtResource("2_4bvgn")
 
 [node name="1-2Floor" type="CSGBox3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(0.99528, 0, 0, 0, 0.99528, 0, 0, 0, 0.99528, -37, -3.5, -26)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(118, 8, 112)
+script = ExtResource("2_4bvgn")
 
 [node name="WaterGap" type="CSGBox3D" parent="ROOMS/Room1-2/1-2Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 3, -24)
 operation = 2
 size = Vector3(10, 3, 52)
+script = ExtResource("2_4bvgn")
 
 [node name="WaterGap2" type="CSGBox3D" parent="ROOMS/Room1-2/1-2Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.05, 3, -3.85)
 operation = 2
 size = Vector3(10.9, 3, 11.7)
+script = ExtResource("2_4bvgn")
 
 [node name="WaterGap3" type="CSGBox3D" parent="ROOMS/Room1-2/1-2Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.05, 3, -44.0397)
 operation = 2
 size = Vector3(10.9, 3, 11.7)
+script = ExtResource("2_4bvgn")
 
 [node name="Create" parent="ROOMS/Room1-2" instance=ExtResource("11_0denb")]
 transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, 10.7, 0.5, -16.5)
+script = ExtResource("2_4bvgn")
 
 [node name="Lantern" parent="ROOMS/Room1-2" instance=ExtResource("37_tu4hv")]
 transform = Transform3D(5.01742, 0, 0, 0, 5.01742, 0, 0, 0, 5.01742, 0, 8.9397, -55.5)
@@ -1210,29 +1250,34 @@ transform = Transform3D(-1, -4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1.42109e
 material_override = SubResource("StandardMaterial3D_sp4ew")
 use_collision = true
 size = Vector3(18, 3, 0.1)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall10Floor" type="CSGBox3D" parent="ROOMS/Room2"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, -58.5, 7.99693, -28.4973)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(0.0188675, 14.9946, 33)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall10Floor2" type="CSGBox3D" parent="ROOMS/Room2"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, -77.9982, 16.5061, -28.4973)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(0.0188675, 14.9946, 41.9895)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall10" type="CSGBox3D" parent="ROOMS/Room2"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, -58.5, 8.5, -28.5)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(16, 15, 33)
+script = ExtResource("2_4bvgn")
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="ROOMS/Room2/Wall10"]
 transform = Transform3D(1.91069e-15, -1, -4.37114e-08, -4.37114e-08, -4.37114e-08, 1, -1, -3.59989e-21, -4.37114e-08, -8, 0, -12.5)
 operation = 2
 size = Vector3(22, 17, 30)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole2" type="CSGCylinder3D" parent="ROOMS/Room2/Wall10"]
 transform = Transform3D(3.82391, 8.74228e-08, -1.89907e-07, 3.34297e-07, -1, 1.89908e-07, -1.67148e-07, -4.37114e-08, -4.3446, 7.754, 0.942873, 7.394)
@@ -1240,12 +1285,14 @@ operation = 2
 radius = 1.249
 height = 23.9058
 sides = 48
+script = ExtResource("2_4bvgn")
 
 [node name="Wall8" type="CSGBox3D" parent="ROOMS/Room2"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, -67.5, 17.5, -71)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(34, 14, 53)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole3" type="CSGCylinder3D" parent="ROOMS/Room2/Wall8"]
 transform = Transform3D(3.82391, 8.74228e-08, -1.89906e-07, 3.34297e-07, -1, 1.89908e-07, -1.67148e-07, -4.37114e-08, -4.3446, 16.754, 1.91931, -1.606)
@@ -1253,23 +1300,27 @@ operation = 2
 radius = 1.249
 height = 12.9529
 sides = 48
+script = ExtResource("2_4bvgn")
 
 [node name="Wall11" type="CSGBox3D" parent="ROOMS/Room2"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, -68, 17, -23)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(34, 2, 52)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall12" type="CSGBox3D" parent="ROOMS/Room2"]
 transform = Transform3D(-1, -8.74228e-08, 0, 8.74228e-08, -1, 0, 0, 0, 1, -65, 31, -42.5)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(50, 2, 59)
+script = ExtResource("2_4bvgn")
 
 [node name="Water" type="CSGBox3D" parent="ROOMS/Room2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67, -1, -47)
 material_override = ExtResource("3_v23sc")
 size = Vector3(15, 2, 47)
+script = ExtResource("2_4bvgn")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 1, 1.005, 0)
@@ -1466,18 +1517,22 @@ frame_progress = 0.691402
 [node name="MelonPaint" type="CSGSphere3D" parent="ROOMS/Room2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.1, -57.1916, 16.5453, -31.3334)
 material_override = ExtResource("4_isujd")
+script = ExtResource("2_4bvgn")
 
 [node name="MelonPaint2" type="CSGSphere3D" parent="ROOMS/Room2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.73, -57.2055, 16.4087, -27.9856)
 material_override = ExtResource("4_isujd")
+script = ExtResource("2_4bvgn")
 
 [node name="MelonPaint3" type="CSGSphere3D" parent="ROOMS/Room2"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1.638, 0, -1, -7.15993e-08, -57.3287, 14.686, -30.4335)
 material_override = ExtResource("4_isujd")
+script = ExtResource("2_4bvgn")
 
 [node name="MelonPaint4" type="CSGSphere3D" parent="ROOMS/Room2"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1.638, 0, -1, -7.15993e-08, -57.4287, 13.4264, -29.3965)
 material_override = ExtResource("4_isujd")
+script = ExtResource("2_4bvgn")
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Room2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 24, -50)
@@ -1491,6 +1546,7 @@ mesh = ExtResource("22_pgyh0")
 surface_material_override/0 = SubResource("StandardMaterial3D_5djrx")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/Crate"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/Crate/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_8osxr")
@@ -1501,6 +1557,7 @@ mesh = ExtResource("22_pgyh0")
 surface_material_override/0 = SubResource("StandardMaterial3D_6lffy")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/Crate3"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/Crate3/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_cwiry")
@@ -1511,6 +1568,7 @@ mesh = ExtResource("22_pgyh0")
 surface_material_override/0 = SubResource("StandardMaterial3D_us58e")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/Crate2"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/Crate2/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_yv5qi")
@@ -1521,6 +1579,7 @@ mesh = ExtResource("22_pgyh0")
 surface_material_override/0 = SubResource("StandardMaterial3D_ohue8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/Crate4"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/Crate4/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_6bq5p")
@@ -1531,6 +1590,7 @@ mesh = ExtResource("22_pgyh0")
 surface_material_override/0 = SubResource("StandardMaterial3D_pa23b")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/Crate5"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/Crate5/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_0c4mb")
@@ -1544,6 +1604,7 @@ mesh = ExtResource("26_6bq5p")
 surface_material_override/0 = SubResource("StandardMaterial3D_wevsh")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/Lantern2"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/Lantern2/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_k4deu")
@@ -1556,6 +1617,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_25pe3")
 surface_material_override/1 = SubResource("StandardMaterial3D_fm4e8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/WaterwayGate"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/WaterwayGate/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_urkku")
@@ -1584,6 +1646,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_25pe3")
 surface_material_override/1 = SubResource("StandardMaterial3D_fm4e8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/WaterwayGate2"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/WaterwayGate2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_urkku")
@@ -1607,6 +1670,7 @@ omni_attenuation = -0.69
 [node name="Barrel" type="CSGCylinder3D" parent="ROOMS/Room2"]
 transform = Transform3D(2.576, 0, 0, 0, 1.8032, 0, 0, 0, 2.576, -46.2636, 2.2, -61.1864)
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="pipe_bigandsmall" type="Node3D" parent="ROOMS/Room2"]
 transform = Transform3D(1, 0, 0, 0, 1.21, 0, 0, 0, 1, -44.5871, 7.21324, -31.1161)
@@ -1642,6 +1706,7 @@ mesh = ExtResource("13_yi7or")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/pipe_bigandsmall/Tubelong"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/pipe_bigandsmall/Tubelong/StaticBody3D"]
 transform = Transform3D(0.6, 0, -1.02915e-19, 2.55387e-20, -2.62268e-08, 0.6, 1.77636e-15, -0.6, -2.62268e-08, -2.38419e-07, -1.90735e-06, 0.149999)
@@ -1672,6 +1737,7 @@ mesh = ExtResource("13_yi7or")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/pipe_bigandsmall/Tubelong2"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/pipe_bigandsmall/Tubelong2/StaticBody3D"]
 transform = Transform3D(0.6, 1.77877e-20, 0, 0, -2.62268e-08, 0.6, -1.01644e-20, -0.6, -2.62268e-08, 0, -1.90735e-06, 0.149998)
@@ -1711,6 +1777,7 @@ mesh = ExtResource("13_yi7or")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/pipe_bigandsmall2/Tubelong"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/pipe_bigandsmall2/Tubelong/StaticBody3D"]
 transform = Transform3D(0.599997, -7.21445e-13, 0, 1.81188e-13, -2.62275e-08, 0.599997, 2.33585e-14, -0.6, -2.62268e-08, 0, -3.8147e-06, 0.0946276)
@@ -1741,6 +1808,7 @@ mesh = ExtResource("13_yi7or")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/pipe_bigandsmall2/Tubelong2"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/pipe_bigandsmall2/Tubelong2/StaticBody3D"]
 transform = Transform3D(0.599998, 1.77877e-20, -4.23516e-21, 4.23516e-21, -2.62271e-08, 0.599998, -1.01644e-20, -0.6, -2.62268e-08, 0, -1.90735e-06, 0.0910382)
@@ -1756,6 +1824,7 @@ mesh = ExtResource("12_c0owb")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/pipes_overandunder/Tubelong4"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/pipes_overandunder/Tubelong4/StaticBody3D"]
 transform = Transform3D(0.6, 0, -2.77674e-15, 5.27528e-14, -2.62272e-08, 0.6, 0, -0.6, -2.62268e-08, -1.90735e-06, 0, -0.274364)
@@ -1792,6 +1861,7 @@ mesh = ExtResource("13_yi7or")
 skeleton = NodePath("../../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room1/PipeCluster2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/pipes_overandunder/Tubelong3"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/pipes_overandunder/Tubelong3/StaticBody3D"]
 transform = Transform3D(0.6, 1.1309e-07, 7.4607e-14, 0, -2.62274e-08, -0.6, -1.1309e-07, 0.6, -2.62268e-08, 0, 0, -0.141651)
@@ -1822,6 +1892,7 @@ mesh = ExtResource("16_0o8k2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/pipes_overandunder/Tubelong6/Tubelong7"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/pipes_overandunder/Tubelong6/Tubelong7/StaticBody3D"]
 transform = Transform3D(0.6, -7.86805e-08, 0, 0, -2.62268e-08, 0.6, -7.86805e-08, -0.6, -2.62268e-08, 0, 0, 2.38419e-07)
@@ -1852,6 +1923,7 @@ mesh = ExtResource("19_u72js")
 skeleton = NodePath("../../../../../../pipe_bigandsmall2/Tubelong2/StaticBody3D")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/pipes_overandunder/Tubelong6/Tubelong8"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/pipes_overandunder/Tubelong6/Tubelong8/StaticBody3D"]
 transform = Transform3D(0.599991, -4.69899e-08, 2.10631e-13, 1.26839e-12, -2.62258e-08, -0.599991, 4.6991e-08, 0.6, -2.62266e-08, 0, 0, 0.0286925)
@@ -1870,6 +1942,7 @@ mesh = ExtResource("13_yi7or")
 skeleton = NodePath("../../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room1/PipeCluster2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/pipes_overandunder/Tubelong6"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/pipes_overandunder/Tubelong6/StaticBody3D"]
 transform = Transform3D(0.6, -2.62265e-08, 1.77636e-15, 0, -2.62268e-08, -0.6, 2.62268e-08, 0.6, -2.62268e-08, 0, 0, -0.15)
@@ -1888,6 +1961,7 @@ mesh = ExtResource("12_c0owb")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/pipes_overandunder/Tubelong5"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/pipes_overandunder/Tubelong5/StaticBody3D"]
 transform = Transform3D(0.6, -2.06057e-13, 1.03029e-13, 0, -2.62268e-08, -0.6, -8.88178e-16, 0.6, -2.62268e-08, 0, 0, 0.405207)
@@ -1945,6 +2019,7 @@ mesh = ExtResource("13_yi7or")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/pipes_lowerHshape/Tubelong"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/pipes_lowerHshape/Tubelong/StaticBody3D"]
 transform = Transform3D(0.6, -1.1309e-07, -5.32907e-15, -5.32907e-14, -2.62272e-08, 0.6, -1.1309e-07, -0.6, -2.62267e-08, 0, -3.8147e-06, 0.0774691)
@@ -1969,6 +2044,7 @@ mesh = ExtResource("12_c0owb")
 skeleton = NodePath("../../../../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/pipes_lowerHshape/Tubelong2/Tubelong3"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/pipes_lowerHshape/Tubelong2/Tubelong3/StaticBody3D"]
 transform = Transform3D(0.600004, -1.08358e-12, 1.52466e-20, -9.21148e-20, -2.62268e-08, 0.6, -2.18847e-12, -0.599996, -2.62271e-08, 3.8147e-06, 0, 0.437499)
@@ -1981,6 +2057,7 @@ mesh = ExtResource("16_0o8k2")
 skeleton = NodePath("../../../../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/pipes_lowerHshape/Tubelong2"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/pipes_lowerHshape/Tubelong2/StaticBody3D"]
 transform = Transform3D(0.6, -5.92531e-08, -2.59003e-15, 5.62377e-22, -2.62268e-08, 0.6, -5.9253e-08, -0.6, -2.62268e-08, 2.86102e-06, 0, 0.0366697)
@@ -2029,11 +2106,13 @@ transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -87, -
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(35, 24, 77)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole" type="CSGBox3D" parent="ROOMS/Room2-3/Tunnel"]
 transform = Transform3D(-4.37114e-08, -1, 4.65882e-22, 1, -4.37114e-08, -1.06581e-14, 1.06581e-14, 0, 1, -3.25, -0.5, 3.5)
 operation = 2
 size = Vector3(35, 8.5, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Room3" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -38, 0)
@@ -2043,24 +2122,28 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -118.5, 8.5, -39)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(51, 1, 41)
+script = ExtResource("2_4bvgn")
 
 [node name="PlayGroundCeiling" type="CSGBox3D" parent="ROOMS/Room3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -118.5, 28.5, -38.5)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(51, 1, 42)
+script = ExtResource("2_4bvgn")
 
 [node name="PlayGroundWall" type="CSGBox3D" parent="ROOMS/Room3"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -113.5, 18, -22.5)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(37, 1, 25)
+script = ExtResource("2_4bvgn")
 
 [node name="PlayGroundWall2" type="CSGBox3D" parent="ROOMS/Room3"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -114.5, 18.5, -56.5)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(35, 1, 22)
+script = ExtResource("2_4bvgn")
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="ROOMS/Room3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111, 21, -41)
@@ -2075,6 +2158,7 @@ use_collision = true
 radius = 3.0
 height = 12.8929
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="Pillar2" type="CSGCylinder3D" parent="ROOMS/Room3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116, 12.0535, -28)
@@ -2083,6 +2167,7 @@ use_collision = true
 radius = 3.0
 height = 9.89293
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe?" type="CSGCylinder3D" parent="ROOMS/Room3"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -114, 11.0535, -38.1585)
@@ -2091,6 +2176,7 @@ use_collision = true
 radius = 1.0
 height = 35.7366
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe?2" type="CSGCylinder3D" parent="ROOMS/Room3"]
 transform = Transform3D(-1, -8.74228e-08, -3.82137e-15, 0, -4.37114e-08, 1, -8.74228e-08, 1, 4.37114e-08, -119, 11.0535, -48.2243)
@@ -2099,30 +2185,35 @@ use_collision = true
 radius = 1.0
 height = 19.8683
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="BigCreate2" type="CSGBox3D" parent="ROOMS/Room3"]
 transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -103.2, 11.5, -52)
 material_override = ExtResource("3_5jpfr")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="BigCreate3" type="CSGBox3D" parent="ROOMS/Room3"]
 transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, -109.5, 11.5, -49.8)
 material_override = ExtResource("3_5jpfr")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="BigCreate4" type="CSGBox3D" parent="ROOMS/Room3"]
 transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -103.8, 11.5, -45.1)
 material_override = ExtResource("3_5jpfr")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="BigCreate5" type="CSGBox3D" parent="ROOMS/Room3"]
 transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, -104.8, 16.5, -48.7)
 material_override = ExtResource("3_5jpfr")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Room3-4" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -38, 0)
@@ -2132,17 +2223,20 @@ transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.3
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(0.03, 14.995, 24.006)
+script = ExtResource("2_4bvgn")
 
 [node name="Tunnel" type="CSGBox3D" parent="ROOMS/Room3-4"]
 transform = Transform3D(4.37114e-08, -1, 8.74228e-08, 4.37114e-08, -8.74228e-08, -1, 1, 4.37114e-08, 4.37114e-08, -141, 27, -52)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(60, 24, 40)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole" type="CSGBox3D" parent="ROOMS/Room3-4/Tunnel"]
 transform = Transform3D(-1.31134e-07, 4.37114e-08, -1, 1, -8.74228e-08, -1.31134e-07, -8.74228e-08, -1, -4.37114e-08, 3, -0.5, 6.25)
 operation = 2
 size = Vector3(35, 8.5, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Room4" type="Node3D" parent="ROOMS"]
 
@@ -2150,12 +2244,14 @@ size = Vector3(35, 8.5, 8)
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -176, -23, -53.5)
 material_override = ExtResource("3_v23sc")
 size = Vector3(32, 2, 10)
+script = ExtResource("2_4bvgn")
 
 [node name="Floor" type="CSGBox3D" parent="ROOMS/Room4"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -173.5, -23, -59.5)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(44, 3, 41)
+script = ExtResource("2_4bvgn")
 
 [node name="WaterGap" type="CSGBox3D" parent="ROOMS/Room4/Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, -3.5)
@@ -2163,56 +2259,71 @@ material_override = ExtResource("6_xc2n4")
 operation = 2
 use_collision = true
 size = Vector3(32, 2, 10)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall" type="CSGBox3D" parent="ROOMS/Room4"]
 transform = Transform3D(-1, 3.82137e-15, -8.74228e-08, 8.74228e-08, 4.37114e-08, -1, 0, -1, -4.37114e-08, -169, -8, -38.5)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(50, 1, 30)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall2" type="CSGBox3D" parent="ROOMS/Room4"]
 transform = Transform3D(1, 0, 0, 0, 1.31134e-07, -1, 0, 1, 1.31134e-07, -171, -9, -80.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(40, 1, 30)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Wall3" type="CSGBox3D" parent="ROOMS/Room4"]
 transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 8.74228e-08, 4.37114e-08, -1, 1, -4.37114e-08, 8.74228e-08, -181.013, -8.5, -59)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(48, 0.0258789, 29)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Hole5" type="CSGBox3D" parent="ROOMS/Room4/Wall3"]
 transform = Transform3D(-4.37112e-08, 8.74228e-08, -1, 1, 4.37114e-08, -4.37112e-08, 4.37114e-08, -1, -8.74256e-08, -15.0002, 0, -4.24999)
 operation = 2
 size = Vector3(5, 8.5, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Ceiling" type="CSGBox3D" parent="ROOMS/Room4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -170, 4.5, -58)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(44, 1, 43)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Ceiling2" type="CSGBox3D" parent="ROOMS/Room4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -170, 0, -46)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(44, 10, 19)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="EndPlatform" type="CSGBox3D" parent="ROOMS/Room4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -175, -15.5, -74)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(12, 14, 14)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Fence" parent="ROOMS/Room4" instance=ExtResource("25_o83hb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -175, -7, -67.5)
+script = ExtResource("2_4bvgn")
 
 [node name="Fence2" type="CSGBox3D" parent="ROOMS/Room4"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -171, -20, -53.3)
 material_override = SubResource("StandardMaterial3D_sp4ew")
 use_collision = true
 size = Vector3(30, 3, 0.1)
+script = ExtResource("2_4bvgn")
 
 [node name="Non-Stick Label" type="Label3D" parent="ROOMS/Room4"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -179.9, -14, -67)
@@ -2231,21 +2342,25 @@ omni_range = 65.829
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -156.5, -21, -61.5)
 use_collision = true
 size = Vector3(3, 3, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="PlatformStairs2" type="CSGBox3D" parent="ROOMS/Room4"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -156.5, -20, -64.5)
 use_collision = true
 size = Vector3(3, 5, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="PlatformStairs3" type="CSGBox3D" parent="ROOMS/Room4"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -156.5, -19, -67.5)
 use_collision = true
 size = Vector3(3, 7, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="PlatformPillar" type="CSGBox3D" parent="ROOMS/Room4"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -156.5, -17.5, -74)
 use_collision = true
 size = Vector3(4, 10, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="Room4ArtPass" type="Node3D" parent="ROOMS/Room4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -38.415, 0)
@@ -2327,9 +2442,11 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Create5" parent="ROOMS/Room4" instance=ExtResource("11_0denb")]
 transform = Transform3D(1.14409, 0, -0.381808, 0, 1.20612, 0, 0.381808, 0, 1.14409, -166.784, -21.4977, -77.0854)
+script = ExtResource("2_4bvgn")
 
 [node name="Create6" parent="ROOMS/Room4" instance=ExtResource("11_0denb")]
 transform = Transform3D(-0.138139, 0, 1.09487, 0, 1.10355, 0, -1.09487, 0, -0.138139, -163.689, -21.4977, -40.9709)
+script = ExtResource("2_4bvgn")
 
 [node name="Room4-5" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -2, -7)
@@ -2339,25 +2456,30 @@ transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(43, 42.9917, 32)
+script = ExtResource("2_4bvgn")
 
 [node name="Ledge" type="CSGBox3D" parent="ROOMS/Room4-5/Tunnel"]
 transform = Transform3D(1, 1.18585e-20, -1.74845e-07, -1.74845e-07, -4.37114e-08, -1, -4.09002e-15, 1, -4.37114e-08, 24.5, 11.9958, -4.25)
 size = Vector3(6, 11.5, 12)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole2" type="CSGBox3D" parent="ROOMS/Room4-5/Tunnel"]
 transform = Transform3D(1.31134e-07, 0, 1, 1, -4.37114e-08, -1.31134e-07, 4.37114e-08, 1, -5.73206e-15, -13, -3.15015, 5.75)
 operation = 2
 size = Vector3(38.292, 8.5, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole3" type="CSGBox3D" parent="ROOMS/Room4-5/Tunnel"]
 transform = Transform3D(1, 1.18585e-20, -1.74845e-07, -1.74845e-07, -4.37114e-08, -1, -4.09002e-15, 1, -4.37114e-08, 3, 11.9958, 5.75)
 operation = 2
 size = Vector3(40, 8.5, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole4" type="CSGBox3D" parent="ROOMS/Room4-5/Tunnel"]
 transform = Transform3D(1, 1.04397e-19, -1.74845e-07, -1.74845e-07, -4.37114e-08, -1, -4.09002e-15, 1, -4.37114e-08, -13, 11.9958, 7.0001)
 operation = 2
 size = Vector3(12, 11, 12)
+script = ExtResource("2_4bvgn")
 
 [node name="Room5-6-7-8" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -2, -7)
@@ -2367,6 +2489,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -245, -17.25, -172.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(28, 46.5, 24)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Gap3" type="CSGBox3D" parent="ROOMS/Room5-6-7-8/NonStickWall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
@@ -2374,24 +2498,30 @@ material_override = ExtResource("6_xc2n4")
 operation = 2
 use_collision = true
 size = Vector3(28, 45.9756, 23.9412)
+script = ExtResource("2_4bvgn")
 
 [node name="NonStickWall2" type="CSGBox3D" parent="ROOMS/Room5-6-7-8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -260.121, -29.5161, -172.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(2.24786, 24.0277, 24)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="NonStickWall3" type="CSGBox3D" parent="ROOMS/Room5-6-7-8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -229.907, -29.5161, -172.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(2.24786, 24.0277, 24)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Floor" type="CSGBox3D" parent="ROOMS/Room5-6-7-8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -249.5, -36, -144.5)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(89, 37, 90)
+script = ExtResource("2_4bvgn")
 
 [node name="Gap" type="CSGBox3D" parent="ROOMS/Room5-6-7-8/Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 7, -28)
@@ -2399,46 +2529,56 @@ material_override = ExtResource("6_xc2n4")
 operation = 2
 use_collision = true
 size = Vector3(28, 23, 24)
+script = ExtResource("2_4bvgn")
 
 [node name="WaterGap" type="CSGBox3D" parent="ROOMS/Room5-6-7-8/Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 18, 25)
 operation = 2
 size = Vector3(9, 2, 25)
+script = ExtResource("2_4bvgn")
 
 [node name="Ceiling" type="CSGBox3D" parent="ROOMS/Room5-6-7-8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -239.5, 6.5, -142)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(67, 1, 89)
+script = ExtResource("2_4bvgn")
 
 [node name="Room5Ceiling" type="CSGBox3D" parent="ROOMS/Room5-6-7-8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218.421, 6.4692, -118.192)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(15.1226, 1, 41.3833)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Ledge2" type="CSGBox3D" parent="ROOMS/Room5-6-7-8"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 2.07523e-20, -1, 0, 1.31134e-07, -218.5, -12.25, -134.5)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(6, 11.5, 12)
+script = ExtResource("2_4bvgn")
 
 [node name="Ledge3" type="CSGBox3D" parent="ROOMS/Room5-6-7-8"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 2.07523e-20, -1, 0, 1.31134e-07, -218.5, -12.2501, -131.547)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(0.168457, 11.4998, 12)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Wall" type="CSGBox3D" parent="ROOMS/Room5-6-7-8"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -241.5, -6, -149)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(72, 23, 32)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole5" type="CSGBox3D" parent="ROOMS/Room5-6-7-8/Wall"]
 transform = Transform3D(1.31134e-07, -3.55271e-15, 1, 1, -4.37114e-08, -1.31134e-07, 4.37114e-08, 1, -5.73205e-15, 23, 1.5, 3.75)
 operation = 2
 size = Vector3(27, 8.5, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Room5" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -40, -7)
@@ -2456,6 +2596,7 @@ use_collision = true
 radius = 2.90479
 height = 0.757813
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="Platform" type="MeshInstance3D" parent="ROOMS/Room5/FloatingPlat"]
 transform = Transform3D(1.26341, 0, 5.64287e-06, 0, 1.26341, 0, -5.64287e-06, 0, 1.26341, 0, -1.51114, 0)
@@ -2464,6 +2605,7 @@ mesh = ExtResource("54_oix6q")
 skeleton = NodePath("../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room5/FloatingPlat/Platform"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room5/FloatingPlat/Platform/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_oix6q")
@@ -2487,28 +2629,35 @@ parameters/looping = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218.5, 19, -119.5)
 size = Vector3(9, 2, 25)
 material = ExtResource("3_v23sc")
+script = ExtResource("2_4bvgn")
 
 [node name="Wall" type="CSGBox3D" parent="ROOMS/Room5"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -225, 32.5, -119.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(42, 1, 31)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Wall2" type="CSGBox3D" parent="ROOMS/Room5"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -212, 32.5, -119)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(41, 1, 31)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="FloatingPlatform3" type="CSGBox3D" parent="ROOMS/Room5"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -215.5, 30, -119.5)
 use_collision = true
 size = Vector3(5, 1, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="FloatingPlatform4" type="CSGBox3D" parent="ROOMS/Room5"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -221.5, 30, -119.5)
 use_collision = true
 size = Vector3(5, 1, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="MovingPlatformsPlayer" type="AnimationPlayer" parent="ROOMS/Room5"]
 libraries = {
@@ -2523,6 +2672,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -40, -7)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -245, 0.5, -172.5)
 size = Vector3(30, 7, 27)
 material = ExtResource("3_v23sc")
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe?3" type="CSGCylinder3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -231.766, 18.0148, -168.804)
@@ -2531,6 +2681,7 @@ use_collision = true
 radius = 1.5
 height = 15.6741
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe?10" type="CSGCylinder3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -254.166, 17.6148, -178.804)
@@ -2539,6 +2690,7 @@ use_collision = true
 radius = 1.5
 height = 15.6741
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe?11" type="CSGCylinder3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -254.166, 17.6148, -175.304)
@@ -2547,6 +2699,7 @@ use_collision = true
 radius = 1.5
 height = 15.6741
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe?4" type="CSGCylinder3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(1.91069e-15, 7.30144e-30, -1, -4.37114e-08, 1, -1.59578e-37, 1, 4.37114e-08, 1.91069e-15, -239.604, 2.89303, -168.804)
@@ -2555,6 +2708,7 @@ use_collision = true
 radius = 1.5
 height = 30.2023
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe?7" type="CSGCylinder3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(1.91069e-15, 7.30144e-30, -1, -4.37114e-08, 1, -1.59578e-37, 1, 4.37114e-08, 1.91069e-15, -239.604, 2.89303, -179.804)
@@ -2563,6 +2717,7 @@ use_collision = true
 radius = 1.5
 height = 30.2023
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe?8" type="CSGCylinder3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(1.91069e-15, 7.30144e-30, -1, -4.37114e-08, 1, -1.59578e-37, 1, 4.37114e-08, 1.91069e-15, -247.104, 2.89303, -174.804)
@@ -2571,6 +2726,7 @@ use_collision = true
 radius = 1.5
 height = 30.2023
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe?9" type="CSGCylinder3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(1.91069e-15, 7.30144e-30, -1, -4.37114e-08, 1, -1.59578e-37, 1, 4.37114e-08, 1.91069e-15, -247.104, 2.89303, -164.804)
@@ -2579,6 +2735,7 @@ use_collision = true
 radius = 1.5
 height = 30.2023
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe?5" type="CSGCylinder3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(1.91069e-15, 7.30144e-30, -1, -1, -8.74228e-08, -1.91069e-15, -8.74228e-08, 1, -8.35187e-23, -239.591, 18.0041, -171.906)
@@ -2587,6 +2744,7 @@ use_collision = true
 radius = 1.5
 height = 28.5625
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe?6" type="CSGCylinder3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(1.91069e-15, 7.30144e-30, -1, -1, -8.74228e-08, -1.91069e-15, -8.74228e-08, 1, -8.35187e-23, -246.889, 17.4041, -171.906)
@@ -2595,46 +2753,54 @@ use_collision = true
 radius = 2.0
 height = 28.5625
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWall" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -277.5, 49, -178)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(10, 1, 58)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWall2" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -277.5, 48.5, -167)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(10, 1, 59)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWall3" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -283, 47, -173)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(121, 1, 62)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole7" type="CSGBox3D" parent="ROOMS/Rooms6+7+8/ElevatorWall3"]
 transform = Transform3D(-4.37112e-08, 3.55271e-15, -1, -1, -4.37114e-08, 4.37112e-08, -4.37114e-08, 1, 5.46339e-15, 0.5, -1.00006, 18.0117)
 operation = 2
 size = Vector3(8, 13.0293, 10)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWall3NonStick" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -283.016, 68, -173)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(355, 1.0127, 45)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole8" type="CSGBox3D" parent="ROOMS/Rooms6+7+8/ElevatorWall3NonStick"]
 transform = Transform3D(-4.37112e-08, 3.55271e-15, -1, -1, -4.37114e-08, 4.37112e-08, -4.37114e-08, 1, 5.46339e-15, 0.5, -1.00006, -3.99996)
 operation = 2
 size = Vector3(4, 13, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWallUnsick" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -282.9, 39.2498, -172.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(10, 1, 38.4995)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWallUnsickHole1" type="CSGBox3D" parent="ROOMS/Rooms6+7+8/ElevatorWallUnsick"]
 transform = Transform3D(1, 0, 0, 0, 1, 8.35189e-23, 0, 8.35188e-23, 1, 0, 0, -12.7498)
@@ -2642,6 +2808,7 @@ material_override = ExtResource("25_sp4ew")
 operation = 2
 use_collision = true
 size = Vector3(8, 1, 13)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWallUnsickHole2" type="CSGBox3D" parent="ROOMS/Rooms6+7+8/ElevatorWallUnsick"]
 transform = Transform3D(1, 0, 0, 0, 1, 8.35189e-23, 0, 8.35188e-23, 1, 0, 0, 15.2502)
@@ -2649,18 +2816,22 @@ material_override = ExtResource("25_sp4ew")
 operation = 2
 use_collision = true
 size = Vector3(6, 1, 9)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWallUnsick5" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -282.9, 74.8, -172.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(10, 1, 6.4)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWallUnsick3" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(1, 1.06581e-14, 4.02341e-21, 0, -4.37114e-08, 1, 1.06581e-14, -1, -4.37114e-08, -278.25, 49, -167.1)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(10.5, 1, 58)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="ElevatorWallUnsickHole1" type="CSGBox3D" parent="ROOMS/Rooms6+7+8/ElevatorWallUnsick3"]
 transform = Transform3D(1, 0, 1.51461e-28, 0, 1, 0, 0, 0, 1, -2.25, 0, -0.5)
@@ -2668,12 +2839,14 @@ material_override = ExtResource("25_sp4ew")
 operation = 2
 use_collision = true
 size = Vector3(3, 1, 7)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWallUnsick4" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(1, 1.06581e-14, 4.02341e-21, 0, -4.37114e-08, 1, 1.06581e-14, -1, -4.37114e-08, -278.25, 49, -177.9)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(10.5, 1, 58)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWallUnsickHole1" type="CSGBox3D" parent="ROOMS/Rooms6+7+8/ElevatorWallUnsick4"]
 transform = Transform3D(1, 0, 1.51461e-28, 0, 1, 0, 0, 0, 1, 0.25, 0, -14)
@@ -2681,6 +2854,7 @@ material_override = ExtResource("25_sp4ew")
 operation = 2
 use_collision = true
 size = Vector3(6, 1, 10)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWallUnsickHole2" type="CSGBox3D" parent="ROOMS/Rooms6+7+8/ElevatorWallUnsick4"]
 transform = Transform3D(1, 0, 1.51461e-28, 0, 1, 0, 0, 0, 1, 1.75, 0, -7)
@@ -2688,64 +2862,75 @@ material_override = ExtResource("25_sp4ew")
 operation = 2
 use_collision = true
 size = Vector3(3, 1, 6)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWallUnsick2" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -273.1, 55, -172.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(10, 1, 44)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorPlatform" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -274.1, 39.5, -171)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(9, 3, 1)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorPlatform2" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(-1, -8.74228e-08, -3.82138e-15, 0, -4.37114e-08, 1, -8.74228e-08, 1, 4.37114e-08, -281.1, 41.5, -168.5)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(8, 3, 1)
+script = ExtResource("2_4bvgn")
 
 [node name="ElevatorCeiling" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -277, 77.5, -172.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(12, 1, 16)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -208, 32.5, -169)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(37, 1, 31)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall3" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, -8.74228e-08, 4.37114e-08, -1, -1, -4.37114e-08, 8.74228e-08, -238.5, 32, -222)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(28, 2, 27)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole6" type="CSGBox3D" parent="ROOMS/Rooms6+7+8/Wall3"]
 transform = Transform3D(-4.37112e-08, 3.55271e-15, -1, -1, -4.37114e-08, 4.37112e-08, -4.37114e-08, 1, 5.46339e-15, -0.5, 0.499969, -7.49999)
 operation = 2
 size = Vector3(6, 9, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall4" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -272.5, 40.5, -173)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(27, 2, 75)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole6" type="CSGBox3D" parent="ROOMS/Rooms6+7+8/Wall4"]
 transform = Transform3D(-4.37112e-08, 3.55271e-15, -1, -1, -4.37114e-08, 4.37112e-08, -4.37114e-08, 1, 5.46339e-15, 0.5, 0.499939, -14.5)
 operation = 2
 size = Vector3(4, 13, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall2" type="CSGBox3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -245.5, 31, -185)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(84, 1, 36)
+script = ExtResource("2_4bvgn")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="ROOMS/Rooms6+7+8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -219, 35, -173)
@@ -2774,103 +2959,121 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -84, -7)
 transform = Transform3D(0.999045, 0, 0, 0, 0.999045, 0, 0, 0, 0.999045, -367.505, 62.0017, -172.489)
 material_override = ExtResource("3_v23sc")
 size = Vector3(10, 3, 66)
+script = ExtResource("2_4bvgn")
 
 [node name="Water2" type="CSGBox3D" parent="ROOMS/Room9+10"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -392.5, 62, -172.5)
 material_override = ExtResource("3_v23sc")
 size = Vector3(20, 3, 66)
+script = ExtResource("2_4bvgn")
 
 [node name="Water3" type="CSGBox3D" parent="ROOMS/Room9+10"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -427.5, 62, -172.5)
 material_override = ExtResource("3_v23sc")
 size = Vector3(30, 3, 66)
+script = ExtResource("2_4bvgn")
 
 [node name="Floor" type="CSGBox3D" parent="ROOMS/Room9+10"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -376.75, 62.5, -172.5)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(169.5, 4, 66)
+script = ExtResource("2_4bvgn")
 
 [node name="WaterGap" type="CSGBox3D" parent="ROOMS/Room9+10/Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.25, 1, 0)
 operation = 2
 use_collision = true
 size = Vector3(10, 3, 66)
+script = ExtResource("2_4bvgn")
 
 [node name="WaterGap2" type="CSGBox3D" parent="ROOMS/Room9+10/Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.75, 1, 0)
 operation = 2
 use_collision = true
 size = Vector3(10, 3, 66)
+script = ExtResource("2_4bvgn")
 
 [node name="WaterGap3" type="CSGBox3D" parent="ROOMS/Room9+10/Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.75, 1, 0)
 operation = 2
 use_collision = true
 size = Vector3(10, 3, 66)
+script = ExtResource("2_4bvgn")
 
 [node name="WaterGap4" type="CSGBox3D" parent="ROOMS/Room9+10/Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.75, 1, 0)
 operation = 2
 use_collision = true
 size = Vector3(10, 3, 66)
+script = ExtResource("2_4bvgn")
 
 [node name="WaterGap5" type="CSGBox3D" parent="ROOMS/Room9+10/Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.75, 1, 0)
 operation = 2
 use_collision = true
 size = Vector3(10, 3, 66)
+script = ExtResource("2_4bvgn")
 
 [node name="WaterGap6" type="CSGBox3D" parent="ROOMS/Room9+10/Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.75, 1, 0)
 operation = 2
 use_collision = true
 size = Vector3(10, 3, 66)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall" type="CSGBox3D" parent="ROOMS/Room9+10"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -405, 56.5, -214.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(118, 45, 51)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall2" type="CSGBox3D" parent="ROOMS/Room9+10"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -405, 56.5, -130)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(118, 46, 51)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall7" type="CSGBox3D" parent="ROOMS/Room9+10"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -327.5, 70, -208.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(37, 50, 50)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall5" type="CSGBox3D" parent="ROOMS/Room9+10/Wall7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -2)
 use_collision = true
 size = Vector3(30, 50, 76)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall8" type="CSGBox3D" parent="ROOMS/Room9+10"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -327.5, 70, -136.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(37, 50, 50)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall6" type="CSGBox3D" parent="ROOMS/Room9+10/Wall8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -2)
 use_collision = true
 size = Vector3(30, 50, 76)
+script = ExtResource("2_4bvgn")
 
 [node name="Ledge" type="CSGBox3D" parent="ROOMS/Room9+10"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -290.728, 87.5, -172.486)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(16.3965, 30, 27)
+script = ExtResource("2_4bvgn")
 
 [node name="Slope" type="CSGBox3D" parent="ROOMS/Room9+10/Ledge"]
 transform = Transform3D(0.866025, 0.5, 0, -0.5, 0.866025, 0, 0, 0, 1, -19.0152, -4.73619, 0)
 use_collision = true
 size = Vector3(1, 45, 27)
+script = ExtResource("2_4bvgn")
 
 [node name="Creates" type="Node" parent="ROOMS/Room9+10"]
 
@@ -2882,42 +3085,49 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -363.5
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create2" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River1Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create3" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River1Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create4" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River1Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create5" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River1Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create6" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River1Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create7" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River1Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ROOMS/Room9+10/Creates/River1Creates/Create1"]
 libraries = {
@@ -2933,42 +3143,49 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -363.5
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create2" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River2Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create3" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River2Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create4" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River2Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create5" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River2Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create6" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River2Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create7" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River2Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ROOMS/Room9+10/Creates/River2Creates/Create1"]
 libraries = {
@@ -2984,42 +3201,49 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -363.5
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create2" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River2Creates2/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create3" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River2Creates2/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create4" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River2Creates2/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create5" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River2Creates2/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create6" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River2Creates2/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create7" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River2Creates2/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ROOMS/Room9+10/Creates/River2Creates2/Create1"]
 libraries = {
@@ -3035,42 +3259,49 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -363.5
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create2" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create3" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create4" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create5" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create6" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create7" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ROOMS/Room9+10/Creates/River3Creates/Create1"]
 libraries = {
@@ -3086,42 +3317,49 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -363.5
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create2" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates2/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create3" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates2/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create4" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates2/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create5" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates2/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create6" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates2/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create7" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates2/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ROOMS/Room9+10/Creates/River3Creates2/Create1"]
 libraries = {
@@ -3137,42 +3375,49 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -363.5
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create2" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates3/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create3" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates3/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create4" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates3/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create5" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates3/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create6" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates3/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create7" type="CSGBox3D" parent="ROOMS/Room9+10/Creates/River3Creates3/Create1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(5, 5, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ROOMS/Room9+10/Creates/River3Creates3/Create1"]
 libraries = {
@@ -3744,237 +3989,280 @@ transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 3.55272e-15, -8.74226e-08, 3.5
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(24.5, 10.5, 26)
+script = ExtResource("2_4bvgn")
 
 [node name="Floor2" type="CSGBox3D" parent="ROOMS/Room11"]
 transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 3.55272e-15, -8.74226e-08, 3.55271e-15, -1, -478.5, -11.25, -99)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(17, 10.5, 51)
+script = ExtResource("2_4bvgn")
 
 [node name="Floor3" type="CSGBox3D" parent="ROOMS/Room11"]
 transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 3.55272e-15, -8.74226e-08, 3.55271e-15, -1, -478.5, -2.75, -32)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(17, 10.5, 23)
+script = ExtResource("2_4bvgn")
 
 [node name="Tunnel" type="CSGBox3D" parent="ROOMS/Room11"]
 transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -479, -13.5, -129)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(67, 35, 217)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole8" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
 transform = Transform3D(4.37114e-08, -1, -7.37408e-15, -1, -4.37114e-08, 8.74226e-08, -8.74226e-08, 3.55271e-15, -1, -20, 7.49997, -43.5)
 operation = 2
 size = Vector3(23, 9, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole9" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
 transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -20, -3.05176e-05, -36)
 operation = 2
 size = Vector3(23, 9, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole14" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
 transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -20, -3.05176e-05, 97)
 operation = 2
 size = Vector3(23, 9, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole11" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
 transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -15.75, -3.05176e-05, -1.99976)
 operation = 2
 size = Vector3(45.0005, 17.5, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole13" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
 transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -15.75, -3.05176e-05, 63.0002)
 operation = 2
 size = Vector3(45.0005, 17.5, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole12" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
 transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -12.5, -3.05176e-05, 30.5002)
 operation = 2
 size = Vector3(20.0005, 11, 14)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole10" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
 transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -20.75, -3.05176e-05, -43.5)
 operation = 2
 size = Vector3(12, 10.5, 12)
+script = ExtResource("2_4bvgn")
 
 [node name="Tunnel3" type="CSGBox3D" parent="ROOMS/Room11"]
 transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -479, -13.5, -20.5123)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(67, 35, 0.026123)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole14" type="CSGBox3D" parent="ROOMS/Room11/Tunnel3"]
 transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -20.25, 0.00216675, -4.27676)
 operation = 2
 size = Vector3(23, 8.51459, 8.01318)
+script = ExtResource("2_4bvgn")
 
 [node name="Tunnel2" type="CSGBox3D" parent="ROOMS/Room11"]
 transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -461.52, 11.2513, -172.214)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(17.4975, 0.052, 44.7517)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole8" type="CSGBox3D" parent="ROOMS/Room11/Tunnel2"]
 transform = Transform3D(4.37114e-08, -1, -7.37408e-15, -1, -4.37114e-08, 8.74226e-08, -8.74226e-08, 3.55271e-15, -1, 4.50126, -0.959351, -0.285767)
 operation = 2
 size = Vector3(5.1084, 8.51196, 8.00757)
+script = ExtResource("2_4bvgn")
 
 [node name="Slope" type="CSGBox3D" parent="ROOMS/Room11"]
 transform = Transform3D(1, 0, 0, 0, 0.965926, -0.258819, 0, 0.258819, 0.965926, -479, -2.3079, -137.489)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(9, 1, 33.4189)
+script = ExtResource("2_4bvgn")
 
 [node name="Slope2" type="CSGBox3D" parent="ROOMS/Room11"]
 transform = Transform3D(-1, -2.26267e-08, -8.44439e-08, 0, 0.965926, -0.258819, 8.74228e-08, -0.258819, -0.965926, -479, -2.308, -59.51)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(9, 1, 33.4189)
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -479, -5, -105)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe2" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -479, -5, -103.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe3" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -479, -5, -102)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe16" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(-4.37114e-08, 1, 0, 4.37114e-08, 1.91069e-15, 1, 1, 4.37114e-08, -4.37114e-08, -479, 0.5, -102.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe17" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(-4.37114e-08, 1, 0, 4.37114e-08, 1.91069e-15, 1, 1, 4.37114e-08, -4.37114e-08, -479, 2, -102.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe18" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(-4.37114e-08, 1, 0, 4.37114e-08, 1.91069e-15, 1, 1, 4.37114e-08, -4.37114e-08, -479, 3.5, -102.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe4" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, 0, 1.91069e-15, -472.5, 0, -100.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe5" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, 0, 1.91069e-15, -474, 0, -100.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe6" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, 0, 1.91069e-15, -475.5, 0, -100.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe7" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, 0, 1.91069e-15, -477, 0, -100.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe8" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, 0, 1.91069e-15, -478.5, 0, -100.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe9" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, 0, 1.91069e-15, -480, 0, -100.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe19" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, -480, -5, -98)
 use_collision = true
 height = 5.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe20" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, -480, -3.5, -98)
 use_collision = true
 height = 5.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe21" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, -480, -2, -98)
 use_collision = true
 height = 5.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe11" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, 0, 1.91069e-15, -478.5, 0, -95.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe22" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, 0, 1.91069e-15, -478.5, 0, -94)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe23" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, 0, 1.91069e-15, -478.5, 0, -92.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe12" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, 0, 1.91069e-15, -480, 0, -95.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe13" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, 0, 1.91069e-15, -481.5, 0, -95.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe14" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, 0, 1.91069e-15, -483, 0, -95.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Pipe15" type="CSGCylinder3D" parent="ROOMS/Room11"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, 0, 1.91069e-15, -484.5, 0, -95.5)
 use_collision = true
 height = 16.0
 sides = 16
+script = ExtResource("2_4bvgn")
 
 [node name="Create" parent="ROOMS/Room11" instance=ExtResource("11_0denb")]
 transform = Transform3D(0.304112, 0, 1.25871, 0, 1.35, 0, -1.13496, 0, 0.337269, -476.6, -6, -97.5)
+script = ExtResource("2_4bvgn")
 
 [node name="Create2" parent="ROOMS/Room11" instance=ExtResource("11_0denb")]
 transform = Transform3D(-0.361286, 0, 1.00697, 0, 1.35, 0, -1.34834, 0, -0.269816, -474.564, -6, -93.365)
+script = ExtResource("2_4bvgn")
 
 [node name="Create4" parent="ROOMS/Room11" instance=ExtResource("11_0denb")]
 transform = Transform3D(-1.2578, 0, 0.657741, 0, 1.485, 0, -0.880721, 0, -0.939351, -482.752, -6, -91.6779)
+script = ExtResource("2_4bvgn")
 
 [node name="Create3" parent="ROOMS/Room11" instance=ExtResource("11_0denb")]
 transform = Transform3D(0.477426, 0, 0.881656, 0, 1.35, 0, -1.31172, 0, 0.320896, -474.684, -4.515, -103.581)
+script = ExtResource("2_4bvgn")
 
 [node name="Room12" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -22, -7)
@@ -3984,36 +4272,42 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -489.5, -15.5, 15.5)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(57, 4, 80)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall" type="CSGBox3D" parent="ROOMS/Room12"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -443.5, 1.5, 15.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(30, 53, 80)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall3" type="CSGBox3D" parent="ROOMS/Room12"]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -464.5, 1.5, 68.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(30, 54, 91)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall4" type="CSGBox3D" parent="ROOMS/Room12"]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -515, 1.5, 17.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(30, 4, 46)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall6" type="CSGBox3D" parent="ROOMS/Room12"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -550, 1.5, 33.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(30, 32, 36)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall7" type="CSGBox3D" parent="ROOMS/Room12"]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -534.5, 20.5, 61.95)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(30, 23.1, 51)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall10" type="CSGBox3D" parent="ROOMS/Room12/Wall7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.49999, 1.45, -5)
@@ -4021,6 +4315,7 @@ material_override = ExtResource("7_xc2n4")
 operation = 2
 use_collision = true
 size = Vector3(17, 26, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall12" type="CSGBox3D" parent="ROOMS/Room12/Wall7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.00001, 1.45, -17)
@@ -4028,6 +4323,7 @@ material_override = ExtResource("7_xc2n4")
 operation = 2
 use_collision = true
 size = Vector3(6, 26, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall14" type="CSGBox3D" parent="ROOMS/Room12/Wall7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2.44999, -9)
@@ -4035,6 +4331,7 @@ material_override = ExtResource("7_xc2n4")
 operation = 2
 use_collision = true
 size = Vector3(6, 24, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall11" type="CSGBox3D" parent="ROOMS/Room12/Wall7"]
 transform = Transform3D(-4.37114e-08, 0, 1, 8.74228e-08, 1, 0, -1, 8.74228e-08, -4.37114e-08, -2.49999, 1.45, -11)
@@ -4042,6 +4339,7 @@ material_override = ExtResource("7_xc2n4")
 operation = 2
 use_collision = true
 size = Vector3(17, 26, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall13" type="CSGBox3D" parent="ROOMS/Room12/Wall7"]
 transform = Transform3D(-4.37112e-08, 0, 1, 8.74228e-08, 1, 0, -1, 8.74228e-08, -4.37114e-08, 7.50001, 1.45, -13)
@@ -4049,36 +4347,42 @@ material_override = ExtResource("7_xc2n4")
 operation = 2
 use_collision = true
 size = Vector3(13, 26, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall9" type="CSGBox3D" parent="ROOMS/Room12"]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -534.501, 20.4946, 50.7861)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(29.9893, 0.572266, 50.998)
+script = ExtResource("2_4bvgn")
 
 [node name="Floor2" type="CSGBox3D" parent="ROOMS/Room12"]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -535.014, 35.4389, 61.9987)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(0.13623, 22.9573, 52)
+script = ExtResource("2_4bvgn")
 
 [node name="Floor3" type="CSGBox3D" parent="ROOMS/Room12/Floor2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.28882e-05, 57)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(0.13623, 46, 62)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall5" type="CSGBox3D" parent="ROOMS/Room12"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -520, -3.5, 35)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(20, 36, 33)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall8" type="CSGBox3D" parent="ROOMS/Room12"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -519.9, -3.55, 35)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(19.9, 36, 33)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall9Wall" type="CSGBox3D" parent="ROOMS/Room12/Wall8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.45001, -15.5, 0.5)
@@ -4086,6 +4390,7 @@ material_override = ExtResource("7_xc2n4")
 operation = 2
 use_collision = true
 size = Vector3(9, 7, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall9Wall3" type="CSGBox3D" parent="ROOMS/Room12/Wall8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.54998, -15.5, -10)
@@ -4093,6 +4398,7 @@ material_override = ExtResource("7_xc2n4")
 operation = 2
 use_collision = true
 size = Vector3(9, 7, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall9Wall2" type="CSGBox3D" parent="ROOMS/Room12/Wall8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0499763, -15.5, -4.75)
@@ -4100,24 +4406,29 @@ material_override = ExtResource("7_xc2n4")
 operation = 2
 use_collision = true
 size = Vector3(4, 7, 14.5)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall2" type="CSGBox3D" parent="ROOMS/Room12"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -527.5, 3.5, -2.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(34, 79, 44)
+script = ExtResource("2_4bvgn")
 
 [node name="Fence" parent="ROOMS/Room12" instance=ExtResource("25_o83hb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -546.7, 38.5, 51)
 size = Vector3(27, 6, 0.1)
+script = ExtResource("2_4bvgn")
 
 [node name="Fence2" parent="ROOMS/Room12" instance=ExtResource("25_o83hb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -534.95, 38.5, 73)
 size = Vector3(50.5, 6, 0.1)
+script = ExtResource("2_4bvgn")
 
 [node name="Fence3" parent="ROOMS/Room12" instance=ExtResource("25_o83hb")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -509.7, 38.5, 62)
 size = Vector3(22, 6, 0.1)
+script = ExtResource("2_4bvgn")
 
 [node name="Room13" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -22, -7)
@@ -4127,160 +4438,188 @@ transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.371
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(77, 53, 63)
+script = ExtResource("2_4bvgn")
 
 [node name="Something?" type="CSGBox3D" parent="ROOMS/Room13"]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -574, 35, 77.5)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(6, 6, 6)
+script = ExtResource("2_4bvgn")
 
 [node name="Something?2" type="CSGBox3D" parent="ROOMS/Room13"]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -567, 38, 77.5)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(6, 6, 6)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall" type="CSGBox3D" parent="ROOMS/Room13"]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -582.5, 45.5, 83.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(30, 3, 45)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall7" type="CSGBox3D" parent="ROOMS/Room13"]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -595.5, 45.5, 79)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(30, 10, 17)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform" type="CSGBox3D" parent="ROOMS/Room13"]
 transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, -565, 51.5, 62)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 11, 6)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform2" type="CSGBox3D" parent="ROOMS/Room13"]
 transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, -567, 51.5, 44.5)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 6, 10)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform4" type="CSGBox3D" parent="ROOMS/Room13"]
 transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, -580, 51.5, 42.5)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 6, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform3" type="CSGBox3D" parent="ROOMS/Room13"]
 transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, -595, 51.5, 48.5)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 14, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform5" type="CSGBox3D" parent="ROOMS/Room13"]
 transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, -593.5, 50, 44.5)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(4, 6, 1)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall3" type="CSGBox3D" parent="ROOMS/Room13"]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -561.5, 45.5, 62.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(30, 3, 45)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole15" type="CSGBox3D" parent="ROOMS/Room13/Wall3"]
 transform = Transform3D(-4.37114e-08, 1, 3.55271e-15, -1, -4.37114e-08, -1.77636e-13, -1.77636e-13, -4.23651e-23, 1, -5.75, 0.5, 0.5)
 operation = 2
 size = Vector3(5, 8.5, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole" type="CSGBox3D" parent="ROOMS/Room13/Wall3"]
 transform = Transform3D(1, -4.3711e-08, -4.37114e-08, -4.37114e-08, -4.37114e-08, -1, 4.37114e-08, 1, -4.37114e-08, 5.5, -2.5, -15)
 operation = 2
 use_collision = true
 size = Vector3(12, 4, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole2" type="CSGBox3D" parent="ROOMS/Room13/Wall3"]
 transform = Transform3D(-8.74228e-08, -1, -4.37114e-08, -4.37114e-08, 4.37114e-08, -1, 1, -8.74224e-08, -4.37114e-08, 9.5, -2.5, -11)
 operation = 2
 use_collision = true
 size = Vector3(12, 4, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole3" type="CSGBox3D" parent="ROOMS/Room13/Wall3"]
 transform = Transform3D(-8.74234e-08, -1, -4.37114e-08, -4.37114e-08, 4.37114e-08, -1, 1, -8.74224e-08, -4.37114e-08, 9.5, -2.5, 10.5)
 operation = 2
 use_collision = true
 size = Vector3(5, 5, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall6" type="CSGBox3D" parent="ROOMS/Room13"]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -561.5, 45.45, 62.5)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(29.9, 2.8, 45)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole15" type="CSGBox3D" parent="ROOMS/Room13/Wall6"]
 transform = Transform3D(-4.37114e-08, 1, 3.55271e-15, -1, -4.37114e-08, -1.77636e-13, -1.77636e-13, -4.23651e-23, 1, -5.7, 0.5, 0.5)
 operation = 2
 size = Vector3(5, 8.6, 8.2)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall4" type="CSGBox3D" parent="ROOMS/Room13"]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -603.5, 45.5, 62.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(30, 3, 45)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole4" type="CSGBox3D" parent="ROOMS/Room13/Wall4"]
 transform = Transform3D(1, -4.37104e-08, -4.37114e-08, -4.37114e-08, -4.37114e-08, -1, 4.37114e-08, 1, -4.37114e-08, 13.5, 2.5, 9.00002)
 operation = 2
 use_collision = true
 size = Vector3(12, 11, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole5" type="CSGBox3D" parent="ROOMS/Room13/Wall4"]
 transform = Transform3D(1, -4.37093e-08, -4.37114e-08, -4.37114e-08, -4.37114e-08, -1, 4.37114e-08, 1, -4.37114e-08, 13.1977, 0.5, 9.00002)
 operation = 2
 use_collision = true
 size = Vector3(2.60469, 11, 6)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole15" type="CSGBox3D" parent="ROOMS/Room13/Wall4"]
 transform = Transform3D(-4.37114e-08, 1, 3.55271e-15, -1, -4.37114e-08, -1.77636e-13, -1.77636e-13, -4.23651e-23, 1, -5.75, 2, 0.5)
 operation = 2
 size = Vector3(2, 8.5, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole16" type="CSGBox3D" parent="ROOMS/Room13/Wall4"]
 transform = Transform3D(-4.37114e-08, 1, 3.55271e-15, -1, -4.37114e-08, -1.77636e-13, -1.77636e-13, -4.23651e-23, 1, -5.75, -2, 0.5)
 operation = 2
 size = Vector3(2, 8.5, 8)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole17" type="CSGBox3D" parent="ROOMS/Room13/Wall4"]
 transform = Transform3D(-4.37114e-08, 1, 3.55271e-15, -1, -4.37114e-08, -1.77636e-13, -1.77636e-13, -4.23651e-23, 1, 16.25, -8.7423e-08, 9)
 operation = 2
 size = Vector3(4, 8.5, 11)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall5" type="CSGBox3D" parent="ROOMS/Room13"]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -603.5, 45.5, 62.5)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(30, 2.8, 45)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole16" type="CSGBox3D" parent="ROOMS/Room13/Wall5"]
 transform = Transform3D(-4.37114e-08, 1, 3.55271e-15, -1, -4.37114e-08, -1.77636e-13, -1.77636e-13, -4.23651e-23, 1, -5.7, 0, 0.5)
 operation = 2
 size = Vector3(6, 8.6, 8.2)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole17" type="CSGBox3D" parent="ROOMS/Room13/Wall5"]
 transform = Transform3D(-4.37114e-08, 1, 3.55271e-15, -1, -4.37114e-08, -1.77636e-13, -1.77636e-13, -4.23651e-23, 1, 16.2, 0, 9)
 operation = 2
 size = Vector3(4, 8.6, 11.2)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole18" type="CSGBox3D" parent="ROOMS/Room13/Wall5"]
 transform = Transform3D(-4.37114e-08, 1, 3.55271e-15, -1, -4.37114e-08, -1.77636e-13, -1.77636e-13, -4.23651e-23, 1, 17.7, 0, 1.1)
 operation = 2
 size = Vector3(4, 5.6, 49)
+script = ExtResource("2_4bvgn")
 
 [node name="Wall2" type="CSGBox3D" parent="ROOMS/Room13"]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -582.5, 45.5, 40.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(30, 3, 45)
+script = ExtResource("2_4bvgn")
 
 [node name="Room14" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -22, -7)
@@ -4290,84 +4629,98 @@ transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.3711
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 8, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform2" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(-3.78552e-08, -0.866025, -0.5, 1, -4.3711e-08, 0, -2.18557e-08, -0.5, 0.866025, -639.067, 24.5, 54.25)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 9, 3)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform3" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(-4.2222e-08, -0.965926, 0.258819, 1, -4.3711e-08, -2.37987e-16, 1.13133e-08, 0.258819, 0.965926, -649.112, 26.5, 52.6464)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 9, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform4" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(-1.77636e-15, -1.19209e-07, 1, 1, -4.3711e-08, 3.81941e-16, 4.37114e-08, 1, 1.19209e-07, -657, 28.5, 64)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 12, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform6" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(3.09086e-08, 0.996195, -0.0871556, 1, -2.80967e-08, 3.34849e-08, 3.09086e-08, -0.0871556, -0.996195, -643.411, 45.5, 77.0685)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 6, 6)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform15" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(-0.996195, -1.21072e-08, -0.0871556, -1.56142e-08, 1, 2.98023e-08, 0.0871557, 2.98023e-08, -0.996195, -645.989, 41.5, 76.2902)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 7, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform12" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(1.84732e-08, 0.965926, 0.258819, 1, -2.80967e-08, 3.34849e-08, 3.9616e-08, 0.258819, -0.965926, -648.209, 77.5, 76.9856)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 3, 6.8)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform13" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(3.58063e-08, 0.965926, -0.258819, 1, -2.80967e-08, 3.34849e-08, 2.50718e-08, -0.258819, -0.965926, -640.809, 78.5, 76.8856)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 3, 6.8)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform14" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(4.35451e-08, 0.707107, -0.707107, 1, -2.80967e-08, 3.34849e-08, 3.80971e-09, -0.707107, -0.707107, -634.509, 79.5, 72.4856)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 3, 6.8)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform7" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(3.34849e-08, 0.573576, -0.819152, 1, 3.81011e-09, 4.35451e-08, 2.80972e-08, -0.819152, -0.573576, -635.095, 47.5, 70.1952)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 9, 3)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform9" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(1.49502e-08, -0.965926, -0.258819, 1, 3.8101e-09, 4.35451e-08, -4.10753e-08, -0.258819, 0.965926, -642.039, 67.5, 51.5055)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 8, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform10" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(0.183013, -0.683013, 0.707107, 0.965926, 0.258819, 4.47035e-08, -0.183013, 0.683013, 0.707107, -654.147, 68.38, 55.3954)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 14, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform11" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(-0.0885214, 0.330366, 0.939693, 0.965926, 0.258819, 5.02362e-08, -0.24321, 0.907673, -0.34202, -656.147, 74.38, 70.0954)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 14, 5)
+script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform8" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(0.241845, -0.241845, -0.939693, 0.707107, 0.707107, 2.24368e-08, 0.664463, -0.664463, 0.34202, -634.93, 53.2678, 58.2986)
 material_override = ExtResource("2_short")
 use_collision = true
 size = Vector3(1, 14, 3)
+script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar" type="CSGCylinder3D" parent="ROOMS/Room14"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -645, 29, 64)
@@ -4376,6 +4729,7 @@ use_collision = true
 radius = 10.0
 height = 206.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="Hole" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar"]
 transform = Transform3D(-1.77636e-15, -1.19209e-07, 1, 1, -4.3711e-08, 3.81941e-16, 4.37114e-08, 1, 1.19209e-07, -9.5, 11, -0.500015)
@@ -4383,6 +4737,7 @@ material_override = ExtResource("2_short")
 operation = 2
 use_collision = true
 size = Vector3(16, 3, 3)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole2" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar"]
 transform = Transform3D(-1.77636e-15, -1.19209e-07, 1, -8.74228e-08, -1, -1.19209e-07, 1, -8.74224e-08, -4.82886e-15, -6, 18, 3.64999)
@@ -4390,6 +4745,7 @@ material_override = ExtResource("2_short")
 operation = 2
 use_collision = true
 size = Vector3(11.3, 3, 10)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole3" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar"]
 transform = Transform3D(-0.707107, -2.24767e-08, 0.707107, -8.74228e-08, -1, -1.19209e-07, 0.707107, -1.46111e-07, 0.707107, 4.41418, 36.5, -5.0858)
@@ -4397,6 +4753,7 @@ material_override = ExtResource("2_short")
 operation = 2
 use_collision = true
 size = Vector3(11, 14, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="Hole4" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.80756, 64.5, 0.320797)
@@ -4404,6 +4761,7 @@ material_override = ExtResource("2_short")
 operation = 2
 use_collision = true
 size = Vector3(11, 24, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar2" type="CSGCylinder3D" parent="ROOMS/Room14"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -645, 29, 64)
@@ -4411,6 +4769,7 @@ use_collision = true
 radius = 9.9
 height = 206.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="GiantPipe" type="CSGCylinder3D" parent="ROOMS/Room14"]
 transform = Transform3D(0.258819, -0.965926, 0, 0.965926, 0.258819, 0, 0, 0, 1, -673.969, 90.9602, 64)
@@ -4419,6 +4778,7 @@ use_collision = true
 radius = 4.55
 height = 53.0177
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="GiantPipe2" type="CSGCylinder3D" parent="ROOMS/Room14"]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, -700.236, 107.806, 203.347)
@@ -4427,6 +4787,7 @@ use_collision = true
 radius = 4.55
 height = 1722.81
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="GiantPipe6" type="CSGCylinder3D" parent="ROOMS/Room14"]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, -700.331, 98.1823, 54.4864)
@@ -4435,6 +4796,7 @@ use_collision = true
 radius = 4.55
 height = 1411.68
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="BAPBalcony" type="CSGCylinder3D" parent="ROOMS/Room14"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -645, 97.9242, 64)
@@ -4443,6 +4805,7 @@ use_collision = true
 radius = 14.295
 height = 4.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="Hole" type="CSGBox3D" parent="ROOMS/Room14/BAPBalcony"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.30756, 1.0758, 0.320797)
@@ -4450,14 +4813,17 @@ material_override = ExtResource("2_short")
 operation = 2
 use_collision = true
 size = Vector3(12, 13, 4)
+script = ExtResource("2_4bvgn")
 
 [node name="Fence4" parent="ROOMS/Room14" instance=ExtResource("25_o83hb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -613.45, 38.5, 39.5)
 size = Vector3(18.5, 6, 0.1)
+script = ExtResource("2_4bvgn")
 
 [node name="Fence5" parent="ROOMS/Room14" instance=ExtResource("25_o83hb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -613.45, 38.5, 84.5)
 size = Vector3(18.5, 6, 0.1)
+script = ExtResource("2_4bvgn")
 
 [node name="Room15" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -28.345, -8.96)
@@ -4467,6 +4833,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -689.192, 135.345, 122.781)
 material_override = ExtResource("27_oer2p")
 use_collision = true
 size = Vector3(12, 13, 1)
+script = ExtResource("2_4bvgn")
 
 [node name="GiantPipe3" type="CSGCylinder3D" parent="ROOMS/Room15"]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, -689, 109, 85.9695)
@@ -4476,6 +4843,7 @@ use_collision = true
 radius = 4.55
 height = 32.061
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="CSGCylinder3D7" type="CSGCylinder3D" parent="ROOMS/Room15/GiantPipe3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.49237, 0)
@@ -4483,6 +4851,7 @@ operation = 2
 radius = 3.586
 height = 37.0153
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="GiantPipe4" type="CSGCylinder3D" parent="ROOMS/Room15"]
 transform = Transform3D(1.91069e-15, 2.18557e-08, 1, 0, 0.5, -4.37114e-08, -1, 0, 1.91069e-15, -689, 110, 104.969)
@@ -4492,6 +4861,7 @@ use_collision = true
 radius = 4.55
 height = 32.061
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="CSGCylinder3D8" type="CSGCylinder3D" parent="ROOMS/Room15/GiantPipe4"]
 transform = Transform3D(-4.37114e-08, -1, 4.37114e-08, 2, -8.74228e-08, 8.74228e-08, -4.37114e-08, 4.37116e-08, 1, 3.76906, -2, 0)
@@ -4499,6 +4869,7 @@ operation = 2
 radius = 3.586
 height = 7.50763
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="CSGCylinder3D7" type="CSGCylinder3D" parent="ROOMS/Room15/GiantPipe4"]
 transform = Transform3D(1, 0, 0, 0, 1, 3.19156e-37, 0, 0, 1, 0, 4.51526, 0)
@@ -4506,6 +4877,7 @@ operation = 2
 radius = 3.586
 height = 23.0305
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="GiantPipe5" type="CSGCylinder3D" parent="ROOMS/Room15"]
 transform = Transform3D(-8.74228e-08, -2.18557e-08, -1, -1, -2.18557e-08, 8.74228e-08, -4.37114e-08, 0.5, -4.37114e-08, -689, 129, 114.712)
@@ -4515,6 +4887,7 @@ use_collision = true
 radius = 4.55
 height = 43.0305
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="CSGCylinder3D9" type="CSGCylinder3D" parent="ROOMS/Room15/GiantPipe5"]
 transform = Transform3D(-4.37114e-08, -1, 4.37114e-08, 2, -8.74228e-08, 8.74228e-08, -4.37114e-08, 4.37116e-08, 1, 3.76906, -7.48476, 0)
@@ -4522,6 +4895,7 @@ operation = 2
 radius = 3.586
 height = 7.50763
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="CSGCylinder3D10" type="CSGCylinder3D" parent="ROOMS/Room15/GiantPipe5"]
 transform = Transform3D(1, 0, 1.91069e-15, 0, 1, 0, 1.91069e-15, 0, 1, 0, -0.227142, 0)
@@ -4529,11 +4903,13 @@ operation = 2
 radius = 3.586
 height = 40.5153
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="EndGrate" type="CSGBox3D" parent="ROOMS/Room15/GiantPipe5"]
 transform = Transform3D(1, 0, 1.91069e-15, 0, 1, 0, 1.91069e-15, 0, 1, 1.95, 20.4, 0)
 operation = 2
 size = Vector3(1.5, 3, 2)
+script = ExtResource("2_4bvgn")
 
 [node name="Tubelong3" type="MeshInstance3D" parent="ROOMS/Room15"]
 transform = Transform3D(5.68434e-13, -19.8, 2.46374e-07, -8.65486e-07, -8.65486e-07, -5.63638, 19.8, 1.7053e-13, -2.46374e-07, -688.888, 133.452, 105.284)
@@ -4555,6 +4931,7 @@ mesh = ExtResource("12_c0owb")
 skeleton = NodePath("../../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room15/Tubelong4"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room15/Tubelong4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_u30rl")
@@ -4586,6 +4963,7 @@ mesh = ExtResource("16_0o8k2")
 skeleton = NodePath("../../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room15/HalfTube3"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room15/HalfTube3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_gjrf6")
@@ -4596,12 +4974,14 @@ material_override = ExtResource("27_oer2p")
 use_collision = true
 radius = 5.405
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="CSGCylinder3D2" type="CSGCylinder3D" parent="ROOMS/Room15/CSGCylinder3D"]
 transform = Transform3D(0.648, -1.42109e-14, -6.35275e-22, 1.77636e-15, 3.0456, 1.77636e-15, -6.35275e-22, -1.42109e-14, 0.648, 0, 0, 0)
 operation = 2
 radius = 5.405
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="Tubelong6" type="MeshInstance3D" parent="ROOMS/Room15"]
 transform = Transform3D(3.3765e-13, 15.84, 2.25844e-07, 15.84, 1.74878e-12, 2.2062e-13, -2.36355e-12, 6.92388e-07, -5.1667, -688.888, 109.001, 84.8247)
@@ -4610,6 +4990,7 @@ mesh = ExtResource("12_c0owb")
 skeleton = NodePath("../../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room15/Tubelong6"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room15/Tubelong6/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_brgej")
@@ -4621,6 +5002,7 @@ mesh = ExtResource("16_0o8k2")
 skeleton = NodePath("../../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room15/HalfTube4"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room15/HalfTube4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0b864")
@@ -4632,6 +5014,7 @@ mesh = ExtResource("12_c0owb")
 skeleton = NodePath("../../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room15/Tubelong7"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room15/Tubelong7/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_pcook")
@@ -4643,6 +5026,7 @@ mesh = ExtResource("12_c0owb")
 skeleton = NodePath("../../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room15/Tubelong8"]
+script = ExtResource("2_4bvgn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room15/Tubelong8/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_1q3vj")
@@ -4846,11 +5230,13 @@ text = "(NOT READY
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -308, -71.5, 0)
 size = Vector3(1762, 20, 1000)
 material = ExtResource("7_xc2n4")
+script = ExtResource("2_4bvgn")
 
 [node name="SewerFloor2" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 144, 48.5, 0)
 visible = false
 size = Vector3(858, 20, 1000)
+script = ExtResource("2_4bvgn")
 
 [node name="SewerBlocks" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -535.386, -20, -137.865)
@@ -4862,6 +5248,7 @@ use_collision = true
 radius = 10.0
 height = 206.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar14" type="CSGCylinder3D" parent="SewerBlocks"]
 transform = Transform3D(0.914909, 0, 0, 0, 1, 0, 0, 0, 0.858477, 374.971, 97.5671, -74.274)
@@ -4870,6 +5257,7 @@ use_collision = true
 radius = 10.0
 height = 64.8657
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar10" type="CSGCylinder3D" parent="SewerBlocks"]
 transform = Transform3D(1.52194, 0, 0, 0, 1, 0, 0, 0, 1.54382, 253.121, 27, 423.253)
@@ -4878,6 +5266,7 @@ use_collision = true
 radius = 10.0
 height = 206.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar11" type="CSGCylinder3D" parent="SewerBlocks"]
 transform = Transform3D(1.52963, 0, 0, 0, 1, 0, 0, 0, 1.0724, 16.7087, 27, 539.488)
@@ -4886,6 +5275,7 @@ use_collision = true
 radius = 10.0
 height = 206.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar12" type="CSGCylinder3D" parent="SewerBlocks"]
 transform = Transform3D(1.9653, 0, 0, 0, 1, 0, 0, 0, 2.14026, -207.674, 27, 460.813)
@@ -4894,6 +5284,7 @@ use_collision = true
 radius = 10.0
 height = 206.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar13" type="CSGCylinder3D" parent="SewerBlocks"]
 transform = Transform3D(2.73199, 0, 0, 0, 1, 0, 0, 0, 1.74776, -431.443, 27, 571.735)
@@ -4902,6 +5293,7 @@ use_collision = true
 radius = 10.0
 height = 206.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar3" type="CSGCylinder3D" parent="SewerBlocks"]
 transform = Transform3D(0.878864, 0, 0, 0, 1, 0, 0, 0, 0.803569, 44.9899, 27, -178.694)
@@ -4910,6 +5302,7 @@ use_collision = true
 radius = 10.0
 height = 206.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar4" type="CSGCylinder3D" parent="SewerBlocks"]
 transform = Transform3D(1.48484, 0, 0, 0, 1, 0, 0, 0, 1.29768, 105.435, 27, -433.26)
@@ -4918,6 +5311,7 @@ use_collision = true
 radius = 10.0
 height = 206.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar5" type="CSGCylinder3D" parent="SewerBlocks"]
 transform = Transform3D(1.87425, 0, 0, 0, 1, 0, 0, 0, 1.89386, -292.649, 27, -78.9672)
@@ -4926,6 +5320,7 @@ use_collision = true
 radius = 10.0
 height = 206.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar6" type="CSGCylinder3D" parent="SewerBlocks"]
 transform = Transform3D(3.05797, 0, 0, 0, 1, 0, 0, 0, 1.77475, -375.771, 27, 186.583)
@@ -4934,6 +5329,7 @@ use_collision = true
 radius = 10.0
 height = 206.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar7" type="CSGCylinder3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.2136, 27, 10.5595)
@@ -4942,6 +5338,7 @@ use_collision = true
 radius = 10.0
 height = 206.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar8" type="CSGCylinder3D" parent="SewerBlocks"]
 transform = Transform3D(1.06483, 0, 0, 0, 1, 0, 0, 0, 1.15118, -224.109, 27, -296.295)
@@ -4950,6 +5347,7 @@ use_collision = true
 radius = 10.0
 height = 206.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar9" type="CSGCylinder3D" parent="SewerBlocks"]
 transform = Transform3D(2.49572, 0, 0, 0, 1, 0, 0, 0, 2.14126, -77.1113, 27, -455.009)
@@ -4958,11 +5356,13 @@ use_collision = true
 radius = 10.0
 height = 206.0
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="SewerCeiling" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 231.386, 113.044, 128.91)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(2373.98, 0.5, 1627.96)
+script = ExtResource("2_4bvgn")
 
 [node name="PipeHole" type="CSGCylinder3D" parent="SewerBlocks/SewerCeiling"]
 transform = Transform3D(1.91069e-15, 2.18557e-08, 1, 0, 0.5, -4.37114e-08, -1, 0, 1.91069e-15, -380.9, -0.246185, 105.569)
@@ -4971,256 +5371,306 @@ use_collision = true
 radius = 4.128
 height = 6.01525
 sides = 32
+script = ExtResource("2_4bvgn")
 
 [node name="Block1" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.77075, 18.2785, -6.77483)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(140.24, 1, 234.278)
+script = ExtResource("2_4bvgn")
 
 [node name="Block2" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -149.189, -41.5192, 12.6669)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(181.832, 125.067, 195.394)
+script = ExtResource("2_4bvgn")
 
 [node name="Block21" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.7731, -37.553, 121.364)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(123, 133, 100)
+script = ExtResource("2_4bvgn")
 
 [node name="Block22" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -196.773, -46.553, 169.864)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(123, 115, 149)
+script = ExtResource("2_4bvgn")
 
 [node name="Block23" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -196.773, -40.553, 310.864)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(123, 127, 175)
+script = ExtResource("2_4bvgn")
 
 [node name="Block24" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -425.087, -34.053, 262.364)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(359.628, 140, 358)
+script = ExtResource("2_4bvgn")
 
 [node name="Block16" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -354.925, -20.5192, -43.3331)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(293.305, 125.067, 195.394)
+script = ExtResource("2_4bvgn")
 
 [node name="Block8" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -366.771, -36.553, -149.491)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(429.332, 135, 519.71)
+script = ExtResource("2_4bvgn")
 
 [node name="Block9" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.045, -29.553, -396.194)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(819.88, 149, 359.117)
+script = ExtResource("2_4bvgn")
 
 [node name="Block41" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 421.311, 4.30986, -337.945)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(332.055, 149, 330.243)
+script = ExtResource("2_4bvgn")
 
 [node name="Block17" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.895, -12.553, -419.117)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(352, 149, 318.961)
+script = ExtResource("2_4bvgn")
 
 [node name="Block3" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.7557, -39.798, -148.825)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(181.832, 128.51, 195.394)
+script = ExtResource("2_4bvgn")
 
 [node name="Block5" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.9456, -33.3232, -198.756)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(181.832, 141.46, 195.394)
+script = ExtResource("2_4bvgn")
 
 [node name="Block6" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 121.245, -40.1776, 65.5866)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(88.2403, 127.751, 111.915)
+script = ExtResource("2_4bvgn")
 
 [node name="Block7" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 209.786, -37.3549, 58.4777)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(101.688, 133.396, 111.915)
+script = ExtResource("2_4bvgn")
 
 [node name="Block10" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 225.786, -33.053, 148.52)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(101.688, 142, 88)
+script = ExtResource("2_4bvgn")
 
 [node name="Block15" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 247.786, -24.553, 238.02)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(101.688, 159, 137)
+script = ExtResource("2_4bvgn")
 
 [node name="Block26" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 273.786, -12.553, 145.02)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(101.688, 183, 137)
+script = ExtResource("2_4bvgn")
 
 [node name="Block36" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 391.43, 69.947, 20.3725)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(271, 2, 476.295)
+script = ExtResource("2_4bvgn")
 
 [node name="Block27" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 412.223, -5.05296, 368.887)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(230.562, 198, 328.733)
+script = ExtResource("2_4bvgn")
 
 [node name="Block28" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 153.01, 5.47787, 538.52)
 visible = false
 material_override = ExtResource("7_xc2n4")
 size = Vector3(524.76, 219.062, 170)
+script = ExtResource("2_4bvgn")
 
 [node name="Block29" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -214.87, 15.447, 594.52)
 visible = false
 material_override = ExtResource("7_xc2n4")
 size = Vector3(471, 239, 170)
+script = ExtResource("2_4bvgn")
 
 [node name="Block30" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -454.87, 29.947, 338.52)
 visible = false
 material_override = ExtResource("7_xc2n4")
 size = Vector3(471, 268, 170)
+script = ExtResource("2_4bvgn")
 
 [node name="Block31" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -426.87, 7.44704, -71.48)
 visible = false
 material_override = ExtResource("7_xc2n4")
 size = Vector3(471, 223, 170)
+script = ExtResource("2_4bvgn")
 
 [node name="Block32" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -376.37, 11.447, -358.98)
 visible = false
 material_override = ExtResource("7_xc2n4")
 size = Vector3(180, 231, 331)
+script = ExtResource("2_4bvgn")
 
 [node name="Block33" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -142.37, 0.447044, -473.98)
 visible = false
 material_override = ExtResource("7_xc2n4")
 size = Vector3(180, 209, 331)
+script = ExtResource("2_4bvgn")
 
 [node name="Block37" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -142.37, 189.151, -465.419)
 visible = false
 material_override = ExtResource("7_xc2n4")
 size = Vector3(197.122, 209, 331)
+script = ExtResource("2_4bvgn")
 
 [node name="Block34" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 213.63, 21.447, -460.98)
 visible = false
 material_override = ExtResource("7_xc2n4")
 size = Vector3(220, 251, 457)
+script = ExtResource("2_4bvgn")
 
 [node name="Block35" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 355.63, -4.55296, -318.98)
 visible = false
 material_override = ExtResource("7_xc2n4")
 size = Vector3(220, 199, 457)
+script = ExtResource("2_4bvgn")
 
 [node name="Block38" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 409.141, 79.4282, -330.597)
 visible = false
 material_override = ExtResource("7_xc2n4")
 size = Vector3(112.979, 103.69, 433.765)
+script = ExtResource("2_4bvgn")
 
 [node name="Block39" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 472.795, 98.7212, -53.6857)
 visible = false
 material_override = ExtResource("7_xc2n4")
 size = Vector3(76.3331, 65.1037, 433.765)
+script = ExtResource("2_4bvgn")
 
 [node name="Block40" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 437.887, 98.7212, 305.905)
 visible = false
 material_override = ExtResource("7_xc2n4")
 size = Vector3(76.3331, 65.1037, 303.396)
+script = ExtResource("2_4bvgn")
 
 [node name="Block11" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 159.63, -35.053, 213.52)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(94, 138, 206)
+script = ExtResource("2_4bvgn")
 
 [node name="Block12" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 83.13, -45.553, 264.02)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(77, 141, 83)
+script = ExtResource("2_4bvgn")
 
 [node name="Block14" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 153.63, -38.553, 318.02)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(362, 155, 83)
+script = ExtResource("2_4bvgn")
 
 [node name="Block18" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.87, -40.053, 259.02)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(145, 152, 75)
+script = ExtResource("2_4bvgn")
 
 [node name="Block19" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.37, -36.053, 341.52)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(130, 160, 136)
+script = ExtResource("2_4bvgn")
 
 [node name="Block20" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 144.13, -29.053, 475.906)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(353, 174, 272.772)
+script = ExtResource("2_4bvgn")
 
 [node name="Block25" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -278.243, -25.553, 542.178)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(513.746, 181, 291.316)
+script = ExtResource("2_4bvgn")
 
 [node name="Block13" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.13, -41.553, 243.02)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(77, 141, 83)
+script = ExtResource("2_4bvgn")
 
 [node name="Block4" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 169.522, -39.2916, -157.998)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(181.832, 129.523, 142.844)
+script = ExtResource("2_4bvgn")
+metadata/nonstick = false
 
 [node name="Fence" parent="SewerBlocks" instance=ExtResource("25_o83hb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 241.686, 44.994, -30.135)
 size = Vector3(29, 6, 0.1)
+script = ExtResource("2_4bvgn")
 
 [node name="Fence3" parent="SewerBlocks" instance=ExtResource("25_o83hb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 210.686, 33.994, -30.135)
 visible = false
 size = Vector3(33, 6, 0.1)
+script = ExtResource("2_4bvgn")
 
 [node name="Fence5" parent="SewerBlocks" instance=ExtResource("25_o83hb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136.186, 20.994, -21.135)
 visible = false
 size = Vector3(116, 6, 0.1)
+script = ExtResource("2_4bvgn")
 
 [node name="Fence6" parent="SewerBlocks" instance=ExtResource("25_o83hb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136.186, 20.994, -62.135)
 visible = false
 size = Vector3(116, 6, 0.1)
+script = ExtResource("2_4bvgn")
 
 [node name="Fence7" parent="SewerBlocks" instance=ExtResource("25_o83hb")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 77.186, 21.794, -41.635)
 visible = false
 size = Vector3(41, 6, 0.1)
+script = ExtResource("2_4bvgn")
 
 [node name="Fence4" parent="SewerBlocks" instance=ExtResource("25_o83hb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 210.686, 33.994, -53.135)
 visible = false
 size = Vector3(33, 6, 0.1)
+script = ExtResource("2_4bvgn")
 
 [node name="Fence2" parent="SewerBlocks" instance=ExtResource("25_o83hb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 241.686, 44.994, -53.135)
 size = Vector3(29, 6, 0.1)
+script = ExtResource("2_4bvgn")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 147.836, 106.087, -42.517)
