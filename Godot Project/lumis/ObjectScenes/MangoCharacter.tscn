@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://d141gk5umir7l"]
+[gd_scene load_steps=8 format=3 uid="uid://d141gk5umir7l"]
 
 [ext_resource type="Script" uid="uid://crub8m7rjahjq" path="res://Scripts/mango_character_controller.gd" id="1_qccra"]
 [ext_resource type="PackedScene" uid="uid://cmhvntnt2oi8r" path="res://Meshes/Other/Mango/MangoMeshFinal.tscn" id="2_qccra"]
@@ -11,6 +11,8 @@ radius = 0.846402
 radius = 1.0
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_qccra"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_shwng"]
 
 [node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "faceChecker", "upwards", "camPivot", "cam")]
 collision_priority = 0.1
@@ -61,3 +63,66 @@ transform = Transform3D(0.079, 0, 0, 0, 0.088, 0, 0, 0, 0.056, -0.189, 0.315, -0
 material_override = ExtResource("3_shwng")
 mesh = SubResource("CapsuleMesh_qccra")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/MangoRoot/RelativeUpwards")
+
+[node name="RayHolder" type="Node3D" parent="."]
+
+[node name="RayCast3D" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(0, -1.5, 0)
+
+[node name="RayCast3D2" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(0, 1.5, 0)
+
+[node name="RayCast3D3" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(1.5, 0, 0)
+
+[node name="RayCast3D4" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(-1.5, 0, 0)
+
+[node name="RayCast3D5" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(0, 0, 1.5)
+
+[node name="RayCast3D6" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(0, 0, -1.5)
+
+[node name="RayCast3D7" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(1.5, -1.5, 0)
+
+[node name="RayCast3D8" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(1.5, 1.5, 0)
+
+[node name="RayCast3D9" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(-1.5, -1.5, 0)
+
+[node name="RayCast3D10" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(-1.5, 1.5, 0)
+
+[node name="RayCast3D11" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(0, 1.5, 1.5)
+
+[node name="RayCast3D12" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(0, 1.5, -1.5)
+
+[node name="RayCast3D13" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(0, -1.5, 1.5)
+
+[node name="RayCast3D14" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(0, -1.5, -1.5)
+
+[node name="RayCast3D15" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(1.5, 0, 1.5)
+
+[node name="RayCast3D16" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(1.5, 0, -1.5)
+
+[node name="RayCast3D17" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(-1.5, 0, 1.5)
+
+[node name="RayCast3D18" type="RayCast3D" parent="RayHolder"]
+target_position = Vector3(-1.5, 0, -1.5)
+
+[node name="StickDetectionRange" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StickDetectionRange"]
+shape = SubResource("SphereShape3D_shwng")
+
+[connection signal="body_entered" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_entered"]
