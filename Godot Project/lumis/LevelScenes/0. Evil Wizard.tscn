@@ -9,7 +9,8 @@ script = ExtResource("1_ff6bn")
 
 [node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_8cw4p")
-volume_db = 24.0
+volume_db = 10.0
+autoplay = true
 panning_strength = 0.0
 parameters/looping = true
 
