@@ -1,0 +1,39 @@
+[gd_scene load_steps=9 format=3 uid="uid://foy2w1ght5vg"]
+
+[ext_resource type="ArrayMesh" uid="uid://dsjyfkmewxec5" path="res://Meshes/1Sewers/Rail.obj" id="1_ofokq"]
+[ext_resource type="ArrayMesh" uid="uid://bv842nnykldqu" path="res://Meshes/1Sewers/Pole.obj" id="2_c2sqm"]
+[ext_resource type="Texture2D" uid="uid://ccmdrlg03areq" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_BaseColorALT.png" id="2_xxm8b"]
+[ext_resource type="Texture2D" uid="uid://b04cuerkpc81e" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_Metallic.png" id="3_c2157"]
+[ext_resource type="Texture2D" uid="uid://b2akwwjkf8a5b" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_Roughness.png" id="4_f5w5t"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dodxj"]
+albedo_texture = ExtResource("2_xxm8b")
+metallic = 1.0
+metallic_texture = ExtResource("3_c2157")
+roughness_texture = ExtResource("4_f5w5t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5kmal"]
+albedo_texture = ExtResource("2_xxm8b")
+metallic = 1.0
+metallic_texture = ExtResource("3_c2157")
+roughness_texture = ExtResource("4_f5w5t")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xxm8b"]
+size = Vector3(1.43994, 5.03882, 3.37982)
+
+[node name="Pole" type="MeshInstance3D"]
+transform = Transform3D(0.690266, 0, 0, 0, 0.690266, 0, 0, 0, 0.690266, 0, 0, 0)
+mesh = ExtResource("2_c2sqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+mesh = ExtResource("1_ofokq")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0124512, -0.152954, 0.0135804)
+shape = SubResource("BoxShape3D_xxm8b")

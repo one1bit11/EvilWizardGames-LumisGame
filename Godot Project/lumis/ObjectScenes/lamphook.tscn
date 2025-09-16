@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://dmx37t442sne4"]
+
+[ext_resource type="ArrayMesh" uid="uid://cbssl0vvvu7fp" path="res://Meshes/0Universal/LampHook.obj" id="1_lhb57"]
+[ext_resource type="Texture2D" uid="uid://ccmdrlg03areq" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_BaseColorALT.png" id="2_m2d8q"]
+[ext_resource type="Texture2D" uid="uid://b04cuerkpc81e" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_Metallic.png" id="3_wekwe"]
+[ext_resource type="Texture2D" uid="uid://b2akwwjkf8a5b" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_Roughness.png" id="4_3e8g2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gwmb0"]
+albedo_texture = ExtResource("2_m2d8q")
+metallic = 1.0
+metallic_texture = ExtResource("3_wekwe")
+roughness_texture = ExtResource("4_3e8g2")
+
+[node name="lamphook" type="Node3D"]
+transform = Transform3D(-1.64951e-07, 0, 3.77364, 0, 3.77364, 0, -3.77364, 0, -1.64951e-07, 0, 0, 0)
+
+[node name="LampHook" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.146898, 0.627589, -6.42109e-09)
+mesh = ExtResource("1_lhb57")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_gwmb0")
