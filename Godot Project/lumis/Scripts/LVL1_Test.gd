@@ -18,3 +18,17 @@ func _on_checkpoint_area_entered(area: Area3D, extra_arg_0: Vector3) -> void:
 func _on_death_trigger_area_entered(area: Area3D) -> void:
 	if area.name == "MangoTrigger":
 		reset_mango_to_checkpoint()
+
+
+func _on_music_replace_area_entered(area: Area3D) -> void:
+	if area.name == "MangoTrigger":
+		print("Music Change")
+		$Audio/Music/MusicPlayer.volume_db = -80
+		$Audio/Music/MusicPlayerAlt.volume_db = 20
+
+
+func _on_music_play_area_entered(area: Area3D) -> void:
+	if area.name == "MangoTrigger":
+		print("Music Play")
+		$Audio/Music/MusicPlayer.playing = true
+		$Audio/Music/MusicPlayerAlt.playing = true
