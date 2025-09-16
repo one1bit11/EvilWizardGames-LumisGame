@@ -178,12 +178,14 @@ func _physics_process(delta: float) -> void:
 		
 	#print(velocity)
 	if Input.is_action_just_pressed("Jump") && isSticking:
-		
+		$MangoJumpSound.pitch_scale = randf_range(0.9, 1.1)
+		$MangoJumpSound.play()
 		velocity += (faceChecker.get_collision_normal(currentSurfaceVal) * jumpVelocity)
 
 		velocity.y += jumpVelocity/2 
 	if Input.is_action_just_pressed("Jump") && is_on_floor() && !isSticking:
-		
+		$MangoJumpSound.pitch_scale = randf_range(0.9, 1.1)
+		$MangoJumpSound.play()
 		velocity.y += jumpVelocity + (jumpVelocity/2)
 
 

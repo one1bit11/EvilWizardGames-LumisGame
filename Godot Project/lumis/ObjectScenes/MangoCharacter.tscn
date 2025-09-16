@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://d141gk5umir7l"]
+[gd_scene load_steps=10 format=3 uid="uid://d141gk5umir7l"]
 
 [ext_resource type="Script" uid="uid://crub8m7rjahjq" path="res://Scripts/mango_character_controller.gd" id="1_qccra"]
 [ext_resource type="PackedScene" uid="uid://cmhvntnt2oi8r" path="res://Meshes/Other/Mango/MangoMeshFinal.tscn" id="2_qccra"]
 [ext_resource type="Material" uid="uid://bn3ea0tykiugl" path="res://Textures/Other/MangoEye.tres" id="3_shwng"]
+[ext_resource type="AudioStream" uid="uid://b8liwhwx23ey7" path="res://Sounds/SFX/JUMPSFXtest.mp3" id="4_q3my7"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_qccra"]
 radius = 0.846402
@@ -132,5 +133,9 @@ shape = SubResource("SphereShape3D_shwng")
 
 [node name="MangoTrigger" type="CollisionShape3D" parent="MangoTrigger"]
 shape = SubResource("SphereShape3D_syw4e")
+
+[node name="MangoJumpSound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_q3my7")
+volume_db = -5.0
 
 [connection signal="body_entered" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_entered"]
