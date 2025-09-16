@@ -275,20 +275,21 @@ func _stick():
 		if faceChecker.get_collision_count() >= 1:
 			for i in faceChecker.get_collision_count():
 				#if theres 2 or more objects
-				#if faceChecker.get_collision_count() > 1 && i-1 >= 0:
+				if faceChecker.get_collision_count() > 1 && i-1 >= 0:
 					#if this point is closer than the last point, use its details instead
-					#if (self.global_position - faceChecker.get_collision_point(i)) < (self.global_position - faceChecker.get_collision_point(i-1)):
-						#currentSurface = faceChecker.get_collider(i)
-						#currentSurfaceVal = i
-						#if "nonstick" in currentSurface:
-							#if currentSurface.nonstick == false:
-								#stickPoint = faceChecker.get_collision_point(i)
-								#isSticking = true
-								#
-								#_allign_with_surface(faceChecker.get_collision_normal(i))
-								#grav = Vector3.ZERO
-							#else:
-								#isSticking = false
+					if (self.global_position - faceChecker.get_collision_point(i)) < (self.global_position - faceChecker.get_collision_point(i-1)):
+						currentSurface = faceChecker.get_collider(i)
+						currentSurfaceVal = i
+						if "nonstick" in currentSurface:
+							if currentSurface.nonstick == false:
+								stickPoint = faceChecker.get_collision_point(i)
+								isSticking = true
+								
+								_allign_with_surface(faceChecker.get_collision_normal(i))
+								grav = Vector3.ZERO
+							else:
+								isSticking = false
+								grav = Vector3.UP * gravityStr
 						
 				#if theres exactly one object
 				if faceChecker.get_collision_count() == 1:
@@ -300,6 +301,9 @@ func _stick():
 							isSticking = true
 							_allign_with_surface(faceChecker.get_collision_normal(i))
 							grav = Vector3.ZERO
+						else:
+							isSticking = false
+							grav = Vector3.UP * gravityStr
 				#if there are no objects
 		elif faceChecker.get_collision_count() == 0:
 				isSticking = false
