@@ -1,0 +1,37 @@
+[gd_scene load_steps=12 format=3 uid="uid://dnaxjuf7qt47t"]
+
+[ext_resource type="ArrayMesh" uid="uid://d1dl65em4t8gv" path="res://Meshes/0Universal/Crate.obj" id="1_aid8w"]
+[ext_resource type="Texture2D" uid="uid://xcjc1pam0r88" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_BaseColor.png" id="2_he4wi"]
+[ext_resource type="Texture2D" uid="uid://b52b4344uu1b4" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_Metallic.png" id="3_aqx7d"]
+[ext_resource type="Texture2D" uid="uid://ch6bx8dqovm17" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_Roughness.png" id="4_7gdec"]
+[ext_resource type="Texture2D" uid="uid://ccmdrlg03areq" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_BaseColorALT.png" id="5_7gdec"]
+[ext_resource type="Script" uid="uid://cthhsvlwdylva" path="res://Scripts/object_properties.gd" id="5_fgdrj"]
+[ext_resource type="Texture2D" uid="uid://b04cuerkpc81e" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_Metallic.png" id="6_fgdrj"]
+[ext_resource type="Texture2D" uid="uid://b2akwwjkf8a5b" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_Roughness.png" id="7_modxg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6lffy"]
+albedo_texture = ExtResource("2_he4wi")
+metallic = 1.0
+metallic_texture = ExtResource("3_aqx7d")
+roughness_texture = ExtResource("4_7gdec")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mfffw"]
+albedo_texture = ExtResource("5_7gdec")
+metallic = 1.0
+metallic_texture = ExtResource("6_fgdrj")
+roughness_texture = ExtResource("7_modxg")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cwiry"]
+points = PackedVector3Array(-0.274288, -0.324402, -0.448584, 0.274225, -0.324402, -0.448584, -0.285003, -0.324402, -0.442407, -0.310591, -0.310621, -0.479564, 0.28494, -0.324402, -0.442407, 0.310528, -0.310621, -0.479564, -0.285003, -0.324402, 0.44231, -0.321936, -0.282486, -0.442407, -0.321936, -0.271817, -0.448584, -0.310591, 0.310557, -0.479564, -0.286011, -0.271817, -0.492979, -0.279835, -0.282486, -0.492979, -0.310591, -0.310621, 0.479466, 0.28494, -0.324402, 0.44231, 0.279772, -0.282486, -0.492979, 0.285948, -0.271817, -0.492979, 0.310528, 0.310557, -0.479564, 0.321936, -0.271817, -0.448584, 0.321936, -0.282486, -0.442407, 0.310528, -0.310621, 0.479466, -0.274288, -0.324402, 0.448486, -0.321936, -0.282486, 0.44231, -0.321936, 0.27169, -0.448584, -0.285003, 0.324339, -0.442407, -0.274288, 0.324339, -0.448584, -0.279835, 0.282423, -0.492979, -0.286011, 0.27169, -0.492979, -0.321936, 0.282423, -0.442407, -0.310591, 0.310557, 0.479466, -0.279835, -0.282486, 0.492882, -0.286011, -0.271817, 0.492882, -0.321936, -0.271817, 0.448486, 0.274225, -0.324402, 0.448486, 0.285948, 0.27169, -0.492979, 0.321936, 0.282423, -0.442407, 0.321936, 0.27169, -0.448584, 0.279772, 0.282423, -0.492979, 0.274225, 0.324339, -0.448584, 0.28494, 0.324339, -0.442407, 0.310528, 0.310557, 0.479466, 0.321936, -0.282486, 0.44231, 0.321936, -0.271817, 0.448486, 0.285948, -0.271817, 0.492882, 0.279772, -0.282486, 0.492882, -0.285003, 0.324339, 0.44231, -0.321936, 0.282423, 0.44231, -0.321936, 0.27169, 0.448486, -0.286011, 0.27169, 0.492882, -0.279835, 0.282423, 0.492882, -0.274288, 0.324339, 0.448486, 0.321936, 0.282423, 0.44231, 0.28494, 0.324339, 0.44231, 0.274225, 0.324339, 0.448486, 0.279772, 0.282423, 0.492882, 0.285948, 0.27169, 0.492882, 0.321936, 0.27169, 0.448486)
+
+[node name="Crate9" type="MeshInstance3D"]
+transform = Transform3D(-3.06126, 0, -3.64452, 0, 4.7596, 0, 3.64452, 0, -3.06126, 0, 0, 0)
+mesh = ExtResource("1_aid8w")
+surface_material_override/0 = SubResource("StandardMaterial3D_6lffy")
+surface_material_override/1 = SubResource("StandardMaterial3D_mfffw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+script = ExtResource("5_fgdrj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_cwiry")

@@ -1,0 +1,38 @@
+[gd_scene load_steps=12 format=3 uid="uid://bm577g158j0qf"]
+
+[ext_resource type="ArrayMesh" uid="uid://d1dl65em4t8gv" path="res://Meshes/0Universal/Crate.obj" id="1_usap8"]
+[ext_resource type="Texture2D" uid="uid://xcjc1pam0r88" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_BaseColor.png" id="2_ybvq1"]
+[ext_resource type="Texture2D" uid="uid://b52b4344uu1b4" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_Metallic.png" id="3_w22ox"]
+[ext_resource type="Texture2D" uid="uid://ch6bx8dqovm17" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_Roughness.png" id="4_vfuo6"]
+[ext_resource type="Script" uid="uid://cthhsvlwdylva" path="res://Scripts/object_properties.gd" id="5_eanju"]
+[ext_resource type="Texture2D" uid="uid://ccmdrlg03areq" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_BaseColorALT.png" id="5_vfuo6"]
+[ext_resource type="Texture2D" uid="uid://b04cuerkpc81e" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_Metallic.png" id="6_eanju"]
+[ext_resource type="Texture2D" uid="uid://b2akwwjkf8a5b" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_Roughness.png" id="7_jbdwv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_us58e"]
+albedo_texture = ExtResource("2_ybvq1")
+metallic = 1.0
+metallic_texture = ExtResource("3_w22ox")
+roughness_texture = ExtResource("4_vfuo6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mpgnh"]
+albedo_texture = ExtResource("5_vfuo6")
+metallic = 1.0
+metallic_texture = ExtResource("6_eanju")
+roughness_texture = ExtResource("7_jbdwv")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yv5qi"]
+points = PackedVector3Array(-0.274288, -0.324402, -0.448584, 0.274225, -0.324402, -0.448584, -0.285003, -0.324402, -0.442407, -0.310591, -0.310621, -0.479564, 0.28494, -0.324402, -0.442407, 0.310528, -0.310621, -0.479564, -0.285003, -0.324402, 0.44231, -0.321936, -0.282486, -0.442407, -0.321936, -0.271817, -0.448584, -0.310591, 0.310557, -0.479564, -0.286011, -0.271817, -0.492979, -0.279835, -0.282486, -0.492979, -0.310591, -0.310621, 0.479466, 0.28494, -0.324402, 0.44231, 0.279772, -0.282486, -0.492979, 0.285948, -0.271817, -0.492979, 0.310528, 0.310557, -0.479564, 0.321936, -0.271817, -0.448584, 0.321936, -0.282486, -0.442407, 0.310528, -0.310621, 0.479466, -0.274288, -0.324402, 0.448486, -0.321936, -0.282486, 0.44231, -0.321936, 0.27169, -0.448584, -0.285003, 0.324339, -0.442407, -0.274288, 0.324339, -0.448584, -0.279835, 0.282423, -0.492979, -0.286011, 0.27169, -0.492979, -0.321936, 0.282423, -0.442407, -0.310591, 0.310557, 0.479466, -0.279835, -0.282486, 0.492882, -0.286011, -0.271817, 0.492882, -0.321936, -0.271817, 0.448486, 0.274225, -0.324402, 0.448486, 0.285948, 0.27169, -0.492979, 0.321936, 0.282423, -0.442407, 0.321936, 0.27169, -0.448584, 0.279772, 0.282423, -0.492979, 0.274225, 0.324339, -0.448584, 0.28494, 0.324339, -0.442407, 0.310528, 0.310557, 0.479466, 0.321936, -0.282486, 0.44231, 0.321936, -0.271817, 0.448486, 0.285948, -0.271817, 0.492882, 0.279772, -0.282486, 0.492882, -0.285003, 0.324339, 0.44231, -0.321936, 0.282423, 0.44231, -0.321936, 0.27169, 0.448486, -0.286011, 0.27169, 0.492882, -0.279835, 0.282423, 0.492882, -0.274288, 0.324339, 0.448486, 0.321936, 0.282423, 0.44231, 0.28494, 0.324339, 0.44231, 0.274225, 0.324339, 0.448486, 0.279772, 0.282423, 0.492882, 0.285948, 0.27169, 0.492882, 0.321936, 0.27169, 0.448486)
+
+[node name="Crate2" type="MeshInstance3D"]
+transform = Transform3D(2.1663, 0, -2.74902, 0, 3.5, 0, 2.74902, 0, 2.1663, 0, 0, 0)
+mesh = ExtResource("1_usap8")
+surface_material_override/0 = SubResource("StandardMaterial3D_us58e")
+surface_material_override/1 = SubResource("StandardMaterial3D_mpgnh")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+visible = false
+script = ExtResource("5_eanju")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_yv5qi")
