@@ -11,7 +11,8 @@ func _ready() -> void:
 func _input(event: InputEvent) -> void:
 	#frees the mouse, remember to delete this before release this si j
 	if Input.is_action_just_pressed("ExitMenu"):
-		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		#Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		pass
 	
 	## Teleports Mango to a set position
 	if Input.is_key_pressed(KEY_0):

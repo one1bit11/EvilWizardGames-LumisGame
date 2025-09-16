@@ -1,4 +1,4 @@
-[gd_scene load_steps=324 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=325 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
@@ -1276,6 +1276,9 @@ roughness_texture = ExtResource("9_s61i1")
 [sub_resource type="BoxShape3D" id="BoxShape3D_iu3y3"]
 size = Vector3(34, 1, 43)
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_vgtun"]
+height = 5.38086
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_ymun1"]
 size = Vector3(3043, 1, 1283)
 
@@ -1425,7 +1428,7 @@ transform = Transform3D(1, 0, 0, 1.13687e-13, 1, 0, 0, 0, 1, -8.64267e-07, 405, 
 mesh = SubResource("PlaneMesh_isujd")
 
 [node name="Mango" parent="." instance=ExtResource("1_xlif7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -513.6, 0, 23.8591)
 speed = 12.0
 acc = 4.0
 jumpVelocity = 30.0
@@ -1919,10 +1922,9 @@ spot_angle_attenuation = 1.07177
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -38, 0)
 
 [node name="Wall10Floor" type="CSGBox3D" parent="ROOMS/Room2"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, -58.5, 7.99693, -28.4973)
+transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, -58.5, 7.99693, -28.4764)
 material_override = ExtResource("6_xc2n4")
-use_collision = true
-size = Vector3(0.0188675, 14.9946, 33)
+size = Vector3(0.0188675, 14.9529, 33)
 script = ExtResource("2_4bvgn")
 
 [node name="Wall10Floor2" type="CSGBox3D" parent="ROOMS/Room2"]
@@ -7386,11 +7388,11 @@ size = Vector3(6, 26, 5)
 script = ExtResource("2_4bvgn")
 
 [node name="Wall14" type="CSGBox3D" parent="ROOMS/Room12/Wall7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2.44999, -9)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5502, 2.44998, -9)
 material_override = ExtResource("7_xc2n4")
 operation = 2
 use_collision = true
-size = Vector3(6, 24, 5)
+size = Vector3(5.10046, 24, 5)
 script = ExtResource("2_4bvgn")
 
 [node name="Wall11" type="CSGBox3D" parent="ROOMS/Room12/Wall7"]
@@ -7410,17 +7412,17 @@ size = Vector3(13, 26, 5)
 script = ExtResource("2_4bvgn")
 
 [node name="Wall9" type="CSGBox3D" parent="ROOMS/Room12"]
-transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -534.501, 20.4946, 50.7861)
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -534.501, 20.4566, 50.7861)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
-size = Vector3(29.9893, 0.572266, 50.998)
+size = Vector3(29.9132, 0.572266, 50.998)
 script = ExtResource("2_4bvgn")
 
 [node name="Floor2" type="CSGBox3D" parent="ROOMS/Room12"]
-transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -535.014, 35.4389, 61.9987)
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -535.014, 34.9146, 62.0622)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
-size = Vector3(0.13623, 22.9573, 52)
+size = Vector3(1.18481, 22.8303, 52)
 script = ExtResource("2_4bvgn")
 
 [node name="Floor3" type="CSGBox3D" parent="ROOMS/Room12/Floor2"]
@@ -7429,6 +7431,12 @@ material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(0.13623, 46, 62)
 script = ExtResource("2_4bvgn")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room12/Floor2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room12/Floor2/StaticBody3D"]
+transform = Transform3D(1, -4.37111e-08, 4.37114e-08, -4.37114e-08, -4.37114e-08, 1, -4.37114e-08, -1, -4.37114e-08, 0.416439, 11.3092, -9.5033)
+shape = SubResource("CylinderShape3D_vgtun")
 
 [node name="Wall5" type="CSGBox3D" parent="ROOMS/Room12"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -520, -3.5, 35)
@@ -7943,7 +7951,6 @@ font_size = 107
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, -689, 109, 85.9695)
 visible = false
 material_override = ExtResource("26_6kin7")
-use_collision = true
 radius = 4.55
 height = 32.061
 sides = 32
@@ -7961,7 +7968,6 @@ script = ExtResource("2_4bvgn")
 transform = Transform3D(1.91069e-15, 2.18557e-08, 1, 0, 0.5, -4.37114e-08, -1, 0, 1.91069e-15, -689, 110, 104.969)
 visible = false
 material_override = ExtResource("26_6kin7")
-use_collision = true
 radius = 4.55
 height = 32.061
 sides = 32
@@ -7987,7 +7993,6 @@ script = ExtResource("2_4bvgn")
 transform = Transform3D(-8.74228e-08, -2.18557e-08, -1, -1, -2.18557e-08, 8.74228e-08, -4.37114e-08, 0.5, -4.37114e-08, -689, 129, 114.712)
 visible = false
 material_override = ExtResource("26_6kin7")
-use_collision = true
 radius = 4.55
 height = 43.0305
 sides = 32
@@ -8043,6 +8048,7 @@ shape = SubResource("ConcavePolygonShape3D_u30rl")
 
 [node name="Tubelong9" type="MeshInstance3D" parent="ROOMS/Room15"]
 transform = Transform3D(4.22063e-13, 19.8, 5.70313e-08, -8.65487e-07, 8.65485e-07, -1.30472, -19.8, -2.15346e-12, 5.70312e-08, -688.888, 124.364, 105.273)
+visible = false
 material_override = ExtResource("27_oer2p")
 mesh = ExtResource("12_c0owb")
 skeleton = NodePath("../../..")
@@ -8143,31 +8149,36 @@ script = ExtResource("2_4bvgn")
 shape = SubResource("ConcavePolygonShape3D_1q3vj")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="ROOMS/Room15"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -689, 105, 89.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -689, 105, 88.3079)
+material_override = ExtResource("26_6kin7")
 use_collision = true
-size = Vector3(5, 1, 26)
+size = Vector3(5, 1, 28.3843)
 script = ExtResource("2_4bvgn")
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="ROOMS/Room15"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -689, 132.2, 115.7)
+material_override = ExtResource("26_6kin7")
 use_collision = true
 size = Vector3(5, 1, 12)
 script = ExtResource("2_4bvgn")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="ROOMS/Room15"]
 transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -689, 106.536, 103.036)
+material_override = ExtResource("26_6kin7")
 use_collision = true
 size = Vector3(5, 1, 6)
 script = ExtResource("2_4bvgn")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="ROOMS/Room15"]
-transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -689, 130.236, 108.036)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -689, 130.236, 108.34)
+material_override = ExtResource("26_6kin7")
 use_collision = true
 size = Vector3(5, 1, 6)
 script = ExtResource("2_4bvgn")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="ROOMS/Room15"]
-transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -689, 118.536, 105.636)
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -689, 118.536, 106.295)
+material_override = ExtResource("26_6kin7")
 use_collision = true
 size = Vector3(5, 1, 20)
 script = ExtResource("2_4bvgn")
