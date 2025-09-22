@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://b6prodcf7c5ho"]
+[gd_scene load_steps=12 format=3 uid="uid://b6prodcf7c5ho"]
 
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_k8817"]
 [ext_resource type="Script" uid="uid://caypftosno0ua" path="res://Scripts/evil_wizard.gd" id="1_uoman"]
+[ext_resource type="Script" uid="uid://cthhsvlwdylva" path="res://Scripts/object_properties.gd" id="2_v6ti7"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_k8817"]
 
@@ -18,6 +19,8 @@ size = Vector3(36.519, 1.01574, 26.7714)
 [sub_resource type="SphereMesh" id="SphereMesh_uoman"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_v6ti7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_b4mcp"]
 
 [node name="ExperimentRoom" type="Node3D"]
 script = ExtResource("1_uoman")
@@ -63,6 +66,8 @@ mesh = SubResource("BoxMesh_k8817")
 
 [node name="Wall2" type="StaticBody3D" parent="Wall"]
 transform = Transform3D(-0.999938, -0.0111174, -4.37114e-08, 4.32227e-08, 4.41946e-08, -1, 0.0111174, -0.999938, -4.37114e-08, 18.4817, -8.44397, 17.0903)
+script = ExtResource("2_v6ti7")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/Wall2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.36669, 0.00236702, -0.00839996)
@@ -114,3 +119,10 @@ transform = Transform3D(1.01047, 0, 0, 0, -4.41692e-08, 1.01047, 0, -1.01047, -4
 light_cull_mask = 4294966273
 shadow_enabled = true
 shadow_caster_mask = 4294966274
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(17.2859, 0, 0, 0, 21.2933, 0, 0, 0, 1, 0.439683, 3.06193, 12.9876)
+use_collision = true
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGBox3D"]
+mesh = SubResource("BoxMesh_b4mcp")

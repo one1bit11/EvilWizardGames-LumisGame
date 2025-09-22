@@ -23,12 +23,16 @@ extends CharacterBody3D
 @export var allignRampUp := 1.5
 ##gravity strength (keep negative)
 @export var gravityStr := -2
+##Sprint speed modifyer
+@export var sprintSpeed := 1.3
+
 
 ##gravity
 var grav := Vector3(0,-2,0)
 ##average normals of the surfaces nearby
 var avgnormal := Vector3.ZERO
-
+##Is sprinting
+var sprinting := false
 
 @export_subgroup("Sticking")
 ##raycast to detect surface details
@@ -138,12 +142,23 @@ func _get_move_input(delta):
 		
 		#lerp the   for smoother movement and acceleration
 		velocity = dir * (speed/stickSlow)
+		
+		
 	else:
 		#set the diraction based on the value and the camera rotation
 		rot = camPivot.rotation.y
 		dir = Vector3(input.x, 0, input.y).rotated(Vector3.UP, rot).normalized()
 		#lerp the velocity for smoother movement and acceleration
-		velocity = lerp(velocity, dir * speed, acc * delta)
+		if sprinting == true:
+			
+			velocity = lerp(velocity, dir * sprintSpeed, acc * delta)
+			
+
+		else:
+			
+			velocity = lerp(velocity, dir * speed, acc * delta)
+
+
 	
 
 	#set the vertical velocity to the same as it was
@@ -164,6 +179,16 @@ func _physics_process(delta: float) -> void:
 		isSticking = false
 	#Because the camera is top level, this allows it to still follow the player without inheriting the rotation
 	camPivot.global_position = Vector3(global_position.x,global_position.y + camPivotHeight, global_position.z)
+	
+	
+	
+	
+	#check for sprinting input, can't sprint while sticking
+	#if isSticking == false && stickyMode == false && Input.is_action_pressed("Sprint"):
+	if Input.is_action_pressed("Sprint"):
+		sprinting = true
+	else:
+		sprinting = false
 	_get_move_input(delta)
 	#if !isSticking:
 	velocity += grav
@@ -187,6 +212,16 @@ func _physics_process(delta: float) -> void:
 		$MangoJumpSound.pitch_scale = randf_range(0.9, 1.1)
 		$MangoJumpSound.play()
 		velocity.y += jumpVelocity + (jumpVelocity/2)
+
+
+
+
+
+
+
+
+
+
 
 
 	move_and_slide()
@@ -224,7 +259,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _stick():
-	#check raycasts
+	##check raycasts
 	#grav = Vector3.ZERO
 	#var raysColliding := 0
 	#if stickyMode:
@@ -251,9 +286,12 @@ func _stick():
 		#velocity = Vector3.ZERO
 	
 	# set sticky mode to true while button is held, can be changed to toggle if/when we add settings
+	if Input.is_action_just_released("StickMode"):
+		stickyMode = false
+		isSticking = false
 	if Input.is_action_pressed("StickMode"):
 		stickyMode = true
-		#
+	
 		#
 		#
 		#checks which point is closer
@@ -274,6 +312,7 @@ func _stick():
 								grav = Vector3.ZERO
 							else:
 								isSticking = false
+								stickyMode = false
 								grav = Vector3.UP * gravityStr
 						else:
 							stickPoint = faceChecker.get_collision_point(i)
@@ -292,6 +331,7 @@ func _stick():
 							grav = Vector3.ZERO
 						else:
 							isSticking = false
+							stickyMode = false
 							grav = Vector3.UP * gravityStr
 					else:
 							stickPoint = faceChecker.get_collision_point(i)
@@ -326,3 +366,5 @@ func _on_stick_detection_range_body_entered(body: Node3D) -> void:
 func _on_stick_detection_range_body_exited(body: Node3D) -> void:
 	if body == currentBody:
 		currentBody = null
+		stickyMode = false
+		isSticking = false
