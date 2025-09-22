@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cnglve84q3h6n"]
+[gd_scene load_steps=8 format=3 uid="uid://cnglve84q3h6n"]
 
 [ext_resource type="Texture2D" uid="uid://xcjc1pam0r88" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_BaseColor.png" id="1_264hc"]
 [ext_resource type="Texture2D" uid="uid://b52b4344uu1b4" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_Metallic.png" id="2_4qif7"]
@@ -11,16 +11,22 @@ metallic = 0.72
 metallic_texture = ExtResource("2_4qif7")
 roughness_texture = ExtResource("3_r387f")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_264hc"]
+albedo_color = Color(1, 0.891036, 0.795241, 1)
+metallic = 0.83
+roughness = 0.43
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_c0owb"]
-size = Vector3(2.07495, 2.0759, 3.21851)
+size = Vector3(2, 2.0759, 3.21997)
 
 [node name="Create" type="StaticBody3D"]
 
 [node name="Crate" type="MeshInstance3D" parent="."]
 transform = Transform3D(3.33805, 0, 0, 0, 3.33805, 0, 0, 0, 3.33805, 0, 1.08055, 0)
-material_override = SubResource("StandardMaterial3D_nmy0m")
 mesh = ExtResource("2_reb8w")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_nmy0m")
+surface_material_override/1 = SubResource("StandardMaterial3D_264hc")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00012207, 1.08162, 0.0032959)

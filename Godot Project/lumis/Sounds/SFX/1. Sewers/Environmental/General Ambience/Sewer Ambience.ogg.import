@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dc4pijnfoaqgs"
+path="res://.godot/imported/Sewer Ambience.ogg-2e38f86de5ff7549f3c4160f1b48c143.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sounds/SFX/1. Sewers/Environmental/General Ambience/Sewer Ambience.ogg"
+dest_files=["res://.godot/imported/Sewer Ambience.ogg-2e38f86de5ff7549f3c4160f1b48c143.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

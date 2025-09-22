@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://edfb2qr5au4b"
+path="res://.godot/imported/Sewers V2.ogg-d687bc41b924d9bed895ddd5800d592f.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sounds/Music/Sewers V2.ogg"
+dest_files=["res://.godot/imported/Sewers V2.ogg-d687bc41b924d9bed895ddd5800d592f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

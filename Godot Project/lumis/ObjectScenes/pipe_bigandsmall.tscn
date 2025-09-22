@@ -1,0 +1,79 @@
+[gd_scene load_steps=6 format=3 uid="uid://b5lxrkfwh8a0h"]
+
+[ext_resource type="Material" uid="uid://b83t5toylwmq8" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Metalic.tres" id="1_2l7ri"]
+[ext_resource type="ArrayMesh" uid="uid://etreb7j0o7o8" path="res://Meshes/0Universal/Pipes/TUBELONG.obj" id="2_dev2b"]
+[ext_resource type="ArrayMesh" uid="uid://dl10hjiywjtlj" path="res://Meshes/0Universal/Pipes/RING2.obj" id="3_8vawk"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_38avk"]
+height = 7.5
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gqy3f"]
+height = 7.5
+
+[node name="pipe_bigandsmall" type="Node3D"]
+
+[node name="Tubelong" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.91069e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, -0.0743618, 9.75, 0.68085)
+material_override = ExtResource("1_2l7ri")
+mesh = ExtResource("2_dev2b")
+skeleton = NodePath("../../../..")
+
+[node name="Ring2" type="MeshInstance3D" parent="Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539851, 0.0118694, -1.78159)
+material_override = ExtResource("1_2l7ri")
+mesh = ExtResource("3_8vawk")
+skeleton = NodePath("")
+
+[node name="Ring3" type="MeshInstance3D" parent="Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
+material_override = ExtResource("1_2l7ri")
+mesh = ExtResource("3_8vawk")
+skeleton = NodePath("")
+
+[node name="Ring4" type="MeshInstance3D" parent="Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539827, 0.0118713, 0.961907)
+material_override = ExtResource("1_2l7ri")
+mesh = ExtResource("3_8vawk")
+skeleton = NodePath("")
+
+[node name="Ring5" type="MeshInstance3D" parent="Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539851, 0.0118704, -0.177448)
+material_override = ExtResource("1_2l7ri")
+mesh = ExtResource("3_8vawk")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tubelong"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong/StaticBody3D"]
+transform = Transform3D(0.6, 0, -1.02915e-19, 2.55387e-20, -2.62268e-08, 0.6, 1.77636e-15, -0.6, -2.62268e-08, -2.38419e-07, -1.90735e-06, 0.149999)
+shape = SubResource("CylinderShape3D_38avk")
+
+[node name="Tubelong2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-8.74228e-08, -2, 1.88483e-07, 0, -8.74228e-08, -4.312, 2, -8.74228e-08, 8.23888e-15, -0.0743618, 9.75, -0.81915)
+material_override = ExtResource("1_2l7ri")
+mesh = ExtResource("2_dev2b")
+skeleton = NodePath("../../../..")
+
+[node name="Ring6" type="MeshInstance3D" parent="Tubelong2"]
+transform = Transform3D(-3.82475e-08, -3.8913e-08, 0.875, -0.875, -3.8913e-08, -3.82475e-08, 3.82475e-08, -0.890227, -3.82475e-08, -0.00269938, 0.00593281, -1.78698)
+material_override = ExtResource("1_2l7ri")
+mesh = ExtResource("3_8vawk")
+skeleton = NodePath("")
+
+[node name="Ring8" type="MeshInstance3D" parent="Tubelong2"]
+transform = Transform3D(-3.82475e-08, -3.8913e-08, 0.875, -0.875, -3.8913e-08, -3.82475e-08, 3.82475e-08, -0.890227, -3.82475e-08, -0.00269938, 0.00593328, 0.248023)
+material_override = ExtResource("1_2l7ri")
+mesh = ExtResource("3_8vawk")
+skeleton = NodePath("")
+
+[node name="Ring7" type="MeshInstance3D" parent="Tubelong2"]
+transform = Transform3D(-3.82475e-08, -3.8913e-08, 0.875, -0.875, -3.8913e-08, -3.82475e-08, 3.82475e-08, -0.890227, -3.82475e-08, -0.00269938, 0.00593281, 2.12553)
+material_override = ExtResource("1_2l7ri")
+mesh = ExtResource("3_8vawk")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tubelong2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong2/StaticBody3D"]
+transform = Transform3D(0.6, 0, 0, 0, -2.62268e-08, 0.6, -7.94093e-21, -0.6, -2.62268e-08, 0, -9.53674e-07, 0.149999)
+shape = SubResource("CylinderShape3D_gqy3f")

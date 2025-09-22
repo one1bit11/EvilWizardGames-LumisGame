@@ -14,19 +14,19 @@ use_collision = true
 size = Vector3(1000, 50, 1949)
 
 [node name="RiverHole" type="CSGBox3D" parent="StreetsFloor"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, -40)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, -60)
 operation = 2
 use_collision = true
 size = Vector3(900, 30, 20)
 
 [node name="RiverWater" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.5, -40)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.5, -60)
 use_collision = true
 size = Vector3(900, 29, 20)
 material = ExtResource("1_es6pr")
 
 [node name="Mango" parent="." instance=ExtResource("1_y8wpu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -28)
 speed = 12.0
 acc = 4.0
 jumpVelocity = 30.0
@@ -67,18 +67,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.5, 0)
 mesh = SubResource("PrismMesh_es6pr")
 
 [node name="BuildingBase2" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -102)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -106.91)
 use_collision = true
-size = Vector3(10, 15, 10)
+size = Vector3(10, 15, 19.8208)
 
 [node name="BuildingRoof" type="CSGMesh3D" parent="BuildingBase2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.75072, 0, 9.5, 0.0139008)
 mesh = SubResource("PrismMesh_es6pr")
 
 [node name="RoofHole" type="CSGBox3D" parent="BuildingBase2/BuildingRoof"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 operation = 2
 size = Vector3(5, 2, 12)
+
+[node name="BuildingBase3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.75983, -127.658)
+use_collision = true
+size = Vector3(25.0273, 29.5197, 21.1292)
 
 [node name="StreetBoundary" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 5, -43.5)
@@ -89,7 +94,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 5, -43.5)
 size = Vector3(5, 10, 124)
 
 [node name="StreetBoundary3" type="CSGBox3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, 16.5)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, -13.5)
 size = Vector3(5, 10, 40)
 
 [node name="StreetBoundary4" type="CSGBox3D" parent="."]

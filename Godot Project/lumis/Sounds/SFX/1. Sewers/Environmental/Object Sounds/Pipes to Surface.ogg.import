@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://5xboyrwfomp2"
+path="res://.godot/imported/Pipes to Surface.ogg-697b2c761bd67cae233b7e1ce432bb6e.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sounds/SFX/1. Sewers/Environmental/Object Sounds/Pipes to Surface.ogg"
+dest_files=["res://.godot/imported/Pipes to Surface.ogg-697b2c761bd67cae233b7e1ce432bb6e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

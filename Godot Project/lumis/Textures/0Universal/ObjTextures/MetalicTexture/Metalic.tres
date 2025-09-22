@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://b83t5toylwmq8"]
+
+[ext_resource type="Texture2D" uid="uid://ccmdrlg03areq" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_BaseColorALT.png" id="1_xd7o8"]
+[ext_resource type="Texture2D" uid="uid://b04cuerkpc81e" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_Metallic.png" id="2_mxotl"]
+[ext_resource type="Texture2D" uid="uid://b2akwwjkf8a5b" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Plane_Material.001_Roughness.png" id="3_xlyfu"]
+
+[resource]
+albedo_texture = ExtResource("1_xd7o8")
+metallic = 1.0
+metallic_texture = ExtResource("2_mxotl")
+roughness_texture = ExtResource("3_xlyfu")
+uv1_scale = Vector3(1, 0.2, 0.5)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 2.37841
+uv1_world_triplanar = true

@@ -21,7 +21,18 @@ extends CharacterBody3D
 @export var allignRampDown := 0.5
 ##how steep up a ramp can be to allign (without sticking)
 @export var allignRampUp := 1.5
+##gravity strength (keep negative)
+@export var gravityStr := -2
+##Sprint speed modifyer
+@export var sprintSpeed := 1.3
 
+
+##gravity
+var grav := Vector3(0,-2,0)
+##average normals of the surfaces nearby
+var avgnormal := Vector3.ZERO
+##Is sprinting
+var sprinting := false
 
 @export_subgroup("Sticking")
 ##raycast to detect surface details
@@ -48,6 +59,8 @@ var currentSurfaceVal:int
 var stickPoint:Vector3
 ##the direction to the stick point
 var stickPointDir:Vector3
+##which body is the most recent one contacted
+var currentBody
 
 
 
@@ -86,73 +99,39 @@ func _get_move_input(delta):
 	var stickRot:Vector3
 	#save velocity.y
 	var vy = velocity.y
-	#prevent movement in the vertical based on camera
 	#assign a value to each input, should work with controller too
 	var input = Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
-	
-
-	
 	var input3 := Vector3(input.x,0,input.y)
 	if isSticking:
-		
-		
 		stickRot = faceChecker.get_collision_normal(currentSurfaceVal)
-		#stickRot.y = stickRot.x
-		#stickRot.z = stickRot.z
-		
-		
-		
-		
 		
 		velocity = Vector3.ZERO
 		input = Vector3.ZERO
 		input = Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
+		#var forwardDir = 
+
+		
+		
+		
+		
 		rot = -(atan2(faceChecker.get_collision_normal(currentSurfaceVal).z, faceChecker.get_collision_normal(currentSurfaceVal).x) - PI/2)
 		
-		#global_transform.basis.get_euler().y
-
-		#dir = Vector3(input.x, 0, input.y).rotated(faceChecker.get_collision_normal(currentSurfaceVal), rot)
-		#dir = transform.basis * input3
-
-		#set the direction based on the values of the wall
-		#rot = faceChecker.get_collision_normal(currentSurfaceVal)*90
 		var test = faceChecker.get_collision_normal(currentSurfaceVal).y
 		var ygreater : bool
 		var yequal : bool
 		
-		
-		
-		
-		#print("colnorm" ,faceChecker.get_collision_normal(currentSurfaceVal))
-		#print("test", Vector3(0, 1 - test,0))
-		
-		
-		
-		if faceChecker.get_collision_normal(currentSurfaceVal).y > faceChecker.get_collision_normal(currentSurfaceVal).z:
-			ygreater = true
-			yequal = false
-		elif faceChecker.get_collision_normal(currentSurfaceVal).y < faceChecker.get_collision_normal(currentSurfaceVal).z:
-			ygreater = false
-			yequal = false
-		elif faceChecker.get_collision_normal(currentSurfaceVal).y == faceChecker.get_collision_normal(currentSurfaceVal).z:
-			yequal = true
-			ygreater = false
-		
-		#temporary
 		if !is_on_floor():
-			if ygreater:
-				print("greatur")
-				dir = Vector3(input.x,-(1 - input.y / faceChecker.get_collision_normal(currentSurfaceVal).y),input.y/ faceChecker.get_collision_normal(currentSurfaceVal).y).rotated(Vector3(0,1 - test,0),rot).normalized()
-				print("y+",dir)
-			elif !ygreater:
-				
-				dir = Vector3(input.x,-(input.y / faceChecker.get_collision_normal(currentSurfaceVal).y),1 - input.y/ faceChecker.get_collision_normal(currentSurfaceVal).y).rotated(Vector3(0,1 - test,0),rot).normalized()
-				print("y-",dir)
-			elif yequal:
-				dir = Vector3(input.x,-(input.y/2),input.y/2).rotated(Vector3(0,1 - test,0),rot).normalized()
-				
-			## IDEA clamp campivot results to only be on the same plane that you're moving across while sticking to prevent falling off
-			#dir = Vector3(input.x,-input.y,0).rotated(Vector3(0,1 - test,0),rot).normalized()
+			#if Input.is_action_pressed("MoveForward"):
+				#dir = avgnormal.cross(forwardDir).normalized().rotated(avgnormal.normalized(), - PI/2)
+			#if Input.is_action_pressed("MoveBackwards"):
+				#dir = avgnormal.cross(forwardDir).normalized().rotated(avgnormal.normalized(), PI/2)
+			#if Input.is_action_pressed("MoveLeft"):
+				#dir = avgnormal.cross(forwardDir).normalized()
+			#if Input.is_action_pressed("MoveRight"):
+				#dir = avgnormal.cross(forwardDir).normalized().rotated(avgnormal.normalized(), PI)
+			#print("graf",forwardDir)
+				## IDEA clamp campivot results to only be on the same plane that you're moving across while sticking to prevent falling off
+				dir = Vector3(input.x,-input.y,0).rotated(Vector3(0,1 - test,0),rot).normalized()
 		else:
 			
 			rot = camPivot.rotation.y
@@ -163,12 +142,23 @@ func _get_move_input(delta):
 		
 		#lerp the   for smoother movement and acceleration
 		velocity = dir * (speed/stickSlow)
+		
+		
 	else:
 		#set the diraction based on the value and the camera rotation
 		rot = camPivot.rotation.y
 		dir = Vector3(input.x, 0, input.y).rotated(Vector3.UP, rot).normalized()
 		#lerp the velocity for smoother movement and acceleration
-		velocity = lerp(velocity, dir * speed, acc * delta)
+		if sprinting == true:
+			
+			velocity = lerp(velocity, dir * sprintSpeed, acc * delta)
+			
+
+		else:
+			
+			velocity = lerp(velocity, dir * speed, acc * delta)
+
+
 	
 
 	#set the vertical velocity to the same as it was
@@ -189,9 +179,19 @@ func _physics_process(delta: float) -> void:
 		isSticking = false
 	#Because the camera is top level, this allows it to still follow the player without inheriting the rotation
 	camPivot.global_position = Vector3(global_position.x,global_position.y + camPivotHeight, global_position.z)
+	
+	
+	
+	
+	#check for sprinting input, can't sprint while sticking
+	#if isSticking == false && stickyMode == false && Input.is_action_pressed("Sprint"):
+	if Input.is_action_pressed("Sprint"):
+		sprinting = true
+	else:
+		sprinting = false
 	_get_move_input(delta)
-	if !isSticking:
-		velocity += get_gravity()
+	#if !isSticking:
+	velocity += grav
 	#if is not sticking and is on floor, alligns with floor
 	if is_on_floor():
 		
@@ -203,13 +203,25 @@ func _physics_process(delta: float) -> void:
 		
 	#print(velocity)
 	if Input.is_action_just_pressed("Jump") && isSticking:
-		
+		$MangoJumpSound.pitch_scale = randf_range(0.9, 1.1)
+		$MangoJumpSound.play()
 		velocity += (faceChecker.get_collision_normal(currentSurfaceVal) * jumpVelocity)
 
 		velocity.y += jumpVelocity/2 
 	if Input.is_action_just_pressed("Jump") && is_on_floor() && !isSticking:
-		
+		$MangoJumpSound.pitch_scale = randf_range(0.9, 1.1)
+		$MangoJumpSound.play()
 		velocity.y += jumpVelocity + (jumpVelocity/2)
+
+
+
+
+
+
+
+
+
+
 
 
 	move_and_slide()
@@ -219,6 +231,7 @@ func _physics_process(delta: float) -> void:
 
 
 func _process(delta: float) -> void:
+	#print(global_position)
 	pass
 	#move the face checker to check the surface the player is on
 
@@ -246,60 +259,95 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _stick():
-	
-	
+	##check raycasts
+	#grav = Vector3.ZERO
+	#var raysColliding := 0
+	#if stickyMode:
+		#for ray in $RayHolder.get_children():
+			#if ray.is_colliding():
+				#raysColliding += 1
+				#avgnormal += ray.get_collision_normal()
+			#if raysColliding:
+				#isSticking = true
+				#avgnormal /= raysColliding
+				#avgnormal = avgnormal.normalized()
+				#grav = avgnormal * gravityStr
+			#else:
+				#isSticking = false
+				#avgnormal = Vector3.UP
+				#grav = avgnormal * gravityStr
+	#else:
+		#avgnormal = Vector3.UP
+		#grav = avgnormal * gravityStr
+	 
 	
 #temporary fix to the sliding problem
 	#if Input.is_action_just_pressed("StickMode") && faceChecker.get_collision_count() > 0:
 		#velocity = Vector3.ZERO
 	
 	# set sticky mode to true while button is held, can be changed to toggle if/when we add settings
-	if Input.is_action_pressed("StickMode"):
-		stickyMode = true
-		
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		#checks which point is closer
-		for i in faceChecker.get_collision_count():
-			#if theres 2 or more objects
-			if faceChecker.get_collision_count() > 1 && i-1 >= 0:
-				#if this point is closer than the last point, use its details instead
-				if (self.global_position - faceChecker.get_collision_point(i)) < (self.global_position - faceChecker.get_collision_point(i-1)):
-					currentSurface = faceChecker.get_collider(i)
-					#print(faceChecker.get_collision_point(i))
-					currentSurfaceVal = i
-					stickPoint = faceChecker.get_collision_point(i)
-					isSticking = true
-					_allign_with_surface(faceChecker.get_collision_normal(i))
-			#if theres exactly one object
-			elif faceChecker.get_collision_count() == 1:
-				currentSurface = faceChecker.get_collider(i)
-				currentSurfaceVal = i
-				stickPoint = faceChecker.get_collision_point(i)
-				isSticking = true
-				_allign_with_surface(faceChecker.get_collision_normal(i))
-				#if there are no objects
-			if faceChecker.get_collision_count() == 0:
-				isSticking = false
-
-	else:
+	if Input.is_action_just_released("StickMode"):
 		stickyMode = false
 		isSticking = false
+	if Input.is_action_pressed("StickMode"):
+		stickyMode = true
+	
+		#
+		#
+		#checks which point is closer
+		if faceChecker.get_collision_count() >= 1:
+			for i in faceChecker.get_collision_count():
+				#if theres 2 or more objects
+				if faceChecker.get_collision_count() > 1 && i-1 >= 0:
+					#if this point is closer than the last point, use its details instead
+					if (self.global_position - faceChecker.get_collision_point(i)) < (self.global_position - faceChecker.get_collision_point(i-1)):
+						currentSurface = faceChecker.get_collider(i)
+						currentSurfaceVal = i
+						if "nonstick" in currentSurface:
+							if currentSurface.nonstick == false:
+								stickPoint = faceChecker.get_collision_point(i)
+								isSticking = true
+								
+								_allign_with_surface(faceChecker.get_collision_normal(i))
+								grav = Vector3.ZERO
+							else:
+								isSticking = false
+								stickyMode = false
+								grav = Vector3.UP * gravityStr
+						else:
+							stickPoint = faceChecker.get_collision_point(i)
+							isSticking = true
+							_allign_with_surface(faceChecker.get_collision_normal(i))
+							grav = Vector3.ZERO
+				#if theres exactly one object
+				if faceChecker.get_collision_count() == 1:
+					currentSurface = faceChecker.get_collider(i)
+					currentSurfaceVal = i
+					if "nonstick" in currentSurface:
+						if currentSurface.nonstick == false:
+							stickPoint = faceChecker.get_collision_point(i)
+							isSticking = true
+							_allign_with_surface(faceChecker.get_collision_normal(i))
+							grav = Vector3.ZERO
+						else:
+							isSticking = false
+							stickyMode = false
+							grav = Vector3.UP * gravityStr
+					else:
+							stickPoint = faceChecker.get_collision_point(i)
+							isSticking = true
+							_allign_with_surface(faceChecker.get_collision_normal(i))
+							grav = Vector3.ZERO
+					
+				#if there are no objects
+		elif faceChecker.get_collision_count() == 0:
+				isSticking = false
+				grav = Vector3.UP * gravityStr
+	else:
+		grav = Vector3.UP * gravityStr
+		stickyMode = false
+		isSticking = false
+
 
 #alligns the player's base with the surface being stuck to
 func _allign_with_surface(normal):
@@ -308,3 +356,15 @@ func _allign_with_surface(normal):
 	temptrans.basis.x = -temptrans.basis.z.cross(normal)
 	temptrans.basis = temptrans.basis.orthonormalized()
 	global_transform = temptrans
+
+
+func _on_stick_detection_range_body_entered(body: Node3D) -> void:
+	if body != currentBody:
+		currentBody = body
+
+
+func _on_stick_detection_range_body_exited(body: Node3D) -> void:
+	if body == currentBody:
+		currentBody = null
+		stickyMode = false
+		isSticking = false

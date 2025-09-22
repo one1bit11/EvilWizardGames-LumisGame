@@ -14,3 +14,8 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+Godot Project/lumis/Lumis.exe
+Godot Project/lumis/Lumis.pck
+Godot Project/lumis/lumis.zip
+Godot Project/lumis/Lumis.console.exe
+Godot Project/lumis/ReadMe.txt
