@@ -23,6 +23,7 @@ platform_wall_layers = 1
 script = ExtResource("1_qccra")
 mesh = NodePath("MangoMeshFinal")
 jumpVelocity = 7.5
+sprintSpeed = 24.0
 faceChecker = NodePath("PlayerAngleManager")
 upwards = NodePath("RelativeUpwards")
 camPivot = NodePath("CameraPivot")
