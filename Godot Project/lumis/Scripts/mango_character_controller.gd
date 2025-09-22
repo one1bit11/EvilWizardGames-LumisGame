@@ -254,21 +254,6 @@ func _stick():
 	if Input.is_action_pressed("StickMode"):
 		stickyMode = true
 		#
-#
-		#
-		#
-		print(get_gravity())
-		#
-		#
-		#
-		#
-		#
-		#
-		#
-		#
-		#
-		#
-		#
 		#
 		#
 		#checks which point is closer
@@ -290,7 +275,11 @@ func _stick():
 							else:
 								isSticking = false
 								grav = Vector3.UP * gravityStr
-						
+						else:
+							stickPoint = faceChecker.get_collision_point(i)
+							isSticking = true
+							_allign_with_surface(faceChecker.get_collision_normal(i))
+							grav = Vector3.ZERO
 				#if theres exactly one object
 				if faceChecker.get_collision_count() == 1:
 					currentSurface = faceChecker.get_collider(i)
@@ -304,6 +293,12 @@ func _stick():
 						else:
 							isSticking = false
 							grav = Vector3.UP * gravityStr
+					else:
+							stickPoint = faceChecker.get_collision_point(i)
+							isSticking = true
+							_allign_with_surface(faceChecker.get_collision_normal(i))
+							grav = Vector3.ZERO
+					
 				#if there are no objects
 		elif faceChecker.get_collision_count() == 0:
 				isSticking = false
@@ -326,3 +321,8 @@ func _allign_with_surface(normal):
 func _on_stick_detection_range_body_entered(body: Node3D) -> void:
 	if body != currentBody:
 		currentBody = body
+
+
+func _on_stick_detection_range_body_exited(body: Node3D) -> void:
+	if body == currentBody:
+		currentBody = null

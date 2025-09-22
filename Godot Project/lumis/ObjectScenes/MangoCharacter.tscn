@@ -140,3 +140,4 @@ stream = ExtResource("4_q3my7")
 volume_db = -5.0
 
 [connection signal="body_entered" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_entered"]
+[connection signal="body_exited" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_exited"]
