@@ -1,4 +1,4 @@
-[gd_scene load_steps=324 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=323 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
@@ -1297,9 +1297,6 @@ data = PackedVector3Array(-0.2437, 0.0556, -2.4422, -0.2437, 0.0556, 2.4422, -0.
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_1q3vj"]
 data = PackedVector3Array(-0.2437, 0.0556, -2.4422, -0.2437, 0.0556, 2.4422, -0.25, 0, -2.4422, -0.25, 0, -2.4422, -0.2437, 0.0556, 2.4422, -0.25, 0, 2.4422, -0.2437, 0.0556, -2.4422, -0.2252, 0.1085, 2.4422, -0.2437, 0.0556, 2.4422, -0.25, 0, -2.4422, -0.25, 0, 2.4422, -0.2437, -0.0556, -2.4422, -0.2252, 0.1085, -2.4422, -0.2252, 0.1085, 2.4422, -0.2437, 0.0556, -2.4422, -0.2252, 0.1085, -2.4422, -0.1955, 0.1559, 2.4422, -0.2252, 0.1085, 2.4422, -0.1955, 0.1559, -2.4422, -0.1955, 0.1559, 2.4422, -0.2252, 0.1085, -2.4422, -0.2437, -0.0556, -2.4422, -0.25, 0, 2.4422, -0.2437, -0.0556, 2.4422, -0.2437, -0.0556, -2.4422, -0.2437, -0.0556, 2.4422, -0.2252, -0.1085, -2.4422, -0.2252, -0.1085, -2.4422, -0.2437, -0.0556, 2.4422, -0.2252, -0.1085, 2.4422, -0.2252, -0.1085, -2.4422, -0.2252, -0.1085, 2.4422, -0.1955, -0.1559, -2.4422, -0.1955, -0.1559, -2.4422, -0.2252, -0.1085, 2.4422, -0.1955, -0.1559, 2.4422, -0.1955, -0.1559, -2.4422, -0.1955, -0.1559, 2.4422, -0.1559, -0.1955, -2.4422, -0.1559, -0.1955, -2.4422, -0.1955, -0.1559, 2.4422, -0.1559, -0.1955, 2.4422, -0.1559, -0.1955, -2.4422, -0.1559, -0.1955, 2.4422, -0.1085, -0.2252, -2.4422, -0.1085, -0.2252, -2.4422, -0.1559, -0.1955, 2.4422, -0.1085, -0.2252, 2.4422, -0.1085, -0.2252, -2.4422, -0.1085, -0.2252, 2.4422, -0.0556, -0.2437, -2.4422, -0.0556, -0.2437, -2.4422, -0.1085, -0.2252, 2.4422, -0.0556, -0.2437, 2.4422, -0.0556, -0.2437, -2.4422, -0.0556, -0.2437, 2.4422, 0, -0.25, -2.4422, 0, -0.25, -2.4422, -0.0556, -0.2437, 2.4422, 0, -0.25, 2.4422, 0, -0.25, -2.4422, 0, -0.25, 2.4422, 0.0556, -0.2437, -2.4422, 0.0556, -0.2437, -2.4422, 0, -0.25, 2.4422, 0.0556, -0.2437, 2.4422, 0.0556, -0.2437, -2.4422, 0.0556, -0.2437, 2.4422, 0.1085, -0.2252, -2.4422, 0.1085, -0.2252, -2.4422, 0.0556, -0.2437, 2.4422, 0.1085, -0.2252, 2.4422, 0.1085, -0.2252, -2.4422, 0.1085, -0.2252, 2.4422, 0.1559, -0.1955, -2.4422, 0.1559, -0.1955, -2.4422, 0.1085, -0.2252, 2.4422, 0.1559, -0.1955, 2.4422, 0.1559, -0.1955, -2.4422, 0.1559, -0.1955, 2.4422, 0.1955, -0.1559, -2.4422, 0.1955, -0.1559, -2.4422, 0.1559, -0.1955, 2.4422, 0.1955, -0.1559, 2.4422, 0.1955, -0.1559, -2.4422, 0.1955, -0.1559, 2.4422, 0.2252, -0.1085, -2.4422, 0.2252, -0.1085, -2.4422, 0.1955, -0.1559, 2.4422, 0.2252, -0.1085, 2.4422, 0.2252, -0.1085, -2.4422, 0.2252, -0.1085, 2.4422, 0.2437, -0.0556, -2.4422, 0.2437, -0.0556, -2.4422, 0.2252, -0.1085, 2.4422, 0.2437, -0.0556, 2.4422, 0.2437, -0.0556, -2.4422, 0.2437, -0.0556, 2.4422, 0.25, 0, -2.4422, 0.25, 0, -2.4422, 0.2437, -0.0556, 2.4422, 0.25, 0, 2.4422, 0.25, 0, -2.4422, 0.25, 0, 2.4422, 0.2437, 0.0556, -2.4422, 0.2437, 0.0556, -2.4422, 0.25, 0, 2.4422, 0.2437, 0.0556, 2.4422, 0.2437, 0.0556, -2.4422, 0.2437, 0.0556, 2.4422, 0.2252, 0.1085, -2.4422, 0.2252, 0.1085, -2.4422, 0.2437, 0.0556, 2.4422, 0.2252, 0.1085, 2.4422, 0.2252, 0.1085, -2.4422, 0.2252, 0.1085, 2.4422, 0.1955, 0.1559, -2.4422, 0.1955, 0.1559, -2.4422, 0.2252, 0.1085, 2.4422, 0.1955, 0.1559, 2.4422, 0.1955, 0.1559, -2.4422, 0.1955, 0.1559, 2.4422, 0.1559, 0.1955, -2.4422, 0.1559, 0.1955, -2.4422, 0.1955, 0.1559, 2.4422, 0.1559, 0.1955, 2.4422, 0.1559, 0.1955, -2.4422, 0.1559, 0.1955, 2.4422, 0.1085, 0.2252, -2.4422, 0.1085, 0.2252, -2.4422, 0.1559, 0.1955, 2.4422, 0.1085, 0.2252, 2.4422, 0.1085, 0.2252, -2.4422, 0.1085, 0.2252, 2.4422, 0.0556, 0.2437, -2.4422, 0.0556, 0.2437, -2.4422, 0.1085, 0.2252, 2.4422, 0.0556, 0.2437, 2.4422, 0.0556, 0.2437, -2.4422, 0.0556, 0.2437, 2.4422, 0, 0.25, -2.4422, 0, 0.25, -2.4422, 0.0556, 0.2437, 2.4422, 0, 0.25, 2.4422, 0, 0.25, -2.4422, 0, 0.25, 2.4422, -0.0556, 0.2437, -2.4422, -0.0556, 0.2437, -2.4422, 0, 0.25, 2.4422, -0.0556, 0.2437, 2.4422, -0.0556, 0.2437, -2.4422, -0.0556, 0.2437, 2.4422, -0.1085, 0.2252, -2.4422, -0.1085, 0.2252, -2.4422, -0.0556, 0.2437, 2.4422, -0.1085, 0.2252, 2.4422, -0.1085, 0.2252, -2.4422, -0.1085, 0.2252, 2.4422, -0.1559, 0.1955, -2.4422, -0.1559, 0.1955, -2.4422, -0.1085, 0.2252, 2.4422, -0.1559, 0.1955, 2.4422, -0.1559, 0.1955, -2.4422, -0.1559, 0.1955, 2.4422, -0.1955, 0.1559, -2.4422, -0.1955, 0.1559, -2.4422, -0.1559, 0.1955, 2.4422, -0.1955, 0.1559, 2.4422)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_22awh"]
-size = Vector3(189, 62, 1)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_2v00b"]
 size = Vector3(30, 18, 1)
 
@@ -1425,7 +1422,7 @@ transform = Transform3D(1, 0, 0, 1.13687e-13, 1, 0, 0, 0, 1, -8.64267e-07, 405, 
 mesh = SubResource("PlaneMesh_isujd")
 
 [node name="Mango" parent="." instance=ExtResource("1_xlif7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -360.911, 60.811, -127.012)
 speed = 12.0
 acc = 4.0
 jumpVelocity = 30.0
@@ -8139,15 +8136,6 @@ height = 206.0
 sides = 16
 script = ExtResource("2_4bvgn")
 
-[node name="BigAssPillar7" type="CSGCylinder3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.2136, 27, 10.5595)
-material_override = ExtResource("25_soyx7")
-use_collision = true
-radius = 10.0
-height = 206.0
-sides = 32
-script = ExtResource("2_4bvgn")
-
 [node name="BigAssPillar8" type="CSGCylinder3D" parent="SewerBlocks"]
 transform = Transform3D(1.06483, 0, 0, 0, 1, 0, 0, 0, 1.15118, -224.109, 27, -296.295)
 material_override = ExtResource("25_soyx7")
@@ -8167,25 +8155,17 @@ sides = 32
 script = ExtResource("2_4bvgn")
 
 [node name="SewerCeiling" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 231.386, 113.044, 128.91)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 231.386, 183.595, 128.91)
+visible = false
 material_override = ExtResource("7_xc2n4")
-size = Vector3(2373.98, 0.5, 1627.96)
+size = Vector3(3536.44, 0.5, 3549.68)
 script = ExtResource("2_4bvgn")
 metadata/_edit_lock_ = true
 
-[node name="PipeHole" type="CSGCylinder3D" parent="SewerBlocks/SewerCeiling"]
-transform = Transform3D(1.91069e-15, 2.18557e-08, 1, 0, 0.5, -4.37114e-08, -1, 0, 1.91069e-15, -380.9, -0.246185, 105.569)
-operation = 2
-use_collision = true
-radius = 4.128
-height = 6.01525
-sides = 32
-script = ExtResource("2_4bvgn")
-
 [node name="Block1" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.77075, 18.2785, -6.77483)
-material_override = ExtResource("7_xc2n4")
-size = Vector3(140.24, 1, 234.278)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.642, -4.89213, 16.9345)
+material_override = ExtResource("6_xc2n4")
+size = Vector3(172.245, 103.48, 241.553)
 script = ExtResource("2_4bvgn")
 nonstick = true
 
@@ -8520,65 +8500,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, -23.4, 184.5)
 shape = SubResource("BoxShape3D_ymun1")
 debug_color = Color(0.960784, 0, 0.505882, 0.894118)
 
-[node name="InvisibleWall4" type="StaticBody3D" parent="SewerBlocks"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 84, 42, 155)
-
-[node name="InvisibleWallBox" type="CollisionShape3D" parent="SewerBlocks/InvisibleWall4"]
-transform = Transform3D(0.48, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -8.5, -12, 13.8)
-shape = SubResource("BoxShape3D_22awh")
-
-[node name="InvisibleWallBox6" type="CollisionShape3D" parent="SewerBlocks/InvisibleWall4"]
-transform = Transform3D(0.48, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -50.5, -12, 33.8)
-shape = SubResource("BoxShape3D_22awh")
-
-[node name="InvisibleWallBox7" type="CollisionShape3D" parent="SewerBlocks/InvisibleWall4"]
-transform = Transform3D(0.48, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -18.5, -12, 79.8)
-shape = SubResource("BoxShape3D_22awh")
-
-[node name="InvisibleWallBox8" type="CollisionShape3D" parent="SewerBlocks/InvisibleWall4"]
-transform = Transform3D(0.48, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 36.5, -12, 219.3)
-shape = SubResource("BoxShape3D_22awh")
-
-[node name="InvisibleWallBox11" type="CollisionShape3D" parent="SewerBlocks/InvisibleWall4"]
-transform = Transform3D(0.48, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 36.5, 7, 219.3)
-shape = SubResource("BoxShape3D_22awh")
-
-[node name="InvisibleWallBox12" type="CollisionShape3D" parent="SewerBlocks/InvisibleWall4"]
-transform = Transform3D(-2.09815e-08, 0, -0.6, 0, 0.6, 0, 0.48, 0, -2.62268e-08, 17.5, 34, 128.3)
-shape = SubResource("BoxShape3D_22awh")
-
-[node name="InvisibleWallBox13" type="CollisionShape3D" parent="SewerBlocks/InvisibleWall4"]
-transform = Transform3D(-2.09815e-08, 0, -0.6, 0, 0.6, 0, 0.48, 0, -2.62268e-08, 58.5, 34, 128.3)
-shape = SubResource("BoxShape3D_22awh")
-
-[node name="InvisibleWallBox14" type="CollisionShape3D" parent="SewerBlocks/InvisibleWall4"]
-transform = Transform3D(0.48, 0, 1.77636e-15, 0, 0.6, 0, 0, 0, 0.6, 49.5, 34, 106.3)
-shape = SubResource("BoxShape3D_22awh")
-
-[node name="InvisibleWallBox9" type="CollisionShape3D" parent="SewerBlocks/InvisibleWall4"]
-transform = Transform3D(-2.09815e-08, 0, -0.6, 0, 0.6, 0, 0.48, 0, -2.62268e-08, 16, -1, 194.3)
-shape = SubResource("BoxShape3D_22awh")
-
-[node name="InvisibleWallBox10" type="CollisionShape3D" parent="SewerBlocks/InvisibleWall4"]
-transform = Transform3D(-2.09815e-08, 0, -0.6, 0, 0.6, 0, 0.48, 0, -2.62268e-08, 63, 5, 194.3)
-shape = SubResource("BoxShape3D_22awh")
-
-[node name="InvisibleWallBox2" type="CollisionShape3D" parent="SewerBlocks/InvisibleWall4"]
-transform = Transform3D(-2.09815e-08, 0, -0.6, 0, 0.6, 0, 0.48, 0, -2.62268e-08, 18.5, -12, 8.79999)
-shape = SubResource("BoxShape3D_22awh")
-
-[node name="InvisibleWallBox3" type="CollisionShape3D" parent="SewerBlocks/InvisibleWall4"]
-transform = Transform3D(-0.48, 0, 5.24537e-08, 0, 0.6, 0, -4.19629e-08, 0, -0.6, 63.5, -12, 53.8)
-shape = SubResource("BoxShape3D_22awh")
-
-[node name="InvisibleWallBox4" type="CollisionShape3D" parent="SewerBlocks/InvisibleWall4"]
-transform = Transform3D(6.29444e-08, 0, 0.6, 0, 0.6, 0, -0.48, 0, 7.86805e-08, 49.5, -12, 59.8)
-shape = SubResource("BoxShape3D_22awh")
-
-[node name="InvisibleWallBox5" type="CollisionShape3D" parent="SewerBlocks/InvisibleWall4"]
-transform = Transform3D(6.29444e-08, 0, 0.6, 0, 0.6, 0, -0.48, 0, 7.86805e-08, -5.5, -12, 78.8)
-shape = SubResource("BoxShape3D_22awh")
-
 [node name="Audio" type="Node" parent="."]
 
 [node name="Ambiance" type="Node" parent="Audio"]
@@ -8684,10 +8605,17 @@ size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
 [node name="SewerToCityFloor9" type="CSGBox3D" parent="SewerToCityFloor"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -210, 16, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218.496, 16, 0)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
-size = Vector3(33, 30, 27)
+size = Vector3(49.9922, 30, 27)
+script = ExtResource("2_4bvgn")
+
+[node name="SewerToCityFloor10" type="CSGBox3D" parent="SewerToCityFloor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218.496, -13.6314, 0)
+material_override = ExtResource("6_xc2n4")
+use_collision = true
+size = Vector3(49.9922, 30, 27)
 script = ExtResource("2_4bvgn")
 
 [node name="SewerToCityFloorHole" type="CSGBox3D" parent="SewerToCityFloor"]
