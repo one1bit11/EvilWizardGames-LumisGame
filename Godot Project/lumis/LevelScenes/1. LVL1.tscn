@@ -7697,10 +7697,10 @@ size = Vector3(4, 13, 8)
 script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWall3NonStick2" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -44.0161, 1, 161)
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -44.0161, 1, 159)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
-size = Vector3(165, 1.0127, 45)
+size = Vector3(169, 1.0127, 45)
 script = ExtResource("2_4bvgn")
 nonstick = true
 
@@ -7721,10 +7721,10 @@ script = ExtResource("2_4bvgn")
 nonstick = true
 
 [node name="ElevatorWall3NonStick3" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -44.0161, 1, -29)
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -44.0161, 1, -26)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
-size = Vector3(165, 1.0127, 45)
+size = Vector3(171, 1.0127, 45)
 script = ExtResource("2_4bvgn")
 nonstick = true
 
@@ -8047,7 +8047,7 @@ script = ExtResource("2_4bvgn")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -697.39, -20, -137.865)
 
 [node name="BigAssPillar2" type="CSGCylinder3D" parent="SewerBlocks"]
-transform = Transform3D(0.914909, 0, 0, 0, 1, 0, 0, 0, 0.858477, 153.095, 27, 155.394)
+transform = Transform3D(0.914909, 0, 0, 0, 1, 0, 0, 0, 0.858477, 157.095, 27, 175.394)
 material_override = ExtResource("25_soyx7")
 use_collision = true
 radius = 10.0
@@ -8101,7 +8101,7 @@ sides = 32
 script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar3" type="CSGCylinder3D" parent="SewerBlocks"]
-transform = Transform3D(0.878864, 0, 0, 0, 1, 0, 0, 0, 0.803569, 44.9899, 27, -178.694)
+transform = Transform3D(0.878864, 0, 0, 0, 1, 0, 0, 0, 0.803569, 51.9899, 27, -198.694)
 material_override = ExtResource("25_soyx7")
 use_collision = true
 radius = 10.0
@@ -8162,60 +8162,46 @@ size = Vector3(3536.44, 0.5, 3549.68)
 script = ExtResource("2_4bvgn")
 metadata/_edit_lock_ = true
 
-[node name="Block1" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.642, -4.89213, 16.9345)
-material_override = ExtResource("6_xc2n4")
-size = Vector3(172.245, 103.48, 241.553)
-script = ExtResource("2_4bvgn")
-nonstick = true
-
-[node name="Block2" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -149.189, -41.5192, 12.6669)
-material_override = ExtResource("7_xc2n4")
-size = Vector3(181.832, 125.067, 195.394)
-script = ExtResource("2_4bvgn")
-
-[node name="Block21" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.7731, -37.553, 121.364)
-material_override = ExtResource("7_xc2n4")
-size = Vector3(123, 133, 100)
-script = ExtResource("2_4bvgn")
-nonstick = true
-
 [node name="Block22" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -196.773, -46.553, 169.864)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -196.773, -43.053, 200.864)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(123, 115, 149)
+size = Vector3(123, 122, 87)
 script = ExtResource("2_4bvgn")
 
 [node name="Block23" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -196.773, -40.553, 310.864)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -196.773, -37.053, 310.864)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(123, 127, 175)
+size = Vector3(123, 134, 175)
 script = ExtResource("2_4bvgn")
 
 [node name="Block24" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -425.087, -34.053, 262.364)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -425.087, -34.053, 208.864)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(359.628, 140, 358)
+size = Vector3(359.628, 140, 465)
 script = ExtResource("2_4bvgn")
 
 [node name="Block16" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -354.925, -20.5192, -43.3331)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -354.925, -20.5192, -108.136)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(293.305, 125.067, 195.394)
+size = Vector3(293.305, 125.067, 325)
 script = ExtResource("2_4bvgn")
 
-[node name="Block8" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -366.771, -36.553, -149.491)
+[node name="Block42" type="CSGBox3D" parent="SewerBlocks"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -212.772, -33.5192, -172.136)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(429.332, 135, 519.71)
+size = Vector3(133, 125.067, 133)
 script = ExtResource("2_4bvgn")
 
 [node name="Block9" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.045, -29.553, -396.194)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 174.395, -29.553, -396.194)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(819.88, 149, 359.117)
+size = Vector3(379, 149, 359.117)
+script = ExtResource("2_4bvgn")
+
+[node name="Block21" type="CSGBox3D" parent="SewerBlocks"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -289.605, -29.553, -379.253)
+material_override = ExtResource("7_xc2n4")
+size = Vector3(377, 149, 393)
 script = ExtResource("2_4bvgn")
 
 [node name="Block41" type="CSGBox3D" parent="SewerBlocks"]
@@ -8230,35 +8216,16 @@ material_override = ExtResource("7_xc2n4")
 size = Vector3(352, 149, 318.961)
 script = ExtResource("2_4bvgn")
 
-[node name="Block3" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.7557, -39.798, -148.825)
-material_override = ExtResource("7_xc2n4")
-size = Vector3(181.832, 128.51, 195.394)
-script = ExtResource("2_4bvgn")
-
-[node name="Block5" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.9456, -33.3232, -198.756)
-material_override = ExtResource("7_xc2n4")
-size = Vector3(181.832, 141.46, 195.394)
-script = ExtResource("2_4bvgn")
-
-[node name="Block6" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 121.245, -40.1776, 65.5866)
-material_override = ExtResource("7_xc2n4")
-size = Vector3(88.2403, 127.751, 111.915)
-script = ExtResource("2_4bvgn")
-nonstick = true
-
 [node name="Block7" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 238.942, -37.3549, 87.9352)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 262.942, -37.3549, 87.9352)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(160, 133.396, 53)
+size = Vector3(112, 133.396, 53)
 script = ExtResource("2_4bvgn")
 
 [node name="Block10" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 225.786, -33.053, 148.52)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 229.13, -33.053, 148.52)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(101.688, 142, 88)
+size = Vector3(95, 142, 88)
 script = ExtResource("2_4bvgn")
 
 [node name="Block15" type="CSGBox3D" parent="SewerBlocks"]
@@ -8268,15 +8235,21 @@ size = Vector3(101.688, 159, 137)
 script = ExtResource("2_4bvgn")
 
 [node name="Block26" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 318.786, -12.553, 153.02)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 318.786, -18.053, 153.02)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(101.688, 183, 137)
+size = Vector3(101.688, 172, 137)
 script = ExtResource("2_4bvgn")
 
 [node name="Block36" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 329.63, -41.553, -122.98)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(80, 183, 137)
+script = ExtResource("2_4bvgn")
+
+[node name="Block44" type="CSGBox3D" parent="SewerBlocks"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 349.83, 8.447, 17.02)
+material_override = ExtResource("7_xc2n4")
+size = Vector3(16, 39, 161)
 script = ExtResource("2_4bvgn")
 
 [node name="Block27" type="CSGBox3D" parent="SewerBlocks"]
@@ -8370,9 +8343,9 @@ size = Vector3(76.3331, 65.1037, 303.396)
 script = ExtResource("2_4bvgn")
 
 [node name="Block11" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 159.63, -35.053, 213.52)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 159.63, -35.053, 255.02)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(94, 138, 206)
+size = Vector3(94, 138, 123)
 script = ExtResource("2_4bvgn")
 
 [node name="Block12" type="CSGBox3D" parent="SewerBlocks"]
@@ -8413,16 +8386,23 @@ size = Vector3(513.746, 181, 291.316)
 script = ExtResource("2_4bvgn")
 
 [node name="Block13" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.13, -41.553, 243.02)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.13, -41.553, 260.52)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(77, 141, 83)
+size = Vector3(77, 141, 48)
 script = ExtResource("2_4bvgn")
 nonstick = true
 
 [node name="Block4" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 188.106, -39.2916, -157.998)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 237.606, -39.5531, -157.998)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(219, 129.523, 142.844)
+size = Vector3(120, 129, 142.844)
+script = ExtResource("2_4bvgn")
+metadata/nonstick = false
+
+[node name="Block5" type="CSGBox3D" parent="SewerBlocks"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 151.606, -44.0531, -221.576)
+material_override = ExtResource("7_xc2n4")
+size = Vector3(120, 120, 126)
 script = ExtResource("2_4bvgn")
 metadata/nonstick = false
 
@@ -8549,7 +8529,7 @@ size = Vector3(2170, 1, 2002)
 script = ExtResource("2_4bvgn")
 
 [node name="SewerToCityFloor" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -356.032, 18.5, -121.486)
+transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, -350.332, 24, -121.486)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
@@ -8584,35 +8564,28 @@ size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
 [node name="SewerToCityFloor6" type="CSGBox3D" parent="SewerToCityFloor"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -135, 8, -24)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -135, 1.65079, -24)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
 [node name="SewerToCityFloor7" type="CSGBox3D" parent="SewerToCityFloor"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152, 16, -4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152, 6.4762, -3.99997)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
 [node name="SewerToCityFloor8" type="CSGBox3D" parent="SewerToCityFloor"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -184, 14, -11)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -184, -1.87302, -11)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
 [node name="SewerToCityFloor9" type="CSGBox3D" parent="SewerToCityFloor"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218.496, 16, 0)
-material_override = ExtResource("6_xc2n4")
-use_collision = true
-size = Vector3(49.9922, 30, 27)
-script = ExtResource("2_4bvgn")
-
-[node name="SewerToCityFloor10" type="CSGBox3D" parent="SewerToCityFloor"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218.496, -13.6314, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218.496, 0.126991, 0)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(49.9922, 30, 27)
@@ -8659,77 +8632,77 @@ size = Vector3(41, 93, 10)
 script = ExtResource("2_4bvgn")
 
 [node name="SewerToCityFloorHole5" type="CSGBox3D" parent="SewerToCityFloor"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -106.5, -4.5, -16.5)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -104, -4.5, -16.5)
 material_override = ExtResource("6_xc2n4")
 operation = 2
 use_collision = true
-size = Vector3(41, 93, 10)
+size = Vector3(41, 93, 5)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor2" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -356.032, 10.5, -121.486)
+[node name="SewerToCityFloor10" type="CSGBox3D" parent="SewerToCityFloor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -23.8095, 0)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor2" type="CSGBox3D" parent="SewerToCityFloor2"]
+[node name="SewerToCityFloor2" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor10"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 4, -9)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor3" type="CSGBox3D" parent="SewerToCityFloor2"]
+[node name="SewerToCityFloor3" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor10"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 2, 2)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor4" type="CSGBox3D" parent="SewerToCityFloor2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85, 0, -3)
+[node name="SewerToCityFloor4" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85, 6, -3)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor5" type="CSGBox3D" parent="SewerToCityFloor2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111, -2, -12)
+[node name="SewerToCityFloor5" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111, 4, -12)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor6" type="CSGBox3D" parent="SewerToCityFloor2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -135, 2, -24)
+[node name="SewerToCityFloor6" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -135, 8, -24)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor7" type="CSGBox3D" parent="SewerToCityFloor2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152, 0, -4)
+[node name="SewerToCityFloor7" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152, 12.8254, -3.99998)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor8" type="CSGBox3D" parent="SewerToCityFloor2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -184, -2, -11)
+[node name="SewerToCityFloor8" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -184, 4.47619, -11)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor9" type="CSGBox3D" parent="SewerToCityFloor2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -210, 0, 0)
+[node name="SewerToCityFloor9" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218.496, 6.4762, 0)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
-size = Vector3(33, 30, 27)
+size = Vector3(49.9922, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloorHole" type="CSGBox3D" parent="SewerToCityFloor2"]
+[node name="SewerToCityFloorHole" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor10"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, -4.5, 0)
 material_override = ExtResource("6_xc2n4")
 operation = 2
@@ -8737,7 +8710,7 @@ use_collision = true
 size = Vector3(11, 93, 17)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloorHole2" type="CSGBox3D" parent="SewerToCityFloor2"]
+[node name="SewerToCityFloorHole2" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor10"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -83, -4.5, 9)
 material_override = ExtResource("6_xc2n4")
 operation = 2
@@ -8745,7 +8718,7 @@ use_collision = true
 size = Vector3(19, 93, 17)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloorHole3" type="CSGBox3D" parent="SewerToCityFloor2"]
+[node name="SewerToCityFloorHole3" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor10"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -134.5, -4.5, -26)
 material_override = ExtResource("6_xc2n4")
 operation = 2
@@ -8753,7 +8726,7 @@ use_collision = true
 size = Vector3(20, 93, 17)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloorHole6" type="CSGBox3D" parent="SewerToCityFloor2"]
+[node name="SewerToCityFloorHole6" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor10"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -202, -4.5, -16)
 material_override = ExtResource("6_xc2n4")
 operation = 2
@@ -8761,7 +8734,7 @@ use_collision = true
 size = Vector3(25, 93, 17)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloorHole4" type="CSGBox3D" parent="SewerToCityFloor2"]
+[node name="SewerToCityFloorHole4" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor10"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -165, -4.5, -5.5)
 material_override = ExtResource("6_xc2n4")
 operation = 2
@@ -8769,78 +8742,78 @@ use_collision = true
 size = Vector3(41, 93, 10)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloorHole5" type="CSGBox3D" parent="SewerToCityFloor2"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -106.5, -4.5, -16.5)
+[node name="SewerToCityFloorHole5" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor10"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -104, -4.5, -16.5)
 material_override = ExtResource("6_xc2n4")
 operation = 2
 use_collision = true
-size = Vector3(41, 93, 10)
+size = Vector3(41, 93, 5)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor3" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -356.032, -8.5, -121.486)
+[node name="SewerToCityFloor11" type="CSGBox3D" parent="SewerToCityFloor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -49.2063, 0)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor2" type="CSGBox3D" parent="SewerToCityFloor3"]
+[node name="SewerToCityFloor2" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor11"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 4, -9)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor3" type="CSGBox3D" parent="SewerToCityFloor3"]
+[node name="SewerToCityFloor3" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor11"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 2, 2)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor4" type="CSGBox3D" parent="SewerToCityFloor3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85, 0, -3)
+[node name="SewerToCityFloor4" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85, 6, -3)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor5" type="CSGBox3D" parent="SewerToCityFloor3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111, -2, -12)
+[node name="SewerToCityFloor5" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111, 4, -12)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor6" type="CSGBox3D" parent="SewerToCityFloor3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -135, 2, -24)
+[node name="SewerToCityFloor6" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -135, 8, -24)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor7" type="CSGBox3D" parent="SewerToCityFloor3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152, 0, -4)
+[node name="SewerToCityFloor7" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152, 12.8254, -3.99998)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor8" type="CSGBox3D" parent="SewerToCityFloor3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -184, -2, -11)
+[node name="SewerToCityFloor8" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -184, 4.47619, -11)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
 size = Vector3(33, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloor9" type="CSGBox3D" parent="SewerToCityFloor3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -210, 0, 0)
+[node name="SewerToCityFloor9" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218.496, 6.4762, 0)
 material_override = ExtResource("6_xc2n4")
 use_collision = true
-size = Vector3(33, 30, 27)
+size = Vector3(49.9922, 30, 27)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloorHole" type="CSGBox3D" parent="SewerToCityFloor3"]
+[node name="SewerToCityFloorHole" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor11"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, -4.5, 0)
 material_override = ExtResource("6_xc2n4")
 operation = 2
@@ -8848,7 +8821,7 @@ use_collision = true
 size = Vector3(11, 93, 17)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloorHole2" type="CSGBox3D" parent="SewerToCityFloor3"]
+[node name="SewerToCityFloorHole2" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor11"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -83, -4.5, 9)
 material_override = ExtResource("6_xc2n4")
 operation = 2
@@ -8856,7 +8829,7 @@ use_collision = true
 size = Vector3(19, 93, 17)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloorHole3" type="CSGBox3D" parent="SewerToCityFloor3"]
+[node name="SewerToCityFloorHole3" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor11"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -134.5, -4.5, -26)
 material_override = ExtResource("6_xc2n4")
 operation = 2
@@ -8864,7 +8837,7 @@ use_collision = true
 size = Vector3(20, 93, 17)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloorHole6" type="CSGBox3D" parent="SewerToCityFloor3"]
+[node name="SewerToCityFloorHole6" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor11"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -202, -4.5, -16)
 material_override = ExtResource("6_xc2n4")
 operation = 2
@@ -8872,7 +8845,7 @@ use_collision = true
 size = Vector3(25, 93, 17)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloorHole4" type="CSGBox3D" parent="SewerToCityFloor3"]
+[node name="SewerToCityFloorHole4" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor11"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -165, -4.5, -5.5)
 material_override = ExtResource("6_xc2n4")
 operation = 2
@@ -8880,12 +8853,12 @@ use_collision = true
 size = Vector3(41, 93, 10)
 script = ExtResource("2_4bvgn")
 
-[node name="SewerToCityFloorHole5" type="CSGBox3D" parent="SewerToCityFloor3"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -106.5, -4.5, -16.5)
+[node name="SewerToCityFloorHole5" type="CSGBox3D" parent="SewerToCityFloor/SewerToCityFloor11"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -104, -4.5, -16.5)
 material_override = ExtResource("6_xc2n4")
 operation = 2
 use_collision = true
-size = Vector3(41, 93, 10)
+size = Vector3(41, 93, 5)
 script = ExtResource("2_4bvgn")
 
 [node name="RespawnPointGuide" type="Node3D" parent="."]
@@ -8944,6 +8917,25 @@ transform = Transform3D(4.37114e-08, 8.74228e-08, 1, 3.82137e-15, -1, 8.74228e-0
 [node name="Box" type="CollisionShape3D" parent="MusicPlay"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 shape = SubResource("BoxShape3D_2v00b")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -696.112, -37.2856, -121.525)
+radius = 182.35
+height = 86.0
+sides = 32
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -696.112, 14.7144, -121.525)
+radius = 182.35
+height = 22.0
+sides = 32
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="CSGCylinder3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 0)
+operation = 2
+radius = 178.3
+height = 22.0
+sides = 32
 
 [connection signal="area_entered" from="ROOMS/Room2/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room4/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
