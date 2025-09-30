@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://xc8dfxwe1wbv"]
+[gd_scene load_steps=5 format=3 uid="uid://xc8dfxwe1wbv"]
 
 [ext_resource type="Material" uid="uid://b8cr53cav36y3" path="res://Textures/Other/SolidColours/Blue.tres" id="1_es6pr"]
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_y8wpu"]
+[ext_resource type="Material" uid="uid://dxx4w8c5j14ti" path="res://Textures/Other/SolidColours/Purple.tres" id="3_5r2oq"]
 
 [sub_resource type="PrismMesh" id="PrismMesh_es6pr"]
 size = Vector3(12, 4, 12)
@@ -9,34 +10,41 @@ size = Vector3(12, 4, 12)
 [node name="LVL2" type="Node3D"]
 
 [node name="StreetsFloor" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -25, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -25, 142.5)
 use_collision = true
-size = Vector3(1000, 50, 1949)
+size = Vector3(1000, 50, 1664)
 
 [node name="RiverHole" type="CSGBox3D" parent="StreetsFloor"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, -60)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, -213.5)
 operation = 2
 use_collision = true
-size = Vector3(900, 30, 20)
+size = Vector3(900, 30, 15)
+
+[node name="RiverHole2" type="CSGBox3D" parent="StreetsFloor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, -392.5)
+operation = 2
+use_collision = true
+size = Vector3(900, 30, 15)
 
 [node name="RiverWater" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.5, -60)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.5, -71)
+use_collision = true
+size = Vector3(900, 29, 20)
+material = ExtResource("1_es6pr")
+
+[node name="RiverWater2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.5, -248)
 use_collision = true
 size = Vector3(900, 29, 20)
 material = ExtResource("1_es6pr")
 
 [node name="Mango" parent="." instance=ExtResource("1_y8wpu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -28)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -47)
 speed = 12.0
 acc = 4.0
 jumpVelocity = 30.0
 stickStrength = 12.0
 mouseSensitivity = 0.3
-
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 100, -800)
-use_collision = true
-size = Vector3(50, 200, 50)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 218, 0)
@@ -80,26 +88,217 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 operation = 2
 size = Vector3(5, 2, 12)
 
-[node name="BuildingBase3" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.75983, -127.658)
+[node name="BuildingBase9" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.5, -314.91)
 use_collision = true
-size = Vector3(25.0273, 29.5197, 21.1292)
+size = Vector3(10, 47, 19.8208)
+
+[node name="BuildingRoof" type="CSGMesh3D" parent="BuildingBase9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.75072, 0, 25.5, 0.013916)
+mesh = SubResource("PrismMesh_es6pr")
+
+[node name="RoofHole" type="CSGBox3D" parent="BuildingBase9/BuildingRoof"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+operation = 2
+size = Vector3(5, 2, 12)
+
+[node name="BuildingBase14" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 2.5, -401.91)
+use_collision = true
+size = Vector3(10, 47, 19.8208)
+
+[node name="BuildingRoof" type="CSGMesh3D" parent="BuildingBase14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.75072, 0, 25.5, 0.013916)
+mesh = SubResource("PrismMesh_es6pr")
+
+[node name="RoofHole" type="CSGBox3D" parent="BuildingBase14/BuildingRoof"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+operation = 2
+size = Vector3(5, 2, 12)
+
+[node name="BuildingBase10" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.5, -344.91)
+use_collision = true
+size = Vector3(10, 47, 19.8208)
+
+[node name="BuildingRoof" type="CSGMesh3D" parent="BuildingBase10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.75072, 0, 25.5, 0.013916)
+mesh = SubResource("PrismMesh_es6pr")
+
+[node name="RoofHole" type="CSGBox3D" parent="BuildingBase10/BuildingRoof"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+operation = 2
+size = Vector3(5, 2, 12)
+
+[node name="BuildingBase11" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 2.7, 0, 1, 0, -1, 0, -1.18021e-07, -13, 2.5, -374.91)
+use_collision = true
+size = Vector3(10, 47, 19.8208)
+
+[node name="BuildingRoof" type="CSGMesh3D" parent="BuildingBase11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.75072, 0, 25.5, 0.013916)
+mesh = SubResource("PrismMesh_es6pr")
+
+[node name="RoofHole" type="CSGBox3D" parent="BuildingBase11/BuildingRoof"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+operation = 2
+size = Vector3(5, 2, 12)
+
+[node name="BuildingBase3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.75983, -124.593)
+use_collision = true
+size = Vector3(20, 29.5197, 15)
+
+[node name="BuildingBase5" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.5, 5.49998, -282.593)
+use_collision = true
+size = Vector3(17, 21, 15)
+
+[node name="BuildingBase7" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 8.49998, -282.593)
+use_collision = true
+size = Vector3(17, 27, 15)
+
+[node name="BuildingBase8" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 11.5, -282.593)
+use_collision = true
+size = Vector3(17, 33, 15)
+
+[node name="BuildingBase15" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5, 11.5, -431.093)
+use_collision = true
+size = Vector3(28, 33, 24)
+
+[node name="BuildingBase6" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.9864, 2.99998, -187.093)
+use_collision = true
+size = Vector3(41, 42, 42)
+
+[node name="BuildingBase12" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.9864, 15.5, -372.093)
+use_collision = true
+size = Vector3(31, 67, 52)
+
+[node name="BuildingBase13" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.0136, 15.5, -372.093)
+use_collision = true
+size = Vector3(31, 67, 52)
+
+[node name="BuildingBase4" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9864, 13.5, -135.593)
+use_collision = true
+size = Vector3(15, 37, 37)
 
 [node name="StreetBoundary" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 5, -43.5)
-size = Vector3(5, 10, 124)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 5, -69)
+use_collision = true
+size = Vector3(5, 10, 73)
 
 [node name="StreetBoundary2" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 5, -43.5)
-size = Vector3(5, 10, 124)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 5, -69)
+use_collision = true
+size = Vector3(5, 10, 73)
+
+[node name="StreetBoundary13" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 5, -478.5)
+use_collision = true
+size = Vector3(5, 10, 74)
+
+[node name="StreetBoundary16" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -23, 11, -516.5)
+use_collision = true
+size = Vector3(29, 22, 74)
+
+[node name="StreetBoundary18" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.5, 11, -544.5)
+use_collision = true
+size = Vector3(29, 22, 37)
+
+[node name="StreetBoundary17" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.5, 22.5, -572)
+use_collision = true
+size = Vector3(34, 45, 37)
+
+[node name="StreetBoundary19" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -46, 29, -568)
+use_collision = true
+size = Vector3(74, 58, 46)
+
+[node name="StreetBoundary20" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 28.5, 33, -572.5)
+use_collision = true
+size = Vector3(65, 66, 29)
+
+[node name="StreetBoundary21" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 28.5, 51.5, -614)
+use_collision = true
+size = Vector3(50, 103, 103)
+
+[node name="StreetBoundary22" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 28.5, 74.5, -832)
+material_override = ExtResource("3_5r2oq")
+use_collision = true
+size = Vector3(398, 7, 12)
+
+[node name="StreetBoundary14" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 5, -478.5)
+use_collision = true
+size = Vector3(5, 10, 74)
+
+[node name="StreetBoundary15" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -22.5, 5, -440)
+use_collision = true
+size = Vector3(5, 10, 48)
 
 [node name="StreetBoundary3" type="CSGBox3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, -13.5)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, -34.5)
+use_collision = true
 size = Vector3(5, 10, 40)
 
 [node name="StreetBoundary4" type="CSGBox3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, -103.5)
+use_collision = true
 size = Vector3(5, 10, 40)
+
+[node name="StreetBoundary5" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16, 5, -205.5)
+use_collision = true
+size = Vector3(5, 10, 54)
+
+[node name="StreetBoundary9" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.5, 5, -221.5)
+use_collision = true
+size = Vector3(5, 10, 15)
+
+[node name="StreetBoundary10" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -40.5, 5, -221.5)
+use_collision = true
+size = Vector3(5, 10, 15)
+
+[node name="StreetBoundary6" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.5, 5, -169.5)
+use_collision = true
+size = Vector3(5, 10, 81)
+
+[node name="StreetBoundary7" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -35.5, 5, -195.5)
+use_collision = true
+size = Vector3(5, 10, 57)
+
+[node name="StreetBoundary11" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -45.5, 5, -247.5)
+use_collision = true
+size = Vector3(5, 10, 57)
+
+[node name="StreetBoundary12" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 1.5, 5, -247.5)
+use_collision = true
+size = Vector3(5, 10, 57)
+
+[node name="StreetBoundary8" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -8.5, 5, -213.5)
+use_collision = true
+size = Vector3(5, 10, 21)
 
 [node name="ROOMLABELS" type="Node3D" parent="."]
 
@@ -108,16 +307,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 134, 0)
 pixel_size = 0.5
 billboard = 2
 text = "START"
-
-[node name="SECTION1LABEL" type="Label3D" parent="ROOMLABELS"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 27, 0)
-pixel_size = 0.2
-billboard = 2
-text = "SECTION 1
-(START)"
-
-[node name="SECTION2LABEL" type="Label3D" parent="ROOMLABELS"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 27, -74)
-pixel_size = 0.2
-billboard = 2
-text = "SECTION 2"
