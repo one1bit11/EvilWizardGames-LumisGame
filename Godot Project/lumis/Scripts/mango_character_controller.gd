@@ -84,7 +84,7 @@ var currentBody
 
 @export_group("Other")
 
-
+@export var spriteEyes:Sprite3D
 
 
 
@@ -368,3 +368,22 @@ func _on_stick_detection_range_body_exited(body: Node3D) -> void:
 		currentBody = null
 		stickyMode = false
 		isSticking = false
+
+func change_eyes(newEyes: CompressedTexture2D) -> void:
+	spriteEyes.texture = newEyes
+
+func _input(event: InputEvent) -> void:
+	if Input.is_key_pressed(KEY_5):
+		change_eyes(load("res://Textures/Other/MangoEyes/OpenEyes.png"))
+	
+	if Input.is_key_pressed(KEY_6):
+		change_eyes(load("res://Textures/Other/MangoEyes/ClosedEyes.png"))
+	
+	if Input.is_key_pressed(KEY_7):
+		change_eyes(load("res://Textures/Other/MangoEyes/OpenEyes2.png"))
+	
+	if Input.is_key_pressed(KEY_8):
+		change_eyes(load("res://Textures/Other/MangoEyes/SadEyes.png"))
+	
+	if Input.is_key_pressed(KEY_9):
+		change_eyes(load("res://Textures/Other/MangoEyes/SqueezeEyes.png"))

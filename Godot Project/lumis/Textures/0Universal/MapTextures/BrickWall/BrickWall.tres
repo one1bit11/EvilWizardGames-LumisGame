@@ -3,7 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://bodjx0g88e7hr" path="res://Textures/0Universal/MapTextures/BrickWall/IMG_2496.png" id="1_w0xlj"]
 
 [resource]
+albedo_color = Color(0.900601, 0.831484, 0.755088, 1)
 albedo_texture = ExtResource("1_w0xlj")
-uv1_scale = Vector3(0.18, 0.18, 0.18)
+uv1_scale = Vector3(0.2, 0.2, 0.2)
 uv1_triplanar = true
 uv1_world_triplanar = true
