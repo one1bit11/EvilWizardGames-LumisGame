@@ -23,8 +23,10 @@ extends CharacterBody3D
 @export var allignRampUp := 1.5
 ##gravity strength (keep negative)
 @export var gravityStr := -2
-##Sprint speed modifyer
+##sprint speed modifyer
 @export var sprintSpeed := 1.3
+##coyote time timer
+@export var coyoteTimer:Timer
 
 
 ##gravity
@@ -33,6 +35,8 @@ var grav := Vector3(0,-2,0)
 var avgnormal := Vector3.ZERO
 ##Is sprinting
 var sprinting := false
+##if the player is able to jump
+var canJump := true
 
 @export_subgroup("Sticking")
 ##raycast to detect surface details
@@ -194,21 +198,29 @@ func _physics_process(delta: float) -> void:
 	velocity += grav
 	#if is not sticking and is on floor, alligns with floor
 	if is_on_floor():
-		
 		for o in faceChecker.get_collision_count():
-			
-			#print("angle" , faceChecker.get_collision_normal(o))
 			if faceChecker.get_collision_normal(o).y >= 0.75 && faceChecker.get_collision_normal(o).y <= 1.25:
 				_allign_with_surface(faceChecker.get_collision_normal(o))
-		
+	
+	if is_on_floor():
+		coyoteTimer.stop()
+		canJump = true
+	
+	
+	
+	#start coyote time if conditions are met
+	if !is_on_floor() && coyoteTimer.is_stopped() == true:
+		coyoteTimer.start()
+	print(coyoteTimer.time_left)
+	
 	#print(velocity)
 	if Input.is_action_just_pressed("Jump") && isSticking:
 		$MangoJumpSound.pitch_scale = randf_range(0.9, 1.1)
 		$MangoJumpSound.play()
 		velocity += (faceChecker.get_collision_normal(currentSurfaceVal) * jumpVelocity)
-
 		velocity.y += jumpVelocity/2 
-	if Input.is_action_just_pressed("Jump") && is_on_floor() && !isSticking:
+
+	if Input.is_action_just_pressed("Jump")&& !isSticking && (is_on_floor() or canJump):
 		$MangoJumpSound.pitch_scale = randf_range(0.9, 1.1)
 		$MangoJumpSound.play()
 		velocity.y += jumpVelocity + (jumpVelocity/2)
@@ -368,3 +380,7 @@ func _on_stick_detection_range_body_exited(body: Node3D) -> void:
 		currentBody = null
 		stickyMode = false
 		isSticking = false
+
+
+func _on_coyote_timer_timeout() -> void:
+	canJump = false
