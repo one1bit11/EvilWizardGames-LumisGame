@@ -88,8 +88,9 @@ var currentBody
 
 @export_group("Other")
 
-
-
+## Mango Eyes:
+@export var spriteEyeR:Sprite3D
+@export var spriteEyeL:Sprite3D
 
 
 
@@ -384,3 +385,25 @@ func _on_stick_detection_range_body_exited(body: Node3D) -> void:
 
 func _on_coyote_timer_timeout() -> void:
 	canJump = false
+
+## Change Mango's eye sprite
+func change_eyes(newEyes: CompressedTexture2D) -> void:
+	spriteEyeR.texture = newEyes
+	spriteEyeL.texture = newEyes
+
+## For debug. Testing eyes
+func _input(event: InputEvent) -> void:
+	if Input.is_key_pressed(KEY_5):
+		change_eyes(load("res://Textures/Other/MangoEyes/Open1.png"))
+	
+	if Input.is_key_pressed(KEY_6):
+		change_eyes(load("res://Textures/Other/MangoEyes/Closed1.png"))
+	
+	if Input.is_key_pressed(KEY_7):
+		change_eyes(load("res://Textures/Other/MangoEyes/Open2.png"))
+	
+	if Input.is_key_pressed(KEY_8):
+		change_eyes(load("res://Textures/Other/MangoEyes/Closed2.png"))
+	
+	if Input.is_key_pressed(KEY_9):
+		change_eyes(load("res://Textures/Other/MangoEyes/Squeeze.png"))
