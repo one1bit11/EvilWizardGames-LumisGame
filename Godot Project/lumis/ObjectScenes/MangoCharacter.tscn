@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://d141gk5umir7l"]
+[gd_scene load_steps=11 format=3 uid="uid://d141gk5umir7l"]
 
 [ext_resource type="Script" uid="uid://crub8m7rjahjq" path="res://Scripts/mango_character_controller.gd" id="1_qccra"]
 [ext_resource type="PackedScene" uid="uid://cmhvntnt2oi8r" path="res://Meshes/Other/Mango/MangoMeshFinal.tscn" id="2_qccra"]
+[ext_resource type="PackedScene" uid="uid://dgk7thgdty36y" path="res://Meshes/Other/Mango/MangoMeshTrueFinal.tscn" id="2_syw4e"]
 [ext_resource type="Material" uid="uid://bn3ea0tykiugl" path="res://Textures/Other/MangoEye.tres" id="3_shwng"]
 [ext_resource type="AudioStream" uid="uid://b8liwhwx23ey7" path="res://Sounds/SFX/JUMPSFXtest.mp3" id="4_q3my7"]
 
@@ -14,26 +15,31 @@ radius = 1.0
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_qccra"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_shwng"]
+radius = 0.329345
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_syw4e"]
 
-[node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "faceChecker", "upwards", "camPivot", "cam")]
+[node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "coyoteTimer", "faceChecker", "upwards", "camPivot", "cam")]
 collision_priority = 0.1
 platform_wall_layers = 1
 script = ExtResource("1_qccra")
 mesh = NodePath("MangoMeshFinal")
 jumpVelocity = 7.5
 sprintSpeed = 24.0
+coyoteTimer = NodePath("CoyoteTimer")
 faceChecker = NodePath("PlayerAngleManager")
 upwards = NodePath("RelativeUpwards")
 camPivot = NodePath("CameraPivot")
 cam = NodePath("CameraPivot/SpringArm3D/Camera3D")
 
+[node name="Armature" parent="." instance=ExtResource("2_syw4e")]
+
 [node name="MangoMeshFinal" parent="." instance=ExtResource("2_qccra")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0683109, 0, 0)
+visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.121511, 0)
+transform = Transform3D(0.8, 0, 0, 0, 0.278168, 0, 0, 0, 0.8, 0, 0.121511, 0)
 shape = SubResource("SphereShape3D_qccra")
 
 [node name="CameraPivot" type="Node3D" parent="."]
@@ -70,6 +76,7 @@ mesh = SubResource("CapsuleMesh_qccra")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/MangoRoot/RelativeUpwards")
 
 [node name="RayHolder" type="Node3D" parent="."]
+visible = false
 
 [node name="RayCast3D" type="RayCast3D" parent="RayHolder"]
 target_position = Vector3(0, -1.5, 0)
@@ -140,5 +147,10 @@ shape = SubResource("SphereShape3D_syw4e")
 stream = ExtResource("4_q3my7")
 volume_db = -5.0
 
+[node name="CoyoteTimer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
 [connection signal="body_entered" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_entered"]
 [connection signal="body_exited" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_exited"]
+[connection signal="timeout" from="CoyoteTimer" to="." method="_on_coyote_timer_timeout"]
