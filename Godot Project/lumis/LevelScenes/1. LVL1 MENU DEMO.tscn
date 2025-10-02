@@ -3540,11 +3540,5 @@ fov = 50.0
 
 [connection signal="area_entered" from="ROOMS/Room2/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room14/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
-[connection signal="area_entered" from="Checkpoint" to="." method="_on_checkpoint_area_entered" binds= [Vector3(0, -35, -9)]]
-[connection signal="area_entered" from="Checkpoint2" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-55, -36, -54)]]
-[connection signal="area_entered" from="Checkpoint3" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-156, -20.6, -49)]]
-[connection signal="area_entered" from="Checkpoint4" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-216, -6.6, -110)]]
-[connection signal="area_entered" from="Checkpoint5" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-219, -17.6, -178)]]
-[connection signal="area_entered" from="Checkpoint6" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-278, -17.6, -180)]]
 [connection signal="area_entered" from="MusicReplace" to="." method="_on_music_replace_area_entered"]
 [connection signal="area_entered" from="MusicPlay" to="." method="_on_music_play_area_entered"]
