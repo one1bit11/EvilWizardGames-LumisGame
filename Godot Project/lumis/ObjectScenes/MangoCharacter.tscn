@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dgk7thgdty36y" path="res://Meshes/Other/Mango/MangoMeshTrueFinal.tscn" id="2_syw4e"]
 [ext_resource type="Material" uid="uid://bn3ea0tykiugl" path="res://Textures/Other/MangoEye.tres" id="3_shwng"]
 [ext_resource type="AudioStream" uid="uid://b8liwhwx23ey7" path="res://Sounds/SFX/JUMPSFXtest.mp3" id="4_q3my7"]
-[ext_resource type="Texture2D" uid="uid://b6u35padme66l" path="res://Textures/Other/MangoEyes/Squeeze.png" id="5_gpb01"]
+[ext_resource type="Texture2D" uid="uid://cq55itol8k2kx" path="res://Textures/Other/MangoEyes/Open1.png" id="5_gpb01"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_qccra"]
 radius = 0.846402

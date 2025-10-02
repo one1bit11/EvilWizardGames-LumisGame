@@ -32,3 +32,8 @@ func _on_music_play_area_entered(area: Area3D) -> void:
 		print("Music Play")
 		$Audio/Music/MusicPlayer.playing = true
 		$Audio/Music/MusicPlayerAlt.playing = true
+
+
+func _on_ending_trigger_area_entered(area: Area3D) -> void:
+	if area.name == "MangoTrigger":
+		get_tree().change_scene_to_file("res://LevelScenes/end_slides.tscn")

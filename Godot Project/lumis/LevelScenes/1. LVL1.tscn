@@ -1303,7 +1303,7 @@ data = PackedVector3Array(-0.2437, 0.0556, -2.4422, -0.2437, 0.0556, 2.4422, -0.
 backface_collision = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2v00b"]
-size = Vector3(30, 18, 1)
+size = Vector3(13, 7, 4)
 
 [sub_resource type="PrismMesh" id="PrismMesh_es6pr"]
 size = Vector3(12, 4, 12)
@@ -1497,7 +1497,7 @@ transform = Transform3D(1, 0, 0, 1.13687e-13, 1, 0, 0, 0, 1, -8.64267e-07, 405, 
 mesh = SubResource("PlaneMesh_isujd")
 
 [node name="Mango" parent="." instance=ExtResource("1_xlif7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1334.78, 124.194, -126.276)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
 speed = 12.0
 acc = 5.0
 jumpVelocity = 40.0
@@ -1511,19 +1511,21 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 60,
 visible = false
 
 [node name="DebugLights" type="Node3D" parent="."]
-visible = false
 
 [node name="TempDirectionalLight3D" type="DirectionalLight3D" parent="DebugLights"]
 transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 2, 50, 0)
-light_color = Color(0.64, 0.64, 0.64, 1)
+light_color = Color(0.901239, 0.874446, 0.832762, 1)
+light_energy = 0.83
 
 [node name="TempDirectionalLight3D2" type="DirectionalLight3D" parent="DebugLights"]
 transform = Transform3D(-0.707107, 0.5, -0.5, 0, 0.707107, 0.707107, 0.707107, 0.5, -0.5, -2, 50, 0)
-light_color = Color(0.88, 0.773227, 0.6336, 1)
+light_color = Color(0.874849, 0.801538, 0.762219, 1)
+light_energy = 0.83
 
 [node name="TempDirectionalLight3D3" type="DirectionalLight3D" parent="DebugLights"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 50, 0)
-light_color = Color(0.43, 0.43, 0.43, 1)
+light_color = Color(0.778705, 0.664821, 0.609199, 1)
+light_energy = 0.83
 
 [node name="ROOMS" type="Node3D" parent="."]
 
@@ -7560,7 +7562,6 @@ skeleton = NodePath("../../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room15/HalfTube3"]
 script = ExtResource("2_4bvgn")
-nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room15/HalfTube3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_gjrf6")
@@ -7606,7 +7607,6 @@ skeleton = NodePath("../../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room15/Tubelong6"]
 transform = Transform3D(1, 1.86649e-21, 0, 2.53901e-22, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("2_4bvgn")
-nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room15/Tubelong6/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_brgej")
@@ -7619,7 +7619,6 @@ skeleton = NodePath("../../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room15/HalfTube4"]
 script = ExtResource("2_4bvgn")
-nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room15/HalfTube4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0b864")
@@ -7632,7 +7631,6 @@ skeleton = NodePath("../../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room15/HalfTube5"]
 script = ExtResource("2_4bvgn")
-nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room15/HalfTube5/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0b864")
@@ -7645,7 +7643,6 @@ skeleton = NodePath("../../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room15/Tubelong7"]
 script = ExtResource("2_4bvgn")
-nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room15/Tubelong7/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_pcook")
@@ -7658,7 +7655,6 @@ skeleton = NodePath("../../..")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room15/Tubelong10"]
 script = ExtResource("2_4bvgn")
-nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room15/Tubelong10/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_pcook")
@@ -8008,11 +8004,11 @@ script = ExtResource("2_4bvgn")
 nonstick = true
 
 [node name="ElevatorWallUnsickHole1" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWallUnsick"]
-transform = Transform3D(1, 0, 0, 0, 1, 8.35189e-23, 0, 8.35188e-23, 1, 0, 0, -12.7498)
+transform = Transform3D(1, 0, 0, 0, 1, 8.35189e-23, 0, 8.35188e-23, 1, 0, -0.5, -12.7498)
 material_override = ExtResource("25_sp4ew")
 operation = 2
 use_collision = true
-size = Vector3(8, 1, 13)
+size = Vector3(8, 3, 13)
 script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWallUnsickHole2" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWallUnsick"]
@@ -8020,7 +8016,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 8.35189e-23, 0, 8.35188e-23, 1, 0, 0, 14.
 material_override = ExtResource("25_sp4ew")
 operation = 2
 use_collision = true
-size = Vector3(6, 1, 11.5)
+size = Vector3(6, 3, 11.5)
 script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWallUnsick5" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
@@ -8524,9 +8520,15 @@ size = Vector3(80, 183, 137)
 script = ExtResource("2_4bvgn")
 
 [node name="Block44" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 349.83, 8.447, 17.02)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 349.83, 8.447, 67.02)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(16, 39, 161)
+size = Vector3(16, 39, 61)
+script = ExtResource("2_4bvgn")
+
+[node name="Block45" type="CSGBox3D" parent="SewerBlocks"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 349.83, 8.447, -34.98)
+material_override = ExtResource("7_xc2n4")
+size = Vector3(16, 39, 65)
 script = ExtResource("2_4bvgn")
 
 [node name="Block27" type="CSGBox3D" parent="SewerBlocks"]
@@ -9054,6 +9056,11 @@ height = 24.5596
 sides = 48
 script = ExtResource("2_4bvgn")
 
+[node name="Hole" type="CSGBox3D" parent="SewerToCityBlocksNonStick/SewerToCityFloor1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3731, 15.5, -0.499954)
+operation = 2
+size = Vector3(16, 64, 14)
+
 [node name="SewerToCityFloor10" type="CSGBox3D" parent="SewerToCityBlocksNonStick/SewerToCityFloor1"]
 material_override = ExtResource("7_xc2n4")
 operation = 2
@@ -9461,21 +9468,6 @@ material = ExtResource("3_v23sc")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 218, 0)
 visible = false
-
-[node name="DebugLights" type="Node3D" parent="LVL2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 172, 0)
-
-[node name="TempDirectionalLight3D" type="DirectionalLight3D" parent="LVL2/DebugLights"]
-transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 2, 50, 0)
-light_color = Color(0.64, 0.64, 0.64, 1)
-
-[node name="TempDirectionalLight3D2" type="DirectionalLight3D" parent="LVL2/DebugLights"]
-transform = Transform3D(-0.707107, 0.5, -0.5, 0, 0.707107, 0.707107, 0.707107, 0.5, -0.5, -2, 50, 0)
-light_color = Color(0.88, 0.773227, 0.6336, 1)
-
-[node name="TempDirectionalLight3D3" type="DirectionalLight3D" parent="LVL2/DebugLights"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 50, 0)
-light_color = Color(0.43, 0.43, 0.43, 1)
 
 [node name="BuildingBase" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62, 2.5, -12)
@@ -9985,6 +9977,7 @@ autoplay = "Spin"
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1415, 144.5, -51)
+use_collision = true
 size = Vector3(40, 2, 20)
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="."]
@@ -9996,6 +9989,7 @@ nonstick = true
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1412.5, 155.5, -51)
+use_collision = true
 size = Vector3(35, 22, 22)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D2"]
@@ -10030,6 +10024,13 @@ script = ExtResource("2_4bvgn")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WaterwayGate2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_7dd6c")
 
+[node name="EndingTrigger" type="Area3D" parent="."]
+transform = Transform3D(4.37114e-08, 8.74228e-08, 1, 3.82137e-15, -1, 8.74228e-08, 1, 0, -4.37114e-08, -1428, 151.4, -51)
+
+[node name="Box" type="CollisionShape3D" parent="EndingTrigger"]
+transform = Transform3D(1, 0, 0, 0, 1, 1.11075e-28, 0, 0, 1, 0, 3, 0)
+shape = SubResource("BoxShape3D_2v00b")
+
 [connection signal="area_entered" from="ROOMS/Room2/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room4/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room5-6-7-8/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
@@ -10047,3 +10048,4 @@ shape = SubResource("ConcavePolygonShape3D_7dd6c")
 [connection signal="area_entered" from="Checkpoint6" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-278, -17.6, -180)]]
 [connection signal="area_entered" from="MusicReplace" to="." method="_on_music_replace_area_entered"]
 [connection signal="area_entered" from="MusicPlay" to="." method="_on_music_play_area_entered"]
+[connection signal="area_entered" from="EndingTrigger" to="." method="_on_ending_trigger_area_entered"]
