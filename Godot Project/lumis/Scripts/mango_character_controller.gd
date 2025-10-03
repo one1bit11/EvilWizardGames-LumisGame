@@ -89,8 +89,8 @@ var currentBody
 @export_group("Other")
 
 ## Mango Eyes:
-@export var spriteEyeR:Sprite3D
-@export var spriteEyeL:Sprite3D
+@export var mangoEyeR:MeshInstance3D
+@export var mangoEyeL:MeshInstance3D
 
 
 
@@ -388,8 +388,15 @@ func _on_coyote_timer_timeout() -> void:
 
 ## Change Mango's eye sprite
 func change_eyes(newEyes: CompressedTexture2D) -> void:
-	spriteEyeR.texture = newEyes
-	spriteEyeL.texture = newEyes
+	if newEyes == load("res://Textures/Other/MangoEyes/Open2.png"):
+		mangoEyeL.position.x = -0.199
+		mangoEyeL.scale.x = -0.482
+	else:
+		mangoEyeL.position.x = -0.192
+		mangoEyeL.scale.x = 0.482
+	
+	mangoEyeR.get_surface_override_material(0).set_shader_parameter("Texture", newEyes)
+	mangoEyeL.get_surface_override_material(0).set_shader_parameter("Texture", newEyes)
 
 ## For debug. Testing eyes
 func _input(event: InputEvent) -> void:
