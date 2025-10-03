@@ -212,7 +212,7 @@ func _physics_process(delta: float) -> void:
 	#start coyote time if conditions are met
 	if !is_on_floor() && coyoteTimer.is_stopped() == true:
 		coyoteTimer.start()
-	print(coyoteTimer.time_left)
+	#print(coyoteTimer.time_left)
 	
 	#print(velocity)
 	if Input.is_action_just_pressed("Jump") && isSticking:

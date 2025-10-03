@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnw8d5bv0lbyg"]
+
+[ext_resource type="Script" uid="uid://cthhsvlwdylva" path="res://Scripts/object_properties.gd" id="1_ylovj"]
+[ext_resource type="PackedScene" uid="uid://hnfe4mqd80i0" path="res://ObjectScenes/door_frame.tscn" id="2_2lyjg"]
+
+[node name="DoorFrameWithHole" type="Node3D"]
+
+[node name="Hole6" type="CSGCylinder3D" parent="."]
+transform = Transform3D(-2.70006e-13, -1, 1.46083e-07, 1.54767e-07, 4.37114e-08, 3.342, -3.54066, -1.77636e-14, 1.46083e-07, -6.94285, -6.54301, 4.04601)
+operation = 2
+radius = 1.249
+height = 31.9058
+sides = 48
+script = ExtResource("1_ylovj")
+
+[node name="DoorFrame7" parent="." instance=ExtResource("2_2lyjg")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7, -9, 4)
+
+[node name="DoorFrame8" parent="." instance=ExtResource("2_2lyjg")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -20, -9, 4)
