@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://chwy4tbu4whbh"]
+[gd_scene load_steps=11 format=3 uid="uid://chwy4tbu4whbh"]
 
 [ext_resource type="Texture2D" uid="uid://cwugpkdvi2ran" path="res://Textures/Other/SlidePlaceholders/Black Slide.png" id="1_543ey"]
 [ext_resource type="Script" uid="uid://bpesjre2v6sib" path="res://Scripts/slides_manager.gd" id="1_lg0sx"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cnrvs0bk61cob" path="res://Textures/Other/SlidePlaceholders/S Slide 2.png" id="2_543ey"]
 [ext_resource type="Texture2D" uid="uid://dcmdvkk35dlht" path="res://Textures/Other/SlidePlaceholders/S Slide 3.png" id="3_lg0sx"]
 [ext_resource type="AudioStream" uid="uid://krik06ncakfo" path="res://Sounds/Music/Opening V2.ogg" id="6_foovp"]
+[ext_resource type="Texture2D" uid="uid://8dul11gefe78" path="res://Textures/Other/SlidePlaceholders/S Slide 4.png" id="6_hogy8"]
 
 [sub_resource type="Animation" id="Animation_lg0sx"]
 length = 0.001
@@ -40,6 +41,18 @@ tracks/2/path = NodePath("Slide3:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Slide4:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -80,7 +93,7 @@ tracks/2/path = NodePath("Slide3:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(9.1, 9.35, 16.1, 18.1),
+"times": PackedFloat32Array(9.1, 9.35, 12.8, 13.05),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
@@ -114,6 +127,18 @@ tracks/4/keys = {
 "times": PackedFloat32Array(1.1)
 }
 tracks/4/use_blend = true
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Slide4:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(13.05, 13.3, 16.1, 18.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_foovp"]
 _data = {
@@ -143,6 +168,11 @@ modulate = Color(1, 1, 1, 0)
 texture = ExtResource("3_lg0sx")
 centered = false
 
+[node name="Slide4" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("6_hogy8")
+centered = false
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_foovp")
@@ -150,4 +180,5 @@ libraries = {
 autoplay = "StartSlides"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+volume_db = 0.28
 panning_strength = 0.0

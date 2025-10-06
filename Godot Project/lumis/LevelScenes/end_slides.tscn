@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://s5sphqmt0i1j"]
+[gd_scene load_steps=11 format=3 uid="uid://s5sphqmt0i1j"]
 
 [ext_resource type="Script" uid="uid://bpesjre2v6sib" path="res://Scripts/slides_manager.gd" id="1_t5dc8"]
 [ext_resource type="Texture2D" uid="uid://cwugpkdvi2ran" path="res://Textures/Other/SlidePlaceholders/Black Slide.png" id="2_xmtch"]
@@ -6,10 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://cl0wlfofwsswa" path="res://Textures/Other/SlidePlaceholders/E Slide 2.png" id="4_v5y1h"]
 [ext_resource type="Texture2D" uid="uid://dvhjp5cihi4e3" path="res://Textures/Other/SlidePlaceholders/E Slide 3.png" id="5_3yjnt"]
 [ext_resource type="Texture2D" uid="uid://dnifbnlunftcd" path="res://Textures/Other/SlidePlaceholders/E Slide 4.png" id="6_ec74g"]
+[ext_resource type="AudioStream" uid="uid://8dmf8fs684wd" path="res://Sounds/Music/Ending.ogg" id="7_v5y1h"]
 
 [sub_resource type="Animation" id="Animation_543ey"]
 resource_name = "StartSlides"
-length = 18.0
+length = 36.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -17,7 +18,7 @@ tracks/0/path = NodePath("Slide1:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 3.5, 4),
+"times": PackedFloat32Array(0, 0.5, 6.6, 7.1),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
@@ -29,7 +30,7 @@ tracks/1/path = NodePath("Slide2:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(4, 4.5, 7.5, 8),
+"times": PackedFloat32Array(7.1, 7.6, 12.9, 13.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
@@ -41,7 +42,7 @@ tracks/2/path = NodePath("Slide3:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(8, 8.5, 11.5, 12),
+"times": PackedFloat32Array(13.4, 13.9, 20.2333, 20.7333),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
@@ -53,7 +54,7 @@ tracks/3/path = NodePath(".")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(18),
+"times": PackedFloat32Array(36),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
@@ -67,11 +68,26 @@ tracks/4/path = NodePath("Slide4:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(12, 12.5, 16, 16.5),
+"times": PackedFloat32Array(20.7333, 21.2333, 29.0667, 33.7667),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
+tracks/5/type = "audio"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AudioStreamPlayer2D")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("7_v5y1h")
+}],
+"times": PackedFloat32Array(0.166667)
+}
+tracks/5/use_blend = true
 
 [sub_resource type="Animation" id="Animation_lg0sx"]
 length = 0.001
@@ -160,3 +176,7 @@ libraries = {
 &"": SubResource("AnimationLibrary_foovp")
 }
 autoplay = "EndSlides"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+volume_db = 14.255
+panning_strength = 0.0
