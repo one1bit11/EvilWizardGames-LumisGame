@@ -65,6 +65,10 @@ var stickPoint:Vector3
 var stickPointDir:Vector3
 ##which body is the most recent one contacted
 var currentBody
+##the average of sticking surfaces
+var currentSurfacesAvr : Vector3
+##the total values before being averaged of sticking surfaces
+var currentSurfacesTot : Vector3
 
 
 
@@ -198,10 +202,10 @@ func _physics_process(delta: float) -> void:
 	#if !isSticking:
 	velocity += grav
 	#if is not sticking and is on floor, alligns with floor
-	if is_on_floor():
-		for o in faceChecker.get_collision_count():
-			if faceChecker.get_collision_normal(o).y >= 0.75 && faceChecker.get_collision_normal(o).y <= 1.25:
-				_allign_with_surface(faceChecker.get_collision_normal(o))
+
+	for o in faceChecker.get_collision_count():
+		if faceChecker.get_collision_normal(o).y >= 0.75 && faceChecker.get_collision_normal(o).y <= 1.25:
+			_allign_with_surface(faceChecker.get_collision_normal(o))
 	
 	if is_on_floor():
 		coyoteTimer.stop()
@@ -272,32 +276,6 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _stick():
-	##check raycasts
-	#grav = Vector3.ZERO
-	#var raysColliding := 0
-	#if stickyMode:
-		#for ray in $RayHolder.get_children():
-			#if ray.is_colliding():
-				#raysColliding += 1
-				#avgnormal += ray.get_collision_normal()
-			#if raysColliding:
-				#isSticking = true
-				#avgnormal /= raysColliding
-				#avgnormal = avgnormal.normalized()
-				#grav = avgnormal * gravityStr
-			#else:
-				#isSticking = false
-				#avgnormal = Vector3.UP
-				#grav = avgnormal * gravityStr
-	#else:
-		#avgnormal = Vector3.UP
-		#grav = avgnormal * gravityStr
-	 
-	
-#temporary fix to the sliding problem
-	#if Input.is_action_just_pressed("StickMode") && faceChecker.get_collision_count() > 0:
-		#velocity = Vector3.ZERO
-	
 	# set sticky mode to true while button is held, can be changed to toggle if/when we add settings
 	if Input.is_action_just_released("StickMode"):
 		stickyMode = false
@@ -318,47 +296,54 @@ func _stick():
 						currentSurfaceVal = i
 						if "nonstick" in currentSurface:
 							if currentSurface.nonstick == false:
-								stickPoint = faceChecker.get_collision_point(i)
-								isSticking = true
-								
-								_allign_with_surface(faceChecker.get_collision_normal(i))
-								grav = Vector3.ZERO
-							else:
-								isSticking = false
-								stickyMode = false
-								grav = Vector3.UP * gravityStr
+								currentSurfacesTot += faceChecker.get_collision_normal(i)
 						else:
-							stickPoint = faceChecker.get_collision_point(i)
-							isSticking = true
-							_allign_with_surface(faceChecker.get_collision_normal(i))
-							grav = Vector3.ZERO
+							currentSurfacesTot += faceChecker.get_collision_normal(i)
+							
+
+
 				#if theres exactly one object
 				if faceChecker.get_collision_count() == 1:
 					currentSurface = faceChecker.get_collider(i)
 					currentSurfaceVal = i
 					if "nonstick" in currentSurface:
 						if currentSurface.nonstick == false:
-							stickPoint = faceChecker.get_collision_point(i)
-							isSticking = true
-							_allign_with_surface(faceChecker.get_collision_normal(i))
-							grav = Vector3.ZERO
-						else:
-							isSticking = false
-							stickyMode = false
-							grav = Vector3.UP * gravityStr
+							currentSurfacesTot += faceChecker.get_collision_normal(i)
+							
+							
+							
 					else:
-							stickPoint = faceChecker.get_collision_point(i)
-							isSticking = true
-							_allign_with_surface(faceChecker.get_collision_normal(i))
-							grav = Vector3.ZERO
-					
+						currentSurfacesTot += faceChecker.get_collision_normal(i)
+						
+							
+							
+							
+							
+			
+			
+			if currentSurfacesTot != Vector3.ZERO:
+				currentSurfacesAvr = currentSurfacesTot / faceChecker.get_collision_count()
+				_allign_with_surface(currentSurfacesAvr)
+				
+				grav = Vector3.ZERO
+				isSticking = true
+				currentSurfacesTot = Vector3.ZERO
+				currentSurfacesAvr = Vector3.ZERO
+				print(grav)
+			else:
+				currentSurfacesTot = Vector3.ZERO
+				currentSurfacesAvr = Vector3.ZERO
+				grav = Vector3.UP * gravityStr
+
+				isSticking = false
+				
 				#if there are no objects
 		elif faceChecker.get_collision_count() == 0:
 				isSticking = false
 				grav = Vector3.UP * gravityStr
 	else:
 		grav = Vector3.UP * gravityStr
-		stickyMode = false
+
 		isSticking = false
 
 
@@ -379,7 +364,6 @@ func _on_stick_detection_range_body_entered(body: Node3D) -> void:
 func _on_stick_detection_range_body_exited(body: Node3D) -> void:
 	if body == currentBody:
 		currentBody = null
-		stickyMode = false
 		isSticking = false
 
 

@@ -6,7 +6,7 @@
 [ext_resource type="Material" uid="uid://bn3ea0tykiugl" path="res://Textures/Other/MangoEye.tres" id="3_shwng"]
 [ext_resource type="AudioStream" uid="uid://b8liwhwx23ey7" path="res://Sounds/SFX/JUMPSFXtest.mp3" id="4_q3my7"]
 [ext_resource type="Texture2D" uid="uid://cq55itol8k2kx" path="res://Textures/Other/MangoEyes/Open1.png" id="5_gpb01"]
-[ext_resource type="Shader" uid="uid://bam1wmdhsxrli" path="res://Other/MangoEyes.gdshader" id="6_s1ghw"]
+[ext_resource type="Shader" uid="uid://bam1wmdhsxrli" path="res://other/MangoEyes.gdshader" id="6_s1ghw"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_qccra"]
 radius = 0.846402
@@ -37,7 +37,7 @@ shader_parameter/Vframes = 1
 shader_parameter/frame = 0
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_shwng"]
-radius = 0.329345
+radius = 1.51052
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_syw4e"]
 
@@ -180,7 +180,6 @@ target_position = Vector3(-1.5, 0, 1.5)
 target_position = Vector3(-1.5, 0, -1.5)
 
 [node name="StickDetectionRange" type="Area3D" parent="."]
-transform = Transform3D(4.805, 0, 0, 0, 4.805, 0, 0, 0, 4.805, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StickDetectionRange"]
 shape = SubResource("SphereShape3D_shwng")
