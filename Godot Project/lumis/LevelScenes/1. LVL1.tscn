@@ -1,4 +1,4 @@
-[gd_scene load_steps=352 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=353 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
@@ -1518,6 +1518,12 @@ _data = {
 &"RESET": SubResource("Animation_raox2"),
 &"Respawn": SubResource("Animation_snuc0")
 }
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_67c33"]
+albedo_texture = ExtResource("7_lbovu")
+metallic = 1.0
+metallic_texture = ExtResource("8_tgkar")
+roughness_texture = ExtResource("9_s61i1")
 
 [node name="LVL1" type="Node3D" node_paths=PackedStringArray("mango", "uiAnimation")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38, 0)
@@ -7388,6 +7394,9 @@ light_color = Color(1, 0.788235, 0.443137, 1)
 transform = Transform3D(1.26433, 0, -3.98544, 0, 4.18118, 0, 3.98544, 0, 1.26433, -474.82, 27.8464, -125.887)
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS")
 
+[node name="pipes_HplusOne" parent="ROOMS/Room11" instance=ExtResource("21_fil6b")]
+transform = Transform3D(1, 0, 0, 0, 1.30457, 0, 0, 0, 1, -509.794, 18.7535, -134.057)
+
 [node name="Room13" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1043.13, 10.5, -97.5)
 
@@ -8528,6 +8537,9 @@ material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(12, 1, 16)
 script = ExtResource("2_4bvgn")
+
+[node name="lantern_on_hook" parent="ROOMS/ELEVATORROOM" instance=ExtResource("105_tkodh")]
+transform = Transform3D(-1.83657e-07, 8.86723e-11, 4.18118, 0.413604, 4.16067, 1.80792e-08, -4.16067, 0.413604, -1.82765e-07, -23.6562, 8.85204, 85.9145)
 
 [node name="ROOMLABELS" type="Node3D" parent="."]
 visible = false
@@ -10910,6 +10922,60 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -183, 
 
 [node name="DoorFrame6" parent="." instance=ExtResource("27_vgtun")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -210, -9, -74)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(0.0412885, -0.0041044, -0.999139, 0.101488, 0.994837, 0.000107185, 0.99398, -0.101405, 0.0414918, -319.145, 9.09621, -140.916)
+light_color = Color(1, 0.788235, 0.443137, 1)
+
+[node name="lantern_on_hook" parent="." instance=ExtResource("105_tkodh")]
+transform = Transform3D(0.172634, -0.0171612, -4.17758, 0.424341, 4.15959, 0.000448164, 4.15601, -0.423994, 0.173485, -319.145, 8.31947, -140.916)
+
+[node name="Tubelong" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 4.37114e-08, 1.80119, 1, 1.91069e-15, 7.87326e-08, 0, 1, -7.87326e-08, -335.085, 14.8706, -141.152)
+mesh = ExtResource("12_c0owb")
+surface_material_override/0 = SubResource("StandardMaterial3D_67c33")
+
+[node name="Tubelong2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.64203e-15, 1, -7.27489e-07, 1, 1.91069e-15, 3.63745e-07, 4.37114e-08, -8.74228e-08, -8.32151, -306.701, 14.8634, -121.122)
+mesh = ExtResource("12_c0owb")
+surface_material_override/0 = SubResource("StandardMaterial3D_67c33")
+
+[node name="Tubelong3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.64203e-15, 1, -4.65796e-07, -8.74228e-08, 8.74228e-08, 5.32809, 1, -1.37337e-15, 4.65796e-07, -306.709, 8.36325, -102.352)
+mesh = ExtResource("12_c0owb")
+surface_material_override/0 = SubResource("StandardMaterial3D_67c33")
+
+[node name="pipe_threevertical_leftempty corner" parent="." instance=ExtResource("88_38avk")]
+transform = Transform3D(-4.37114e-08, 0, -0.914066, 0, 0.84097, 0, 1, 0, -3.99551e-08, -320.255, -3.77737, -102.016)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(2.77556e-17, -3.56387e-09, -1, 0.0989205, 0.995095, -3.54639e-09, 0.995095, -0.0989205, 3.52539e-10, -211.037, -9.32168, -190.956)
+light_color = Color(1, 0.788235, 0.443137, 1)
+
+[node name="lantern_on_hook2" parent="." instance=ExtResource("105_tkodh")]
+transform = Transform3D(0, -1.49012e-08, -4.18118, 0.413604, 4.16067, 3.41633e-08, 4.16067, -0.413604, 7.15256e-07, -211.051, -9.65416, -190.961)
+
+[node name="Crate9" parent="." instance=ExtResource("101_ymun1")]
+transform = Transform3D(2.29398, 0, -4.17031, 0, 4.7596, 0, 4.17031, 0, 2.29398, -266.732, -17.956, -189.036)
+
+[node name="Crate2" parent="." instance=ExtResource("100_iu3y3")]
+transform = Transform3D(-0.169324, 0, -3.4959, 0, 3.5, 0, 3.4959, 0, -0.169324, -262.095, -18.4383, -190.245)
+
+[node name="Crate3" parent="." instance=ExtResource("100_iu3y3")]
+transform = Transform3D(2.24961, 0, -2.68127, 0, 3.5, 0, 2.68127, 0, 2.24961, -266.724, -15.393, -189.193)
+
+[node name="Crate10" parent="." instance=ExtResource("101_ymun1")]
+transform = Transform3D(1.29938, 0, -4.5788, 0, 4.7596, 0, 4.5788, 0, 1.29938, -261.324, -17.9974, -169.759)
+
+[node name="Crate11" parent="." instance=ExtResource("101_ymun1")]
+transform = Transform3D(-0.995914, 0, -4.65424, 0, 4.7596, 0, 4.65424, 0, -0.995914, -266.672, -17.9797, -169.767)
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="."]
+transform = Transform3D(-4.39247e-08, 2.12076e-11, 1, 0.0989205, 0.995095, 4.32395e-09, -0.995095, 0.0989205, -4.37114e-08, -263.181, -10.4689, -168.064)
+light_color = Color(1, 0.788235, 0.443137, 1)
+
+[node name="lantern_on_hook3" parent="." instance=ExtResource("105_tkodh")]
+transform = Transform3D(-1.83657e-07, 8.86723e-11, 4.18118, 0.413604, 4.16067, 1.80792e-08, -4.16067, 0.413604, -1.82765e-07, -263.181, -10.9169, -168.064)
 
 [connection signal="area_entered" from="ROOMS/Room2/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room4/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
