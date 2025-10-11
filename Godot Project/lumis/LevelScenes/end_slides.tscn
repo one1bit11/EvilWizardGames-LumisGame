@@ -178,5 +178,5 @@ libraries = {
 autoplay = "EndSlides"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-volume_db = 14.255
+volume_db = 20.0
 panning_strength = 0.0

@@ -96,7 +96,15 @@ var currentSurfacesTot : Vector3
 @export var mangoEyeR:MeshInstance3D
 @export var mangoEyeL:MeshInstance3D
 
+var squeezedBefore = false
+var squeezedBeforeAlt = false
 
+var mangoShadow:Node3D
+@export var eyesNode:Node3D
+
+var lerpWeight:float = 0.5
+
+var camFOVMode:int = 1
 
 
 func _get_move_input(delta):
@@ -178,6 +186,34 @@ func _get_move_input(delta):
 
 func _physics_process(delta: float) -> void:
 	
+	mangoShadow.global_position.x = global_position.x
+	mangoShadow.global_position.y = global_position.y - 24.785
+	mangoShadow.global_position.z = global_position.z
+	
+	#eyesNode.global_position.lerp(global_position, 0.5)
+	
+	eyesNode.global_position.x = lerpf(eyesNode.global_position.x,global_position.x,lerpWeight)
+	eyesNode.global_position.y = lerpf(eyesNode.global_position.y,global_position.y,0.65)
+	eyesNode.global_position.z = lerpf(eyesNode.global_position.z,global_position.z,lerpWeight)
+	
+	#eyesNode.global_rotation.lerp(global_rotation, 0.5)
+	
+	eyesNode.global_rotation.x = lerpf(eyesNode.global_rotation.x,global_rotation.x,lerpWeight)
+	eyesNode.global_rotation.y = lerpf(eyesNode.global_rotation.y,global_rotation.y,lerpWeight)
+	eyesNode.global_rotation.z = lerpf(eyesNode.global_rotation.z,global_rotation.z,lerpWeight)
+	
+	if !isSticking:
+		match camFOVMode:
+			0:
+				cam.fov = lerpf(cam.fov, 65.0, 0.25)
+			1:
+				cam.fov = lerpf(cam.fov, 75.0, 0.25)
+			2:
+				cam.fov = lerpf(cam.fov, 85.0, 0.25)
+	else:
+		cam.fov = lerpf(cam.fov, 65.0, 0.25)
+	
+	
 	#call the climb function each frame, we don't have to worry that much about hardware efficiency rn
 	_stick()
 	
@@ -186,6 +222,8 @@ func _physics_process(delta: float) -> void:
 
 	if faceChecker.get_collision_count() == 0:
 		isSticking = false
+		squeezedBefore = false
+		camFOVMode = 1
 	#Because the camera is top level, this allows it to still follow the player without inheriting the rotation
 	camPivot.global_position = Vector3(global_position.x,global_position.y + camPivotHeight, global_position.z)
 	
@@ -196,8 +234,14 @@ func _physics_process(delta: float) -> void:
 	#if isSticking == false && stickyMode == false && Input.is_action_pressed("Sprint"):
 	if Input.is_action_pressed("Sprint"):
 		sprinting = true
+		camFOVMode = 2
+		if squeezedBeforeAlt == false && is_on_floor():
+			squeeze()
+			squeezedBeforeAlt = true
 	else:
 		sprinting = false
+		camFOVMode = 1
+		squeezedBeforeAlt = false
 	_get_move_input(delta)
 	#if !isSticking:
 	velocity += grav
@@ -280,6 +324,8 @@ func _stick():
 	if Input.is_action_just_released("StickMode"):
 		stickyMode = false
 		isSticking = false
+		squeezedBefore = false
+		camFOVMode = 1
 	if Input.is_action_pressed("StickMode"):
 		stickyMode = true
 	
@@ -325,26 +371,38 @@ func _stick():
 				currentSurfacesAvr = currentSurfacesTot / faceChecker.get_collision_count()
 				_allign_with_surface(currentSurfacesAvr)
 				
+				camFOVMode = 0
+				
+				if squeezedBefore == false:
+					squeeze()
+					squeezedBefore = true
+				
 				grav = Vector3.ZERO
 				isSticking = true
 				currentSurfacesTot = Vector3.ZERO
 				currentSurfacesAvr = Vector3.ZERO
-				print(grav)
+				#print(grav)
 			else:
 				currentSurfacesTot = Vector3.ZERO
 				currentSurfacesAvr = Vector3.ZERO
 				grav = Vector3.UP * gravityStr
 
 				isSticking = false
+				squeezedBefore = false
+				camFOVMode = 1
 				
 				#if there are no objects
 		elif faceChecker.get_collision_count() == 0:
 				isSticking = false
+				squeezedBefore = false
+				camFOVMode = 1
 				grav = Vector3.UP * gravityStr
 	else:
 		grav = Vector3.UP * gravityStr
 
 		isSticking = false
+		squeezedBefore = false
+		camFOVMode = 1
 
 
 #alligns the player's base with the surface being stuck to
@@ -365,6 +423,8 @@ func _on_stick_detection_range_body_exited(body: Node3D) -> void:
 	if body == currentBody:
 		currentBody = null
 		isSticking = false
+		squeezedBefore = false
+		camFOVMode = 1
 
 
 func _on_coyote_timer_timeout() -> void:
@@ -398,3 +458,26 @@ func _input(event: InputEvent) -> void:
 	
 	if Input.is_key_pressed(KEY_9):
 		change_eyes(load("res://Textures/Other/MangoEyes/Squeeze.png"))
+
+func _ready() -> void:
+	mangoShadow = $MangoShadowParent/MangoShadow
+	blink()
+	
+	eyesNode.global_position.x = global_position.x
+	eyesNode.global_position.y = global_position.y
+	eyesNode.global_position.z = global_position.z
+	eyesNode.global_rotation.x = global_rotation.x
+	eyesNode.global_rotation.y = global_rotation.y
+	eyesNode.global_rotation.z = global_rotation.z
+
+func blink():
+	change_eyes(load("res://Textures/Other/MangoEyes/Closed1.png"))
+	await get_tree().create_timer(randf_range(0.1, 0.2)).timeout
+	change_eyes(load("res://Textures/Other/MangoEyes/Open1.png"))
+	await get_tree().create_timer(randf_range(4.0, 8.0)).timeout
+	blink()
+
+func squeeze():
+	change_eyes(load("res://Textures/Other/MangoEyes/Squeeze.png"))
+	await get_tree().create_timer(randf_range(0.2, 0.6)).timeout
+	change_eyes(load("res://Textures/Other/MangoEyes/Open1.png"))

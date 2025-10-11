@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://eyp6tro00ol1"]
+[gd_scene load_steps=6 format=3 uid="uid://eyp6tro00ol1"]
 
 [ext_resource type="Script" uid="uid://bby4ycx5glmx8" path="res://Scripts/main_menu.gd" id="1_3e8lh"]
 [ext_resource type="PackedScene" uid="uid://ddrgb2e4wr4gl" path="res://LevelScenes/1. LVL1 MENU DEMO.tscn" id="1_hggsl"]
 [ext_resource type="Texture2D" uid="uid://deo1clgoh10vi" path="res://Textures/Other/Vignette.png" id="1_w6rnc"]
+[ext_resource type="AudioStream" uid="uid://bm3pa8w34scl6" path="res://Sounds/Music/Final/MainMenu.ogg" id="4_y1rc5"]
 
 [sub_resource type="FontVariation" id="FontVariation_oc8cd"]
 
@@ -59,6 +60,12 @@ theme_override_font_sizes/font_size = 61
 text = "Quit"
 
 [node name="LVL1" parent="." instance=ExtResource("1_hggsl")]
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_y1rc5")
+volume_db = 24.0
+autoplay = true
+panning_strength = 0.0
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
