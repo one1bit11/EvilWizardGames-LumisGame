@@ -1,4 +1,4 @@
-[gd_scene load_steps=354 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=357 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
@@ -135,6 +135,7 @@
 [ext_resource type="Script" uid="uid://sh5l6dvaekyk" path="res://Scripts/water_crates.gd" id="131_snuc0"]
 [ext_resource type="Material" uid="uid://bcjvswc5sm5rd" path="res://Textures/Other/SolidColours/TransPurple.tres" id="132_raox2"]
 [ext_resource type="PackedScene" uid="uid://bq8grao5h2cy0" path="res://ObjectScenes/barrel.tscn" id="135_hj8bv"]
+[ext_resource type="ArrayMesh" uid="uid://ditl4yd381xc2" path="res://Meshes/1Sewers/FenceMiddle.obj" id="136_gwmb0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xlif7"]
 
@@ -1521,6 +1522,18 @@ _data = {
 }
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_67c33"]
+albedo_texture = ExtResource("7_lbovu")
+metallic = 1.0
+metallic_texture = ExtResource("8_tgkar")
+roughness_texture = ExtResource("9_s61i1")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y6aia"]
+albedo_texture = ExtResource("7_lbovu")
+metallic = 1.0
+metallic_texture = ExtResource("8_tgkar")
+roughness_texture = ExtResource("9_s61i1")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ut63"]
 albedo_texture = ExtResource("7_lbovu")
 metallic = 1.0
 metallic_texture = ExtResource("8_tgkar")
@@ -3044,40 +3057,43 @@ light_color = Color(1, 0.788235, 0.443137, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.4458, 3.64352, -39.9202)
 
 [node name="Pole" parent="ROOMS/Room2/Safety Rail" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -28.6427, 14.4386, 4.46748)
+transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -29.1532, 14.4386, 4.46748)
 skeleton = NodePath("../../..")
 
 [node name="Pole2" parent="ROOMS/Room2/Safety Rail" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -26.7752, 14.4386, 4.46748)
+transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -27.2857, 14.4386, 4.46748)
 skeleton = NodePath("../../..")
 
 [node name="Pole3" parent="ROOMS/Room2/Safety Rail" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -24.8457, 14.4386, 4.46748)
+transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -25.3562, 14.4386, 4.46748)
 skeleton = NodePath("../../..")
 
 [node name="Pole4" parent="ROOMS/Room2/Safety Rail" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -22.9199, 14.4386, 4.46748)
+transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -23.4304, 14.4386, 4.46748)
 skeleton = NodePath("../../..")
 
 [node name="Pole5" parent="ROOMS/Room2/Safety Rail" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -21.0047, 14.4386, 4.46748)
+transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -21.5152, 14.4386, 4.46748)
 skeleton = NodePath("../../..")
 
 [node name="Pole6" parent="ROOMS/Room2/Safety Rail" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -19.0735, 14.4386, 4.46748)
+transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -19.584, 14.4386, 4.46748)
 skeleton = NodePath("../../..")
 
 [node name="Pole7" parent="ROOMS/Room2/Safety Rail" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -17.1694, 14.4386, 4.46748)
+transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -17.6799, 14.4386, 4.46748)
 skeleton = NodePath("../../..")
 
 [node name="Pole8" parent="ROOMS/Room2/Safety Rail" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -15.2498, 14.4386, 4.46748)
+transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -15.7603, 14.4386, 4.46748)
 skeleton = NodePath("../../..")
 
 [node name="Pole9" parent="ROOMS/Room2/Safety Rail" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -13.3239, 14.4386, 4.46748)
+transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -13.8344, 14.4386, 4.46748)
 skeleton = NodePath("../../..")
+
+[node name="Barrel" parent="ROOMS/Room2" instance=ExtResource("135_hj8bv")]
+transform = Transform3D(-1.74423e-07, -3.65605, -2.83777, 4.89649, -1.96102e-07, 0, -1.24043e-07, -2.60004, 3.99032, 3.40722, 1.63923, -58.7821)
 
 [node name="Room2-3" type="Node3D" parent="ROOMS"]
 
@@ -3531,7 +3547,7 @@ script = ExtResource("2_4bvgn")
 nonstick = true
 
 [node name="EndPlatform" type="CSGBox3D" parent="ROOMS/Room4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -175.873, -15.5, -73.2581)
+transform = Transform3D(1.04486, 0, 0, 0, 1, 0, 0, 0, 1, -175.592, -15.5, -73.2581)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(13.7456, 14, 15.4839)
@@ -3696,7 +3712,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_ymun1")
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room4/Room4ArtPass/pipes_climbing/Tubelong4/TubeBend"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room4/Room4ArtPass/pipes_climbing/Tubelong4/TubeBend/StaticBody3D"]
-transform = Transform3D(0.6, 0, 0, 0, -2.62264e-08, -0.6, 0, 0.59999, -2.62268e-08, 0, 0.17778, 0.0790958)
+transform = Transform3D(0.6, 0, 0, 0, -2.62264e-08, -0.6, 0, 0.59999, -2.62268e-08, 0, 0.17778, 0.0790939)
 shape = SubResource("CylinderShape3D_o72sb")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room4/Room4ArtPass/pipes_climbing/Tubelong4"]
@@ -4022,27 +4038,27 @@ skeleton = NodePath("../..")
 transform = Transform3D(-3.01725e-08, 0, -0.690266, 0, 0.690266, 0, 0.690266, 0, -3.01725e-08, -181.645, -6.84612, -66.8068)
 
 [node name="Pole" parent="ROOMS/Room4/safety rails2" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.492706)
 skeleton = NodePath("../..")
 
 [node name="Pole2" parent="ROOMS/Room4/safety rails2" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.15791)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, -2.66519)
 skeleton = NodePath("../..")
 
 [node name="Pole3" parent="ROOMS/Room4/safety rails2" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.37828)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, -5.88556)
 skeleton = NodePath("../..")
 
 [node name="Pole4" parent="ROOMS/Room4/safety rails2" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9.57473)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, -9.08205)
 skeleton = NodePath("../..")
 
 [node name="Pole5" parent="ROOMS/Room4/safety rails2" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12.7912)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, -12.2985)
 skeleton = NodePath("../..")
 
 [node name="Pole6" parent="ROOMS/Room4/safety rails2" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15.9607)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, -15.4327)
 skeleton = NodePath("../..")
 
 [node name="PillarBottom" type="MeshInstance3D" parent="ROOMS/Room4"]
@@ -10112,7 +10128,7 @@ visible = false
 transform = Transform3D(-1.4687e-07, 3.36, 1.4687e-07, -5.96856e-14, -1.4687e-07, 3.36, 3.36, 1.4687e-07, 5.61579e-14, -46, 11, 0)
 
 [node name="Crate" type="MeshInstance3D" parent="LVL2/WaterCreate6/Create"]
-transform = Transform3D(3.33805, 0, 0, 0, 3.33805, 0, 0, 0, 3.33805, 0, 1.08055, 0)
+transform = Transform3D(3.33805, 0, 2.79506e-21, 0, 3.33805, -1.42109e-14, -5.93067e-22, 1.42109e-14, 3.33805, -0.0657043, 1.10456, 9.53674e-07)
 mesh = ExtResource("22_pgyh0")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_7dd6c")
@@ -11027,9 +11043,6 @@ transform = Transform3D(-0.169324, 0, -3.4959, 0, 3.5, 0, 3.4959, 0, -0.169324, 
 [node name="Crate3" parent="." instance=ExtResource("100_iu3y3")]
 transform = Transform3D(2.24961, 0, -2.68127, 0, 3.5, 0, 2.68127, 0, 2.24961, -266.724, -15.393, -189.193)
 
-[node name="Crate10" parent="." instance=ExtResource("101_ymun1")]
-transform = Transform3D(1.29938, 0, -4.5788, 0, 4.7596, 0, 4.5788, 0, 1.29938, -261.324, -17.9974, -169.759)
-
 [node name="Crate11" parent="." instance=ExtResource("101_ymun1")]
 transform = Transform3D(-0.995914, 0, -4.65424, 0, 4.7596, 0, 4.65424, 0, -0.995914, -266.672, -17.9797, -169.767)
 
@@ -11048,6 +11061,22 @@ transform = Transform3D(4.89649, 0, 0, 0, 4.4863, 0, 0, 0, 4.89649, 5.14993, -37
 
 [node name="Barrel3" parent="." instance=ExtResource("135_hj8bv")]
 transform = Transform3D(4.89649, 0, 0, 0, 4.4863, 0, 0, 0, 4.89649, -46.8494, -37.5183, -60.6925)
+
+[node name="Barrel4" parent="." instance=ExtResource("135_hj8bv")]
+transform = Transform3D(-1.88487, -3.64801, 2.13777, 3.84253, -0.176703, 3.02876, -2.37862, 2.60532, 3.19878, -260.288, -18.1816, -170.708)
+
+[node name="Barrel5" parent="." instance=ExtResource("135_hj8bv")]
+transform = Transform3D(-3.01956, 0, 3.85459, 0, 4.4863, 0, -3.85459, 0, -3.01956, -211.343, -19.4771, -185.582)
+
+[node name="FenceMiddle" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3.02802e-08, 0, 0.704986, 0, 0.686468, 0, -0.692731, 0, -3.08159e-08, -168.704, -6.86753, -66.7998)
+mesh = ExtResource("136_gwmb0")
+surface_material_override/0 = SubResource("StandardMaterial3D_y6aia")
+
+[node name="FenceMiddle2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.72035e-08, 0, 0.622345, 0, 0.596695, 0, -0.622345, 0, -2.72035e-08, -57.2697, -19.9261, -35.4512)
+mesh = ExtResource("136_gwmb0")
+surface_material_override/0 = SubResource("StandardMaterial3D_3ut63")
 
 [connection signal="area_entered" from="ROOMS/DeathTrigger2" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/DeathTrigger3" to="." method="_on_death_trigger_area_entered"]
