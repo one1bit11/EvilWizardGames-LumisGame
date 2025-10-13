@@ -3534,9 +3534,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 shape = SubResource("BoxShape3D_2v00b")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.22708, -36.8416, 1.72689)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.63765, -36.8416, -3.27421)
 current = true
-fov = 50.0
+fov = 16.5
 
 [connection signal="area_entered" from="ROOMS/Room2/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room14/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
