@@ -120,7 +120,7 @@ func _get_move_input(delta):
 	var input = Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
 	var input3 := Vector3(input.x,0,input.y)
 	if isSticking:
-		stickRot = faceChecker.get_collision_normal(currentSurfaceVal)
+		stickRot = currentSurfacesAvr
 		
 		velocity = Vector3.ZERO
 		input = Vector3.ZERO
@@ -335,37 +335,15 @@ func _stick():
 		if faceChecker.get_collision_count() >= 1:
 			for i in faceChecker.get_collision_count():
 				#if theres 2 or more objects
-				if faceChecker.get_collision_count() > 1 && i-1 >= 0:
-					#if this point is closer than the last point, use its details instead
-					if (self.global_position - faceChecker.get_collision_point(i)) < (self.global_position - faceChecker.get_collision_point(i-1)):
-						currentSurface = faceChecker.get_collider(i)
-						currentSurfaceVal = i
-						if "nonstick" in currentSurface:
-							if currentSurface.nonstick == false:
-								currentSurfacesTot += faceChecker.get_collision_normal(i)
-						else:
-							currentSurfacesTot += faceChecker.get_collision_normal(i)
-							
-
-
-				#if theres exactly one object
-				if faceChecker.get_collision_count() == 1:
-					currentSurface = faceChecker.get_collider(i)
-					currentSurfaceVal = i
-					if "nonstick" in currentSurface:
-						if currentSurface.nonstick == false:
-							currentSurfacesTot += faceChecker.get_collision_normal(i)
-							
-							
-							
-					else:
+				currentSurface = faceChecker.get_collider(i)
+				currentSurfaceVal = i
+				if "nonstick" in currentSurface:
+					if currentSurface.nonstick == false:
 						currentSurfacesTot += faceChecker.get_collision_normal(i)
-						
-							
-							
-							
-							
-			
+				else:
+					currentSurfacesTot += faceChecker.get_collision_normal(i)
+					
+
 			
 			if currentSurfacesTot != Vector3.ZERO:
 				currentSurfacesAvr = currentSurfacesTot / faceChecker.get_collision_count()
@@ -376,8 +354,11 @@ func _stick():
 				if squeezedBefore == false:
 					squeeze()
 					squeezedBefore = true
+				if currentSurfacesAvr.y >= 0.75 && currentSurfacesAvr.y < 1.25:
+					grav = Vector3.UP * gravityStr
+				else:
+					grav = -currentSurfacesAvr
 				
-				grav = Vector3.ZERO
 				isSticking = true
 				currentSurfacesTot = Vector3.ZERO
 				currentSurfacesAvr = Vector3.ZERO
@@ -429,6 +410,42 @@ func _on_stick_detection_range_body_exited(body: Node3D) -> void:
 
 func _on_coyote_timer_timeout() -> void:
 	canJump = false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Change Mango's eye sprite
 func change_eyes(newEyes: CompressedTexture2D) -> void:
