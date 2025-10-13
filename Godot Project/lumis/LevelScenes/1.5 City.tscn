@@ -810,16 +810,16 @@ use_collision = true
 size = Vector3(5, 10, 52)
 
 [node name="StreetBoundary29" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, -93, 4, -248.5)
+transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, -93, 8, -248.5)
 material_override = ExtResource("10_4vtbw")
 use_collision = true
-size = Vector3(5, 12, 52)
+size = Vector3(5, 20, 52)
 
 [node name="StreetBoundary30" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 49, 4, -248.5)
+transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 49, 8, -248.5)
 material_override = ExtResource("10_4vtbw")
 use_collision = true
-size = Vector3(5, 12, 52)
+size = Vector3(5, 20, 52)
 
 [node name="StreetBoundary17" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -43.5, 5, -226)
