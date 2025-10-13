@@ -1,0 +1,38 @@
+[gd_scene load_steps=10 format=3 uid="uid://do1xdcdlb6iub"]
+
+[ext_resource type="ArrayMesh" uid="uid://x7c55yt05wxe" path="res://Meshes/1Sewers/CeilingLights.obj" id="1_8xw02"]
+[ext_resource type="Texture2D" uid="uid://c8h2bxwd2ikld" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_Glass_BaseColor.png" id="2_u4we0"]
+[ext_resource type="Texture2D" uid="uid://druninruwjpwb" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_Glass_Emissive.png" id="3_sxynf"]
+[ext_resource type="Texture2D" uid="uid://dxhoy6fa6wsgy" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_CeilingLight_BaseColor.png" id="4_ltexj"]
+[ext_resource type="Texture2D" uid="uid://bt47tgy7f5i1x" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_CeilingLight_Metallic.png" id="5_ejhtn"]
+[ext_resource type="Texture2D" uid="uid://cbf300ihkrf3j" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_CeilingLight_Roughness.png" id="6_2qobb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_atbt4"]
+albedo_texture = ExtResource("2_u4we0")
+emission_enabled = true
+emission_texture = ExtResource("3_sxynf")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_24txo"]
+albedo_texture = ExtResource("4_ltexj")
+metallic = 1.0
+metallic_texture = ExtResource("5_ejhtn")
+roughness_texture = ExtResource("6_2qobb")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_oyyve"]
+points = PackedVector3Array(5.99357, 6.78504, -0.385969, 5.12145, 5.78818, -6.36645, 5.74434, 5.78818, -6.36645, 5.61966, 7.1592, -7.36346, 4.87198, 6.6605, -0.385969, 5.74434, 5.78818, -0.385969, 6.11824, 6.28688, -6.36645, 5.24601, 7.1592, 0.611039, 4.87198, 6.6605, -6.36645, 4.87198, 6.03766, -0.385969, 5.99357, 5.91299, -0.385969, 5.24601, 7.1592, -7.36346, 5.61966, 7.1592, 0.611039, 5.12145, 5.78818, -0.385969, 4.87198, 6.03766, -6.36645, 5.99357, 6.78504, -6.36645, 6.11824, 6.53583, -0.385969, 5.99357, 5.91299, -6.36645, 6.11824, 6.53583, -6.36645, 6.11824, 6.28688, -0.385969, 5.61966, 7.03439, 0.611039, 5.61966, 7.03439, -7.36346, 5.24601, 7.03439, 0.611039, 5.24601, 7.03439, -7.36346)
+
+[node name="CeilingLights" type="MeshInstance3D"]
+mesh = ExtResource("1_8xw02")
+surface_material_override/0 = SubResource("StandardMaterial3D_atbt4")
+surface_material_override/1 = SubResource("StandardMaterial3D_24txo")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 4, -3.2)
+light_color = Color(1, 0.789845, 0.648899, 1)
+light_energy = 2.5
+omni_range = 38.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_oyyve")

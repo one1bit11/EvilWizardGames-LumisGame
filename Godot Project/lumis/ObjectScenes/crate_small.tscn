@@ -31,7 +31,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_us58e")
 surface_material_override/1 = SubResource("StandardMaterial3D_mpgnh")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
-visible = false
 script = ExtResource("5_eanju")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]

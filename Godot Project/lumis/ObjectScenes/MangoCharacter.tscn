@@ -1,10 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://d141gk5umir7l"]
+[gd_scene load_steps=16 format=3 uid="uid://d141gk5umir7l"]
 
 [ext_resource type="Script" uid="uid://crub8m7rjahjq" path="res://Scripts/mango_character_controller.gd" id="1_qccra"]
 [ext_resource type="PackedScene" uid="uid://cmhvntnt2oi8r" path="res://Meshes/Other/Mango/MangoMeshFinal.tscn" id="2_qccra"]
 [ext_resource type="PackedScene" uid="uid://dgk7thgdty36y" path="res://Meshes/Other/Mango/MangoMeshTrueFinal.tscn" id="2_syw4e"]
 [ext_resource type="Material" uid="uid://bn3ea0tykiugl" path="res://Textures/Other/MangoEye.tres" id="3_shwng"]
 [ext_resource type="AudioStream" uid="uid://b8liwhwx23ey7" path="res://Sounds/SFX/JUMPSFXtest.mp3" id="4_q3my7"]
+[ext_resource type="Texture2D" uid="uid://cq55itol8k2kx" path="res://Textures/Other/MangoEyes/Open1.png" id="5_gpb01"]
+[ext_resource type="Shader" uid="uid://bam1wmdhsxrli" path="res://Other/MangoEyes.gdshader" id="6_s1ghw"]
+[ext_resource type="Texture2D" uid="uid://ch1gm7n2ddrco" path="res://Textures/Other/MangoShadow.png" id="8_vat0n"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_qccra"]
 radius = 0.846402
@@ -14,12 +17,32 @@ radius = 1.0
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_qccra"]
 
+[sub_resource type="BoxMesh" id="BoxMesh_vat0n"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cqt0y"]
+render_priority = 0
+shader = ExtResource("6_s1ghw")
+shader_parameter/extruded_alpha_cull = 1.0
+shader_parameter/opaque_extrude = true
+shader_parameter/keep_image = true
+shader_parameter/image_alpha_cull = 1.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/color_mix = Color(0, 0, 0, 1)
+shader_parameter/mix_strength = 0.0
+shader_parameter/Texture = ExtResource("5_gpb01")
+shader_parameter/texture_calls = 20
+shader_parameter/ray_bias = 1.0
+shader_parameter/infinite_holes = false
+shader_parameter/Hframes = 1
+shader_parameter/Vframes = 1
+shader_parameter/frame = 0
+
 [sub_resource type="SphereShape3D" id="SphereShape3D_shwng"]
-radius = 0.329345
+radius = 1.51052
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_syw4e"]
 
-[node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "coyoteTimer", "faceChecker", "upwards", "camPivot", "cam")]
+[node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "coyoteTimer", "faceChecker", "upwards", "camPivot", "cam", "mangoEyeR", "mangoEyeL", "eyesNode")]
 collision_priority = 0.1
 platform_wall_layers = 1
 script = ExtResource("1_qccra")
@@ -31,6 +54,9 @@ faceChecker = NodePath("PlayerAngleManager")
 upwards = NodePath("RelativeUpwards")
 camPivot = NodePath("CameraPivot")
 cam = NodePath("CameraPivot/SpringArm3D/Camera3D")
+mangoEyeR = NodePath("RelativeUpwards/EyesParent/EyeParent2/Eyes/EyeR3D")
+mangoEyeL = NodePath("RelativeUpwards/EyesParent/EyeParent2/Eyes/EyeL3D")
+eyesNode = NodePath("RelativeUpwards/EyesParent/EyeParent2")
 
 [node name="Armature" parent="." instance=ExtResource("2_syw4e")]
 
@@ -60,20 +86,52 @@ debug_shape_custom_color = Color(1.27546e-06, 0.351102, 0.201291, 1)
 [node name="RelativeUpwards" type="RayCast3D" parent="."]
 target_position = Vector3(0, 0, -1.5)
 
-[node name="Eyes" type="Node3D" parent="RelativeUpwards"]
-transform = Transform3D(1.24889, 0, 0, 0, 1.30043, -0.0221316, 0, 0.0221316, 1.30043, 0, 0.072956, 0.337938)
+[node name="EyesParent" type="Node" parent="RelativeUpwards"]
 
-[node name="Eye1" type="MeshInstance3D" parent="RelativeUpwards/Eyes"]
+[node name="EyeParent2" type="Node3D" parent="RelativeUpwards/EyesParent"]
+
+[node name="Eyes" type="Node3D" parent="RelativeUpwards/EyesParent/EyeParent2"]
+transform = Transform3D(1.24889, 0, 0, 0, 1.30043, -0.0221316, 0, 0.0221316, 1.30043, 0, 0.19213, 0.432938)
+
+[node name="Eye1" type="MeshInstance3D" parent="RelativeUpwards/EyesParent/EyeParent2/Eyes"]
 transform = Transform3D(0.0789635, 0, 0, 0, 0.0876602, 0, 0, 0, 0.0555136, 0.188555, 0.314674, -0.91842)
+visible = false
 material_override = ExtResource("3_shwng")
 mesh = SubResource("CapsuleMesh_qccra")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/MangoRoot/RelativeUpwards")
 
-[node name="Eye2" type="MeshInstance3D" parent="RelativeUpwards/Eyes"]
+[node name="Eye2" type="MeshInstance3D" parent="RelativeUpwards/EyesParent/EyeParent2/Eyes"]
 transform = Transform3D(0.079, 0, 0, 0, 0.088, 0, 0, 0, 0.056, -0.189, 0.315, -0.918)
+visible = false
 material_override = ExtResource("3_shwng")
 mesh = SubResource("CapsuleMesh_qccra")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/MangoRoot/RelativeUpwards")
+
+[node name="EyeR" type="Sprite3D" parent="RelativeUpwards/EyesParent/EyeParent2/Eyes"]
+transform = Transform3D(0.03, 0, 0, 0, 0.03, 5.23869e-10, 0, -5.23869e-10, 0.03, 0.192465, 0.234976, -0.918017)
+visible = false
+flip_h = true
+texture = ExtResource("5_gpb01")
+
+[node name="EyeL" type="Sprite3D" parent="RelativeUpwards/EyesParent/EyeParent2/Eyes"]
+transform = Transform3D(0.03, 0, 0, 0, 0.03, 5.23869e-10, 0, -5.23869e-10, 0.03, -0.192, 0.235, -0.918)
+visible = false
+texture = ExtResource("5_gpb01")
+
+[node name="EyeR3D" type="MeshInstance3D" parent="RelativeUpwards/EyesParent/EyeParent2/Eyes"]
+transform = Transform3D(-0.482, 0, 0, 0, 0.746, 1.84857e-09, 0, -3.72711e-08, 0.037, 0.192, 0.235, -0.926)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_vat0n")
+surface_material_override/0 = SubResource("ShaderMaterial_cqt0y")
+
+[node name="EyeL3D" type="MeshInstance3D" parent="RelativeUpwards/EyesParent/EyeParent2/Eyes"]
+transform = Transform3D(0.482, 0, 0, 0, 0.746, 1.941e-09, 0, -3.91347e-08, 0.037, -0.192, 0.235, -0.926)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_vat0n")
+surface_material_override/0 = SubResource("ShaderMaterial_cqt0y")
+
+[node name="EyesAnchor" type="Node3D" parent="RelativeUpwards"]
+transform = Transform3D(1.24889, 0, 0, 0, 1.30043, -0.0221316, 0, 0.0221316, 1.30043, 0, 0.072956, 0.337938)
 
 [node name="RayHolder" type="Node3D" parent="."]
 visible = false
@@ -133,7 +191,6 @@ target_position = Vector3(-1.5, 0, 1.5)
 target_position = Vector3(-1.5, 0, -1.5)
 
 [node name="StickDetectionRange" type="Area3D" parent="."]
-transform = Transform3D(4.805, 0, 0, 0, 4.805, 0, 0, 0, 4.805, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StickDetectionRange"]
 shape = SubResource("SphereShape3D_shwng")
@@ -150,6 +207,14 @@ volume_db = -5.0
 [node name="CoyoteTimer" type="Timer" parent="."]
 wait_time = 0.1
 one_shot = true
+
+[node name="MangoShadowParent" type="Node" parent="."]
+
+[node name="MangoShadow" type="Decal" parent="MangoShadowParent"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -24.7849, 0)
+size = Vector3(2, 50, 2)
+texture_albedo = ExtResource("8_vat0n")
+upper_fade = 0.160766
 
 [connection signal="body_entered" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_entered"]
 [connection signal="body_exited" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_exited"]

@@ -5,18 +5,18 @@
 [ext_resource type="ArrayMesh" uid="uid://d1dl65em4t8gv" path="res://Meshes/0Universal/Crate.obj" id="2_reb8w"]
 [ext_resource type="Texture2D" uid="uid://ch6bx8dqovm17" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_Roughness.png" id="3_r387f"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nmy0m"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7dd6c"]
 albedo_texture = ExtResource("1_264hc")
 metallic = 0.72
 metallic_texture = ExtResource("2_4qif7")
 roughness_texture = ExtResource("3_r387f")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_264hc"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5iuiw"]
 albedo_color = Color(1, 0.891036, 0.795241, 1)
 metallic = 0.83
 roughness = 0.43
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_c0owb"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_67c33"]
 size = Vector3(2, 2.0759, 3.21997)
 
 [node name="Create" type="StaticBody3D"]
@@ -25,9 +25,9 @@ size = Vector3(2, 2.0759, 3.21997)
 transform = Transform3D(3.33805, 0, 0, 0, 3.33805, 0, 0, 0, 3.33805, 0, 1.08055, 0)
 mesh = ExtResource("2_reb8w")
 skeleton = NodePath("../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_nmy0m")
-surface_material_override/1 = SubResource("StandardMaterial3D_264hc")
+surface_material_override/0 = SubResource("StandardMaterial3D_7dd6c")
+surface_material_override/1 = SubResource("StandardMaterial3D_5iuiw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00012207, 1.08162, 0.0032959)
-shape = SubResource("BoxShape3D_c0owb")
+shape = SubResource("BoxShape3D_67c33")
