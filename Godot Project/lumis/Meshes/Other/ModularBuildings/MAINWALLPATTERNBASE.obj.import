@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b4xwq7vmxj2t0"
+path="res://.godot/imported/MAINWALLPATTERNBASE.obj-21d5acc219f36a7f9af1281510ec46bc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/MAINWALLPATTERNBASE.obj-21d5acc219f36a7f9af1281510ec46bc.mesh"]
+
+source_file="res://Meshes/Other/ModularBuildings/MAINWALLPATTERNBASE.obj"
+dest_files=["res://.godot/imported/MAINWALLPATTERNBASE.obj-21d5acc219f36a7f9af1281510ec46bc.mesh", "res://.godot/imported/MAINWALLPATTERNBASE.obj-21d5acc219f36a7f9af1281510ec46bc.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
