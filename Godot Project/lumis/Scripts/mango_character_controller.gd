@@ -120,7 +120,8 @@ func _get_move_input(delta):
 	var input = Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
 	var input3 := Vector3(input.x,0,input.y)
 	if isSticking:
-		stickRot = faceChecker.get_collision_normal(currentSurfaceVal)
+		print(currentSurfacesAvr)
+		stickRot = currentSurfacesAvr
 		
 		velocity = Vector3.ZERO
 		input = Vector3.ZERO
@@ -133,26 +134,20 @@ func _get_move_input(delta):
 		
 		rot = -(atan2(faceChecker.get_collision_normal(currentSurfaceVal).z, faceChecker.get_collision_normal(currentSurfaceVal).x) - PI/2)
 		
-		var test = faceChecker.get_collision_normal(currentSurfaceVal).y
+		var test = currentSurfacesAvr.y
 		var ygreater : bool
 		var yequal : bool
 		
-		if !is_on_floor():
-			#if Input.is_action_pressed("MoveForward"):
-				#dir = avgnormal.cross(forwardDir).normalized().rotated(avgnormal.normalized(), - PI/2)
-			#if Input.is_action_pressed("MoveBackwards"):
-				#dir = avgnormal.cross(forwardDir).normalized().rotated(avgnormal.normalized(), PI/2)
-			#if Input.is_action_pressed("MoveLeft"):
-				#dir = avgnormal.cross(forwardDir).normalized()
-			#if Input.is_action_pressed("MoveRight"):
-				#dir = avgnormal.cross(forwardDir).normalized().rotated(avgnormal.normalized(), PI)
-			#print("graf",forwardDir)
-				## IDEA clamp campivot results to only be on the same plane that you're moving across while sticking to prevent falling off
-				dir = Vector3(input.x,-input.y,0).rotated(Vector3(0,1 - test,0),rot).normalized()
-		else:
-			
+		if faceChecker.get_collision_normal(currentSurfaceVal).y >= 0.75 && faceChecker.get_collision_normal(currentSurfaceVal).y <= 1.25:
+			#print(faceChecker.get_collision_normal(currentSurfaceVal))
 			rot = camPivot.rotation.y
 			dir = Vector3(input.x, 0, input.y).rotated(Vector3.UP, rot).normalized()
+				## IDEA clamp campivot results to only be on the same plane that you're moving across while sticking to prevent falling off
+				
+		else:
+			#print(faceChecker.get_collision_normal(currentSurfaceVal))
+			dir = Vector3(input.x,-input.y,0).rotated(Vector3(0,1 - test,0),rot).normalized()
+
 		
 		
 		
@@ -335,37 +330,15 @@ func _stick():
 		if faceChecker.get_collision_count() >= 1:
 			for i in faceChecker.get_collision_count():
 				#if theres 2 or more objects
-				if faceChecker.get_collision_count() > 1 && i-1 >= 0:
-					#if this point is closer than the last point, use its details instead
-					if (self.global_position - faceChecker.get_collision_point(i)) < (self.global_position - faceChecker.get_collision_point(i-1)):
-						currentSurface = faceChecker.get_collider(i)
-						currentSurfaceVal = i
-						if "nonstick" in currentSurface:
-							if currentSurface.nonstick == false:
-								currentSurfacesTot += faceChecker.get_collision_normal(i)
-						else:
-							currentSurfacesTot += faceChecker.get_collision_normal(i)
-							
-
-
-				#if theres exactly one object
-				if faceChecker.get_collision_count() == 1:
-					currentSurface = faceChecker.get_collider(i)
-					currentSurfaceVal = i
-					if "nonstick" in currentSurface:
-						if currentSurface.nonstick == false:
-							currentSurfacesTot += faceChecker.get_collision_normal(i)
-							
-							
-							
-					else:
+				currentSurface = faceChecker.get_collider(i)
+				currentSurfaceVal = i
+				if "nonstick" in currentSurface:
+					if currentSurface.nonstick == false:
 						currentSurfacesTot += faceChecker.get_collision_normal(i)
-						
-							
-							
-							
-							
-			
+				else:
+					currentSurfacesTot += faceChecker.get_collision_normal(i)
+					
+
 			
 			if currentSurfacesTot != Vector3.ZERO:
 				currentSurfacesAvr = currentSurfacesTot / faceChecker.get_collision_count()
@@ -376,15 +349,18 @@ func _stick():
 				if squeezedBefore == false:
 					squeeze()
 					squeezedBefore = true
+				if currentSurfacesAvr.y >= 0.75 && currentSurfacesAvr.y < 1.25:
+					grav = Vector3.UP * gravityStr
+				else:
+					grav = Vector3.ZERO
 				
-				grav = Vector3.ZERO
 				isSticking = true
 				currentSurfacesTot = Vector3.ZERO
-				currentSurfacesAvr = Vector3.ZERO
+
 				#print(grav)
 			else:
 				currentSurfacesTot = Vector3.ZERO
-				currentSurfacesAvr = Vector3.ZERO
+
 				grav = Vector3.UP * gravityStr
 
 				isSticking = false
@@ -398,11 +374,10 @@ func _stick():
 				camFOVMode = 1
 				grav = Vector3.UP * gravityStr
 	else:
-		grav = Vector3.UP * gravityStr
-
 		isSticking = false
 		squeezedBefore = false
 		camFOVMode = 1
+		grav = Vector3.UP * gravityStr
 
 
 #alligns the player's base with the surface being stuck to
@@ -429,6 +404,42 @@ func _on_stick_detection_range_body_exited(body: Node3D) -> void:
 
 func _on_coyote_timer_timeout() -> void:
 	canJump = false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Change Mango's eye sprite
 func change_eyes(newEyes: CompressedTexture2D) -> void:
