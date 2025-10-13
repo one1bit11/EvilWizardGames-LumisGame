@@ -1,4 +1,4 @@
-[gd_scene load_steps=372 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=374 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
@@ -135,8 +135,10 @@
 [ext_resource type="Material" uid="uid://0pjdyr38fn5j" path="res://Textures/Other/SolidColours/LightGreyBackface.tres" id="125_dsxr3"]
 [ext_resource type="AudioStream" uid="uid://byqfcv16md0bv" path="res://Sounds/Music/Final/Sewers.ogg" id="126_fof7x"]
 [ext_resource type="AudioStream" uid="uid://buoyui1n16jfb" path="res://Sounds/Music/Final/City.ogg" id="127_fof7x"]
+[ext_resource type="AudioStream" uid="uid://cp03m8vbyxlhe" path="res://Sounds/Music/Final/Sewers Alt.ogg" id="132_8bbsk"]
 [ext_resource type="PackedScene" uid="uid://do1xdcdlb6iub" path="res://ObjectScenes/ceiling_lights.tscn" id="133_fof7x"]
 [ext_resource type="ArrayMesh" uid="uid://x7c55yt05wxe" path="res://Meshes/1Sewers/CeilingLights.obj" id="133_xicfl"]
+[ext_resource type="AudioStream" uid="uid://dicfocjdcykl1" path="res://Sounds/Music/Final/City Alt.ogg" id="134_cg17g"]
 [ext_resource type="Texture2D" uid="uid://c8h2bxwd2ikld" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_Glass_BaseColor.png" id="134_k8pp5"]
 [ext_resource type="Texture2D" uid="uid://druninruwjpwb" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_Glass_Emissive.png" id="135_8bbsk"]
 [ext_resource type="PackedScene" uid="uid://bq8grao5h2cy0" path="res://ObjectScenes/barrel.tscn" id="135_hj8bv"]
@@ -1777,9 +1779,9 @@ mesh = SubResource("PlaneMesh_isujd")
 
 [node name="Mango" parent="." instance=ExtResource("1_xlif7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -37, 4)
-speed = 12.0
+speed = 40.0
 acc = 5.0
-jumpVelocity = 40.0
+jumpVelocity = 400.0
 gravityStr = -3
 sprintSpeed = 20.0
 stickStrength = 12.0
@@ -3427,7 +3429,7 @@ sides = 16
 script = ExtResource("2_4bvgn")
 
 [node name="Pipe?4" type="CSGCylinder3D" parent="ROOMS/Room3"]
-transform = Transform3D(-0.816708, -1.07098e-07, 0.816708, 0.816708, 3.56995e-08, 0.816708, -1.00973e-07, 1.155, 5.04867e-08, -120, 10.0535, -49.5243)
+transform = Transform3D(-0.816708, -1.07098e-07, 0.816708, 0.816708, 3.56995e-08, 0.816708, -1.00973e-07, 1.155, 5.04867e-08, -114, 10.0535, -49.5243)
 visible = false
 material_override = SubResource("StandardMaterial3D_4vjvv")
 use_collision = true
@@ -9460,9 +9462,21 @@ volume_db = 20.0
 panning_strength = 0.0
 parameters/looping = true
 
+[node name="MusicPlayer1Alt" type="AudioStreamPlayer2D" parent="Audio/Music"]
+stream = ExtResource("132_8bbsk")
+volume_db = -80.0
+panning_strength = 0.0
+parameters/looping = true
+
 [node name="MusicPlayerAlt" type="AudioStreamPlayer2D" parent="Audio/Music"]
 stream = ExtResource("127_fof7x")
 volume_db = 20.0
+panning_strength = 0.0
+parameters/looping = true
+
+[node name="MusicPlayerAlt2Alt" type="AudioStreamPlayer2D" parent="Audio/Music"]
+stream = ExtResource("134_cg17g")
+volume_db = -80.0
 panning_strength = 0.0
 parameters/looping = true
 
@@ -10223,10 +10237,34 @@ shape = SubResource("BoxShape3D_2v00b")
 debug_color = Color(0, 0.6, 0.701961, 0.85098)
 
 [node name="MusicStop" type="Area3D" parent="."]
-transform = Transform3D(4.37114e-08, 8.74228e-08, 1, 3.82137e-15, -1, 8.74228e-08, 1, 0, -4.37114e-08, -342.8, 41.4, -114)
+transform = Transform3D(4.37114e-08, 8.74228e-08, 1, 3.82137e-15, -1, 8.74228e-08, 1, 0, -4.37114e-08, -502.8, 41.4, -114)
 
 [node name="Box" type="CollisionShape3D" parent="MusicStop"]
-transform = Transform3D(1, 0, 0, 0, 1, 1.11075e-28, 0, 0, 1, -8, 3, 0)
+transform = Transform3D(2.5, 1.69407e-21, 0, 4.23516e-22, 2.5, 2.77687e-28, 0, -3.7025e-29, 2.5, -8, 3, -3)
+shape = SubResource("BoxShape3D_2v00b")
+debug_color = Color(0, 0.6, 0.701961, 0.85098)
+
+[node name="MusicStop2" type="Area3D" parent="."]
+transform = Transform3D(1, -3.82137e-15, -8.74228e-08, 3.82137e-15, -1, 8.74228e-08, -8.74228e-08, -8.74228e-08, -1, -1363.8, 126.4, -107)
+
+[node name="Box" type="CollisionShape3D" parent="MusicStop2"]
+transform = Transform3D(1.75, 8.47033e-22, 0, -8.47033e-22, 1.75, 0, 0, 0, 1.75, -8, 2, -3)
+shape = SubResource("BoxShape3D_2v00b")
+debug_color = Color(0, 0.6, 0.701961, 0.85098)
+
+[node name="MusicReplace2" type="Area3D" parent="."]
+transform = Transform3D(3.0598e-08, 6.1196e-08, 0.7, 2.67496e-15, -0.7, 6.1196e-08, 0.7, 0, -3.0598e-08, -342.8, 41.4, -114)
+
+[node name="Box" type="CollisionShape3D" parent="MusicReplace2"]
+transform = Transform3D(2.5, 1.69407e-21, 0, 4.23516e-22, 2.5, 2.77687e-28, 0, -3.7025e-29, 2.5, -8, 3, -3)
+shape = SubResource("BoxShape3D_2v00b")
+debug_color = Color(0, 0.6, 0.701961, 0.85098)
+
+[node name="MusicReplace3" type="Area3D" parent="."]
+transform = Transform3D(3.0598e-08, 6.1196e-08, 0.7, 2.67496e-15, -0.7, 6.1196e-08, 0.7, 0, -3.0598e-08, -1176.8, 56.4, -111)
+
+[node name="Box" type="CollisionShape3D" parent="MusicReplace3"]
+transform = Transform3D(6.25, 3.33174e-21, 2.84217e-14, 3.43567e-21, 6.25, 5.68434e-14, -2.84217e-14, -5.68434e-14, 6.25, -8, 3, -18.7142)
 shape = SubResource("BoxShape3D_2v00b")
 debug_color = Color(0, 0.6, 0.701961, 0.85098)
 
@@ -10825,4 +10863,7 @@ shape = SubResource("ConvexPolygonShape3D_67c33")
 [connection signal="area_entered" from="PopUpPlay4" to="." method="_on_pop_up_play_4_area_entered"]
 [connection signal="area_entered" from="MusicPlay2ndHalf" to="." method="_on_music_play_2_nd_half_area_entered"]
 [connection signal="area_entered" from="MusicStop" to="." method="_on_music_stop_area_entered"]
+[connection signal="area_entered" from="MusicStop2" to="." method="_on_music_stop_2_area_entered"]
+[connection signal="area_entered" from="MusicReplace2" to="." method="_on_music_replace_2_area_entered"]
+[connection signal="area_entered" from="MusicReplace3" to="." method="_on_music_replace_3_area_entered"]
 [connection signal="area_entered" from="EndingTrigger" to="." method="_on_ending_trigger_area_entered"]

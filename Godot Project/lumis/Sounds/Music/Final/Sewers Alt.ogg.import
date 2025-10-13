@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cp03m8vbyxlhe"
+path="res://.godot/imported/Sewers Alt.ogg-d1a8f8a5cf431b912f9acfd16e15394a.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sounds/Music/Final/Sewers Alt.ogg"
+dest_files=["res://.godot/imported/Sewers Alt.ogg-d1a8f8a5cf431b912f9acfd16e15394a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
