@@ -4,7 +4,7 @@
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_xlif7"]
 [ext_resource type="Script" uid="uid://cthhsvlwdylva" path="res://Scripts/object_properties.gd" id="2_4bvgn"]
-[ext_resource type="PackedScene" uid="uid://bdxm1fmp6wumv" path="res://LevelScenes/1.5. LV2LCity.tscn" id="2_gwmb0"]
+[ext_resource type="PackedScene" uid="uid://cdt72fkucpjaf" path="res://LevelScenes/1.5 City.tscn" id="2_gwmb0"]
 [ext_resource type="Material" uid="uid://bje7sds7fpef2" path="res://Textures/Other/SolidColours/Brown.tres" id="2_short"]
 [ext_resource type="Material" uid="uid://cymxly51ml176" path="res://Textures/Other/SolidColours/BrownAlt.tres" id="3_5jpfr"]
 [ext_resource type="Material" uid="uid://cp52667yf3kt1" path="res://Textures/0Universal/MapTextures/BrickWall/BrickWall 2.tres" id="3_gmyoy"]
@@ -1626,7 +1626,7 @@ checkpointPos = Vector3(0, 9.9, 4)
 uiAnimation = NodePath("UI/AnimationPlayer")
 uiAnimationPopUp = NodePath("UI/PopUps/AnimationPlayer")
 
-[node name="LV2City" parent="." instance=ExtResource("2_gwmb0")]
+[node name="LVCity" parent="." instance=ExtResource("2_gwmb0")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource("1_ir167")
@@ -1744,7 +1744,7 @@ transform = Transform3D(1, 0, 0, 1.13687e-13, 1, 0, 0, 0, 1, -8.64267e-07, 405, 
 mesh = SubResource("PlaneMesh_isujd")
 
 [node name="Mango" parent="." instance=ExtResource("1_xlif7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -37, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -574.45, 59.9062, -121.214)
 speed = 12.0
 acc = 5.0
 jumpVelocity = 40.0
@@ -1763,6 +1763,7 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 60,
 visible = false
 
 [node name="DebugLights" type="Node3D" parent="."]
+visible = false
 
 [node name="TempDirectionalLight3D" type="DirectionalLight3D" parent="DebugLights"]
 transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 2, 50, 0)
@@ -2240,6 +2241,13 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -321, 
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/DeathTrigger3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, 2)
+shape = SubResource("BoxShape3D_624ml")
+
+[node name="DeathTrigger4" type="Area3D" parent="ROOMS"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -612, -5.7, -126.7)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/DeathTrigger4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.99998, -0.4, 0.5)
 shape = SubResource("BoxShape3D_624ml")
 
 [node name="Room2" type="Node3D" parent="ROOMS"]
@@ -8782,7 +8790,7 @@ sides = 32
 script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar3" type="CSGCylinder3D" parent="SewerBlocks"]
-transform = Transform3D(0.878864, 0, 0, 0, 1, 0, 0, 0, 0.803569, 33.2977, 27, -244.67)
+transform = Transform3D(0.878864, 0, 0, 0, 1, 0, 0, 0, 0.803569, 51.9899, 27, -198.694)
 material_override = ExtResource("25_soyx7")
 use_collision = true
 radius = 10.0
@@ -8800,7 +8808,7 @@ sides = 32
 script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar5" type="CSGCylinder3D" parent="SewerBlocks"]
-transform = Transform3D(1.87425, 0, 0, 0, 1, 0, 0, 0, 1.89386, -544.067, 27, -370.906)
+transform = Transform3D(1.87425, 0, 0, 0, 1, 0, 0, 0, 1.89386, -292.649, 27, -114.967)
 material_override = ExtResource("25_soyx7")
 use_collision = true
 radius = 10.0
@@ -8809,7 +8817,7 @@ sides = 32
 script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar6" type="CSGCylinder3D" parent="SewerBlocks"]
-transform = Transform3D(3.05797, 0, 0, 0, 1, 0, 0, 0, 1.77475, -756.55, 27, 367.156)
+transform = Transform3D(3.05797, 0, 0, 0, 1, 0, 0, 0, 1.77475, -375.771, 27, 186.583)
 material_override = ExtResource("25_soyx7")
 use_collision = true
 radius = 10.0
@@ -8818,7 +8826,7 @@ sides = 16
 script = ExtResource("2_4bvgn")
 
 [node name="BigAssPillar8" type="CSGCylinder3D" parent="SewerBlocks"]
-transform = Transform3D(1.06483, 0, 0, 0, 1, 0, 0, 0, 1.15118, -237.527, 27, -390.091)
+transform = Transform3D(1.06483, 0, 0, 0, 1, 0, 0, 0, 1.15118, -224.109, 27, -296.295)
 material_override = ExtResource("25_soyx7")
 use_collision = true
 radius = 10.0
@@ -8841,7 +8849,6 @@ material_override = ExtResource("7_xc2n4")
 size = Vector3(3536.44, 0.5, 3549.68)
 script = ExtResource("2_4bvgn")
 nonstick = true
-metadata/_edit_lock_ = true
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="SewerBlocks/SewerCeiling"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -903.9, -0.999496, -69.6)
@@ -8850,40 +8857,46 @@ radius = 4.015
 height = 5.1
 sides = 32
 
-[node name="Block23" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -196.773, -37.053, 374.576)
+[node name="Block22" type="CSGBox3D" parent="SewerBlocks"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -196.773, -43.053, 200.864)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(123, 134, 47.5767)
+size = Vector3(123, 122, 87)
+script = ExtResource("2_4bvgn")
+
+[node name="Block23" type="CSGBox3D" parent="SewerBlocks"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -196.773, -37.053, 310.864)
+material_override = ExtResource("7_xc2n4")
+size = Vector3(123, 134, 175)
 script = ExtResource("2_4bvgn")
 
 [node name="Block24" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -417.546, -34.053, 374.553)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -425.087, -34.053, 274.864)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(374.709, 140, 133.622)
+size = Vector3(359.628, 140, 333)
 script = ExtResource("2_4bvgn")
 
 [node name="Block16" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -585.358, -20.5192, -209.038)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -359.577, -20.5192, -169.136)
 material_override = ExtResource("7_xc2n4")
 size = Vector3(284, 125.067, 203)
 script = ExtResource("2_4bvgn")
 
 [node name="Block42" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -403.854, -15.7847, -300.54)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -212.772, -33.5192, -172.136)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(133, 160.536, 133)
+size = Vector3(133, 125.067, 133)
 script = ExtResource("2_4bvgn")
 
 [node name="Block9" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 206.826, -29.553, -396.194)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 174.395, -29.553, -396.194)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(314.138, 149, 359.117)
+size = Vector3(379, 149, 359.117)
 script = ExtResource("2_4bvgn")
 
 [node name="Block21" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -289.605, -29.553, -446.065)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -289.605, -29.553, -379.253)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(377, 149, 259.376)
+size = Vector3(377, 149, 393)
 script = ExtResource("2_4bvgn")
 
 [node name="Block41" type="CSGBox3D" parent="SewerBlocks"]
@@ -8893,9 +8906,9 @@ size = Vector3(332.055, 149, 330.243)
 script = ExtResource("2_4bvgn")
 
 [node name="Block17" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.895, -12.553, -431.352)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.895, -12.553, -419.117)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(352, 149, 294.49)
+size = Vector3(352, 149, 318.961)
 script = ExtResource("2_4bvgn")
 
 [node name="Block7" type="CSGBox3D" parent="SewerBlocks"]
@@ -9037,9 +9050,9 @@ size = Vector3(94, 138, 123)
 script = ExtResource("2_4bvgn")
 
 [node name="Block12" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93.1605, -45.553, 264.02)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 83.13, -45.553, 264.02)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(56.939, 141, 83)
+size = Vector3(77, 141, 83)
 script = ExtResource("2_4bvgn")
 
 [node name="Block14" type="CSGBox3D" parent="SewerBlocks"]
@@ -9048,16 +9061,23 @@ material_override = ExtResource("7_xc2n4")
 size = Vector3(362, 155, 83)
 script = ExtResource("2_4bvgn")
 
-[node name="Block19" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.37, -36.053, 369.835)
+[node name="Block18" type="CSGBox3D" parent="SewerBlocks"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.87, -40.053, 259.02)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(130, 160, 79.3696)
+size = Vector3(145, 152, 75)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
+[node name="Block19" type="CSGBox3D" parent="SewerBlocks"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.37, -36.053, 341.52)
+material_override = ExtResource("7_xc2n4")
+size = Vector3(130, 160, 136)
 script = ExtResource("2_4bvgn")
 
 [node name="Block20" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 144.13, -29.053, 484.017)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 144.13, -29.053, 475.906)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(353, 174, 256.549)
+size = Vector3(353, 174, 272.772)
 script = ExtResource("2_4bvgn")
 
 [node name="Block25" type="CSGBox3D" parent="SewerBlocks"]
@@ -9067,9 +9087,9 @@ size = Vector3(513.746, 181, 291.316)
 script = ExtResource("2_4bvgn")
 
 [node name="Block13" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.155, -41.553, 260.52)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.13, -41.553, 260.52)
 material_override = ExtResource("7_xc2n4")
-size = Vector3(45.6729, 141, 48)
+size = Vector3(77, 141, 48)
 script = ExtResource("2_4bvgn")
 nonstick = true
 
@@ -9119,7 +9139,6 @@ script = ExtResource("2_4bvgn")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 147.836, 106.087, -42.517)
-visible = false
 light_color = Color(1, 0.953788, 0.941996, 1)
 light_energy = 40.0
 spot_range = 4096.0
@@ -9127,7 +9146,6 @@ spot_angle = 90.0
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 50.207, 106.087, 135.564)
-visible = false
 light_color = Color(1, 0.953788, 0.941996, 1)
 light_energy = 40.0
 spot_range = 4096.0
@@ -9135,7 +9153,6 @@ spot_angle = 90.0
 
 [node name="SpotLight3D3" type="SpotLight3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -50.996, 106.087, 178.785)
-visible = false
 light_color = Color(1, 0.953788, 0.941996, 1)
 light_energy = 40.0
 spot_range = 4096.0
@@ -9143,7 +9160,6 @@ spot_angle = 90.0
 
 [node name="SpotLight3D5" type="SpotLight3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -134.996, 154.087, 192.785)
-visible = false
 light_color = Color(1, 0.953788, 0.941996, 1)
 light_energy = 40.0
 spot_range = 4096.0
@@ -9836,6 +9852,46 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 shape = SubResource("BoxShape3D_2v00b")
 debug_color = Color(0, 0.6, 0.701961, 0.85098)
 
+[node name="Checkpoint8" type="Area3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -576, 27.4, -122)
+
+[node name="Box" type="CollisionShape3D" parent="Checkpoint8"]
+transform = Transform3D(3.65, 0, 0, 0, 3.65, 0, 0, 0, 3.65, 0, 4, -5)
+shape = SubResource("BoxShape3D_2v00b")
+debug_color = Color(0, 0.6, 0.701961, 0.85098)
+
+[node name="Checkpoint9" type="Area3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -757, 1.4, -101)
+
+[node name="Box" type="CollisionShape3D" parent="Checkpoint9"]
+transform = Transform3D(2.095, 0, 0, 0, 2.095, 0, 0, 0, 2.095, -1, -2, 3)
+shape = SubResource("BoxShape3D_2v00b")
+debug_color = Color(0, 0.6, 0.701961, 0.85098)
+
+[node name="Checkpoint10" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -828, 28.4, -120)
+
+[node name="Box" type="CollisionShape3D" parent="Checkpoint10"]
+transform = Transform3D(-6.9064e-08, 0, 1.58, 0, 1.58, 0, -1.58, 0, -6.9064e-08, -2, -0.300003, 2.8)
+shape = SubResource("BoxShape3D_2v00b")
+debug_color = Color(0, 0.6, 0.701961, 0.85098)
+
+[node name="Checkpoint11" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -1021, 0.400002, -98)
+
+[node name="Box" type="CollisionShape3D" parent="Checkpoint11"]
+transform = Transform3D(-6.9064e-08, 0, 1.58, 0, 1.58, 0, -1.58, 0, -6.9064e-08, -2, -0.300003, 2.8)
+shape = SubResource("BoxShape3D_2v00b")
+debug_color = Color(0, 0.6, 0.701961, 0.85098)
+
+[node name="Checkpoint12" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -1124, 66.4, -121)
+
+[node name="Box" type="CollisionShape3D" parent="Checkpoint12"]
+transform = Transform3D(-1.24315e-07, 0, 2.844, 0, 2.844, 0, -2.844, 0, -1.24315e-07, 0, -0.300003, 2.8)
+shape = SubResource("BoxShape3D_2v00b")
+debug_color = Color(0, 0.6, 0.701961, 0.85098)
+
 [node name="Checkpoint13" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -1323, 66.4, -121)
 
@@ -9849,6 +9905,14 @@ transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -1326, 1
 
 [node name="Box" type="CollisionShape3D" parent="Checkpoint14"]
 transform = Transform3D(-1.24315e-07, 0, 2.844, 0, 2.844, 0, -2.844, 0, -1.24315e-07, 0, -0.300003, 2.8)
+shape = SubResource("BoxShape3D_2v00b")
+debug_color = Color(0, 0.6, 0.701961, 0.85098)
+
+[node name="MusicReplace" type="Area3D" parent="."]
+transform = Transform3D(1.91069e-15, -1, 4.37114e-08, -4.37114e-08, -4.37114e-08, -1, 1, 0, -4.37114e-08, -622, 4.4, 58)
+
+[node name="Box" type="CollisionShape3D" parent="MusicReplace"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 shape = SubResource("BoxShape3D_2v00b")
 debug_color = Color(0, 0.6, 0.701961, 0.85098)
 
@@ -9880,6 +9944,14 @@ debug_color = Color(0, 0.6, 0.701961, 0.85098)
 transform = Transform3D(4.37114e-08, 6.1196e-08, 3.2, 3.82137e-15, -0.7, 2.79753e-07, 1, 0, -1.39876e-07, -79, -16.6, -20)
 
 [node name="Box" type="CollisionShape3D" parent="PopUpPlay4"]
+transform = Transform3D(1, 0, 0, 0, 1, 1.11075e-28, 0, 0, 1, -8, 3, 0)
+shape = SubResource("BoxShape3D_2v00b")
+debug_color = Color(0, 0.6, 0.701961, 0.85098)
+
+[node name="MusicPlay2ndHalf" type="Area3D" parent="."]
+transform = Transform3D(1.73097e-07, 3.46194e-07, 3.96, 1.51326e-14, -3.96, 3.46194e-07, 3.96, 0, -1.73097e-07, -592, 9.4, -91)
+
+[node name="Box" type="CollisionShape3D" parent="MusicPlay2ndHalf"]
 transform = Transform3D(1, 0, 0, 0, 1, 1.11075e-28, 0, 0, 1, -8, 3, 0)
 shape = SubResource("BoxShape3D_2v00b")
 debug_color = Color(0, 0.6, 0.701961, 0.85098)
@@ -10409,6 +10481,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -119, -17.1, -36)
 
 [connection signal="area_entered" from="ROOMS/DeathTrigger2" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/DeathTrigger3" to="." method="_on_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/DeathTrigger4" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room2/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room4/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room5-6-7-8/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
@@ -10425,11 +10498,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -119, -17.1, -36)
 [connection signal="area_entered" from="Checkpoint5" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-219, -17.6, -178)]]
 [connection signal="area_entered" from="Checkpoint6" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-315.3, -2.5, -121.1)]]
 [connection signal="area_entered" from="Checkpoint7" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-350.3, 35.5, -121.6)]]
+[connection signal="area_entered" from="Checkpoint8" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-591.3, -2.5, -121.1)]]
+[connection signal="area_entered" from="Checkpoint9" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-756.3, -2.5, -99.1)]]
+[connection signal="area_entered" from="Checkpoint10" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-823.3, 25.5, -118.1)]]
+[connection signal="area_entered" from="Checkpoint11" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-1031.3, -2.5, -97.6)]]
+[connection signal="area_entered" from="Checkpoint12" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-1131.3, 65.5, -117.6)]]
 [connection signal="area_entered" from="Checkpoint13" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-1314.1, 44.9, -117.6)]]
 [connection signal="area_entered" from="Checkpoint14" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-1338.1, 122.9, -117.6)]]
+[connection signal="area_entered" from="MusicReplace" to="." method="_on_music_replace_area_entered"]
 [connection signal="area_entered" from="MusicPlay" to="." method="_on_music_play_area_entered"]
 [connection signal="area_entered" from="PopUpPlay2" to="." method="_on_pop_up_play_2_area_entered"]
 [connection signal="area_entered" from="PopUpPlay3" to="." method="_on_pop_up_play_3_area_entered"]
 [connection signal="area_entered" from="PopUpPlay4" to="." method="_on_pop_up_play_4_area_entered"]
+[connection signal="area_entered" from="MusicPlay2ndHalf" to="." method="_on_music_play_2_nd_half_area_entered"]
 [connection signal="area_entered" from="MusicStop" to="." method="_on_music_stop_area_entered"]
 [connection signal="area_entered" from="EndingTrigger" to="." method="_on_ending_trigger_area_entered"]
