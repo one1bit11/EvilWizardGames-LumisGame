@@ -19,7 +19,7 @@ metallic_texture = ExtResource("3_c2157")
 roughness_texture = ExtResource("4_f5w5t")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xxm8b"]
-size = Vector3(1.43994, 5.03882, 3.37982)
+size = Vector3(1.6318, 5.03882, 3.37982)
 
 [node name="Pole" type="MeshInstance3D"]
 transform = Transform3D(0.690266, 0, 0, 0, 0.690266, 0, 0, 0, 0.690266, 0, 0, 0)

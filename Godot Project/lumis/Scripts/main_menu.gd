@@ -5,12 +5,14 @@ func transition_to_lv():
 
 
 func _on_start_button_pressed() -> void:
-	transition_to_lv()
+	$FadeAnimationPlayer.play("StartFadeOut")
 
 
 func _on_quit_button_pressed() -> void:
-	get_tree().quit()
+	$FadeAnimationPlayer.play("QuitFadeOut")
 
+func quit_game():
+	get_tree().quit()
 
 func _on_credits_button_pressed() -> void:
 	print("not yet...")
