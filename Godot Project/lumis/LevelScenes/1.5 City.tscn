@@ -2,7 +2,7 @@
 
 [ext_resource type="Material" uid="uid://dmc7etf6fkm64" path="res://Textures/0Universal/MapTextures/BrickFloor/BrickFloor.tres" id="1_61xmw"]
 [ext_resource type="Script" uid="uid://sh5l6dvaekyk" path="res://Scripts/water_crates.gd" id="2_s3xnc"]
-[ext_resource type="ArrayMesh" uid="uid://d1dl65em4t8gv" path="res://Meshes/0Universal/Crate.obj" id="3_5bo6m"]
+[ext_resource type="ArrayMesh" uid="uid://ki6a70wcjkbk" path="res://Meshes/0Universal/Crate.obj" id="3_5bo6m"]
 [ext_resource type="Texture2D" uid="uid://xcjc1pam0r88" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_BaseColor.png" id="4_rde2f"]
 [ext_resource type="Texture2D" uid="uid://b52b4344uu1b4" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_Metallic.png" id="5_nhsow"]
 [ext_resource type="Texture2D" uid="uid://ch6bx8dqovm17" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_Roughness.png" id="6_aunqa"]

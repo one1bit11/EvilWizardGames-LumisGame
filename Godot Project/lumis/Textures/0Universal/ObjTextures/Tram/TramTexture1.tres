@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://b2d78d5gpvkdk"]
+
+[ext_resource type="Texture2D" uid="uid://b4yci47uesa4h" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Tram_BaseColor.png" id="1_dl8ev"]
+[ext_resource type="Texture2D" uid="uid://d120wlrbpd0pk" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Tram_Metallic.png" id="2_0igpm"]
+[ext_resource type="Texture2D" uid="uid://b48byn4hnxp0x" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Tram_Roughness.png" id="3_e2wd3"]
+
+[resource]
+albedo_texture = ExtResource("1_dl8ev")
+metallic = 1.0
+metallic_texture = ExtResource("2_0igpm")
+roughness_texture = ExtResource("3_e2wd3")

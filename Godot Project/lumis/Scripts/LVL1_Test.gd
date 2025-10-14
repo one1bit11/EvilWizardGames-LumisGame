@@ -113,3 +113,27 @@ func _on_music_replace_3_area_entered(area: Area3D) -> void:
 func _on_music_stop_2_area_entered(area: Area3D) -> void:
 	if area.name == "MangoTrigger":
 		fadeCityMusic = true
+
+func change_tram_texture(tram_node_path):
+	## Randomizes tram texture code below:
+	
+	#var tramNode:MeshInstance3D = get_node(tram_node_path)
+	#
+	#var newMaterial:StandardMaterial3D
+	#
+	#var randomTexture:int = randi_range(0,4)
+	#match randomTexture:
+		#0:
+			#newMaterial = load("res://Textures/Other/SolidColours/Orange.tres")
+		#1:
+			#newMaterial = load("res://Textures/Other/SolidColours/Pink.tres")
+		#2:
+			#newMaterial = load("res://Textures/Other/SolidColours/Purple.tres")
+		#3:
+			#newMaterial = load("res://Textures/Other/SolidColours/Blue.tres")
+		#4:
+			#newMaterial = load("res://Textures/Other/SolidColours/BrownAlt.tres")
+	#
+	#tramNode.set_surface_override_material(0, newMaterial)
+	
+	pass

@@ -79,7 +79,7 @@
 [ext_resource type="Texture2D" uid="uid://3kllc6q15pbb" path="res://Textures/Other/PlaceholderWater/0038.png" id="76_dybm8"]
 [ext_resource type="Texture2D" uid="uid://bxdvquxthjyb6" path="res://Textures/Other/PlaceholderWater/0039.png" id="77_2hgfc"]
 [ext_resource type="Material" uid="uid://o16p636l5l8r" path="res://Textures/Other/MelonSlime.tres" id="78_oqy3x"]
-[ext_resource type="ArrayMesh" uid="uid://d1dl65em4t8gv" path="res://Meshes/0Universal/Crate.obj" id="79_eya8j"]
+[ext_resource type="ArrayMesh" uid="uid://ki6a70wcjkbk" path="res://Meshes/0Universal/Crate.obj" id="79_eya8j"]
 [ext_resource type="Texture2D" uid="uid://xcjc1pam0r88" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_BaseColor.png" id="80_1w0mg"]
 [ext_resource type="Texture2D" uid="uid://b52b4344uu1b4" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_Metallic.png" id="81_r5mov"]
 [ext_resource type="Texture2D" uid="uid://ch6bx8dqovm17" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_Roughness.png" id="82_1d7ut"]
@@ -3534,9 +3534,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 shape = SubResource("BoxShape3D_2v00b")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.22708, -36.8416, 1.72689)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.52708, -33.8416, -17.2731)
 current = true
-fov = 50.0
+fov = 40.0
 
 [connection signal="area_entered" from="ROOMS/Room2/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room14/DeathTrigger" to="." method="_on_death_trigger_area_entered"]

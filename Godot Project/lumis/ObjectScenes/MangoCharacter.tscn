@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://d141gk5umir7l"]
+[gd_scene load_steps=19 format=3 uid="uid://d141gk5umir7l"]
 
 [ext_resource type="Script" uid="uid://crub8m7rjahjq" path="res://Scripts/mango_character_controller.gd" id="1_qccra"]
 [ext_resource type="PackedScene" uid="uid://cmhvntnt2oi8r" path="res://Meshes/Other/Mango/MangoMeshFinal.tscn" id="2_qccra"]
@@ -7,7 +7,9 @@
 [ext_resource type="AudioStream" uid="uid://b8liwhwx23ey7" path="res://Sounds/SFX/JUMPSFXtest.mp3" id="4_q3my7"]
 [ext_resource type="Texture2D" uid="uid://cq55itol8k2kx" path="res://Textures/Other/MangoEyes/Open1.png" id="5_gpb01"]
 [ext_resource type="Shader" uid="uid://bam1wmdhsxrli" path="res://Other/MangoEyes.gdshader" id="6_s1ghw"]
+[ext_resource type="AudioStream" uid="uid://ctdxw868kwxjv" path="res://Sounds/SFX/Sprint.wav" id="8_mgrph"]
 [ext_resource type="Texture2D" uid="uid://ch1gm7n2ddrco" path="res://Textures/Other/MangoShadow.png" id="8_vat0n"]
+[ext_resource type="AudioStream" uid="uid://d5o01n8a20qk" path="res://Sounds/SFX/Stick.wav" id="9_nn7sr"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_qccra"]
 radius = 0.846402
@@ -210,6 +212,14 @@ shape = SubResource("SphereShape3D_syw4e")
 
 [node name="MangoJumpSound" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("4_q3my7")
+volume_db = -5.0
+
+[node name="MangoSprintSound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("8_mgrph")
+volume_db = -5.0
+
+[node name="MangoStickSound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("9_nn7sr")
 volume_db = -5.0
 
 [node name="CoyoteTimer" type="Timer" parent="."]
