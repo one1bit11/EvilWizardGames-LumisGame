@@ -1,11 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://eyp6tro00ol1"]
+[gd_scene load_steps=14 format=3 uid="uid://eyp6tro00ol1"]
 
 [ext_resource type="Script" uid="uid://bby4ycx5glmx8" path="res://Scripts/main_menu.gd" id="1_3e8lh"]
 [ext_resource type="PackedScene" uid="uid://ddrgb2e4wr4gl" path="res://LevelScenes/1. LVL1 MENU DEMO.tscn" id="1_hggsl"]
 [ext_resource type="Texture2D" uid="uid://deo1clgoh10vi" path="res://Textures/Other/Vignette.png" id="1_w6rnc"]
+[ext_resource type="FontFile" uid="uid://bat88j31g08ea" path="res://Other/Fonts/ComicRelief-Regular.ttf" id="3_2dh5q"]
+[ext_resource type="FontFile" uid="uid://8auu2xggxbyv" path="res://Other/Fonts/ComicRelief-Bold.ttf" id="4_xckl4"]
 [ext_resource type="AudioStream" uid="uid://bm3pa8w34scl6" path="res://Sounds/Music/Final/MainMenu.ogg" id="4_y1rc5"]
-
-[sub_resource type="FontVariation" id="FontVariation_oc8cd"]
 
 [sub_resource type="Animation" id="Animation_2dh5q"]
 resource_name = "FadeIn"
@@ -160,6 +160,7 @@ offset_top = 135.0
 offset_right = 787.0
 offset_bottom = 383.0
 theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("3_2dh5q")
 theme_override_font_sizes/normal_font_size = 128
 text = "Lumis"
 tab_size = 24
@@ -175,19 +176,19 @@ alignment = 1
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = SubResource("FontVariation_oc8cd")
+theme_override_fonts/font = ExtResource("4_xckl4")
 theme_override_font_sizes/font_size = 61
 text = "Start"
 
 [node name="CreditsButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = SubResource("FontVariation_oc8cd")
+theme_override_fonts/font = ExtResource("3_2dh5q")
 theme_override_font_sizes/font_size = 61
 text = "Credits"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = SubResource("FontVariation_oc8cd")
+theme_override_fonts/font = ExtResource("3_2dh5q")
 theme_override_font_sizes/font_size = 61
 text = "Quit"
 
@@ -200,6 +201,7 @@ autoplay = true
 panning_strength = 0.0
 
 [node name="Just Coffee, Black" type="ColorRect" parent="."]
+visible = false
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
