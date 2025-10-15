@@ -122,7 +122,7 @@ func _get_move_input(delta):
 	var input = Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
 	var input3 := Vector3(input.x,0,input.y)
 	if isSticking:
-		print(currentSurfacesAvr)
+		#print(currentSurfacesAvr)
 		stickRot = currentSurfacesAvr
 		
 		velocity = Vector3.ZERO
@@ -169,7 +169,7 @@ func _get_move_input(delta):
 			
 
 		else:
-			
+			$SprintParticles.emitting = false
 			velocity = lerp(velocity, dir * speed, acc * delta)
 
 
@@ -232,22 +232,28 @@ func _physics_process(delta: float) -> void:
 	
 	
 	#check for sprinting input, can't sprint while sticking
-	#if isSticking == false && stickyMode == false && Input.is_action_pressed("Sprint"):
+	
 	if Input.is_action_just_pressed("Sprint") && !isSticking:
 		$MangoSprintSound.pitch_scale = randf_range(0.9, 1.1)
 		$MangoSprintSound.play()
+		
+
 	
-	if Input.is_action_pressed("Sprint"):
+	if isSticking == false && stickyMode == false && Input.is_action_pressed("Sprint"):
+		$SprintParticles.emitting = true
 		sprinting = true
 		camFOVMode = 2
-		
+
 		if squeezedBeforeAlt == false && is_on_floor():
 			squeeze()
 			squeezedBeforeAlt = true
 	else:
 		sprinting = false
-		camFOVMode = 1
+		#camFOVMode = 1
 		squeezedBeforeAlt = false
+		$SprintParticles.emitting = false
+		
+		
 	_get_move_input(delta)
 	#if !isSticking:
 	velocity += grav
@@ -358,7 +364,13 @@ func _stick():
 				
 				
 				if squeezedBefore == false:
-					squeeze()
+					if $FixTimer.is_stopped():
+						print($FixTimer.time_left)
+						$FixTimer.start()
+						camFOVMode = 0
+						$MangoStickSound.pitch_scale = randf_range(0.9, 1.1)
+						$MangoStickSound.play()
+						squeeze()
 					squeezedBefore = true
 				if currentSurfacesAvr.y >= 0.75 && currentSurfacesAvr.y < 1.25:
 					grav = Vector3.UP * gravityStr
@@ -410,44 +422,11 @@ func _on_stick_detection_range_body_exited(body: Node3D) -> void:
 		currentBody = null
 		isSticking = false
 		squeezedBefore = false
-		camFOVMode = 1
+		#camFOVMode = 1
 
 
 func _on_coyote_timer_timeout() -> void:
 	canJump = false
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -500,9 +479,7 @@ func blink():
 	blink()
 
 func squeeze():
-	camFOVMode = 0
-	$MangoStickSound.pitch_scale = randf_range(0.9, 1.1)
-	$MangoStickSound.play()
+
 	change_eyes(load("res://Textures/Other/MangoEyes/Squeeze.png"))
 	await get_tree().create_timer(randf_range(0.2, 0.6)).timeout
 	change_eyes(load("res://Textures/Other/MangoEyes/Open1.png"))

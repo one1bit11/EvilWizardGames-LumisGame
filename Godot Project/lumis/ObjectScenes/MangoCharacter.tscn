@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://d141gk5umir7l"]
+[gd_scene load_steps=20 format=3 uid="uid://d141gk5umir7l"]
 
 [ext_resource type="Script" uid="uid://crub8m7rjahjq" path="res://Scripts/mango_character_controller.gd" id="1_qccra"]
 [ext_resource type="PackedScene" uid="uid://cmhvntnt2oi8r" path="res://Meshes/Other/Mango/MangoMeshFinal.tscn" id="2_qccra"]
@@ -43,6 +43,18 @@ shader_parameter/frame = 0
 radius = 1.51052
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_syw4e"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_mgrph"]
+emission_shape_offset = Vector3(0, 0, 1)
+inherit_velocity_ratio = 0.5
+direction = Vector3(0, 0, 1)
+spread = 90.0
+initial_velocity_min = 8.45
+initial_velocity_max = 8.45
+
+[sub_resource type="SphereMesh" id="SphereMesh_nn7sr"]
+radius = 0.1
+height = 0.1
 
 [node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "coyoteTimer", "faceChecker", "upwards", "camPivot", "cam", "rayArm", "mangoEyeR", "mangoEyeL", "eyesNode")]
 collision_priority = 0.1
@@ -236,6 +248,18 @@ upper_fade = 0.160766
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
 top_level = true
 target_position = Vector3(0, 2, 0)
+
+[node name="FixTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="SprintParticles" type="GPUParticles3D" parent="."]
+emitting = false
+amount = 10
+lifetime = 0.2
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_mgrph")
+draw_pass_1 = SubResource("SphereMesh_nn7sr")
 
 [connection signal="body_entered" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_entered"]
 [connection signal="body_exited" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_exited"]
