@@ -155,24 +155,31 @@ use_collision = true
 radius = 182.35
 height = 22.0
 sides = 64
+script = ExtResource("12_mg1xl")
 
 [node name="CSGCylinder3D3" type="CSGCylinder3D" parent="CityWalls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 0)
 operation = 2
-radius = 178.3
+radius = 194.174
 height = 22.0
 sides = 64
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="CityWalls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -52, 0)
 radius = 182.35
 height = 86.0
 sides = 64
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CityWalls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 157.125, -4.75, 0.499992)
 operation = 2
 size = Vector3(10, 3, 58)
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="LVL2" type="Node3D" parent="." node_paths=PackedStringArray("crateAnimation1", "crateAnimation2", "crateAnimation3", "crateAnimation4", "crateAnimation5", "crateAnimation6", "crateAnimation7")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -541, -4, -121)
@@ -361,18 +368,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.5, 0)
 mesh = SubResource("PrismMesh_es6pr")
 
 [node name="BuildingBase2" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -106.91)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.30609, -106.91)
 use_collision = true
-size = Vector3(10, 15, 19.8208)
-
-[node name="BuildingRoof" type="CSGMesh3D" parent="LVL2/BuildingBase2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.75072, 0, 9.5, 0.0139008)
-mesh = SubResource("PrismMesh_es6pr")
-
-[node name="RoofHole" type="CSGBox3D" parent="LVL2/BuildingBase2/BuildingRoof"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
-operation = 2
-size = Vector3(5, 2, 12)
+size = Vector3(10, 18.6122, 19.8208)
 
 [node name="BuildingBase9" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.00001, 2.5, -305.91)
@@ -906,35 +904,35 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="WoodPlatform" type="CSGBox3D" parent="Room13"]
-transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, 19, 1.5, 0)
+transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, 19, 1.5, -0.689941)
 material_override = ExtResource("9_4voay")
 use_collision = true
-size = Vector3(1, 11, 6)
+size = Vector3(1, 14, 6)
 script = ExtResource("12_mg1xl")
 
 [node name="WoodPlatform2" type="CSGBox3D" parent="Room13"]
-transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, 17, 1.5, -17.5)
+transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, 14.5001, 1.5, -17.9783)
 material_override = ExtResource("9_4voay")
 use_collision = true
-size = Vector3(1, 6, 10)
+size = Vector3(1, 5.04346, 15)
 script = ExtResource("12_mg1xl")
 
 [node name="WoodPlatform4" type="CSGBox3D" parent="Room13"]
-transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, 4, 1.5, -19.5)
+transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.00354004, 1.5, -19.5)
 material_override = ExtResource("9_4voay")
 use_collision = true
-size = Vector3(1, 6, 8)
+size = Vector3(1, 6, 3.78138)
 script = ExtResource("12_mg1xl")
 
 [node name="WoodPlatform3" type="CSGBox3D" parent="Room13"]
-transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, -11, 1.5, -13.5)
+transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, -16.0859, 1.5, -13.5)
 material_override = ExtResource("9_4voay")
 use_collision = true
 size = Vector3(1, 14, 4)
 script = ExtResource("12_mg1xl")
 
 [node name="WoodPlatform5" type="CSGBox3D" parent="Room13"]
-transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, -9.5, -0.5, -17.5)
+transform = Transform3D(3.82137e-15, 4.37114e-08, -1, 1, -4.3711e-08, 0, -4.37114e-08, -1, -4.37114e-08, -14.5771, -0.750891, -17.5)
 material_override = ExtResource("9_4voay")
 use_collision = true
 size = Vector3(5, 6, 1)
@@ -955,10 +953,10 @@ size = Vector3(5, 10, 8)
 script = ExtResource("12_mg1xl")
 
 [node name="Hole" type="CSGBox3D" parent="Room13/Wall3"]
-transform = Transform3D(1, -4.3711e-08, -4.37114e-08, -4.37114e-08, -4.37114e-08, -1, 4.37114e-08, 1, -4.37114e-08, 5.5, -2.5, -15)
+transform = Transform3D(1, -4.37106e-08, -4.37114e-08, -4.37114e-08, -4.37114e-08, -1, 4.37114e-08, 1, -4.37114e-08, 5, -2.5, -15)
 operation = 2
 use_collision = true
-size = Vector3(12, 4, 4)
+size = Vector3(13, 4, 4)
 script = ExtResource("12_mg1xl")
 
 [node name="Hole2" type="CSGBox3D" parent="Room13/Wall3"]
@@ -966,13 +964,6 @@ transform = Transform3D(-8.7423e-08, -1, -4.37114e-08, -4.37114e-08, 4.37114e-08
 operation = 2
 use_collision = true
 size = Vector3(14, 4, 4)
-script = ExtResource("12_mg1xl")
-
-[node name="Hole3" type="CSGBox3D" parent="Room13/Wall3"]
-transform = Transform3D(-8.74234e-08, -1, -4.37114e-08, -4.37114e-08, 4.37114e-08, -1, 1, -8.74224e-08, -4.37114e-08, 9.5, -2.5, 10.5)
-operation = 2
-use_collision = true
-size = Vector3(6, 5, 4)
 script = ExtResource("12_mg1xl")
 
 [node name="Wall6" type="CSGBox3D" parent="Room13"]

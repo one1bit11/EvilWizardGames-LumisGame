@@ -11,11 +11,12 @@ data = PackedVector3Array(0, 0, 1.2982, 0.2382, 0, 1.2982, 0, 0.2032, 1.2837, 0,
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
 script = ExtResource("1_tpb3p")
 
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-1.3638e-07, 0, -3.12, 0, 3.12, 0, 3.12, 0, -1.3638e-07, 0, 2.3, 0)
+shape = SubResource("ConcavePolygonShape3D_o83hb")
+
 [node name="DoorFrameMesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1.3638e-07, 0, -3.12, 0, 3.12, 0, 3.12, 0, -1.3638e-07, 0, 2.3, 0)
 material_override = ExtResource("2_x46i8")
 mesh = ExtResource("3_nysqe")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorFrameMesh"]
-shape = SubResource("ConcavePolygonShape3D_o83hb")
