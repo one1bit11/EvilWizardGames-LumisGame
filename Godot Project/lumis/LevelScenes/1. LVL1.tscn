@@ -33,7 +33,7 @@
 [ext_resource type="PackedScene" uid="uid://jy5f4x44jrgo" path="res://ObjectScenes/pipes_hplus_one.tscn" id="21_fil6b"]
 [ext_resource type="Material" uid="uid://cig4ftit5haie" path="res://Textures/0Universal/WallFloorDeco/Dirt/Dirt3.tres" id="21_s61i1"]
 [ext_resource type="PackedScene" uid="uid://bcgf7soy16gps" path="res://ObjectScenes/pipes_overandunder.tscn" id="22_38avk"]
-[ext_resource type="ArrayMesh" uid="uid://ki6a70wcjkbk" path="res://Meshes/0Universal/crate.obj" id="22_pgyh0"]
+[ext_resource type="ArrayMesh" uid="uid://ki6a70wcjkbk" path="res://Meshes/0Universal/Crate.obj" id="22_pgyh0"]
 [ext_resource type="Texture2D" uid="uid://bqq5hrihtu3hc" path="res://Textures/0Universal/WallFloorDeco/Dirt/IMG_2558.png" id="23_tgkar"]
 [ext_resource type="PackedScene" uid="uid://bcfs8wj21428r" path="res://ObjectScenes/PlaceholderFenceObj.tscn" id="25_o83hb"]
 [ext_resource type="Material" uid="uid://w7xc8nptdhij" path="res://Textures/Other/SolidColours/Grey.tres" id="25_soyx7"]
@@ -230,7 +230,7 @@ ring_segments = 8
 [sub_resource type="BoxMesh" id="BoxMesh_oix6q"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_624ml"]
-size = Vector3(73, 0.8, 36)
+size = Vector3(132.563, 0.8, 155.09)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xicfl"]
 animations = [{
@@ -1735,7 +1735,7 @@ transform = Transform3D(1, 0, 0, 1.13687e-13, 1, 0, 0, 0, 1, -8.64267e-07, 405, 
 mesh = SubResource("PlaneMesh_isujd")
 
 [node name="Mango" parent="." instance=ExtResource("1_xlif7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -37, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -576.192, 51.133, -118.95)
 speed = 12.0
 acc = 5.0
 jumpVelocity = 40.0
@@ -2238,6 +2238,20 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -612, 
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/DeathTrigger4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.99998, -0.4, 0.5)
+shape = SubResource("BoxShape3D_624ml")
+
+[node name="DeathTrigger5" type="Area3D" parent="ROOMS"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -709.912, -5.7, -126.7)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/DeathTrigger5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6164, -0.4, 0.5)
+shape = SubResource("BoxShape3D_624ml")
+
+[node name="DeathTrigger6" type="Area3D" parent="ROOMS"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -844.309, -5.7, -101.937)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/DeathTrigger6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.83597, -0.4, 60.0449)
 shape = SubResource("BoxShape3D_624ml")
 
 [node name="Room2" type="Node3D" parent="ROOMS"]
@@ -10062,6 +10076,14 @@ transform = Transform3D(2.095, 0, 0, 0, 2.095, 0, 0, 0, 2.095, -1, -2, 3)
 shape = SubResource("BoxShape3D_2v00b")
 debug_color = Color(0, 0.6, 0.701961, 0.85098)
 
+[node name="Checkpoint15" type="Area3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -687.878, 32.5588, -137.215)
+
+[node name="Box" type="CollisionShape3D" parent="Checkpoint15"]
+transform = Transform3D(2.095, 0, 0, 0, 2.095, 0, 0, 0, 2.095, -1, -2, 3)
+shape = SubResource("BoxShape3D_2v00b")
+debug_color = Color(0, 0.6, 0.701961, 0.85098)
+
 [node name="Checkpoint10" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -828, 28.4, -120)
 
@@ -10989,6 +11011,8 @@ autoplay = "Moving"
 [connection signal="area_entered" from="ROOMS/DeathTrigger2" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/DeathTrigger3" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/DeathTrigger4" to="." method="_on_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/DeathTrigger5" to="." method="_on_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/DeathTrigger6" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room2/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room4/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room5-6-7-8/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
@@ -11008,6 +11032,7 @@ autoplay = "Moving"
 [connection signal="area_entered" from="Checkpoint7-8" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-495, 35.4, -122)]]
 [connection signal="area_entered" from="Checkpoint8" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-591.3, -2.5, -121.1)]]
 [connection signal="area_entered" from="Checkpoint9" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-756.3, -2.5, -99.1)]]
+[connection signal="area_entered" from="Checkpoint15" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-692, 30, -135)]]
 [connection signal="area_entered" from="Checkpoint10" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-823.3, 25.5, -118.1)]]
 [connection signal="area_entered" from="Checkpoint11" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-1031.3, -2.5, -97.6)]]
 [connection signal="area_entered" from="Checkpoint12" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-1131.3, 65.5, -117.6)]]

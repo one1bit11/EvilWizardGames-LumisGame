@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://cdt72fkucpjaf"]
+[gd_scene load_steps=41 format=3 uid="uid://cdt72fkucpjaf"]
 
 [ext_resource type="Material" uid="uid://dmc7etf6fkm64" path="res://Textures/0Universal/MapTextures/BrickFloor/BrickFloor.tres" id="1_61xmw"]
 [ext_resource type="Script" uid="uid://sh5l6dvaekyk" path="res://Scripts/water_crates.gd" id="2_s3xnc"]
@@ -10,6 +10,7 @@
 [ext_resource type="Material" uid="uid://bhvmxm3376jvn" path="res://Textures/0Universal/MapTextures/BrickWall/BrickWall.tres" id="8_1rcvj"]
 [ext_resource type="Material" uid="uid://bje7sds7fpef2" path="res://Textures/Other/SolidColours/Brown.tres" id="9_4voay"]
 [ext_resource type="Material" uid="uid://dxx4w8c5j14ti" path="res://Textures/Other/SolidColours/Purple.tres" id="10_4vtbw"]
+[ext_resource type="Material" uid="uid://dxcbmpmcwwg5" path="res://Textures/Other/Invisible.tres" id="10_s3xnc"]
 [ext_resource type="Material" uid="uid://cp52667yf3kt1" path="res://Textures/0Universal/MapTextures/BrickWall/BrickWall 2.tres" id="11_22lhn"]
 [ext_resource type="Script" uid="uid://cthhsvlwdylva" path="res://Scripts/object_properties.gd" id="12_mg1xl"]
 [ext_resource type="ArrayMesh" uid="uid://b7tkgpjprtpco" path="res://Meshes/1Sewers/Door Frame.obj" id="13_d5fwm"]
@@ -78,6 +79,9 @@ _data = {
 
 [sub_resource type="PrismMesh" id="PrismMesh_es6pr"]
 size = Vector3(12, 4, 12)
+
+[sub_resource type="PrismMesh" id="PrismMesh_61xmw"]
+left_to_right = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krqce"]
 albedo_texture = ExtResource("14_sbb3x")
@@ -164,6 +168,44 @@ sides = 64
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 157.125, -4.75, 0.499992)
 operation = 2
 size = Vector3(10, 3, 58)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CityWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 97.5, -4.75, -10.125)
+operation = 2
+size = Vector3(9, 3, 83)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CityWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.625, -4.75, 7.875)
+operation = 2
+size = Vector3(89, 3, 67)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="CityWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -5.5, 2.3125)
+size = Vector3(14, 3, 8)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="CityWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.75, -5.5, 2.3125)
+size = Vector3(14, 3, 8)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="CityWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.875, -5.5, 33.3125)
+size = Vector3(34, 3, 20)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="CityWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.875, -5.5, -17.3125)
+size = Vector3(34, 3, 20)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="CityWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.975, -5.5, 14.3125)
+size = Vector3(11.3, 3, 17)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="CityWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.725, -5.5, 8.2625)
+size = Vector3(7.3, 3, 31.9)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="CityWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.8874, -5.5, 15.3625)
+size = Vector3(13.2, 3, 7)
 
 [node name="LVL2" type="Node3D" parent="." node_paths=PackedStringArray("crateAnimation1", "crateAnimation2", "crateAnimation3", "crateAnimation4", "crateAnimation5", "crateAnimation6", "crateAnimation7")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -541, -4, -121)
@@ -337,6 +379,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.28882e-05, -15.5, -71)
 size = Vector3(152, 29, 20)
 material = ExtResource("7_y556e")
 
+[node name="RiverWater2" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, -15.5, -166)
+size = Vector3(152, 29, 20)
+material = ExtResource("7_y556e")
+
+[node name="RiverWater3" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -15.5, -367)
+size = Vector3(152, 29, 164)
+material = ExtResource("7_y556e")
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 218, 0)
 visible = false
@@ -465,6 +517,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9864, 3.49998, -189.093)
 material_override = ExtResource("8_1rcvj")
 use_collision = true
 size = Vector3(20, 43, 28)
+
+[node name="Boarder" type="CSGMesh3D" parent="LVL2"]
+transform = Transform3D(-7.86805e-08, 0, -140.524, 0, 7.98, 0, 1.8, 0, -6.1425e-06, 14.9864, 3.99998, -174.193)
+use_collision = true
+mesh = SubResource("PrismMesh_61xmw")
+material = ExtResource("10_s3xnc")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Boarder2" type="CSGMesh3D" parent="LVL2"]
+transform = Transform3D(-7.86805e-08, 0, 140.524, 0, 7.98, 0, -1.8, 0, -6.1425e-06, 14.9864, 3.99998, -157.993)
+use_collision = true
+mesh = SubResource("PrismMesh_61xmw")
+material = ExtResource("10_s3xnc")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Wood" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9864, 22.5, -172.093)
@@ -725,12 +793,6 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.000
 use_collision = true
 size = Vector3(26, 68, 36)
 
-[node name="StreetBoundary22" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(-3.93403e-08, 0, -0.9, 0, 0.9, 0, 0.9, 0, -3.93403e-08, -3.49998, 58.6, -688.5)
-material_override = ExtResource("10_4vtbw")
-use_collision = true
-size = Vector3(214, 1, 1)
-
 [node name="StreetBoundary14" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 5, -459.5)
 material_override = ExtResource("10_4vtbw")
@@ -768,16 +830,16 @@ use_collision = true
 size = Vector3(5, 10, 15)
 
 [node name="StreetBoundary6" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.5, 5, -183.5)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.5, 5, -177.5)
 material_override = ExtResource("10_4vtbw")
 use_collision = true
 size = Vector3(5, 10, 103)
 
 [node name="StreetBoundary7" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -35.5, 5, -203)
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -35.5, 5, -199.5)
 material_override = ExtResource("10_4vtbw")
 use_collision = true
-size = Vector3(5, 10, 42)
+size = Vector3(5, 10, 49)
 
 [node name="StreetBoundary11" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -43.5, 5, -270)
