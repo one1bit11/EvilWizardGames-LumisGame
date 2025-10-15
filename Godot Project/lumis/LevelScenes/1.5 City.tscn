@@ -2,7 +2,7 @@
 
 [ext_resource type="Material" uid="uid://dmc7etf6fkm64" path="res://Textures/0Universal/MapTextures/BrickFloor/BrickFloor.tres" id="1_61xmw"]
 [ext_resource type="Script" uid="uid://sh5l6dvaekyk" path="res://Scripts/water_crates.gd" id="2_s3xnc"]
-[ext_resource type="ArrayMesh" uid="uid://d1dl65em4t8gv" path="res://Meshes/0Universal/Crate.obj" id="3_5bo6m"]
+[ext_resource type="ArrayMesh" uid="uid://ki6a70wcjkbk" path="res://Meshes/0Universal/Crate.obj" id="3_5bo6m"]
 [ext_resource type="Texture2D" uid="uid://xcjc1pam0r88" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_BaseColor.png" id="4_rde2f"]
 [ext_resource type="Texture2D" uid="uid://b52b4344uu1b4" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_Metallic.png" id="5_nhsow"]
 [ext_resource type="Texture2D" uid="uid://ch6bx8dqovm17" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_Roughness.png" id="6_aunqa"]
@@ -819,16 +819,16 @@ use_collision = true
 size = Vector3(5, 10, 52)
 
 [node name="StreetBoundary29" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, -93, 4, -248.5)
+transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, -93, 8, -248.5)
 material_override = ExtResource("10_4vtbw")
 use_collision = true
-size = Vector3(5, 12, 52)
+size = Vector3(5, 20, 52)
 
 [node name="StreetBoundary30" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 49, 4, -248.5)
+transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 49, 8, -248.5)
 material_override = ExtResource("10_4vtbw")
 use_collision = true
-size = Vector3(5, 12, 52)
+size = Vector3(5, 20, 52)
 
 [node name="StreetBoundary17" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -43.5, 5, -226)

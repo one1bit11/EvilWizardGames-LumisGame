@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0v52xw8rpyod"]
+
+[ext_resource type="ArrayMesh" uid="uid://b40wt16kor7oi" path="res://Meshes/0Universal/Tram.obj" id="1_odrsi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_odrsi"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pwcyy"]
+size = Vector3(16.4, 8.7, 7.2)
+
+[node name="Tram" type="MeshInstance3D"]
+mesh = ExtResource("1_odrsi")
+surface_material_override/1 = SubResource("StandardMaterial3D_odrsi")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 4.55, -0.599998)
+shape = SubResource("BoxShape3D_pwcyy")

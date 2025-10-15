@@ -227,9 +227,14 @@ func _physics_process(delta: float) -> void:
 	
 	#check for sprinting input, can't sprint while sticking
 	#if isSticking == false && stickyMode == false && Input.is_action_pressed("Sprint"):
+	if Input.is_action_just_pressed("Sprint") && !isSticking:
+		$MangoSprintSound.pitch_scale = randf_range(0.9, 1.1)
+		$MangoSprintSound.play()
+	
 	if Input.is_action_pressed("Sprint"):
 		sprinting = true
 		camFOVMode = 2
+		
 		if squeezedBeforeAlt == false && is_on_floor():
 			squeeze()
 			squeezedBeforeAlt = true
@@ -489,6 +494,8 @@ func blink():
 	blink()
 
 func squeeze():
+	$MangoStickSound.pitch_scale = randf_range(0.9, 1.1)
+	$MangoStickSoundw.play()
 	change_eyes(load("res://Textures/Other/MangoEyes/Squeeze.png"))
 	await get_tree().create_timer(randf_range(0.2, 0.6)).timeout
 	change_eyes(load("res://Textures/Other/MangoEyes/Open1.png"))

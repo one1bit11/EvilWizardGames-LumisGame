@@ -10,7 +10,12 @@ var played2:bool = false
 var played3:bool = false
 var played4:bool = false
 
-var fadeSewerMusic = false
+@export var fadeSewerMusic = false
+
+@export var transSewerMusic:bool = false
+
+var transCityMusic:bool = false
+var fadeCityMusic:bool = false
 
 func reset_mango_to_checkpoint():
 	mango.position = checkpointPos
@@ -42,6 +47,7 @@ func _on_music_play_area_entered(area: Area3D) -> void:
 		print("Music Play")
 		if $Audio/Music/MusicPlayer.playing == false:
 			$Audio/Music/MusicPlayer.playing = true
+			$Audio/Music/MusicPlayer1Alt.playing = true
 
 
 func _on_ending_trigger_area_entered(area: Area3D) -> void:
@@ -55,14 +61,23 @@ func _on_music_stop_area_entered(area: Area3D) -> void:
 
 func _physics_process(delta: float) -> void:
 	if fadeSewerMusic == true:
-		$Audio/Music/MusicPlayer.volume_db = lerpf($Audio/Music/MusicPlayer.volume_db,-80.0, 0.002)
-		pass
+		$Audio/Music/MusicPlayer1Alt.volume_linear = lerpf($Audio/Music/MusicPlayer1Alt.volume_linear,0.0, 0.05)
+	if transSewerMusic == true && !fadeSewerMusic:
+		$Audio/Music/MusicPlayer.volume_linear = lerpf($Audio/Music/MusicPlayer.volume_linear,0.0, 0.05)
+		$Audio/Music/MusicPlayer1Alt.volume_linear = lerpf($Audio/Music/MusicPlayer1Alt.volume_linear,10.0, 0.05)
+		
+	if fadeCityMusic == true:
+		$Audio/Music/MusicPlayerAlt2Alt.volume_linear = lerpf($Audio/Music/MusicPlayerAlt2Alt.volume_linear,0.0, 0.05)
+	if transCityMusic == true && !fadeCityMusic:
+		$Audio/Music/MusicPlayerAlt.volume_linear = lerpf($Audio/Music/MusicPlayerAlt.volume_linear,0.0, 0.05)
+		$Audio/Music/MusicPlayerAlt2Alt.volume_linear = lerpf($Audio/Music/MusicPlayerAlt2Alt.volume_linear,10.0, 0.05)
 
 
 func _on_music_play_2_nd_half_area_entered(area: Area3D) -> void:
 	if area.name == "MangoTrigger":
 		if $Audio/Music/MusicPlayerAlt.playing == false:
 			$Audio/Music/MusicPlayerAlt.playing = true
+			$Audio/Music/MusicPlayerAlt2Alt.playing = true
 
 func _on_pop_up_play_2_area_entered(area: Area3D) -> void:
 	if area.name == "MangoTrigger" && !played2:
@@ -83,3 +98,42 @@ func _on_pop_up_play_4_area_entered(area: Area3D) -> void:
 		uiAnimationPopUp.stop()
 		uiAnimationPopUp.play("4")
 		played4 = true
+
+
+func _on_music_replace_2_area_entered(area: Area3D) -> void:
+	if area.name == "MangoTrigger" && !transSewerMusic:
+		transSewerMusic = true
+
+
+func _on_music_replace_3_area_entered(area: Area3D) -> void:
+	if area.name == "MangoTrigger" && !transCityMusic:
+		transCityMusic = true
+
+
+func _on_music_stop_2_area_entered(area: Area3D) -> void:
+	if area.name == "MangoTrigger":
+		fadeCityMusic = true
+
+func change_tram_texture(tram_node_path):
+	## Randomizes tram texture code below:
+	
+	#var tramNode:MeshInstance3D = get_node(tram_node_path)
+	#
+	#var newMaterial:StandardMaterial3D
+	#
+	#var randomTexture:int = randi_range(0,4)
+	#match randomTexture:
+		#0:
+			#newMaterial = load("res://Textures/Other/SolidColours/Orange.tres")
+		#1:
+			#newMaterial = load("res://Textures/Other/SolidColours/Pink.tres")
+		#2:
+			#newMaterial = load("res://Textures/Other/SolidColours/Purple.tres")
+		#3:
+			#newMaterial = load("res://Textures/Other/SolidColours/Blue.tres")
+		#4:
+			#newMaterial = load("res://Textures/Other/SolidColours/BrownAlt.tres")
+	#
+	#tramNode.set_surface_override_material(0, newMaterial)
+	
+	pass

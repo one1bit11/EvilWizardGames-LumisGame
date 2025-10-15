@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://8q23mfthc25k"]
+
+[ext_resource type="Texture2D" uid="uid://do6o5mukx65qo" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Glass_BaseColor.png" id="1_400df"]
+[ext_resource type="Texture2D" uid="uid://bls4lhr011okx" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Glass_Emissive.png" id="2_7oak1"]
+[ext_resource type="Texture2D" uid="uid://cfho2cmikjkkf" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Glass_Metallic.png" id="3_132yw"]
+[ext_resource type="Texture2D" uid="uid://cupw51i12ikj0" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Glass_Roughness.png" id="4_fbyla"]
+
+[resource]
+albedo_texture = ExtResource("1_400df")
+metallic = 1.0
+metallic_texture = ExtResource("3_132yw")
+roughness_texture = ExtResource("4_fbyla")
+emission_enabled = true
+emission_texture = ExtResource("2_7oak1")
