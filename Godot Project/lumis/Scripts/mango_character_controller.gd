@@ -78,16 +78,18 @@ var currentSurfacesTot : Vector3
 
 
 @export_group("Camera")
-#camera control relevant gameobjects
+##camera control relevant gameobjects
 @export var camPivot:Node3D
 
 @export var cam:Camera3D
-#camera control settings
+##camera control settings
 @export_range(0.0,1.0) var mouseSensitivity = 0.01
-#the limit to tilting the camera up or down
+##the limit to tilting the camera up or down
 @export var tiltLimit := deg_to_rad(75)
-# the hight the camera pivot point is above the character
-@export var camPivotHeight := 2
+## the height the camera pivot point is above the character
+@export var camPivotHeight := 0
+##the camera raycast, makeshift springarm to avoid bugs
+@export var rayArm : RayCast3D
 
 
 @export_group("Other")
@@ -220,8 +222,12 @@ func _physics_process(delta: float) -> void:
 		squeezedBefore = false
 		camFOVMode = 1
 	#Because the camera is top level, this allows it to still follow the player without inheriting the rotation
-	camPivot.global_position = Vector3(global_position.x,global_position.y + camPivotHeight, global_position.z)
-	
+	rayArm.global_position = self.global_position
+
+	camPivot.global_position = Vector3(global_position.x,global_position.y + 2, global_position.z)
+	if rayArm.is_colliding():
+		camPivot.global_position.y = rayArm.get_collision_point().y - 0.5
+		
 	
 	
 	
@@ -312,7 +318,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		camPivot.rotation.y -= event.relative.x * mouseSensitivity * get_process_delta_time()
 		#clamp the values so the camera doesn't spin
 		camPivot.rotation.x = clampf(camPivot.rotation.x, -tiltLimit, tiltLimit)
-		
+		#cam.global_position = rayArm.get_collision_point()
 		
 
 
@@ -349,7 +355,7 @@ func _stick():
 				currentSurfacesAvr = currentSurfacesTot / faceChecker.get_collision_count()
 				_allign_with_surface(currentSurfacesAvr)
 				
-				camFOVMode = 0
+				
 				
 				if squeezedBefore == false:
 					squeeze()
@@ -494,8 +500,9 @@ func blink():
 	blink()
 
 func squeeze():
+	camFOVMode = 0
 	$MangoStickSound.pitch_scale = randf_range(0.9, 1.1)
-	$MangoStickSoundw.play()
+	$MangoStickSound.play()
 	change_eyes(load("res://Textures/Other/MangoEyes/Squeeze.png"))
 	await get_tree().create_timer(randf_range(0.2, 0.6)).timeout
 	change_eyes(load("res://Textures/Other/MangoEyes/Open1.png"))
