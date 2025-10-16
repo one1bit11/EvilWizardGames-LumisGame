@@ -444,21 +444,21 @@ func change_eyes(newEyes: CompressedTexture2D) -> void:
 	mangoEyeL.get_surface_override_material(0).set_shader_parameter("Texture", newEyes)
 
 ## For debug. Testing eyes
-func _input(event: InputEvent) -> void:
-	if Input.is_key_pressed(KEY_5):
-		change_eyes(load("res://Textures/Other/MangoEyes/Open1.png"))
-	
-	if Input.is_key_pressed(KEY_6):
-		change_eyes(load("res://Textures/Other/MangoEyes/Closed1.png"))
-	
-	if Input.is_key_pressed(KEY_7):
-		change_eyes(load("res://Textures/Other/MangoEyes/Open2.png"))
-	
-	if Input.is_key_pressed(KEY_8):
-		change_eyes(load("res://Textures/Other/MangoEyes/Closed2.png"))
-	
-	if Input.is_key_pressed(KEY_9):
-		change_eyes(load("res://Textures/Other/MangoEyes/Squeeze.png"))
+#func _input(event: InputEvent) -> void:
+	#if Input.is_key_pressed(KEY_5):
+		#change_eyes(load("res://Textures/Other/MangoEyes/Open1.png"))
+	#
+	#if Input.is_key_pressed(KEY_6):
+		#change_eyes(load("res://Textures/Other/MangoEyes/Closed1.png"))
+	#
+	#if Input.is_key_pressed(KEY_7):
+		#change_eyes(load("res://Textures/Other/MangoEyes/Open2.png"))
+	#
+	#if Input.is_key_pressed(KEY_8):
+		#change_eyes(load("res://Textures/Other/MangoEyes/Closed2.png"))
+	#
+	#if Input.is_key_pressed(KEY_9):
+		#change_eyes(load("res://Textures/Other/MangoEyes/Squeeze.png"))
 
 func _ready() -> void:
 	mangoShadow = $MangoShadowParent/MangoShadow

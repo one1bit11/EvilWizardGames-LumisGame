@@ -491,6 +491,42 @@ material_override = ExtResource("9_4voay")
 use_collision = true
 size = Vector3(2.02344, 0.265503, 4.51941)
 
+[node name="Wood4" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -13.6136, 59.1, -605.541)
+material_override = ExtResource("9_4voay")
+use_collision = true
+size = Vector3(9, 1, 7)
+
+[node name="Wood5" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(-1, -6.55671e-08, 6.98541e-08, -2.18557e-08, 0.866025, 0.5, -9.3279e-08, 0.5, -0.866025, -12.1135, 57.7158, -603.655)
+material_override = ExtResource("9_4voay")
+use_collision = true
+size = Vector3(2.02344, 0.265503, 4.51941)
+
+[node name="Wood6" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(-1, -6.55671e-08, 6.98541e-08, -2.18557e-08, 0.866025, 0.5, -9.3279e-08, 0.5, -0.866025, -16.1136, 57.7158, -603.655)
+material_override = ExtResource("9_4voay")
+use_collision = true
+size = Vector3(2.02344, 0.265503, 4.51941)
+
+[node name="Wood7" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 7.38642, 57.1, -606.541)
+material_override = ExtResource("9_4voay")
+use_collision = true
+size = Vector3(11, 1, 9)
+
+[node name="Wood8" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(-1, -6.55671e-08, 6.98541e-08, -2.18557e-08, 0.866025, 0.5, -9.3279e-08, 0.5, -0.866025, 9.88645, 54.8456, -605.148)
+material_override = ExtResource("9_4voay")
+use_collision = true
+size = Vector3(2.02344, 0.265503, 8)
+
+[node name="Wood9" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(-1, -6.55671e-08, 6.98541e-08, -2.18557e-08, 0.866025, 0.5, -9.3279e-08, 0.5, -0.866025, 4.88645, 54.8456, -605.148)
+material_override = ExtResource("9_4voay")
+use_collision = true
+size = Vector3(2.02344, 0.265503, 8)
+
 [node name="BuildingBase12" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.9864, 15.5, -370.093)
 use_collision = true
@@ -732,11 +768,19 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.000
 use_collision = true
 size = Vector3(26, 68, 36)
 
-[node name="StreetBoundary22" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(-3.93403e-08, 0, -0.9, 0, 0.9, 0, 0.9, 0, -3.93403e-08, -3.49998, 58.6, -688.5)
-material_override = ExtResource("10_4vtbw")
+[node name="StreetBoundary40" type="CSGBox3D" parent="LVL2/StreetBoundary21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 21.5, 0.5)
+operation = 2
 use_collision = true
-size = Vector3(214, 1, 1)
+size = Vector3(25, 17, 9)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="LVL2/StreetBoundary21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 22, 1)
+light_energy = 4.685
+light_negative = true
+shadow_enabled = true
+shadow_caster_mask = 4294967293
+omni_range = 19.177
 
 [node name="StreetBoundary14" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 5, -459.5)

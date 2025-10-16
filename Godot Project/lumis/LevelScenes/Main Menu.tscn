@@ -6,7 +6,7 @@
 [ext_resource type="FontFile" uid="uid://bat88j31g08ea" path="res://Other/Fonts/ComicRelief-Regular.ttf" id="3_2dh5q"]
 [ext_resource type="AudioStream" uid="uid://bm3pa8w34scl6" path="res://Sounds/Music/Final/MainMenu.ogg" id="4_y1rc5"]
 [ext_resource type="Texture2D" uid="uid://dmex7ro7c86tb" path="res://Other/credits1080.png" id="6_2dh5q"]
-[ext_resource type="Texture2D" uid="uid://boqsr801epxr" path="res://Other/EWG Temp.png" id="7_xckl4"]
+[ext_resource type="Texture2D" uid="uid://cywrdn1xjs7e8" path="res://Other/EWG1.png" id="6_xckl4"]
 
 [sub_resource type="Animation" id="Animation_2dh5q"]
 resource_name = "FadeIn"
@@ -156,21 +156,6 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_dc7dw"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-
 [sub_resource type="Animation" id="Animation_ekufw"]
 resource_name = "FadeOutCredits"
 length = 0.25
@@ -185,6 +170,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_dc7dw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ee3ra"]
@@ -259,10 +259,10 @@ autoplay = true
 panning_strength = 0.0
 parameters/looping = true
 
-[node name="EwgTemp" type="Sprite2D" parent="."]
-position = Vector2(1766, 917)
-scale = Vector2(0.376798, 0.376798)
-texture = ExtResource("7_xckl4")
+[node name="Ewg" type="Sprite2D" parent="."]
+position = Vector2(1779.06, 932.633)
+scale = Vector2(0.079885, 0.0798849)
+texture = ExtResource("6_xckl4")
 
 [node name="Just Coffee, Black" type="ColorRect" parent="."]
 layout_mode = 0
