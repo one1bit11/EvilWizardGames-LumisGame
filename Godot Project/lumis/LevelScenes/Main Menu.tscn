@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://eyp6tro00ol1"]
+[gd_scene load_steps=18 format=3 uid="uid://eyp6tro00ol1"]
 
 [ext_resource type="Script" uid="uid://bby4ycx5glmx8" path="res://Scripts/main_menu.gd" id="1_3e8lh"]
 [ext_resource type="PackedScene" uid="uid://ddrgb2e4wr4gl" path="res://LevelScenes/1. LVL1 MENU DEMO.tscn" id="1_hggsl"]
 [ext_resource type="Texture2D" uid="uid://deo1clgoh10vi" path="res://Textures/Other/Vignette.png" id="1_w6rnc"]
 [ext_resource type="FontFile" uid="uid://bat88j31g08ea" path="res://Other/Fonts/ComicRelief-Regular.ttf" id="3_2dh5q"]
 [ext_resource type="AudioStream" uid="uid://bm3pa8w34scl6" path="res://Sounds/Music/Final/MainMenu.ogg" id="4_y1rc5"]
+[ext_resource type="Texture2D" uid="uid://dmex7ro7c86tb" path="res://Other/credits1080.png" id="6_2dh5q"]
 
 [sub_resource type="Animation" id="Animation_2dh5q"]
 resource_name = "FadeIn"
@@ -138,6 +139,60 @@ _data = {
 &"StartFadeOut": SubResource("Animation_agppt")
 }
 
+[sub_resource type="Animation" id="Animation_8l04h"]
+resource_name = "FadeInCredits"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_dc7dw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ekufw"]
+resource_name = "FadeOutCredits"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ee3ra"]
+_data = {
+&"FadeInCredits": SubResource("Animation_8l04h"),
+&"FadeOutCredits": SubResource("Animation_ekufw"),
+&"RESET": SubResource("Animation_dc7dw")
+}
+
 [node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -175,18 +230,21 @@ alignment = 1
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("3_2dh5q")
 theme_override_font_sizes/font_size = 61
 text = "Start"
 
 [node name="CreditsButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("3_2dh5q")
 theme_override_font_sizes/font_size = 61
 text = "Credits"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+focus_mode = 0
 theme_override_fonts/font = ExtResource("3_2dh5q")
 theme_override_font_sizes/font_size = 61
 text = "Quit"
@@ -200,7 +258,6 @@ autoplay = true
 panning_strength = 0.0
 
 [node name="Just Coffee, Black" type="ColorRect" parent="."]
-visible = false
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
@@ -212,6 +269,19 @@ libraries = {
 &"": SubResource("AnimationLibrary_dhph1")
 }
 autoplay = "LongFadeIn"
+
+[node name="CreditsRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+texture = ExtResource("6_2dh5q")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CreditsRect"]
+libraries = {
+&"": SubResource("AnimationLibrary_ee3ra")
+}
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
