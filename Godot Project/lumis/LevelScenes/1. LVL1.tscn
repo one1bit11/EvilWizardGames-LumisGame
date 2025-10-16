@@ -1,4 +1,4 @@
-[gd_scene load_steps=444 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=448 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
@@ -134,6 +134,7 @@
 [ext_resource type="PackedScene" uid="uid://foy2w1ght5vg" path="res://ObjectScenes/safety_rail.tscn" id="115_vbkhu"]
 [ext_resource type="AudioStream" uid="uid://byqfcv16md0bv" path="res://Sounds/Music/Final/Sewers.ogg" id="126_fof7x"]
 [ext_resource type="AudioStream" uid="uid://buoyui1n16jfb" path="res://Sounds/Music/Final/City.ogg" id="127_fof7x"]
+[ext_resource type="AudioStream" uid="uid://dda1fp5dqdf4g" path="res://Sounds/SFX/1. Sewers/Environmental/General Ambience/Giant Pillars Wind.ogg" id="129_laawm"]
 [ext_resource type="AudioStream" uid="uid://cp03m8vbyxlhe" path="res://Sounds/Music/Final/Sewers Alt.ogg" id="132_8bbsk"]
 [ext_resource type="PackedScene" uid="uid://do1xdcdlb6iub" path="res://ObjectScenes/ceiling_lights.tscn" id="133_fof7x"]
 [ext_resource type="ArrayMesh" uid="uid://x7c55yt05wxe" path="res://Meshes/1Sewers/CeilingLights.obj" id="133_xicfl"]
@@ -154,6 +155,7 @@
 [ext_resource type="Material" uid="uid://b2d78d5gpvkdk" path="res://Textures/0Universal/ObjTextures/Tram/TramTexture1.tres" id="149_md575"]
 [ext_resource type="Material" uid="uid://8q23mfthc25k" path="res://Textures/0Universal/ObjTextures/Tram/TramTextureGlass.tres" id="150_3exgg"]
 [ext_resource type="ArrayMesh" uid="uid://dhdsmhb74ddq2" path="res://Textures/0Universal/ObjTextures/Elevator/Elevator.obj" id="152_1ldn0"]
+[ext_resource type="AudioStream" uid="uid://dhahuw2ar8od1" path="res://Sounds/SFX/Tram/Tram.ogg" id="153_p2ke2"]
 [ext_resource type="Texture2D" uid="uid://302t4w7kx2b" path="res://Textures/0Universal/ObjTextures/Elevator/Elevator_Door_BaseColor.png" id="153_qmb1d"]
 [ext_resource type="Texture2D" uid="uid://ds5bvueb8gqgt" path="res://Textures/0Universal/ObjTextures/Elevator/Elevator_Door_Metallic.png" id="154_n7gex"]
 [ext_resource type="Texture2D" uid="uid://b4yci47uesa4h" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Tram_BaseColor.png" id="154_xut2x"]
@@ -167,6 +169,8 @@
 [ext_resource type="Texture2D" uid="uid://sccccxqp0h7c" path="res://Textures/0Universal/ObjTextures/Elevator/Elevator_Windows_Roughness.png" id="158_yh5n7"]
 [ext_resource type="Texture2D" uid="uid://cfho2cmikjkkf" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Glass_Metallic.png" id="159_wdr1j"]
 [ext_resource type="Texture2D" uid="uid://cupw51i12ikj0" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Glass_Roughness.png" id="160_bl5l4"]
+[ext_resource type="AudioStream" uid="uid://cbyc3hsifree1" path="res://Sounds/SFX/Tram/TramBeeps.ogg" id="161_4vjvv"]
+[ext_resource type="AudioStream" uid="uid://dh141c6psveus" path="res://Sounds/SFX/Tram/TramLong.ogg" id="162_l55kd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xlif7"]
 
@@ -1956,6 +1960,36 @@ tracks/5/keys = {
 "update": 0,
 "values": [0.0, 2.0, 2.0, 0.0]
 }
+tracks/6/type = "audio"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Tram/AudioBeeps")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("161_4vjvv")
+}],
+"times": PackedFloat32Array(2.2)
+}
+tracks/6/use_blend = true
+tracks/7/type = "audio"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Tram/AudioEngine")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"clips": [{
+"end_offset": 7.97415,
+"start_offset": 0.0,
+"stream": ExtResource("162_l55kd")
+}],
+"times": PackedFloat32Array(0.0333333)
+}
+tracks/7/use_blend = true
 
 [sub_resource type="Animation" id="Animation_3exgg"]
 length = 0.001
@@ -2416,7 +2450,7 @@ transform = Transform3D(1, 0, 0, 1.13687e-13, 1, 0, 0, 0, 1, -8.64267e-07, 405, 
 mesh = SubResource("PlaneMesh_isujd")
 
 [node name="Mango" parent="." instance=ExtResource("1_xlif7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1123, 70, -125)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32, 6)
 speed = 12.0
 acc = 5.0
 jumpVelocity = 40.0
@@ -8918,6 +8952,7 @@ nonstick = true
 [node name="CSGBox3D" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(0.985417, 0, 0, 0, 0.985417, 0, 0, 0, 0.985417, 2196, 150.615, -111)
 material_override = ExtResource("6_xc2n4")
+use_collision = true
 size = Vector3(1, 27.1, 9)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="ROOMS/Room14"]
@@ -10510,7 +10545,24 @@ debug_color = Color(0.960784, 0, 0.505882, 0.894118)
 
 [node name="Ambiance" type="Node" parent="Audio"]
 
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Audio/Ambiance"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -434, 95, -119)
+stream = ExtResource("129_laawm")
+volume_db = 61.17
+unit_size = 10.95
+max_distance = 120.5
+panning_strength = 0.0
+emission_angle_degrees = 90.0
+parameters/looping = true
+
 [node name="SewerAmbiance" type="AudioStreamPlayer2D" parent="Audio/Ambiance"]
+stream = ExtResource("108_5006w")
+volume_db = -15.0
+autoplay = true
+panning_strength = 0.0
+parameters/looping = true
+
+[node name="CityAmbiance" type="AudioStreamPlayer2D" parent="Audio/Ambiance"]
 stream = ExtResource("108_5006w")
 volume_db = -15.0
 autoplay = true
@@ -12220,6 +12272,16 @@ transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
 
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node/MovingTram/Tram/Tram"]
+transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 0, 10, 0)
+stream = ExtResource("153_p2ke2")
+volume_db = 10.0
+unit_size = 3.0
+autoplay = true
+max_distance = 234.06
+doppler_tracking = 2
+parameters/looping = true
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Node/MovingTram/Tram"]
 libraries = {
 &"": ExtResource("148_nj68h")
@@ -12261,6 +12323,16 @@ light_energy = 2.0
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 7.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node/MovingTram2/Tram/Tram"]
+transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 0, 10, 0)
+stream = ExtResource("153_p2ke2")
+volume_db = 10.0
+unit_size = 3.0
+autoplay = true
+max_distance = 234.06
+doppler_tracking = 2
+parameters/looping = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Node/MovingTram2/Tram"]
 libraries = {
@@ -12304,6 +12376,16 @@ transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
 
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node/MovingTram3/Tram/Tram"]
+transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 0, 10, 0)
+stream = ExtResource("153_p2ke2")
+volume_db = 10.0
+unit_size = 3.0
+autoplay = true
+max_distance = 234.06
+doppler_tracking = 2
+parameters/looping = true
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Node/MovingTram3/Tram"]
 libraries = {
 &"": ExtResource("148_nj68h")
@@ -12345,6 +12427,15 @@ light_energy = 2.0
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 7.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node/MovingTram4/Tram/Tram"]
+transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 0, 10, 0)
+stream = ExtResource("153_p2ke2")
+volume_db = 10.0
+unit_size = 3.0
+autoplay = true
+max_distance = 234.06
+parameters/looping = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Node/MovingTram4/Tram"]
 libraries = {
@@ -12412,6 +12503,17 @@ light_energy = 2.0
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 7.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
+
+[node name="AudioBeeps" type="AudioStreamPlayer3D" parent="MovingTram5/Tram/Tram"]
+volume_db = 5.0
+unit_size = 4.0
+max_distance = 147.3
+panning_strength = 2.0
+
+[node name="AudioEngine" type="AudioStreamPlayer3D" parent="MovingTram5/Tram/Tram"]
+volume_db = 10.0
+unit_size = 3.0
+max_distance = 147.3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="MovingTram5/Tram"]
 libraries = {
