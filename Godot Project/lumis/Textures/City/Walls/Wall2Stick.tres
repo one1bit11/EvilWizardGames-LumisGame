@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://da1adbu4n67yu"]
+
+[ext_resource type="Texture2D" uid="uid://rtpb5rvtvkby" path="res://Textures/City/Walls/3E0AC743-6F94-43B0-B694-B52C376E92A9.png" id="1_lliuu"]
+
+[resource]
+albedo_texture = ExtResource("1_lliuu")
+uv1_scale = Vector3(0.14, 0.14, 0.14)
+uv1_triplanar = true
+uv1_world_triplanar = true
