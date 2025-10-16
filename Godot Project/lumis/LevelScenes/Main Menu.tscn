@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://eyp6tro00ol1"]
+[gd_scene load_steps=19 format=3 uid="uid://eyp6tro00ol1"]
 
 [ext_resource type="Script" uid="uid://bby4ycx5glmx8" path="res://Scripts/main_menu.gd" id="1_3e8lh"]
 [ext_resource type="PackedScene" uid="uid://ddrgb2e4wr4gl" path="res://LevelScenes/1. LVL1 MENU DEMO.tscn" id="1_hggsl"]
@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://bat88j31g08ea" path="res://Other/Fonts/ComicRelief-Regular.ttf" id="3_2dh5q"]
 [ext_resource type="AudioStream" uid="uid://bm3pa8w34scl6" path="res://Sounds/Music/Final/MainMenu.ogg" id="4_y1rc5"]
 [ext_resource type="Texture2D" uid="uid://dmex7ro7c86tb" path="res://Other/credits1080.png" id="6_2dh5q"]
+[ext_resource type="Texture2D" uid="uid://boqsr801epxr" path="res://Other/EWG Temp.png" id="7_xckl4"]
 
 [sub_resource type="Animation" id="Animation_2dh5q"]
 resource_name = "FadeIn"
@@ -256,6 +257,12 @@ stream = ExtResource("4_y1rc5")
 volume_db = 24.0
 autoplay = true
 panning_strength = 0.0
+parameters/looping = true
+
+[node name="EwgTemp" type="Sprite2D" parent="."]
+position = Vector2(1766, 917)
+scale = Vector2(0.376798, 0.376798)
+texture = ExtResource("7_xckl4")
 
 [node name="Just Coffee, Black" type="ColorRect" parent="."]
 layout_mode = 0

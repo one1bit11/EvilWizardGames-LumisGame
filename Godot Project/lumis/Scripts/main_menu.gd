@@ -1,19 +1,25 @@
 extends Control
 
-var inCredits := false;
+var inCredits := false
+var musicFade := false
 
 func transition_to_lv():
 	get_tree().change_scene_to_file("res://LevelScenes/start_slides.tscn")
 
+func _physics_process(delta: float) -> void:
+	if musicFade:
+		$MusicPlayer.volume_linear = lerpf($MusicPlayer.volume_linear,0.0, 0.05)
 
 func _on_start_button_pressed() -> void:
 	$FadeAnimationPlayer.play("StartFadeOut")
 	$CreditsRect.mouse_filter = MOUSE_FILTER_STOP
+	musicFade = true
 
 
 func _on_quit_button_pressed() -> void:
 	$FadeAnimationPlayer.play("QuitFadeOut")
 	$CreditsRect.mouse_filter = MOUSE_FILTER_STOP
+	musicFade = true
 
 func quit_game():
 	get_tree().quit()

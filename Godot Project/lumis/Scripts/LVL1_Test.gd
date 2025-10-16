@@ -17,6 +17,9 @@ var played4:bool = false
 var transCityMusic:bool = false
 var fadeCityMusic:bool = false
 
+func _ready() -> void:
+	uiAnimation.play("LongBlackFadeIn")
+
 func reset_mango_to_checkpoint():
 	mango.position = checkpointPos
 
@@ -52,7 +55,7 @@ func _on_music_play_area_entered(area: Area3D) -> void:
 
 func _on_ending_trigger_area_entered(area: Area3D) -> void:
 	if area.name == "MangoTrigger":
-		get_tree().change_scene_to_file("res://LevelScenes/end_slides.tscn")
+		play_ending()
 
 
 func _on_music_stop_area_entered(area: Area3D) -> void:
@@ -137,3 +140,9 @@ func change_tram_texture(tram_node_path):
 	#tramNode.set_surface_override_material(0, newMaterial)
 	
 	pass
+
+func play_ending():
+	$UI/WhiteRect/WhiteAnimationPlayer.play("LongWhiteFadeOut")
+
+func transition_to_end_slides():
+	get_tree().change_scene_to_file("res://LevelScenes/end_slides.tscn")

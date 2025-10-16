@@ -16,8 +16,9 @@ run/main_scene="uid://no8yualfj0vs"
 config/features=PackedStringArray("4.4", "Forward Plus")
 run/max_fps=60
 boot_splash/bg_color=Color(0, 0, 0, 1)
-boot_splash/image="uid://dauw7ga07ig7d"
+boot_splash/image="uid://boqsr801epxr"
 config/icon="uid://ceogtrcro4uwu"
+boot_splash/minimum_display_time=200
 
 [display]
 
