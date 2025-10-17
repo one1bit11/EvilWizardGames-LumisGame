@@ -1,11 +1,10 @@
-[gd_scene load_steps=457 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=429 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_xlif7"]
 [ext_resource type="Script" uid="uid://cthhsvlwdylva" path="res://Scripts/object_properties.gd" id="2_4bvgn"]
 [ext_resource type="PackedScene" uid="uid://cdt72fkucpjaf" path="res://LevelScenes/1.5 City.tscn" id="2_gwmb0"]
-[ext_resource type="Material" uid="uid://bje7sds7fpef2" path="res://Textures/Other/SolidColours/Brown.tres" id="2_short"]
 [ext_resource type="Material" uid="uid://cymxly51ml176" path="res://Textures/Other/SolidColours/BrownAlt.tres" id="3_5jpfr"]
 [ext_resource type="Material" uid="uid://cp52667yf3kt1" path="res://Textures/0Universal/MapTextures/BrickWall/BrickWall 2.tres" id="3_gmyoy"]
 [ext_resource type="Material" uid="uid://b8cr53cav36y3" path="res://Textures/Other/SolidColours/Blue.tres" id="3_v23sc"]
@@ -52,61 +51,25 @@
 [ext_resource type="ArrayMesh" uid="uid://civkoywloo8cp" path="res://Meshes/1Sewers/Waterway Gate.obj" id="31_tgkar"]
 [ext_resource type="Material" uid="uid://cpgr1k704pcgu" path="res://Textures/0Universal/MapTextures/Pipe/DontTouch.tres" id="32_gg7m4"]
 [ext_resource type="Texture2D" uid="uid://bm1a3mic74t7l" path="res://Textures/0Universal/ObjTextures/WaterwayGateTexture/Waterway Gate_Door_Frame_BaseColor.png" id="32_s61i1"]
-[ext_resource type="Texture2D" uid="uid://dprhqyodiioc5" path="res://Textures/Other/PlaceholderWater/0000.png" id="32_ytc1s"]
 [ext_resource type="PackedScene" uid="uid://bcfei87ec3rmb" path="res://ObjectScenes/melon_slime.tscn" id="33_gg7m4"]
-[ext_resource type="Texture2D" uid="uid://cs587u15or26v" path="res://Textures/Other/PlaceholderWater/0001.png" id="33_nscnc"]
 [ext_resource type="Material" uid="uid://caqbynkas62g8" path="res://Textures/Other/Melon/Melon2.tres" id="33_pckmx"]
 [ext_resource type="Texture2D" uid="uid://csib5x3dsfb7" path="res://Textures/0Universal/ObjTextures/WaterwayGateTexture/Waterway Gate_Door_Frame_Roughness.png" id="33_tu4hv"]
-[ext_resource type="Texture2D" uid="uid://cw6mcsk6isuxm" path="res://Textures/Other/PlaceholderWater/0002.png" id="34_fil6b"]
 [ext_resource type="Material" uid="uid://250m23mifrm0" path="res://Textures/Other/Melon/Melon1.tres" id="34_gg7m4"]
 [ext_resource type="Texture2D" uid="uid://dh2c7mc421whu" path="res://Textures/0Universal/ObjTextures/WaterwayGateTexture/Waterway Gate_Pole_BaseColor.png" id="34_oix6q"]
-[ext_resource type="Texture2D" uid="uid://bced3dfwmdnci" path="res://Textures/Other/PlaceholderWater/0003.png" id="35_38avk"]
 [ext_resource type="Texture2D" uid="uid://cvcn33663ltun" path="res://Textures/0Universal/ObjTextures/WaterwayGateTexture/Waterway Gate_Pole_Metallic.png" id="35_su75a"]
 [ext_resource type="Material" uid="uid://bk3pjxhdrjpe0" path="res://Textures/Other/Melon/Melon3.tres" id="35_y7vme"]
 [ext_resource type="Texture2D" uid="uid://di631uw3qm1o" path="res://Textures/Other/Melon/FE68A243-BB88-47D5-AC53-7B9143C2950B.png" id="36_0fu5k"]
-[ext_resource type="Texture2D" uid="uid://db38dhpk6axfc" path="res://Textures/Other/PlaceholderWater/0004.png" id="36_gqy3f"]
 [ext_resource type="Texture2D" uid="uid://ckcxm4nu53nih" path="res://Textures/0Universal/ObjTextures/WaterwayGateTexture/Waterway Gate_Pole_Roughness.png" id="36_ocn2x"]
-[ext_resource type="Texture2D" uid="uid://cg0bdhh3vacqx" path="res://Textures/Other/PlaceholderWater/0005.png" id="37_5006w"]
 [ext_resource type="PackedScene" uid="uid://dfthhlmd0n758" path="res://ObjectScenes/LanternObj.tscn" id="37_tu4hv"]
-[ext_resource type="Texture2D" uid="uid://cpujqse7a3i3c" path="res://Textures/Other/PlaceholderWater/0006.png" id="38_3l6v7"]
-[ext_resource type="Texture2D" uid="uid://ufla560h0avr" path="res://Textures/Other/PlaceholderWater/0007.png" id="39_uvlwu"]
-[ext_resource type="Texture2D" uid="uid://cura8y6qvb5if" path="res://Textures/Other/PlaceholderWater/0008.png" id="40_6kctm"]
-[ext_resource type="Texture2D" uid="uid://bakr1ahmxc802" path="res://Textures/Other/PlaceholderWater/0009.png" id="41_dno5h"]
-[ext_resource type="Texture2D" uid="uid://bdepvbi5he04j" path="res://Textures/Other/PlaceholderWater/0010.png" id="42_4bvgn"]
-[ext_resource type="Texture2D" uid="uid://b2cfsvh80wtiq" path="res://Textures/Other/PlaceholderWater/0011.png" id="43_ulxk5"]
-[ext_resource type="Texture2D" uid="uid://bpsf2rjvsyrso" path="res://Textures/Other/PlaceholderWater/0012.png" id="44_6qbqr"]
-[ext_resource type="Texture2D" uid="uid://bricix2cblyf6" path="res://Textures/Other/PlaceholderWater/0013.png" id="45_2v00b"]
-[ext_resource type="Texture2D" uid="uid://qeems35sydv3" path="res://Textures/Other/PlaceholderWater/0014.png" id="46_624ml"]
+[ext_resource type="Texture2D" uid="uid://bqog27rtg6lse" path="res://Textures/WaterWithBoarder/73B2DD26-B0A5-4FB2-B71D-CCF170136FE2.png" id="45_vigon"]
+[ext_resource type="Texture2D" uid="uid://dvi04v1y5trcd" path="res://Textures/WaterWithBoarder/0473CE17-4237-4430-AD55-5C109E391D3C.png" id="46_jjhv0"]
 [ext_resource type="ArrayMesh" uid="uid://bj0hyaxgcluch" path="res://Meshes/0Universal/Pipes/TUBE_BEND.obj" id="47_5ol7d"]
-[ext_resource type="Texture2D" uid="uid://qacqafixul8n" path="res://Textures/Other/PlaceholderWater/0015.png" id="47_vbkhu"]
-[ext_resource type="Texture2D" uid="uid://tjo4hma1riyr" path="res://Textures/Other/PlaceholderWater/0016.png" id="48_7urqf"]
-[ext_resource type="Texture2D" uid="uid://b5g7kv6rrvbaw" path="res://Textures/Other/PlaceholderWater/0017.png" id="49_tkodh"]
-[ext_resource type="Texture2D" uid="uid://x0r608p0dp7a" path="res://Textures/Other/PlaceholderWater/0018.png" id="50_koey3"]
-[ext_resource type="Texture2D" uid="uid://d0tq4h60hkdpc" path="res://Textures/Other/PlaceholderWater/0019.png" id="51_5ocs4"]
-[ext_resource type="Texture2D" uid="uid://dktxtlfiawud2" path="res://Textures/Other/PlaceholderWater/0020.png" id="52_0ukuq"]
-[ext_resource type="Texture2D" uid="uid://dq3fh4v4ncn17" path="res://Textures/Other/PlaceholderWater/0021.png" id="53_o72sb"]
+[ext_resource type="Texture2D" uid="uid://dt84fy3f4nnlh" path="res://Textures/WaterWithBoarder/8714AE7D-83EE-4536-8635-7FED28A0D379.png" id="47_pxsad"]
+[ext_resource type="Texture2D" uid="uid://b1jjjmyob40fk" path="res://Textures/WaterWithBoarder/E1A745A3-F982-4D1B-8597-1A65E7D9282C.png" id="48_xicfl"]
 [ext_resource type="Texture2D" uid="uid://43s2wfum1fdf" path="res://Textures/0Universal/ObjTextures/FloatingPlatform/Platform_Platform_BaseColor.png" id="54_5ol7d"]
-[ext_resource type="Texture2D" uid="uid://doqth4otnyvdn" path="res://Textures/Other/PlaceholderWater/0022.png" id="54_m61dg"]
 [ext_resource type="ArrayMesh" uid="uid://cg1sq70fi334s" path="res://Meshes/0Universal/Platform.obj" id="54_oix6q"]
-[ext_resource type="Texture2D" uid="uid://cngkclye5o03l" path="res://Textures/Other/PlaceholderWater/0023.png" id="55_8sk1i"]
 [ext_resource type="Texture2D" uid="uid://cgbec0wwwf8ix" path="res://Textures/0Universal/ObjTextures/FloatingPlatform/Platform_Platform_Metallic.png" id="55_a446t"]
 [ext_resource type="Texture2D" uid="uid://bgriqutl6todo" path="res://Textures/0Universal/ObjTextures/FloatingPlatform/Platform_Platform_Roughness.png" id="56_5djrx"]
-[ext_resource type="Texture2D" uid="uid://b21nut4v2l0et" path="res://Textures/Other/PlaceholderWater/0024.png" id="56_o2s2x"]
-[ext_resource type="Texture2D" uid="uid://bhck0tna1em0n" path="res://Textures/Other/PlaceholderWater/0025.png" id="57_iu3y3"]
-[ext_resource type="Texture2D" uid="uid://udd2q5dgj65o" path="res://Textures/Other/PlaceholderWater/0026.png" id="58_ymun1"]
-[ext_resource type="Texture2D" uid="uid://ct3vun7138nct" path="res://Textures/Other/PlaceholderWater/0027.png" id="59_22awh"]
-[ext_resource type="Texture2D" uid="uid://c07ablvou2437" path="res://Textures/Other/PlaceholderWater/0028.png" id="60_dsxr3"]
-[ext_resource type="Texture2D" uid="uid://co4elytwlxbj7" path="res://Textures/Other/PlaceholderWater/0029.png" id="61_raox2"]
-[ext_resource type="Texture2D" uid="uid://b56r1ogksv2ss" path="res://Textures/Other/PlaceholderWater/0030.png" id="62_vgtun"]
-[ext_resource type="Texture2D" uid="uid://cgbqrfb8u8r3r" path="res://Textures/Other/PlaceholderWater/0031.png" id="63_snuc0"]
-[ext_resource type="Texture2D" uid="uid://b76ku5csca0" path="res://Textures/Other/PlaceholderWater/0032.png" id="64_hj8bv"]
-[ext_resource type="Texture2D" uid="uid://d6k8avqxyxd3" path="res://Textures/Other/PlaceholderWater/0033.png" id="65_gwmb0"]
-[ext_resource type="Texture2D" uid="uid://dskpnxblfyomx" path="res://Textures/Other/PlaceholderWater/0034.png" id="66_v6u1t"]
-[ext_resource type="Texture2D" uid="uid://dve6txeho3y3l" path="res://Textures/Other/PlaceholderWater/0035.png" id="67_yfhhf"]
-[ext_resource type="Texture2D" uid="uid://3m7beynjftwh" path="res://Textures/Other/PlaceholderWater/0036.png" id="68_fof7x"]
-[ext_resource type="Texture2D" uid="uid://unppo5tlw5ix" path="res://Textures/Other/PlaceholderWater/0037.png" id="69_vigon"]
-[ext_resource type="Texture2D" uid="uid://3kllc6q15pbb" path="res://Textures/Other/PlaceholderWater/0038.png" id="70_jjhv0"]
-[ext_resource type="Texture2D" uid="uid://bxdvquxthjyb6" path="res://Textures/Other/PlaceholderWater/0039.png" id="71_pxsad"]
 [ext_resource type="PackedScene" uid="uid://d07pbbog3u2cq" path="res://ObjectScenes/pipes_tshape_rightcurvecorner.tscn" id="87_38avk"]
 [ext_resource type="PackedScene" uid="uid://b3asth456be2q" path="res://ObjectScenes/pipe_threevertical_leftempty_corner.tscn" id="88_38avk"]
 [ext_resource type="PackedScene" uid="uid://d2nya6ia847i4" path="res://ObjectScenes/waterway_gate.tscn" id="90_7urqf"]
@@ -137,6 +100,7 @@
 [ext_resource type="PackedScene" uid="uid://foy2w1ght5vg" path="res://ObjectScenes/safety_rail.tscn" id="115_vbkhu"]
 [ext_resource type="AudioStream" uid="uid://byqfcv16md0bv" path="res://Sounds/Music/Final/Sewers.ogg" id="126_fof7x"]
 [ext_resource type="AudioStream" uid="uid://buoyui1n16jfb" path="res://Sounds/Music/Final/City.ogg" id="127_fof7x"]
+[ext_resource type="Material" uid="uid://cumiqyrjv44go" path="res://Textures/0Universal/ObjTextures/Wood/Wood.tres" id="128_y7vme"]
 [ext_resource type="Material" uid="uid://bljebcysx50cj" path="res://Textures/0Universal/MapTextures/Pipe/NonStickPipe.tres" id="129_gg7m4"]
 [ext_resource type="AudioStream" uid="uid://dda1fp5dqdf4g" path="res://Sounds/SFX/1. Sewers/Environmental/General Ambience/Giant Pillars Wind.ogg" id="129_laawm"]
 [ext_resource type="Material" uid="uid://crclr4rsdcosu" path="res://Textures/0Universal/MapTextures/Pipe/StickPipe.tres" id="130_y7vme"]
@@ -269,135 +233,42 @@ ring_segments = 8
 
 [sub_resource type="BoxMesh" id="BoxMesh_oix6q"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_pxsad"]
+size = Vector3(17, 0.8, 42)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k8pp5"]
+size = Vector3(16, 0.8, 43)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8bbsk"]
+size = Vector3(78, 0.8, 23)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cg17g"]
+size = Vector3(114, 0.8, 23)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_624ml"]
-size = Vector3(73, 0.8, 36)
+size = Vector3(130, 0.8, 150)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vigon"]
+size = Vector3(13, 0.8, 31)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xicfl"]
 animations = [{
 "frames": [{
-"duration": 0.4,
-"texture": ExtResource("32_ytc1s")
+"duration": 1.0,
+"texture": ExtResource("45_vigon")
 }, {
-"duration": 0.4,
-"texture": ExtResource("33_nscnc")
+"duration": 1.0,
+"texture": ExtResource("46_jjhv0")
 }, {
-"duration": 0.4,
-"texture": ExtResource("34_fil6b")
+"duration": 1.0,
+"texture": ExtResource("47_pxsad")
 }, {
-"duration": 0.4,
-"texture": ExtResource("35_38avk")
-}, {
-"duration": 0.4,
-"texture": ExtResource("36_gqy3f")
-}, {
-"duration": 0.4,
-"texture": ExtResource("37_5006w")
-}, {
-"duration": 0.4,
-"texture": ExtResource("38_3l6v7")
-}, {
-"duration": 0.4,
-"texture": ExtResource("39_uvlwu")
-}, {
-"duration": 0.4,
-"texture": ExtResource("40_6kctm")
-}, {
-"duration": 0.4,
-"texture": ExtResource("41_dno5h")
-}, {
-"duration": 0.4,
-"texture": ExtResource("42_4bvgn")
-}, {
-"duration": 0.4,
-"texture": ExtResource("43_ulxk5")
-}, {
-"duration": 0.4,
-"texture": ExtResource("44_6qbqr")
-}, {
-"duration": 0.4,
-"texture": ExtResource("45_2v00b")
-}, {
-"duration": 0.4,
-"texture": ExtResource("46_624ml")
-}, {
-"duration": 0.4,
-"texture": ExtResource("47_vbkhu")
-}, {
-"duration": 0.4,
-"texture": ExtResource("48_7urqf")
-}, {
-"duration": 0.4,
-"texture": ExtResource("49_tkodh")
-}, {
-"duration": 0.4,
-"texture": ExtResource("50_koey3")
-}, {
-"duration": 0.4,
-"texture": ExtResource("51_5ocs4")
-}, {
-"duration": 0.4,
-"texture": ExtResource("52_0ukuq")
-}, {
-"duration": 0.4,
-"texture": ExtResource("53_o72sb")
-}, {
-"duration": 0.4,
-"texture": ExtResource("54_m61dg")
-}, {
-"duration": 0.4,
-"texture": ExtResource("55_8sk1i")
-}, {
-"duration": 0.4,
-"texture": ExtResource("56_o2s2x")
-}, {
-"duration": 0.4,
-"texture": ExtResource("57_iu3y3")
-}, {
-"duration": 0.4,
-"texture": ExtResource("58_ymun1")
-}, {
-"duration": 0.4,
-"texture": ExtResource("59_22awh")
-}, {
-"duration": 0.4,
-"texture": ExtResource("60_dsxr3")
-}, {
-"duration": 0.4,
-"texture": ExtResource("61_raox2")
-}, {
-"duration": 0.4,
-"texture": ExtResource("62_vgtun")
-}, {
-"duration": 0.4,
-"texture": ExtResource("63_snuc0")
-}, {
-"duration": 0.4,
-"texture": ExtResource("64_hj8bv")
-}, {
-"duration": 0.4,
-"texture": ExtResource("65_gwmb0")
-}, {
-"duration": 0.4,
-"texture": ExtResource("66_v6u1t")
-}, {
-"duration": 0.4,
-"texture": ExtResource("67_yfhhf")
-}, {
-"duration": 0.4,
-"texture": ExtResource("68_fof7x")
-}, {
-"duration": 0.4,
-"texture": ExtResource("69_vigon")
-}, {
-"duration": 0.4,
-"texture": ExtResource("70_jjhv0")
-}, {
-"duration": 0.4,
-"texture": ExtResource("71_pxsad")
+"duration": 1.0,
+"texture": ExtResource("48_xicfl")
 }],
 "loop": true,
 "name": &"WaterAnimated",
-"speed": 5.0
+"speed": 8.0
 }]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8osxr"]
@@ -848,6 +719,9 @@ roughness_texture = ExtResource("9_s61i1")
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_vbkhu"]
 height = 8.875
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jjhv0"]
+size = Vector3(12, 0.8, 40)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8sk1i"]
 size = Vector3(11, 1, 36)
@@ -1813,6 +1687,15 @@ roughness_texture = ExtResource("9_s61i1")
 [sub_resource type="BoxShape3D" id="BoxShape3D_xicfl"]
 size = Vector3(1.6, 4.9, 2.6)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_23djh"]
+albedo_texture = ExtResource("7_lbovu")
+metallic = 1.0
+metallic_texture = ExtResource("8_tgkar")
+roughness_texture = ExtResource("9_s61i1")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qrjmn"]
+size = Vector3(1.6, 4.9, 2.6)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ut63"]
 albedo_texture = ExtResource("7_lbovu")
 metallic = 1.0
@@ -2118,7 +2001,6 @@ size = Vector3(0.417603, 8.48859, 2.46823)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38, 0)
 script = ExtResource("1_624ml")
 mango = NodePath("Mango")
-checkpointPos = Vector3(0, 9.9, 4)
 uiAnimation = NodePath("UI/AnimationPlayer")
 uiAnimationPopUp = NodePath("UI/PopUps/AnimationPlayer")
 
@@ -2471,7 +2353,7 @@ transform = Transform3D(1, 0, 0, 1.13687e-13, 1, 0, 0, 0, 1, -8.64267e-07, 405, 
 mesh = SubResource("PlaneMesh_isujd")
 
 [node name="Mango" parent="." instance=ExtResource("1_xlif7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -32, 6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -37, 4)
 speed = 12.0
 acc = 5.0
 jumpVelocity = 40.0
@@ -2973,20 +2855,34 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -321, 
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/DeathTrigger2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, 2)
-shape = SubResource("BoxShape3D_624ml")
+shape = SubResource("BoxShape3D_pxsad")
 
 [node name="DeathTrigger3" type="Area3D" parent="ROOMS"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -321, -6, -134.7)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/DeathTrigger3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, 2)
-shape = SubResource("BoxShape3D_624ml")
+shape = SubResource("BoxShape3D_k8pp5")
 
 [node name="DeathTrigger4" type="Area3D" parent="ROOMS"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -612, -5.7, -126.7)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/DeathTrigger4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.99998, -0.4, 0.5)
+shape = SubResource("BoxShape3D_8bbsk")
+
+[node name="DeathTrigger6" type="Area3D" parent="ROOMS"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -708, -5.7, -126.7)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/DeathTrigger6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, -0.4, 0.5)
+shape = SubResource("BoxShape3D_cg17g")
+
+[node name="DeathTrigger5" type="Area3D" parent="ROOMS"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -893.799, -5.7, -126.7)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/DeathTrigger5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6762, -0.4, 11.5)
 shape = SubResource("BoxShape3D_624ml")
 
 [node name="Room2" type="Node3D" parent="ROOMS"]
@@ -3066,17 +2962,19 @@ script = ExtResource("2_4bvgn")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67, -1, -47)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/DeathTrigger"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, -4.5)
-shape = SubResource("BoxShape3D_624ml")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.4, -3.5)
+shape = SubResource("BoxShape3D_vigon")
 
 [node name="Water" type="CSGBox3D" parent="ROOMS/Room2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67, -1, -47)
+visible = false
 material_override = ExtResource("3_v23sc")
 size = Vector3(15, 2, 47)
 script = ExtResource("2_4bvgn")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 1, 1.005, 0)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3085,6 +2983,7 @@ frame_progress = 0.463968
 
 [node name="AnimatedSprite3D3" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, -4.1, 1.005, 0)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3093,6 +2992,7 @@ frame_progress = 0.556299
 
 [node name="AnimatedSprite3D2" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 6.1, 1.005, 0)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3101,6 +3001,7 @@ frame_progress = 0.691402
 
 [node name="AnimatedSprite3D4" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 1, 1.005, 5.1)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3109,6 +3010,7 @@ frame_progress = 0.543248
 
 [node name="AnimatedSprite3D5" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, -4.1, 1.005, 5.1)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3117,6 +3019,7 @@ frame_progress = 0.556299
 
 [node name="AnimatedSprite3D6" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 6.1, 1.005, 5.1)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3125,6 +3028,7 @@ frame_progress = 0.691402
 
 [node name="AnimatedSprite3D7" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 1, 1.005, 10.2)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3133,6 +3037,7 @@ frame_progress = 0.543248
 
 [node name="AnimatedSprite3D8" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, -4.1, 1.005, 10.2)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3141,6 +3046,7 @@ frame_progress = 0.556299
 
 [node name="AnimatedSprite3D9" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 6.1, 1.005, 10.2)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3149,6 +3055,7 @@ frame_progress = 0.691402
 
 [node name="AnimatedSprite3D10" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 1, 1.005, 15.3)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3157,6 +3064,7 @@ frame_progress = 0.543248
 
 [node name="AnimatedSprite3D26" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 1, 1.005, 20.4)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3165,6 +3073,7 @@ frame_progress = 0.543248
 
 [node name="AnimatedSprite3D27" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 6.1, 1.005, 20.4)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3173,6 +3082,7 @@ frame_progress = 0.543248
 
 [node name="AnimatedSprite3D28" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, -4.1, 1.005, 20.4)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3181,6 +3091,7 @@ frame_progress = 0.543248
 
 [node name="AnimatedSprite3D11" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, -4.1, 1.005, 15.3)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3189,6 +3100,7 @@ frame_progress = 0.556299
 
 [node name="AnimatedSprite3D25" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, -4.1, 1.005, 15.3)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3197,6 +3109,7 @@ frame_progress = 0.556299
 
 [node name="AnimatedSprite3D12" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 6.1, 1.005, 15.3)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3205,6 +3118,7 @@ frame_progress = 0.691402
 
 [node name="AnimatedSprite3D13" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 1, 1.005, -20.4)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3213,6 +3127,7 @@ frame_progress = 0.193899
 
 [node name="AnimatedSprite3D29" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 1, 1.005, -25.5)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3221,6 +3136,7 @@ frame_progress = 0.193899
 
 [node name="AnimatedSprite3D30" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 6.1, 1.005, -25.5)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3229,6 +3145,7 @@ frame_progress = 0.193899
 
 [node name="AnimatedSprite3D31" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, -4.1, 1.005, -25.5)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3237,6 +3154,7 @@ frame_progress = 0.193899
 
 [node name="AnimatedSprite3D14" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, -4.1, 1.005, -20.4)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3245,6 +3163,7 @@ frame_progress = 0.556299
 
 [node name="AnimatedSprite3D15" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 6.1, 1.005, -20.4)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3253,6 +3172,7 @@ frame_progress = 0.691402
 
 [node name="AnimatedSprite3D16" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 1, 1.005, -15.3)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3261,6 +3181,7 @@ frame_progress = 0.543248
 
 [node name="AnimatedSprite3D17" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, -4.1, 1.005, -15.3)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3269,6 +3190,7 @@ frame_progress = 0.556299
 
 [node name="AnimatedSprite3D18" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 6.1, 1.005, -15.3)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3277,6 +3199,7 @@ frame_progress = 0.691402
 
 [node name="AnimatedSprite3D19" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 1, 1.005, -10.2)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3285,6 +3208,7 @@ frame_progress = 0.543248
 
 [node name="AnimatedSprite3D20" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, -4.1, 1.005, -10.2)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3293,6 +3217,7 @@ frame_progress = 0.556299
 
 [node name="AnimatedSprite3D21" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 6.1, 1.005, -10.2)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3301,6 +3226,7 @@ frame_progress = 0.691402
 
 [node name="AnimatedSprite3D22" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 1, 1.005, -5.10001)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3309,6 +3235,7 @@ frame_progress = 0.543248
 
 [node name="AnimatedSprite3D23" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, -4.1, 1.005, -5.10001)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
@@ -3317,11 +3244,63 @@ frame_progress = 0.556299
 
 [node name="AnimatedSprite3D24" type="AnimatedSprite3D" parent="ROOMS/Room2/Water"]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 6.1, 1.005, -5.10001)
+visible = false
 shaded = true
 sprite_frames = SubResource("SpriteFrames_xicfl")
 animation = &"WaterAnimated"
 autoplay = "WaterAnimated"
 frame_progress = 0.691402
+
+[node name="Water2" type="CSGBox3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67, -1, -47)
+material_override = ExtResource("3_v23sc")
+size = Vector3(15, 2, 47)
+script = ExtResource("2_4bvgn")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="ROOMS/Room2/Water2"]
+transform = Transform3D(0.489493, 0, 0, 0, -2.13964e-08, 0.489493, 0, -0.489493, -2.13964e-08, 1.12354, 1.005, 0)
+modulate = Color(1, 1, 0.996078, 1)
+shaded = true
+sprite_frames = SubResource("SpriteFrames_xicfl")
+animation = &"WaterAnimated"
+autoplay = "WaterAnimated"
+frame_progress = 0.925776
+
+[node name="AnimatedSprite3D2" type="AnimatedSprite3D" parent="ROOMS/Room2/Water2"]
+transform = Transform3D(0.489493, 0, 0, 0, -2.13964e-08, 0.489493, 0, -0.489493, -2.13964e-08, 1.12354, 1.005, -10)
+modulate = Color(1, 1, 0.996078, 1)
+shaded = true
+sprite_frames = SubResource("SpriteFrames_xicfl")
+animation = &"WaterAnimated"
+autoplay = "WaterAnimated"
+frame_progress = 0.925776
+
+[node name="AnimatedSprite3D3" type="AnimatedSprite3D" parent="ROOMS/Room2/Water2"]
+transform = Transform3D(0.489493, 0, 0, 0, -2.13964e-08, 0.489493, 0, -0.489493, -2.13964e-08, 1.12354, 1.005, 10)
+modulate = Color(1, 1, 0.996078, 1)
+shaded = true
+sprite_frames = SubResource("SpriteFrames_xicfl")
+animation = &"WaterAnimated"
+autoplay = "WaterAnimated"
+frame_progress = 0.217621
+
+[node name="AnimatedSprite3D4" type="AnimatedSprite3D" parent="ROOMS/Room2/Water2"]
+transform = Transform3D(0.489493, 0, 0, 0, -2.13964e-08, 0.489493, 0, -0.489493, -2.13964e-08, 1.12354, 1.005, 20)
+modulate = Color(1, 1, 0.996078, 1)
+shaded = true
+sprite_frames = SubResource("SpriteFrames_xicfl")
+animation = &"WaterAnimated"
+autoplay = "WaterAnimated"
+frame_progress = 0.217621
+
+[node name="AnimatedSprite3D5" type="AnimatedSprite3D" parent="ROOMS/Room2/Water2"]
+transform = Transform3D(0.489493, 0, 0, 0, -2.13964e-08, 0.489493, 0, -0.489493, -2.13964e-08, 1.12354, 1.005, -20)
+modulate = Color(1, 1, 0.996078, 1)
+shaded = true
+sprite_frames = SubResource("SpriteFrames_xicfl")
+animation = &"WaterAnimated"
+autoplay = "WaterAnimated"
+frame_progress = 0.217621
 
 [node name="Crate" type="MeshInstance3D" parent="ROOMS/Room2"]
 transform = Transform3D(0.423433, 0, -4.74073, 0, 4.7596, 0, 4.74073, 0, 0.423433, -46.2245, 1.98186, -37.8144)
@@ -5401,30 +5380,6 @@ skeleton = NodePath("../..")
 [node name="safety rails5" type="Node3D" parent="ROOMS/Room4"]
 transform = Transform3D(-0.690266, 0, 6.0345e-08, 0, 0.690266, 0, -6.0345e-08, 0, -0.690266, -350.127, 46.1539, -146.056)
 
-[node name="Pole" parent="ROOMS/Room4/safety rails5" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -12.622, -15.9359, -5.90274)
-skeleton = NodePath("../..")
-
-[node name="Pole2" parent="ROOMS/Room4/safety rails5" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.46411, -15.9359, -5.90274)
-skeleton = NodePath("../..")
-
-[node name="Pole3" parent="ROOMS/Room4/safety rails5" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.2438, -15.9359, -5.90274)
-skeleton = NodePath("../..")
-
-[node name="Pole4" parent="ROOMS/Room4/safety rails5" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.0473, -15.9359, -5.90274)
-skeleton = NodePath("../..")
-
-[node name="Pole5" parent="ROOMS/Room4/safety rails5" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.169159, -15.9359, -5.90274)
-skeleton = NodePath("../..")
-
-[node name="Pole6" parent="ROOMS/Room4/safety rails5" instance=ExtResource("115_vbkhu")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.30334, -15.9359, -5.90274)
-skeleton = NodePath("../..")
-
 [node name="PillarBottom" parent="ROOMS/Room4" instance=ExtResource("109_xicfl")]
 transform = Transform3D(3.60476, 0, 0, 0, 3.60476, 0, 0, 0, 3.60476, -157.751, -21.5, -73.8925)
 
@@ -5486,7 +5441,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -179, -21, -49)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room4/DeathTrigger"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -1.6, -3.5)
-shape = SubResource("BoxShape3D_624ml")
+shape = SubResource("BoxShape3D_jjhv0")
 
 [node name="Room4-5" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -2, -7)
@@ -5784,6 +5739,7 @@ script = ExtResource("2_4bvgn")
 
 [node name="FloatingPlat" parent="ROOMS/Room5/FloatingPlatform3" instance=ExtResource("102_5006w")]
 transform = Transform3D(-3.93403e-08, 0, -0.9, 0, 0.9, 0, 0.9, 0, -3.93403e-08, 0, 0.1, 0)
+material_override = ExtResource("128_y7vme")
 
 [node name="FloatingPlatform4" type="CSGBox3D" parent="ROOMS/Room5"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -221.5, 30, -119.5)
@@ -5793,6 +5749,7 @@ script = ExtResource("2_4bvgn")
 
 [node name="FloatingPlat2" parent="ROOMS/Room5/FloatingPlatform4" instance=ExtResource("102_5006w")]
 transform = Transform3D(-3.93403e-08, 0, -0.9, 0, 0.9, 0, 0.9, 0, -3.93403e-08, 0, 0.1, 0)
+material_override = ExtResource("128_y7vme")
 
 [node name="MovingPlatformsPlayer" type="AnimationPlayer" parent="ROOMS/Room5"]
 libraries = {
@@ -5802,7 +5759,7 @@ autoplay = "LV1R5MovingPlatforms"
 
 [node name="FloatingPlat" type="MeshInstance3D" parent="ROOMS/Room5"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -167.5, 28.7636, -67)
-material_override = ExtResource("3_5jpfr")
+material_override = ExtResource("128_y7vme")
 mesh = SubResource("CylinderMesh_dno5h")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_fdxln")
@@ -5909,6 +5866,15 @@ transform = Transform3D(2.29283e-15, 1.5333e-30, -1.2, -5.24537e-08, 0.21, -1.91
 material_override = SubResource("StandardMaterial3D_sn8ts")
 use_collision = true
 radius = 1.5
+height = 30.2023
+sides = 16
+script = ExtResource("2_4bvgn")
+
+[node name="Pipe?16" type="CSGCylinder3D" parent="ROOMS/Rooms6+7+8"]
+transform = Transform3D(2.29283e-15, 1.5333e-30, -1.2, -5.24537e-08, 0.21, -1.91494e-37, 1.2, 9.17939e-09, 2.29283e-15, -245.104, -2.10697, -174.804)
+material_override = SubResource("StandardMaterial3D_sn8ts")
+use_collision = true
+radius = 19.0
 height = 30.2023
 sides = 16
 script = ExtResource("2_4bvgn")
@@ -8713,98 +8679,98 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3529, -22, -7)
 
 [node name="WoodPlatform2" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(0.224144, -0.836516, -0.5, 0.965926, 0.258819, -7.45058e-09, 0.12941, -0.482963, 0.866025, 2208.93, 68.5, -120.834)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 9, 3)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform3" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(-4.2222e-08, -0.965926, 0.258819, 1, -4.3711e-08, -2.37987e-16, 1.13133e-08, 0.258819, 0.965926, 2198.89, 70.5, -122.354)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 9, 4)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform4" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(-1.77636e-15, -1.19209e-07, 1, 1, -4.3711e-08, 3.81941e-16, 4.37114e-08, 1, 1.19209e-07, 2191, 72.5, -111)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 12, 4)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform6" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(3.09086e-08, 0.996195, -0.0871556, 1, -2.80967e-08, 3.34849e-08, 3.09086e-08, -0.0871556, -0.996195, 2205.04, 89.5, -97.9707)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 5.1, 6)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform15" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(-0.996195, -1.21072e-08, -0.0871556, -1.56142e-08, 1, 2.98023e-08, 0.0871557, 2.98023e-08, -0.996195, 2202.01, 85.5, -98.7098)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 9, 4)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform16" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(-0.0114891, -0.991273, 0.131322, -0.996195, -5.58186e-08, -0.0871556, 0.0863951, -0.131824, -0.987501, 2199.41, 81.2631, -98.9449)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 5.88782, 4)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform12" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(1.84732e-08, 0.965926, 0.258819, 1, -2.80967e-08, 3.34849e-08, 3.9616e-08, 0.258819, -0.965926, 2199.79, 121.5, -98.0144)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 3.83423, 6.8)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform13" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(3.58063e-08, 0.965926, -0.258819, 1, -2.80967e-08, 3.34849e-08, 2.50718e-08, -0.258819, -0.965926, 2207.09, 122.5, -98.5008)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 3.66113, 6)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform14" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(4.35451e-08, 0.707107, -0.707107, 1, -2.80967e-08, 3.34849e-08, 3.80971e-09, -0.707107, -0.707107, 2212.85, 123.5, -103.15)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 3.38184, 5)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform7" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(3.34849e-08, 0.573576, -0.819152, 1, 3.81011e-09, 4.35451e-08, 2.80972e-08, -0.819152, -0.573576, 2212.91, 91.5, -104.805)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 9, 3)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform9" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(1.74558e-08, -0.948119, -0.317917, 1, 3.8101e-09, 4.35451e-08, -4.00747e-08, -0.317917, 0.948119, 2205.67, 111.5, -123.258)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 8, 5)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform10" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(0.183013, -0.683013, 0.707107, 0.965926, 0.258819, 4.47035e-08, -0.183013, 0.683013, 0.707107, 2193.23, 112.616, -118.982)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 12.1768, 5)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform11" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(-0.0885214, 0.330366, 0.939693, 0.965926, 0.258819, 5.02362e-08, -0.24321, 0.907673, -0.34202, 2191.85, 118.38, -104.905)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 14, 5)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform8" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(0.17101, -0.376971, -0.910302, 0.866026, 0.498098, -0.0435779, 0.469846, -0.780892, 0.411646, 2213.45, 96.7697, -115.92)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 12, 3)
 script = ExtResource("2_4bvgn")
@@ -8847,7 +8813,7 @@ script = ExtResource("2_4bvgn")
 
 [node name="Hole" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar"]
 transform = Transform3D(-1.77636e-15, -1.19209e-07, 1, 1, -4.3711e-08, 3.81941e-16, 4.37114e-08, 1, 1.19209e-07, -9.5, -18, -0.500015)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 operation = 2
 use_collision = true
 size = Vector3(16, 3, 3)
@@ -8855,7 +8821,7 @@ script = ExtResource("2_4bvgn")
 
 [node name="Hole7" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar"]
 transform = Transform3D(-1.77636e-15, -1.19209e-07, 1, 1, -4.3711e-08, 3.81941e-16, 4.37114e-08, 1, 1.19209e-07, 5, -26.75, 0.499985)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 operation = 2
 use_collision = true
 size = Vector3(16.5, 9, 14)
@@ -8863,7 +8829,7 @@ script = ExtResource("2_4bvgn")
 
 [node name="Hole2" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar"]
 transform = Transform3D(-1.77636e-15, -1.19209e-07, 1, -8.74228e-08, -1, -1.19209e-07, 1, -8.74224e-08, -4.82886e-15, -8.5, -11, 2.99999)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 operation = 2
 use_collision = true
 size = Vector3(10, 3, 5)
@@ -8871,7 +8837,7 @@ script = ExtResource("2_4bvgn")
 
 [node name="Hole6" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar"]
 transform = Transform3D(0.866025, -1.19209e-07, 0.5, -1.4695e-07, -1, 1.61055e-08, 0.5, -8.74224e-08, -0.866025, -4.59937, -11, 7.70943)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 operation = 2
 use_collision = true
 size = Vector3(5.4, 3, 6)
@@ -8879,7 +8845,7 @@ script = ExtResource("2_4bvgn")
 
 [node name="Hole3" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar"]
 transform = Transform3D(-0.707107, -2.24767e-08, 0.707107, -8.74228e-08, -1, -1.19209e-07, 0.707107, -1.46111e-07, 0.707107, 4.41418, 7.5, -5.0858)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 operation = 2
 use_collision = true
 size = Vector3(11, 14, 4)
@@ -8887,7 +8853,7 @@ script = ExtResource("2_4bvgn")
 
 [node name="Hole9" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar"]
 transform = Transform3D(-0.374461, -7.77998e-08, 0.927243, -8.74228e-08, -1, -1.19209e-07, 0.927243, -1.25701e-07, 0.374461, 2.49756, 12.7048, -5.9252)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 operation = 2
 use_collision = true
 size = Vector3(11, 3.59045, 4.65381)
@@ -8895,7 +8861,7 @@ script = ExtResource("2_4bvgn")
 
 [node name="Hole4" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.59863, 32.9347, 0.320801)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 operation = 2
 use_collision = true
 size = Vector3(5.41809, 14.8058, 4)
@@ -8903,7 +8869,7 @@ script = ExtResource("2_4bvgn")
 
 [node name="Hole5" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.82458, 43.8698, 0.320801)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 operation = 2
 use_collision = true
 size = Vector3(12.9661, 8.1082, 6.79883)
@@ -8911,7 +8877,7 @@ script = ExtResource("2_4bvgn")
 
 [node name="Hole8" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar"]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 5.12415, 27.4741, 2.06685)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 operation = 2
 use_collision = true
 size = Vector3(11, 3.8824, 8)
@@ -9007,7 +8973,7 @@ script = ExtResource("2_4bvgn")
 
 [node name="Hole8" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar2"]
 transform = Transform3D(-1.80265e-15, -1.20973e-07, 1.0148, 1.0148, -4.4358e-08, 3.87611e-16, 4.43585e-08, 1.0148, 1.20973e-07, 6.08875, -27.3996, 0.507385)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 operation = 2
 use_collision = true
 size = Vector3(18, 10, 12)
@@ -9015,7 +8981,7 @@ script = ExtResource("2_4bvgn")
 
 [node name="Hole9" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar2"]
 transform = Transform3D(-1.80265e-15, -1.20973e-07, 1.0148, 1.0148, -4.4358e-08, 3.87619e-16, 4.43585e-08, 1.0148, 1.20973e-07, -0.683228, 80.3688, 1.5062)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 operation = 2
 use_collision = true
 size = Vector3(79.1387, 31.2395, 21.7827)
@@ -9665,14 +9631,14 @@ script = ExtResource("2_4bvgn")
 
 [node name="ElevatorPlatform" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -36.0907, 14.5, 69)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(7, 4, 1)
 script = ExtResource("2_4bvgn")
 
 [node name="ElevatorPlatform2" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
 transform = Transform3D(-1, -8.74228e-08, -3.82138e-15, 0, -4.37114e-08, 1, -8.74228e-08, 1, 4.37114e-08, -42.3451, 16.5, 70.5)
-material_override = ExtResource("2_short")
+material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(7.51001, 3, 1)
 script = ExtResource("2_4bvgn")
@@ -11640,7 +11606,7 @@ debug_color = Color(0, 0.6, 0.701961, 0.85098)
 
 [node name="FloatingPlat" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -513, 33, -122)
-material_override = ExtResource("3_5jpfr")
+material_override = ExtResource("128_y7vme")
 mesh = SubResource("CylinderMesh_ymun1")
 skeleton = NodePath("")
 
@@ -11678,7 +11644,7 @@ autoplay = "Spin"
 
 [node name="FloatingPlat2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -526, 29, -115)
-material_override = ExtResource("3_5jpfr")
+material_override = ExtResource("128_y7vme")
 mesh = SubResource("CylinderMesh_ymun1")
 skeleton = NodePath("")
 
@@ -11716,7 +11682,7 @@ autoplay = "Spin"
 
 [node name="FloatingPlat3" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -533, 29, -123)
-material_override = ExtResource("3_5jpfr")
+material_override = ExtResource("128_y7vme")
 mesh = SubResource("CylinderMesh_ymun1")
 skeleton = NodePath("")
 
@@ -11754,7 +11720,7 @@ autoplay = "Spin"
 
 [node name="FloatingPlat4" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -548, 26, -120)
-material_override = ExtResource("3_5jpfr")
+material_override = ExtResource("128_y7vme")
 mesh = SubResource("CylinderMesh_ymun1")
 skeleton = NodePath("")
 
@@ -11792,7 +11758,7 @@ autoplay = "Spin"
 
 [node name="FloatingPlat5" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -559.863, 26, -125.093)
-material_override = ExtResource("3_5jpfr")
+material_override = ExtResource("128_y7vme")
 mesh = SubResource("CylinderMesh_ymun1")
 skeleton = NodePath("")
 
@@ -12210,16 +12176,43 @@ surface_material_override/0 = SubResource("StandardMaterial3D_y6aia")
 transform = Transform3D(1, 0, 0, 0, 1, 0, -1.74794e-12, 0, 1, 0, -0.0500069, -0.400009)
 shape = SubResource("BoxShape3D_xicfl")
 
-[node name="FenceMiddle5" type="MeshInstance3D" parent="."]
+[node name="Fences" type="Node3D" parent="."]
+
+[node name="Pole" parent="Fences" instance=ExtResource("115_vbkhu")]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -341.414, 35.1539, -141.982)
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+
+[node name="Pole2" parent="Fences" instance=ExtResource("115_vbkhu")]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -343.594, 35.1539, -141.982)
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+
+[node name="Pole3" parent="Fences" instance=ExtResource("115_vbkhu")]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -345.817, 35.1539, -141.982)
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+
+[node name="Pole4" parent="Fences" instance=ExtResource("115_vbkhu")]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -348.024, 35.1539, -141.982)
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+
+[node name="Pole5" parent="Fences" instance=ExtResource("115_vbkhu")]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -350.244, 35.1539, -141.982)
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+
+[node name="Pole6" parent="Fences" instance=ExtResource("115_vbkhu")]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -352.407, 35.1539, -141.982)
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+
+[node name="FenceMiddle5" type="MeshInstance3D" parent="Fences"]
 transform = Transform3D(-3.02803e-08, 0, -0.704986, 0, 0.686468, 0, 0.692731, 0, -3.08159e-08, -354.696, 35.1325, -141.989)
 mesh = ExtResource("136_gwmb0")
-surface_material_override/0 = SubResource("StandardMaterial3D_y6aia")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1")
+surface_material_override/0 = SubResource("StandardMaterial3D_23djh")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="FenceMiddle5"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Fences/FenceMiddle5"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="FenceMiddle5/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fences/FenceMiddle5/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, -1.74794e-12, 0, 1, 0, -0.0500069, -0.400009)
-shape = SubResource("BoxShape3D_xicfl")
+shape = SubResource("BoxShape3D_qrjmn")
 
 [node name="FenceMiddle2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.72035e-08, 0, 0.622345, 0, 0.596695, 0, -0.622345, 0, -2.72035e-08, -57.5697, -19.9261, -35.4512)
@@ -12775,15 +12768,17 @@ transform = Transform3D(3.6383e-15, -8.58276e-08, 1.90419, 1.90419, 8.58276e-08,
 material_override = ExtResource("34_gg7m4")
 
 [node name="MelonSlime16" parent="." instance=ExtResource("33_gg7m4")]
-transform = Transform3D(2.80971e-08, -3.34849e-08, 1, -0.766044, -0.642788, 0, 0.642788, -0.766044, -4.37114e-08, -1117, 56.0673, -127.12)
+transform = Transform3D(2.80971e-08, -3.34849e-08, 1, -0.766044, -0.642788, 0, 0.642788, -0.766044, -4.37114e-08, -1116.99, 56.0673, -127.12)
 
 [node name="MelonSlime17" parent="." instance=ExtResource("33_gg7m4")]
-transform = Transform3D(2.80971e-08, -3.34849e-08, 1, -0.766044, -0.642788, 0, 0.642788, -0.766044, -4.37114e-08, -1117, 50.4525, -125.631)
+transform = Transform3D(2.80971e-08, -3.34849e-08, 1, -0.766044, -0.642788, 0, 0.642788, -0.766044, -4.37114e-08, -1116.97, 50.4525, -125.631)
 material_override = ExtResource("35_y7vme")
 
 [connection signal="area_entered" from="ROOMS/DeathTrigger2" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/DeathTrigger3" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/DeathTrigger4" to="." method="_on_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/DeathTrigger6" to="." method="_on_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/DeathTrigger5" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room2/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room4/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room5-6-7-8/DeathTrigger" to="." method="_on_death_trigger_area_entered"]

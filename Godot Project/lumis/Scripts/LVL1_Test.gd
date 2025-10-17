@@ -1,7 +1,7 @@
 extends Node3D
 
 @export var mango:CharacterBody3D
-@export var checkpointPos:Vector3 = Vector3(0,0,0)
+@export var checkpointPos:Vector3 = Vector3(0,-37,4)
 @export var uiAnimation:AnimationPlayer
 @export var uiAnimationPopUp:AnimationPlayer
 

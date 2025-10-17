@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://250m23mifrm0"]
 
-[ext_resource type="Texture2D" uid="uid://di631uw3qm1o" path="res://Textures/Other/Melon/FE68A243-BB88-47D5-AC53-7B9143C2950B.png" id="1_cvsfk"]
+[ext_resource type="Texture2D" uid="uid://dswvos6avceem" path="res://Textures/Other/Melon/6080EDF9-A8BC-45A3-868B-99E6BAC557B0.png" id="1_cvsfk"]
 
 [resource]
 transparency = 1
