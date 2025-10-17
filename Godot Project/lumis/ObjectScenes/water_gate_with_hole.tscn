@@ -8,11 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://cvcn33663ltun" path="res://Textures/0Universal/ObjTextures/WaterwayGateTexture/Waterway Gate_Pole_Metallic.png" id="6_65av4"]
 [ext_resource type="Texture2D" uid="uid://ckcxm4nu53nih" path="res://Textures/0Universal/ObjTextures/WaterwayGateTexture/Waterway Gate_Pole_Roughness.png" id="7_7qhpv"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krqce"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m0gra"]
 albedo_texture = ExtResource("3_jebqd")
 roughness_texture = ExtResource("4_rh502")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7dd6c"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e6jyi"]
 albedo_texture = ExtResource("5_d1os5")
 metallic = 1.0
 metallic_texture = ExtResource("6_65av4")
@@ -35,8 +35,8 @@ script = ExtResource("1_ymt2f")
 transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133698, -0.12603, -4.3015)
 mesh = ExtResource("2_ce34m")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1")
-surface_material_override/0 = SubResource("StandardMaterial3D_krqce")
-surface_material_override/1 = SubResource("StandardMaterial3D_7dd6c")
+surface_material_override/0 = SubResource("StandardMaterial3D_m0gra")
+surface_material_override/1 = SubResource("StandardMaterial3D_e6jyi")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WaterwayGate3"]
 script = ExtResource("1_ymt2f")

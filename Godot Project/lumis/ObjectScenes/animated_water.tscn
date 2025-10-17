@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://dded5b3bm4l4t"]
+
+[ext_resource type="Texture2D" uid="uid://bqog27rtg6lse" path="res://Textures/WaterWithBoarder/73B2DD26-B0A5-4FB2-B71D-CCF170136FE2.png" id="1_hoj51"]
+[ext_resource type="Texture2D" uid="uid://dvi04v1y5trcd" path="res://Textures/WaterWithBoarder/0473CE17-4237-4430-AD55-5C109E391D3C.png" id="2_xoekf"]
+[ext_resource type="Texture2D" uid="uid://dt84fy3f4nnlh" path="res://Textures/WaterWithBoarder/8714AE7D-83EE-4536-8635-7FED28A0D379.png" id="3_5rj1k"]
+[ext_resource type="Texture2D" uid="uid://b1jjjmyob40fk" path="res://Textures/WaterWithBoarder/E1A745A3-F982-4D1B-8597-1A65E7D9282C.png" id="4_bl8kt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xicfl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hoj51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_xoekf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5rj1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_bl8kt")
+}],
+"loop": true,
+"name": &"WaterAnimated",
+"speed": 8.0
+}]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D"]
+transform = Transform3D(0.489493, 0, 0, 0, -2.13964e-08, 0.489493, 0, -0.489493, -2.13964e-08, 0, 0, 0)
+modulate = Color(0.701961, 0.823529, 0.937255, 1)
+shaded = true
+sprite_frames = SubResource("SpriteFrames_xicfl")
+animation = &"WaterAnimated"
+autoplay = "WaterAnimated"
+frame_progress = 0.925776

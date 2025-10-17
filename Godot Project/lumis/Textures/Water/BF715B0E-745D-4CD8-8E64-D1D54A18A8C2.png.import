@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dt84fy3f4nnlh"
-path.s3tc="res://.godot/imported/8714AE7D-83EE-4536-8635-7FED28A0D379.png-9d7cc14f89fed4a2e8eacfd1e3e0d6a4.s3tc.ctex"
+uid="uid://ck6t4ssueoe46"
+path.s3tc="res://.godot/imported/BF715B0E-745D-4CD8-8E64-D1D54A18A8C2.png-b35fad799d84d5558c3bbab9fc853725.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/WaterWithBoarder/8714AE7D-83EE-4536-8635-7FED28A0D379.png"
-dest_files=["res://.godot/imported/8714AE7D-83EE-4536-8635-7FED28A0D379.png-9d7cc14f89fed4a2e8eacfd1e3e0d6a4.s3tc.ctex"]
+source_file="res://Textures/Water/BF715B0E-745D-4CD8-8E64-D1D54A18A8C2.png"
+dest_files=["res://.godot/imported/BF715B0E-745D-4CD8-8E64-D1D54A18A8C2.png-b35fad799d84d5558c3bbab9fc853725.s3tc.ctex"]
 
 [params]
 
