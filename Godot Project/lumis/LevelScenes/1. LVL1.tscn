@@ -2415,7 +2415,7 @@ transform = Transform3D(1, 0, 0, 1.13687e-13, 1, 0, 0, 0, 1, -8.64267e-07, 405, 
 mesh = SubResource("PlaneMesh_isujd")
 
 [node name="Mango" parent="." instance=ExtResource("1_xlif7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -37, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -581.668, 35.0014, -120.305)
 speed = 12.0
 acc = 5.0
 jumpVelocity = 40.0
