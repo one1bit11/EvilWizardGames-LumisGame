@@ -13562,7 +13562,7 @@ offset_bottom = 1086.0
 mouse_filter = 2
 theme_override_fonts/normal_font = ExtResource("135_qmb1d")
 theme_override_font_sizes/normal_font_size = 56
-text = "Right-Click: Stick to Walls"
+text = "Right-Click: Stick to Surfaces"
 vertical_alignment = 1
 
 [node name="4" type="Control" parent="UI/PopUps"]
