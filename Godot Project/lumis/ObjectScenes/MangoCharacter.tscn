@@ -1,6 +1,7 @@
-[gd_scene load_steps=20 format=3 uid="uid://d141gk5umir7l"]
+[gd_scene load_steps=21 format=3 uid="uid://d141gk5umir7l"]
 
 [ext_resource type="Script" uid="uid://crub8m7rjahjq" path="res://Scripts/mango_character_controller.gd" id="1_qccra"]
+[ext_resource type="AudioStream" uid="uid://dmr5vgvrofhak" path="res://Sounds/SFX/WaterSplash.ogg" id="2_nn7sr"]
 [ext_resource type="PackedScene" uid="uid://cmhvntnt2oi8r" path="res://Meshes/Other/Mango/MangoMeshFinal.tscn" id="2_qccra"]
 [ext_resource type="PackedScene" uid="uid://dgk7thgdty36y" path="res://Meshes/Other/Mango/MangoMeshTrueFinal.tscn" id="2_syw4e"]
 [ext_resource type="Material" uid="uid://bn3ea0tykiugl" path="res://Textures/Other/MangoEye.tres" id="3_shwng"]
@@ -72,6 +73,10 @@ rayArm = NodePath("RayArm")
 mangoEyeR = NodePath("RelativeUpwards/EyesParent/EyeParent2/Eyes/EyeR3D")
 mangoEyeL = NodePath("RelativeUpwards/EyesParent/EyeParent2/Eyes/EyeL3D")
 eyesNode = NodePath("RelativeUpwards/EyesParent/EyeParent2")
+
+[node name="WaterSplash" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_nn7sr")
+volume_db = -3.45
 
 [node name="Armature" parent="." instance=ExtResource("2_syw4e")]
 

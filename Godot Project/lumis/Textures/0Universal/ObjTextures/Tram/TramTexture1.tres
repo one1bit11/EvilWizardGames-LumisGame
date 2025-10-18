@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b48byn4hnxp0x" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Tram_Roughness.png" id="3_e2wd3"]
 
 [resource]
+albedo_color = Color(1, 1, 1, 0)
 albedo_texture = ExtResource("1_dl8ev")
 metallic = 1.0
 metallic_texture = ExtResource("2_0igpm")

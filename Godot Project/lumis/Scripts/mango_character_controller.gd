@@ -461,6 +461,8 @@ func change_eyes(newEyes: CompressedTexture2D) -> void:
 		#change_eyes(load("res://Textures/Other/MangoEyes/Squeeze.png"))
 
 func _ready() -> void:
+	SignalBus.connect("playSplash", play_splash)
+	
 	mangoShadow = $MangoShadowParent/MangoShadow
 	blink()
 	
@@ -483,3 +485,6 @@ func squeeze():
 	change_eyes(load("res://Textures/Other/MangoEyes/Squeeze.png"))
 	await get_tree().create_timer(randf_range(0.2, 0.6)).timeout
 	change_eyes(load("res://Textures/Other/MangoEyes/Open1.png"))
+
+func play_splash():
+	$WaterSplash.play()

@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cupw51i12ikj0" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Glass_Roughness.png" id="4_fbyla"]
 
 [resource]
+albedo_color = Color(1, 1, 1, 0)
 albedo_texture = ExtResource("1_400df")
 metallic = 1.0
 metallic_texture = ExtResource("3_132yw")

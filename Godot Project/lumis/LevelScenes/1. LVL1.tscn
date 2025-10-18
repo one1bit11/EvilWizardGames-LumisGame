@@ -1,4 +1,4 @@
-[gd_scene load_steps=444 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=448 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
@@ -244,6 +244,12 @@ size = Vector3(78, 0.8, 23)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cg17g"]
 size = Vector3(114, 0.8, 23)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jfbmj"]
+size = Vector3(54.3916, 0.8, 38.5298)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_md575"]
+size = Vector3(41.1721, 0.8, 26.4958)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_624ml"]
 size = Vector3(130, 0.8, 150)
@@ -1801,6 +1807,24 @@ size = Vector3(16.4, 8.7, 7.2)
 [sub_resource type="BoxShape3D" id="BoxShape3D_nj68h"]
 size = Vector3(17, 11, 7)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m0gra"]
+transparency = 3
+alpha_hash_scale = 1.0
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("154_xut2x")
+metallic = 1.0
+metallic_texture = ExtResource("155_4vjvv")
+roughness_texture = ExtResource("156_l55kd")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mwbbq"]
+albedo_color = Color(1, 1, 1, 0)
+albedo_texture = ExtResource("157_p2ke2")
+metallic = 1.0
+metallic_texture = ExtResource("159_wdr1j")
+roughness_texture = ExtResource("160_bl5l4")
+emission_enabled = true
+emission_texture = ExtResource("158_laawm")
+
 [sub_resource type="CylinderMesh" id="CylinderMesh_md575"]
 top_radius = 0.2
 bottom_radius = 0.2
@@ -2068,13 +2092,220 @@ uiAnimationPopUp = NodePath("UI/PopUps/AnimationPlayer")
 
 [node name="LVCity" parent="." instance=ExtResource("2_gwmb0")]
 
+[node name="OmniLight3D" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -658.69, 72.034, -115.722)
+light_color = Color(1, 0.908051, 0.875974, 1)
+light_energy = 100.0
+shadow_enabled = true
+omni_range = 161.937
+omni_attenuation = 1.09
+
+[node name="OmniLight3D19" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(0.985768, 0, 0.168111, 0, 1, 0, -0.168111, 0, 0.985768, -601.69, 72.034, 68.0367)
+light_color = Color(1, 0.84334, 0.78843, 1)
+light_energy = 100.0
+omni_range = 622.593
+omni_attenuation = 1.09
+
+[node name="OmniLight3D20" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(0.985768, 0, 0.168111, 0, 1, 0, -0.168111, 0, 0.985768, -1220.98, 72.034, 26.5162)
+light_color = Color(1, 0.675601, 0.560896, 1)
+light_energy = 100.0
+omni_range = 622.593
+omni_attenuation = 1.09
+
+[node name="OmniLight3D21" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(0.985768, 0, 0.168111, 0, 1, 0, -0.168111, 0, 0.985768, -973.279, 50.2569, -434.559)
+light_color = Color(1, 0.878819, 0.836449, 1)
+light_energy = 100.0
+omni_range = 622.593
+omni_attenuation = 1.09
+
+[node name="OmniLight3D22" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(0.985768, 0, 0.168111, 0, 1, 0, -0.168111, 0, 0.985768, -556.488, 89.4574, -375.172)
+light_color = Color(1, 0.930316, 0.863278, 1)
+light_energy = 100.0
+omni_range = 622.593
+omni_attenuation = 1.16
+
+[node name="OmniLight3D12" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -632.828, 27.9806, -106.753)
+light_color = Color(1, 0.809418, 0.663077, 1)
+light_energy = 16.0
+omni_range = 245.893
+omni_attenuation = 1.09
+
+[node name="OmniLight3D13" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -735.382, 21.5582, -101.003)
+light_color = Color(1, 0.809418, 0.663077, 1)
+light_energy = 27.065
+omni_range = 245.893
+omni_attenuation = 1.09
+
+[node name="OmniLight3D14" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -793.061, 20.8467, -101.84)
+light_color = Color(1, 0.809418, 0.663077, 1)
+light_energy = 8.605
+omni_range = 245.893
+omni_attenuation = 1.09
+
+[node name="OmniLight3D15" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -894.968, 41.0331, -105.849)
+light_color = Color(1, 0.809418, 0.663077, 1)
+light_energy = 8.605
+omni_range = 245.893
+omni_attenuation = 1.09
+
+[node name="OmniLight3D16" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1039.14, 27.0511, -96.4988)
+light_color = Color(1, 0.809418, 0.663077, 1)
+light_energy = 12.969
+omni_range = 245.893
+omni_attenuation = 1.09
+
+[node name="OmniLight3D17" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1095.15, 58.8441, -112.367)
+light_color = Color(1, 0.809418, 0.663077, 1)
+light_energy = 12.969
+omni_range = 245.893
+omni_attenuation = 1.09
+
+[node name="OmniLight3D18" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1160.41, 73.2529, -115.461)
+light_color = Color(1, 0.809418, 0.663077, 1)
+light_energy = 12.969
+omni_range = 245.893
+omni_attenuation = 1.09
+
+[node name="OmniLight3D9" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -791.505, 72.034, -115.722)
+light_color = Color(1, 0.878819, 0.836449, 1)
+light_energy = 100.0
+shadow_enabled = true
+omni_range = 161.937
+omni_attenuation = 1.09
+
+[node name="OmniLight3D10" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -895.866, 72.034, -115.722)
+light_color = Color(1, 0.855689, 0.745575, 1)
+light_energy = 100.0
+shadow_enabled = true
+omni_range = 161.937
+omni_attenuation = 1.09
+
+[node name="OmniLight3D11" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1007.91, 78.652, -115.722)
+light_color = Color(1, 0.841282, 0.803862, 1)
+light_energy = 100.0
+shadow_enabled = true
+omni_range = 161.937
+omni_attenuation = 1.09
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -404.445, 71.185, -115.722)
+light_color = Color(1, 0.7756, 0.64914, 1)
+light_energy = 9.505
+omni_range = 161.845
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -496.835, 71.185, -115.722)
+light_color = Color(1, 0.867045, 0.820518, 1)
+light_energy = 9.505
+omni_range = 161.845
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1172.83, 76.7284, -118.141)
+light_color = Color(1, 0.960033, 0.946155, 1)
+light_energy = 44.75
+omni_range = 161.845
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1260.86, 78.2326, -118.141)
+light_color = Color(1, 0.930316, 0.863278, 1)
+light_energy = 25.0
+omni_range = 161.845
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1379.14, 73.7009, -118.141)
+light_color = Color(1, 0.930316, 0.863278, 1)
+light_energy = 25.0
+omni_range = 161.845
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1327.39, 79.5275, -183.513)
+light_color = Color(1, 0.930316, 0.863278, 1)
+light_energy = 25.0
+omni_range = 161.845
+omni_attenuation = 1.16
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1327.39, 76.644, -42.0871)
+light_color = Color(1, 0.930316, 0.863278, 1)
+light_energy = 25.0
+omni_range = 161.845
+omni_attenuation = 1.16
+
+[node name="OmniLight3D23" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1127.06, 49.3699, -117.724)
+light_color = Color(0.900747, 0.837172, 0.783396, 1)
+light_energy = 13.698
+light_negative = true
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 58.76
+
+[node name="OmniLight3D24" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1127.06, 56.5283, -117.724)
+light_color = Color(0.900747, 0.837172, 0.783396, 1)
+light_energy = 13.698
+light_negative = true
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 58.76
+
+[node name="OmniLight3D25" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -684.264, -116.45, -99.0757)
+light_color = Color(0.900747, 0.837172, 0.783396, 1)
+light_energy = 15.275
+light_negative = true
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 687.902
+
+[node name="OmniLight3D26" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -684.264, -69.3371, -99.0757)
+light_color = Color(0.900747, 0.837172, 0.783396, 1)
+light_energy = 15.275
+light_negative = true
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 687.902
+
+[node name="OmniLight3D27" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -732.31, -65.4507, -157.281)
+light_color = Color(0.900747, 0.837172, 0.783396, 1)
+light_energy = 15.275
+light_negative = true
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 687.902
+
+[node name="OmniLight3D28" type="OmniLight3D" parent="LVCity"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -732.31, -126.073, -157.281)
+light_color = Color(0.900747, 0.837172, 0.783396, 1)
+light_energy = 15.275
+light_negative = true
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 687.902
+
 [node name="LVCityBoarder" type="Node3D" parent="."]
 
 [node name="CityWalls" type="CSGCylinder3D" parent="LVCityBoarder"]
 transform = Transform3D(1.6, 0, 0, 0, 1.6, 0, 0, 0, 1.6, -863.112, 2.69386, -121.525)
 material_override = ExtResource("107_pwcyy")
 use_collision = true
-radius = 182.534
+radius = 182.654
 height = 22.0
 sides = 64
 script = ExtResource("2_4bvgn")
@@ -2109,6 +2340,27 @@ nonstick = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 157.125, -4.75, 0.499992)
 operation = 2
 size = Vector3(10, 3, 58)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="LVCityBoarder/CityWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 111.269, -72.25, 8.3)
+operation = 2
+size = Vector3(13.7, 138, 23.4)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="LVCityBoarder/CityWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 116.107, -65.1646, 4.11913)
+operation = 2
+size = Vector3(25.9916, 123.829, 33.7933)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="LVCityBoarder/CityWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.8181, -65.1646, -24.6149)
+operation = 2
+size = Vector3(16.7445, 123.829, 18.9294)
 script = ExtResource("2_4bvgn")
 nonstick = true
 
@@ -2415,7 +2667,7 @@ transform = Transform3D(1, 0, 0, 1.13687e-13, 1, 0, 0, 0, 1, -8.64267e-07, 405, 
 mesh = SubResource("PlaneMesh_isujd")
 
 [node name="Mango" parent="." instance=ExtResource("1_xlif7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -581.668, 35.0014, -120.305)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -37.0324, 4)
 speed = 12.0
 acc = 5.0
 jumpVelocity = 40.0
@@ -2556,6 +2808,7 @@ mesh = SubResource("PlaneMesh_8osxr")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 4.42377)
 light_color = Color(0.885997, 0.799122, 0.792982, 1)
 light_energy = 1.36
+light_bake_mode = 1
 shadow_enabled = true
 omni_range = 30.294
 
@@ -2563,6 +2816,7 @@ omni_range = 30.294
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, -3.57623)
 light_color = Color(0.502544, 0.358904, 0.3509, 1)
 light_energy = 1.36
+light_bake_mode = 1
 omni_range = 30.294
 
 [node name="Wall3" type="CSGBox3D" parent="ROOMS/Room1"]
@@ -2902,6 +3156,20 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -708, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, -0.4, 0.5)
 shape = SubResource("BoxShape3D_cg17g")
 
+[node name="DeathTrigger7" type="Area3D" parent="ROOMS"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -681.096, -5.70001, -109.855)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/DeathTrigger7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.675293, -14.3754, -2.28729)
+shape = SubResource("BoxShape3D_jfbmj")
+
+[node name="DeathTrigger8" type="Area3D" parent="ROOMS"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -733.114, -5.70001, -159.858)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/DeathTrigger8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.26917, -14.3754, -2.28729)
+shape = SubResource("BoxShape3D_md575")
+
 [node name="DeathTrigger5" type="Area3D" parent="ROOMS"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -893.799, -5.7, -126.7)
 
@@ -2982,10 +3250,10 @@ use_collision = true
 size = Vector3(50, 2, 59)
 script = ExtResource("2_4bvgn")
 
-[node name="DeathTrigger" type="Area3D" parent="ROOMS/Room2"]
+[node name="WDeathTrigger" type="Area3D" parent="ROOMS/Room2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67, -1, -47)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/DeathTrigger"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room2/WDeathTrigger"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.4, -3.5)
 shape = SubResource("BoxShape3D_vigon")
 
@@ -3376,6 +3644,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_46oo1")
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room2/Lantern"]
 transform = Transform3D(0.175507, 0, -0.162475, 0, 0.239167, 0, 0.162475, 0, 0.175507, 0.00233269, 0.171454, -0.0313478)
 light_color = Color(1, 0.823252, 0.59582, 1)
+light_bake_mode = 1
 omni_range = 12.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/Lantern"]
@@ -3391,12 +3660,14 @@ surface_material_override/0 = SubResource("StandardMaterial3D_wevsh")
 [node name="OmniLight3D" type="OmniLight3D" parent="ROOMS/Room2/Lantern2"]
 transform = Transform3D(0.239167, 0, -2.23517e-08, 0, 0.239167, 0, 2.23517e-08, 0, 0.239167, 0, 0.239167, 0)
 light_color = Color(1, 0.823252, 0.59582, 1)
+light_bake_mode = 1
 omni_range = 12.0
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room2/Lantern2"]
 transform = Transform3D(0.239167, 0, -7.45058e-08, 0, 0.239167, 0, 7.45058e-08, 0, 0.239167, -0.803464, 1.19583, -1.00661)
 light_color = Color(1, 0.823252, 0.59582, 1)
 light_energy = 0.745
+light_bake_mode = 1
 omni_range = 12.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/Lantern2"]
@@ -3848,24 +4119,6 @@ material_override = ExtResource("7_yv5qi")
 mesh = ExtResource("19_u72js")
 skeleton = NodePath("../../../../../..")
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0, -66)
-stream = ExtResource("96_6kctm")
-unit_size = 12.0
-autoplay = true
-max_distance = 30.0
-panning_strength = 0.5
-parameters/looping = true
-
-[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0, -35)
-stream = ExtResource("96_6kctm")
-unit_size = 12.0
-autoplay = true
-max_distance = 50.0
-panning_strength = 0.5
-parameters/looping = true
-
 [node name="Safety Rail" type="Node3D" parent="ROOMS/Room2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.4458, 3.64352, -39.9202)
 
@@ -3904,6 +4157,422 @@ skeleton = NodePath("../../..")
 [node name="Pole9" parent="ROOMS/Room2/Safety Rail" instance=ExtResource("115_vbkhu")]
 transform = Transform3D(-2.6098e-08, 0, -0.597053, 0, 0.597053, 0, 0.597053, 0, -2.6098e-08, -14.1344, 14.4386, 4.46748)
 skeleton = NodePath("../../..")
+
+[node name="RiverSounds" type="Node3D" parent="ROOMS/Room2"]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0, -66)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0, -35)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="RiverSounds2" type="Node3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -176.265, 17.2774, -52.5927)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35881, 0, -10.8103)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35881, 0, 12.1529)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="RiverSounds3" type="Node3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -216.037, 18.4724, -130.121)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35881, 0, -10.8103)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35881, 0, 12.1529)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="RiverSounds4" type="Node3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -232.023, 2.56283, -182.449)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35881, 0, -3.59392)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35881, 0, 12.1529)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="RiverSounds5" type="Node3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -250.487, 2.56283, -182.449)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35881, 0, -3.59392)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35881, 0, 12.1529)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="RiverSounds6" type="Node3D" parent="ROOMS/Room2"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -317.05, 33.5404, -134.714)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35881, 0, -9.23956)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35881, 0, 21.3803)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="RiverSounds8" type="Node3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -611.993, 33.8658, -125.442)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, -15.8844)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 29.6753)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D3" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 5.70208)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="RiverSounds9" type="Node3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -708.41, 33.8658, -139.983)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, -15.8844)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 84.6
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 29.6753)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 84.6
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D4" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 53.5272)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 84.6
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D5" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, -37.0786)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 84.6
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D3" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 5.70208)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 84.6
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="RiverSounds10" type="Node3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -849.34, 33.8658, -118.038)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, -15.8844)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 29.6753)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D4" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 53.5272)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D5" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, -37.0786)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D3" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 5.70208)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="RiverSounds11" type="Node3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -883.148, 33.8658, -118.038)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, -15.8844)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 29.6753)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D4" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 53.5272)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D5" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, -37.0786)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D3" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 5.70208)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="RiverSounds12" type="Node3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -921.488, 33.8658, -118.038)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, -15.8844)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 29.6753)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D4" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 53.5272)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D5" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, -37.0786)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D3" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 5.70208)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="RiverSounds13" type="Node3D" parent="ROOMS/Room2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -958.981, 33.8658, -118.038)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, -15.8844)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 29.6753)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D4" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 53.5272)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D5" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, -37.0786)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D3" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.358826, 0, 5.70208)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 67.3
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="RiverSounds7" type="Node3D" parent="ROOMS/Room2"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -317.05, 33.5404, -108.465)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35881, 0, -11.3204)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ROOMS/Room2/RiverSounds7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35881, 0, 19.9816)
+stream = ExtResource("96_6kctm")
+unit_size = 22.95
+autoplay = true
+max_distance = 40.75
+panning_strength = 0.5
+parameters/looping = true
 
 [node name="Safety Rail2" type="Node3D" parent="ROOMS/Room2"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -45.4458, -11.3565, -24.9202)
@@ -4217,6 +4886,7 @@ surface_material_override/1 = SubResource("StandardMaterial3D_38rek")
 transform = Transform3D(1, 0, 3.17637e-22, 0, 1, -1.77636e-15, 3.17637e-22, 0, 1, 7.12645, 2.75749, -3.20001)
 light_color = Color(1, 0.789845, 0.648899, 1)
 light_energy = 2.0
+light_bake_mode = 1
 shadow_enabled = true
 omni_range = 15.0
 
@@ -4456,6 +5126,7 @@ script = ExtResource("2_4bvgn")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -113.5, 21.1, -39.1)
 light_color = Color(0.975543, 0.849912, 0.773513, 1)
 light_energy = 6.138
+light_bake_mode = 1
 shadow_enabled = true
 omni_range = 33.644
 
@@ -4589,6 +5260,7 @@ shape = SubResource("ConvexPolygonShape3D_yv5qi")
 [node name="OmniLight3D" type="OmniLight3D" parent="ROOMS/Room3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -104.422, 11.7358, -44.1808)
 light_color = Color(1, 0.788235, 0.443137, 1)
+light_bake_mode = 1
 
 [node name="Lantern" parent="ROOMS/Room3" instance=ExtResource("37_tu4hv")]
 transform = Transform3D(4.18118, 0, 0, 0, 4.18118, 0, 0, 0, 4.18118, -104.422, 9.2706, -44.1808)
@@ -4596,6 +5268,7 @@ transform = Transform3D(4.18118, 0, 0, 0, 4.18118, 0, 0, 0, 4.18118, -104.422, 9
 [node name="OmniLight3D" type="OmniLight3D" parent="ROOMS/Room3/Lantern"]
 transform = Transform3D(0.239167, 0, 0, 0, 0.239167, 0, 0, 0, 0.239167, 0, 0.334834, 0)
 light_color = Color(1, 0.775958, 0.401658, 1)
+light_bake_mode = 1
 
 [node name="pipe_bigandsmall" type="Node3D" parent="ROOMS/Room3"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -106.383, 9.13661, -24.2815)
@@ -5305,15 +5978,18 @@ skeleton = NodePath("../../../..")
 transform = Transform3D(-4.39247e-08, 2.12077e-11, 1, 0.0989203, 0.995095, 4.32394e-09, -0.995095, 0.0989203, -4.37114e-08, -163.156, -14.9971, -41.1321)
 light_color = Color(1, 0.821336, 0.539486, 1)
 light_energy = 1.33
+light_bake_mode = 1
 omni_range = 18.2839
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room4"]
 transform = Transform3D(-4.39247e-08, 2.12077e-11, 1, 0.0989203, 0.995095, 4.32394e-09, -0.995095, 0.0989203, -4.37114e-08, -163.862, -4.94937, -79.425)
 light_color = Color(1, 0.788235, 0.443137, 1)
+light_bake_mode = 1
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Room4"]
 transform = Transform3D(-4.39247e-08, 2.12077e-11, 1, 0.0989203, 0.995095, 4.32394e-09, -0.995095, 0.0989203, -4.37114e-08, -158.568, -7.94328, -79.425)
 light_color = Color(1, 0.788235, 0.443137, 1)
+light_bake_mode = 1
 
 [node name="lantern_on_hook" parent="ROOMS/Room4" instance=ExtResource("105_tkodh")]
 transform = Transform3D(-1.83657e-07, 8.86723e-11, 4.18118, 0.413604, 4.16067, 1.80792e-08, -4.16067, 0.413604, -1.82765e-07, -163.156, -15.5632, -39.5746)
@@ -5360,12 +6036,14 @@ shape = SubResource("ConvexPolygonShape3D_shj74")
 transform = Transform3D(0.239167, -2.22045e-16, 8.88178e-16, 2.22045e-16, 0.239167, -1.06212e-16, -8.88178e-16, 1.32349e-23, 0.239167, 0.0487652, -0.46075, 0)
 light_color = Color(1, 0.801303, 0.531043, 1)
 light_energy = 1.935
+light_bake_mode = 1
 omni_range = 9.915
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room4/lantern_on_hook_ceiling/Lantern"]
 transform = Transform3D(0.239167, -4.44089e-16, 8.88178e-16, 4.44089e-16, 0.239167, -1.06212e-16, -8.88178e-16, 6.61744e-24, 0.239167, 0.311102, -1.50278, 0)
 light_color = Color(1, 0.801303, 0.531043, 1)
 light_energy = 2.065
+light_bake_mode = 1
 omni_range = 10.35
 
 [node name="lantern_on_hook_ceiling3" type="Node3D" parent="ROOMS/Room4"]
@@ -5404,13 +6082,15 @@ shape = SubResource("ConvexPolygonShape3D_shj74")
 transform = Transform3D(0.239168, -2.22045e-16, -2.39808e-14, 2.22045e-16, 0.239168, -1.06212e-16, -8.88178e-16, 6.61744e-24, 0.239167, 0.000930786, -0.221582, 0)
 light_color = Color(1, 0.801303, 0.531043, 1)
 light_energy = 1.935
-shadow_enabled = true
+light_bake_mode = 1
 omni_range = 9.915
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room4/lantern_on_hook_ceiling3/Lantern"]
-transform = Transform3D(0.239168, -4.44089e-16, -2.39808e-14, 4.44089e-16, 0.239168, -1.06212e-16, -8.88178e-16, 0, 0.239167, 0.0240974, -0.809194, 0)
+transform = Transform3D(0.239168, -4.44089e-16, -2.39808e-14, 4.44089e-16, 0.239168, -1.06212e-16, -8.88178e-16, 0, 0.239167, 0.0240955, -0.596988, 0)
 light_color = Color(1, 0.851801, 0.656054, 1)
 light_energy = 2.065
+light_bake_mode = 1
+shadow_enabled = true
 omni_range = 10.35
 
 [node name="lantern_on_hook_ceiling2" type="Node3D" parent="ROOMS/Room4"]
@@ -5449,6 +6129,7 @@ shape = SubResource("ConvexPolygonShape3D_shj74")
 transform = Transform3D(0.239168, -2.22045e-16, -2.39808e-14, 2.22045e-16, 0.239168, -1.06212e-16, -8.88178e-16, 6.61744e-24, 0.239167, -0.0135431, -0.257038, 4.19095e-09)
 light_color = Color(1, 0.932568, 0.845677, 1)
 light_energy = 2.105
+light_bake_mode = 1
 shadow_enabled = true
 omni_range = 12.315
 
@@ -5456,6 +6137,7 @@ omni_range = 12.315
 transform = Transform3D(0.239168, -4.44089e-16, -2.39808e-14, 4.44089e-16, 0.239168, -1.06212e-16, -8.88178e-16, 0, 0.239167, 0.311102, -1.05794, 0)
 light_color = Color(1, 0.801303, 0.531043, 1)
 light_energy = 2.065
+light_bake_mode = 1
 omni_range = 10.35
 
 [node name="safety rails" type="Node3D" parent="ROOMS/Room4"]
@@ -5649,10 +6331,10 @@ surface_material_override/1 = ExtResource("107_ulxk5")
 transform = Transform3D(0.0243145, 0, -3.49991, 0, 3.5, 0, 3.49991, 0, 0.0243145, -157.745, -20.3646, -61.9265)
 surface_material_override/1 = ExtResource("107_ulxk5")
 
-[node name="DeathTrigger" type="Area3D" parent="ROOMS/Room4"]
+[node name="WDeathTrigger" type="Area3D" parent="ROOMS/Room4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -179, -21, -49)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room4/DeathTrigger"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room4/WDeathTrigger"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -1.6, -3.5)
 shape = SubResource("BoxShape3D_jjhv0")
 
@@ -5750,10 +6432,10 @@ size = Vector3(2.24786, 24.0277, 24)
 script = ExtResource("2_4bvgn")
 nonstick = true
 
-[node name="DeathTrigger" type="Area3D" parent="ROOMS/Room5-6-7-8"]
+[node name="WDeathTrigger" type="Area3D" parent="ROOMS/Room5-6-7-8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -224, -17, -121)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room5-6-7-8/DeathTrigger"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room5-6-7-8/WDeathTrigger"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -1.4, -3.5)
 shape = SubResource("BoxShape3D_8sk1i")
 debug_color = Color(1, 0.272294, 0.46479, 0.42)
@@ -5934,14 +6616,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -40, -7)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218, 38.1534, -110.435)
 light_color = Color(0.951432, 0.837517, 0.795496, 1)
 light_energy = 4.565
-shadow_enabled = true
+light_bake_mode = 1
 omni_range = 24.0
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="ROOMS/Room5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218, 38.1534, -127.96)
 light_color = Color(0.914115, 0.703117, 0.57143, 1)
 light_energy = 4.245
-shadow_enabled = true
+light_bake_mode = 1
 omni_range = 24.0
 
 [node name="Water" type="CSGBox3D" parent="ROOMS/Room5"]
@@ -6049,10 +6731,12 @@ parameters/looping = true
 [node name="OmniLight3D" type="OmniLight3D" parent="ROOMS/Room5"]
 transform = Transform3D(-0.995056, 0.0993198, -8.74228e-08, 0.0993198, 0.995056, 7.71652e-18, 8.69905e-08, -8.68281e-09, -1, -213.07, 37.2808, -134.165)
 light_color = Color(1, 0.788235, 0.443137, 1)
+light_bake_mode = 1
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room5"]
 transform = Transform3D(-0.995056, 0.0993198, -8.74228e-08, 0.0993198, 0.995056, 7.71652e-18, 8.69905e-08, -8.68281e-09, -1, -223.99, 37.2808, -134.165)
 light_color = Color(1, 0.788235, 0.443137, 1)
+light_bake_mode = 1
 
 [node name="lantern_on_hook" parent="ROOMS/Room5" instance=ExtResource("105_tkodh")]
 transform = Transform3D(-4.1605, 0.415273, -3.6553e-07, 0.415273, 4.1605, 0, 3.63723e-07, -3.63044e-08, -4.18118, -213.043, 36.7049, -134.165)
@@ -6265,6 +6949,7 @@ nonstick = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -222.303, 33.2751, -173)
 light_color = Color(0.961533, 0.865701, 0.806986, 1)
 light_energy = 7.675
+light_bake_mode = 1
 shadow_enabled = true
 shadow_bias = 0.2
 shadow_blur = 2.0
@@ -6274,6 +6959,7 @@ omni_range = 24.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -263.158, 33.2751, -173)
 light_color = Color(0.986614, 0.902853, 0.856233, 1)
 light_energy = 7.675
+light_bake_mode = 1
 shadow_enabled = true
 shadow_bias = 0.2
 shadow_blur = 2.0
@@ -6640,13 +7326,15 @@ surface_material_override/1 = SubResource("StandardMaterial3D_38rek")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 2.76446, -3.20001)
 light_color = Color(1, 0.894404, 0.767242, 1)
 light_energy = 2.0
-shadow_enabled = true
+light_bake_mode = 1
 omni_range = 15.0
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, -7.64312, -3.20001)
 light_color = Color(1, 0.894404, 0.767242, 1)
 light_energy = 1.225
+light_bake_mode = 1
+shadow_enabled = true
 omni_range = 15.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights"]
@@ -6669,6 +7357,7 @@ surface_material_override/1 = SubResource("StandardMaterial3D_38rek")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.95538, 0.478058, -3.2)
 light_color = Color(1, 0.937272, 0.862161, 1)
 light_energy = 5.025
+light_bake_mode = 1
 shadow_enabled = true
 omni_range = 35.8342
 
@@ -6676,19 +7365,21 @@ omni_range = 35.8342
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.95538, 0.477997, 7.06071)
 light_color = Color(1, 0.782577, 0.504587, 1)
 light_energy = 3.605
+light_bake_mode = 1
 omni_range = 27.714
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.95538, 0.477966, -14.0074)
 light_color = Color(1, 0.782577, 0.504587, 1)
 light_energy = 3.605
+light_bake_mode = 1
 omni_range = 27.714
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19195, 4.42355, -3.2)
 light_color = Color(1, 0.716901, 0.322498, 1)
 light_energy = 3.015
-shadow_enabled = true
+light_bake_mode = 1
 omni_range = 11.559
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights2"]
@@ -6706,7 +7397,8 @@ surface_material_override/1 = SubResource("StandardMaterial3D_38rek")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19195, 4.42355, -3.2)
 light_color = Color(1, 0.716901, 0.322498, 1)
 light_energy = 3.015
-omni_range = 11.559
+light_bake_mode = 1
+omni_range = 6.67616
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights4"]
 
@@ -6723,19 +7415,21 @@ surface_material_override/1 = SubResource("StandardMaterial3D_38rek")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19195, 4.42355, -3.2)
 light_color = Color(1, 0.716901, 0.322498, 1)
 light_energy = 3.015
+light_bake_mode = 1
 omni_range = 11.559
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights5"]
 transform = Transform3D(1, 0, 2.22126e-16, -2.66383e-33, 1, 5.9984e-18, -1.58819e-22, 0, 1, -2.22178, 2.52948, -3.2)
 light_color = Color(1, 0.833924, 0.628401, 1)
 light_energy = 3.91
-shadow_enabled = true
+light_bake_mode = 1
 omni_range = 12.704
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights5"]
 transform = Transform3D(1, 0, 2.22126e-16, -2.66383e-33, 1, 5.9984e-18, -4.23516e-22, 0, 1, -20.4412, 3.02197, -3.38157)
 light_color = Color(1, 0.833924, 0.628401, 1)
 light_energy = 3.91
+light_bake_mode = 1
 shadow_enabled = true
 omni_range = 12.704
 
@@ -6754,12 +7448,14 @@ surface_material_override/1 = SubResource("StandardMaterial3D_38rek")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19195, 4.42355, -3.2)
 light_color = Color(1, 0.716901, 0.322498, 1)
 light_energy = 3.015
+light_bake_mode = 1
 omni_range = 11.559
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights6"]
 transform = Transform3D(1, 2.06389e-16, 2.22045e-16, 2.06389e-16, 1, 0, 0, 0, 1, -0.249519, 1.47583, -3.2)
 light_color = Color(1, 0.833924, 0.628401, 1)
 light_energy = 3.91
+light_bake_mode = 1
 omni_range = 12.704
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights6"]
@@ -6777,12 +7473,15 @@ surface_material_override/1 = SubResource("StandardMaterial3D_38rek")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19195, 4.42355, -3.2)
 light_color = Color(1, 0.716901, 0.322498, 1)
 light_energy = 3.015
+light_bake_mode = 1
 omni_range = 11.559
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights7"]
 transform = Transform3D(1, 8.25555e-16, 0, 8.25555e-16, 1, 0, 0, 0, 1, 0.381744, 0.912964, -3.2)
 light_color = Color(1, 0.833924, 0.628401, 1)
 light_energy = 9.405
+light_bake_mode = 1
+shadow_enabled = true
 omni_range = 52.869
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights7"]
@@ -6800,12 +7499,15 @@ surface_material_override/1 = SubResource("StandardMaterial3D_38rek")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19195, 4.42355, -3.2)
 light_color = Color(1, 0.716901, 0.322498, 1)
 light_energy = 3.015
+light_bake_mode = 1
 omni_range = 11.559
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights8"]
 transform = Transform3D(1, 8.25555e-16, 0, 8.25555e-16, 1, 0, 0, 0, 1, -2.3636, 0.477539, -3.2)
 light_color = Color(1, 0.833924, 0.628401, 1)
 light_energy = 14.253
+light_bake_mode = 1
+shadow_enabled = true
 omni_range = 87.736
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights8"]
@@ -6818,7 +7520,7 @@ transform = Transform3D(0.999635, -0.0270144, 7.64274e-15, 0.0270144, 0.999635, 
 light_color = Color(1, 0.953107, 0.897131, 1)
 light_energy = 9.661
 light_negative = true
-shadow_enabled = true
+light_bake_mode = 1
 omni_range = 432.414
 omni_attenuation = 2.212
 
@@ -6828,23 +7530,32 @@ mesh = ExtResource("133_xicfl")
 surface_material_override/0 = SubResource("StandardMaterial3D_kjiab")
 surface_material_override/1 = SubResource("StandardMaterial3D_38rek")
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights9"]
-transform = Transform3D(1, 8.25555e-16, 0, 8.25555e-16, 1, 0, 0, 0, 1, 5.08508, 0.476196, -3.2)
-light_color = Color(1, 0.716901, 0.322498, 1)
-light_energy = 3.015
-omni_range = 11.559
-
 [node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights9"]
-transform = Transform3D(1, 8.25555e-16, 0, 8.25555e-16, 1, 0, 0, 0, 1, 3.93494, -11.4837, -3.2)
-light_color = Color(1, 0.833924, 0.628401, 1)
+transform = Transform3D(1, 8.2556e-16, -1.68754e-14, 8.25558e-16, 1, -1.7053e-13, 0, 0, 1, 5.33081, 0.358795, -3.19997)
+light_color = Color(1, 0.878159, 0.730009, 1)
 light_energy = 16.0
-shadow_enabled = true
-omni_range = 48.726
+light_bake_mode = 1
+omni_range = 9.282
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights9"]
+transform = Transform3D(1, 8.2556e-16, -1.68754e-14, 8.25558e-16, 1, -1.7053e-13, 0, 0, 1, 5.4082, 3.22304, -3.19996)
+light_color = Color(1, 0.878159, 0.730009, 1)
+light_energy = 10.667
+light_bake_mode = 1
+omni_range = 9.282
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights9"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights9/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_m0gra")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights9"]
+transform = Transform3D(0.99927, -0.0270046, 0.0270144, -0.0270046, 0.000729736, 0.999635, -0.0270144, -0.999635, -4.31697e-08, 5.9115, 5.53412, -3.14825)
+light_color = Color(0.999999, 0.892789, 0.780857, 1)
+light_energy = 34.385
+shadow_enabled = true
+spot_range = 54.787
+spot_angle = 47.63
 
 [node name="CeilingLights3" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner" instance=ExtResource("133_fof7x")]
 transform = Transform3D(0, -2.98023e-08, 1, 0.999635, -0.0270144, 0, 0.0270144, 0.999635, 2.98023e-08, -110.44, 38.1461, 69.5823)
@@ -9186,6 +9897,7 @@ script = ExtResource("2_4bvgn")
 [node name="OmniLight3D" type="OmniLight3D" parent="ROOMS/Room11/UnusedPipes"]
 transform = Transform3D(0.302387, 0, -0.953185, 0, 1, 0, 0.953185, 0, 0.302387, -474.783, 28.4204, -125.887)
 light_color = Color(1, 0.788235, 0.443137, 1)
+light_bake_mode = 1
 
 [node name="Lantern" parent="ROOMS/Room11/UnusedPipes" instance=ExtResource("37_tu4hv")]
 transform = Transform3D(1.26433, 0, -3.98544, 0, 4.18118, 0, 3.98544, 0, 1.26433, -474.82, 27.8464, -125.887)
@@ -9204,11 +9916,32 @@ use_collision = true
 size = Vector3(1, 9, 3)
 script = ExtResource("2_4bvgn")
 
+[node name="WoodPlatform5" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(-0.0438101, 0.510017, -0.859048, 0.722695, 0.60987, 0.325224, 0.689778, -0.606582, -0.395305, 2205.4, 66.8149, -119.514)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(1, 9, 3)
+script = ExtResource("2_4bvgn")
+
 [node name="WoodPlatform3" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(-4.2222e-08, -0.965926, 0.258819, 1, -4.3711e-08, -2.37987e-16, 1.13133e-08, 0.258819, 0.965926, 2198.89, 70.5, -122.354)
 material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 9, 4)
+script = ExtResource("2_4bvgn")
+
+[node name="WoodPlatform17" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(0.183013, -0.183013, -0.965926, 0.707107, 0.707107, -4.47035e-08, 0.683013, -0.683013, 0.258819, 2200.79, 68.2909, -120.69)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(1, 6.21338, 2.24219)
+script = ExtResource("2_4bvgn")
+
+[node name="WoodPlatform18" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(0.255465, -0.255466, -0.932456, 0.707107, 0.707107, -4.62267e-08, 0.659346, -0.659346, 0.361283, 2197.41, 68.2909, -120.264)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(1, 6.21338, 2.24219)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform4" type="CSGBox3D" parent="ROOMS/Room14"]
@@ -9218,11 +9951,25 @@ use_collision = true
 size = Vector3(1, 12, 4)
 script = ExtResource("2_4bvgn")
 
-[node name="WoodPlatform6" type="CSGBox3D" parent="ROOMS/Room14"]
-transform = Transform3D(3.09086e-08, 0.996195, -0.0871556, 1, -2.80967e-08, 3.34849e-08, 3.09086e-08, -0.0871556, -0.996195, 2205.04, 89.5, -97.9707)
+[node name="WoodPlatform19" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(0.965291, -1.15523e-07, 0.261178, -8.74228e-08, -1, -1.19209e-07, 0.261178, 9.22385e-08, -0.965291, 2189.94, 68.3981, -112.863)
 material_override = ExtResource("128_y7vme")
 use_collision = true
-size = Vector3(1, 5.1, 6)
+size = Vector3(0.624146, 8.4502, 2.04321)
+script = ExtResource("2_4bvgn")
+
+[node name="WoodPlatform20" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(0.963069, -5.2096e-08, -0.269256, -8.74228e-08, -1, -1.19209e-07, -0.269256, 1.38345e-07, -0.963069, 2189.91, 68.3981, -108.783)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.624146, 8.4502, 2.04321)
+script = ExtResource("2_4bvgn")
+
+[node name="WoodPlatform6" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(3.09086e-08, 0.996195, -0.0871556, 1, -2.80967e-08, 3.34849e-08, 3.09086e-08, -0.0871556, -0.996195, 2204.96, 89.5, -98.8475)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(1, 5.1, 4.23975)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform15" type="CSGBox3D" parent="ROOMS/Room14"]
@@ -9232,11 +9979,25 @@ use_collision = true
 size = Vector3(1, 9, 4)
 script = ExtResource("2_4bvgn")
 
+[node name="WoodPlatform22" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(-0.686454, 0.724689, -0.0600568, 0.721932, 0.689076, 0.0631607, 0.0871557, 2.98023e-08, -0.996195, 2204.06, 87.4034, -98.7253)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.644043, 6.45593, 1.65527)
+script = ExtResource("2_4bvgn")
+
 [node name="WoodPlatform16" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(-0.0114891, -0.991273, 0.131322, -0.996195, -5.58186e-08, -0.0871556, 0.0863951, -0.131824, -0.987501, 2199.41, 81.2631, -98.9449)
 material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 5.88782, 4)
+script = ExtResource("2_4bvgn")
+
+[node name="WoodPlatform21" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(-0.0114891, -0.991273, 0.131322, 0.690666, 0.0871026, 0.71791, -0.723083, 0.098948, 0.683637, 2199.15, 78.5107, -100.557)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.595703, 1.58423, 7.89648)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform12" type="CSGBox3D" parent="ROOMS/Room14"]
@@ -9246,11 +10007,25 @@ use_collision = true
 size = Vector3(1, 3.83423, 6.8)
 script = ExtResource("2_4bvgn")
 
+[node name="WoodPlatform30" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(0.0955548, 0.965926, 0.240534, 0.844554, 0.0492297, -0.533203, -0.526876, 0.254094, -0.811072, 2200.16, 119.821, -99.3897)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.751953, 1.83374, 6.93328)
+script = ExtResource("2_4bvgn")
+
 [node name="WoodPlatform13" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(3.58063e-08, 0.965926, -0.258819, 1, -2.80967e-08, 3.34849e-08, 2.50718e-08, -0.258819, -0.965926, 2207.09, 122.5, -98.5008)
 material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 3.66113, 6)
+script = ExtResource("2_4bvgn")
+
+[node name="WoodPlatform31" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(-0.131384, 0.978859, -0.156759, 0.779101, 0.00417975, -0.626884, -0.612976, -0.204493, -0.76318, 2206.98, 120.174, -99.6589)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.364258, 1.84155, 6.93359)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform14" type="CSGBox3D" parent="ROOMS/Room14"]
@@ -9260,11 +10035,25 @@ use_collision = true
 size = Vector3(1, 3.38184, 5)
 script = ExtResource("2_4bvgn")
 
+[node name="WoodPlatform32" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(-0.436169, 0.644644, -0.627846, 0.821269, -2.23517e-08, -0.570542, -0.367796, -0.764483, -0.529426, 2211.62, 121.626, -104.186)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.601685, 2.15039, 6.77625)
+script = ExtResource("2_4bvgn")
+
 [node name="WoodPlatform7" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(3.34849e-08, 0.573576, -0.819152, 1, 3.81011e-09, 4.35451e-08, 2.80972e-08, -0.819152, -0.573576, 2212.91, 91.5, -104.805)
 material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 9, 3)
+script = ExtResource("2_4bvgn")
+
+[node name="WoodPlatform23" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(0.62248, 0.532475, -0.573576, -0.650032, 0.759907, -2.98023e-08, 0.435865, 0.372843, 0.819152, 2211.9, 89.6317, -105.51)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.437988, 4.5636, 3)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform9" type="CSGBox3D" parent="ROOMS/Room14"]
@@ -9274,11 +10063,39 @@ use_collision = true
 size = Vector3(1, 8, 5)
 script = ExtResource("2_4bvgn")
 
+[node name="WoodPlatform25" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(-0.180947, -0.948119, -0.261399, 0.822224, 1.49012e-08, -0.569165, 0.539636, -0.317917, 0.779566, 2207.11, 109.998, -121.665)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.472107, 1.69141, 4.81195)
+script = ExtResource("2_4bvgn")
+
+[node name="WoodPlatform26" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(-0.180947, -0.948119, -0.261399, 0.822224, 1.49012e-08, -0.569165, 0.539636, -0.317917, 0.779566, 2203.78, 109.822, -122.51)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.472107, 1.69141, 5.43149)
+script = ExtResource("2_4bvgn")
+
 [node name="WoodPlatform10" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(0.183013, -0.683013, 0.707107, 0.965926, 0.258819, 4.47035e-08, -0.183013, 0.683013, 0.707107, 2193.23, 112.616, -118.982)
 material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 12.1768, 5)
+script = ExtResource("2_4bvgn")
+
+[node name="WoodPlatform27" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(0.586139, -0.683013, 0.435816, 0.75218, 0.258819, -0.606002, 0.301109, 0.683013, 0.665453, 2194.31, 110.523, -119.778)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.659668, 1.60059, 5)
+script = ExtResource("2_4bvgn")
+
+[node name="WoodPlatform28" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(0.586139, -0.683013, 0.435816, 0.75218, 0.258819, -0.606002, 0.301109, 0.683013, 0.665453, 2192.28, 111.528, -116.351)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.659668, 1.60059, 5)
 script = ExtResource("2_4bvgn")
 
 [node name="WoodPlatform11" type="CSGBox3D" parent="ROOMS/Room14"]
@@ -9288,11 +10105,25 @@ use_collision = true
 size = Vector3(1, 14, 5)
 script = ExtResource("2_4bvgn")
 
+[node name="WoodPlatform29" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(0.352679, 0.330366, 0.875486, 0.858161, 0.258819, -0.443366, -0.373065, 0.907673, -0.192227, 2194.15, 116.499, -105.206)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.517456, 4.36108, 7.66986)
+script = ExtResource("2_4bvgn")
+
 [node name="WoodPlatform8" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(0.17101, -0.376971, -0.910302, 0.866026, 0.498098, -0.0435779, 0.469846, -0.780892, 0.411646, 2213.45, 96.7697, -115.92)
 material_override = ExtResource("128_y7vme")
 use_collision = true
 size = Vector3(1, 12, 3)
+script = ExtResource("2_4bvgn")
+
+[node name="WoodPlatform24" type="CSGBox3D" parent="ROOMS/Room14"]
+transform = Transform3D(-0.522758, 0.596751, -0.608779, 0.581559, 0.771791, 0.257158, 0.623309, -0.219609, -0.750506, 2211.64, 94.2826, -116.065)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.610474, 7.45331, 2.20605)
 script = ExtResource("2_4bvgn")
 
 [node name="InvisibleWall" type="CSGBox3D" parent="ROOMS/Room14"]
@@ -9402,84 +10233,6 @@ operation = 2
 use_collision = true
 size = Vector3(11, 3.8824, 8)
 script = ExtResource("2_4bvgn")
-
-[node name="OmniLight3D" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -31, 0)
-light_energy = 1.885
-light_negative = true
-omni_range = 10.0
-
-[node name="OmniLight3D9" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22, 0)
-light_energy = 1.885
-light_negative = true
-omni_range = 10.0
-
-[node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -31, 0)
-light_energy = 1.885
-light_negative = true
-omni_range = 10.0
-
-[node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -31, 0)
-light_energy = 1.885
-light_negative = true
-omni_range = 10.0
-
-[node name="OmniLight3D5" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14, 0)
-light_energy = 1.885
-light_negative = true
-omni_range = 10.0
-
-[node name="OmniLight3D4" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -31, 0)
-light_energy = 1.885
-light_negative = true
-omni_range = 10.0
-
-[node name="OmniLight3D8" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -31, 0)
-light_energy = 1.885
-light_negative = true
-omni_range = 10.0
-
-[node name="OmniLight3D11" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -27.1858, -0.319473)
-light_energy = 12.929
-light_negative = true
-omni_range = 12.435
-
-[node name="OmniLight3D12" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18.6098, -0.319473)
-light_energy = 12.929
-light_negative = true
-omni_range = 12.435
-
-[node name="OmniLight3D13" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.79248, -28.1086, 1.15163)
-light_energy = 10.505
-light_negative = true
-omni_range = 12.435
-
-[node name="OmniLight3D10" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14, 0)
-light_energy = 1.885
-light_negative = true
-omni_range = 10.0
-
-[node name="OmniLight3D6" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14, 0)
-light_energy = 1.885
-light_negative = true
-omni_range = 10.0
-
-[node name="OmniLight3D7" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14, 0)
-light_energy = 1.885
-light_negative = true
-omni_range = 10.0
 
 [node name="CSGCylinder3D3" type="CSGCylinder3D" parent="ROOMS/Room14/BigAssPillar"]
 transform = Transform3D(2.8325e-08, 3.0456, 5.665e-08, 0.648, -1.33127e-07, -9.66919e-14, -9.42147e-14, 2.66255e-07, -0.648, -12.1326, 65.3332, 0.247879)
@@ -9787,7 +10540,7 @@ size = Vector3(30, 3, 45.5)
 script = ExtResource("2_4bvgn")
 
 [node name="NegativeLights" type="Node3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(6.98681, 0, 1.22161e-06, 0, 6.98681, 0, -1.22161e-06, 0, 6.98681, -9.93201, -5.0188, 79.9094)
+transform = Transform3D(6.98681, 0, 1.22161e-06, 0, 6.98681, 0, -1.22161e-06, 0, 6.98681, -11.934, -5.0188, 79.9094)
 
 [node name="NegativeLight" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights"]
 transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
@@ -9809,7 +10562,15 @@ omni_attenuation = -0.69
 transform = Transform3D(6.98681, 0, 1.22161e-06, 0, 6.98681, 0, -1.22161e-06, 0, 6.98681, -9.93201, -5.0188, 79.9094)
 
 [node name="NegativeLight" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights5"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
+transform = Transform3D(0.143127, 0, 0, 0, 0.143127, 0, 0, 0, 0.143127, 1.36957, 0.286254, 0.411306)
+light_color = Color(1, 0.648449, 0.595183, 1)
+light_energy = 0.045
+light_negative = true
+omni_range = 11.0
+omni_attenuation = -0.69
+
+[node name="NegativeLight3" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights5"]
+transform = Transform3D(0.143127, 0, 1.77636e-15, 0, 0.143127, 0, -1.77636e-15, 0, 0.143127, 1.27168, 0.286254, 0.419596)
 light_color = Color(1, 0.648449, 0.595183, 1)
 light_energy = 0.045
 light_negative = true
@@ -9870,7 +10631,7 @@ omni_attenuation = -0.69
 transform = Transform3D(6.98681, 0, 1.22161e-06, 0, 6.98681, 0, -1.22161e-06, 0, 6.98681, -9.93201, -5.0188, 52.9094)
 
 [node name="NegativeLight" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights7"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
+transform = Transform3D(0.143127, 0, 0, 0, 0.143127, 0, 0, 0, 0.143127, 1.28889, 0.286254, 0.286255)
 light_color = Color(1, 0.648449, 0.595183, 1)
 light_energy = 0.045
 light_negative = true
@@ -9879,7 +10640,7 @@ omni_range = 11.0
 omni_attenuation = -0.69
 
 [node name="NegativeLight2" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights7"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
+transform = Transform3D(0.143127, 0, 0, 0, 0.143127, 0, 0, 0, 0.143127, 1.28889, 0.286254, -0.286253)
 light_color = Color(1, 0.648449, 0.595183, 1)
 light_energy = 0.045
 light_negative = true
@@ -9891,7 +10652,7 @@ omni_attenuation = -0.69
 transform = Transform3D(6.98681, 0, 1.22161e-06, 0, 6.98681, 0, -1.22161e-06, 0, 6.98681, -9.93201, -5.0188, 52.9094)
 
 [node name="NegativeLight" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights8"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
+transform = Transform3D(0.143127, 0, 0, 0, 0.143127, 0, 0, 0, 0.143127, 1.07399, 0.286254, 0.286255)
 light_color = Color(1, 0.648449, 0.595183, 1)
 light_energy = 0.045
 light_negative = true
@@ -9900,7 +10661,7 @@ omni_range = 11.0
 omni_attenuation = -0.69
 
 [node name="NegativeLight2" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights8"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
+transform = Transform3D(0.143127, 0, 0, 0, 0.143127, 0, 0, 0, 0.143127, 1.07399, 0.286254, -0.286253)
 light_color = Color(1, 0.648449, 0.595183, 1)
 light_energy = 0.045
 light_negative = true
@@ -10029,31 +10790,55 @@ script = ExtResource("2_4bvgn")
 shape = SubResource("ConcavePolygonShape3D_hj8bv")
 
 [node name="ElevatorWall" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -38.25, 24, 61)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -39.1295, 12.5069, 61)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
-size = Vector3(10.5, 1, 58)
+size = Vector3(8.29799, 1, 15.1046)
+script = ExtResource("2_4bvgn")
+
+[node name="ElevatorWall11" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.69675, 0, 5.40424)
+material_override = ExtResource("3_gmyoy")
+operation = 2
+use_collision = true
+size = Vector3(5.64719, 1.39453, 5.85634)
+script = ExtResource("2_4bvgn")
+
+[node name="ElevatorWall12" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.21378, 0, 2.43899)
+material_override = ExtResource("3_gmyoy")
+operation = 2
+use_collision = true
+size = Vector3(2.61315, 1.58789, 11.7869)
+script = ExtResource("2_4bvgn")
+
+[node name="ElevatorWall13" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.42221, 0, -4.37058)
+material_override = ExtResource("3_gmyoy")
+operation = 2
+use_collision = true
+size = Vector3(2.54339, 1.21777, 11.708)
 script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWall2" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -38.25, 23.5, 72)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -41.7287, 23.4982, 71.9041)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
-size = Vector3(10.5, 1, 59)
+size = Vector3(3.5426, 0.808105, 7.08142)
 script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWall5" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -33.5, 23.5, 71.9)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -33.5, -0.703735, 71.9)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
-size = Vector3(1, 1.2, 59)
+size = Vector3(1, 1.2, 10.5925)
 script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWall6" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -33.5, 23.5, 61.15)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -33.5, -0.749573, 61.15)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
-size = Vector3(1, 1.3, 59)
+size = Vector3(1, 1.3, 10.5009)
 script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWall3" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
@@ -10067,6 +10852,54 @@ script = ExtResource("2_4bvgn")
 transform = Transform3D(-4.37112e-08, 3.55271e-15, -1, -1, -4.37114e-08, 4.37112e-08, -4.37114e-08, 1, 5.46339e-15, 0.5, -1.00006, 18.0117)
 operation = 2
 size = Vector3(8, 13.0293, 10)
+script = ExtResource("2_4bvgn")
+
+[node name="Hole11" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWall3"]
+transform = Transform3D(-4.37112e-08, 3.55271e-15, -1, -1, -4.37114e-08, 4.37112e-08, -4.37114e-08, 1, 5.46339e-15, 40.513, -1.00006, -4.09731)
+operation = 2
+size = Vector3(18.6875, 83.7502, 39.6574)
+script = ExtResource("2_4bvgn")
+
+[node name="Hole12" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWall3"]
+transform = Transform3D(-4.37112e-08, 3.55271e-15, -1, -1, -4.37114e-08, 4.37112e-08, -4.37114e-08, 1, 5.46339e-15, -46.8768, -1.00006, -4.09731)
+operation = 2
+size = Vector3(18.6875, 83.7502, 54.4019)
+script = ExtResource("2_4bvgn")
+
+[node name="Hole13" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWall3"]
+transform = Transform3D(-4.37112e-08, 3.55271e-15, -1, -1, -4.37114e-08, 4.37112e-08, -4.37114e-08, 1, 5.46339e-15, -17.0859, -1.00006, 15.2419)
+operation = 2
+size = Vector3(18.6875, 32.2446, 25.1271)
+script = ExtResource("2_4bvgn")
+
+[node name="Hole14" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWall3"]
+transform = Transform3D(-4.37112e-08, 3.55271e-15, -1, -1, -4.37114e-08, 4.37112e-08, -4.37114e-08, 1, 5.46339e-15, 18.2238, -1.00006, 15.2419)
+operation = 2
+size = Vector3(18.6875, 32.2446, 25.1271)
+script = ExtResource("2_4bvgn")
+
+[node name="Hole15" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWall3"]
+transform = Transform3D(-4.37112e-08, 3.55271e-15, -1, -1, -4.37114e-08, 4.37112e-08, -4.37114e-08, 1, 5.46339e-15, 0.904533, -1.00006, 31.137)
+operation = 2
+size = Vector3(18.6875, 22.5427, 25.1271)
+script = ExtResource("2_4bvgn")
+
+[node name="Hole8" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWall3"]
+transform = Transform3D(-4.37112e-08, 3.55271e-15, -1, -1, -4.37114e-08, 4.37112e-08, -4.37114e-08, 1, 5.46339e-15, 0.5, -1.00006, 12.0263)
+operation = 2
+size = Vector3(8, 49.96, 11.6787)
+script = ExtResource("2_4bvgn")
+
+[node name="Hole9" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWall3"]
+transform = Transform3D(-4.37112e-08, 3.55271e-15, -1, -1, -4.37114e-08, 4.37112e-08, -4.37114e-08, 1, 5.46339e-15, 5.42969, -1.00006, -19.5204)
+operation = 2
+size = Vector3(8, 15.1574, 1.81934)
+script = ExtResource("2_4bvgn")
+
+[node name="Hole10" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWall3"]
+transform = Transform3D(-4.37112e-08, 3.55271e-15, -1, -1, -4.37114e-08, 4.37112e-08, -4.37114e-08, 1, 5.46339e-15, -4.44244, -1.00006, -22.025)
+operation = 2
+size = Vector3(8, 10.1482, 1.81934)
 script = ExtResource("2_4bvgn")
 
 [node name="Hole4" type="CSGCylinder3D" parent="ROOMS/ELEVATORROOM/ElevatorWall3"]
@@ -10118,6 +10951,22 @@ transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.3
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(11.6021, 1, 11.0854)
+script = ExtResource("2_4bvgn")
+
+[node name="ElevatorWall11" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWall4"]
+transform = Transform3D(1, 0, 0, 0, 1, 8.35189e-23, 0, 8.35188e-23, 1, 4.31853, 0, 2.27862)
+material_override = ExtResource("3_gmyoy")
+operation = 2
+use_collision = true
+size = Vector3(2.96504, 1.44434, 6.4855)
+script = ExtResource("2_4bvgn")
+
+[node name="ElevatorWall12" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWall4"]
+transform = Transform3D(1, 0, 0, 0, 1, 8.35189e-23, 0, 8.35188e-23, 1, -5.19061, 0, 2.27862)
+material_override = ExtResource("3_gmyoy")
+operation = 2
+use_collision = true
+size = Vector3(2.96504, 1.44434, 6.4855)
 script = ExtResource("2_4bvgn")
 
 [node name="ElevatorWall3NonStick" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
@@ -10242,6 +11091,7 @@ material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(10, 1, 6.4)
 script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="ElevatorWallUnsick3" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
 transform = Transform3D(1, 1.06581e-14, 4.02341e-21, 0, -4.37114e-08, 1, 1.06581e-14, -1, -4.37114e-08, -39.25, 24, 71.9)
@@ -10267,6 +11117,20 @@ use_collision = true
 size = Vector3(2, 1, 4.5)
 script = ExtResource("2_4bvgn")
 
+[node name="ElevatorWallSick" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
+transform = Transform3D(1, 1.06581e-14, 4.02341e-21, 0, -4.37114e-08, 1, 1.06581e-14, -1, -4.37114e-08, -38.7473, 8.30688, 72.5094)
+material_override = ExtResource("3_gmyoy")
+use_collision = true
+size = Vector3(11.5053, 0.00196484, 26.6138)
+script = ExtResource("2_4bvgn")
+
+[node name="ElevatorWallSick2" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
+transform = Transform3D(1, 1.06581e-14, 4.02341e-21, 0, -4.37114e-08, 1, 1.06581e-14, -1, -4.37114e-08, -38.7473, 8.30688, 60.484)
+material_override = ExtResource("3_gmyoy")
+use_collision = true
+size = Vector3(11.5053, 0.00196484, 26.6138)
+script = ExtResource("2_4bvgn")
+
 [node name="ElevatorWallUnsick4" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
 transform = Transform3D(1, 1.06581e-14, 4.02341e-21, 0, -4.37114e-08, 1, 1.06581e-14, -1, -4.37114e-08, -39.25, 24, 61.1)
 material_override = ExtResource("7_xc2n4")
@@ -10276,7 +11140,7 @@ script = ExtResource("2_4bvgn")
 nonstick = true
 
 [node name="ElevatorWallUnsickHole1" type="CSGBox3D" parent="ROOMS/ELEVATORROOM/ElevatorWallUnsick4"]
-transform = Transform3D(1, 0, 1.51461e-28, 0, 1, 0, 0, 0, 1, 0.25, 0, -14)
+transform = Transform3D(1, 0, -1.00974e-28, 0, 1, 0, 0, 0, 1, 0.25, 0, -14)
 material_override = ExtResource("25_sp4ew")
 operation = 2
 use_collision = true
@@ -10305,15 +11169,23 @@ material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(10, 1, 47.6111)
 script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="ElevatorWallUnsick6" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -33.5, 28.1719, 66.5)
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -33.0204, 12.8104, 66.5)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
-size = Vector3(12, 1, 47.6563)
+size = Vector3(12, 0.0408936, 16.9332)
 script = ExtResource("2_4bvgn")
 
 [node name="ElevatorPlatform" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
+transform = Transform3D(-3.38585e-08, 0.774591, 0.632462, 2.76458e-08, -0.632462, 0.774591, 1, 4.37114e-08, 2.28301e-15, -35.4933, 13.2124, 68.4274)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(2.66016, 4, 0.783081)
+script = ExtResource("2_4bvgn")
+
+[node name="ElevatorPlatform3" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -36.0907, 14.5, 68.9475)
 material_override = ExtResource("128_y7vme")
 use_collision = true
@@ -10327,12 +11199,27 @@ use_collision = true
 size = Vector3(7.51001, 3, 1)
 script = ExtResource("2_4bvgn")
 
+[node name="ElevatorPlatform4" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
+transform = Transform3D(-1, -8.74228e-08, -3.82138e-15, 5.32099e-08, -0.608651, 0.793438, -6.93646e-08, 0.793438, 0.608651, -41.8029, 15.2792, 70.6524)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.970703, 3, 0.417969)
+script = ExtResource("2_4bvgn")
+
+[node name="ElevatorPlatform5" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
+transform = Transform3D(-1, -8.74228e-08, -3.82138e-15, 5.32099e-08, -0.608651, 0.793438, -6.93646e-08, 0.793438, 0.608651, -40.1306, 15.2792, 70.6524)
+material_override = ExtResource("128_y7vme")
+use_collision = true
+size = Vector3(0.970703, 3, 0.417969)
+script = ExtResource("2_4bvgn")
+
 [node name="ElevatorCeiling" type="CSGBox3D" parent="ROOMS/ELEVATORROOM"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 52.5, 66.5)
 material_override = ExtResource("7_xc2n4")
 use_collision = true
 size = Vector3(12, 1, 16)
 script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="lantern_on_hook" parent="ROOMS/ELEVATORROOM" instance=ExtResource("105_tkodh")]
 transform = Transform3D(-1.83657e-07, 8.86723e-11, 4.18118, 0.413604, 4.16067, 1.80792e-08, -4.16067, 0.413604, -1.82765e-07, -23.6562, 8.85204, 85.9145)
@@ -10379,12 +11266,8 @@ transform = Transform3D(6.52943e-08, -0.489493, -1.87053e-15, 2.17647e-08, 1.796
 transform = Transform3D(-5.32639e-08, -5.32639e-08, 1.21854, 1.21854, 1.06528e-07, 5.32639e-08, -1.06528e-07, 1.21854, 5.32639e-08, -1316.52, 117.838, -117.746)
 material_override = ExtResource("34_gg7m4")
 
-[node name="MelonSlime2" parent="ROOMS" instance=ExtResource("33_gg7m4")]
-transform = Transform3D(-1.35099e-07, 9.38422e-08, 1.21854, 3.0907, -1.87684e-07, 5.32639e-08, -2.70198e-07, -2.14686, 5.32639e-08, -1332.51, 137.626, -117.875)
-material_override = ExtResource("34_gg7m4")
-
 [node name="MelonSlime3" parent="ROOMS" instance=ExtResource("33_gg7m4")]
-transform = Transform3D(-1.35099e-07, 9.38422e-08, 1.21854, 3.0907, -1.87684e-07, 5.32639e-08, -2.70198e-07, -2.14686, 5.32639e-08, -1332.51, 137.626, -117.875)
+transform = Transform3D(-1.35099e-07, 9.38422e-08, 1.21854, 3.0907, -1.87684e-07, 5.32639e-08, -2.70198e-07, -2.14686, 5.32639e-08, -1332.48, 137.439, -117.875)
 material_override = ExtResource("34_gg7m4")
 
 [node name="MelonSlime4" parent="ROOMS" instance=ExtResource("33_gg7m4")]
@@ -11168,70 +12051,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 210.686, 33.994, -53.135)
 visible = false
 size = Vector3(33, 6, 0.1)
 script = ExtResource("2_4bvgn")
-
-[node name="SpotLight3D" type="SpotLight3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 147.836, 106.087, -42.517)
-visible = false
-light_color = Color(1, 0.953788, 0.941996, 1)
-light_energy = 40.0
-spot_range = 4096.0
-spot_angle = 90.0
-
-[node name="SpotLight3D2" type="SpotLight3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 50.207, 106.087, 135.564)
-visible = false
-light_color = Color(1, 0.953788, 0.941996, 1)
-light_energy = 40.0
-spot_range = 4096.0
-spot_angle = 90.0
-
-[node name="SpotLight3D3" type="SpotLight3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -50.996, 106.087, 178.785)
-visible = false
-light_color = Color(1, 0.953788, 0.941996, 1)
-light_energy = 40.0
-spot_range = 4096.0
-spot_angle = 90.0
-
-[node name="SpotLight3D5" type="SpotLight3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -134.996, 154.087, 192.785)
-visible = false
-light_color = Color(1, 0.953788, 0.941996, 1)
-light_energy = 40.0
-spot_range = 4096.0
-spot_angle = 90.0
-
-[node name="SpotLight3D6" type="SpotLight3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.32416, 164.844, 29.3246)
-visible = false
-light_color = Color(1, 0.924642, 0.905406, 1)
-light_energy = 52.615
-spot_range = 4096.0
-spot_angle = 89.32
-
-[node name="SpotLight3D7" type="SpotLight3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -174.449, 164.844, 29.3246)
-visible = false
-light_color = Color(1, 0.924642, 0.905406, 1)
-light_energy = 52.615
-spot_range = 4096.0
-spot_angle = 89.32
-
-[node name="SpotLight3D8" type="SpotLight3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -624.815, 205.538, 29.3246)
-visible = false
-light_color = Color(1, 0.924642, 0.905406, 1)
-light_energy = 52.615
-spot_range = 4096.0
-spot_angle = 89.32
-
-[node name="SpotLight3D4" type="SpotLight3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -142.685, 106.087, 189.347)
-visible = false
-light_color = Color(1, 0.953788, 0.941996, 1)
-light_energy = 40.0
-spot_range = 4096.0
-spot_angle = 90.0
 
 [node name="DeathTrigger2" type="Area3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 250.39, -57, 190.865)
@@ -12214,6 +13033,18 @@ transform = Transform3D(2.095, 0, 0, 0, 2.095, 0, 0, 0, 2.095, -1, -2, 3)
 shape = SubResource("BoxShape3D_2v00b")
 debug_color = Color(0, 0.6, 0.701961, 0.85098)
 
+[node name="Node3D2" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -687.555, 29.2671, -135.606)
+visible = false
+
+[node name="Checkpoint14" type="Area3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -681.644, 29.7107, -140.318)
+
+[node name="Box" type="CollisionShape3D" parent="Checkpoint14"]
+transform = Transform3D(2.095, 0, 0, 0, 2.095, 0, 0, 0, 2.095, -1, -2, 3)
+shape = SubResource("BoxShape3D_2v00b")
+debug_color = Color(0, 0.6, 0.701961, 0.85098)
+
 [node name="Checkpoint10" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, -828, 28.4, -120)
 
@@ -12531,53 +13362,58 @@ script = ExtResource("2_4bvgn")
 nonstick = true
 
 [node name="SpotLight3D" type="SpotLight3D" parent="CSGBox3D4"]
-transform = Transform3D(1, 4.37114e-08, 4.37114e-08, 4.37114e-08, -4.36349e-08, -1, -4.37114e-08, 1, -4.37114e-08, 2.62993, -17.6678, 0)
+transform = Transform3D(1, 4.37114e-08, 4.37114e-08, 4.37114e-08, -4.36349e-08, -1, -4.37114e-08, 1, -4.37113e-08, 2.62993, -5.3418, 0)
 light_color = Color(0.946609, 1, 0.999946, 1)
-light_energy = 102.24
+light_energy = 16.0
 shadow_enabled = true
 shadow_caster_mask = 4294967293
 spot_range = 48.2063
 spot_angle = 62.73
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="CSGBox3D4"]
-transform = Transform3D(1, 4.37114e-08, 4.37114e-08, 4.37114e-08, -4.36349e-08, -1, -4.37114e-08, 1, -4.37113e-08, 5.2625, -3.33423, -0.604179)
+transform = Transform3D(7.10543e-15, -4.35585e-08, -1, -1, -4.37114e-08, -3.55271e-15, -4.37878e-08, 1, -4.35585e-08, -1.71423, -0.880981, 0)
 light_color = Color(0.946609, 1, 0.999946, 1)
-light_energy = 34.125
+light_energy = 12.444
 shadow_caster_mask = 4294967293
-spot_range = 9.768
-spot_angle = 62.73
-
-[node name="SpotLight3D3" type="SpotLight3D" parent="CSGBox3D4"]
-transform = Transform3D(1, 4.37114e-08, 4.37114e-08, 4.37114e-08, -4.36349e-08, -1, -4.37114e-08, 1, -4.37113e-08, 5.2625, -3.33423, 3.4664)
-light_color = Color(0.946609, 1, 0.999946, 1)
-light_energy = 34.125
-shadow_caster_mask = 4294967293
-spot_range = 9.768
-spot_angle = 62.73
-
-[node name="SpotLight3D4" type="SpotLight3D" parent="CSGBox3D4"]
-transform = Transform3D(1, 4.37114e-08, 4.37114e-08, 4.37114e-08, -4.36349e-08, -1, -4.37114e-08, 1, -4.37113e-08, 5.2625, -3.33423, -6.79165)
-light_color = Color(0.946609, 1, 0.999946, 1)
-light_energy = 34.125
-shadow_caster_mask = 4294967293
-spot_range = 9.768
-spot_angle = 62.73
+spot_range = 12.493
+spot_attenuation = 0.41
+spot_angle = 39.2501
 
 [node name="SpotLight3D5" type="SpotLight3D" parent="CSGBox3D4"]
-transform = Transform3D(1, 4.37114e-08, 4.37114e-08, 4.37114e-08, -4.36349e-08, -1, -4.37114e-08, 1, -4.37113e-08, 5.2625, -3.33423, -9.54627)
+transform = Transform3D(7.10543e-15, -4.35585e-08, -1, -1, -4.37114e-08, -3.55271e-15, -4.37878e-08, 1, -4.35585e-08, -1.71423, -0.880981, 7.3708)
 light_color = Color(0.946609, 1, 0.999946, 1)
-light_energy = 34.125
+light_energy = 12.444
 shadow_caster_mask = 4294967293
-spot_range = 8.173
-spot_angle = 62.73
+spot_range = 12.493
+spot_attenuation = 0.41
+spot_angle = 39.2501
 
 [node name="SpotLight3D6" type="SpotLight3D" parent="CSGBox3D4"]
-transform = Transform3D(1, 4.37114e-08, 4.37114e-08, 4.37114e-08, -4.36349e-08, -1, -4.37114e-08, 1, -4.37113e-08, 5.2625, -3.33423, 8.33408)
+transform = Transform3D(7.10543e-15, -4.35585e-08, -1, -1, -4.37114e-08, -3.55271e-15, -4.37878e-08, 1, -4.35585e-08, -1.71423, -0.880981, -6.51173)
 light_color = Color(0.946609, 1, 0.999946, 1)
-light_energy = 34.125
+light_energy = 12.444
 shadow_caster_mask = 4294967293
-spot_range = 8.173
-spot_angle = 62.73
+spot_range = 12.493
+spot_attenuation = 0.41
+spot_angle = 39.2501
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="CSGBox3D4"]
+transform = Transform3D(7.10543e-15, -4.35585e-08, -1, -1, -4.37114e-08, -3.55271e-15, -4.37878e-08, 1, -4.35585e-08, -1.71423, -0.880981, 4.47127)
+light_color = Color(0.946609, 1, 0.999946, 1)
+light_energy = 12.444
+shadow_caster_mask = 4294967293
+spot_range = 12.493
+spot_attenuation = 0.41
+spot_angle = 39.2501
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="CSGBox3D4"]
+transform = Transform3D(7.10543e-15, -4.35585e-08, -1, -1, -4.37114e-08, -3.55271e-15, -4.37878e-08, 1, -4.35585e-08, -1.71423, -0.880981, -4.62757)
+light_color = Color(0.946609, 1, 0.999946, 1)
+light_energy = 12.444
+shadow_caster_mask = 4294967293
+spot_range = 12.493
+spot_attenuation = 0.41
+spot_angle = 39.2501
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1362.48, 148.977, -117.617)
@@ -12783,6 +13619,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -210, 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(0.0412885, -0.0041044, -0.999139, 0.101488, 0.994837, 0.000107185, 0.99398, -0.101405, 0.0414918, -319.145, 9.09621, -140.916)
 light_color = Color(1, 0.788235, 0.443137, 1)
+light_bake_mode = 1
 
 [node name="lantern_on_hook" parent="." instance=ExtResource("105_tkodh")]
 transform = Transform3D(0.172634, -0.0171612, -4.17758, 0.424341, 4.15959, 0.000448164, 4.15601, -0.423994, 0.173485, -319.145, 8.31947, -140.916)
@@ -12808,7 +13645,7 @@ transform = Transform3D(-4.37114e-08, 0, -0.914066, 0, 0.84097, 0, 1, 0, -3.9955
 [node name="OmniLight3D2" type="OmniLight3D" parent="."]
 transform = Transform3D(2.77556e-17, -3.56387e-09, -1, 0.0989205, 0.995095, -3.54639e-09, 0.995095, -0.0989205, 3.5254e-10, -211.037, -9.71711, -188.718)
 light_color = Color(1, 0.788235, 0.443137, 1)
-shadow_enabled = true
+light_bake_mode = 1
 omni_range = 15.225
 
 [node name="lantern_on_hook2" parent="." instance=ExtResource("105_tkodh")]
@@ -12845,7 +13682,7 @@ surface_material_override/1 = ExtResource("107_ulxk5")
 [node name="OmniLight3D3" type="OmniLight3D" parent="."]
 transform = Transform3D(-4.39247e-08, 2.12076e-11, 1, 0.0989205, 0.995095, 4.32395e-09, -0.995095, 0.0989205, -4.37114e-08, -263.181, -11.3996, -169.806)
 light_color = Color(1, 0.788235, 0.443137, 1)
-shadow_enabled = true
+light_bake_mode = 1
 omni_range = 11.3521
 
 [node name="lantern_on_hook3" parent="." instance=ExtResource("105_tkodh")]
@@ -12961,6 +13798,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_3ut63")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.5, -13, -43.7)
 light_color = Color(1, 0.789845, 0.648899, 1)
 light_energy = 5.228
+light_bake_mode = 1
 shadow_enabled = true
 omni_range = 38.0
 
@@ -12968,30 +13806,35 @@ omni_range = 38.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.5, -34, -49.7)
 light_color = Color(0.670246, 0.944481, 1, 1)
 light_energy = 0.803
+light_bake_mode = 1
 omni_range = 39.558
 
 [node name="OmniLight3D8" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -175.5, -18, -51.7)
 light_color = Color(0.670246, 0.944481, 1, 1)
 light_energy = 0.803
+light_bake_mode = 1
 omni_range = 39.558
 
 [node name="OmniLight3D10" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -216.64, -15.8867, -129.979)
 light_color = Color(0.670246, 0.944481, 1, 1)
 light_energy = 0.243
+light_bake_mode = 1
 omni_range = 39.558
 
 [node name="OmniLight3D11" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -216.64, -15.8867, -121.972)
 light_color = Color(0.670246, 0.944481, 1, 1)
 light_energy = 0.243
+light_bake_mode = 1
 omni_range = 39.558
 
 [node name="OmniLight3D5" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51.9, -23.8, -30.5)
 light_color = Color(1, 0.789845, 0.648899, 1)
 light_energy = 2.131
+light_bake_mode = 1
 omni_range = 12.841
 
 [node name="CeilingLights" parent="." instance=ExtResource("133_fof7x")]
@@ -13010,6 +13853,7 @@ surface_material_override/1 = SubResource("StandardMaterial3D_24txo")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 4, -3.2)
 light_color = Color(1, 0.789845, 0.648899, 1)
 light_energy = 2.5
+light_bake_mode = 1
 omni_range = 38.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CeilingLights2"]
@@ -13059,6 +13903,7 @@ material = SubResource("StandardMaterial3D_xut2x")
 transform = Transform3D(-4.37114e-08, -2.98023e-08, -1, -1, 1.3027e-15, 4.37114e-08, 0, 1, -2.98023e-08, -165.006, -11.3216, -59.1467)
 light_color = Color(1, 0.852387, 0.650265, 1)
 light_energy = 1.386
+light_bake_mode = 1
 omni_range = 31.535
 
 [node name="CeilingLights4" type="MeshInstance3D" parent="."]
@@ -13071,6 +13916,7 @@ surface_material_override/1 = SubResource("StandardMaterial3D_5iuiw")
 transform = Transform3D(1, -1.05879e-22, 3.15544e-30, 0, 1, 0, 0, 0, 1, 7.4, 0.400002, -3.2)
 light_color = Color(1, 0.852387, 0.650265, 1)
 light_energy = 2.575
+light_bake_mode = 1
 shadow_enabled = true
 omni_range = 65.0
 
@@ -13120,11 +13966,13 @@ debug_color = Color(0.960784, 0, 0.505882, 0.894118)
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, -8.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
+light_bake_mode = 1
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Node/MovingTram/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 7.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
+light_bake_mode = 1
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node/MovingTram/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 0, 10, 0)
@@ -13172,11 +14020,13 @@ debug_color = Color(0.960784, 0, 0.505882, 0.894118)
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, -8.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
+light_bake_mode = 1
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Node/MovingTram2/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 7.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
+light_bake_mode = 1
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node/MovingTram2/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 0, 10, 0)
@@ -13224,11 +14074,13 @@ debug_color = Color(0.960784, 0, 0.505882, 0.894118)
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, -8.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
+light_bake_mode = 1
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Node/MovingTram3/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 7.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
+light_bake_mode = 1
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node/MovingTram3/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 0, 10, 0)
@@ -13255,9 +14107,9 @@ transform = Transform3D(-5.24537e-08, 0, 1.2, 0, 1.2, 0, -1.2, 0, -5.24537e-08, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.8333, 0, 0)
 mesh = ExtResource("148_pwcyy")
 skeleton = NodePath("../../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1")
-surface_material_override/0 = ExtResource("149_md575")
+surface_material_override/0 = SubResource("StandardMaterial3D_m0gra")
 surface_material_override/1 = SubResource("StandardMaterial3D_odrsi")
-surface_material_override/2 = ExtResource("150_3exgg")
+surface_material_override/2 = SubResource("StandardMaterial3D_mwbbq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Node/MovingTram4/Tram/Tram"]
 
@@ -13276,11 +14128,13 @@ debug_color = Color(0.960784, 0, 0.505882, 0.894118)
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, -8.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
+light_bake_mode = 1
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Node/MovingTram4/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 7.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
+light_bake_mode = 1
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node/MovingTram4/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 0, 10, 0)
@@ -13352,11 +14206,13 @@ shape = SubResource("BoxShape3D_pwcyy")
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, -8.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
+light_bake_mode = 1
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="MovingTram5/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 7.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
+light_bake_mode = 1
 
 [node name="AudioBeeps" type="AudioStreamPlayer3D" parent="MovingTram5/Tram/Tram"]
 volume_db = 5.0
@@ -13393,6 +14249,7 @@ surface_material_override/1 = SubResource("StandardMaterial3D_38rek")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 4, -3.2)
 light_color = Color(1, 0.882615, 0.750981, 1)
 light_energy = 2.65
+light_bake_mode = 1
 omni_range = 15.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CeilingLights7"]
@@ -13409,6 +14266,7 @@ shape = SubResource("ConvexPolygonShape3D_pwcyy")
 transform = Transform3D(5.96046e-08, 8.74228e-08, 1, -1, -4.37114e-08, 5.96046e-08, 4.37114e-08, -1, 8.74228e-08, -247.686, -10.2343, -179.581)
 light_color = Color(1, 0.792107, 0.628049, 1)
 light_energy = 5.085
+light_bake_mode = 1
 shadow_enabled = true
 omni_range = 26.28
 
@@ -13422,6 +14280,7 @@ surface_material_override/1 = SubResource("StandardMaterial3D_38rek")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 4, -3.2)
 light_color = Color(1, 0.882615, 0.750981, 1)
 light_energy = 2.65
+light_bake_mode = 1
 omni_range = 15.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CeilingLights8"]
@@ -13444,6 +14303,7 @@ surface_material_override/1 = SubResource("StandardMaterial3D_38rek")
 transform = Transform3D(1, 0, -8.35188e-23, 0, 1, -3.59989e-21, -8.35188e-23, 0, 1, 6.30632, 3.30309, -3.20001)
 light_color = Color(1, 0.801702, 0.669179, 1)
 light_energy = 2.29
+light_bake_mode = 1
 shadow_enabled = true
 omni_range = 15.0
 
@@ -13556,7 +14416,7 @@ transform = Transform3D(0.733564, 1.55425, 6.79385e-08, 0, -7.51253e-08, 1.71867
 material_override = ExtResource("35_y7vme")
 
 [node name="MelonSlime6" parent="." instance=ExtResource("33_gg7m4")]
-transform = Transform3D(6.70485e-08, -6.08428e-08, 1, 1.53389, -1.21686e-07, -4.37114e-08, 1.34097e-07, 1.39192, 4.37114e-08, -637.993, 7.45032, -120.406)
+transform = Transform3D(6.70485e-08, -6.08428e-08, 1, 1.53389, -1.21686e-07, -4.37114e-08, 1.34097e-07, 1.39192, 4.37114e-08, -637.993, 7.53642, -120.406)
 material_override = ExtResource("34_gg7m4")
 
 [node name="MelonSlime7" parent="." instance=ExtResource("33_gg7m4")]
@@ -13676,410 +14536,22 @@ omni_range = 4.26
 omni_attenuation = -0.69
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -404, 84, -135)
-light_color = Color(1, 0.923406, 0.91419, 1)
-light_energy = 16.0
-spot_range = 627.45
-spot_angle = 65.0
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -820.942, 393.762, -135)
+visible = false
+light_color = Color(1, 0.955997, 0.926142, 1)
+light_energy = 50.0
+spot_range = 955.04
+spot_attenuation = 0.95
+spot_angle = 77.73
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -482, 84, -135)
-light_color = Color(1, 0.923406, 0.91419, 1)
-light_energy = 16.0
-spot_range = 627.45
-spot_angle = 65.0
-
-[node name="OmniLight3D12" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -631, 61, -115)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 216.403
-
-[node name="OmniLight3D13" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -705, 61, -96)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 216.403
-
-[node name="OmniLight3D14" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -784, 61, -84)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 216.403
-
-[node name="OmniLight3D15" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -895, 61, -92)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 216.403
-
-[node name="OmniLight3D16" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -972, 61, -100)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 216.403
-
-[node name="OmniLight3D17" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1059, 61, -102)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 216.403
-
-[node name="OmniLight3D18" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1121, 95, -105)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 216.403
-
-[node name="OmniLight3D19" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1194, 85, -105)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 216.403
-
-[node name="OmniLight3D20" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -618, 63, 74)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 606.049
-
-[node name="OmniLight3D21" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -898, 63, 100)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 606.049
-
-[node name="OmniLight3D22" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -928, 63, -348)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 606.049
-
-[node name="OmniLight3D23" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -616, 63, -308)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 606.049
-
-[node name="OmniLight3D25" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1263, 72, -118)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 606.049
-
-[node name="OmniLight3D32" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -460.514, 34.6467, -86.3783)
-light_color = Color(1, 0.909558, 0.864852, 1)
-light_energy = 22.71
-omni_range = 44.789
-
-[node name="OmniLight3D35" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -421.643, 34.6467, -86.3783)
-light_color = Color(1, 0.909558, 0.864852, 1)
-light_energy = 22.71
-omni_range = 44.789
-
-[node name="OmniLight3D33" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -458.202, 34.6467, -170.381)
-light_color = Color(1, 0.909558, 0.864852, 1)
-light_energy = 22.71
-omni_range = 44.789
-
-[node name="OmniLight3D34" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -415.068, 34.6467, -170.381)
-light_color = Color(1, 0.909558, 0.864852, 1)
-light_energy = 22.71
-omni_range = 44.789
-
-[node name="OmniLight3D36" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -453.059, 32.679, -126.135)
-light_color = Color(1, 0.909558, 0.864852, 1)
-light_energy = 2.747
-omni_range = 44.789
-
-[node name="OmniLight3D26" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1398, 78, -118)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 606.049
-
-[node name="OmniLight3D27" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1280, 59, 51)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 606.049
-
-[node name="OmniLight3D28" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1255, 79, -271)
-light_color = Color(1, 0.966333, 0.949839, 1)
-light_energy = 16.0
-omni_range = 606.049
-
-[node name="OmniLight3D24" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -753, 71, -126)
-light_color = Color(1, 0.895782, 0.755343, 1)
-light_energy = 80.0
-shadow_enabled = true
-omni_range = 606.049
-
-[node name="OmniLight3D29" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -589, 71, -126)
-light_color = Color(1, 0.895782, 0.755343, 1)
-light_energy = 80.0
-shadow_enabled = true
-omni_range = 606.049
-
-[node name="OmniLight3D30" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -977, 71, -126)
-light_color = Color(1, 0.895782, 0.755343, 1)
-light_energy = 80.0
-shadow_enabled = true
-omni_range = 606.049
-
-[node name="NegOmniLight3D31" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -546, -179.234, -126)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
+transform = Transform3D(-1, 3.82137e-15, -8.74228e-08, 8.74228e-08, 4.37114e-08, -1, 0, -1, -4.37114e-08, -879.37, -3918.96, -135)
+light_color = Color(0.410111, 0.466342, 0.617121, 1)
+light_energy = 1000.0
 light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D32" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -455, -204.234, -144)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D33" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -410, -204.234, 12)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D34" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -597, -204.234, -288)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D35" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -688, -204.234, -443)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D36" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, -204.234, 24)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D37" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -745, -204.234, 129)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D38" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -964, -204.234, 138)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D39" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1172, -204.234, 81)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D40" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1329, -204.234, 43)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D41" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1379, -204.234, -89)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D42" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1378, -204.234, -209)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D43" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1201, -204.234, -235)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D44" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1224, -204.234, -109)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="OmniLight3D31" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1121, -204.234, -326)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D46" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -986, -177.234, -553)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D47" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -442, -212.234, -119)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D48" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -546, -330.234, -126)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D49" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -455, -355.234, -144)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D50" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -410, -355.234, 12)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D65" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -462, -195.234, -160)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D51" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -597, -355.234, -288)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D52" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -688, -355.234, -443)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D53" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, -355.234, 24)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D54" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -745, -355.234, 129)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D55" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -964, -355.234, 138)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D56" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1172, -355.234, 81)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D57" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1329, -355.234, 43)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D58" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1379, -355.234, -89)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D59" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1378, -355.234, -209)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D60" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1201, -355.234, -235)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D61" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1224, -355.234, -109)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D62" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1121, -355.234, -326)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D63" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -986, -328.234, -553)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
-
-[node name="NegOmniLight3D64" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -442, -363.234, -119)
-light_color = Color(1, 0.912293, 0.844111, 1)
-light_energy = 80.0
-light_negative = true
-omni_range = 203.309
+spot_range = 3924.75
+spot_attenuation = -0.01
+spot_angle = 85.48
 
 [node name="CeilingLights9" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1368.79, 148.889, -114.269)
@@ -14091,6 +14563,7 @@ surface_material_override/1 = SubResource("StandardMaterial3D_38rek")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 1.81906, -3.2)
 light_color = Color(1, 0.812156, 0.565872, 1)
 light_energy = 6.525
+light_bake_mode = 1
 shadow_enabled = true
 omni_range = 19.3
 
@@ -14099,15 +14572,21 @@ omni_range = 19.3
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CeilingLights9/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_m0gra")
 
-[connection signal="area_entered" from="ROOMS/DeathTrigger2" to="." method="_on_death_trigger_area_entered"]
-[connection signal="area_entered" from="ROOMS/DeathTrigger3" to="." method="_on_death_trigger_area_entered"]
-[connection signal="area_entered" from="ROOMS/DeathTrigger4" to="." method="_on_death_trigger_area_entered"]
-[connection signal="area_entered" from="ROOMS/DeathTrigger6" to="." method="_on_death_trigger_area_entered"]
-[connection signal="area_entered" from="ROOMS/DeathTrigger5" to="." method="_on_death_trigger_area_entered"]
-[connection signal="area_entered" from="ROOMS/Room2/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
-[connection signal="area_entered" from="ROOMS/Room4/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
-[connection signal="area_entered" from="ROOMS/Room5-6-7-8/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
-[connection signal="area_entered" from="ROOMS/Room5-6-7-8/DeathTrigger2" to="." method="_on_death_trigger_area_entered"]
+[node name="VoxelGI" type="VoxelGI" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.4993, -43.1294, -36.4846)
+size = Vector3(129.894, 68.8115, 143.369)
+
+[connection signal="area_entered" from="ROOMS/DeathTrigger2" to="." method="_on_w_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/DeathTrigger3" to="." method="_on_w_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/DeathTrigger4" to="." method="_on_w_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/DeathTrigger6" to="." method="_on_w_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/DeathTrigger7" to="." method="_on_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/DeathTrigger8" to="." method="_on_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/DeathTrigger5" to="." method="_on_w_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/Room2/WDeathTrigger" to="." method="_on_w_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/Room4/WDeathTrigger" to="." method="_on_w_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/Room5-6-7-8/WDeathTrigger" to="." method="_on_w_death_trigger_area_entered"]
+[connection signal="area_entered" from="ROOMS/Room5-6-7-8/DeathTrigger2" to="." method="_on_w_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room9+10/DeathTrigger" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room9+10/DeathTrigger2" to="." method="_on_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/Room9+10/DeathTrigger3" to="." method="_on_death_trigger_area_entered"]
@@ -14128,6 +14607,7 @@ shape = SubResource("ConvexPolygonShape3D_m0gra")
 [connection signal="area_entered" from="Checkpoint7-8" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-495, 35.4, -122)]]
 [connection signal="area_entered" from="Checkpoint8" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-591.3, -2.5, -121.1)]]
 [connection signal="area_entered" from="Checkpoint9" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-756.3, -2.5, -99.1)]]
+[connection signal="area_entered" from="Checkpoint14" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-687.555, 29.2671, -135.606)]]
 [connection signal="area_entered" from="Checkpoint10" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-823.3, 25.5, -118.1)]]
 [connection signal="area_entered" from="Checkpoint11" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-1031.3, -2.5, -97.6)]]
 [connection signal="area_entered" from="Checkpoint12" to="." method="_on_checkpoint_area_entered" binds= [Vector3(-1131.3, 65.5, -117.6)]]

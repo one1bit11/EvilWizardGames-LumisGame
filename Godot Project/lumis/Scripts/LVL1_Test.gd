@@ -146,3 +146,9 @@ func play_ending():
 
 func transition_to_end_slides():
 	get_tree().change_scene_to_file("res://LevelScenes/end_slides.tscn")
+
+
+func _on_w_death_trigger_area_entered(area: Area3D) -> void:
+	if area.name == "MangoTrigger":
+		SignalBus.emit_signal("playSplash")
+		uiAnimation.play("Respawn")
