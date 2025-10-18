@@ -1,4 +1,4 @@
-[gd_scene load_steps=448 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=449 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
@@ -1344,6 +1344,9 @@ size = Vector3(15.3312, 1, 14.7854)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2v00b"]
 size = Vector3(13, 9, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b5dmc"]
+size = Vector3(30.6602, 18.4536, 4)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_ymun1"]
 top_radius = 2.905
@@ -2770,7 +2773,7 @@ transform = Transform3D(1, 0, 0, 1.13687e-13, 1, 0, 0, 0, 1, -8.64267e-07, 405, 
 mesh = SubResource("PlaneMesh_isujd")
 
 [node name="Mango" parent="." instance=ExtResource("1_xlif7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -37.0324, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -37, 4)
 speed = 12.0
 acc = 5.0
 jumpVelocity = 40.0
@@ -10372,6 +10375,7 @@ size = Vector3(1, 27.1, 9)
 [node name="CSGBox3D2" type="CSGBox3D" parent="ROOMS/Room14"]
 transform = Transform3D(0.492709, 0.853396, 0, -0.853396, 0.492709, 0, 0, 0, 0.985417, 2194.47, 162.8, -111)
 material_override = ExtResource("105_pwcyy")
+use_collision = true
 size = Vector3(1, 3, 9)
 
 [node name="BigAssPillar2" type="CSGCylinder3D" parent="ROOMS/Room14"]
@@ -13048,8 +13052,8 @@ debug_color = Color(0, 0.6, 0.701961, 0.85098)
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -757, 1.4, -101)
 
 [node name="Box" type="CollisionShape3D" parent="Checkpoint9"]
-transform = Transform3D(2.095, 0, 0, 0, 2.095, 0, 0, 0, 2.095, -1, -2, 3)
-shape = SubResource("BoxShape3D_2v00b")
+transform = Transform3D(2.095, 0, 0, 0, 2.095, 0, 0, 0, 2.095, -1, 7.90266, 3)
+shape = SubResource("BoxShape3D_b5dmc")
 debug_color = Color(0, 0.6, 0.701961, 0.85098)
 
 [node name="Node3D2" type="Node3D" parent="."]
