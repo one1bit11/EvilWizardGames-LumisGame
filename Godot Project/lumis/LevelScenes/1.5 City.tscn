@@ -1,4 +1,4 @@
-[gd_scene load_steps=209 format=3 uid="uid://cdt72fkucpjaf"]
+[gd_scene load_steps=211 format=3 uid="uid://cdt72fkucpjaf"]
 
 [ext_resource type="Material" uid="uid://cpgr1k704pcgu" path="res://Textures/0Universal/MapTextures/Pipe/DontTouch.tres" id="1_4vtbw"]
 [ext_resource type="Script" uid="uid://sh5l6dvaekyk" path="res://Scripts/water_crates.gd" id="2_s3xnc"]
@@ -60,7 +60,9 @@
 [ext_resource type="ArrayMesh" uid="uid://dqj2x0432l0li" path="res://Meshes/0Universal/StreetSign.obj" id="61_lvalg"]
 [ext_resource type="Texture2D" uid="uid://t3n0nnx2imt0" path="res://Textures/0Universal/ObjTextures/StreetSignTexture/StreetSign_StreetLamp_BaseColor.png" id="62_pdtgc"]
 [ext_resource type="Texture2D" uid="uid://bqhqqbkodpq86" path="res://Textures/0Universal/ObjTextures/StreetSignTexture/StreetSign_StreetLamp_Metallic.png" id="63_lw6k2"]
+[ext_resource type="ArrayMesh" uid="uid://8g6bfrl28l5v" path="res://Meshes/Other/ModularBuildings/ROOF4.obj" id="64_pdtgc"]
 [ext_resource type="Texture2D" uid="uid://5ecwfserbubb" path="res://Textures/0Universal/ObjTextures/StreetSignTexture/StreetSign_StreetLamp_Roughness.png" id="64_tym21"]
+[ext_resource type="ArrayMesh" uid="uid://cgk2desy4dsxu" path="res://Meshes/Other/ModularBuildings/ROOFCOURNER2.obj" id="65_lw6k2"]
 [ext_resource type="PackedScene" uid="uid://bq8grao5h2cy0" path="res://ObjectScenes/barrel.tscn" id="65_pdtgc"]
 [ext_resource type="PackedScene" uid="uid://4yn57cxfo0yp" path="res://ObjectScenes/lantern_on_hook.tscn" id="66_lw6k2"]
 
@@ -48524,5 +48526,435 @@ mesh = ExtResource("30_1rcvj")
 
 [node name="Window8" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.39497e-07, 5.9113, -163.174, 44.592, -3.61048e-06, 1.09524e-13, -1.94418e-06, -82.3863, -11.7079, -1073, 37.3457, -324.762)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("30_1rcvj")
+
+[node name="Roof4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5, 0, -1.00822e-06, 0, 5, 0, 4.37114e-07, 0, -11.5327, -773.823, 15.5387, -142.346)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0877199, 0, -1.48489, 0, 5, 0, 4.95122, 0, -0.0263075, -769, 15.5387, -118.051)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.21767e-07, 0, -3.86825, 0, 5, 0, 5.07343, 0, -1.69087e-07, -754.428, 15.5387, -112.109)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof7" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.07343, 0, 0, 0, 5, 0, 0, 0, 21.3888, -745.193, 15.5387, -155.831)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof13" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.07343, 0, 1.1499e-06, 0, 5, 0, -4.43533e-07, 0, -13.1533, -697.365, 39.6815, -172.604)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof16" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.07343, 0, 0, 0, 5, 0, 0, 0, 13.1533, -625.562, 39.6815, -172.604)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof14" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.21767e-07, 0, -17.8777, 0, 5, 0, 5.07343, 0, -7.8146e-07, -661.89, 39.6815, -145.313)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof15" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.21767e-07, 0, 17.8777, 0, 5, 0, -5.07343, 0, -7.8146e-07, -661.89, 39.6815, -199.817)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof17" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.21767e-07, 0, 10.2778, 0, 5, 0, -5.07343, 0, -4.49258e-07, -648.736, 17.7529, -90.6736)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof19" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.21767e-07, 0, -10.2778, 0, 5, 0, 5.07343, 0, -4.49258e-07, -648.736, 17.7529, -65.8058)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof18" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.07343, 0, 0, 0, 5, 0, 0, 0, 5.52061, -626.862, 17.7529, -78.0949)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof20" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.07343, 0, 4.82627e-07, 0, 5, 0, -4.43533e-07, 0, -5.52061, -670.852, 17.7529, -78.0949)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof12" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.21767e-07, 0, 5.68147, 0, 5, 0, -5.07343, 0, -2.48345e-07, -758.503, 15.5387, -199.287)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.21767e-07, 0, 17.206, 0, 5, 0, -5.07343, 0, -7.521e-07, -729.641, 15.5387, -87.0241)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof41" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.07343, 0, 1.2723e-07, 0, 5, 0, -4.43533e-07, 0, -1.45535, -763.989, 15.5387, -82.3228)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof42" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.21767e-07, 0, 1.45535, 0, 5, 0, -5.07343, 0, -6.36152e-08, -768.677, 15.5387, -75.5551)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.21767e-07, 0, -19.2842, 0, 5, 0, 5.07343, 0, -8.42941e-07, -734.315, 15.5387, -26.3178)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof11" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.07343, 0, -9.63881e-07, 0, 5, 0, 4.43533e-07, 0, -11.0255, -773.503, 15.5387, -53.4291)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof9" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.07343, 0, 0, 0, 5, 0, 0, 0, 14.86, -694.968, 15.5387, -57.09)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roofcourner2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5, 0, 4.37114e-07, 0, 5, 0, -4.37114e-07, 0, -5, -774.431, 15.4985, -117.662)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -624.927, 39.6594, -145.04)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner12" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5, 0, 4.37114e-07, 0, 5, 0, -4.37114e-07, 0, -5, -697.729, 39.6594, -145.04)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner13" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -697.729, 39.6594, -199.995)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner11" type="MeshInstance3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -625.466, 39.6594, -200.457)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner9" type="MeshInstance3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -744.723, 15.4985, -199.657)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -764.395, 15.4985, -87.4718)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner7" type="MeshInstance3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -694.405, 15.4985, -87.4718)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner14" type="MeshInstance3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -626.384, 17.6792, -91.2858)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner16" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -626.384, 17.6792, -65.3447)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner15" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -671.22, 17.6792, -91.2858)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner17" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -671.22, 17.6792, -65.2912)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roof21" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.21767e-07, 0, 12.6124, 0, 5, 0, -5.07343, 0, -5.51306e-07, -912.994, 46.285, -79.9991)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof22" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.21767e-07, 0, -12.6124, 0, 5, 0, 5.07343, 0, -5.51306e-07, -912.994, 46.285, -55.1314)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof23" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.07343, 0, 0, 0, 5, 0, 0, 0, 5.52061, -887.143, 46.285, -67.4204)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof24" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.07343, 0, 4.82627e-07, 0, 5, 0, -4.43533e-07, 0, -5.52061, -939.221, 46.285, -67.4204)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roofcourner18" type="MeshInstance3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -886.665, 46.2113, -80.6114)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner19" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -886.665, 46.2113, -54.6703)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner20" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -939.59, 46.2113, -80.6114)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner21" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -939.59, 46.2113, -54.6167)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roof25" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.21767e-07, 0, 12.6124, 0, 5, 0, -5.07343, 0, -5.51306e-07, -911.659, 46.285, -161.499)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof26" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.21767e-07, 0, -12.6124, 0, 5, 0, 5.07343, 0, -5.51306e-07, -911.659, 46.285, -136.631)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof27" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.07343, 0, 0, 0, 5, 0, 0, 0, 5.52061, -885.808, 46.285, -148.92)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof28" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.07343, 0, 4.82627e-07, 0, 5, 0, -4.43533e-07, 0, -5.52061, -937.886, 46.285, -148.92)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roofcourner22" type="MeshInstance3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -885.33, 46.2113, -162.111)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner23" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -885.33, 46.2113, -136.17)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner24" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -938.255, 46.2113, -162.111)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner25" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -938.255, 46.2113, -136.116)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roof37" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.0579, 0, -0.126706, 0, 5, 0, 0.0669179, 0, 9.57691, -810.757, 8.80129, -189.419)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof38" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.06125, 0, 0.125615, 0, 5, 0, -0.0669627, 0, -9.49441, -852.324, 8.80129, -190.164)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof39" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0678516, 0, -10.2622, 0, 5.00203, 0, 5.12845, 0, -0.135773, -832.693, 8.80129, -169.956)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof40" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0677804, 0, 9.94907, 0, 5, 0, -5.12303, 0, 0.131631, -831.524, 8.80129, -209.889)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roofcourner34" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0661463, 0, -4.99956, 0, 5, 0, 4.99956, 0, -0.0661463, -810.563, 8.72756, -168.869)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner35" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.99956, 0, 0.0661466, 0, 5, 0, -0.0661466, 0, -4.99956, -853.037, 8.72756, -169.939)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner36" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.99956, 0, -0.0661461, 0, 5, 0, 0.0661461, 0, 4.99956, -811.089, 8.72756, -210.084)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner37" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0661459, 0, 4.99956, 0, 5, 0, -4.99956, 0, 0.0661459, -852.157, 8.72756, -210.429)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roof29" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.07323, 0, -0.113586, 0, 5, 0, 0.0456907, 0, -12.6119, -1016.84, 15.6854, -146.153)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof30" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.07323, 0, 0.113585, 0, 5, 0, -0.0456902, 0, 12.6119, -981.291, 15.6854, -146.377)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof31" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0454718, 0, 8.45345, 0, 5, 0, -5.04895, 0, -0.0761334, -999.662, 15.6854, -172.116)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof32" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.045471, 0, -8.45345, 0, 5, 0, 5.04895, 0, 0.0761322, -998.944, 15.6854, -120.04)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roofcourner26" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0450291, 0, 4.9998, 0, 5, 0, -4.9998, 0, -0.0450291, -1017.69, 15.6117, -172.475)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner27" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.9998, 0, 0.0450289, 0, 5, 0, -0.0450289, 0, 4.9998, -981.067, 15.6117, -172.709)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner28" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.9998, 0, -0.0450294, 0, 5, 0, 0.0450294, 0, -4.9998, -1017.21, 15.6117, -119.553)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner29" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0450299, 0, -4.9998, 0, 5, 0, 4.9998, 0, 0.0450299, -980.536, 15.6117, -119.787)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roof33" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.07572, 0, -0.0766528, 0, 5, 0, 0.0457132, 0, -8.51108, -1016.09, 15.675, -59.3216)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof34" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.07572, 0, 0.0766521, 0, 5, 0, -0.0457127, 0, 8.51108, -980.539, 15.675, -59.4727)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof35" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0454718, 0, 8.45345, 0, 5, 0, -5.04895, 0, -0.0761334, -998.911, 15.675, -76.8736)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof36" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.045471, 0, -8.45345, 0, 5, 0, 5.04895, 0, 0.0761322, -998.192, 15.675, -42.4827)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roofcourner30" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0450291, 0, 4.9998, 0, 5, 0, -4.9998, 0, -0.0450291, -1016.94, 15.6012, -77.2325)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner31" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.9998, 0, 0.0450289, 0, 5, 0, -0.0450289, 0, 4.9998, -980.315, 15.6012, -77.4661)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner32" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.9998, 0, -0.0450294, 0, 5, 0, 0.0450294, 0, -4.9998, -1016.46, 15.6012, -41.9951)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner33" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0450299, 0, -4.9998, 0, 5, 0, 4.9998, 0, 0.0450299, -979.785, 15.6012, -42.2292)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -694.405, 15.4985, -25.878)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -773.916, 15.4985, -76.2407)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -763.755, 15.4985, -111.571)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Roofcourner4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -744.769, 15.4985, -111.571)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("65_lw6k2")
+
+[node name="Window11" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.61665e-07, -89.3446, 0, 12.8494, -3.90538e-06, 0, 0, 0, 119.514, -661.6, 39.9419, -171.067)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("30_1rcvj")
+
+[node name="Window17" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.61665e-07, -50.4136, 0, 12.8494, -2.20365e-06, 0, 0, 0, 84.942, -831.64, 9.31044, -189.916)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("30_1rcvj")
+
+[node name="Window18" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.61665e-07, -69.3115, 0, 12.8494, -3.0297e-06, 0, 0, 0, 58.6493, -911.851, 46.791, -148.839)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("30_1rcvj")
+
+[node name="Window20" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.45512e-14, 3.0297e-06, 80.6598, 12.8494, -3.0297e-06, 0, 5.61665e-07, 69.3115, -3.52575e-06, -999.77, 16.7171, -148.839)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("30_1rcvj")
+
+[node name="Window21" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.45512e-14, 1.88214e-06, 80.6598, 12.8494, -1.88214e-06, 0, 5.61665e-07, 43.0583, -3.52575e-06, -997.139, 16.3495, -59.016)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("30_1rcvj")
+
+[node name="Window19" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.61665e-07, -69.3115, 0, 12.8494, -3.0297e-06, 0, 0, 0, 58.6493, -911.851, 46.791, -67.6609)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("30_1rcvj")
+
+[node name="Window14" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.61665e-07, -56.3052, 0, 12.8494, -2.46118e-06, 0, 0, 0, 55.2678, -648.153, 18.968, -76.9402)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("30_1rcvj")
+
+[node name="Window15" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.45512e-14, 4.43975e-06, 60.1804, 12.8494, -4.43975e-06, 0, 5.61665e-07, 101.57, -2.63057e-06, -759.346, 16.3187, -157.365)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("30_1rcvj")
+
+[node name="Window16" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.97329e-14, 5.6189e-07, 44.7365, 26.0288, -5.6189e-07, 0, 1.13776e-06, 12.8545, -1.95549e-06, -756.893, 15.3292, -117.287)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("30_1rcvj")
+
+[node name="Window12" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.61665e-07, -101.261, 0, 12.8494, -4.42624e-06, 0, 0, 0, 123.486, -732.592, 16.7033, -53.9357)
+material_override = ExtResource("58_h0cim")
+mesh = ExtResource("30_1rcvj")
+
+[node name="Window13" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.61665e-07, -89.341, 0, 12.8494, -3.90522e-06, 0, 0, 0, 20.1962, -727.738, 16.3771, -81.7609)
 material_override = ExtResource("58_h0cim")
 mesh = ExtResource("30_1rcvj")
