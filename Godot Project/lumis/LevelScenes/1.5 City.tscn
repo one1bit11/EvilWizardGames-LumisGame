@@ -1,4 +1,4 @@
-[gd_scene load_steps=211 format=3 uid="uid://cdt72fkucpjaf"]
+[gd_scene load_steps=214 format=3 uid="uid://cdt72fkucpjaf"]
 
 [ext_resource type="Material" uid="uid://cpgr1k704pcgu" path="res://Textures/0Universal/MapTextures/Pipe/DontTouch.tres" id="1_4vtbw"]
 [ext_resource type="Script" uid="uid://sh5l6dvaekyk" path="res://Scripts/water_crates.gd" id="2_s3xnc"]
@@ -267,8 +267,17 @@ size = Vector3(1.70039, 17.0623, 20.7455)
 [sub_resource type="BoxShape3D" id="BoxShape3D_do6p4"]
 size = Vector3(1.70039, 16, 24)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_x22ri"]
+size = Vector3(65.5486, 43.0315, 33.2295)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_sjsnp"]
 size = Vector3(1.70039, 31.1782, 30)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4u7j2"]
+size = Vector3(7.82012, 24.8591, 8.69271)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3xinm"]
+size = Vector3(35.414, 31.1782, 46.0995)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bqij6"]
 size = Vector3(3.0665, 31.1782, 36.5165)
@@ -654,6 +663,13 @@ nonstick = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 157.125, -4.75, 0.499992)
 operation = 2
 size = Vector3(10, 3, 58)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="CityWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -174.477, -42.625, 2.56249)
+operation = 2
+size = Vector3(16.7964, 135, 56)
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -2670,7 +2686,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="RoofHole5" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.75072, -3.00001, 27.5318, -305.896)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.75072, -3.00001, 27.3315, -305.896)
 material_override = ExtResource("13_v6um6")
 use_collision = true
 size = Vector3(5, 2, 12)
@@ -2682,12 +2698,12 @@ use_collision = true
 mesh = SubResource("PrismMesh_es6pr")
 
 [node name="RoofHole" type="CSGBox3D" parent="LVL2/BuildingRoof"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.31591, 0)
 operation = 2
 size = Vector3(5, 2, 12)
 
 [node name="RoofHole3" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.75072, -24, 24.548, -385.896)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.75072, -24, 24.3344, -385.896)
 material_override = ExtResource("13_v6um6")
 use_collision = true
 size = Vector3(5, 2, 11.8252)
@@ -2699,7 +2715,7 @@ use_collision = true
 mesh = SubResource("PrismMesh_es6pr")
 
 [node name="RoofHole" type="CSGBox3D" parent="LVL2/BuildingRoof4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.32879, 0)
 operation = 2
 size = Vector3(5, 2, 12)
 
@@ -2712,7 +2728,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="RoofHole4" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.75072, -3, 27.5015, -332.896)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.75072, -3, 27.3302, -332.896)
 material_override = ExtResource("13_v6um6")
 use_collision = true
 size = Vector3(5, 2, 12)
@@ -2724,7 +2740,7 @@ use_collision = true
 mesh = SubResource("PrismMesh_es6pr")
 
 [node name="RoofHole" type="CSGBox3D" parent="LVL2/BuildingRoof2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.32623, 0)
 operation = 2
 size = Vector3(5, 2, 12)
 
@@ -2743,7 +2759,7 @@ use_collision = true
 size = Vector3(18, 1, 2)
 
 [node name="RoofHole2" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(-4.37114e-08, 0, 4.72694, 0, 1, 0, -1, 0, -2.06622e-07, -12.9624, 27.5176, -356.91)
+transform = Transform3D(-4.37114e-08, 0, 4.72694, 0, 1, 0, -1, 0, -2.06622e-07, -12.962, 27.333, -356.91)
 material_override = ExtResource("13_v6um6")
 use_collision = true
 size = Vector3(5, 2, 12)
@@ -2755,7 +2771,7 @@ use_collision = true
 mesh = SubResource("PrismMesh_es6pr")
 
 [node name="RoofHole" type="CSGBox3D" parent="LVL2/BuildingRoof3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+transform = Transform3D(1, 0, -2.84217e-14, 0, 1, 0, 0, 0, 1, 0, 1.33, 0)
 operation = 2
 size = Vector3(5, 2, 12)
 
@@ -2780,10 +2796,10 @@ use_collision = true
 size = Vector3(20, 0.001, 15)
 
 [node name="BuildingBase5" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.5, 5.49998, -282.593)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.5293, 5.49998, -282.593)
 material_override = ExtResource("13_32qvq")
 use_collision = true
-size = Vector3(17, 21, 15)
+size = Vector3(15.0586, 21, 15)
 
 [node name="BuildingBase33" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.5157, 5.46238, -282.602)
@@ -2792,10 +2808,10 @@ use_collision = true
 size = Vector3(17, 20.9248, 15)
 
 [node name="BuildingBase29" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.5, 16.0102, -282.593)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.5342, 16.0102, -282.593)
 material_override = SubResource("StandardMaterial3D_2m277")
 use_collision = true
-size = Vector3(17, 0.001, 15)
+size = Vector3(15.0684, 0.001, 15)
 
 [node name="BuildingBase7" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 8.49998, -282.593)
@@ -2828,6 +2844,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.00001, 11.5, -282.593)
 material_override = ExtResource("15_jcojh")
 use_collision = true
 size = Vector3(24, 33, 15)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="BuildingBase19" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.5071, 17.4927, -277.38)
+material_override = ExtResource("15_jcojh")
+use_collision = true
+size = Vector3(81.4276, 44.9854, 21.255)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="BuildingBase36" type="CSGBox3D" parent="LVL2/BuildingBase19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.8343, 0, -4.82843)
+material_override = ExtResource("15_jcojh")
+operation = 2
+use_collision = true
+size = Vector3(10.601, 44.9854, 14.2084)
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -2882,18 +2915,26 @@ use_collision = true
 size = Vector3(15, 2, 2)
 
 [node name="BuildingBase6" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9864, 3.49998, -189.093)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9864, 3.49998, -188.258)
 material_override = ExtResource("15_jcojh")
 use_collision = true
-size = Vector3(20, 43, 28)
+size = Vector3(20, 43, 26.3306)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="BuildingBase36" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9864, 0.0368147, -194.933)
+material_override = ExtResource("15_jcojh")
+use_collision = true
+size = Vector3(20, 36.0737, 17.2999)
 script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="BuildingBase22" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9864, 25.0241, -189.093)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9864, 25.0241, -188.259)
 material_override = ExtResource("14_bxseg")
 use_collision = true
-size = Vector3(20, 0.001, 28)
+size = Vector3(20, 0.001, 26.332)
 
 [node name="Wood" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9864, 22.5, -172.093)
@@ -3387,6 +3428,14 @@ size = Vector3(6, 18, 6)
 script = ExtResource("12_mg1xl")
 nonstick = true
 
+[node name="StreetBoundaryWaterGate22" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.809, 7, -276.659)
+material_override = ExtResource("13_m5b6e")
+use_collision = true
+size = Vector3(45.4842, 18, 22.2796)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
 [node name="StreetBoundaryWaterGate2" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 42.5, 6, -70.75)
 material_override = ExtResource("13_m5b6e")
@@ -3626,10 +3675,10 @@ use_collision = true
 size = Vector3(18, 0.0166626, 19)
 
 [node name="StreetBoundary19" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -44, 27.5, -564)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -44, 24, -564)
 material_override = ExtResource("15_jcojh")
 use_collision = true
-size = Vector3(48, 41, 46)
+size = Vector3(48, 48, 46)
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -3670,6 +3719,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 21.5, 0.5)
 operation = 2
 use_collision = true
 size = Vector3(25, 17, 9)
+
+[node name="StreetBoundary41" type="CSGBox3D" parent="LVL2/StreetBoundary21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13501, 0.00511932, -17.7608)
+operation = 2
+use_collision = true
+size = Vector3(25.3472, 67.5416, 9)
+
+[node name="StreetBoundary42" type="CSGBox3D" parent="LVL2/StreetBoundary21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13501, 0.00511932, 20.5667)
+operation = 2
+use_collision = true
+size = Vector3(25.3472, 67.5416, 9)
 
 [node name="StreetBoundary42" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.00002, 68.0042, -589)
@@ -5709,7 +5770,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences13/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 2.3823, -7.744)
+transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.050293, -9.47969, -7.744)
 shape = SubResource("BoxShape3D_x46m3")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -5837,7 +5898,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences13/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76925e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 5.97876, -9.47278)
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.050293, -6.43868, -9.47278)
 shape = SubResource("BoxShape3D_i14e2")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -6221,7 +6282,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences18/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 2.3823, -7.744)
+transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.050293, -9.45141, -7.744)
 shape = SubResource("BoxShape3D_x46m3")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -6349,7 +6410,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences18/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76925e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 5.97876, -9.47278)
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.050293, -6.26979, -9.47278)
 shape = SubResource("BoxShape3D_i14e2")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -6733,7 +6794,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences19/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 2.3823, -7.744)
+transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.050293, -9.48768, -7.744)
 shape = SubResource("BoxShape3D_x46m3")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -6861,7 +6922,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences19/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76925e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 5.97876, -9.47278)
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.050293, -6.32242, -9.47278)
 shape = SubResource("BoxShape3D_i14e2")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -7245,7 +7306,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences20/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 2.3823, -7.744)
+transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.050293, -9.54309, -7.744)
 shape = SubResource("BoxShape3D_x46m3")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -7373,7 +7434,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences20/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76925e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 5.97876, -9.47278)
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.050293, -6.36831, -9.47278)
 shape = SubResource("BoxShape3D_i14e2")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -8013,7 +8074,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences21/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, -1.74794e-12, 0, 1, 0.0501953, 0.330077, -9.74643)
+transform = Transform3D(1, 0, 0, 0, 1, 0, -1.73372e-12, 0, 1, 0.0502014, 0.330076, -6.10278)
 shape = SubResource("BoxShape3D_xicfl")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -8155,7 +8216,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences21/Fences2/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, -1.74794e-12, 0, 1, 0.0501953, 0.330077, -9.74643)
+transform = Transform3D(1, 0, 0, 0, 1, 0, -1.73372e-12, 0, 1, 0.0502014, 0.330078, -5.94263)
 shape = SubResource("BoxShape3D_xicfl")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -8241,7 +8302,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences21/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 2.3823, -7.744)
+transform = Transform3D(1, 0, -2.71427e-12, 0, 1, 0, -1.73372e-12, 0, 1, 0.0502319, 2.3823, -4.04578)
 shape = SubResource("BoxShape3D_x46m3")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -8327,7 +8388,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences21/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76925e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 5.97876, -9.47278)
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.71951e-12, 0, 1, 0.0502319, 5.97876, -6.31177)
 shape = SubResource("BoxShape3D_i14e2")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -8396,6 +8457,406 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
 
 [node name="Rail" type="MeshInstance3D" parent="Fences21/Fences4/Pole7"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Fences91" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -816.929, 12.0144, -77.2583)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Fences91"]
+transform = Transform3D(-3.02803e-08, 0, -0.704986, 0, 0.686468, 0, 0.692731, 0, -3.08159e-08, -6.62569, 1.81581, -0.157657)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fences91/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, -1.74794e-12, 0, 1, 0.0501953, 0.330077, -9.74643)
+shape = SubResource("BoxShape3D_xicfl")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Pole3" type="MeshInstance3D" parent="Fences91"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25334, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Pole3"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole4" type="MeshInstance3D" parent="Fences91"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 0.0463362, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Pole4"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole5" type="MeshInstance3D" parent="Fences91"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -2.17367, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Pole5"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole6" type="MeshInstance3D" parent="Fences91"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -4.33669, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Pole6"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole7" type="MeshInstance3D" parent="Fences91"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -6.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Pole7"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole8" type="MeshInstance3D" parent="Fences91"]
+transform = Transform3D(-2.90681e-08, 0, -0.665, 0, 0.665, 0, 0.665, 0, -2.90681e-08, -8.73322, 1.80647, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole9" type="MeshInstance3D" parent="Fences91"]
+transform = Transform3D(-2.90681e-08, 0, -0.665, 0, 0.665, 0, 0.665, 0, -2.90681e-08, -8.73322, 4.49952, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole10" type="MeshInstance3D" parent="Fences91"]
+transform = Transform3D(-2.90681e-08, 0, -0.665, 0, 0.665, 0, 0.665, 0, -2.90681e-08, -8.73322, 7.20185, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole11" type="MeshInstance3D" parent="Fences91"]
+transform = Transform3D(-2.90681e-08, 0, -0.665, 0, 0.665, 0, 0.665, 0, -2.90681e-08, -8.73322, 9.86759, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole12" type="MeshInstance3D" parent="Fences91"]
+transform = Transform3D(-2.90681e-08, 0, 0.665, 0, 0.665, 0, -0.665, 0, -2.90681e-08, 4.46582, 1.80647, -0.150658)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole13" type="MeshInstance3D" parent="Fences91"]
+transform = Transform3D(-2.90681e-08, 0, 0.665, 0, 0.665, 0, -0.665, 0, -2.90681e-08, 4.46582, 4.49952, -0.150658)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole14" type="MeshInstance3D" parent="Fences91"]
+transform = Transform3D(-2.90681e-08, 0, 0.665, 0, 0.665, 0, -0.665, 0, -2.90681e-08, 4.46582, 7.20185, -0.150658)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole15" type="MeshInstance3D" parent="Fences91"]
+transform = Transform3D(-2.90681e-08, 0, 0.665, 0, 0.665, 0, -0.665, 0, -2.90681e-08, 4.46582, 9.86759, -0.150658)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Fences2" type="Node3D" parent="Fences91"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.67483, 0)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Fences91/Fences2"]
+transform = Transform3D(-3.02803e-08, 0, -0.704986, 0, 0.686468, 0, 0.692731, 0, -3.08159e-08, -6.62569, 1.81581, -0.157657)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fences91/Fences2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, -1.74794e-12, 0, 1, 0.0501953, 0.330077, -9.74643)
+shape = SubResource("BoxShape3D_xicfl")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Pole3" type="MeshInstance3D" parent="Fences91/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25334, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences2/Pole3"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole4" type="MeshInstance3D" parent="Fences91/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 0.0463362, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences2/Pole4"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole5" type="MeshInstance3D" parent="Fences91/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -2.17367, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences2/Pole5"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole6" type="MeshInstance3D" parent="Fences91/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -4.33669, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences2/Pole6"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole7" type="MeshInstance3D" parent="Fences91/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -6.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences2/Pole7"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Fences3" type="Node3D" parent="Fences91"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.37415, 0)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Fences91/Fences3"]
+transform = Transform3D(-3.02803e-08, 0, -0.704986, 0, 0.686468, 0, 0.692731, 0, -3.08159e-08, -6.62569, 1.81581, -0.157657)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fences91/Fences3/StaticBody3D"]
+transform = Transform3D(1, 0, -2.71427e-12, 0, 1, 0, -1.71951e-12, 0, 1, -31.8739, -3.54434, -10.459)
+shape = SubResource("BoxShape3D_x22ri")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Pole3" type="MeshInstance3D" parent="Fences91/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25334, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences3/Pole3"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole4" type="MeshInstance3D" parent="Fences91/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 0.0463362, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences3/Pole4"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole5" type="MeshInstance3D" parent="Fences91/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -2.17367, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences3/Pole5"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole6" type="MeshInstance3D" parent="Fences91/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -4.33669, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences3/Pole6"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole7" type="MeshInstance3D" parent="Fences91/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -6.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences3/Pole7"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Fences4" type="Node3D" parent="Fences91"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.04494, 0)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Fences91/Fences4"]
+transform = Transform3D(-3.02803e-08, 0, -0.704986, 0, 0.686468, 0, 0.692731, 0, -3.08159e-08, -6.62569, 1.81581, -0.157657)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fences91/Fences4/StaticBody3D"]
+transform = Transform3D(1, 0, -1.76925e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 5.97876, -9.47278)
+shape = SubResource("BoxShape3D_i14e2")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Pole3" type="MeshInstance3D" parent="Fences91/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25334, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences4/Pole3"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole4" type="MeshInstance3D" parent="Fences91/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 0.0463362, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences4/Pole4"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole5" type="MeshInstance3D" parent="Fences91/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -2.17367, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences4/Pole5"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole6" type="MeshInstance3D" parent="Fences91/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -4.33669, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences4/Pole6"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole7" type="MeshInstance3D" parent="Fences91/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -6.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences91/Fences4/Pole7"]
 transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
 material_override = ExtResource("46_x46m3")
 mesh = ExtResource("51_rdjwf")
@@ -10564,6 +11025,1030 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
 
 [node name="Rail" type="MeshInstance3D" parent="Fences39/Fences4/Pole9"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Fences89" type="Node3D" parent="."]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -745.098, 16.8557, -125.158)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Fences89"]
+transform = Transform3D(-3.02803e-08, 0, -0.704986, 0, 0.686468, 0, 0.692731, 0, -3.08159e-08, -6.62569, 1.81581, -0.157657)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fences89/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, -1.74794e-12, 0, 1, 0.0501953, 0.330077, -9.74643)
+shape = SubResource("BoxShape3D_xicfl")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Pole3" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25334, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Pole3"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole4" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 0.0463362, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Pole4"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole5" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -2.17367, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Pole5"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole6" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -4.33669, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Pole6"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole7" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -6.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Pole7"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole16" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -8.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Pole16"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole17" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -10.7332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Pole17"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole8" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(-2.90681e-08, 0, -0.665, 0, 0.665, 0, 0.665, 0, -2.90681e-08, -12.9332, 1.80647, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole9" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(-2.90681e-08, 0, -0.665, 0, 0.665, 0, 0.665, 0, -2.90681e-08, -12.9332, 4.49952, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole10" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(-2.90681e-08, 0, -0.665, 0, 0.665, 0, 0.665, 0, -2.90681e-08, -12.9332, 7.20185, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole11" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(-2.90681e-08, 0, -0.665, 0, 0.665, 0, 0.665, 0, -2.90681e-08, -12.9332, 9.86759, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole12" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(-2.90681e-08, 0, 0.665, 0, 0.665, 0, -0.665, 0, -2.90681e-08, 4.46582, 1.80647, -0.150658)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole13" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(-2.90681e-08, 0, 0.665, 0, 0.665, 0, -0.665, 0, -2.90681e-08, 4.46582, 4.49952, -0.150658)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole14" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(-2.90681e-08, 0, 0.665, 0, 0.665, 0, -0.665, 0, -2.90681e-08, 4.46582, 7.20185, -0.150658)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole15" type="MeshInstance3D" parent="Fences89"]
+transform = Transform3D(-2.90681e-08, 0, 0.665, 0, 0.665, 0, -0.665, 0, -2.90681e-08, 4.46582, 9.86759, -0.150658)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Fences2" type="Node3D" parent="Fences89"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.67483, 0)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Fences89/Fences2"]
+transform = Transform3D(-3.02803e-08, 0, -0.704986, 0, 0.686468, 0, 0.692731, 0, -3.08159e-08, -6.62569, 1.81581, -0.157657)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fences89/Fences2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, -1.7053e-12, 0, 1, 2.31738, 6.01607, -15.3367)
+shape = SubResource("BoxShape3D_4u7j2")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Pole3" type="MeshInstance3D" parent="Fences89/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25334, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences2/Pole3"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole4" type="MeshInstance3D" parent="Fences89/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 0.0463362, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences2/Pole4"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole5" type="MeshInstance3D" parent="Fences89/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -2.17367, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences2/Pole5"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole6" type="MeshInstance3D" parent="Fences89/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -4.33669, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences2/Pole6"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole7" type="MeshInstance3D" parent="Fences89/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -6.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences2/Pole7"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole8" type="MeshInstance3D" parent="Fences89/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -8.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences2/Pole8"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole9" type="MeshInstance3D" parent="Fences89/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -10.7332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences2/Pole9"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Fences3" type="Node3D" parent="Fences89"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.37415, 0)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Fences89/Fences3"]
+transform = Transform3D(-3.02803e-08, 0, -0.704986, 0, 0.686468, 0, 0.692731, 0, -3.08159e-08, -6.62569, 1.81581, -0.157657)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fences89/Fences3/StaticBody3D"]
+transform = Transform3D(1, 0, -2.72848e-12, 0, 1, 0, -1.73372e-12, 0, 1, 0.050293, 2.38231, -5.39284)
+shape = SubResource("BoxShape3D_sjsnp")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Pole3" type="MeshInstance3D" parent="Fences89/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25334, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences3/Pole3"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole4" type="MeshInstance3D" parent="Fences89/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 0.0463362, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences3/Pole4"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole5" type="MeshInstance3D" parent="Fences89/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -2.17367, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences3/Pole5"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole6" type="MeshInstance3D" parent="Fences89/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -4.33669, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences3/Pole6"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole7" type="MeshInstance3D" parent="Fences89/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -6.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences3/Pole7"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole8" type="MeshInstance3D" parent="Fences89/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -8.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences3/Pole8"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole9" type="MeshInstance3D" parent="Fences89/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -10.7332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences3/Pole9"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Fences4" type="Node3D" parent="Fences89"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.04494, 0)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Fences89/Fences4"]
+transform = Transform3D(-3.02803e-08, 0, -0.704986, 0, 0.686468, 0, 0.692731, 0, -3.08159e-08, -6.62569, 1.81581, -0.157657)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fences89/Fences4/StaticBody3D"]
+transform = Transform3D(1, 0, -1.76925e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 5.97876, -9.47278)
+shape = SubResource("BoxShape3D_i14e2")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Pole3" type="MeshInstance3D" parent="Fences89/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25334, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences4/Pole3"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole4" type="MeshInstance3D" parent="Fences89/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 0.0463362, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences4/Pole4"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole5" type="MeshInstance3D" parent="Fences89/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -2.17367, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences4/Pole5"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole6" type="MeshInstance3D" parent="Fences89/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -4.33669, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences4/Pole6"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole7" type="MeshInstance3D" parent="Fences89/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -6.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences4/Pole7"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole8" type="MeshInstance3D" parent="Fences89/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -8.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences4/Pole8"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole9" type="MeshInstance3D" parent="Fences89/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -10.7332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences89/Fences4/Pole9"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Fences90" type="Node3D" parent="."]
+transform = Transform3D(1, 0, -1.74845e-07, 0, 1, 0, 1.74845e-07, 0, 1, -749.72, 16.8557, -112.076)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Fences90"]
+transform = Transform3D(-3.02803e-08, 0, -0.704986, 0, 0.686468, 0, 0.692731, 0, -3.08159e-08, -6.62569, 1.81581, -0.157657)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fences90/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, -1.74794e-12, 0, 1, 0.0501953, 0.330077, -9.74643)
+disabled = true
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Pole3" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25334, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Pole3"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole4" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 0.0463362, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Pole4"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole5" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -2.17367, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Pole5"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole6" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -4.33669, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Pole6"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole7" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -6.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Pole7"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole16" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -8.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Pole16"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole17" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -10.7332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Pole17"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole8" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(-2.90681e-08, 0, -0.665, 0, 0.665, 0, 0.665, 0, -2.90681e-08, -12.9332, 1.80647, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole9" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(-2.90681e-08, 0, -0.665, 0, 0.665, 0, 0.665, 0, -2.90681e-08, -12.9332, 4.49952, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole10" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(-2.90681e-08, 0, -0.665, 0, 0.665, 0, 0.665, 0, -2.90681e-08, -12.9332, 7.20185, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole11" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(-2.90681e-08, 0, -0.665, 0, 0.665, 0, 0.665, 0, -2.90681e-08, -12.9332, 9.86759, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole12" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(-2.90681e-08, 0, 0.665, 0, 0.665, 0, -0.665, 0, -2.90681e-08, 4.46582, 1.80647, -0.150658)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole13" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(-2.90681e-08, 0, 0.665, 0, 0.665, 0, -0.665, 0, -2.90681e-08, 4.46582, 4.49952, -0.150658)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole14" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(-2.90681e-08, 0, 0.665, 0, 0.665, 0, -0.665, 0, -2.90681e-08, 4.46582, 7.20185, -0.150658)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Pole15" type="MeshInstance3D" parent="Fences90"]
+transform = Transform3D(-2.90681e-08, 0, 0.665, 0, 0.665, 0, -0.665, 0, -2.90681e-08, 4.46582, 9.86759, -0.150658)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("52_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Fences2" type="Node3D" parent="Fences90"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.67483, 0)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Fences90/Fences2"]
+transform = Transform3D(-3.02803e-08, 0, -0.704986, 0, 0.686468, 0, 0.692731, 0, -3.08159e-08, -6.62569, 1.81581, -0.157657)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fences90/Fences2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, -1.74794e-12, 0, 1, 0.0501953, 0.330077, -9.74643)
+disabled = true
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Pole3" type="MeshInstance3D" parent="Fences90/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25334, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences2/Pole3"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole4" type="MeshInstance3D" parent="Fences90/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 0.0463362, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences2/Pole4"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole5" type="MeshInstance3D" parent="Fences90/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -2.17367, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences2/Pole5"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole6" type="MeshInstance3D" parent="Fences90/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -4.33669, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences2/Pole6"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole7" type="MeshInstance3D" parent="Fences90/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -6.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences2/Pole7"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole8" type="MeshInstance3D" parent="Fences90/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -8.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences2/Pole8"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole9" type="MeshInstance3D" parent="Fences90/Fences2"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -10.7332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences2/Pole9"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Fences3" type="Node3D" parent="Fences90"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.37415, 0)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Fences90/Fences3"]
+transform = Transform3D(-3.02803e-08, 0, -0.704986, 0, 0.686468, 0, 0.692731, 0, -3.08159e-08, -6.62569, 1.81581, -0.157657)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fences90/Fences3/StaticBody3D"]
+transform = Transform3D(1, 0, -2.98428e-12, 0, 1, 0, -1.76215e-12, 0, 1, -16.0698, 2.38231, 6.3949)
+shape = SubResource("BoxShape3D_3xinm")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Pole3" type="MeshInstance3D" parent="Fences90/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25334, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences3/Pole3"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole4" type="MeshInstance3D" parent="Fences90/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 0.0463362, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences3/Pole4"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole5" type="MeshInstance3D" parent="Fences90/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -2.17367, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences3/Pole5"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole6" type="MeshInstance3D" parent="Fences90/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -4.33669, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences3/Pole6"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole7" type="MeshInstance3D" parent="Fences90/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -6.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences3/Pole7"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole8" type="MeshInstance3D" parent="Fences90/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -8.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences3/Pole8"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole9" type="MeshInstance3D" parent="Fences90/Fences3"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -10.7332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences3/Pole9"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Fences4" type="Node3D" parent="Fences90"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.04494, 0)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Fences90/Fences4"]
+transform = Transform3D(-3.02803e-08, 0, -0.704986, 0, 0.686468, 0, 0.692731, 0, -3.08159e-08, -6.62569, 1.81581, -0.157657)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fences90/Fences4/StaticBody3D"]
+transform = Transform3D(1, 0, -1.76925e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 5.97876, -9.47278)
+disabled = true
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Pole3" type="MeshInstance3D" parent="Fences90/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25334, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences4/Pole3"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole4" type="MeshInstance3D" parent="Fences90/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 0.0463362, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences4/Pole4"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole5" type="MeshInstance3D" parent="Fences90/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -2.17367, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences4/Pole5"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole6" type="MeshInstance3D" parent="Fences90/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -4.33669, 1.83721, -0.150653)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences4/Pole6"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole7" type="MeshInstance3D" parent="Fences90/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -6.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences4/Pole7"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole8" type="MeshInstance3D" parent="Fences90/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -8.5332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences4/Pole8"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole9" type="MeshInstance3D" parent="Fences90/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -10.7332, 1.83721, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences90/Fences4/Pole9"]
 transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
 material_override = ExtResource("46_x46m3")
 mesh = ExtResource("51_rdjwf")
@@ -19419,7 +20904,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences17/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 2.3823, -7.744)
+transform = Transform3D(1, 0, -2.71427e-12, 0, 1, 0, -1.71951e-12, 0, 1, 0.0502319, -9.40238, -7.74402)
 shape = SubResource("BoxShape3D_x46m3")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -19547,7 +21032,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences17/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76925e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 5.97876, -9.47278)
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.73372e-12, 0, 1, 0.0502319, -6.23729, -9.47278)
 shape = SubResource("BoxShape3D_i14e2")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -19931,7 +21416,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences14/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 2.3823, -7.744)
+transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.050293, -9.41269, -7.744)
 shape = SubResource("BoxShape3D_x46m3")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -20059,7 +21544,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences14/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76925e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 5.97876, -9.47278)
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.050293, -6.329, -9.47278)
 shape = SubResource("BoxShape3D_i14e2")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -30663,7 +32148,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences73/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 2.3823, -7.744)
+transform = Transform3D(1, 0, -2.71427e-12, 0, 1, 0, -1.73372e-12, 0, 1, -1.92216, 2.3823, -7.74402)
 shape = SubResource("BoxShape3D_x46m3")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -38461,7 +39946,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences15/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 2.3823, -7.744)
+transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.050293, -9.42753, -7.744)
 shape = SubResource("BoxShape3D_x46m3")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -38589,7 +40074,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences15/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76925e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 5.97876, -9.47278)
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.050293, -6.28076, -9.47278)
 shape = SubResource("BoxShape3D_i14e2")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -42284,6 +43769,454 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
 
 [node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole8"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole9" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 6.65631, 4.51055, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole9"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole10" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 4.47632, 4.51055, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole10"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole11" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25336, 4.51055, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole11"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole12" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 0.0463257, 4.51055, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole12"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole13" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -2.17365, 4.51055, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole13"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole14" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -4.33667, 4.51055, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole14"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole15" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -6.5332, 4.51055, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole15"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole16" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -8.71051, 4.51055, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole16"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole17" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 6.65631, 7.28183, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole17"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole18" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 4.47632, 7.28183, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole18"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole19" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25336, 7.28183, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole19"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole20" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 0.0463257, 7.28183, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole20"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole21" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -2.17365, 7.28183, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole21"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole22" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -4.33667, 7.28183, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole22"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole23" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -6.5332, 7.28183, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole23"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole24" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -8.71051, 7.28183, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole24"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole25" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -8.71857, 7.28183, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole25"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole26" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -10.8986, 7.28183, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole26"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole27" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -13.1215, 7.28183, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole27"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole28" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -15.3286, 7.28183, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole28"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole29" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -17.5402, 7.28183, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole29"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole30" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -19.7032, 7.28183, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole30"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole31" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -21.8997, 7.28183, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole31"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole32" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -24.077, 7.28183, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole32"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole33" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -8.62164, 4.50765, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole33"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole34" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -10.8016, 4.50765, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole34"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole35" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -13.0246, 4.50765, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole35"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole36" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -15.2316, 4.50765, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole36"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole37" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -17.4516, 4.50765, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole37"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole38" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -19.6146, 4.50765, -0.15065)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole38"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole39" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -21.8112, 4.50765, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole39"]
+transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("51_rdjwf")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
+
+[node name="Pole40" type="MeshInstance3D" parent="Fences53/Fences4"]
+transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, -23.9885, 4.50765, -0.150635)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("47_jrmbu")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVL1/ROOMS/Room4")
+surface_material_override/0 = SubResource("StandardMaterial3D_dodxj")
+
+[node name="Rail" type="MeshInstance3D" parent="Fences53/Fences4/Pole40"]
 transform = Transform3D(0.963772, 0, 0, 0, 0.963772, 0, 0, 0, 0.963772, 0.000529971, -1.09136, 0.003784)
 material_override = ExtResource("46_x46m3")
 mesh = ExtResource("51_rdjwf")
@@ -47945,7 +49878,7 @@ skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_5kmal")
 
 [node name="Bench" type="MeshInstance3D" parent="."]
-transform = Transform3D(-2.67965, 0, -4.04616e-07, 0, 2.67965, 0, 4.04616e-07, 0, -2.67965, -720.123, -1.24141, -97.043)
+transform = Transform3D(-2.0832, 0, -3.14555e-07, 0, 2.0832, 0, 3.14555e-07, 0, -2.0832, -720.123, -1.88131, -97.043)
 mesh = ExtResource("51_rrsgu")
 surface_material_override/0 = ExtResource("52_h0cim")
 
@@ -48021,7 +49954,7 @@ shape = SubResource("ConvexPolygonShape3D_rfgie")
 shape = SubResource("ConvexPolygonShape3D_2yrkr")
 
 [node name="Bench6" type="MeshInstance3D" parent="."]
-transform = Transform3D(-2.67965, 0, -4.04616e-07, 0, 2.67965, 0, 4.04616e-07, 0, -2.67965, -720.123, -1.24141, -118.078)
+transform = Transform3D(-2.0733, 0, -3.13059e-07, 0, 2.0733, 0, 3.13059e-07, 0, -2.0733, -720.123, -1.91853, -118.078)
 mesh = ExtResource("51_rrsgu")
 surface_material_override/0 = ExtResource("52_h0cim")
 
@@ -48097,7 +50030,7 @@ shape = SubResource("ConvexPolygonShape3D_rfgie")
 shape = SubResource("ConvexPolygonShape3D_2yrkr")
 
 [node name="Bench5" type="MeshInstance3D" parent="."]
-transform = Transform3D(3.81697e-07, 0, -2.95011, 0, 2.95011, 0, 2.95011, 0, 3.81697e-07, -1001.58, -0.985145, -111.909)
+transform = Transform3D(3.0483e-07, 0, -2.35601, 0, 2.35601, 0, 2.35601, 0, 3.0483e-07, -1001.58, -1.62912, -111.909)
 mesh = ExtResource("51_rrsgu")
 surface_material_override/0 = ExtResource("52_h0cim")
 

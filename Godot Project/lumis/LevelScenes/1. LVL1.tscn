@@ -1331,7 +1331,7 @@ size = Vector3(3074, 1, 2585)
 size = Vector3(234.592, 1, 180.092)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_baenk"]
-size = Vector3(309.034, 1, 273.779)
+size = Vector3(359.786, 1, 273.779)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_n7gex"]
 size = Vector3(23, 1, 14)
@@ -2261,6 +2261,7 @@ light_color = Color(0.900747, 0.837172, 0.783396, 1)
 light_energy = 13.698
 light_negative = true
 light_bake_mode = 1
+shadow_enabled = true
 omni_range = 58.76
 
 [node name="OmniLight3D24" type="OmniLight3D" parent="LVCity"]
@@ -2269,6 +2270,7 @@ light_color = Color(0.900747, 0.837172, 0.783396, 1)
 light_energy = 13.698
 light_negative = true
 light_bake_mode = 1
+shadow_enabled = true
 omni_range = 58.76
 
 [node name="OmniLight3D25" type="OmniLight3D" parent="LVCity"]
@@ -2361,6 +2363,13 @@ size = Vector3(25.9916, 123.829, 33.7933)
 script = ExtResource("2_4bvgn")
 nonstick = true
 
+[node name="CSGBox3D25" type="CSGBox3D" parent="LVCityBoarder/CityWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -179.658, -101.751, 2.52667)
+operation = 2
+size = Vector3(26.9944, 254.477, 55.9369)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
 [node name="CSGBox3D4" type="CSGBox3D" parent="LVCityBoarder/CityWalls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.8181, -65.1646, -24.6149)
 operation = 2
@@ -2395,9 +2404,9 @@ script = ExtResource("2_4bvgn")
 nonstick = true
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="LVCityBoarder/CityWalls2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -179.928, 8.04615, 0.436646)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -179.658, -107.58, 2.52667)
 operation = 2
-size = Vector3(10, 23.2242, 11.781)
+size = Vector3(26.9944, 254.477, 55.9369)
 script = ExtResource("2_4bvgn")
 nonstick = true
 
@@ -2554,6 +2563,96 @@ operation = 2
 size = Vector3(10, 23.2242, 11.781)
 script = ExtResource("2_4bvgn")
 nonstick = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="LVCityBoarder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1139.89, -145.756, -76)
+material_override = ExtResource("107_pwcyy")
+use_collision = true
+size = Vector3(22, 332, 7)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="LVCityBoarder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1140.49, -101.756, -158.7)
+material_override = ExtResource("107_pwcyy")
+use_collision = true
+size = Vector3(23, 244, 7)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="LVCityBoarder"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1132.49, -101.756, -148.7)
+material_override = ExtResource("107_pwcyy")
+use_collision = true
+size = Vector3(27, 244, 7)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="LVCityBoarder"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1126.49, -97.0557, -148.7)
+material_override = ExtResource("107_pwcyy")
+use_collision = true
+size = Vector3(27, 253.4, 7)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="LVCityBoarder"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -1130.04, 27.7772, -134.618)
+material_override = ExtResource("107_pwcyy")
+use_collision = true
+size = Vector3(25.9, 72.4302, 3)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="LVCityBoarder"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -1130.04, 37.6856, -101.432)
+material_override = ExtResource("107_pwcyy")
+use_collision = true
+size = Vector3(25.9, 52.6133, 3)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="LVCityBoarder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1136.49, -97.0557, -165.7)
+material_override = ExtResource("107_pwcyy")
+use_collision = true
+size = Vector3(27, 253.4, 7)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="LVCityBoarder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1133.54, -97.0557, -69.2)
+material_override = ExtResource("107_pwcyy")
+use_collision = true
+size = Vector3(21.1, 253.4, 7)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="LVCityBoarder"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1132.49, -101.756, -86.7)
+material_override = ExtResource("107_pwcyy")
+use_collision = true
+size = Vector3(27, 244, 7)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="LVCityBoarder"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1138.24, -111.256, -118.3)
+material_override = ExtResource("107_pwcyy")
+use_collision = true
+size = Vector3(40, 263, 12.9)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="LVCityBoarder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1140.54, -101.756, -97.2)
+visible = false
+size = Vector3(18.5, 244, 7)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="LVCityBoarder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1140.54, -101.756, -139.2)
+visible = false
+size = Vector3(18.5, 244, 7)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource("1_ir167")
@@ -11886,90 +11985,6 @@ material_override = ExtResource("109_clfdl")
 size = Vector3(230.562, 198, 328.733)
 script = ExtResource("2_4bvgn")
 
-[node name="Block28" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 153.01, 5.47787, 538.52)
-visible = false
-material_override = ExtResource("7_xc2n4")
-size = Vector3(524.76, 219.062, 170)
-script = ExtResource("2_4bvgn")
-
-[node name="Block29" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -214.87, 15.447, 594.52)
-visible = false
-material_override = ExtResource("7_xc2n4")
-size = Vector3(471, 239, 170)
-script = ExtResource("2_4bvgn")
-
-[node name="Block30" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -454.87, 29.947, 338.52)
-visible = false
-material_override = ExtResource("7_xc2n4")
-size = Vector3(471, 268, 170)
-script = ExtResource("2_4bvgn")
-
-[node name="Block31" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -426.87, 7.44704, -71.48)
-visible = false
-material_override = ExtResource("7_xc2n4")
-size = Vector3(471, 223, 170)
-script = ExtResource("2_4bvgn")
-
-[node name="Block32" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -376.37, 11.447, -358.98)
-visible = false
-material_override = ExtResource("7_xc2n4")
-size = Vector3(180, 231, 331)
-script = ExtResource("2_4bvgn")
-
-[node name="Block33" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -142.37, 0.447044, -473.98)
-visible = false
-material_override = ExtResource("7_xc2n4")
-size = Vector3(180, 209, 331)
-script = ExtResource("2_4bvgn")
-
-[node name="Block37" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -142.37, 189.151, -465.419)
-visible = false
-material_override = ExtResource("7_xc2n4")
-size = Vector3(197.122, 209, 331)
-script = ExtResource("2_4bvgn")
-
-[node name="Block34" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 213.63, 21.447, -460.98)
-visible = false
-material_override = ExtResource("7_xc2n4")
-size = Vector3(220, 251, 457)
-script = ExtResource("2_4bvgn")
-
-[node name="Block35" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 355.63, -4.55296, -318.98)
-visible = false
-material_override = ExtResource("7_xc2n4")
-size = Vector3(220, 199, 457)
-script = ExtResource("2_4bvgn")
-
-[node name="Block38" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 409.141, 79.4282, -330.597)
-visible = false
-material_override = ExtResource("7_xc2n4")
-size = Vector3(112.979, 103.69, 433.765)
-script = ExtResource("2_4bvgn")
-
-[node name="Block39" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 472.795, 98.7212, -53.6857)
-visible = false
-material_override = ExtResource("7_xc2n4")
-size = Vector3(76.3331, 65.1037, 433.765)
-script = ExtResource("2_4bvgn")
-
-[node name="Block40" type="CSGBox3D" parent="SewerBlocks"]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 437.887, 98.7212, 305.905)
-visible = false
-material_override = ExtResource("7_xc2n4")
-size = Vector3(76.3331, 65.1037, 303.396)
-script = ExtResource("2_4bvgn")
-
 [node name="Block11" type="CSGBox3D" parent="SewerBlocks"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 159.63, -35.053, 255.02)
 material_override = ExtResource("109_clfdl")
@@ -12076,7 +12091,7 @@ debug_color = Color(0.960784, 0, 0.505882, 0.894118)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -562.809, 37.7687, 190.865)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SewerBlocks/DeathTrigger6"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.8184, -23.4, -196.315)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.4424, -23.4, -196.315)
 shape = SubResource("BoxShape3D_baenk")
 debug_color = Color(0.960784, 0, 0.505882, 0.894118)
 
