@@ -243,11 +243,15 @@ one_shot = true
 
 [node name="MangoShadowParent" type="Node" parent="."]
 
-[node name="MangoShadow" type="Decal" parent="MangoShadowParent"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -24.7849, 0)
-size = Vector3(2, 50, 2)
+[node name="SpringArm3D" type="SpringArm3D" parent="MangoShadowParent"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+spring_length = 60.0
+
+[node name="MangoShadow" type="Decal" parent="MangoShadowParent/SpringArm3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 8.35513e-08, 1.91143)
+size = Vector3(2, 4, 2)
 texture_albedo = ExtResource("8_vat0n")
-upper_fade = 0.160766
+cull_mask = 1048573
 
 [node name="RayArm" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
@@ -265,6 +269,16 @@ lifetime = 0.2
 fixed_fps = 60
 process_material = SubResource("ParticleProcessMaterial_mgrph")
 draw_pass_1 = SubResource("SphereMesh_nn7sr")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.22498, 0)
+visible = false
+size = Vector3(15.7178, 1, 10.4326)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.95087, 0)
+visible = false
+size = Vector3(15.7178, 1, 10.4326)
 
 [connection signal="body_entered" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_entered"]
 [connection signal="body_exited" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_exited"]

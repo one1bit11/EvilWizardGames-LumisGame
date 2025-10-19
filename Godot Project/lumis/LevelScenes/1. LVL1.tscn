@@ -1,4 +1,4 @@
-[gd_scene load_steps=449 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=450 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
@@ -1761,6 +1761,9 @@ metallic = 1.0
 metallic_texture = ExtResource("8_tgkar")
 roughness_texture = ExtResource("9_s61i1")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_8oyi1"]
+size = Vector3(1.2, 5.1, 2.7)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_atbt4"]
 albedo_texture = ExtResource("134_k8pp5")
 emission_enabled = true
@@ -2099,6 +2102,7 @@ uiAnimationPopUp = NodePath("UI/PopUps/AnimationPlayer")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -658.69, 72.034, -115.722)
 light_color = Color(1, 0.908051, 0.875974, 1)
 light_energy = 100.0
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 161.937
 omni_attenuation = 1.09
@@ -2107,6 +2111,7 @@ omni_attenuation = 1.09
 transform = Transform3D(0.985768, 0, 0.168111, 0, 1, 0, -0.168111, 0, 0.985768, -601.69, 72.034, 68.0367)
 light_color = Color(1, 0.84334, 0.78843, 1)
 light_energy = 100.0
+light_cull_mask = 4294966783
 omni_range = 622.593
 omni_attenuation = 1.09
 
@@ -2114,6 +2119,7 @@ omni_attenuation = 1.09
 transform = Transform3D(0.985768, 0, 0.168111, 0, 1, 0, -0.168111, 0, 0.985768, -1220.98, 72.034, 26.5162)
 light_color = Color(1, 0.675601, 0.560896, 1)
 light_energy = 100.0
+light_cull_mask = 4294966783
 omni_range = 622.593
 omni_attenuation = 1.09
 
@@ -2121,6 +2127,7 @@ omni_attenuation = 1.09
 transform = Transform3D(0.985768, 0, 0.168111, 0, 1, 0, -0.168111, 0, 0.985768, -973.279, 50.2569, -434.559)
 light_color = Color(1, 0.878819, 0.836449, 1)
 light_energy = 100.0
+light_cull_mask = 4294966783
 omni_range = 622.593
 omni_attenuation = 1.09
 
@@ -2128,6 +2135,7 @@ omni_attenuation = 1.09
 transform = Transform3D(0.985768, 0, 0.168111, 0, 1, 0, -0.168111, 0, 0.985768, -556.488, 89.4574, -375.172)
 light_color = Color(1, 0.930316, 0.863278, 1)
 light_energy = 100.0
+light_cull_mask = 4294966783
 omni_range = 622.593
 omni_attenuation = 1.16
 
@@ -2135,6 +2143,7 @@ omni_attenuation = 1.16
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -632.828, 27.9806, -106.753)
 light_color = Color(1, 0.809418, 0.663077, 1)
 light_energy = 16.0
+light_cull_mask = 4294966783
 omni_range = 245.893
 omni_attenuation = 1.09
 
@@ -2142,6 +2151,7 @@ omni_attenuation = 1.09
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -735.382, 21.5582, -101.003)
 light_color = Color(1, 0.809418, 0.663077, 1)
 light_energy = 27.065
+light_cull_mask = 4294966783
 omni_range = 245.893
 omni_attenuation = 1.09
 
@@ -2149,6 +2159,7 @@ omni_attenuation = 1.09
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -793.061, 20.8467, -101.84)
 light_color = Color(1, 0.809418, 0.663077, 1)
 light_energy = 8.605
+light_cull_mask = 4294966783
 omni_range = 245.893
 omni_attenuation = 1.09
 
@@ -2156,6 +2167,7 @@ omni_attenuation = 1.09
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -894.968, 41.0331, -105.849)
 light_color = Color(1, 0.809418, 0.663077, 1)
 light_energy = 8.605
+light_cull_mask = 4294966783
 omni_range = 245.893
 omni_attenuation = 1.09
 
@@ -2163,6 +2175,7 @@ omni_attenuation = 1.09
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1039.14, 27.0511, -96.4988)
 light_color = Color(1, 0.809418, 0.663077, 1)
 light_energy = 12.969
+light_cull_mask = 4294966783
 omni_range = 245.893
 omni_attenuation = 1.09
 
@@ -2170,6 +2183,7 @@ omni_attenuation = 1.09
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1095.15, 58.8441, -112.367)
 light_color = Color(1, 0.809418, 0.663077, 1)
 light_energy = 12.969
+light_cull_mask = 4294966783
 omni_range = 245.893
 omni_attenuation = 1.09
 
@@ -2177,6 +2191,7 @@ omni_attenuation = 1.09
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1160.41, 73.2529, -115.461)
 light_color = Color(1, 0.809418, 0.663077, 1)
 light_energy = 12.969
+light_cull_mask = 4294966783
 omni_range = 245.893
 omni_attenuation = 1.09
 
@@ -2184,6 +2199,7 @@ omni_attenuation = 1.09
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -791.505, 72.034, -115.722)
 light_color = Color(1, 0.878819, 0.836449, 1)
 light_energy = 100.0
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 161.937
 omni_attenuation = 1.09
@@ -2192,6 +2208,7 @@ omni_attenuation = 1.09
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -895.866, 72.034, -115.722)
 light_color = Color(1, 0.855689, 0.745575, 1)
 light_energy = 100.0
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 161.937
 omni_attenuation = 1.09
@@ -2200,6 +2217,7 @@ omni_attenuation = 1.09
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1007.91, 78.652, -115.722)
 light_color = Color(1, 0.841282, 0.803862, 1)
 light_energy = 100.0
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 161.937
 omni_attenuation = 1.09
@@ -2208,24 +2226,28 @@ omni_attenuation = 1.09
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -404.445, 71.185, -115.722)
 light_color = Color(1, 0.7756, 0.64914, 1)
 light_energy = 9.505
+light_cull_mask = 4294966783
 omni_range = 161.845
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="LVCity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -496.835, 71.185, -115.722)
 light_color = Color(1, 0.867045, 0.820518, 1)
 light_energy = 9.505
+light_cull_mask = 4294966783
 omni_range = 161.845
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="LVCity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1172.83, 76.7284, -118.141)
 light_color = Color(1, 0.960033, 0.946155, 1)
 light_energy = 44.75
+light_cull_mask = 4294966783
 omni_range = 161.845
 
 [node name="OmniLight3D5" type="OmniLight3D" parent="LVCity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1260.86, 78.2326, -118.141)
 light_color = Color(1, 0.930316, 0.863278, 1)
 light_energy = 25.0
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 161.845
 
@@ -2233,6 +2255,7 @@ omni_range = 161.845
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1379.14, 73.7009, -118.141)
 light_color = Color(1, 0.930316, 0.863278, 1)
 light_energy = 25.0
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 161.845
 
@@ -2240,12 +2263,14 @@ omni_range = 161.845
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1370.16, 111.17, -118.141)
 light_color = Color(1, 0.930316, 0.863278, 1)
 light_energy = 9.051
+light_cull_mask = 4294966783
 omni_range = 161.845
 
 [node name="OmniLight3D7" type="OmniLight3D" parent="LVCity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1327.39, 79.5275, -183.513)
 light_color = Color(1, 0.930316, 0.863278, 1)
 light_energy = 25.0
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 161.845
 omni_attenuation = 1.16
@@ -2254,6 +2279,7 @@ omni_attenuation = 1.16
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1327.39, 76.644, -42.0871)
 light_color = Color(1, 0.930316, 0.863278, 1)
 light_energy = 25.0
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 161.845
 omni_attenuation = 1.16
@@ -2264,6 +2290,7 @@ light_color = Color(0.900747, 0.837172, 0.783396, 1)
 light_energy = 13.698
 light_negative = true
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 58.76
 
@@ -2273,6 +2300,7 @@ light_color = Color(0.900747, 0.837172, 0.783396, 1)
 light_energy = 13.698
 light_negative = true
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 58.76
 
@@ -2282,6 +2310,7 @@ light_color = Color(0.900747, 0.837172, 0.783396, 1)
 light_energy = 15.275
 light_negative = true
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 687.902
 
 [node name="OmniLight3D26" type="OmniLight3D" parent="LVCity"]
@@ -2290,6 +2319,7 @@ light_color = Color(0.900747, 0.837172, 0.783396, 1)
 light_energy = 15.275
 light_negative = true
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 687.902
 
 [node name="OmniLight3D27" type="OmniLight3D" parent="LVCity"]
@@ -2298,6 +2328,7 @@ light_color = Color(0.900747, 0.837172, 0.783396, 1)
 light_energy = 15.275
 light_negative = true
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 687.902
 
 [node name="OmniLight3D28" type="OmniLight3D" parent="LVCity"]
@@ -2306,6 +2337,7 @@ light_color = Color(0.900747, 0.837172, 0.783396, 1)
 light_energy = 15.275
 light_negative = true
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 687.902
 
 [node name="LVCityBoarder" type="Node3D" parent="."]
@@ -2784,6 +2816,7 @@ mouseSensitivity = 0.3
 
 [node name="MangoGlow" type="OmniLight3D" parent="Mango"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
+layers = 512
 light_color = Color(0.87551, 0.965781, 1, 1)
 light_energy = 0.2
 
@@ -2915,7 +2948,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11, 4.42377)
 light_color = Color(0.885997, 0.799122, 0.792982, 1)
 light_energy = 1.36
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
+shadow_caster_mask = 4294966783
 omni_range = 30.294
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room1"]
@@ -2923,6 +2958,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, -3.57623)
 light_color = Color(0.502544, 0.358904, 0.3509, 1)
 light_energy = 1.36
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 30.294
 
 [node name="Wall3" type="CSGBox3D" parent="ROOMS/Room1"]
@@ -2963,6 +2999,7 @@ skeleton = NodePath("../../Wall5")
 [node name="SpotLight3D" type="SpotLight3D" parent="ROOMS/Room1"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 102.627, 4)
 light_energy = 48.21
+light_cull_mask = 4294966783
 shadow_enabled = true
 spot_range = 156.873
 spot_angle = 7.32455
@@ -2970,6 +3007,7 @@ spot_angle = 7.32455
 [node name="SpotLight3D2" type="SpotLight3D" parent="ROOMS/Room1"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 20.0943, 4)
 light_energy = 30.0
+light_cull_mask = 4294966783
 shadow_blur = 3.872
 spot_range = 28.584
 spot_angle = 13.77
@@ -3751,6 +3789,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_46oo1")
 transform = Transform3D(0.175507, 0, -0.162475, 0, 0.239167, 0, 0.162475, 0, 0.175507, 0.00233269, 0.171454, -0.0313478)
 light_color = Color(1, 0.823252, 0.59582, 1)
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 12.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/Lantern"]
@@ -3767,6 +3806,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_wevsh")
 transform = Transform3D(0.239167, 0, -2.23517e-08, 0, 0.239167, 0, 2.23517e-08, 0, 0.239167, 0, 0.239167, 0)
 light_color = Color(1, 0.823252, 0.59582, 1)
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 12.0
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room2/Lantern2"]
@@ -3774,6 +3814,7 @@ transform = Transform3D(0.239167, 0, -7.45058e-08, 0, 0.239167, 0, 7.45058e-08, 
 light_color = Color(1, 0.823252, 0.59582, 1)
 light_energy = 0.745
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 12.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/Lantern2"]
@@ -3802,6 +3843,7 @@ transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 
 light_color = Color(1, 0.648449, 0.595183, 1)
 light_negative = true
 shadow_enabled = true
+shadow_caster_mask = 4294966783
 omni_range = 11.0
 omni_attenuation = -0.69
 
@@ -3809,6 +3851,7 @@ omni_attenuation = -0.69
 transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
 light_color = Color(1, 0.648449, 0.595183, 1)
 light_negative = true
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 11.0
 omni_attenuation = -0.69
@@ -4993,7 +5036,9 @@ transform = Transform3D(1, 0, 3.17637e-22, 0, 1, -1.77636e-15, 3.17637e-22, 0, 1
 light_color = Color(1, 0.789845, 0.648899, 1)
 light_energy = 2.0
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
+shadow_caster_mask = 4294966783
 omni_range = 15.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Room2/CeilingLights"]
@@ -5233,6 +5278,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -113.5, 21.1, -39.1)
 light_color = Color(0.975543, 0.849912, 0.773513, 1)
 light_energy = 6.138
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 33.644
 
@@ -5367,6 +5413,7 @@ shape = SubResource("ConvexPolygonShape3D_yv5qi")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -104.422, 11.7358, -44.1808)
 light_color = Color(1, 0.788235, 0.443137, 1)
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="Lantern" parent="ROOMS/Room3" instance=ExtResource("37_tu4hv")]
 transform = Transform3D(4.18118, 0, 0, 0, 4.18118, 0, 0, 0, 4.18118, -104.422, 9.2706, -44.1808)
@@ -5375,6 +5422,7 @@ transform = Transform3D(4.18118, 0, 0, 0, 4.18118, 0, 0, 0, 4.18118, -104.422, 9
 transform = Transform3D(0.239167, 0, 0, 0, 0.239167, 0, 0, 0, 0.239167, 0, 0.334834, 0)
 light_color = Color(1, 0.775958, 0.401658, 1)
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="pipe_bigandsmall" type="Node3D" parent="ROOMS/Room3"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -106.383, 9.13661, -24.2815)
@@ -6085,17 +6133,20 @@ transform = Transform3D(-4.39247e-08, 2.12077e-11, 1, 0.0989203, 0.995095, 4.323
 light_color = Color(1, 0.821336, 0.539486, 1)
 light_energy = 1.33
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 18.2839
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room4"]
 transform = Transform3D(-4.39247e-08, 2.12077e-11, 1, 0.0989203, 0.995095, 4.32394e-09, -0.995095, 0.0989203, -4.37114e-08, -163.862, -4.94937, -79.425)
 light_color = Color(1, 0.788235, 0.443137, 1)
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Room4"]
 transform = Transform3D(-4.39247e-08, 2.12077e-11, 1, 0.0989203, 0.995095, 4.32394e-09, -0.995095, 0.0989203, -4.37114e-08, -158.568, -7.94328, -79.425)
 light_color = Color(1, 0.788235, 0.443137, 1)
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="lantern_on_hook" parent="ROOMS/Room4" instance=ExtResource("105_tkodh")]
 transform = Transform3D(-1.83657e-07, 8.86723e-11, 4.18118, 0.413604, 4.16067, 1.80792e-08, -4.16067, 0.413604, -1.82765e-07, -163.156, -15.5632, -39.5746)
@@ -6143,6 +6194,7 @@ transform = Transform3D(0.239167, -2.22045e-16, 8.88178e-16, 2.22045e-16, 0.2391
 light_color = Color(1, 0.801303, 0.531043, 1)
 light_energy = 1.935
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 9.915
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room4/lantern_on_hook_ceiling/Lantern"]
@@ -6150,6 +6202,7 @@ transform = Transform3D(0.239167, -4.44089e-16, 8.88178e-16, 4.44089e-16, 0.2391
 light_color = Color(1, 0.801303, 0.531043, 1)
 light_energy = 2.065
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 10.35
 
 [node name="lantern_on_hook_ceiling3" type="Node3D" parent="ROOMS/Room4"]
@@ -6189,6 +6242,7 @@ transform = Transform3D(0.239168, -2.22045e-16, -2.39808e-14, 2.22045e-16, 0.239
 light_color = Color(1, 0.801303, 0.531043, 1)
 light_energy = 1.935
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 9.915
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room4/lantern_on_hook_ceiling3/Lantern"]
@@ -6196,6 +6250,7 @@ transform = Transform3D(0.239168, -4.44089e-16, -2.39808e-14, 4.44089e-16, 0.239
 light_color = Color(1, 0.851801, 0.656054, 1)
 light_energy = 2.065
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 10.35
 
@@ -6236,6 +6291,7 @@ transform = Transform3D(0.239168, -2.22045e-16, -2.39808e-14, 2.22045e-16, 0.239
 light_color = Color(1, 0.932568, 0.845677, 1)
 light_energy = 2.105
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 12.315
 
@@ -6244,6 +6300,7 @@ transform = Transform3D(0.239168, -4.44089e-16, -2.39808e-14, 4.44089e-16, 0.239
 light_color = Color(1, 0.801303, 0.531043, 1)
 light_energy = 2.065
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 10.35
 
 [node name="safety rails" type="Node3D" parent="ROOMS/Room4"]
@@ -6723,6 +6780,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218, 38.1534, -110.435)
 light_color = Color(0.951432, 0.837517, 0.795496, 1)
 light_energy = 4.565
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 24.0
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="ROOMS/Room5"]
@@ -6730,6 +6788,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218, 38.1534, -127.96)
 light_color = Color(0.914115, 0.703117, 0.57143, 1)
 light_energy = 4.245
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 24.0
 
 [node name="Water" type="CSGBox3D" parent="ROOMS/Room5"]
@@ -6838,11 +6897,13 @@ parameters/looping = true
 transform = Transform3D(-0.995056, 0.0993198, -8.74228e-08, 0.0993198, 0.995056, 7.71652e-18, 8.69905e-08, -8.68281e-09, -1, -213.07, 37.2808, -134.165)
 light_color = Color(1, 0.788235, 0.443137, 1)
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room5"]
 transform = Transform3D(-0.995056, 0.0993198, -8.74228e-08, 0.0993198, 0.995056, 7.71652e-18, 8.69905e-08, -8.68281e-09, -1, -223.99, 37.2808, -134.165)
 light_color = Color(1, 0.788235, 0.443137, 1)
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="lantern_on_hook" parent="ROOMS/Room5" instance=ExtResource("105_tkodh")]
 transform = Transform3D(-4.1605, 0.415273, -3.6553e-07, 0.415273, 4.1605, 0, 3.63723e-07, -3.63044e-08, -4.18118, -213.043, 36.7049, -134.165)
@@ -7056,6 +7117,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -222.303, 33.2751, -173)
 light_color = Color(0.961533, 0.865701, 0.806986, 1)
 light_energy = 7.675
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 shadow_bias = 0.2
 shadow_blur = 2.0
@@ -7066,6 +7128,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -263.158, 33.2751, -173)
 light_color = Color(0.986614, 0.902853, 0.856233, 1)
 light_energy = 7.675
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 shadow_bias = 0.2
 shadow_blur = 2.0
@@ -7433,6 +7496,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 2.76446, -3.20001)
 light_color = Color(1, 0.894404, 0.767242, 1)
 light_energy = 2.0
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 15.0
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights"]
@@ -7440,6 +7504,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, -7.64312, -3.20001)
 light_color = Color(1, 0.894404, 0.767242, 1)
 light_energy = 1.225
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 15.0
 
@@ -7464,6 +7529,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.95538, 0.478058, -3.2)
 light_color = Color(1, 0.937272, 0.862161, 1)
 light_energy = 5.025
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 35.8342
 
@@ -7472,6 +7538,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.95538, 0.477997, 7.06071)
 light_color = Color(1, 0.782577, 0.504587, 1)
 light_energy = 3.605
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 27.714
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights2"]
@@ -7479,6 +7546,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.95538, 0.477966, -14.0074)
 light_color = Color(1, 0.782577, 0.504587, 1)
 light_energy = 3.605
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 27.714
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights2"]
@@ -7486,6 +7554,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19195, 4.42355, -3.2)
 light_color = Color(1, 0.716901, 0.322498, 1)
 light_energy = 3.015
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 11.559
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights2"]
@@ -7504,6 +7573,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19195, 4.42355, -3.2)
 light_color = Color(1, 0.716901, 0.322498, 1)
 light_energy = 3.015
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 6.67616
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights4"]
@@ -7522,6 +7592,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19195, 4.42355, -3.2)
 light_color = Color(1, 0.716901, 0.322498, 1)
 light_energy = 3.015
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 11.559
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights5"]
@@ -7529,6 +7600,7 @@ transform = Transform3D(1, 0, 2.22126e-16, -2.66383e-33, 1, 5.9984e-18, -1.58819
 light_color = Color(1, 0.833924, 0.628401, 1)
 light_energy = 3.91
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 12.704
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights5"]
@@ -7536,6 +7608,7 @@ transform = Transform3D(1, 0, 2.22126e-16, -2.66383e-33, 1, 5.9984e-18, -4.23516
 light_color = Color(1, 0.833924, 0.628401, 1)
 light_energy = 3.91
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 12.704
 
@@ -7555,6 +7628,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19195, 4.42355, -3.2)
 light_color = Color(1, 0.716901, 0.322498, 1)
 light_energy = 3.015
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 11.559
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights6"]
@@ -7562,6 +7636,7 @@ transform = Transform3D(1, 2.06389e-16, 2.22045e-16, 2.06389e-16, 1, 0, 0, 0, 1,
 light_color = Color(1, 0.833924, 0.628401, 1)
 light_energy = 3.91
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 12.704
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights6"]
@@ -7580,6 +7655,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19195, 4.42355, -3.2)
 light_color = Color(1, 0.716901, 0.322498, 1)
 light_energy = 3.015
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 11.559
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights7"]
@@ -7587,6 +7663,7 @@ transform = Transform3D(1, 8.25555e-16, 0, 8.25555e-16, 1, 0, 0, 0, 1, 0.381744,
 light_color = Color(1, 0.833924, 0.628401, 1)
 light_energy = 9.405
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 52.869
 
@@ -7606,6 +7683,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19195, 4.42355, -3.2)
 light_color = Color(1, 0.716901, 0.322498, 1)
 light_energy = 3.015
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 11.559
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights8"]
@@ -7613,6 +7691,7 @@ transform = Transform3D(1, 8.25555e-16, 0, 8.25555e-16, 1, 0, 0, 0, 1, -2.3636, 
 light_color = Color(1, 0.833924, 0.628401, 1)
 light_energy = 14.253
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 87.736
 
@@ -7627,6 +7706,7 @@ light_color = Color(1, 0.953107, 0.897131, 1)
 light_energy = 9.661
 light_negative = true
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 432.414
 omni_attenuation = 2.212
 
@@ -7641,6 +7721,7 @@ transform = Transform3D(1, 8.2556e-16, -1.68754e-14, 8.25558e-16, 1, -1.7053e-13
 light_color = Color(1, 0.878159, 0.730009, 1)
 light_energy = 16.0
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 9.282
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights9"]
@@ -7648,6 +7729,7 @@ transform = Transform3D(1, 8.2556e-16, -1.68754e-14, 8.25558e-16, 1, -1.7053e-13
 light_color = Color(1, 0.878159, 0.730009, 1)
 light_energy = 10.667
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 9.282
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ROOMS/Rooms6+7+8/pipe_threevertical_leftempty corner/CeilingLights9"]
@@ -7659,6 +7741,7 @@ shape = SubResource("ConvexPolygonShape3D_m0gra")
 transform = Transform3D(0.99927, -0.0270046, 0.0270144, -0.0270046, 0.000729736, 0.999635, -0.0270144, -0.999635, -4.31697e-08, 5.9115, 5.53412, -3.14825)
 light_color = Color(0.999999, 0.892789, 0.780857, 1)
 light_energy = 34.385
+light_cull_mask = 4294966783
 shadow_enabled = true
 spot_range = 54.787
 spot_angle = 47.63
@@ -10004,6 +10087,7 @@ script = ExtResource("2_4bvgn")
 transform = Transform3D(0.302387, 0, -0.953185, 0, 1, 0, 0.953185, 0, 0.302387, -474.783, 28.4204, -125.887)
 light_color = Color(1, 0.788235, 0.443137, 1)
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="Lantern" parent="ROOMS/Room11/UnusedPipes" instance=ExtResource("37_tu4hv")]
 transform = Transform3D(1.26433, 0, -3.98544, 0, 4.18118, 0, 3.98544, 0, 1.26433, -474.82, 27.8464, -125.887)
@@ -10356,6 +10440,30 @@ height = 8.0
 sides = 16
 script = ExtResource("2_4bvgn")
 
+[node name="OmniLight3D" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -17, 0)
+light_color = Color(1, 0.886275, 0.741176, 1)
+light_energy = 10.05
+light_negative = true
+shadow_enabled = true
+omni_range = 10.65
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.599976, -30.4, 0.5)
+light_color = Color(1, 0.886275, 0.741176, 1)
+light_energy = 17.125
+light_negative = true
+shadow_enabled = true
+omni_range = 10.385
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="ROOMS/Room14/BigAssPillar"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -25, 0)
+light_color = Color(1, 0.886275, 0.741176, 1)
+light_energy = 14.025
+light_negative = true
+shadow_enabled = true
+omni_range = 9.415
+
 [node name="BigAssPillar3" type="CSGCylinder3D" parent="ROOMS/Room14"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2203, -94.5672, -111)
 material_override = ExtResource("129_gg7m4")
@@ -10650,199 +10758,40 @@ script = ExtResource("2_4bvgn")
 transform = Transform3D(6.98681, 0, 1.22161e-06, 0, 6.98681, 0, -1.22161e-06, 0, 6.98681, -11.934, -5.0188, 79.9094)
 
 [node name="NegativeLight" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
+transform = Transform3D(0.143127, 0, 1.77636e-15, 0, 0.143127, 0, -1.77636e-15, 0, 0.143127, 1.57439, 0.486632, 9.53674e-07)
 light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.045
+light_energy = 1.338
 light_negative = true
-omni_range = 11.0
+shadow_enabled = true
+omni_range = 9.007
 omni_attenuation = -0.69
 
 [node name="NegativeLight2" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
+transform = Transform3D(0.143127, 0, 1.24345e-14, 0, 0.143127, 0, -1.24345e-14, 0, 0.143127, 1.57439, 0.558195, -3.92167)
 light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.045
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLights5" type="Node3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(6.98681, 0, 1.22161e-06, 0, 6.98681, 0, -1.22161e-06, 0, 6.98681, -9.93201, -5.0188, 79.9094)
-
-[node name="NegativeLight" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights5"]
-transform = Transform3D(0.143127, 0, 0, 0, 0.143127, 0, 0, 0, 0.143127, 1.36957, 0.286254, 0.411306)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.045
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight3" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights5"]
-transform = Transform3D(0.143127, 0, 1.77636e-15, 0, 0.143127, 0, -1.77636e-15, 0, 0.143127, 1.27168, 0.286254, 0.419596)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.045
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights5"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.045
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLights2" type="Node3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(6.98681, 0, 1.22161e-06, 0, 6.98681, 0, -1.22161e-06, 0, 6.98681, -9.93201, -5.0188, 52.9094)
-
-[node name="NegativeLight" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights2"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.045
+light_energy = 1.338
 light_negative = true
 shadow_enabled = true
-omni_range = 11.0
+omni_range = 9.007
 omni_attenuation = -0.69
 
-[node name="NegativeLight2" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights2"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
+[node name="NegativeLight3" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights"]
+transform = Transform3D(0.143127, 0, 1.77636e-14, 0, 0.143127, 0, -1.77636e-14, 0, 0.143127, -5.61058, 0.558195, -3.92168)
 light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.045
+light_energy = 1.338
 light_negative = true
 shadow_enabled = true
-omni_range = 11.0
+omni_range = 9.007
 omni_attenuation = -0.69
 
-[node name="NegativeLights6" type="Node3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(6.98681, 0, 1.22161e-06, 0, 6.98681, 0, -1.22161e-06, 0, 6.98681, -9.93201, -5.0188, 52.9094)
-
-[node name="NegativeLight" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights6"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
+[node name="NegativeLight4" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights"]
+transform = Transform3D(0.143127, 0, 2.4869e-14, 0, 0.143127, 0, -2.4869e-14, 0, 0.143127, -5.62489, 0.558195, 0.0143127)
 light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.045
+light_energy = 1.338
 light_negative = true
 shadow_enabled = true
-omni_range = 11.0
+omni_range = 9.007
 omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights6"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.045
-light_negative = true
-shadow_enabled = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLights7" type="Node3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(6.98681, 0, 1.22161e-06, 0, 6.98681, 0, -1.22161e-06, 0, 6.98681, -9.93201, -5.0188, 52.9094)
-
-[node name="NegativeLight" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights7"]
-transform = Transform3D(0.143127, 0, 0, 0, 0.143127, 0, 0, 0, 0.143127, 1.28889, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.045
-light_negative = true
-shadow_enabled = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights7"]
-transform = Transform3D(0.143127, 0, 0, 0, 0.143127, 0, 0, 0, 0.143127, 1.28889, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.045
-light_negative = true
-shadow_enabled = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLights8" type="Node3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(6.98681, 0, 1.22161e-06, 0, 6.98681, 0, -1.22161e-06, 0, 6.98681, -9.93201, -5.0188, 52.9094)
-
-[node name="NegativeLight" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights8"]
-transform = Transform3D(0.143127, 0, 0, 0, 0.143127, 0, 0, 0, 0.143127, 1.07399, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.045
-light_negative = true
-shadow_enabled = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights8"]
-transform = Transform3D(0.143127, 0, 0, 0, 0.143127, 0, 0, 0, 0.143127, 1.07399, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.045
-light_negative = true
-shadow_enabled = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLights3" type="Node3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(-6.98681, 0, -1.83242e-06, 0, 6.98681, 0, 1.83242e-06, 0, -6.98681, -42.932, -5.0188, 52.9094)
-
-[node name="NegativeLight" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights3"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.105
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights3"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.105
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight3" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights3"]
-transform = Transform3D(0.143127, 0, -3.55271e-15, 0, 0.143127, 0, 3.55271e-15, 0, 0.143127, 1.57439, 0.429381, 0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 1.345
-light_negative = true
-omni_range = 15.125
-omni_attenuation = 1.97
-
-[node name="NegativeLight4" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights3"]
-transform = Transform3D(0.143127, 0, -3.55271e-15, 0, 0.143127, 0, 3.55271e-15, 0, 0.143127, 1.57439, 0.429381, -0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 1.345
-light_negative = true
-omni_range = 15.125
-omni_attenuation = 1.97
-
-[node name="NegativeLights4" type="Node3D" parent="ROOMS/ELEVATORROOM"]
-transform = Transform3D(-6.98681, 0, -1.83242e-06, 0, 6.98681, 0, 1.83242e-06, 0, -6.98681, -42.932, -5.0188, 79.9094)
-
-[node name="NegativeLight" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights4"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.105
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights4"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 0.105
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight3" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights4"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.429381, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 1.18
-light_negative = true
-omni_range = 10.32
-
-[node name="NegativeLight4" type="OmniLight3D" parent="ROOMS/ELEVATORROOM/NegativeLights4"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.429381, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_energy = 1.18
-light_negative = true
-omni_range = 10.32
 
 [node name="WaterwayGate4" type="MeshInstance3D" parent="ROOMS/ELEVATORROOM"]
 transform = Transform3D(-6.98681, 0, -6.10806e-07, 0, 6.98681, 0, 6.10806e-07, 0, -6.98681, -8.93201, -5.0188, 79.9094)
@@ -13388,6 +13337,7 @@ nonstick = true
 transform = Transform3D(1, 4.37114e-08, 4.37114e-08, 4.37114e-08, -4.36349e-08, -1, -4.37114e-08, 1, -4.37113e-08, 2.62993, -5.3418, 0)
 light_color = Color(0.946609, 1, 0.999946, 1)
 light_energy = 16.0
+light_cull_mask = 4294966783
 shadow_enabled = true
 shadow_caster_mask = 4294967293
 spot_range = 48.2063
@@ -13397,6 +13347,7 @@ spot_angle = 62.73
 transform = Transform3D(7.10543e-15, -4.35585e-08, -1, -1, -4.37114e-08, -3.55271e-15, -4.37878e-08, 1, -4.35585e-08, -1.71423, -0.880981, 0)
 light_color = Color(0.946609, 1, 0.999946, 1)
 light_energy = 12.444
+light_cull_mask = 4294966783
 shadow_caster_mask = 4294967293
 spot_range = 12.493
 spot_attenuation = 0.41
@@ -13406,6 +13357,7 @@ spot_angle = 39.2501
 transform = Transform3D(7.10543e-15, -4.35585e-08, -1, -1, -4.37114e-08, -3.55271e-15, -4.37878e-08, 1, -4.35585e-08, -1.71423, -0.880981, 7.3708)
 light_color = Color(0.946609, 1, 0.999946, 1)
 light_energy = 12.444
+light_cull_mask = 4294966783
 shadow_caster_mask = 4294967293
 spot_range = 12.493
 spot_attenuation = 0.41
@@ -13415,6 +13367,7 @@ spot_angle = 39.2501
 transform = Transform3D(7.10543e-15, -4.35585e-08, -1, -1, -4.37114e-08, -3.55271e-15, -4.37878e-08, 1, -4.35585e-08, -1.71423, -0.880981, -6.51173)
 light_color = Color(0.946609, 1, 0.999946, 1)
 light_energy = 12.444
+light_cull_mask = 4294966783
 shadow_caster_mask = 4294967293
 spot_range = 12.493
 spot_attenuation = 0.41
@@ -13424,6 +13377,7 @@ spot_angle = 39.2501
 transform = Transform3D(7.10543e-15, -4.35585e-08, -1, -1, -4.37114e-08, -3.55271e-15, -4.37878e-08, 1, -4.35585e-08, -1.71423, -0.880981, 4.47127)
 light_color = Color(0.946609, 1, 0.999946, 1)
 light_energy = 12.444
+light_cull_mask = 4294966783
 shadow_caster_mask = 4294967293
 spot_range = 12.493
 spot_attenuation = 0.41
@@ -13433,6 +13387,7 @@ spot_angle = 39.2501
 transform = Transform3D(7.10543e-15, -4.35585e-08, -1, -1, -4.37114e-08, -3.55271e-15, -4.37878e-08, 1, -4.35585e-08, -1.71423, -0.880981, -4.62757)
 light_color = Color(0.946609, 1, 0.999946, 1)
 light_energy = 12.444
+light_cull_mask = 4294966783
 shadow_caster_mask = 4294967293
 spot_range = 12.493
 spot_attenuation = 0.41
@@ -13643,6 +13598,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -210, 
 transform = Transform3D(0.0412885, -0.0041044, -0.999139, 0.101488, 0.994837, 0.000107185, 0.99398, -0.101405, 0.0414918, -319.145, 9.09621, -140.916)
 light_color = Color(1, 0.788235, 0.443137, 1)
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="lantern_on_hook" parent="." instance=ExtResource("105_tkodh")]
 transform = Transform3D(0.172634, -0.0171612, -4.17758, 0.424341, 4.15959, 0.000448164, 4.15601, -0.423994, 0.173485, -319.145, 8.31947, -140.916)
@@ -13669,6 +13625,7 @@ transform = Transform3D(-4.37114e-08, 0, -0.914066, 0, 0.84097, 0, 1, 0, -3.9955
 transform = Transform3D(2.77556e-17, -3.56387e-09, -1, 0.0989205, 0.995095, -3.54639e-09, 0.995095, -0.0989205, 3.5254e-10, -211.037, -9.71711, -188.718)
 light_color = Color(1, 0.788235, 0.443137, 1)
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 15.225
 
 [node name="lantern_on_hook2" parent="." instance=ExtResource("105_tkodh")]
@@ -13706,6 +13663,7 @@ surface_material_override/1 = ExtResource("107_ulxk5")
 transform = Transform3D(-4.39247e-08, 2.12076e-11, 1, 0.0989205, 0.995095, 4.32395e-09, -0.995095, 0.0989205, -4.37114e-08, -263.181, -11.3996, -169.806)
 light_color = Color(1, 0.788235, 0.443137, 1)
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 11.3521
 
 [node name="lantern_on_hook3" parent="." instance=ExtResource("105_tkodh")]
@@ -13817,11 +13775,18 @@ transform = Transform3D(-2.72035e-08, 0, 0.622345, 0, 0.596695, 0, -0.622345, 0,
 mesh = ExtResource("136_gwmb0")
 surface_material_override/0 = SubResource("StandardMaterial3D_3ut63")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="FenceMiddle2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FenceMiddle2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.15, -0.549995)
+shape = SubResource("BoxShape3D_8oyi1")
+
 [node name="OmniLight3D4" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.5, -13, -43.7)
 light_color = Color(1, 0.789845, 0.648899, 1)
 light_energy = 5.228
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 38.0
 
@@ -13830,6 +13795,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.5, -34, -49.7)
 light_color = Color(0.670246, 0.944481, 1, 1)
 light_energy = 0.803
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 39.558
 
 [node name="OmniLight3D8" type="OmniLight3D" parent="."]
@@ -13837,6 +13803,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -175.5, -18, -51.7)
 light_color = Color(0.670246, 0.944481, 1, 1)
 light_energy = 0.803
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 39.558
 
 [node name="OmniLight3D10" type="OmniLight3D" parent="."]
@@ -13844,6 +13811,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -216.64, -15.8867, -129.979)
 light_color = Color(0.670246, 0.944481, 1, 1)
 light_energy = 0.243
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 39.558
 
 [node name="OmniLight3D11" type="OmniLight3D" parent="."]
@@ -13851,6 +13819,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -216.64, -15.8867, -121.972)
 light_color = Color(0.670246, 0.944481, 1, 1)
 light_energy = 0.243
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 39.558
 
 [node name="OmniLight3D5" type="OmniLight3D" parent="."]
@@ -13858,6 +13827,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51.9, -23.8, -30.5)
 light_color = Color(1, 0.789845, 0.648899, 1)
 light_energy = 2.131
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 12.841
 
 [node name="CeilingLights" parent="." instance=ExtResource("133_fof7x")]
@@ -13877,6 +13847,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 4, -3.2)
 light_color = Color(1, 0.789845, 0.648899, 1)
 light_energy = 2.5
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 38.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CeilingLights2"]
@@ -13927,6 +13898,7 @@ transform = Transform3D(-4.37114e-08, -2.98023e-08, -1, -1, 1.3027e-15, 4.37114e
 light_color = Color(1, 0.852387, 0.650265, 1)
 light_energy = 1.386
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 31.535
 
 [node name="CeilingLights4" type="MeshInstance3D" parent="."]
@@ -13940,6 +13912,7 @@ transform = Transform3D(1, -1.05879e-22, 3.15544e-30, 0, 1, 0, 0, 0, 1, 7.4, 0.4
 light_color = Color(1, 0.852387, 0.650265, 1)
 light_energy = 2.575
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 65.0
 
@@ -13990,12 +13963,14 @@ transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Node/MovingTram/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 7.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node/MovingTram/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 0, 10, 0)
@@ -14044,12 +14019,14 @@ transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Node/MovingTram2/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 7.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node/MovingTram2/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 0, 10, 0)
@@ -14098,12 +14075,14 @@ transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Node/MovingTram3/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 7.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node/MovingTram3/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 0, 10, 0)
@@ -14152,12 +14131,14 @@ transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Node/MovingTram4/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 7.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node/MovingTram4/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 0, 10, 0)
@@ -14230,12 +14211,14 @@ transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="MovingTram5/Tram/Tram"]
 transform = Transform3D(0.833333, 0, -3.55271e-15, 0, 0.833333, 0, 3.55271e-15, 0, 0.833333, 7.33333, 3.58333, -0.75)
 light_color = Color(1, 0.79217, 0.47054, 1)
 light_energy = 2.0
 light_bake_mode = 1
+light_cull_mask = 4294966783
 
 [node name="AudioBeeps" type="AudioStreamPlayer3D" parent="MovingTram5/Tram/Tram"]
 volume_db = 5.0
@@ -14273,6 +14256,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 4, -3.2)
 light_color = Color(1, 0.882615, 0.750981, 1)
 light_energy = 2.65
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 15.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CeilingLights7"]
@@ -14290,6 +14274,7 @@ transform = Transform3D(5.96046e-08, 8.74228e-08, 1, -1, -4.37114e-08, 5.96046e-
 light_color = Color(1, 0.792107, 0.628049, 1)
 light_energy = 5.085
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 26.28
 
@@ -14304,6 +14289,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 4, -3.2)
 light_color = Color(1, 0.882615, 0.750981, 1)
 light_energy = 2.65
 light_bake_mode = 1
+light_cull_mask = 4294966783
 omni_range = 15.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="CeilingLights8"]
@@ -14327,6 +14313,7 @@ transform = Transform3D(1, 0, -8.35188e-23, 0, 1, -3.59989e-21, -8.35188e-23, 0,
 light_color = Color(1, 0.801702, 0.669179, 1)
 light_energy = 2.29
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 15.0
 
@@ -14563,6 +14550,7 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -820.9
 visible = false
 light_color = Color(1, 0.955997, 0.926142, 1)
 light_energy = 50.0
+light_cull_mask = 4294966783
 spot_range = 955.04
 spot_attenuation = 0.95
 spot_angle = 77.73
@@ -14572,6 +14560,8 @@ transform = Transform3D(-1, 3.82137e-15, -8.74228e-08, 8.74228e-08, 4.37114e-08,
 light_color = Color(0.410111, 0.466342, 0.617121, 1)
 light_energy = 1000.0
 light_negative = true
+light_cull_mask = 4294966783
+shadow_enabled = true
 spot_range = 3924.75
 spot_attenuation = -0.01
 spot_angle = 85.48
@@ -14587,6 +14577,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 1.81906, -3.2)
 light_color = Color(1, 0.812156, 0.565872, 1)
 light_energy = 6.525
 light_bake_mode = 1
+light_cull_mask = 4294966783
 shadow_enabled = true
 omni_range = 19.3
 

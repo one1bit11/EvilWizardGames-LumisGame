@@ -1,4 +1,4 @@
-[gd_scene load_steps=222 format=3 uid="uid://cdt72fkucpjaf"]
+[gd_scene load_steps=248 format=3 uid="uid://cdt72fkucpjaf"]
 
 [ext_resource type="Material" uid="uid://cpgr1k704pcgu" path="res://Textures/0Universal/MapTextures/Pipe/DontTouch.tres" id="1_4vtbw"]
 [ext_resource type="Script" uid="uid://sh5l6dvaekyk" path="res://Scripts/water_crates.gd" id="2_s3xnc"]
@@ -28,16 +28,19 @@
 [ext_resource type="Material" uid="uid://cumiqyrjv44go" path="res://Textures/0Universal/ObjTextures/Wood/Wood.tres" id="14_x46m3"]
 [ext_resource type="Texture2D" uid="uid://csib5x3dsfb7" path="res://Textures/0Universal/ObjTextures/WaterwayGateTexture/Waterway Gate_Door_Frame_Roughness.png" id="15_32qvq"]
 [ext_resource type="Material" uid="uid://brsgr4hi4e2qm" path="res://Textures/City/Walls/Wall1NonStick.tres" id="15_jcojh"]
-[ext_resource type="Texture2D" uid="uid://b1exw7uw02mlf" path="res://Textures/City/Roofs/Tri/D3B41E26-6343-4B46-A1C9-7FEC67DAE29B.png" id="16_oolf1"]
 [ext_resource type="Material" uid="uid://cufasbcxvo36b" path="res://Textures/City/Walls/Wall3Stick.tres" id="16_vhofu"]
 [ext_resource type="Material" uid="uid://bhk2tqasi546k" path="res://Textures/0Universal/MapTextures/BrickWall/BrickWallNonStick.tres" id="17_jcojh"]
 [ext_resource type="Texture2D" uid="uid://b3sci2xap4jbc" path="res://Textures/City/Roofs/DA982B55-5F86-47F5-8DD2-A467DB2B8A81.jpg" id="18_5lvdb"]
 [ext_resource type="Texture2D" uid="uid://43s2wfum1fdf" path="res://Textures/0Universal/ObjTextures/FloatingPlatform/Platform_Platform_BaseColor.png" id="19_m5b6e"]
+[ext_resource type="Texture2D" uid="uid://cdvre0087jgsl" path="res://Textures/City/Roofs/Tri/F504D3CF-86E7-4D1A-88D1-F0383A6C53A1.png" id="20_sm2ky"]
 [ext_resource type="Texture2D" uid="uid://cgbec0wwwf8ix" path="res://Textures/0Universal/ObjTextures/FloatingPlatform/Platform_Platform_Metallic.png" id="20_vhofu"]
+[ext_resource type="Texture2D" uid="uid://0ltv1p7tbgxh" path="res://Textures/City/Roofs/Tri/3FA67120-CE30-4976-B3B8-D349E84C993E.png" id="21_la1dx"]
 [ext_resource type="Texture2D" uid="uid://bgriqutl6todo" path="res://Textures/0Universal/ObjTextures/FloatingPlatform/Platform_Platform_Roughness.png" id="21_vxtue"]
 [ext_resource type="ArrayMesh" uid="uid://cg1sq70fi334s" path="res://Meshes/0Universal/Platform.obj" id="22_5lvdb"]
+[ext_resource type="Texture2D" uid="uid://tkn5gyxgdsmh" path="res://Textures/City/Walls/037D5ABC-1839-481D-AFAF-C9202FF55354.png" id="22_do6p4"]
 [ext_resource type="AudioStream" uid="uid://cl5dfver3fr8l" path="res://Sounds/SFX/1. Sewers/Environmental/Object Sounds/Floating Platform Fan.ogg" id="23_ktg3t"]
 [ext_resource type="ArrayMesh" uid="uid://bv560tcxk2cfw" path="res://Meshes/Other/ModularBuildings/WINDOW.obj" id="30_1rcvj"]
+[ext_resource type="Texture2D" uid="uid://b054xmkq5a5df" path="res://Textures/City/Walls/02857D15-0482-42A0-84B3-AC3AE2BA4835.png" id="30_slkk3"]
 [ext_resource type="ArrayMesh" uid="uid://ctoxufp2xvfan" path="res://Meshes/0Universal/Pipes/VALVE1_001.obj" id="34_uaddf"]
 [ext_resource type="Material" uid="uid://b83t5toylwmq8" path="res://Textures/0Universal/ObjTextures/MetalicTexture/Metalic.tres" id="35_g1hue"]
 [ext_resource type="Material" uid="uid://bljebcysx50cj" path="res://Textures/0Universal/MapTextures/Pipe/NonStickPipe.tres" id="46_x46m3"]
@@ -67,10 +70,16 @@
 [ext_resource type="ArrayMesh" uid="uid://cgk2desy4dsxu" path="res://Meshes/Other/ModularBuildings/ROOFCOURNER2.obj" id="65_lw6k2"]
 [ext_resource type="PackedScene" uid="uid://bq8grao5h2cy0" path="res://ObjectScenes/barrel.tscn" id="65_pdtgc"]
 [ext_resource type="PackedScene" uid="uid://4yn57cxfo0yp" path="res://ObjectScenes/lantern_on_hook.tscn" id="66_lw6k2"]
+[ext_resource type="Material" uid="uid://vggkf3xcomd4" path="res://Textures/City/Roofs/Tri/UseTheseTexturesForRoofs/Grey.tres" id="67_do6p4"]
 [ext_resource type="ArrayMesh" uid="uid://etreb7j0o7o8" path="res://Meshes/0Universal/Pipes/TUBELONG.obj" id="68_yigka"]
-[ext_resource type="PackedScene" uid="uid://c42l8422swt0b" path="res://ObjectScenes/pipes_lower_hshape.tscn" id="69_7ysn2"]
+[ext_resource type="ArrayMesh" uid="uid://dl10hjiywjtlj" path="res://Meshes/0Universal/Pipes/RING2.obj" id="69_7ysn2"]
+[ext_resource type="Material" uid="uid://b8gnsru67igjy" path="res://Textures/City/Roofs/Tri/UseTheseTexturesForRoofs/Brown.tres" id="69_slkk3"]
+[ext_resource type="ArrayMesh" uid="uid://5fxngc5ou85" path="res://Meshes/0Universal/Pipes/HALF_TUBE.obj" id="70_d22ih"]
 [ext_resource type="ArrayMesh" uid="uid://dbialkarvmqib" path="res://Meshes/0Universal/Pipes/T_JUNCTION.obj" id="70_onpy2"]
 [ext_resource type="PackedScene" uid="uid://do1xdcdlb6iub" path="res://ObjectScenes/ceiling_lights.tscn" id="71_g1hue"]
+[ext_resource type="Material" uid="uid://bs7gatsp55an2" path="res://Textures/City/Roofs/Tri/UseTheseTexturesForRoofs/FlatGrey.tres" id="71_l3an5"]
+[ext_resource type="Material" uid="uid://v1lkgwxbxmmj" path="res://Textures/City/Roofs/Tri/UseTheseTexturesForRoofs/FlatBrown.tres" id="72_5l1d5"]
+[ext_resource type="ArrayMesh" uid="uid://drntmn70wdolg" path="res://Meshes/0Universal/Pipes/STAND.obj" id="72_k32wm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7dd6c"]
 albedo_texture = ExtResource("4_rde2f")
@@ -159,10 +168,20 @@ uv1_offset = Vector3(0, 0, -0.35)
 uv1_triplanar = true
 uv1_triplanar_sharpness = 7.46426
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nm36y"]
-albedo_texture = ExtResource("16_oolf1")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_drkt2"]
+albedo_texture = ExtResource("20_sm2ky")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rfgie"]
+albedo_texture = ExtResource("21_la1dx")
 uv1_scale = Vector3(18.953, 3.54, 3.54)
 uv1_triplanar_sharpness = 26.9086
+uv1_world_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l3an5"]
+albedo_color = Color(1, 0.852064, 0.775005, 1)
+albedo_texture = ExtResource("22_do6p4")
+uv1_scale = Vector3(0.14, 0.14, 0.14)
+uv1_triplanar = true
 uv1_world_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2m277"]
@@ -179,9 +198,37 @@ uv1_scale = Vector3(0.025, 0.025, 0.025)
 uv1_triplanar = true
 uv1_world_triplanar = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5l1d5"]
+albedo_color = Color(1, 0.892085, 0.84083, 1)
+albedo_texture = ExtResource("30_slkk3")
+uv1_scale = Vector3(0.14, 0.14, 0.14)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krqce"]
 albedo_texture = ExtResource("14_sbb3x")
 roughness_texture = ExtResource("15_32qvq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2yrkr"]
+albedo_color = Color(1, 0.79705, 0.708543, 1)
+albedo_texture = ExtResource("22_do6p4")
+uv1_scale = Vector3(0.14, 0.14, 0.14)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w0lih"]
+albedo_color = Color(1, 0.796078, 0.709804, 1)
+albedo_texture = ExtResource("22_do6p4")
+uv1_scale = Vector3(0.14, 0.14, 0.14)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ee6dt"]
+albedo_color = Color(1, 0.796078, 0.709804, 1)
+albedo_texture = ExtResource("22_do6p4")
+uv1_scale = Vector3(0.14, 0.14, 0.14)
+uv1_triplanar = true
+uv1_world_triplanar = true
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_ymun1"]
 top_radius = 2.905
@@ -271,7 +318,13 @@ size = Vector3(1.70039, 31.1782, 25.2977)
 size = Vector3(1.70039, 17.0623, 20.7455)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_do6p4"]
-size = Vector3(1.70039, 16, 24)
+size = Vector3(16.7599, 16.5139, 72.4086)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mb0c3"]
+size = Vector3(8.8677, 32.5019, 3.62284)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4bja8"]
+size = Vector3(69.4435, 16, 24)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x22ri"]
 size = Vector3(65.5486, 43.0315, 33.2295)
@@ -300,17 +353,23 @@ size = Vector3(2.83176, 18.4548, 41.9238)
 [sub_resource type="BoxShape3D" id="BoxShape3D_nm36y"]
 size = Vector3(31.0031, 52.4581, 38.6924)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_pdtgc"]
-size = Vector3(3.15684, 31, 35.1488)
+[sub_resource type="BoxShape3D" id="BoxShape3D_q7qvr"]
+size = Vector3(3.17315, 31, 35.1488)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_lw6k2"]
-size = Vector3(3.33445, 59, 85.3735)
+[sub_resource type="BoxShape3D" id="BoxShape3D_ysbdl"]
+size = Vector3(3.96068, 59, 85.3735)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tym21"]
 size = Vector3(1.70039, 31, 32)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x3v7n"]
 size = Vector3(1.70039, 31.1782, 10.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_husfu"]
+size = Vector3(1.70039, 172.762, 570.564)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wqnis"]
+size = Vector3(1.70039, 116.64, 502.972)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vj6r8"]
 size = Vector3(1.70039, 31.1782, 10.4418)
@@ -373,7 +432,7 @@ size = Vector3(1.70039, 13.2399, 13)
 size = Vector3(1.70039, 17.0623, 13)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_drkt2"]
-size = Vector3(1.70039, 17.0623, 13)
+size = Vector3(25.3263, 97.2579, 43.12)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rfgie"]
 size = Vector3(1.70039, 13.2399, 13)
@@ -385,7 +444,7 @@ size = Vector3(1.70039, 13.2399, 13)
 size = Vector3(1.70039, 17.0623, 13)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ee6dt"]
-size = Vector3(1.70039, 17.0623, 13)
+size = Vector3(31.7921, 95.7742, 41.739)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_h0cim"]
 points = PackedVector3Array(-0.555286, 0.725421, 0.853971, -0.146155, -0.174557, -0.414371, -0.116434, -0.148072, -0.382793, -0.473389, 0.889214, -0.414371, -0.105229, -0.0517902, 0.853971, -0.555286, 0.725421, -0.414371, -0.228007, -0.0927125, 0.853971, -0.473389, 0.889214, 0.853971, -0.350654, 0.152821, -0.414371, -0.105229, -0.0517902, -0.414371, -0.432507, 0.357329, 0.853971, -0.432507, 0.807266, 0.853971, -0.146155, -0.174557, 0.853971, -0.537455, 0.847069, 0.803721, -0.228007, -0.0927125, -0.414371, -0.432507, 0.807266, -0.414371, -0.537455, 0.847069, -0.364121, -0.432507, 0.357329, -0.414371, -0.350654, 0.152821, 0.853971, -0.116434, -0.148072, 0.822393)
@@ -637,11 +696,32 @@ points = PackedVector3Array(0.158886, -0.0415988, 0.841757, -0.905887, 4.72853, 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tym21"]
 points = PackedVector3Array(0.275071, 0.788561, 0.0543024, -0.230968, 0.011294, -0.0204327, -0.231164, 0.0109888, 0.0156573, -0.24231, 0.788561, -0.0591405, 0.110984, 0.00623918, -0.248398, 0.0585606, 0.0112714, 0.244945, -0.0530016, 0.788561, 0.256271, -0.0908328, 0.788561, -0.248398, 0.26241, 0.00623918, 0.0921843, 0.211918, 0.788561, -0.185346, -0.179156, 0.00623918, 0.180508, -0.0782224, 0.00623918, -0.248398, 0.186748, 0.788561, 0.205779, 0.26241, 0.00623918, -0.0970224, -0.217038, 0.788561, 0.130066, -0.229648, 0.00623918, -0.0969717, 0.0731024, 0.788561, -0.26111, -0.179156, 0.788561, -0.185295, 0.275071, 0.788561, -0.0591405, 0.0857635, 0.788561, 0.256271, 0.154178, 0.0139019, 0.207283, -0.025859, 0.011163, 0.245014, -0.153935, 0.788561, 0.205779, 0.161477, 0.00623918, -0.223228, 0.123645, 0.788561, -0.248398, 0.224579, 0.775912, 0.167897, -0.229648, 0.763342, 0.104795, 0.23719, 0.00623918, -0.147515, -0.166546, 0.00623918, 0.193169, -0.229648, 0.788561, -0.109582, -0.21934, 0.0105102, 0.0761384, 0.123645, 0.763342, 0.24356)
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1whwe"]
+points = PackedVector3Array(0.228873, 0.297254, -1.96094, 0.719168, -0.254236, 1.96094, 0.660953, -0.2849, 1.76485, -0.4145, 0.281128, 1.85773, -0.386924, -0.2849, -1.76485, 0.719168, -0.254236, -1.96094, -0.386924, -0.2849, 1.76485, 0.228873, 0.297254, 1.96094, -0.4145, 0.281128, -1.85773, 0.657853, -0.13169, 1.96094, 0.660953, -0.2849, -1.76485, 0.657853, -0.13169, -1.96094)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5y1r2"]
+points = PackedVector3Array(0.228873, 0.297254, -1.96094, 0.719168, -0.254236, 1.96094, 0.660953, -0.2849, 1.76485, -0.4145, 0.281128, 1.85773, -0.386924, -0.2849, -1.76485, 0.719168, -0.254236, -1.96094, -0.386924, -0.2849, 1.76485, 0.228873, 0.297254, 1.96094, -0.4145, 0.281128, -1.85773, 0.657853, -0.13169, 1.96094, 0.660953, -0.2849, -1.76485, 0.657853, -0.13169, -1.96094)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_82ayc"]
+points = PackedVector3Array(0.588838, -0.269946, -0.0910875, 0.520806, -0.269946, -0.344792, 0.0510339, 0.29994, 0.446686, 0.0510339, 0.29994, 0.537779, 0.588731, -0.269946, 0.537779, 0.427948, -0.269946, -0.437665, -0.0169977, 0.29994, 0.192981, -0.509125, 0.29994, 0.537779, -0.509125, -0.269946, 0.537779, 0.33509, -0.269946, -0.530427, -0.109856, 0.29994, 0.100108, -0.509125, 0.29994, -0.0607231, -0.509125, -0.269946, -0.598385, 0.0813418, -0.269946, -0.598385, -0.456355, 0.29994, -0.0607231, -0.202714, 0.29994, 0.00734663)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_v3y82"]
+points = PackedVector3Array(0.564023, -0.20668, 0.546918, -0.501386, -0.2699, 0.529646, 0.0934489, -0.2699, -0.589927, 0.0589653, 0.316228, 0.384547, -0.518118, -0.242741, -0.607418, -0.487438, 0.2999, 0.515248, 0.5279, -0.242741, -0.354879, -0.481066, 0.296509, -0.0638007, 0.5832, -0.2699, 0.529427, -0.148232, 0.258835, -0.0157492, 0.0770265, -0.22474, -0.589339, 0.0575609, 0.292949, 0.501766, 0.564023, -0.20668, -0.0661818, 0.365568, -0.260801, -0.535216, -0.501386, -0.2699, -0.590146, 0.579405, -0.26788, -0.117074, 0.01195, 0.258805, 0.144376, 0.347616, -0.242741, -0.535216, -0.262745, 0.269268, -0.0453807, 0.529553, -0.269248, -0.309456, 0.581975, -0.242741, -0.156463, 0.0770265, -0.242741, -0.607418, 0.293542, -0.242741, -0.553295, 0.5279, -0.260801, -0.372845, -0.325304, 0.27051, -0.0606614, 0.491887, -0.17062, -0.174542, 0.317015, -0.265985, -0.530563)
+
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ex803"]
 points = PackedVector3Array(0.275071, 0.788561, 0.0543024, -0.230968, 0.011294, -0.0204327, -0.231164, 0.0109888, 0.0156573, -0.24231, 0.788561, -0.0591405, 0.110984, 0.00623918, -0.248398, 0.0585606, 0.0112714, 0.244945, -0.0530016, 0.788561, 0.256271, -0.0908328, 0.788561, -0.248398, 0.26241, 0.00623918, 0.0921843, 0.211918, 0.788561, -0.185346, -0.179156, 0.00623918, 0.180508, -0.0782224, 0.00623918, -0.248398, 0.186748, 0.788561, 0.205779, 0.26241, 0.00623918, -0.0970224, -0.217038, 0.788561, 0.130066, -0.229648, 0.00623918, -0.0969717, 0.0731024, 0.788561, -0.26111, -0.179156, 0.788561, -0.185295, 0.275071, 0.788561, -0.0591405, 0.0857635, 0.788561, 0.256271, 0.154178, 0.0139019, 0.207283, -0.025859, 0.011163, 0.245014, -0.153935, 0.788561, 0.205779, 0.161477, 0.00623918, -0.223228, 0.123645, 0.788561, -0.248398, 0.224579, 0.775912, 0.167897, -0.229648, 0.763342, 0.104795, 0.23719, 0.00623918, -0.147515, -0.166546, 0.00623918, 0.193169, -0.229648, 0.788561, -0.109582, -0.21934, 0.0105102, 0.0761384, 0.123645, 0.763342, 0.24356)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s5kik"]
 points = PackedVector3Array(-0.288765, -0.133697, -2.48097, 0.253946, 0.176332, 2.48097, 0.253946, -0.211151, 2.48097, 0.253946, 0.176332, -2.48097, -0.288765, 0.176332, 2.48097, -0.211151, 0.253946, -2.48097, 0.176332, -0.288765, -2.48097, -0.133697, -0.288765, 2.48097, 0.176332, 0.253946, 2.48097, -0.288765, -0.133697, 2.48097, -0.133697, -0.288765, -2.48097, -0.211151, 0.253946, 2.48097, 0.176332, 0.253946, -2.48097, 0.253946, -0.211151, -2.48097, 0.176332, -0.288765, 2.48097, -0.288765, 0.176332, -2.48097)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ytc1s"]
+height = 8.125
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_nscnc"]
+height = 13.375
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fil6b"]
+height = 9.54443
 
 [node name="LVCity" type="Node3D"]
 
@@ -2765,20 +2845,20 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(0.182236, 0, 2.65479, 0, 1, 0, -0.983255, 0, 0.492036, -25.2262, 29, -360.066)
+transform = Transform3D(0.182236, 0, 2.65479, 0, 1, 0, -0.983255, 0, 0.492036, -25.7815, 29, -358.535)
 material_override = SubResource("StandardMaterial3D_i14e2")
 use_collision = true
-size = Vector3(18, 1, 2)
+size = Vector3(16.5967, 1, 1.70508)
 
 [node name="RoofHole2" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(-4.37114e-08, 0, 4.72694, 0, 1, 0, -1, 0, -2.06622e-07, -12.962, 27.333, -356.91)
-material_override = ExtResource("13_v6um6")
+material_override = SubResource("StandardMaterial3D_drkt2")
 use_collision = true
 size = Vector3(5, 2, 12)
 
 [node name="BuildingRoof3" type="CSGMesh3D" parent="LVL2"]
 transform = Transform3D(-4.37114e-08, 0, 4.72694, 0, 1, 0, -1, 0, -2.06622e-07, -12.9624, 28, -356.91)
-material_override = SubResource("StandardMaterial3D_nm36y")
+material_override = SubResource("StandardMaterial3D_rfgie")
 use_collision = true
 mesh = SubResource("PrismMesh_es6pr")
 
@@ -2789,7 +2869,7 @@ size = Vector3(5, 2, 12)
 
 [node name="BuildingBase11" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(-4.37114e-08, 0, 2.7, 0, 1, 0, -1, 0, -1.18021e-07, -13, 2.5, -356.91)
-material_override = ExtResource("13_m5b6e")
+material_override = SubResource("StandardMaterial3D_l3an5")
 use_collision = true
 size = Vector3(10, 47, 19.8208)
 script = ExtResource("12_mg1xl")
@@ -2990,6 +3070,30 @@ material_override = ExtResource("14_x46m3")
 use_collision = true
 size = Vector3(11, 1, 9)
 
+[node name="Wood10" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 1.29097, 55.3696, -601.737)
+material_override = ExtResource("17_jcojh")
+use_collision = true
+size = Vector3(0.678711, 17.5084, 0.680176)
+
+[node name="Wood11" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -8.1851, 55.3696, -601.737)
+material_override = ExtResource("17_jcojh")
+use_collision = true
+size = Vector3(0.678711, 17.5084, 0.680176)
+
+[node name="Wood12" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(4.37114e-08, -1, 4.37114e-08, -1, -4.37114e-08, 4.37114e-08, -4.37114e-08, -4.37114e-08, -1, -3.4521, 64.0657, -601.737)
+material_override = ExtResource("17_jcojh")
+use_collision = true
+size = Vector3(0.678711, 10.1332, 0.680176)
+
+[node name="Wood13" type="CSGBox3D" parent="LVL2"]
+transform = Transform3D(4.37114e-08, -1, 4.37114e-08, -1, -4.37114e-08, 4.37114e-08, -4.37114e-08, -4.37114e-08, -1, -3.45208, 46.7793, -601.737)
+material_override = ExtResource("17_jcojh")
+use_collision = true
+size = Vector3(0.678711, 10.1332, 0.680176)
+
 [node name="Wood8" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(-1, -6.55671e-08, 6.98541e-08, -2.18557e-08, 0.866025, 0.5, -9.3279e-08, 0.5, -0.866025, 9.88645, 54.8456, -605.148)
 material_override = ExtResource("14_x46m3")
@@ -3026,7 +3130,7 @@ size = Vector3(15.4453, 37, 40)
 
 [node name="BuildingBase32" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.4864, 18.5, -120.333)
-material_override = ExtResource("11_5giqy")
+material_override = SubResource("StandardMaterial3D_5l1d5")
 use_collision = true
 size = Vector3(58, 47, 73.5206)
 script = ExtResource("12_mg1xl")
@@ -3061,35 +3165,14 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 11.5, 
 transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133728, -0.12603, 2.6985)
 
 [node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate/WaterGateWithHole/NegativeLights"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
+transform = Transform3D(0.143127, 0, 8.88178e-16, 0, 0.143127, 0, -8.88178e-16, 0, 0.143127, 1.01583, 0.286254, 0.0906677)
 light_color = Color(1, 0.648449, 0.595183, 1)
 light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate/WaterGateWithHole/NegativeLights"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
+omni_range = 10.665
 omni_attenuation = -0.69
 
 [node name="NegativeLights2" type="Node3D" parent="LVL2/StreetBoundaryWaterGate/WaterGateWithHole"]
 transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133728, -0.12603, -2.30151)
-
-[node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate/WaterGateWithHole/NegativeLights2"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate/WaterGateWithHole/NegativeLights2"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
 
 [node name="WaterwayGate3" type="MeshInstance3D" parent="LVL2/StreetBoundaryWaterGate/WaterGateWithHole"]
 transform = Transform3D(-1.64918e-07, 0, -3.77288, 0, 3.77288, 0, 3.77288, 0, -1.64918e-07, 0.133728, -0.12603, -3.3015)
@@ -3119,74 +3202,6 @@ script = ExtResource("12_mg1xl")
 
 [node name="WaterGateWithHole" type="Node3D" parent="LVL2/StreetBoundaryWaterGate12"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 13.5, 0, 0.249969)
-
-[node name="NegativeLights" type="Node3D" parent="LVL2/StreetBoundaryWaterGate12/WaterGateWithHole"]
-transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133698, -0.798808, 2.6985)
-
-[node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate12/WaterGateWithHole/NegativeLights"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate12/WaterGateWithHole/NegativeLights"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLights2" type="Node3D" parent="LVL2/StreetBoundaryWaterGate12/WaterGateWithHole"]
-transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133698, -0.798808, -2.30151)
-
-[node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate12/WaterGateWithHole/NegativeLights2"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate12/WaterGateWithHole/NegativeLights2"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLights3" type="Node3D" parent="LVL2/StreetBoundaryWaterGate12/WaterGateWithHole"]
-transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133698, -2.71363, 0.294157)
-
-[node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate12/WaterGateWithHole/NegativeLights3"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate12/WaterGateWithHole/NegativeLights3"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLights4" type="Node3D" parent="LVL2/StreetBoundaryWaterGate12/WaterGateWithHole"]
-transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133698, 1.67166, 0.294157)
-
-[node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate12/WaterGateWithHole/NegativeLights4"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate12/WaterGateWithHole/NegativeLights4"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
 
 [node name="WaterwayGate3" type="MeshInstance3D" parent="LVL2/StreetBoundaryWaterGate12/WaterGateWithHole"]
 transform = Transform3D(-1.64918e-07, 0, -3.77288, 0, 3.77288, 0, 3.77288, 0, -1.64918e-07, 0.133728, -0.12603, -3.3015)
@@ -3240,104 +3255,39 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 13.5, 
 transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133698, -0.798808, 2.6985)
 
 [node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole/NegativeLights"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
+transform = Transform3D(0.143127, 0, -2.91852e-08, 0, 0.0437693, 0, 1.77636e-15, 0, 0.0529609, 1.77378, 0.286254, 0.351078)
+light_color = Color(1, 0.746856, 0.706258, 1)
+light_energy = 5.202
 light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
+omni_range = 19.359
+omni_attenuation = 0.17
 
 [node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole/NegativeLights"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
+transform = Transform3D(0.143127, 0, -2.91852e-08, 0, 0.0437693, 0, 1.77636e-15, 0, 0.0529609, 1.77378, 0.286254, -0.166836)
+light_color = Color(1, 0.746856, 0.706258, 1)
+light_energy = 5.202
 light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLights5" type="Node3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole"]
-transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133728, 0.424422, 2.6985)
-
-[node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole/NegativeLights5"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-shadow_enabled = true
-omni_range = 22.44
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole/NegativeLights5"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-shadow_enabled = true
-omni_range = 22.44
-omni_attenuation = -0.69
-
-[node name="NegativeLight3" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole/NegativeLights5"]
-transform = Transform3D(0.143127, 0, -2.91852e-08, 0, 0.0437693, 0, 1.77636e-15, 0, 0.0529609, -22.7572, 0.286254, 0.286266)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-shadow_enabled = true
-omni_range = 22.44
-omni_attenuation = -0.69
-
-[node name="NegativeLight4" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole/NegativeLights5"]
-transform = Transform3D(0.143127, 0, -2.91852e-08, 0, 0.0437693, 0, 1.77636e-15, 0, 0.0529609, -22.7572, 0.286254, -0.28624)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-shadow_enabled = true
-omni_range = 22.44
-omni_attenuation = -0.69
-
-[node name="NegativeLights3" type="Node3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole"]
-transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133698, -2.44291, 2.6985)
-
-[node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole/NegativeLights3"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole/NegativeLights3"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLights4" type="Node3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole"]
-transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133698, 1.94842, 2.6985)
-
-[node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole/NegativeLights4"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole/NegativeLights4"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
+omni_range = 19.359
+omni_attenuation = 0.17
 
 [node name="NegativeLights2" type="Node3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole"]
-transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133698, -0.798808, -2.30151)
+transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133759, -0.798808, -164.066)
 
 [node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole/NegativeLights2"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
+transform = Transform3D(0.143127, 0, -2.91852e-08, 0, 0.0437693, 0, 1.77636e-15, 0, 0.0529609, 1.77378, 0.286254, 0.351078)
+light_color = Color(1, 0.746856, 0.706258, 1)
+light_energy = 5.202
 light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
+omni_range = 19.359
+omni_attenuation = 0.17
 
 [node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole/NegativeLights2"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
+transform = Transform3D(0.143127, 0, -2.91852e-08, 0, 0.0437693, 0, 1.77636e-15, 0, 0.0529609, 1.77378, 0.286254, -0.166836)
+light_color = Color(1, 0.746856, 0.706258, 1)
+light_energy = 5.202
 light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
+omni_range = 19.359
+omni_attenuation = 0.17
 
 [node name="WaterwayGate3" type="MeshInstance3D" parent="LVL2/StreetBoundaryWaterGate13/WaterGateWithHole"]
 transform = Transform3D(-1.64918e-07, 0, -3.77288, 0, 3.77288, 0, 3.77288, 0, -1.64918e-07, 0.133728, -0.12603, -3.3015)
@@ -3362,7 +3312,7 @@ nonstick = true
 
 [node name="StreetBoundaryWaterGate4" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.4632, 8, -201.386)
-material_override = ExtResource("13_m5b6e")
+material_override = SubResource("StandardMaterial3D_2yrkr")
 use_collision = true
 size = Vector3(30, 20, 47)
 script = ExtResource("12_mg1xl")
@@ -3378,7 +3328,7 @@ nonstick = true
 
 [node name="StreetBoundaryWaterGate5" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.1989, 8, -205.805)
-material_override = ExtResource("13_m5b6e")
+material_override = SubResource("StandardMaterial3D_w0lih")
 use_collision = true
 size = Vector3(52.5, 20, 56)
 script = ExtResource("12_mg1xl")
@@ -3470,32 +3420,11 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 11.5, 
 [node name="NegativeLights" type="Node3D" parent="LVL2/StreetBoundaryWaterGate2/WaterGateWithHole"]
 transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133728, -0.12603, 2.6985)
 
-[node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate2/WaterGateWithHole/NegativeLights"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate2/WaterGateWithHole/NegativeLights"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
 [node name="NegativeLights2" type="Node3D" parent="LVL2/StreetBoundaryWaterGate2/WaterGateWithHole"]
 transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133728, -0.12603, -2.30151)
 
-[node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate2/WaterGateWithHole/NegativeLights2"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
 [node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate2/WaterGateWithHole/NegativeLights2"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
+transform = Transform3D(0.143127, 0, 1.77636e-15, 0, 0.143127, 0, -1.77636e-15, 0, 0.143127, 1.57439, 0.286254, -0.0947952)
 light_color = Color(1, 0.648449, 0.595183, 1)
 light_negative = true
 omni_range = 11.0
@@ -3533,34 +3462,14 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 11.5, 
 [node name="NegativeLights" type="Node3D" parent="LVL2/StreetBoundaryWaterGate10/WaterGateWithHole"]
 transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133728, -0.12603, 2.6985)
 
-[node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate10/WaterGateWithHole/NegativeLights"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate10/WaterGateWithHole/NegativeLights"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
 [node name="NegativeLights2" type="Node3D" parent="LVL2/StreetBoundaryWaterGate10/WaterGateWithHole"]
 transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133728, -0.12603, -2.30151)
 
-[node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate10/WaterGateWithHole/NegativeLights2"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
 [node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate10/WaterGateWithHole/NegativeLights2"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
+transform = Transform3D(0.143127, 0, 1.77636e-15, 0, 0.143127, 0, -1.77636e-15, 0, 0.143127, 1.57439, 0.286254, -0.0442581)
 light_color = Color(1, 0.648449, 0.595183, 1)
 light_negative = true
+shadow_enabled = true
 omni_range = 11.0
 omni_attenuation = -0.69
 
@@ -3576,7 +3485,7 @@ script = ExtResource("12_mg1xl")
 
 [node name="StreetBoundaryWaterGate11" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, -2.4869e-14, 0, 1, 0, 2.4869e-14, 0, 1, -64.5, 8, -165.75)
-material_override = ExtResource("13_m5b6e")
+material_override = SubResource("StandardMaterial3D_ee6dt")
 use_collision = true
 size = Vector3(64, 20, 26)
 script = ExtResource("12_mg1xl")
@@ -3596,51 +3505,18 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 28.5, 
 [node name="NegativeLights" type="Node3D" parent="LVL2/StreetBoundaryWaterGate11/WaterGateWithHole"]
 transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133728, -0.12603, 2.6985)
 
-[node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate11/WaterGateWithHole/NegativeLights"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate11/WaterGateWithHole/NegativeLights"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
 [node name="NegativeLights3" type="Node3D" parent="LVL2/StreetBoundaryWaterGate11/WaterGateWithHole"]
 transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133728, 0.87397, -2.3015)
-
-[node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate11/WaterGateWithHole/NegativeLights3"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate11/WaterGateWithHole/NegativeLights3"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
 
 [node name="NegativeLights2" type="Node3D" parent="LVL2/StreetBoundaryWaterGate11/WaterGateWithHole"]
 transform = Transform3D(-3.05403e-07, 0, -6.98681, 0, 6.98681, 0, 6.98681, 0, -3.05403e-07, 0.133728, -0.12603, -2.30151)
 
 [node name="NegativeLight" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate11/WaterGateWithHole/NegativeLights2"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, 0.286255)
+transform = Transform3D(0.143127, 0, 8.88178e-16, 0, 0.143127, 0, -8.88178e-16, 0, 0.143127, 1.33846, 0.363579, 0.00125885)
 light_color = Color(1, 0.648449, 0.595183, 1)
+light_energy = 1.38
 light_negative = true
-omni_range = 11.0
-omni_attenuation = -0.69
-
-[node name="NegativeLight2" type="OmniLight3D" parent="LVL2/StreetBoundaryWaterGate11/WaterGateWithHole/NegativeLights2"]
-transform = Transform3D(0.143127, 0, 4.44089e-16, 0, 0.143127, 0, -4.44089e-16, 0, 0.143127, 1.57439, 0.286254, -0.286253)
-light_color = Color(1, 0.648449, 0.595183, 1)
-light_negative = true
+shadow_enabled = true
 omni_range = 11.0
 omni_attenuation = -0.69
 
@@ -3719,6 +3595,8 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.500
 use_collision = true
 size = Vector3(17, 17, 9)
 material = ExtResource("60_sjsnp")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StreetBoundary21" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.00002, 34, -589)
@@ -3766,6 +3644,7 @@ omni_range = 19.177
 
 [node name="Valve1001" type="MeshInstance3D" parent="LVL2"]
 transform = Transform3D(-2.95565e-15, 7.86805e-08, -1.8, 1.8, -7.86805e-08, 0, -7.86805e-08, -1.8, -7.86805e-08, -44.2841, 34.9654, -397.536)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("34_uaddf")
 surface_material_override/0 = ExtResource("35_g1hue")
 
@@ -6171,8 +6050,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences18/Fences2/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, -1.74794e-12, 0, 1, 0.0501953, 0.330077, -9.74643)
-shape = SubResource("BoxShape3D_xicfl")
+transform = Transform3D(1, 0, 0, 0, 1, 0, -1.74083e-12, 0, 1, 7.57996, 1.7168, 15.8115)
+shape = SubResource("BoxShape3D_do6p4")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -7451,8 +7330,26 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences20/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.050293, -6.36831, -9.47278)
-shape = SubResource("BoxShape3D_i14e2")
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.74083e-12, 0, 1, -1.62708, 1.35147, -0.911453)
+shape = SubResource("BoxShape3D_mb0c3")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Fences20/Fences4/StaticBody3D"]
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.74083e-12, 0, 1, -1.62708, 1.35147, -193.953)
+shape = SubResource("BoxShape3D_mb0c3")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Fences20/Fences4/StaticBody3D"]
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.74083e-12, 0, 1, -47.2769, 1.35147, -193.953)
+shape = SubResource("BoxShape3D_mb0c3")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Fences20/Fences4/StaticBody3D"]
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.74083e-12, 0, 1, -47.5193, 1.35147, -0.911438)
+shape = SubResource("BoxShape3D_mb0c3")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -7963,8 +7860,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences16/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.71951e-12, 0, 1, 0.0502319, -5.55239, -7.84546)
-shape = SubResource("BoxShape3D_do6p4")
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.71951e-12, 0, 1, -33.8213, -5.55239, -7.84546)
+shape = SubResource("BoxShape3D_4bja8")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -30033,8 +29930,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences45/StaticBody3D"]
-transform = Transform3D(1, 0, -4.24905e-12, 0, 1, 0, -1.71951e-12, 0, 1, -0.678024, 9.21012, -13.4742)
-shape = SubResource("BoxShape3D_pdtgc")
+transform = Transform3D(1, 0, -4.24905e-12, 0, 1, 0, -1.71951e-12, 0, 1, -0.686172, 9.21012, -13.4742)
+shape = SubResource("BoxShape3D_q7qvr")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -31763,8 +31660,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences47/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -6.09646e-12, 0, 1, 0, -1.71951e-12, 0, 1, 0.867264, 15.0099, -20.7869)
-shape = SubResource("BoxShape3D_lw6k2")
+transform = Transform3D(1, 0, -6.09646e-12, 0, 1, 0, -1.71951e-12, 0, 1, 1.18039, 15.0099, -20.7869)
+shape = SubResource("BoxShape3D_ysbdl")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -36833,8 +36730,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences58/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 2.3823, -7.744)
-shape = SubResource("BoxShape3D_x46m3")
+transform = Transform3D(1, 0, -2.71427e-12, 0, 1, 0, -1.71951e-12, 0, 1, 0.0501862, 73.1741, -84.7714)
+shape = SubResource("BoxShape3D_husfu")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -43961,8 +43858,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences72/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76925e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 5.97876, -9.47278)
-shape = SubResource("BoxShape3D_i14e2")
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.71951e-12, 0, 1, 0.0502472, 55.7678, -178.309)
+shape = SubResource("BoxShape3D_wqnis")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -60849,7 +60746,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences3/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.59162e-12, 0, 1, 0, -1.71951e-12, 0, 1, 0.0502472, 5.97876, -13.8928)
+transform = Transform3D(1, 0, -1.59162e-12, 0, 1, 0, -1.71951e-12, 0, 1, 11.8632, 33.0877, -24.5258)
 shape = SubResource("BoxShape3D_drkt2")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -61873,7 +61770,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences6/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.59162e-12, 0, 1, 0, -1.71951e-12, 0, 1, 0.0502319, 5.97876, -13.8928)
+transform = Transform3D(1, 0, -1.59162e-12, 0, 1, 0, -1.71951e-12, 0, 1, -14.9956, 33.132, -24.0928)
 shape = SubResource("BoxShape3D_ee6dt")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -63760,42 +63657,52 @@ mesh = ExtResource("30_1rcvj")
 
 [node name="Roof4" type="MeshInstance3D" parent="."]
 transform = Transform3D(-5, 0, -1.00822e-06, 0, 5, 0, 4.37114e-07, 0, -11.5327, -773.823, 15.5387, -142.346)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("67_do6p4")
 mesh = ExtResource("64_pdtgc")
 
 [node name="Roof5" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.0877199, 0, -1.48489, 0, 5, 0, 4.95122, 0, -0.0263075, -769, 15.5387, -118.051)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("67_do6p4")
 mesh = ExtResource("64_pdtgc")
 
 [node name="Roof6" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.21767e-07, 0, -3.86825, 0, 5, 0, 5.07343, 0, -1.69087e-07, -754.428, 15.5387, -112.109)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("67_do6p4")
 mesh = ExtResource("64_pdtgc")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Roof6"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Roof6/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_1whwe")
 
 [node name="Roof7" type="MeshInstance3D" parent="."]
 transform = Transform3D(5.07343, 0, 0, 0, 5, 0, 0, 0, 21.3888, -745.193, 15.5387, -155.831)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("67_do6p4")
 mesh = ExtResource("64_pdtgc")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Roof7"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Roof7/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_5y1r2")
 
 [node name="Roof13" type="MeshInstance3D" parent="."]
 transform = Transform3D(-5.07343, 0, 1.1499e-06, 0, 5, 0, -4.43533e-07, 0, -13.1533, -697.365, 39.6815, -172.604)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("64_pdtgc")
 
 [node name="Roof16" type="MeshInstance3D" parent="."]
 transform = Transform3D(5.07343, 0, 0, 0, 5, 0, 0, 0, 13.1533, -625.562, 39.6815, -172.604)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("64_pdtgc")
 
 [node name="Roof14" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.21767e-07, 0, -17.8777, 0, 5, 0, 5.07343, 0, -7.8146e-07, -661.89, 39.6815, -145.313)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("64_pdtgc")
 
 [node name="Roof15" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.21767e-07, 0, 17.8777, 0, 5, 0, -5.07343, 0, -7.8146e-07, -661.89, 39.6815, -199.817)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("64_pdtgc")
 
 [node name="Roof17" type="MeshInstance3D" parent="."]
@@ -63820,77 +63727,77 @@ mesh = ExtResource("64_pdtgc")
 
 [node name="Roof12" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.21767e-07, 0, 5.68147, 0, 5, 0, -5.07343, 0, -2.48345e-07, -758.503, 15.5387, -199.287)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("67_do6p4")
 mesh = ExtResource("64_pdtgc")
 
 [node name="Roof8" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.21767e-07, 0, 17.206, 0, 5, 0, -5.07343, 0, -7.521e-07, -729.641, 15.5387, -87.0241)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("64_pdtgc")
 
 [node name="Roof41" type="MeshInstance3D" parent="."]
 transform = Transform3D(-5.07343, 0, 1.2723e-07, 0, 5, 0, -4.43533e-07, 0, -1.45535, -763.989, 15.5387, -82.3228)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("64_pdtgc")
 
 [node name="Roof42" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.21767e-07, 0, 1.45535, 0, 5, 0, -5.07343, 0, -6.36152e-08, -768.677, 15.5387, -75.5551)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("64_pdtgc")
 
 [node name="Roof10" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.21767e-07, 0, -19.2842, 0, 5, 0, 5.07343, 0, -8.42941e-07, -734.315, 15.5387, -26.3178)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("64_pdtgc")
 
 [node name="Roof11" type="MeshInstance3D" parent="."]
 transform = Transform3D(-5.07343, 0, -9.63881e-07, 0, 5, 0, 4.43533e-07, 0, -11.0255, -773.503, 15.5387, -53.4291)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("64_pdtgc")
 
 [node name="Roof9" type="MeshInstance3D" parent="."]
 transform = Transform3D(5.07343, 0, 0, 0, 5, 0, 0, 0, 14.86, -694.968, 15.5387, -57.09)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("64_pdtgc")
 
 [node name="Roofcourner2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-5, 0, 4.37114e-07, 0, 5, 0, -4.37114e-07, 0, -5, -774.431, 15.4985, -117.662)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("67_do6p4")
 mesh = ExtResource("65_lw6k2")
 
 [node name="Roofcourner10" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -624.927, 39.6594, -145.04)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("65_lw6k2")
 
 [node name="Roofcourner12" type="MeshInstance3D" parent="."]
 transform = Transform3D(-5, 0, 4.37114e-07, 0, 5, 0, -4.37114e-07, 0, -5, -697.729, 39.6594, -145.04)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("65_lw6k2")
 
 [node name="Roofcourner13" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -697.729, 39.6594, -199.995)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("65_lw6k2")
 
 [node name="Roofcourner11" type="MeshInstance3D" parent="."]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -625.466, 39.6594, -200.457)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("65_lw6k2")
 
 [node name="Roofcourner9" type="MeshInstance3D" parent="."]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -744.723, 15.4985, -199.657)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("67_do6p4")
 mesh = ExtResource("65_lw6k2")
 
 [node name="Roofcourner5" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -764.395, 15.4985, -87.4718)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("65_lw6k2")
 
 [node name="Roofcourner7" type="MeshInstance3D" parent="."]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -694.405, 15.4985, -87.4718)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("65_lw6k2")
 
 [node name="Roofcourner14" type="MeshInstance3D" parent="."]
@@ -64115,27 +64022,37 @@ mesh = ExtResource("65_lw6k2")
 
 [node name="Roofcourner8" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -694.405, 15.4985, -25.878)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("65_lw6k2")
 
 [node name="Roofcourner6" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -773.916, 15.4985, -76.2407)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("65_lw6k2")
 
 [node name="Roofcourner3" type="MeshInstance3D" parent="."]
 transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -763.755, 15.4985, -111.571)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("67_do6p4")
 mesh = ExtResource("65_lw6k2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Roofcourner3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Roofcourner3/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_82ayc")
 
 [node name="Roofcourner4" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -744.769, 15.4985, -111.571)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("67_do6p4")
 mesh = ExtResource("65_lw6k2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Roofcourner4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Roofcourner4/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_v3y82")
 
 [node name="Window11" type="MeshInstance3D" parent="."]
 transform = Transform3D(-5.61665e-07, -89.3446, 0, 12.8494, -3.90538e-06, 0, 0, 0, 119.514, -661.6, 39.9419, -171.067)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("69_slkk3")
 mesh = ExtResource("30_1rcvj")
 
 [node name="Window17" type="MeshInstance3D" parent="."]
@@ -64170,22 +64087,22 @@ mesh = ExtResource("30_1rcvj")
 
 [node name="Window15" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.45512e-14, 4.43975e-06, 60.1804, 12.8494, -4.43975e-06, 0, 5.61665e-07, 101.57, -2.63057e-06, -759.346, 16.3187, -157.365)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("71_l3an5")
 mesh = ExtResource("30_1rcvj")
 
 [node name="Window16" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.97329e-14, 5.6189e-07, 44.7365, 26.0288, -5.6189e-07, 0, 1.13776e-06, 12.8545, -1.95549e-06, -756.893, 15.3292, -117.287)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("71_l3an5")
 mesh = ExtResource("30_1rcvj")
 
 [node name="Window12" type="MeshInstance3D" parent="."]
 transform = Transform3D(-5.61665e-07, -101.261, 0, 12.8494, -4.42624e-06, 0, 0, 0, 123.486, -732.592, 16.7033, -53.9357)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("72_5l1d5")
 mesh = ExtResource("30_1rcvj")
 
 [node name="Window13" type="MeshInstance3D" parent="."]
 transform = Transform3D(-5.61665e-07, -89.341, 0, 12.8494, -3.90522e-06, 0, 0, 0, 20.1962, -727.738, 16.3771, -81.7609)
-material_override = ExtResource("58_h0cim")
+material_override = ExtResource("72_5l1d5")
 mesh = ExtResource("30_1rcvj")
 
 [node name="Barrel2" parent="." instance=ExtResource("65_pdtgc")]
@@ -64214,187 +64131,690 @@ shape = SubResource("ConvexPolygonShape3D_ex803")
 
 [node name="Tubelong" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.3, 0, 0, 0, -1.00536e-07, 9.98926, 0, -2.3, -4.36644e-07, -884.408, 20.2946, -57.2245)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Tubelong"]
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_s5kik")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong2" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.3, 0, 0, 0, -1.00536e-07, 9.98926, 0, -2.3, -4.36644e-07, -884.408, 20.2946, -139.794)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Tubelong2"]
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong2/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_s5kik")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong3" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.3, 0, 0, 0, -1.00536e-07, 9.98926, 0, -2.3, -4.36644e-07, -884.408, 20.2946, -158.756)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Tubelong3"]
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong3/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_s5kik")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong4" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.3, 0, 0, 0, 2.3, -2.94769e-14, 0, 1.42109e-14, 3.45337, -884.408, 36.2532, -148.594)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Tubelong4"]
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong4/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_s5kik")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
-[node name="pipes_lowerHshape" parent="." instance=ExtResource("69_7ysn2")]
+[node name="pipes_lowerHshape" type="Node3D" parent="."]
 transform = Transform3D(2.26602, 0, 0, 0, 2.37406, 0, 0, 0, 2.26602, -884.474, -3.43982, -69.2546)
+script = ExtResource("12_mg1xl")
+nonstick = true
 
-[node name="pipes_lowerHshape2" parent="." instance=ExtResource("69_7ysn2")]
+[node name="Tubelong" type="MeshInstance3D" parent="pipes_lowerHshape"]
+transform = Transform3D(1.91069e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 0.0527646, 9.75, -1.91137)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("68_yigka")
+skeleton = NodePath("../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring2" type="MeshInstance3D" parent="pipes_lowerHshape/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539923, 0.0118704, -1.78159)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring3" type="MeshInstance3D" parent="pipes_lowerHshape/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring4" type="MeshInstance3D" parent="pipes_lowerHshape/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539827, 0.0118713, 0.961907)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring5" type="MeshInstance3D" parent="pipes_lowerHshape/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539875, 0.0118694, -0.873181)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pipes_lowerHshape/Tubelong"]
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pipes_lowerHshape/Tubelong/StaticBody3D"]
+transform = Transform3D(0.6, -1.1309e-07, -4.94338e-15, -2.5377e-19, -2.62268e-08, 0.6, -1.1309e-07, -0.6, -2.62268e-08, 0, -3.8147e-06, 0.287499)
+shape = SubResource("CylinderShape3D_ytc1s")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Tubelong2" type="MeshInstance3D" parent="pipes_lowerHshape"]
+transform = Transform3D(1.91069e-15, -1, 9.87551e-08, -4.37114e-08, -4.37114e-08, -2.25925, 1, 0, -9.87551e-08, 0.0528648, 5.61, 1.79628)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("68_yigka")
+skeleton = NodePath("../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring6" type="MeshInstance3D" parent="pipes_lowerHshape/Tubelong2"]
+transform = Transform3D(1.9107e-15, -4.37116e-08, 1, -1, -4.37116e-08, -8.28094e-21, 1.93477e-08, -0.442625, -1.93477e-08, -0.0130486, 0.0119715, 2.24103)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Tubelong3" type="MeshInstance3D" parent="pipes_lowerHshape/Tubelong2"]
+transform = Transform3D(-4.37114e-08, -4.37114e-08, -0.499205, 4.37114e-08, 1, -2.18209e-08, 0.442624, -1.93477e-08, -9.65848e-09, -1.78342, -9.53674e-07, -2.70384)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("68_yigka")
+skeleton = NodePath("../../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pipes_lowerHshape/Tubelong2/Tubelong3"]
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pipes_lowerHshape/Tubelong2/Tubelong3/StaticBody3D"]
+transform = Transform3D(0.600004, -1.08358e-12, 1.52466e-20, -9.21148e-20, -2.62268e-08, 0.6, -2.18847e-12, -0.599996, -2.62271e-08, 3.8147e-06, 0, 0.437499)
+shape = SubResource("CylinderShape3D_nscnc")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="HalfTube" type="MeshInstance3D" parent="pipes_lowerHshape/Tubelong2"]
+transform = Transform3D(1.91069e-15, 1, -3.55271e-15, -1, 1.91069e-15, 4.37114e-08, 1.93477e-08, 1.77636e-15, 0.442624, -0.171384, 0, -2.6284)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("70_d22ih")
+skeleton = NodePath("../../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pipes_lowerHshape/Tubelong2"]
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pipes_lowerHshape/Tubelong2/StaticBody3D"]
+transform = Transform3D(0.6, -5.92531e-08, -2.59003e-15, 5.62377e-22, -2.62268e-08, 0.6, -5.9253e-08, -0.6, -2.62268e-08, 2.86102e-06, 0, 0.0366697)
+shape = SubResource("CylinderShape3D_fil6b")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="TJunction" type="MeshInstance3D" parent="pipes_lowerHshape"]
+transform = Transform3D(1.07201, 0, 0, 0, 1.07201, 0, 0, 0, 1.07201, 0.0528648, 11.723, -1.7224)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("70_onpy2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Valve1001" type="MeshInstance3D" parent="pipes_lowerHshape/TJunction"]
+transform = Transform3D(-2.64771e-08, -0.605725, 0, 0.605725, -2.64771e-08, 0, 0, 0, 0.605725, -0.582771, 0.0311232, -0.207373)
+material_override = ExtResource("35_g1hue")
+mesh = ExtResource("34_uaddf")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Stand" type="MeshInstance3D" parent="pipes_lowerHshape/TJunction/Valve1001"]
+transform = Transform3D(4.37114e-08, 1, 3.82137e-15, 1, -4.37114e-08, 8.74228e-08, 8.74228e-08, 0, -1, 0.0123901, -0.434514, 0.00271797)
+material_override = ExtResource("35_g1hue")
+mesh = ExtResource("72_k32wm")
+skeleton = NodePath("../../../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="pipes_lowerHshape2" type="Node3D" parent="."]
 transform = Transform3D(2.26602, 0, 0, 0, 2.37406, 0, 0, 0, 2.26602, -938.01, -3.43982, -141.289)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Tubelong" type="MeshInstance3D" parent="pipes_lowerHshape2"]
+transform = Transform3D(1.91069e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 0.0527646, 9.75, -1.91137)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("68_yigka")
+skeleton = NodePath("../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring2" type="MeshInstance3D" parent="pipes_lowerHshape2/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539923, 0.0118704, -1.78159)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring3" type="MeshInstance3D" parent="pipes_lowerHshape2/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring4" type="MeshInstance3D" parent="pipes_lowerHshape2/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539827, 0.0118713, 0.961907)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring5" type="MeshInstance3D" parent="pipes_lowerHshape2/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539875, 0.0118694, -0.873181)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pipes_lowerHshape2/Tubelong"]
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pipes_lowerHshape2/Tubelong/StaticBody3D"]
+transform = Transform3D(0.6, -1.1309e-07, -4.94338e-15, -2.5377e-19, -2.62268e-08, 0.6, -1.1309e-07, -0.6, -2.62268e-08, 0, -3.8147e-06, 0.287499)
+shape = SubResource("CylinderShape3D_ytc1s")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Tubelong2" type="MeshInstance3D" parent="pipes_lowerHshape2"]
+transform = Transform3D(1.91069e-15, -1, 9.87551e-08, -4.37114e-08, -4.37114e-08, -2.25925, 1, 0, -9.87551e-08, 0.0528648, 5.61, 1.79628)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("68_yigka")
+skeleton = NodePath("../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring6" type="MeshInstance3D" parent="pipes_lowerHshape2/Tubelong2"]
+transform = Transform3D(1.9107e-15, -4.37116e-08, 1, -1, -4.37116e-08, -8.28094e-21, 1.93477e-08, -0.442625, -1.93477e-08, -0.0130486, 0.0119715, 2.24103)
+material_override = ExtResource("35_g1hue")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Tubelong3" type="MeshInstance3D" parent="pipes_lowerHshape2/Tubelong2"]
+transform = Transform3D(-4.37114e-08, -4.37114e-08, -0.499205, 4.37114e-08, 1, -2.18209e-08, 0.442624, -1.93477e-08, -9.65848e-09, -1.78342, -9.53674e-07, -2.70384)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("68_yigka")
+skeleton = NodePath("../../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pipes_lowerHshape2/Tubelong2/Tubelong3"]
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pipes_lowerHshape2/Tubelong2/Tubelong3/StaticBody3D"]
+transform = Transform3D(0.600004, -1.08358e-12, 1.52466e-20, -9.21148e-20, -2.62268e-08, 0.6, -2.18847e-12, -0.599996, -2.62271e-08, 3.8147e-06, 0, 0.437499)
+shape = SubResource("CylinderShape3D_nscnc")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="HalfTube" type="MeshInstance3D" parent="pipes_lowerHshape2/Tubelong2"]
+transform = Transform3D(1.91069e-15, 1, -3.55271e-15, -1, 1.91069e-15, 4.37114e-08, 1.93477e-08, 1.77636e-15, 0.442624, -0.171384, 0, -2.6284)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("70_d22ih")
+skeleton = NodePath("../../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pipes_lowerHshape2/Tubelong2"]
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pipes_lowerHshape2/Tubelong2/StaticBody3D"]
+transform = Transform3D(0.6, -5.92531e-08, -2.59003e-15, 5.62377e-22, -2.62268e-08, 0.6, -5.9253e-08, -0.6, -2.62268e-08, 2.86102e-06, 0, 0.0366697)
+shape = SubResource("CylinderShape3D_fil6b")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="TJunction" type="MeshInstance3D" parent="pipes_lowerHshape2"]
+transform = Transform3D(1.07201, 0, 0, 0, 1.07201, 0, 0, 0, 1.07201, 0.0528648, 11.723, -1.7224)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("70_onpy2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Valve1001" type="MeshInstance3D" parent="pipes_lowerHshape2/TJunction"]
+transform = Transform3D(-2.64771e-08, -0.605725, 0, 0.605725, -2.64771e-08, 0, 0, 0, 0.605725, -0.582771, 0.0311232, -0.207373)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("34_uaddf")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Stand" type="MeshInstance3D" parent="pipes_lowerHshape2/TJunction/Valve1001"]
+transform = Transform3D(4.37114e-08, 1, 3.82137e-15, 1, -4.37114e-08, 8.74228e-08, 8.74228e-08, 0, -1, 0.0123901, -0.434514, 0.00271797)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("72_k32wm")
+skeleton = NodePath("../../../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="TJunction" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.38851, 0, 0, 0, 2.38851, 0, 0, 0, 2.38851, -884.373, 36.1987, -158.316)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("70_onpy2")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong11" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.15, 0, 0, 0, -5.02681e-08, 4.99463, 0, -1.15, -2.18322e-07, -699.404, 26.2775, -183.579)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Tubelong11"]
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong11/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_s5kik")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong14" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.15, 0, 0, 0, -5.02681e-08, 4.99463, 0, -1.15, -2.18322e-07, -699.404, 26.2775, -179.579)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Tubelong14"]
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong14/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_s5kik")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong12" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.15, 0, 0, 0, -5.02681e-08, 4.99463, 0, -1.15, -2.18322e-07, -699.404, 26.2775, -193.061)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Tubelong12"]
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong12/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_s5kik")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong13" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.15, 0, 0, 0, 1.15, -1.47384e-14, 0, 7.10543e-15, 1.72669, -699.404, 25.2568, -187.98)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Tubelong13"]
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong13/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_s5kik")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="TJunction3" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.19425, 0, 0, 0, 1.19425, 0, 0, 0, 1.19425, -699.386, 25.2295, -192.84)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("70_onpy2")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong5" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.3, 0, 0, 0, -1.00536e-07, 9.98926, 0, -2.3, -4.36644e-07, -937.125, 20.7587, -57.8633)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Tubelong5"]
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong5/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_s5kik")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong6" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.3, 0, 0, 0, -1.00536e-07, 9.98926, 0, -2.3, -4.36644e-07, -937.125, 20.7587, -76.8255)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Tubelong6"]
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong6/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_s5kik")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong9" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.3, 0, 0, 0, -1.00536e-07, 9.98926, 0, -2.3, -4.36644e-07, -937.806, 20.7587, -157.224)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Tubelong9"]
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong9/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_s5kik")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong10" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.3, 0, 0, 0, 2.3, -2.06593e-14, 0, 1.42109e-14, 2.42034, -937.806, 24.3856, -151.526)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Tubelong10"]
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong10/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_s5kik")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong8" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.3, 0, 0, 0, -1.00536e-07, 7.27734, 0, -2.3, -3.18103e-07, -937.125, 28.2289, -70.8062)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Tubelong8"]
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong8/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_s5kik")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong7" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.3, 0, 0, 0, 2.3, -2.94769e-14, 0, 1.42109e-14, 3.45337, -937.125, 10.6846, -66.6635)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Tubelong7"]
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Tubelong7/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_s5kik")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="TJunction2" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.38851, 0, 0, 0, 2.38851, 0, 0, 0, 2.38851, -937.09, 10.63, -76.3852)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("70_onpy2")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="CeilingLights" parent="." instance=ExtResource("71_g1hue")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -1011.78, 6.11407, -94.1638)
 
-[node name="pipes_lowerHshape3" parent="." instance=ExtResource("69_7ysn2")]
+[node name="pipes_lowerHshape3" type="Node3D" parent="."]
 transform = Transform3D(1.44564, 0, 0, 0, 1.44564, 0, 0, 0, 1.44564, -623.499, 10.0528, -169.461)
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Tubelong" type="MeshInstance3D" parent="pipes_lowerHshape3"]
+transform = Transform3D(1.91069e-15, -1, 1.88483e-07, -4.37114e-08, -4.37114e-08, -4.312, 1, 0, -1.88483e-07, 0.0527646, 9.75, -1.91137)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("68_yigka")
+skeleton = NodePath("../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring2" type="MeshInstance3D" parent="pipes_lowerHshape3/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539923, 0.0118704, -1.78159)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring3" type="MeshInstance3D" parent="pipes_lowerHshape3/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539804, 0.0118713, 2.13429)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring4" type="MeshInstance3D" parent="pipes_lowerHshape3/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539827, 0.0118713, 0.961907)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring5" type="MeshInstance3D" parent="pipes_lowerHshape3/Tubelong"]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 1.2945e-23, 1.01371e-08, -0.231911, -1.01371e-08, -0.00539875, 0.0118694, -0.873181)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pipes_lowerHshape3/Tubelong"]
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pipes_lowerHshape3/Tubelong/StaticBody3D"]
+transform = Transform3D(0.6, -1.1309e-07, -4.94338e-15, -2.5377e-19, -2.62268e-08, 0.6, -1.1309e-07, -0.6, -2.62268e-08, 0, -3.8147e-06, 0.287499)
+shape = SubResource("CylinderShape3D_ytc1s")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Tubelong2" type="MeshInstance3D" parent="pipes_lowerHshape3"]
+transform = Transform3D(1.91069e-15, -1, 9.87551e-08, -4.37114e-08, -4.37114e-08, -2.25925, 1, 0, -9.87551e-08, 0.0528648, 5.61, 1.79628)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("68_yigka")
+skeleton = NodePath("../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Ring6" type="MeshInstance3D" parent="pipes_lowerHshape3/Tubelong2"]
+transform = Transform3D(1.9107e-15, -4.37116e-08, 1, -1, -4.37116e-08, -8.28094e-21, 1.93477e-08, -0.442625, -1.93477e-08, -0.0130486, 0.0119715, 2.24103)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("69_7ysn2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Tubelong3" type="MeshInstance3D" parent="pipes_lowerHshape3/Tubelong2"]
+transform = Transform3D(-4.37114e-08, -4.37114e-08, -0.499205, 4.37114e-08, 1, -2.18209e-08, 0.442624, -1.93477e-08, -9.65848e-09, -1.78342, -9.53674e-07, -2.70384)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("68_yigka")
+skeleton = NodePath("../../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pipes_lowerHshape3/Tubelong2/Tubelong3"]
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pipes_lowerHshape3/Tubelong2/Tubelong3/StaticBody3D"]
+transform = Transform3D(0.600004, -1.08358e-12, 1.52466e-20, -9.21148e-20, -2.62268e-08, 0.6, -2.18847e-12, -0.599996, -2.62271e-08, 3.8147e-06, 0, 0.437499)
+shape = SubResource("CylinderShape3D_nscnc")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="HalfTube" type="MeshInstance3D" parent="pipes_lowerHshape3/Tubelong2"]
+transform = Transform3D(1.91069e-15, 1, -3.55271e-15, -1, 1.91069e-15, 4.37114e-08, 1.93477e-08, 1.77636e-15, 0.442624, -0.171384, 0, -2.6284)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("70_d22ih")
+skeleton = NodePath("../../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pipes_lowerHshape3/Tubelong2"]
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pipes_lowerHshape3/Tubelong2/StaticBody3D"]
+transform = Transform3D(0.6, -5.92531e-08, -2.59003e-15, 5.62377e-22, -2.62268e-08, 0.6, -5.9253e-08, -0.6, -2.62268e-08, 2.86102e-06, 0, 0.0366697)
+shape = SubResource("CylinderShape3D_fil6b")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="TJunction" type="MeshInstance3D" parent="pipes_lowerHshape3"]
+transform = Transform3D(1.07201, 0, 0, 0, 1.07201, 0, 0, 0, 1.07201, 0.0528648, 11.723, -1.7224)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("70_onpy2")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Valve1001" type="MeshInstance3D" parent="pipes_lowerHshape3/TJunction"]
+transform = Transform3D(-2.64771e-08, -0.605725, 0, 0.605725, -2.64771e-08, 0, 0, 0, 0.605725, -0.582771, 0.0311232, -0.207373)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("34_uaddf")
+skeleton = NodePath("")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="Stand" type="MeshInstance3D" parent="pipes_lowerHshape3/TJunction/Valve1001"]
+transform = Transform3D(4.37114e-08, 1, 3.82137e-15, 1, -4.37114e-08, 8.74228e-08, 8.74228e-08, 0, -1, 0.0123901, -0.434514, 0.00271797)
+material_override = ExtResource("46_x46m3")
+mesh = ExtResource("72_k32wm")
+skeleton = NodePath("../../../../../..")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong15" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.1, 0, 0, 0, -9.17939e-08, 5.99733, 0, -2.1, -2.62151e-07, -623.495, 24.25, -160.239)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong17" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.1, 0, 0, 0, -9.17939e-08, 5.99733, 0, -2.1, -2.62151e-07, -623.495, 24.25, -153.674)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Tubelong16" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.79748, 0, 0, 0, 1.79748, -1.79081e-14, 0, -6.08183e-15, 3.77882, -623.504, 33.2702, -162.869)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true
 
 [node name="Valve1001" type="MeshInstance3D" parent="."]
 transform = Transform3D(5.58212e-08, 1.87305, 0, -1.87305, 5.58212e-08, 0, 0, 0, 1.87305, -622.942, 23.588, -160.239)
+material_override = ExtResource("46_x46m3")
 mesh = ExtResource("34_uaddf")
 surface_material_override/0 = ExtResource("35_g1hue")
+script = ExtResource("12_mg1xl")
+nonstick = true

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b8gnsru67igjy"]
+
+[ext_resource type="Texture2D" uid="uid://ykd5qpnd56av" path="res://Textures/City/Roofs/Tri/96902BA8-FB6C-4B6B-8B83-A342F063613E.png" id="1_8cn8g"]
+
+[resource]
+albedo_texture = ExtResource("1_8cn8g")
+uv1_scale = Vector3(0.07, 0.105, 0.105)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 8.87655
+uv1_world_triplanar = true

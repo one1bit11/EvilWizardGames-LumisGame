@@ -184,7 +184,7 @@ func _get_move_input(delta):
 func _physics_process(delta: float) -> void:
 	
 	mangoShadow.global_position.x = global_position.x
-	mangoShadow.global_position.y = global_position.y - 24.785
+	mangoShadow.global_position.y = global_position.y
 	mangoShadow.global_position.z = global_position.z
 	
 	#eyesNode.global_position.lerp(global_position, 0.5)
@@ -463,7 +463,7 @@ func change_eyes(newEyes: CompressedTexture2D) -> void:
 func _ready() -> void:
 	SignalBus.connect("playSplash", play_splash)
 	
-	mangoShadow = $MangoShadowParent/MangoShadow
+	mangoShadow = $MangoShadowParent/SpringArm3D
 	blink()
 	
 	eyesNode.global_position.x = global_position.x
