@@ -1,6 +1,5 @@
-[gd_scene load_steps=23 format=4 uid="uid://dieiknfmfejmc"]
+[gd_scene load_steps=202 format=4 uid="uid://dieiknfmfejmc"]
 
-[ext_resource type="Material" uid="uid://bhvmxm3376jvn" path="res://Textures/0Universal/MapTextures/BrickWall/BrickWall.tres" id="1_j34gd"]
 [ext_resource type="ArrayMesh" uid="uid://0qhg1h2phtsd" path="res://Meshes/Other/ModularBuildings/WINDOWFRAME.obj" id="2_d45go"]
 [ext_resource type="Material" uid="uid://dbipjlt4bp2yx" path="res://Textures/City/Walls/Wall3NonStick.tres" id="3_qbmpf"]
 [ext_resource type="ArrayMesh" uid="uid://bgb3vusw8ji4h" path="res://Meshes/Other/ModularBuildings/THISTHINGWINDOWFRAME1.obj" id="4_hhf17"]
@@ -55,11 +54,551 @@ albedo_texture = ExtResource("7_saltx")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y7h34"]
 albedo_texture = ExtResource("7_saltx")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qoyhb"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4yoo8"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_saltx"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7044w"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u8idw"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5t71x"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bfd0p"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ugwj"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dvtrq"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_65vld"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7rj1h"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hepf3"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ka6h0"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tlf0q"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dkbgp"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tdhk3"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d48dl"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q68be"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mfhch"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lfy3x"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cl77t"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ht45"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ml5n4"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a376k"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_id670"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_abm5e"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5g1oh"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5g6ou"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0e8tn"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f04oo"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_51imc"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2l62x"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y0vb3"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w8d4x"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8fmcv"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tllu5"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7pyfm"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_164jl"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uthe5"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dscsd"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_46dq0"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mvtu4"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c7pbo"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o5f84"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q5mm7"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1rhmj"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hgkif"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_21gkl"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3anat"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x2did"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mufsj"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v5jej"]
+albedo_texture = ExtResource("7_saltx")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ki145"]
 albedo_texture = ExtResource("11_7044w")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tlf0q"]
-albedo_texture = ExtResource("11_7044w")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b86mk"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13tyq"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w2bvm"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sj5dn"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7820a"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aqcsv"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4mkau"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2e1x6"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r1pfm"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ltfle"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tn13s"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xcfo1"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a565y"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p3bjj"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lcj5w"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8snos"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mjnug"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_smbw0"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_43vci"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_akqhr"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_avrpr"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3o8gh"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qof2g"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_60jqj"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xsutd"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3t75k"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ci3l"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fggos"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_amu1w"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_om1cb"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_epqux"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_14y6m"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ppkoc"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_upsja"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0qc63"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ctipe"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_66n0v"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_abdtg"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_liryw"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5hkp7"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_joafs"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vgemw"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x6bov"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wklgl"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2dk5c"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1n170"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7lk0h"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5p8pa"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fl50v"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qbrg4"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y7f87"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i2e42"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kt7bg"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ufyjn"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iumg6"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l76so"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k5nmy"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_22rs0"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2uvvi"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wwwuk"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p36wv"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hodmj"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e2o8s"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyefy"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rc48f"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fsmnu"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n78nf"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vbubo"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yg2ha"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1wqoe"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v81ul"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yotbx"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_put75"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bhclw"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qe1tf"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jhg7h"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h20t2"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_88v3s"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8qk2l"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dreep"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3l7gf"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ly5f1"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2c68v"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3b0ui"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_43hn0"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o531u"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iuf7u"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eu0uv"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vn8mx"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rsdce"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0cemp"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_osacm"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8fq1h"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ww54l"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mjotb"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lmtkp"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pptg0"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_md7eu"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f3vfe"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3m7or"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bsmgr"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8f3t5"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j0xr8"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_21bum"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fmxh3"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fb085"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h5cgw"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qc7l1"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r01bx"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vv8eu"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tbf10"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v1m3r"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xnwdm"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bgjld"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r0s2v"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l6x1x"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ttupb"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fambe"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dho1n"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fbiyb"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_utxfo"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7pyrl"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ilco2"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ut8xp"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_308qs"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_18w7k"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eegju"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7bhhm"]
+albedo_texture = ExtResource("7_saltx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_spnwc"]
+albedo_texture = ExtResource("7_saltx")
 
 [node name="Buildings" type="Node3D"]
 
@@ -272,21 +811,25 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Thisthingwindow4" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -792.335, 13.9051, 7.56239)
+material_override = SubResource("StandardMaterial3D_qoyhb")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow5" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -792.26, 3.91373, 7.56239)
+material_override = SubResource("StandardMaterial3D_4yoo8")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow6" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -808.975, 3.94968, 7.5686)
+material_override = SubResource("StandardMaterial3D_saltx")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow7" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -808.975, 13.735, 7.5686)
+material_override = SubResource("StandardMaterial3D_7044w")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -436,46 +979,55 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Thisthingwindow11" type="MeshInstance3D" parent="."]
 transform = Transform3D(5, 0, -0.000174642, 0, 5, 0, 0.000174642, 0, 5, -818.821, 4.21939, 17.7653)
+material_override = SubResource("StandardMaterial3D_u8idw")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow12" type="MeshInstance3D" parent="."]
 transform = Transform3D(5, 0, -0.000174642, 0, 5, 0, 0.000174642, 0, 5, -818.821, 13.9051, 17.7653)
+material_override = SubResource("StandardMaterial3D_5t71x")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow13" type="MeshInstance3D" parent="."]
 transform = Transform3D(5, 0, -0.000174642, 0, 5, 0, 0.000174642, 0, 5, -818.823, 13.9051, 86.0799)
+material_override = SubResource("StandardMaterial3D_bfd0p")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow14" type="MeshInstance3D" parent="."]
 transform = Transform3D(5, 0, -0.000174642, 0, 5, 0, 0.000174642, 0, 5, -818.823, 3.91373, 86.005)
+material_override = SubResource("StandardMaterial3D_2ugwj")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow15" type="MeshInstance3D" parent="."]
 transform = Transform3D(5, 0, -0.000174642, 0, 5, 0, 0.000174642, 0, 5, -818.817, 3.94968, 102.72)
+material_override = SubResource("StandardMaterial3D_dvtrq")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow16" type="MeshInstance3D" parent="."]
 transform = Transform3D(5, 0, -0.000174642, 0, 5, 0, 0.000174642, 0, 5, -818.817, 13.735, 102.72)
+material_override = SubResource("StandardMaterial3D_65vld")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow8" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -757.068, 13.7076, 20.5687)
+material_override = SubResource("StandardMaterial3D_7rj1h")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow9" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -757.03, 23.8573, 20.6996)
+material_override = SubResource("StandardMaterial3D_hepf3")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow10" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -757.03, 33.8094, 20.6996)
+material_override = SubResource("StandardMaterial3D_ka6h0")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -505,16 +1057,19 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Thisthingwindow28" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -751.531, 13.7076, 32.6964)
+material_override = SubResource("StandardMaterial3D_tlf0q")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow29" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -751.494, 23.8573, 32.8273)
+material_override = SubResource("StandardMaterial3D_dkbgp")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow30" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -751.494, 33.8094, 32.8273)
+material_override = SubResource("StandardMaterial3D_tdhk3")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -544,16 +1099,19 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Thisthingwindow17" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -798.757, 13.7076, 20.5687)
+material_override = SubResource("StandardMaterial3D_d48dl")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow18" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -798.719, 23.8573, 20.6996)
+material_override = SubResource("StandardMaterial3D_q68be")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow19" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -798.719, 33.8094, 20.6996)
+material_override = SubResource("StandardMaterial3D_mfhch")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -588,11 +1146,13 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Thisthingwindow32" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99773, 0, 0.150773, 0, 5, 0, -0.150773, 0, 4.99773, -796.172, 23.8573, 108.817)
+material_override = SubResource("StandardMaterial3D_lfy3x")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow33" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99773, 0, 0.150773, 0, 5, 0, -0.150773, 0, 4.99773, -796.172, 33.8094, 108.817)
+material_override = SubResource("StandardMaterial3D_cl77t")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -622,16 +1182,19 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Thisthingwindow34" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99773, 0, 0.150773, 0, 5, 0, -0.150773, 0, 4.99773, -796.302, 13.7076, 123.641)
+material_override = SubResource("StandardMaterial3D_4ht45")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow35" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99773, 0, 0.150773, 0, 5, 0, -0.150773, 0, 4.99773, -796.172, 23.8573, 123.599)
+material_override = SubResource("StandardMaterial3D_ml5n4")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow36" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99773, 0, 0.150773, 0, 5, 0, -0.150773, 0, 4.99773, -796.172, 33.8094, 123.599)
+material_override = SubResource("StandardMaterial3D_a376k")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -661,16 +1224,19 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Thisthingwindow20" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99326, 0, 0.259501, 0, 5, 0, -0.259501, 0, 4.99326, -808.093, 13.7076, 56.2257)
+material_override = SubResource("StandardMaterial3D_id670")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow21" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99326, 0, 0.259501, 0, 5, 0, -0.259501, 0, 4.99326, -807.964, 23.8573, 56.1806)
+material_override = SubResource("StandardMaterial3D_abm5e")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow22" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99326, 0, 0.259501, 0, 5, 0, -0.259501, 0, 4.99326, -807.964, 33.8094, 56.1806)
+material_override = SubResource("StandardMaterial3D_5g1oh")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -700,16 +1266,19 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Thisthingwindow25" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99326, 0, 0.259501, 0, 5, 0, -0.259501, 0, 4.99326, -806.623, 13.7076, 136.88)
+material_override = SubResource("StandardMaterial3D_5g6ou")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow26" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99326, 0, 0.259501, 0, 5, 0, -0.259501, 0, 4.99326, -806.494, 23.8573, 136.834)
+material_override = SubResource("StandardMaterial3D_0e8tn")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow27" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99326, 0, 0.259501, 0, 5, 0, -0.259501, 0, 4.99326, -806.494, 33.8094, 136.834)
+material_override = SubResource("StandardMaterial3D_f04oo")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -733,71 +1302,85 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Thisthingwindow23" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99326, 0, 0.259501, 0, 5, 0, -0.259501, 0, 4.99326, -808.093, 13.7076, 72.1652)
+material_override = SubResource("StandardMaterial3D_51imc")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Thisthingwindow24" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99326, 0, 0.259501, 0, 5, 0, -0.259501, 0, 4.99326, -807.964, 23.8573, 72.12)
+material_override = SubResource("StandardMaterial3D_2l62x")
 mesh = ExtResource("7_4yoo8")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -745.307, 12.1066, 11.4695)
+material_override = SubResource("StandardMaterial3D_y0vb3")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -752.704, 12.1066, 11.4632)
+material_override = SubResource("StandardMaterial3D_w8d4x")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window15" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -778.504, 12.1066, 11.4632)
+material_override = SubResource("StandardMaterial3D_8fmcv")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window6" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -735.996, 12.1066, 25.1753)
+material_override = SubResource("StandardMaterial3D_tllu5")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window7" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -728.818, 12.1066, 25.1753)
+material_override = SubResource("StandardMaterial3D_7pyfm")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window8" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -743.166, 12.1066, 25.1815)
+material_override = SubResource("StandardMaterial3D_164jl")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window9" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -743.166, 22.0321, 25.1815)
+material_override = SubResource("StandardMaterial3D_uthe5")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window10" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -735.911, 22.0321, 25.1815)
+material_override = SubResource("StandardMaterial3D_dscsd")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window11" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -728.637, 22.0321, 25.1815)
+material_override = SubResource("StandardMaterial3D_46dq0")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window12" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -728.637, 2.20152, 25.1815)
+material_override = SubResource("StandardMaterial3D_mvtu4")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window13" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -735.836, 2.20152, 25.1815)
+material_override = SubResource("StandardMaterial3D_c7pbo")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window14" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -743.344, 2.20152, 25.1815)
+material_override = SubResource("StandardMaterial3D_o5f84")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -857,33 +1440,32 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window65" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -727.332, 12.1066, 37.2088)
+material_override = SubResource("StandardMaterial3D_q5mm7")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window66" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -720.154, 12.1066, 37.2088)
+material_override = SubResource("StandardMaterial3D_1rhmj")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window67" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -734.502, 22.0321, 37.215)
+material_override = SubResource("StandardMaterial3D_hgkif")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window68" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -727.247, 22.0321, 37.215)
+material_override = SubResource("StandardMaterial3D_21gkl")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window69" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -719.973, 22.0321, 37.215)
+material_override = SubResource("StandardMaterial3D_3anat")
 mesh = ExtResource("8_saltx")
-skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
-
-[node name="Windowframe88" type="MeshInstance3D" parent="."]
-transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -720.034, 32.0626, 37.0335)
-material_override = ExtResource("1_j34gd")
-mesh = ExtResource("2_d45go")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Windowframe89" type="MeshInstance3D" parent="."]
@@ -910,17 +1492,18 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window75" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -719.973, 32.168, 37.215)
+material_override = SubResource("StandardMaterial3D_x2did")
 mesh = ExtResource("8_saltx")
-skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
-
-[node name="Windowframe91" type="MeshInstance3D" parent="."]
-transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -720.034, 32.0626, 37.0335)
-material_override = ExtResource("5_qoyhb")
-mesh = ExtResource("2_d45go")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Windowframe92" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -727.296, 32.0626, 37.0335)
+material_override = ExtResource("3_qbmpf")
+mesh = ExtResource("2_d45go")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
+
+[node name="Windowframe162" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -720.009, 32.0626, 37.0335)
 material_override = ExtResource("3_qbmpf")
 mesh = ExtResource("2_d45go")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
@@ -933,11 +1516,13 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window76" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -734.502, 32.168, 37.215)
+material_override = SubResource("StandardMaterial3D_mufsj")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window77" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -727.247, 32.168, 37.215)
+material_override = SubResource("StandardMaterial3D_v5jej")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -949,16 +1534,19 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window70" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -719.973, 2.20152, 37.215)
+material_override = SubResource("StandardMaterial3D_b86mk")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window71" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -727.172, 2.20152, 37.215)
+material_override = SubResource("StandardMaterial3D_13tyq")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window72" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -734.68, 2.20152, 37.215)
+material_override = SubResource("StandardMaterial3D_w2bvm")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1018,26 +1606,31 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window79" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -775.051, 12.1066, 37.2088)
+material_override = SubResource("StandardMaterial3D_sj5dn")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window80" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -767.873, 12.1066, 37.2088)
+material_override = SubResource("StandardMaterial3D_7820a")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window81" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -782.221, 22.0321, 37.215)
+material_override = SubResource("StandardMaterial3D_aqcsv")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window82" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -774.966, 22.0321, 37.215)
+material_override = SubResource("StandardMaterial3D_4mkau")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window83" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -767.692, 22.0321, 37.215)
+material_override = SubResource("StandardMaterial3D_2e1x6")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1061,31 +1654,37 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window84" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -782.221, 32.168, 37.215)
+material_override = SubResource("StandardMaterial3D_r1pfm")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window85" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -774.966, 32.168, 37.215)
+material_override = SubResource("StandardMaterial3D_ltfle")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window86" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -767.692, 32.168, 37.215)
+material_override = SubResource("StandardMaterial3D_tn13s")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window87" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -767.692, 2.20152, 37.215)
+material_override = SubResource("StandardMaterial3D_xcfo1")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window88" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -774.891, 2.20152, 37.215)
+material_override = SubResource("StandardMaterial3D_a565y")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window89" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -782.399, 2.20152, 37.215)
+material_override = SubResource("StandardMaterial3D_p3bjj")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1109,6 +1708,7 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window134" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -789.335, 22.0321, 37.215)
+material_override = SubResource("StandardMaterial3D_lcj5w")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1120,11 +1720,13 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window135" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -789.335, 32.168, 37.215)
+material_override = SubResource("StandardMaterial3D_8snos")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window136" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -789.513, 2.20152, 37.215)
+material_override = SubResource("StandardMaterial3D_mjnug")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1148,6 +1750,7 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window137" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -794.68, 22.0321, 37.215)
+material_override = SubResource("StandardMaterial3D_smbw0")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1159,11 +1762,13 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window138" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -794.68, 32.168, 37.215)
+material_override = SubResource("StandardMaterial3D_43vci")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window139" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -794.858, 2.20152, 37.215)
+material_override = SubResource("StandardMaterial3D_akqhr")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1223,26 +1828,31 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window90" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -701.469, 12.1066, 37.2088)
+material_override = SubResource("StandardMaterial3D_avrpr")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window91" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -694.291, 12.1066, 37.2088)
+material_override = SubResource("StandardMaterial3D_3o8gh")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window92" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -708.639, 22.0321, 37.215)
+material_override = SubResource("StandardMaterial3D_qof2g")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window93" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -701.384, 22.0321, 37.215)
+material_override = SubResource("StandardMaterial3D_60jqj")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window94" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -694.11, 22.0321, 37.215)
+material_override = SubResource("StandardMaterial3D_xsutd")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1266,27 +1876,31 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window95" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -708.639, 32.168, 37.215)
-material_override = SubResource("StandardMaterial3D_tlf0q")
+material_override = SubResource("StandardMaterial3D_3t75k")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window96" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -701.384, 32.168, 37.215)
+material_override = SubResource("StandardMaterial3D_1ci3l")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window97" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -694.11, 32.168, 37.215)
+material_override = SubResource("StandardMaterial3D_fggos")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window98" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -694.11, 2.20152, 37.215)
+material_override = SubResource("StandardMaterial3D_amu1w")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window99" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -701.309, 2.20152, 37.215)
+material_override = SubResource("StandardMaterial3D_om1cb")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1352,26 +1966,31 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window101" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.295, 12.1066, 47.6534)
+material_override = SubResource("StandardMaterial3D_epqux")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window102" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.522, 12.1066, 40.479)
+material_override = SubResource("StandardMaterial3D_14y6m")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window103" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.063, 22.0321, 54.8197)
+material_override = SubResource("StandardMaterial3D_ppkoc")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window104" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.292, 22.0321, 47.5683)
+material_override = SubResource("StandardMaterial3D_upsja")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window105" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.522, 22.0321, 40.298)
+material_override = SubResource("StandardMaterial3D_0qc63")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1395,31 +2014,37 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window106" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.063, 32.168, 54.8197)
+material_override = SubResource("StandardMaterial3D_ctipe")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window107" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.292, 32.168, 47.5683)
+material_override = SubResource("StandardMaterial3D_66n0v")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window108" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.522, 32.168, 40.298)
+material_override = SubResource("StandardMaterial3D_abdtg")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window109" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.522, 2.20152, 40.298)
+material_override = SubResource("StandardMaterial3D_liryw")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window110" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.294, 2.20152, 47.4933)
+material_override = SubResource("StandardMaterial3D_5hkp7")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window111" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.057, 2.20152, 54.9976)
+material_override = SubResource("StandardMaterial3D_joafs")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1479,26 +2104,31 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window112" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.295, 12.1066, 69.4316)
+material_override = SubResource("StandardMaterial3D_vgemw")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window113" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.522, 12.1066, 62.2572)
+material_override = SubResource("StandardMaterial3D_x6bov")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window114" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.063, 22.0321, 76.5979)
+material_override = SubResource("StandardMaterial3D_wklgl")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window115" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.292, 22.0321, 69.3465)
+material_override = SubResource("StandardMaterial3D_2dk5c")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window116" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.522, 22.0321, 62.0761)
+material_override = SubResource("StandardMaterial3D_1n170")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1522,31 +2152,37 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window117" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.063, 32.168, 76.5979)
+material_override = SubResource("StandardMaterial3D_7lk0h")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window118" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.292, 32.168, 69.3465)
+material_override = SubResource("StandardMaterial3D_5p8pa")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window119" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.522, 32.168, 62.0761)
+material_override = SubResource("StandardMaterial3D_fl50v")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window120" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.522, 2.20152, 62.0761)
+material_override = SubResource("StandardMaterial3D_qbrg4")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window121" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.294, 2.20152, 69.2715)
+material_override = SubResource("StandardMaterial3D_y7f87")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window122" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.057, 2.20152, 76.7758)
+material_override = SubResource("StandardMaterial3D_i2e42")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1606,26 +2242,31 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window123" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.295, 12.1066, 90.1638)
+material_override = SubResource("StandardMaterial3D_kt7bg")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window124" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.522, 12.1066, 82.9894)
+material_override = SubResource("StandardMaterial3D_ufyjn")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window125" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.063, 22.0321, 97.3301)
+material_override = SubResource("StandardMaterial3D_iumg6")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window126" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.292, 22.0321, 90.0787)
+material_override = SubResource("StandardMaterial3D_l76so")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window127" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.522, 22.0321, 82.8083)
+material_override = SubResource("StandardMaterial3D_k5nmy")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1649,31 +2290,37 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window128" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.063, 32.168, 97.3301)
+material_override = SubResource("StandardMaterial3D_22rs0")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window129" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.292, 32.168, 90.0787)
+material_override = SubResource("StandardMaterial3D_2uvvi")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window130" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.522, 32.168, 82.8083)
+material_override = SubResource("StandardMaterial3D_wwwuk")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window131" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.522, 2.20152, 82.8083)
+material_override = SubResource("StandardMaterial3D_p36wv")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window132" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.294, 2.20152, 90.0037)
+material_override = SubResource("StandardMaterial3D_hodmj")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window133" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.9975, 0, 0.158013, 0, 5, 0, -0.158013, 0, 4.9975, -795.057, 2.20152, 97.5079)
+material_override = SubResource("StandardMaterial3D_e2o8s")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1721,36 +2368,43 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window39" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -703.008, 12.1066, 25.1815)
+material_override = SubResource("StandardMaterial3D_kyefy")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window140" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -702.47, 12.1066, 8.98018)
+material_override = SubResource("StandardMaterial3D_rc48f")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window141" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -709.744, 12.1066, 8.98018)
+material_override = SubResource("StandardMaterial3D_fsmnu")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window142" type="MeshInstance3D" parent="."]
-transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -695.163, 12.1066, 10.7226)
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -694.857, 12.1066, 10.7226)
+material_override = SubResource("StandardMaterial3D_n78nf")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window143" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -687.468, 12.1066, 10.7226)
+material_override = SubResource("StandardMaterial3D_vbubo")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window40" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -717.302, 22.0321, 19.8433)
+material_override = SubResource("StandardMaterial3D_yg2ha")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window41" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -710.046, 22.0321, 19.4553)
+material_override = SubResource("StandardMaterial3D_1wqoe")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1762,26 +2416,31 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window46" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.99567, 0, 0.208071, 0, 5, 0, -0.208071, 0, -4.99567, -706.346, 21.9217, 22.7637)
+material_override = SubResource("StandardMaterial3D_v81ul")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window42" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -702.773, 22.0321, 25.1815)
+material_override = SubResource("StandardMaterial3D_yotbx")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window43" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -702.773, 2.20152, 25.1815)
+material_override = SubResource("StandardMaterial3D_put75")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window44" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -709.972, 2.20152, 25.1815)
+material_override = SubResource("StandardMaterial3D_bhclw")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window45" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -717.48, 2.20152, 25.1815)
+material_override = SubResource("StandardMaterial3D_qe1tf")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1841,81 +2500,97 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window25" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.936, 12.1066, 35.6657)
+material_override = SubResource("StandardMaterial3D_jhg7h")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window144" type="MeshInstance3D" parent="."]
-transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -815.248, 12.1066, 31.7563)
+transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -815.248, 12.234, 31.8072)
+material_override = SubResource("StandardMaterial3D_h20t2")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window145" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -815.248, 12.1066, 38.9517)
+material_override = SubResource("StandardMaterial3D_88v3s")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window146" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -815.248, 12.1066, 46.3349)
+material_override = SubResource("StandardMaterial3D_8qk2l")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window147" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -815.248, 12.1066, 57.589)
+material_override = SubResource("StandardMaterial3D_dreep")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window148" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -815.248, 12.1066, 64.9496)
+material_override = SubResource("StandardMaterial3D_3l7gf")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window149" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -815.248, 12.1066, 71.908)
+material_override = SubResource("StandardMaterial3D_ly5f1")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window150" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -815.248, 12.1066, 117.273)
+material_override = SubResource("StandardMaterial3D_2c68v")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window151" type="MeshInstance3D" parent="."]
-transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -815.248, 12.1066, 124.767)
+transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -813.93, 12.1066, 124.767)
+material_override = SubResource("StandardMaterial3D_3b0ui")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window152" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -816.58, 12.1066, 132.275)
+material_override = SubResource("StandardMaterial3D_43hn0")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window153" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -816.58, 12.1066, 139.521)
+material_override = SubResource("StandardMaterial3D_o531u")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window26" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.904, 12.1066, 28.4879)
+material_override = SubResource("StandardMaterial3D_iuf7u")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window27" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.962, 12.1066, 42.8363)
+material_override = SubResource("StandardMaterial3D_eu0uv")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window28" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.962, 22.0321, 42.8363)
+material_override = SubResource("StandardMaterial3D_vn8mx")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window29" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.93, 22.0321, 35.5806)
+material_override = SubResource("StandardMaterial3D_rsdce")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window30" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.897, 22.0321, 28.3075)
+material_override = SubResource("StandardMaterial3D_0cemp")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -1939,31 +2614,37 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window34" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.962, 32.5401, 42.8363)
+material_override = SubResource("StandardMaterial3D_osacm")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window35" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.93, 32.5401, 35.5806)
+material_override = SubResource("StandardMaterial3D_8fq1h")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window36" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.897, 32.5401, 28.3075)
+material_override = SubResource("StandardMaterial3D_ww54l")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window31" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.897, 2.20152, 28.3075)
+material_override = SubResource("StandardMaterial3D_mjotb")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window32" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.929, 2.20152, 35.5065)
+material_override = SubResource("StandardMaterial3D_lmtkp")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window33" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.963, 2.20152, 43.0144)
+material_override = SubResource("StandardMaterial3D_pptg0")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -2023,31 +2704,37 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window37" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.936, 12.1066, 92.5814)
+material_override = SubResource("StandardMaterial3D_md7eu")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window38" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.904, 12.1066, 85.4036)
+material_override = SubResource("StandardMaterial3D_f3vfe")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window47" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.962, 12.1066, 99.752)
+material_override = SubResource("StandardMaterial3D_3m7or")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window48" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.962, 22.0321, 99.752)
+material_override = SubResource("StandardMaterial3D_bsmgr")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window49" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.93, 22.0321, 92.4963)
+material_override = SubResource("StandardMaterial3D_8f3t5")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window50" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.897, 22.0321, 85.2232)
+material_override = SubResource("StandardMaterial3D_j0xr8")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -2071,31 +2758,37 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window51" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.962, 32.239, 99.752)
+material_override = SubResource("StandardMaterial3D_21bum")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window52" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.93, 32.239, 92.4963)
+material_override = SubResource("StandardMaterial3D_fmxh3")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window53" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.897, 32.239, 85.2232)
+material_override = SubResource("StandardMaterial3D_fb085")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window54" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.897, 2.20152, 85.2232)
+material_override = SubResource("StandardMaterial3D_h5cgw")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window55" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.929, 2.20152, 92.4222)
+material_override = SubResource("StandardMaterial3D_qc7l1")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window56" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99995, 0, -0.0223403, 0, 5, 0, 0.0223403, 0, 4.99995, -804.963, 2.20152, 99.9301)
+material_override = SubResource("StandardMaterial3D_r01bx")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -2155,61 +2848,73 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window16" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -778.066, 12.1066, 25.1753)
+material_override = SubResource("StandardMaterial3D_vv8eu")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window17" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -770.888, 12.1066, 25.1753)
+material_override = SubResource("StandardMaterial3D_tbf10")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window18" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -785.237, 12.1066, 25.1815)
+material_override = SubResource("StandardMaterial3D_v1m3r")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window19" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -785.237, 22.0321, 25.1815)
+material_override = SubResource("StandardMaterial3D_xnwdm")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window20" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -777.981, 22.0321, 25.1815)
+material_override = SubResource("StandardMaterial3D_bgjld")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window21" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -770.708, 22.0321, 25.1815)
+material_override = SubResource("StandardMaterial3D_r0s2v")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window22" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -770.708, 2.20152, 25.1815)
+material_override = SubResource("StandardMaterial3D_l6x1x")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window23" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -777.907, 2.20152, 25.1815)
+material_override = SubResource("StandardMaterial3D_ttupb")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window24" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -785.415, 2.20152, 25.1815)
+material_override = SubResource("StandardMaterial3D_fambe")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window3" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -737.887, 12.1066, 11.4695)
+material_override = SubResource("StandardMaterial3D_dho1n")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window4" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -763.97, 12.1611, 11.3572)
+material_override = SubResource("StandardMaterial3D_fbiyb")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window5" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -771.183, 12.1611, 11.3572)
+material_override = SubResource("StandardMaterial3D_utxfo")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -2311,16 +3016,19 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window57" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99828, 0, 0.130972, 0, 5, 0, -0.130972, 0, 4.99828, -801.601, 12.1066, 110.296)
+material_override = SubResource("StandardMaterial3D_7pyrl")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window58" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99828, 0, 0.130972, 0, 5, 0, -0.130972, 0, 4.99828, -806.563, 22.0321, 124.725)
+material_override = SubResource("StandardMaterial3D_ilco2")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window59" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99828, 0, 0.130972, 0, 5, 0, -0.130972, 0, 4.99828, -807.141, 22.0321, 117.482)
+material_override = SubResource("StandardMaterial3D_ut8xp")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
@@ -2332,26 +3040,31 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="Window60" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.0771412, 0, -4.99941, 0, 5, 0, 4.99941, 0, -0.0771412, -803.931, 21.9217, 113.696)
+material_override = SubResource("StandardMaterial3D_308qs")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window61" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99828, 0, 0.130972, 0, 5, 0, -0.130972, 0, 4.99828, -801.607, 22.0321, 110.061)
+material_override = SubResource("StandardMaterial3D_18w7k")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window62" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99828, 0, 0.130972, 0, 5, 0, -0.130972, 0, 4.99828, -801.607, 2.20152, 110.061)
+material_override = SubResource("StandardMaterial3D_eegju")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window63" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99828, 0, 0.130972, 0, 5, 0, -0.130972, 0, 4.99828, -801.419, 2.20152, 117.258)
+material_override = SubResource("StandardMaterial3D_7bhhm")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
 [node name="Window64" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.99828, 0, 0.130972, 0, 5, 0, -0.130972, 0, 4.99828, -801.222, 2.20152, 124.763)
+material_override = SubResource("StandardMaterial3D_spnwc")
 mesh = ExtResource("8_saltx")
 skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/LVCity")
 
