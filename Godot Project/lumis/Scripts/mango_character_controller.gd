@@ -488,3 +488,4 @@ func squeeze():
 
 func play_splash():
 	$WaterSplash.play()
+	$SplashParticles.emitting = true
