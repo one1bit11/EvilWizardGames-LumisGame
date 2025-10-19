@@ -1,4 +1,4 @@
-[gd_scene load_steps=466 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=468 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
@@ -135,6 +135,8 @@
 [ext_resource type="Texture2D" uid="uid://b52b4344uu1b4" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_Metallic.png" id="150_50ulx"]
 [ext_resource type="Texture2D" uid="uid://ch6bx8dqovm17" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_Roughness.png" id="151_g52f4"]
 [ext_resource type="ArrayMesh" uid="uid://dhdsmhb74ddq2" path="res://Textures/0Universal/ObjTextures/Elevator/Elevator.obj" id="152_1ldn0"]
+[ext_resource type="PackedScene" uid="uid://dsed5k1x6yjnb" path="res://WallDirt/dirt_1.tscn" id="152_3exgg"]
+[ext_resource type="PackedScene" uid="uid://bn6bhtnnbvai6" path="res://WallDirt/dirt_3.tscn" id="153_50ulx"]
 [ext_resource type="AudioStream" uid="uid://dhahuw2ar8od1" path="res://Sounds/SFX/Tram/Tram.ogg" id="153_p2ke2"]
 [ext_resource type="Texture2D" uid="uid://302t4w7kx2b" path="res://Textures/0Universal/ObjTextures/Elevator/Elevator_Door_BaseColor.png" id="153_qmb1d"]
 [ext_resource type="Texture2D" uid="uid://ds5bvueb8gqgt" path="res://Textures/0Universal/ObjTextures/Elevator/Elevator_Door_Metallic.png" id="154_n7gex"]
@@ -14795,6 +14797,12 @@ surface_material_override/0 = SubResource("StandardMaterial3D_624ml")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="pipes_tshape_rightcurvecorner/Tubelong3/StaticBody3D"]
 transform = Transform3D(0.6, 1.675e-07, -7.32151e-15, 0, -2.62268e-08, -0.6, -1.675e-07, 0.6, -2.62268e-08, 0, 0, -0.187498)
 shape = SubResource("CylinderShape3D_rjijx")
+
+[node name="Dirt1" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-6.19158e-07, -2.63639e-07, 11.6309, -8.5906, 9.94486, 0, -14.1647, -6.03137, -5.08403e-07, -71.9949, -21.3469, -51.0475)
+
+[node name="Dirt3" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(11.5768, -5.36911, 1.45079e-13, 5.36911, 11.5768, 0, -1.31613e-13, 6.10397e-14, 12.7613, -63.0154, -18.6154, -63.9896)
 
 [connection signal="area_entered" from="ROOMS/DeathTrigger2" to="." method="_on_w_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/DeathTrigger3" to="." method="_on_w_death_trigger_area_entered"]

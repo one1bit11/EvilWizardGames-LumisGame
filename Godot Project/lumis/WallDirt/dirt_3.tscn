@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn6bhtnnbvai6"]
+
+[ext_resource type="Material" uid="uid://n1tiyxuoo3bn" path="res://Textures/0Universal/WallFloorDeco/Dirt/Dirt4.tres" id="1_mxege"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_md575"]
+
+[node name="Dirt3" type="MeshInstance3D"]
+transform = Transform3D(-4.37114e-07, 0, 10, 0, 10, 0, -10, 0, -4.37114e-07, 0, 0, 0)
+material_override = ExtResource("1_mxege")
+mesh = SubResource("QuadMesh_md575")

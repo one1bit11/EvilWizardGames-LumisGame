@@ -5,4 +5,3 @@
 [resource]
 transparency = 1
 albedo_texture = ExtResource("1_rfs4g")
-uv1_triplanar = true
