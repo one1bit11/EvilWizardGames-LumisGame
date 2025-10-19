@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://d141gk5umir7l"]
+[gd_scene load_steps=27 format=3 uid="uid://d141gk5umir7l"]
 
 [ext_resource type="Script" uid="uid://crub8m7rjahjq" path="res://Scripts/mango_character_controller.gd" id="1_qccra"]
 [ext_resource type="AudioStream" uid="uid://dmr5vgvrofhak" path="res://Sounds/SFX/WaterSplash.ogg" id="2_nn7sr"]
@@ -11,6 +11,8 @@
 [ext_resource type="AudioStream" uid="uid://ctdxw868kwxjv" path="res://Sounds/SFX/Sprint.wav" id="8_mgrph"]
 [ext_resource type="Texture2D" uid="uid://ch1gm7n2ddrco" path="res://Textures/Other/MangoShadow.png" id="8_vat0n"]
 [ext_resource type="AudioStream" uid="uid://d5o01n8a20qk" path="res://Sounds/SFX/Stick.wav" id="9_nn7sr"]
+[ext_resource type="Texture2D" uid="uid://c6c0kulmtcq07" path="res://Textures/Other/Particles/WaterSplashParticleSprite.png" id="12_ax6ag"]
+[ext_resource type="Texture2D" uid="uid://dmqoxrw50bwpo" path="res://Textures/Other/Particles/MangoSlimeParticleSprite.png" id="12_y6wre"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_qccra"]
 radius = 0.846402
@@ -47,25 +49,45 @@ radius = 1.51052
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_mgrph"]
 particle_flag_rotate_y = true
+emission_shape_offset = Vector3(0, 0, 1)
+angle_min = -180.0
+angle_max = 180.0
+direction = Vector3(0, 0, 1)
+spread = 50.0
+initial_velocity_min = 5.0
+initial_velocity_max = 25.69
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o87kt"]
+transparency = 1
+albedo_texture = ExtResource("12_y6wre")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_v68b4"]
+material = SubResource("StandardMaterial3D_o87kt")
+size = Vector2(1, 1)
+orientation = 0
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_y6wre"]
+particle_flag_rotate_y = true
 emission_shape = 6
 emission_ring_axis = Vector3(3, 0, 3)
 emission_ring_height = 1.0
 emission_ring_radius = 1.0
 emission_ring_inner_radius = 0.0
 emission_ring_cone_angle = 90.0
-angle_min = -180.7
-angle_max = 180.7
-velocity_pivot = Vector3(0, 1, 0)
+angle_min = -180.0
+angle_max = 180.0
+inherit_velocity_ratio = -1.0
 direction = Vector3(0, 1000, 1)
 spread = 50.0
-initial_velocity_min = 5.0
-initial_velocity_max = 25.69
+initial_velocity_min = 19.0
+initial_velocity_max = 30.0
 
-[sub_resource type="SphereMesh" id="SphereMesh_nn7sr"]
-radius = 0.1
-height = 0.1
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y6wre"]
+transparency = 1
+albedo_texture = ExtResource("12_ax6ag")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_nn7sr"]
+material = SubResource("StandardMaterial3D_y6wre")
 size = Vector2(1, 1)
 orientation = 0
 
@@ -245,6 +267,11 @@ volume_db = -5.0
 stream = ExtResource("8_mgrph")
 volume_db = -5.0
 
+[node name="MangoLandSound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("8_mgrph")
+volume_db = -5.0
+pitch_scale = 0.1
+
 [node name="MangoStickSound" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("9_nn7sr")
 volume_db = -5.0
@@ -277,10 +304,10 @@ one_shot = true
 [node name="SprintParticles" type="GPUParticles3D" parent="."]
 emitting = false
 amount = 10
-lifetime = 0.2
+lifetime = 0.1
 fixed_fps = 60
 process_material = SubResource("ParticleProcessMaterial_mgrph")
-draw_pass_1 = SubResource("SphereMesh_nn7sr")
+draw_pass_1 = SubResource("PlaneMesh_v68b4")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.22498, 0)
@@ -295,13 +322,13 @@ size = Vector3(15.7178, 1, 10.4326)
 [node name="SplashParticles" type="GPUParticles3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.718632, 0)
 emitting = false
-amount = 30
+amount = 60
 lifetime = 0.4
 one_shot = true
 explosiveness = 1.0
 randomness = 1.0
 fixed_fps = 60
-process_material = SubResource("ParticleProcessMaterial_mgrph")
+process_material = SubResource("ParticleProcessMaterial_y6wre")
 draw_pass_1 = SubResource("PlaneMesh_nn7sr")
 
 [connection signal="body_entered" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_entered"]

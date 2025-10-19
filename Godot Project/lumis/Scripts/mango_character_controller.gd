@@ -28,6 +28,9 @@ extends CharacterBody3D
 ##coyote time timer
 @export var coyoteTimer:Timer
 
+##airborne
+var airborne:= false
+
 
 ##gravity
 var grav := Vector3(0,-2,0)
@@ -264,6 +267,11 @@ func _physics_process(delta: float) -> void:
 			_allign_with_surface(faceChecker.get_collision_normal(o))
 	
 	if is_on_floor():
+		if airborne == true:
+			airborne = false
+			$MangoLandSound.pitch_scale = randf_range(0.9, 1.1)
+			$MangoLandSound.play()
+			
 		coyoteTimer.stop()
 		canJump = true
 	
@@ -271,6 +279,7 @@ func _physics_process(delta: float) -> void:
 	
 	#start coyote time if conditions are met
 	if !is_on_floor() && coyoteTimer.is_stopped() == true:
+		airborne = true
 		coyoteTimer.start()
 	#print(coyoteTimer.time_left)
 	
