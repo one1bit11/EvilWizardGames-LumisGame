@@ -7,7 +7,7 @@
 [ext_resource type="Material" uid="uid://bn3ea0tykiugl" path="res://Textures/Other/MangoEye.tres" id="3_shwng"]
 [ext_resource type="AudioStream" uid="uid://b8liwhwx23ey7" path="res://Sounds/SFX/JUMPSFXtest.mp3" id="4_q3my7"]
 [ext_resource type="Texture2D" uid="uid://cq55itol8k2kx" path="res://Textures/Other/MangoEyes/Open1.png" id="5_gpb01"]
-[ext_resource type="Shader" uid="uid://bam1wmdhsxrli" path="res://other/MangoEyes.gdshader" id="6_s1ghw"]
+[ext_resource type="Shader" uid="uid://bam1wmdhsxrli" path="res://Other/MangoEyes.gdshader" id="6_s1ghw"]
 [ext_resource type="AudioStream" uid="uid://ctdxw868kwxjv" path="res://Sounds/SFX/Sprint.wav" id="8_mgrph"]
 [ext_resource type="Texture2D" uid="uid://ch1gm7n2ddrco" path="res://Textures/Other/MangoShadow.png" id="8_vat0n"]
 [ext_resource type="AudioStream" uid="uid://d5o01n8a20qk" path="res://Sounds/SFX/Stick.wav" id="9_nn7sr"]
@@ -59,12 +59,14 @@ initial_velocity_max = 25.69
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o87kt"]
 transparency = 1
+albedo_color = Color(1, 1, 1, 0.509804)
 albedo_texture = ExtResource("12_y6wre")
+billboard_mode = 1
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_v68b4"]
 material = SubResource("StandardMaterial3D_o87kt")
 size = Vector2(1, 1)
-orientation = 0
+orientation = 2
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_y6wre"]
 particle_flag_rotate_y = true
@@ -84,12 +86,14 @@ initial_velocity_max = 30.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y6wre"]
 transparency = 1
+albedo_color = Color(1, 1, 1, 0.658824)
 albedo_texture = ExtResource("12_ax6ag")
+billboard_mode = 1
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_nn7sr"]
 material = SubResource("StandardMaterial3D_y6wre")
 size = Vector2(1, 1)
-orientation = 0
+orientation = 2
 
 [node name="MangoRoot" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "coyoteTimer", "faceChecker", "upwards", "camPivot", "cam", "rayArm", "mangoEyeR", "mangoEyeL", "eyesNode")]
 collision_priority = 0.1
@@ -303,7 +307,6 @@ one_shot = true
 
 [node name="SprintParticles" type="GPUParticles3D" parent="."]
 emitting = false
-amount = 10
 lifetime = 0.1
 fixed_fps = 60
 process_material = SubResource("ParticleProcessMaterial_mgrph")
@@ -320,9 +323,9 @@ visible = false
 size = Vector3(15.7178, 1, 10.4326)
 
 [node name="SplashParticles" type="GPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.718632, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.541661, 0)
 emitting = false
-amount = 60
+amount = 120
 lifetime = 0.4
 one_shot = true
 explosiveness = 1.0

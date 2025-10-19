@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Lumis"
 config/description="Escape the sewers..."
-run/main_scene="uid://no8yualfj0vs"
+run/main_scene="uid://eyp6tro00ol1"
 config/features=PackedStringArray("4.4", "Forward Plus")
 run/max_fps=60
 boot_splash/bg_color=Color(0, 0, 0, 1)
