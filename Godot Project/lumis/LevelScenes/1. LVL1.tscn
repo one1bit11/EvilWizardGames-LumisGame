@@ -1,7 +1,7 @@
-[gd_scene load_steps=472 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=474 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
-[ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://other/BlackWorldEnvironment.tres" id="1_ir167"]
+[ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_xlif7"]
 [ext_resource type="Script" uid="uid://cthhsvlwdylva" path="res://Scripts/object_properties.gd" id="2_4bvgn"]
 [ext_resource type="PackedScene" uid="uid://cdt72fkucpjaf" path="res://LevelScenes/1.5 City.tscn" id="2_gwmb0"]
@@ -49,6 +49,7 @@
 [ext_resource type="ArrayMesh" uid="uid://dm15j0rjpfclu" path="res://Meshes/0Universal/Pipes/RING4.obj" id="29_sgs7q"]
 [ext_resource type="Texture2D" uid="uid://c52wurv26fa" path="res://Textures/0Universal/ObjTextures/LanternTexture/Lantern_Lamp_Roughness.png" id="30_lbovu"]
 [ext_resource type="ArrayMesh" uid="uid://civkoywloo8cp" path="res://Meshes/1Sewers/Waterway Gate.obj" id="31_tgkar"]
+[ext_resource type="PackedScene" uid="uid://bgnrurjrs17bo" path="res://WallDirt/dirt_2.tscn" id="32_baenk"]
 [ext_resource type="Material" uid="uid://cpgr1k704pcgu" path="res://Textures/0Universal/MapTextures/Pipe/DontTouch.tres" id="32_gg7m4"]
 [ext_resource type="Texture2D" uid="uid://boxeo267y704" path="res://Textures/0Universal/MapTextures/BrickWall/IMG_2534.png" id="32_pxsad"]
 [ext_resource type="Texture2D" uid="uid://bm1a3mic74t7l" path="res://Textures/0Universal/ObjTextures/WaterwayGateTexture/Waterway Gate_Door_Frame_BaseColor.png" id="32_s61i1"]
@@ -119,15 +120,15 @@
 [ext_resource type="Texture2D" uid="uid://c8h2bxwd2ikld" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_Glass_BaseColor.png" id="134_k8pp5"]
 [ext_resource type="Texture2D" uid="uid://druninruwjpwb" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_Glass_Emissive.png" id="135_8bbsk"]
 [ext_resource type="PackedScene" uid="uid://bq8grao5h2cy0" path="res://ObjectScenes/barrel.tscn" id="135_hj8bv"]
-[ext_resource type="FontFile" uid="uid://bat88j31g08ea" path="res://other/Fonts/ComicRelief-Regular.ttf" id="135_qmb1d"]
+[ext_resource type="FontFile" uid="uid://bat88j31g08ea" path="res://Other/Fonts/ComicRelief-Regular.ttf" id="135_qmb1d"]
 [ext_resource type="ArrayMesh" uid="uid://th1llbpyjtya" path="res://Meshes/1Sewers/BrokenGate.obj" id="135_v83d7"]
 [ext_resource type="Texture2D" uid="uid://dxhoy6fa6wsgy" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_CeilingLight_BaseColor.png" id="136_cg17g"]
 [ext_resource type="ArrayMesh" uid="uid://ditl4yd381xc2" path="res://Meshes/1Sewers/FenceMiddle.obj" id="136_gwmb0"]
 [ext_resource type="AudioStream" uid="uid://cwnrxxpl1w70v" path="res://Sounds/SFX/Escape.ogg" id="136_n7gex"]
 [ext_resource type="Texture2D" uid="uid://bt47tgy7f5i1x" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_CeilingLight_Metallic.png" id="137_clfdl"]
 [ext_resource type="Texture2D" uid="uid://cbf300ihkrf3j" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_CeilingLight_Roughness.png" id="138_pwcyy"]
-[ext_resource type="Script" path="res://Scripts/tram_animations.gd" id="147_md575"]
-[ext_resource type="AnimationLibrary" uid="uid://ddnh7r6jxr42n" path="res://other/tram1_library.tres" id="148_nj68h"]
+[ext_resource type="Script" uid="uid://bnvblhblunp67" path="res://Scripts/tram_animations.gd" id="147_md575"]
+[ext_resource type="AnimationLibrary" uid="uid://ddnh7r6jxr42n" path="res://Other/tram1_library.tres" id="148_nj68h"]
 [ext_resource type="ArrayMesh" uid="uid://b40wt16kor7oi" path="res://Meshes/0Universal/Tram.obj" id="148_pwcyy"]
 [ext_resource type="Texture2D" uid="uid://xcjc1pam0r88" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_BaseColor.png" id="149_3exgg"]
 [ext_resource type="Material" uid="uid://b2d78d5gpvkdk" path="res://Textures/0Universal/ObjTextures/Tram/TramTexture1.tres" id="149_md575"]
@@ -145,6 +146,7 @@
 [ext_resource type="Texture2D" uid="uid://d120wlrbpd0pk" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Tram_Metallic.png" id="155_4vjvv"]
 [ext_resource type="Texture2D" uid="uid://c7wi5lg5tkfq5" path="res://Textures/0Universal/ObjTextures/Elevator/Elevator_Door_Roughness.png" id="155_v83d7"]
 [ext_resource type="Texture2D" uid="uid://33nr44xjboc4" path="res://Textures/0Universal/ObjTextures/Elevator/Elevator_Windows_BaseColor.png" id="156_8d1qu"]
+[ext_resource type="PackedScene" uid="uid://cjwqb1vn17snp" path="res://WallDirt/dirt_4.tscn" id="156_b5dmc"]
 [ext_resource type="Texture2D" uid="uid://b48byn4hnxp0x" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Tram_Roughness.png" id="156_l55kd"]
 [ext_resource type="Texture2D" uid="uid://t5rj03u8vn52" path="res://Textures/0Universal/ObjTextures/Elevator/Elevator_Windows_Metallic.png" id="157_2xm8f"]
 [ext_resource type="Texture2D" uid="uid://do6o5mukx65qo" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Glass_BaseColor.png" id="157_p2ke2"]
@@ -3284,6 +3286,18 @@ surface_material_override/0 = SubResource("StandardMaterial3D_a446t")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ROOMS/Room1-2/DoorFrame4/DoorFrameMesh"]
 shape = SubResource("ConcavePolygonShape3D_o83hb")
+
+[node name="Dirt2" parent="ROOMS/Room1-2" instance=ExtResource("32_baenk")]
+transform = Transform3D(-3.0598e-07, 0, 7, 0, 7, 0, -7, 0, -3.0598e-07, -7.48523, 8.35699, -51.5238)
+skeleton = NodePath("../DoorFrame3/DoorFrameMesh")
+
+[node name="Dirt3" parent="ROOMS/Room1-2" instance=ExtResource("32_baenk")]
+transform = Transform3D(7.64697, 0, 6.52019e-14, 0, 7.64697, 0, -6.52019e-14, 0, 7.64697, -3.18878, 3.83595, -62.9995)
+skeleton = NodePath("../DoorFrame3/DoorFrameMesh")
+
+[node name="Dirt4" parent="ROOMS/Room1-2" instance=ExtResource("153_50ulx")]
+transform = Transform3D(1.33514e-06, 2.1684e-19, -14, -14, -6.11959e-07, -1.33514e-06, -6.11959e-07, 14, -5.83609e-14, -43.548, 20.3907, -42.3281)
+skeleton = NodePath("../DoorFrame3/DoorFrameMesh")
 
 [node name="Tunnel" type="CSGBox3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4.23195e-07, 8, -34)
@@ -14874,6 +14888,216 @@ speed_scale = 0.16
 visibility_aabb = AABB(-700, -700, -700, 1400, 1400, 1400)
 process_material = SubResource("ParticleProcessMaterial_g52f4")
 draw_pass_1 = SubResource("PlaneMesh_bknv5")
+
+[node name="Dirt2" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(10, 0, 1.13687e-13, 0, 10, 0, -1.13687e-13, 0, 10, 2.68007, -31.2044, -62.9871)
+
+[node name="Dirt4" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-3.51857e-07, 0, -8.04955, -8.04955, -3.51857e-07, 3.51857e-07, -3.51857e-07, 8.04955, 1.53802e-14, 7.47789, -30.7024, -58.3805)
+
+[node name="Dirt5" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-3.16671e-07, 1.5341e-21, -7.24459, 6.33343e-07, -7.24459, -2.76843e-14, -7.24459, -6.33343e-07, 3.16671e-07, 7.47789, -33.7024, -52.3602)
+
+[node name="Dirt6" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(1.90735e-06, 0, -10, 0, 10, 0, 10, 0, 1.90735e-06, -43.505, -14, -57.6549)
+
+[node name="Dirt7" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(1.90735e-06, 0, -10, -10, -4.37114e-07, -1.90735e-06, -4.37114e-07, 10, -8.33728e-14, -43.505, -21.9113, -57.6549)
+
+[node name="Dirt8" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(-11.5863, 0, -2.76239e-07, 0, 11.5863, 0, 2.76239e-07, 0, -11.5863, -51.7814, -17.4875, -24.0627)
+
+[node name="Dirt9" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(5.06454e-07, -11.5863, 1.20748e-14, -11.5863, -5.06454e-07, -2.76239e-07, 2.76239e-07, 0, -11.5863, -61.7897, -13.4875, -24.0249)
+
+[node name="Dirt10" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(10.4277, 9.11617e-07, 2.48615e-07, 9.11617e-07, -10.4277, 2.17346e-14, 2.48615e-07, 0, -10.4277, -64.7897, -26.8495, -36.0269)
+
+[node name="Dirt11" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(10.6451, 0, 1.21021e-13, 0, 10.6451, 0, -1.21021e-13, 0, 10.6451, -116.7, -15.2543, -55.9485)
+
+[node name="Dirt12" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(10, 0, 1.13687e-13, 0, 10, 0, -1.13687e-13, 0, 10, -108.605, -20.175, -55.9972)
+
+[node name="Dirt13" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(9.53674e-07, 0, -10, -10, -4.37114e-07, -9.53674e-07, -4.37114e-07, 10, -4.16864e-14, -99.0047, -16.4689, -49.679)
+
+[node name="Dirt14" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(0, 0, -10, 0, 10, 0, 10, 0, 0, -99.0051, -21.1311, -41.4659)
+
+[node name="Dirt15" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(5.16693e-07, -11.8205, 4.51707e-14, -11.8205, -5.16693e-07, -1.03339e-06, 1.03339e-06, 0, -11.8205, -120.284, -16.4544, -23.0695)
+
+[node name="Dirt16" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-4.37114e-07, 0, 10, 8.74228e-07, -10, 3.82137e-14, 10, 8.74228e-07, 4.37114e-07, -128.959, -15.5608, -29.1975)
+
+[node name="Dirt17" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-4.37114e-07, -4.23516e-21, 10, 10, 1.31134e-06, 4.37114e-07, -1.31134e-06, 10, -5.73206e-14, -128.959, -19.5608, -36.1975)
+
+[node name="Dirt18" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(1.31134e-06, 0, -10, 10, -4.37114e-07, 1.31134e-06, -4.37114e-07, -10, -5.73206e-14, -153.044, -5.47833, -69.2844)
+
+[node name="Dirt19" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(1.64996e-06, 0, -12.5822, -12.106, 3.42906, -1.5875e-06, 3.42906, 12.106, 4.49667e-07, -153.044, -11.159, -63.2844)
+
+[node name="Dirt20" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(0, 0, -10, 0, 10, 0, 10, 0, 0, -153.009, -10.271, -51.7396)
+
+[node name="Dirt21" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(0, 0, -8.81429, -6.84243, 5.55633, 0, 5.55633, 6.84243, 0, -153.009, -12.8051, -44.8752)
+
+[node name="Dirt22" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(-11.8126, 0, -1.03269e-06, 0, 11.8126, 0, 1.03269e-06, 0, -11.8126, -174.98, -11.6123, -39.0442)
+
+[node name="Dirt23" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(-7.09977e-07, 0, 16.2424, 0, 16.2424, 0, -16.2424, 0, -7.09977e-07, -182.667, -12.7778, -57.1763)
+
+[node name="Dirt24" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-4.37114e-07, 0, 10, 0, 10, 0, -10, 0, -4.37114e-07, -222.216, -2.76607, -72.7626)
+
+[node name="Dirt25" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(-10, 0, -8.74228e-07, 0, 10, 0, 8.74228e-07, 0, -10, -215.535, -2.1773, -68.0325)
+
+[node name="Dirt26" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(-1.57672e-07, 0, -6.61324, 0, 6.61324, 0, 6.61324, 0, -1.57672e-07, -210.268, -0.802345, -76.6954)
+
+[node name="Dirt27" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-5.24537e-07, 0, 12, 0, 12, 0, -12, 0, -5.24537e-07, -222.497, -3.01947, -121.219)
+
+[node name="Dirt28" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(6.88464, 0, 7.82694e-14, 0, 6.88464, 0, -7.82694e-14, 0, 6.88464, -218.663, 1.01753, -144.373)
+
+[node name="Dirt29" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(1.0886, 4.53575, 1.2376e-14, -4.53575, 1.0886, -5.15655e-14, -5.30299e-14, 2.355e-28, 4.66456, -213.655, 0.296482, -144.373)
+
+[node name="Dirt30" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(-3.5468e-07, 0, -14.8763, 0, 14.8763, 0, 14.8763, 0, -3.5468e-07, -210.597, -3.95174, -123.34)
+
+[node name="Dirt31" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(-7.28941, 0, 4.92423e-07, 0, 7.28941, 0, -4.92423e-07, 0, -7.28941, -214.58, 0.330818, -108.519)
+
+[node name="Dirt32" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(1.66527e-06, 0, -12.699, 0, 12.699, 0, 12.699, 0, 1.66527e-06, -204.546, -4.5055, -184.653)
+
+[node name="Dirt33" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(-2.94889e-07, 0, -12.3685, 0, 12.3685, 0, 12.3685, 0, -2.94889e-07, -204.547, -8.86314, -173.761)
+
+[node name="Dirt34" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(12.9889, 0, 1.47667e-13, 0, 12.9889, 0, -1.47667e-13, 0, 12.9889, -211.061, -4.84343, -191.496)
+
+[node name="Dirt35" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-5.51081e-07, 0, 12.6073, 0, 12.6073, 0, -12.6073, 0, -5.51081e-07, -269.476, -3.20644, -176.819)
+
+[node name="Dirt36" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-5.51081e-07, 0, 12.6073, 6.17265, -10.9928, 2.69815e-07, 10.9928, 6.17265, 4.8051e-07, -269.476, -8.93145, -183.878)
+
+[node name="Dirt37" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(4.87712, 11.9242, 5.54464e-14, -11.9242, 4.87712, -1.35563e-13, -1.46464e-13, 0, 12.8831, -262.894, -5.66969, -191.457)
+
+[node name="Dirt38" parent="." instance=ExtResource("156_b5dmc")]
+transform = Transform3D(12.0929, 0, 1.00661e-13, 0, 8.85422, 0, -1.3748e-13, 0, 8.85422, -287.115, -15.7724, -185.49)
+
+[node name="Dirt39" parent="." instance=ExtResource("156_b5dmc")]
+transform = Transform3D(-5.28596e-07, 0, 8.85422, 0, 8.85422, 0, -12.0929, 0, -3.8703e-07, -292.968, -15.7724, -178.962)
+
+[node name="Dirt40" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-3.21456e-07, 0, 7.35406, 0, 7.35406, 0, -7.35406, 0, -3.21456e-07, -292.98, -11.9769, -176.785)
+
+[node name="Dirt41" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-1.98519e-07, 0, -6.12335, 0, 6.12335, 0, 6.12335, 0, -1.98519e-07, -281.373, -10.5964, -176.785)
+
+[node name="Dirt42" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-1.98519e-07, -5.25957e-15, -6.12335, -6.12266, -0.0914793, 1.98497e-07, -0.0914798, 6.12266, 2.96578e-09, -281.373, -11.3719, -182.346)
+
+[node name="Dirt43" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(10, 0, 1.13687e-13, 0, 10, 0, -1.13687e-13, 0, 10, -287.488, -9.03994, -155.479)
+
+[node name="Dirt44" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(1.15561, 9.933, 1.31378e-14, -9.933, 1.15561, -1.12925e-13, -1.13687e-13, 0, 10, -287.488, -0.667194, -155.479)
+
+[node name="Dirt45" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(-4.37114e-07, 0, 10, -7.29948, -6.83503, -3.1907e-07, 6.83503, -7.29948, 2.98769e-07, -292.984, 0.277378, -149.319)
+
+[node name="Dirt46" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(-4.37114e-07, 0, 10, -9.99986, -0.0523586, -4.37108e-07, 0.0523586, -9.99986, 2.28867e-09, -292.984, -11.3819, -149.319)
+
+[node name="Dirt47" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(0, 0, -10, 0, 10, 0, 10, 0, 0, -281.012, -0.268108, -147.83)
+
+[node name="Dirt48" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-10, 0, -8.74228e-07, 0, 10, 0, 8.74228e-07, 0, -10, -285.83, -9.25462, -143.507)
+
+[node name="Dirt49" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-2.38419e-07, 0, -10, 0, 10, 0, 10, 0, -2.38419e-07, -281.03, 4.36817, -123.3)
+
+[node name="Dirt50" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(-10, 0, -8.74228e-07, 0, 10, 0, 8.74228e-07, 0, -10, -287.107, 2.24321, -115.509)
+
+[node name="Dirt51" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(-4.02648e-07, 0, 9.21151, 0, 9.21151, 0, -9.21151, 0, -4.02648e-07, -292.99, 5.12682, -120.038)
+
+[node name="Dirt52" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(13.9704, 0, 1.58825e-13, 0, 13.9704, 0, -1.58825e-13, 0, 13.9704, -319.308, 13.6569, -141.496)
+
+[node name="Dirt53" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(3.61581, 13.4944, 4.1107e-14, -13.4944, 3.61581, -1.53413e-13, -1.58825e-13, 0, 13.9704, -324.308, 5.36378, -141.496)
+
+[node name="Dirt54" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(10, 0, 1.13687e-13, 0, 10, 0, -1.13687e-13, 0, 10, -333.388, 15.4879, -141.491)
+
+[node name="Dirt55" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(-5.29801, 8.48122, -6.02314e-14, -8.48122, -5.29801, -9.64203e-14, -1.13687e-13, 0, 10, -331.904, 8.21936, -141.491)
+
+[node name="Dirt56" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(-10, 0, 6.75532e-07, 0, 10, 0, -6.75532e-07, 0, -10, -314.051, 13.0198, -101.513)
+
+[node name="Dirt57" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(0.0790628, 9.99969, -5.34095e-09, 9.99969, -0.0790628, -6.75511e-07, -6.75532e-07, 0, -10, -318.983, 8.02682, -101.513)
+
+[node name="Dirt58" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-10, 0, -8.74228e-07, 0, 10, 0, 8.74228e-07, 0, -10, -331.731, 14.5517, -101.534)
+
+[node name="Dirt59" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-2.00137, -9.79768, -1.74966e-07, -9.79768, 2.00137, -8.5654e-07, 8.74228e-07, 0, -10, -331.731, 8.08511, -101.534)
+
+[node name="Dirt60" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(-5.87043e-07, 0, 13.43, 0, 13.43, 0, -13.43, 0, -5.87043e-07, -339.437, 13.6553, -107.725)
+
+[node name="Dirt61" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(-6.25468e-07, 0, -13.117, 0, 13.117, 0, 13.117, 0, -6.25468e-07, -304.519, 13.0793, -134.873)
+
+[node name="Dirt62" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(-6.25467e-07, 0, -13.117, -12.647, 3.47977, 6.03057e-07, 3.47977, 12.647, -1.65928e-07, -304.519, 11.2539, -129.847)
+
+[node name="Dirt63" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(0, 0, -13.0512, 0, 13.0512, 0, 13.0512, 0, 0, -304.53, 8.28574, -118.957)
+
+[node name="Dirt64" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(0, 0, -13.0512, -12.6006, 3.3999, 0, 3.3999, 12.6006, 0, -304.53, 13.669, -112.212)
+
+[node name="Dirt65" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-4.37114e-07, 0, 10, 0, 10, 0, -10, 0, -4.37114e-07, -339.462, 14.0123, -131.946)
+
+[node name="Dirt66" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-4.37114e-07, 0, 10, -9.49912, 3.12517, -4.1522e-07, -3.12517, -9.49912, -1.36606e-07, -339.462, 8.50365, -134.562)
+
+[node name="Dirt67" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-4.37114e-07, 0, 10, 0, 10, 0, -10, 0, -4.37114e-07, -328.961, 9.63539, -119.917)
+
+[node name="Dirt68" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-4.37114e-07, 0, 10, -8.25271, -5.64737, -3.60738e-07, 5.64737, -8.25271, 2.46854e-07, -328.961, 14.9059, -122.465)
+
+[node name="Dirt69" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(-10, 0, -8.74228e-07, 0, 10, 0, 8.74228e-07, 0, -10, -334.163, 12.4944, -127.567)
+
+[node name="Dirt70" parent="." instance=ExtResource("32_baenk")]
+transform = Transform3D(-0.00872687, -10, -7.62928e-10, -10, 0.00872687, -8.74228e-07, 8.74228e-07, 0, -10, -334.163, 5.83427, -127.567)
+
+[node name="Dirt71" parent="." instance=ExtResource("153_50ulx")]
+transform = Transform3D(10, 0, 1.13687e-13, 0, 10, 0, -1.13687e-13, 0, 10, -334.082, 9.90893, -115.445)
+
+[node name="Dirt72" parent="." instance=ExtResource("152_3exgg")]
+transform = Transform3D(-11.4169, 0, -9.98099e-07, 0, 11.4169, 0, 9.98099e-07, 0, -11.4169, -160.888, -12.4906, -39.0422)
 
 [connection signal="area_entered" from="ROOMS/DeathTrigger2" to="." method="_on_w_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/DeathTrigger3" to="." method="_on_w_death_trigger_area_entered"]
