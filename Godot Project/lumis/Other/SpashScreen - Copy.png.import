@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://npa1nnsah3nu"
-path="res://.godot/imported/SpashScreen - Copy.png-e7023a4c813f142838ed0ffbbad83b9e.ctex"
+path="res://.godot/imported/SpashScreen - Copy.png-2d1954999c9875630936ce562b3a03dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Other/SpashScreen - Copy.png"
-dest_files=["res://.godot/imported/SpashScreen - Copy.png-e7023a4c813f142838ed0ffbbad83b9e.ctex"]
+source_file="res://other/SpashScreen - Copy.png"
+dest_files=["res://.godot/imported/SpashScreen - Copy.png-2d1954999c9875630936ce562b3a03dc.ctex"]
 
 [params]
 
