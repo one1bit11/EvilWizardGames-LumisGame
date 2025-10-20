@@ -1,15 +1,17 @@
-[gd_scene load_steps=28 format=3 uid="uid://eyp6tro00ol1"]
+[gd_scene load_steps=30 format=3 uid="uid://eyp6tro00ol1"]
 
 [ext_resource type="Script" uid="uid://bby4ycx5glmx8" path="res://Scripts/main_menu.gd" id="1_3e8lh"]
 [ext_resource type="PackedScene" uid="uid://ddrgb2e4wr4gl" path="res://LevelScenes/1. LVL1 MENU DEMO.tscn" id="1_hggsl"]
 [ext_resource type="Texture2D" uid="uid://deo1clgoh10vi" path="res://Textures/Other/Vignette.png" id="1_w6rnc"]
 [ext_resource type="FontFile" uid="uid://bat88j31g08ea" path="res://Other/Fonts/ComicRelief-Regular.ttf" id="3_2dh5q"]
 [ext_resource type="Texture2D" uid="uid://bm1dgj2mf01v2" path="res://Textures/Other/UI/7E95638D-735D-4EE3-842C-71887811CE1A.png" id="4_8l04h"]
+[ext_resource type="FontFile" uid="uid://8auu2xggxbyv" path="res://Other/Fonts/ComicRelief-Bold.ttf" id="4_ekufw"]
 [ext_resource type="AudioStream" uid="uid://bm3pa8w34scl6" path="res://Sounds/Music/Final/MainMenu.ogg" id="4_y1rc5"]
 [ext_resource type="Texture2D" uid="uid://dghjgx7104dnx" path="res://Textures/Other/UI/0B21C978-F6C0-4EE4-A565-B2D0EE97726D.png" id="5_dc7dw"]
 [ext_resource type="Texture2D" uid="uid://dmex7ro7c86tb" path="res://Other/credits1080.png" id="6_2dh5q"]
 [ext_resource type="StyleBox" uid="uid://bau7sri3yyl37" path="res://Other/UIButtonNormal.tres" id="6_8l04h"]
 [ext_resource type="Texture2D" uid="uid://cywrdn1xjs7e8" path="res://Other/EWG1.png" id="6_xckl4"]
+[ext_resource type="Texture2D" uid="uid://tduh6srnmbkp" path="res://Textures/Other/Lumis_Title.png" id="9_dc7dw"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dc7dw"]
 texture = ExtResource("4_8l04h")
@@ -259,7 +261,15 @@ modulate = Color(1, 1, 1, 0.392157)
 texture = ExtResource("1_w6rnc")
 centered = false
 
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.643137)
+position = Vector2(-28, -3815)
+scale = Vector2(1.55521, 8.06481)
+texture = ExtResource("1_w6rnc")
+centered = false
+
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 143.0
 offset_top = 135.0
@@ -283,7 +293,10 @@ alignment = 1
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 focus_mode = 0
-theme_override_fonts/font = ExtResource("3_2dh5q")
+theme_override_colors/font_hover_color = Color(0.255041, 0.147325, 0.270023, 1)
+theme_override_colors/font_color = Color(0.950539, 0.888788, 0.822876, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_ekufw")
 theme_override_font_sizes/font_size = 61
 theme_override_styles/hover = SubResource("StyleBoxTexture_dc7dw")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_ekufw")
@@ -293,7 +306,10 @@ text = "Start"
 [node name="CreditsButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 focus_mode = 0
-theme_override_fonts/font = ExtResource("3_2dh5q")
+theme_override_colors/font_hover_color = Color(0.254902, 0.14902, 0.270588, 1)
+theme_override_colors/font_color = Color(0.94902, 0.890196, 0.823529, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_ekufw")
 theme_override_font_sizes/font_size = 61
 theme_override_styles/hover = SubResource("StyleBoxTexture_8l04h")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_ee3ra")
@@ -303,7 +319,10 @@ text = "Credits"
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 focus_mode = 0
-theme_override_fonts/font = ExtResource("3_2dh5q")
+theme_override_colors/font_hover_color = Color(0.254902, 0.14902, 0.270588, 1)
+theme_override_colors/font_color = Color(0.94902, 0.890196, 0.823529, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_ekufw")
 theme_override_font_sizes/font_size = 61
 theme_override_styles/hover = SubResource("StyleBoxTexture_1080c")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_dxh14")
@@ -318,6 +337,17 @@ volume_db = 24.0
 autoplay = true
 panning_strength = 0.0
 parameters/looping = true
+
+[node name="Logo2" type="Sprite2D" parent="."]
+modulate = Color(0.317647, 0, 0, 0.52549)
+position = Vector2(415.562, 216.25)
+scale = Vector2(0.0943392, 0.097233)
+texture = ExtResource("9_dc7dw")
+
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(413.799, 209)
+scale = Vector2(0.0911925, 0.0911925)
+texture = ExtResource("9_dc7dw")
 
 [node name="Ewg" type="Sprite2D" parent="."]
 position = Vector2(1779.06, 932.633)
@@ -344,6 +374,7 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 mouse_filter = 2
 texture = ExtResource("6_2dh5q")
+metadata/_edit_lock_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CreditsRect"]
 libraries = {
