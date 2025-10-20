@@ -102,4 +102,5 @@ jolt_physics_3d/simulation/areas_detect_static_bodies=true
 
 [rendering]
 
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=1
 textures/defaults/default_environment=""

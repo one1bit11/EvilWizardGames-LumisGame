@@ -79,8 +79,8 @@ func _physics_process(delta: float) -> void:
 	if fadeCityMusic == true:
 		$Audio/Music/MusicPlayerAlt2Alt.volume_linear = lerpf($Audio/Music/MusicPlayerAlt2Alt.volume_linear,0.0, 0.05)
 	if transCityMusic == true && !fadeCityMusic:
-		$Audio/Music/MusicPlayerAlt.volume_linear = lerpf($Audio/Music/MusicPlayerAlt.volume_linear,0.0, 0.05)
-		$Audio/Music/MusicPlayerAlt2Alt.volume_linear = lerpf($Audio/Music/MusicPlayerAlt2Alt.volume_linear,10.0, 0.05)
+		$Audio/Music/MusicPlayerAlt.volume_linear = lerpf($Audio/Music/MusicPlayerAlt.volume_linear,0.0, 0.004)
+		$Audio/Music/MusicPlayerAlt2Alt.volume_linear = lerpf($Audio/Music/MusicPlayerAlt2Alt.volume_linear,10.0, 0.004)
 
 
 func _on_music_play_2_nd_half_area_entered(area: Area3D) -> void:

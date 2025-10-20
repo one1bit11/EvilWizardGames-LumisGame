@@ -346,7 +346,7 @@ size = Vector3(7.82012, 24.8591, 8.69271)
 size = Vector3(35.414, 31.1782, 46.0995)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bqij6"]
-size = Vector3(3.0665, 31.1782, 36.5165)
+size = Vector3(3.23979, 31.1782, 36.5165)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6ju68"]
 size = Vector3(1.70039, 29.537, 22.0213)
@@ -12555,7 +12555,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences40/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.72848e-12, 0, 1, 0, -4.40536e-13, 0, 1, -0.632813, 2.38231, -13.8368)
+transform = Transform3D(1, 0, -2.72848e-12, 0, 1, 0, -4.40536e-13, 0, 1, -0.719467, 2.38231, -13.8368)
 shape = SubResource("BoxShape3D_bqij6")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -65108,7 +65108,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="Tubelong2" type="MeshInstance3D" parent="pipes_lowerHshape4"]
-transform = Transform3D(1.91069e-15, -1, 9.87551e-08, -4.37114e-08, -4.37114e-08, -2.25925, 1, 0, -9.87551e-08, 0.0528648, 5.61, 1.79628)
+transform = Transform3D(7.10543e-15, -1, 9.87551e-08, -4.37114e-08, -4.37114e-08, -2.25925, 1, 7.10543e-15, -9.87551e-08, 0.0528641, 3.53134, 1.79633)
 material_override = ExtResource("46_x46m3")
 mesh = ExtResource("68_yigka")
 skeleton = NodePath("../../../..")
