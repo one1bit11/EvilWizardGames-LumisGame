@@ -1,5 +1,8 @@
 extends Node2D
 
+func _ready() -> void:
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
 func transition_to_lv():
 	get_tree().change_scene_to_file("res://LevelScenes/0. Evil Wizard.tscn")
 

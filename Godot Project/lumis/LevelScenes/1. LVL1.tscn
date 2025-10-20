@@ -1,4 +1,4 @@
-[gd_scene load_steps=474 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=478 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
@@ -108,6 +108,7 @@
 [ext_resource type="AudioStream" uid="uid://b6c7xcic46wkk" path="res://Sounds/SFX/1. Sewers/Environmental/General Ambience/Water Drips.ogg" id="110_uvlwu"]
 [ext_resource type="ArrayMesh" uid="uid://cbssl0vvvu7fp" path="res://Meshes/0Universal/LampHook.obj" id="112_k8pp5"]
 [ext_resource type="PackedScene" uid="uid://foy2w1ght5vg" path="res://ObjectScenes/safety_rail.tscn" id="115_vbkhu"]
+[ext_resource type="FontFile" uid="uid://8auu2xggxbyv" path="res://Other/Fonts/ComicRelief-Bold.ttf" id="123_8oyi1"]
 [ext_resource type="AudioStream" uid="uid://byqfcv16md0bv" path="res://Sounds/Music/Final/Sewers.ogg" id="126_fof7x"]
 [ext_resource type="AudioStream" uid="uid://buoyui1n16jfb" path="res://Sounds/Music/Final/City.ogg" id="127_fof7x"]
 [ext_resource type="Material" uid="uid://cumiqyrjv44go" path="res://Textures/0Universal/ObjTextures/Wood/Wood.tres" id="128_y7vme"]
@@ -1737,6 +1738,81 @@ _data = {
 &"LongBlackFadeIn": SubResource("Animation_qmb1d"),
 &"RESET": SubResource("Animation_raox2"),
 &"Respawn": SubResource("Animation_snuc0")
+}
+
+[sub_resource type="Animation" id="Animation_8oyi1"]
+resource_name = "Quiting"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.8, 1.4, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": ["Hold ESC to Quit", "Hold ESC to Quit.", "Hold ESC to Quit..", "Hold ESC to Quit...", "Hold ESC to Quit...."]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(2),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"go_to_menu"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_1ldn0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Hold ESC to Quit"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qmb1d"]
+_data = {
+&"Quitting": SubResource("Animation_8oyi1"),
+&"RESET": SubResource("Animation_1ldn0")
 }
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_67c33"]
@@ -13723,6 +13799,22 @@ panning_strength = 0.0
 [node name="AnimationPlayer" type="AnimationPlayer" parent="UI"]
 libraries = {
 &"": SubResource("AnimationLibrary_vgtun")
+}
+
+[node name="Quit" type="RichTextLabel" parent="UI"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 60.0
+offset_top = 54.0
+offset_right = 852.0
+offset_bottom = 314.0
+theme_override_fonts/normal_font = ExtResource("123_8oyi1")
+theme_override_font_sizes/normal_font_size = 56
+text = "Hold ESC to Quit"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UI/Quit"]
+libraries = {
+&"": SubResource("AnimationLibrary_qmb1d")
 }
 
 [node name="DoorFrame" parent="." instance=ExtResource("27_vgtun")]

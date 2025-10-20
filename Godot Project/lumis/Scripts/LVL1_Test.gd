@@ -27,6 +27,12 @@ func reset_mango_to_checkpoint():
 func _input(event: InputEvent) -> void:
 	if Input.is_key_pressed(KEY_R):
 		uiAnimation.play("Respawn")
+	
+	if Input.is_action_just_pressed("Quit"):
+		$UI/Quit/AnimationPlayer.play("Quitting")
+	
+	elif Input.is_action_just_released("Quit"):
+		$UI/Quit/AnimationPlayer.stop()
 
 func _on_checkpoint_area_entered(area: Area3D, extra_arg_0: Vector3) -> void:
 	if area.name == "MangoTrigger":
@@ -159,3 +165,6 @@ func lock_controls():
 
 func unlock_controls():
 	SignalBus.emit_signal("controlUnlock")
+
+func go_to_menu():
+	get_tree().change_scene_to_file("res://LevelScenes/Main Menu.tscn")

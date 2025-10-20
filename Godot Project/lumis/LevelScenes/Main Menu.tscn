@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://eyp6tro00ol1"]
+[gd_scene load_steps=32 format=3 uid="uid://eyp6tro00ol1"]
 
 [ext_resource type="Script" uid="uid://bby4ycx5glmx8" path="res://Scripts/main_menu.gd" id="1_3e8lh"]
 [ext_resource type="PackedScene" uid="uid://ddrgb2e4wr4gl" path="res://LevelScenes/1. LVL1 MENU DEMO.tscn" id="1_hggsl"]
@@ -12,6 +12,8 @@
 [ext_resource type="StyleBox" uid="uid://bau7sri3yyl37" path="res://Other/UIButtonNormal.tres" id="6_8l04h"]
 [ext_resource type="Texture2D" uid="uid://cywrdn1xjs7e8" path="res://Other/EWG1.png" id="6_xckl4"]
 [ext_resource type="Texture2D" uid="uid://tduh6srnmbkp" path="res://Textures/Other/Lumis_Title.png" id="9_dc7dw"]
+[ext_resource type="AudioStream" uid="uid://cmaiqmivkaasu" path="res://Sounds/UI2.mp3" id="13_1080c"]
+[ext_resource type="AudioStream" uid="uid://d23rqyf41rmvm" path="res://Sounds/UI3.mp3" id="14_dxh14"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dc7dw"]
 texture = ExtResource("4_8l04h")
@@ -381,6 +383,21 @@ libraries = {
 &"": SubResource("AnimationLibrary_ee3ra")
 }
 
+[node name="UIPress" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_1080c")
+panning_strength = 0.0
+
+[node name="UIHover" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_dxh14")
+volume_db = -3.962
+panning_strength = 0.0
+
+[connection signal="mouse_entered" from="VBoxContainer/StartButton" to="." method="_on_start_button_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/StartButton" to="." method="_on_start_button_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
