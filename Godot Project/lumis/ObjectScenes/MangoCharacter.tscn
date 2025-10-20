@@ -7,7 +7,7 @@
 [ext_resource type="Material" uid="uid://bn3ea0tykiugl" path="res://Textures/Other/MangoEye.tres" id="3_shwng"]
 [ext_resource type="AudioStream" uid="uid://b8liwhwx23ey7" path="res://Sounds/SFX/JUMPSFXtest.mp3" id="4_q3my7"]
 [ext_resource type="Texture2D" uid="uid://cq55itol8k2kx" path="res://Textures/Other/MangoEyes/Open1.png" id="5_gpb01"]
-[ext_resource type="Shader" uid="uid://bam1wmdhsxrli" path="res://Other/MangoEyes.gdshader" id="6_s1ghw"]
+[ext_resource type="Shader" uid="uid://bam1wmdhsxrli" path="res://other/MangoEyes.gdshader" id="6_s1ghw"]
 [ext_resource type="AudioStream" uid="uid://ctdxw868kwxjv" path="res://Sounds/SFX/Sprint.wav" id="8_mgrph"]
 [ext_resource type="Texture2D" uid="uid://ch1gm7n2ddrco" path="res://Textures/Other/MangoShadow.png" id="8_vat0n"]
 [ext_resource type="AudioStream" uid="uid://d5o01n8a20qk" path="res://Sounds/SFX/Stick.wav" id="9_nn7sr"]
@@ -265,24 +265,24 @@ shape = SubResource("SphereShape3D_syw4e")
 
 [node name="MangoJumpSound" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("4_q3my7")
-volume_db = -5.0
+attenuation_model = 3
+volume_db = -3.0
 
 [node name="MangoSprintSound" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("8_mgrph")
+attenuation_model = 3
 volume_db = -5.0
 
 [node name="MangoLandSound" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("8_mgrph")
+attenuation_model = 3
 volume_db = -5.0
 pitch_scale = 0.1
 
 [node name="MangoStickSound" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("9_nn7sr")
-volume_db = -5.0
-
-[node name="CoyoteTimer" type="Timer" parent="."]
-wait_time = 0.1
-one_shot = true
+attenuation_model = 3
+volume_db = -3.0
 
 [node name="MangoShadowParent" type="Node" parent="."]
 
@@ -301,17 +301,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
 top_level = true
 target_position = Vector3(0, 2, 0)
 
-[node name="FixTimer" type="Timer" parent="."]
-wait_time = 0.5
-one_shot = true
-
-[node name="SprintParticles" type="GPUParticles3D" parent="."]
-emitting = false
-lifetime = 0.1
-fixed_fps = 60
-process_material = SubResource("ParticleProcessMaterial_mgrph")
-draw_pass_1 = SubResource("PlaneMesh_v68b4")
-
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.22498, 0)
 visible = false
@@ -321,6 +310,13 @@ size = Vector3(15.7178, 1, 10.4326)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.95087, 0)
 visible = false
 size = Vector3(15.7178, 1, 10.4326)
+
+[node name="SprintParticles" type="GPUParticles3D" parent="."]
+emitting = false
+lifetime = 0.1
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_mgrph")
+draw_pass_1 = SubResource("PlaneMesh_v68b4")
 
 [node name="SplashParticles" type="GPUParticles3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.541661, 0)
@@ -333,6 +329,18 @@ randomness = 1.0
 fixed_fps = 60
 process_material = SubResource("ParticleProcessMaterial_y6wre")
 draw_pass_1 = SubResource("PlaneMesh_nn7sr")
+
+[node name="CoyoteTimer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[node name="FixTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="LandingSFXTimer" type="Timer" parent="."]
+wait_time = 0.45
+one_shot = true
 
 [connection signal="body_entered" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_entered"]
 [connection signal="body_exited" from="StickDetectionRange" to="." method="_on_stick_detection_range_body_exited"]

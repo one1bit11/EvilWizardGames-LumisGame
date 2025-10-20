@@ -267,10 +267,13 @@ func _physics_process(delta: float) -> void:
 			_allign_with_surface(faceChecker.get_collision_normal(o))
 	
 	if is_on_floor():
-		if airborne == true:
+		if airborne == true && $LandingSFXTimer.is_stopped():
 			airborne = false
 			$MangoLandSound.pitch_scale = randf_range(0.9, 1.1)
 			$MangoLandSound.play()
+			$LandingSFXTimer.start()
+		elif  airborne == true && !$LandingSFXTimer.is_stopped():
+			airborne = false
 			
 		coyoteTimer.stop()
 		canJump = true
@@ -481,6 +484,8 @@ func _ready() -> void:
 	eyesNode.global_rotation.x = global_rotation.x
 	eyesNode.global_rotation.y = global_rotation.y
 	eyesNode.global_rotation.z = global_rotation.z
+	
+	$LandingSFXTimer.start()
 
 func blink():
 	change_eyes(load("res://Textures/Other/MangoEyes/Closed1.png"))
