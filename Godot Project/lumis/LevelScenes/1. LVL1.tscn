@@ -1,4 +1,4 @@
-[gd_scene load_steps=468 format=3 uid="uid://kw6trwjmxryo"]
+[gd_scene load_steps=472 format=3 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
 [ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://other/BlackWorldEnvironment.tres" id="1_ir167"]
@@ -139,6 +139,7 @@
 [ext_resource type="PackedScene" uid="uid://bn6bhtnnbvai6" path="res://WallDirt/dirt_3.tscn" id="153_50ulx"]
 [ext_resource type="AudioStream" uid="uid://dhahuw2ar8od1" path="res://Sounds/SFX/Tram/Tram.ogg" id="153_p2ke2"]
 [ext_resource type="Texture2D" uid="uid://302t4w7kx2b" path="res://Textures/0Universal/ObjTextures/Elevator/Elevator_Door_BaseColor.png" id="153_qmb1d"]
+[ext_resource type="Texture2D" uid="uid://vhfer82vgddo" path="res://Textures/Other/Particles/DustParticleSprite.png" id="154_g52f4"]
 [ext_resource type="Texture2D" uid="uid://ds5bvueb8gqgt" path="res://Textures/0Universal/ObjTextures/Elevator/Elevator_Door_Metallic.png" id="154_n7gex"]
 [ext_resource type="Texture2D" uid="uid://b4yci47uesa4h" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Tram_BaseColor.png" id="154_xut2x"]
 [ext_resource type="Texture2D" uid="uid://d120wlrbpd0pk" path="res://Textures/0Universal/ObjTextures/Tram/Tram_Tram_Metallic.png" id="155_4vjvv"]
@@ -2162,6 +2163,30 @@ roughness_texture = ExtResource("9_s61i1")
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_rjijx"]
 height = 8.875
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_g52f4"]
+lifetime_randomness = 0.5
+emission_shape = 6
+emission_ring_axis = Vector3(0, 90, 1)
+emission_ring_height = 0.0
+emission_ring_radius = 700.0
+emission_ring_inner_radius = 0.0
+emission_ring_cone_angle = 90.0
+initial_velocity_max = 4.0
+gravity = Vector3(0, -0.1, 0)
+scale_min = 0.5
+scale_max = 2.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rjijx"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.435294)
+albedo_texture = ExtResource("154_g52f4")
+billboard_mode = 1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_bknv5"]
+material = SubResource("StandardMaterial3D_rjijx")
+size = Vector2(1, 1)
+orientation = 2
 
 [node name="LVL1" type="Node3D" node_paths=PackedStringArray("mango", "uiAnimation", "uiAnimationPopUp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38, 0)
@@ -14803,6 +14828,16 @@ transform = Transform3D(-6.19158e-07, -2.63639e-07, 11.6309, -8.5906, 9.94486, 0
 
 [node name="Dirt3" parent="." instance=ExtResource("153_50ulx")]
 transform = Transform3D(11.5768, -5.36911, 1.45079e-13, 5.36911, 11.5768, 0, -1.31613e-13, 6.10397e-14, 12.7613, -63.0154, -18.6154, -63.9896)
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -702.393, 228.625, 0)
+amount = 50000
+lifetime = 100.0
+preprocess = 100.0
+speed_scale = 0.16
+visibility_aabb = AABB(-700, -700, -700, 1400, 1400, 1400)
+process_material = SubResource("ParticleProcessMaterial_g52f4")
+draw_pass_1 = SubResource("PlaneMesh_bknv5")
 
 [connection signal="area_entered" from="ROOMS/DeathTrigger2" to="." method="_on_w_death_trigger_area_entered"]
 [connection signal="area_entered" from="ROOMS/DeathTrigger3" to="." method="_on_w_death_trigger_area_entered"]
