@@ -17,7 +17,8 @@ config/features=PackedStringArray("4.4", "Forward Plus")
 run/max_fps=60
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="uid://br2pxfonwi084"
-config/icon="uid://ceogtrcro4uwu"
+config/icon="uid://biygpoi8hb684"
+config/windows_native_icon="res://lumisicon.ico"
 boot_splash/minimum_display_time=400
 
 [autoload]

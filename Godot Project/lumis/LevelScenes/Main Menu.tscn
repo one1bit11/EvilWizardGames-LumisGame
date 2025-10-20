@@ -355,7 +355,6 @@ scale = Vector2(0.079885, 0.0798849)
 texture = ExtResource("6_xckl4")
 
 [node name="Just Coffee, Black" type="ColorRect" parent="."]
-visible = false
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
