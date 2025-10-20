@@ -152,3 +152,9 @@ func _on_w_death_trigger_area_entered(area: Area3D) -> void:
 	if area.name == "MangoTrigger":
 		SignalBus.emit_signal("playSplash")
 		uiAnimation.play("Respawn")
+
+func lock_controls():
+	SignalBus.emit_signal("controlLock")
+
+func unlock_controls():
+	SignalBus.emit_signal("controlUnlock")

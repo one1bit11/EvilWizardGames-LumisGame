@@ -1711,11 +1711,17 @@ tracks/1/path = NodePath("..")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0.3),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.3, 0.3001),
+"transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
+"method": &"lock_controls"
+}, {
+"args": [],
 "method": &"reset_mango_to_checkpoint"
+}, {
+"args": [],
+"method": &"unlock_controls"
 }]
 }
 
@@ -2990,6 +2996,7 @@ material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(51, 1, 43)
 script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Manhole" type="CSGCylinder3D" parent="ROOMS/Room1/Ceiling"]
 transform = Transform3D(1.33563, 0, 0, 0, 1.33563, -2.07415e-22, -2.11758e-22, -1.1155e-22, 1.33563, 6.5, 0, 0)
@@ -3314,6 +3321,7 @@ material_override = SubResource("StandardMaterial3D_qrjmn")
 use_collision = true
 size = Vector3(23, 2, 24)
 script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Wall7" type="CSGBox3D" parent="ROOMS/Room1-2"]
 transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, -1, 7, -64)
@@ -3492,6 +3500,7 @@ material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(50, 2, 59)
 script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="WDeathTrigger" type="Area3D" parent="ROOMS/Room2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67, -1, -47)
@@ -5357,6 +5366,7 @@ material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(51, 1, 42)
 script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="PlayGroundWall" type="CSGBox3D" parent="ROOMS/Room3"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -113.5, 18, -22.5)
@@ -6615,6 +6625,7 @@ transform = Transform3D(1.31134e-07, 0, 1, 3.5527e-15, 1, 0, -1, 1.64192e-15, 1.
 material_override = SubResource("StandardMaterial3D_pqjif")
 size = Vector3(12, 2.51564, 12)
 script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Tunnel" type="CSGBox3D" parent="ROOMS/Room4-5"]
 transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 3.55271e-15, -208.237, -8, -80)
@@ -6767,6 +6778,7 @@ material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(75, 1, 144)
 script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Room5Ceiling" type="CSGBox3D" parent="ROOMS/Room5-6-7-8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -218.421, 6.4692, -118.192)
@@ -9912,21 +9924,39 @@ size = Vector3(105, 35, 217)
 script = ExtResource("2_4bvgn")
 
 [node name="Hole10" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
-transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -2, -3.05176e-05, -43.5)
+transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -3.03033, -3.05176e-05, -43.5)
 operation = 2
-size = Vector3(12, 11, 12)
+size = Vector3(12, 13.0607, 12)
 script = ExtResource("2_4bvgn")
+
+[node name="roof12" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
+transform = Transform3D(-3.0416e-15, -1.39565, -6.10059e-08, 1.83018e-07, -6.10059e-08, 1.39565, -1.39565, -2.16737e-22, 1.83018e-07, -8.67627, -0.367126, -43.5694)
+size = Vector3(9.10266, 1.24149, 9.49266)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Hole11" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
-transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -10, -3.05176e-05, -13.5)
+transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -11.1504, -3.05176e-05, -13.5)
 operation = 2
-size = Vector3(12, 27, 12)
+size = Vector3(12, 29.3008, 12)
 script = ExtResource("2_4bvgn")
 
+[node name="Hole12" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
+transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -23.526, -3.05176e-05, -13.715)
+size = Vector3(12.4614, 0.001, 12)
+script = ExtResource("2_4bvgn")
+nonstick = true
+
 [node name="Hole13" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
-transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -17.5, -3.05176e-05, 14.5)
+transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -18.6171, -3.05176e-05, 14.5)
 operation = 2
-size = Vector3(12, 12, 12)
+size = Vector3(12, 14.2343, 12)
+script = ExtResource("2_4bvgn")
+
+[node name="Hole15" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
+transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -21.6603, -3.05176e-05, 14.5)
+operation = 2
+size = Vector3(12, 7.974, 12)
 script = ExtResource("2_4bvgn")
 
 [node name="Hole14" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
@@ -13499,15 +13529,21 @@ spot_attenuation = 0.41
 spot_angle = 39.2501
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1362.48, 148.977, -117.617)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1362.48, 151.648, -117.617)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
-size = Vector3(35, 22, 22)
+size = Vector3(35, 27.3428, 22)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.25925, 0)
 operation = 2
-size = Vector3(33, 23, 20)
+size = Vector3(33, 21.4815, 20)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.41756, 0)
+size = Vector3(33, 0.001, 20)
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGBox3D2"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 17, -3.70001, -0.0999985)
@@ -14830,7 +14866,7 @@ transform = Transform3D(-6.19158e-07, -2.63639e-07, 11.6309, -8.5906, 9.94486, 0
 transform = Transform3D(11.5768, -5.36911, 1.45079e-13, 5.36911, 11.5768, 0, -1.31613e-13, 6.10397e-14, 12.7613, -63.0154, -18.6154, -63.9896)
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -702.393, 228.625, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -702.374, 228.542, -0.114845)
 amount = 50000
 lifetime = 100.0
 preprocess = 100.0

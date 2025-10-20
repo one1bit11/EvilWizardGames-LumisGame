@@ -31,7 +31,8 @@ extends CharacterBody3D
 ##airborne
 var airborne:= false
 
-
+##lock inputs while respawning or in cutscene etc
+var inputLock:= false
 ##gravity
 var grav := Vector3(0,-2,0)
 ##average normals of the surfaces nearby
@@ -113,75 +114,76 @@ var camFOVMode:int = 1
 
 
 func _get_move_input(delta):
-	#declare dir as a variable
-	var dir:Vector3
-	#declare rot as a variable
-	var rot:float
-	#the vector 3 rot for rotating
-	var stickRot:Vector3
-	#save velocity.y
-	var vy = velocity.y
-	#assign a value to each input, should work with controller too
-	var input = Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
-	var input3 := Vector3(input.x,0,input.y)
-	if isSticking:
-		#print(currentSurfacesAvr)
-		stickRot = currentSurfacesAvr
-		
-		velocity = Vector3.ZERO
-		input = Vector3.ZERO
-		input = Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
-		#var forwardDir = 
+	if inputLock == false:
+		#declare dir as a variable
+		var dir:Vector3
+		#declare rot as a variable
+		var rot:float
+		#the vector 3 rot for rotating
+		var stickRot:Vector3
+		#save velocity.y
+		var vy = velocity.y
+		#assign a value to each input, should work with controller too
+		var input = Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
+		var input3 := Vector3(input.x,0,input.y)
+		if isSticking:
+			#print(currentSurfacesAvr)
+			stickRot = currentSurfacesAvr
+			
+			velocity = Vector3.ZERO
+			input = Vector3.ZERO
+			input = Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
+			#var forwardDir = 
 
-		
-		
-		
-		
-		rot = -(atan2(faceChecker.get_collision_normal(currentSurfaceVal).z, faceChecker.get_collision_normal(currentSurfaceVal).x) - PI/2)
-		
-		var test = currentSurfacesAvr.y
-		var ygreater : bool
-		var yequal : bool
-		
-		if faceChecker.get_collision_normal(currentSurfaceVal).y >= 0.75 && faceChecker.get_collision_normal(currentSurfaceVal).y <= 1.25:
-			#print(faceChecker.get_collision_normal(currentSurfaceVal))
+			
+			
+			
+			
+			rot = -(atan2(faceChecker.get_collision_normal(currentSurfaceVal).z, faceChecker.get_collision_normal(currentSurfaceVal).x) - PI/2)
+			
+			var test = currentSurfacesAvr.y
+			var ygreater : bool
+			var yequal : bool
+			if inputLock == false:
+				if faceChecker.get_collision_normal(currentSurfaceVal).y >= 0.75 && faceChecker.get_collision_normal(currentSurfaceVal).y <= 1.25:
+					#print(faceChecker.get_collision_normal(currentSurfaceVal))
+					rot = camPivot.rotation.y
+					dir = Vector3(input.x, 0, input.y).rotated(Vector3.UP, rot).normalized()
+						## IDEA clamp campivot results to only be on the same plane that you're moving across while sticking to prevent falling off
+						
+				else:
+					#print(faceChecker.get_collision_normal(currentSurfaceVal))
+					dir = Vector3(input.x,-input.y,0).rotated(Vector3(0,1 - test,0),rot).normalized()
+
+			
+			
+			
+			
+			#lerp the   for smoother movement and acceleration
+			velocity = dir * (speed/stickSlow)
+			
+			
+		else:
+			#set the diraction based on the value and the camera rotation
 			rot = camPivot.rotation.y
 			dir = Vector3(input.x, 0, input.y).rotated(Vector3.UP, rot).normalized()
-				## IDEA clamp campivot results to only be on the same plane that you're moving across while sticking to prevent falling off
+			#lerp the velocity for smoother movement and acceleration
+			if sprinting == true:
 				
-		else:
-			#print(faceChecker.get_collision_normal(currentSurfaceVal))
-			dir = Vector3(input.x,-input.y,0).rotated(Vector3(0,1 - test,0),rot).normalized()
+				velocity = lerp(velocity, dir * sprintSpeed, acc * delta)
+				
 
-		
-		
-		
-		
-		#lerp the   for smoother movement and acceleration
-		velocity = dir * (speed/stickSlow)
-		
-		
-	else:
-		#set the diraction based on the value and the camera rotation
-		rot = camPivot.rotation.y
-		dir = Vector3(input.x, 0, input.y).rotated(Vector3.UP, rot).normalized()
-		#lerp the velocity for smoother movement and acceleration
-		if sprinting == true:
-			
-			velocity = lerp(velocity, dir * sprintSpeed, acc * delta)
-			
-
-		else:
-			$SprintParticles.emitting = false
-			velocity = lerp(velocity, dir * speed, acc * delta)
+			else:
+				$SprintParticles.emitting = false
+				velocity = lerp(velocity, dir * speed, acc * delta)
 
 
-	
+		
 
-	#set the vertical velocity to the same as it was
+		#set the vertical velocity to the same as it was
 
-	#rotate in the right direction
-	##rotate(-dir.normalized(),rotVal)
+		#rotate in the right direction
+		##rotate(-dir.normalized(),rotVal)
 	
 
 func _physics_process(delta: float) -> void:
@@ -287,16 +289,17 @@ func _physics_process(delta: float) -> void:
 	#print(coyoteTimer.time_left)
 	
 	#print(velocity)
-	if Input.is_action_just_pressed("Jump") && isSticking:
-		$MangoJumpSound.pitch_scale = randf_range(0.9, 1.1)
-		$MangoJumpSound.play()
-		velocity += (faceChecker.get_collision_normal(currentSurfaceVal) * jumpVelocity)
-		velocity.y += jumpVelocity/2 
+	if inputLock == false:
+		if Input.is_action_just_pressed("Jump") && isSticking:
+			$MangoJumpSound.pitch_scale = randf_range(0.9, 1.1)
+			$MangoJumpSound.play()
+			velocity += (faceChecker.get_collision_normal(currentSurfaceVal) * jumpVelocity)
+			velocity.y += jumpVelocity/2 
 
-	if Input.is_action_just_pressed("Jump")&& !isSticking && (is_on_floor() or canJump):
-		$MangoJumpSound.pitch_scale = randf_range(0.9, 1.1)
-		$MangoJumpSound.play()
-		velocity.y += jumpVelocity + (jumpVelocity/2)
+		if Input.is_action_just_pressed("Jump")&& !isSticking && (is_on_floor() or canJump):
+			$MangoJumpSound.pitch_scale = randf_range(0.9, 1.1)
+			$MangoJumpSound.play()
+			velocity.y += jumpVelocity + (jumpVelocity/2)
 
 
 
@@ -474,6 +477,10 @@ func change_eyes(newEyes: CompressedTexture2D) -> void:
 
 func _ready() -> void:
 	SignalBus.connect("playSplash", play_splash)
+	SignalBus.connect("controlLock",control_lock)
+	SignalBus.connect("controlUnlock",control_unlock)
+	
+	
 	
 	mangoShadow = $MangoShadowParent/SpringArm3D
 	blink()
@@ -486,6 +493,9 @@ func _ready() -> void:
 	eyesNode.global_rotation.z = global_rotation.z
 	
 	$LandingSFXTimer.start()
+	
+	
+	var inputLock:= false
 
 func blink():
 	change_eyes(load("res://Textures/Other/MangoEyes/Closed1.png"))
@@ -503,3 +513,14 @@ func squeeze():
 func play_splash():
 	$WaterSplash.play()
 	$SplashParticles.emitting = true
+	
+
+func control_lock():
+	inputLock = true
+	velocity.x = 0
+	velocity.z = 0
+	
+
+func control_unlock():
+	inputLock = false
+	
