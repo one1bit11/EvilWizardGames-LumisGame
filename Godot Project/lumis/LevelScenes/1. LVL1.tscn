@@ -1584,9 +1584,12 @@ tracks/1/path = NodePath("../..")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(4),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0.0333333, 4),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
+"args": [],
+"method": &"lock_controls"
+}, {
 "args": [],
 "method": &"transition_to_end_slides"
 }]
@@ -2392,24 +2395,14 @@ omni_range = 161.845
 omni_attenuation = 1.16
 
 [node name="OmniLight3D23" type="OmniLight3D" parent="LVCity"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1127.06, 49.3699, -117.724)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1128.94, 51.2804, -117.724)
 light_color = Color(0.900747, 0.837172, 0.783396, 1)
-light_energy = 13.698
+light_energy = 103.528
 light_negative = true
 light_bake_mode = 1
 light_cull_mask = 4294966783
-shadow_enabled = true
-omni_range = 58.76
-
-[node name="OmniLight3D24" type="OmniLight3D" parent="LVCity"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1127.06, 56.5283, -117.724)
-light_color = Color(0.900747, 0.837172, 0.783396, 1)
-light_energy = 13.698
-light_negative = true
-light_bake_mode = 1
-light_cull_mask = 4294966783
-shadow_enabled = true
-omni_range = 58.76
+omni_range = 14.822
+omni_attenuation = 0.305
 
 [node name="OmniLight3D25" type="OmniLight3D" parent="LVCity"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -684.264, -116.45, -99.0757)
@@ -13247,7 +13240,7 @@ shape = SubResource("BoxShape3D_2v00b")
 debug_color = Color(0, 0.6, 0.701961, 0.85098)
 
 [node name="MusicStop" type="Area3D" parent="."]
-transform = Transform3D(4.37114e-08, 8.74228e-08, 1, 3.82137e-15, -1, 8.74228e-08, 1, 0, -4.37114e-08, -502.8, 41.4, -114)
+transform = Transform3D(4.37114e-08, 8.74228e-08, 1, 3.82137e-15, -1, 8.74228e-08, 1, 0, -4.37114e-08, -574.444, 34.2076, -114)
 
 [node name="Box" type="CollisionShape3D" parent="MusicStop"]
 transform = Transform3D(2.5, 1.69407e-21, 0, 4.23516e-22, 2.5, 2.77687e-28, 0, -3.7025e-29, 2.5, -8, 3, -3)
@@ -13543,7 +13536,7 @@ spot_attenuation = 0.41
 spot_angle = 39.2501
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1362.48, 151.648, -117.617)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1362.48, 149.183, -117.617)
 material_override = ExtResource("3_gmyoy")
 use_collision = true
 size = Vector3(35, 27.3428, 22)
@@ -14723,7 +14716,7 @@ spot_attenuation = -0.01
 spot_angle = 85.48
 
 [node name="CeilingLights9" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1368.79, 148.889, -114.269)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1368.79, 146.393, -114.269)
 mesh = ExtResource("133_xicfl")
 surface_material_override/0 = SubResource("StandardMaterial3D_kjiab")
 surface_material_override/1 = SubResource("StandardMaterial3D_38rek")

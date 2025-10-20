@@ -19,12 +19,13 @@ var fadeCityMusic:bool = false
 
 func _ready() -> void:
 	uiAnimation.play("LongBlackFadeIn")
+	unlock_controls()
 
 func reset_mango_to_checkpoint():
 	mango.position = checkpointPos
 
 func _input(event: InputEvent) -> void:
-	if Input.is_key_pressed(KEY_0):
+	if Input.is_key_pressed(KEY_R):
 		uiAnimation.play("Respawn")
 
 func _on_checkpoint_area_entered(area: Area3D, extra_arg_0: Vector3) -> void:
