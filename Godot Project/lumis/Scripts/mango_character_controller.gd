@@ -517,8 +517,8 @@ func play_splash():
 
 func control_lock():
 	inputLock = true
-	velocity.x = 0
-	velocity.z = 0
+	#velocity.x = 0
+	#velocity.z = 0
 	
 
 func control_unlock():

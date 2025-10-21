@@ -2,7 +2,7 @@
 
 [ext_resource type="Material" uid="uid://b54gkvgqk346p" path="res://Textures/Other/MangoSlime.tres" id="1_7452i"]
 [ext_resource type="Material" uid="uid://bn3ea0tykiugl" path="res://Textures/Other/MangoEye.tres" id="2_f2nv7"]
-[ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://other/BlackWorldEnvironment.tres" id="2_qcaow"]
+[ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="2_qcaow"]
 [ext_resource type="Texture2D" uid="uid://cq55itol8k2kx" path="res://Textures/Other/MangoEyes/Open1.png" id="3_13sd3"]
 [ext_resource type="Script" uid="uid://cthhsvlwdylva" path="res://Scripts/object_properties.gd" id="3_wgwho"]
 [ext_resource type="PackedScene" uid="uid://cnglve84q3h6n" path="res://ObjectScenes/CreateObj.tscn" id="5_yxqy2"]

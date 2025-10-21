@@ -1,4 +1,4 @@
-[gd_scene load_steps=295 format=3 uid="uid://cdt72fkucpjaf"]
+[gd_scene load_steps=305 format=3 uid="uid://cdt72fkucpjaf"]
 
 [ext_resource type="Material" uid="uid://cpgr1k704pcgu" path="res://Textures/0Universal/MapTextures/Pipe/DontTouch.tres" id="1_4vtbw"]
 [ext_resource type="Script" uid="uid://sh5l6dvaekyk" path="res://Scripts/water_crates.gd" id="2_s3xnc"]
@@ -328,7 +328,7 @@ size = Vector3(1.70039, 17.0623, 20.7455)
 size = Vector3(16.7599, 16.5139, 72.4086)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mb0c3"]
-size = Vector3(8.8677, 32.5019, 3.62284)
+size = Vector3(8.8677, 20.8095, 3.62284)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4bja8"]
 size = Vector3(69.4435, 16, 24)
@@ -336,14 +336,26 @@ size = Vector3(69.4435, 16, 24)
 [sub_resource type="BoxShape3D" id="BoxShape3D_x22ri"]
 size = Vector3(65.5486, 43.0315, 33.2295)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_fy23f"]
+size = Vector3(65.5486, 38.8481, 80.0519)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3xinm"]
+size = Vector3(1.70039, 13.2399, 17.2821)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oi77n"]
+size = Vector3(1.70039, 13.2399, 17.2289)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3boaj"]
+size = Vector3(1.70039, 31.1782, 21.2558)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_sjsnp"]
 size = Vector3(1.70039, 31.1782, 30)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4u7j2"]
 size = Vector3(7.82012, 24.8591, 8.69271)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_3xinm"]
-size = Vector3(35.414, 31.1782, 46.0995)
+[sub_resource type="BoxShape3D" id="BoxShape3D_2dtto"]
+size = Vector3(77.416, 31.1782, 46.0995)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bqij6"]
 size = Vector3(3.23979, 31.1782, 36.5165)
@@ -351,8 +363,14 @@ size = Vector3(3.23979, 31.1782, 36.5165)
 [sub_resource type="BoxShape3D" id="BoxShape3D_6ju68"]
 size = Vector3(1.70039, 29.537, 22.0213)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_mkylq"]
+size = Vector3(56.1397, 27.4731, 29.715)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_vkij3"]
 size = Vector3(1.70039, 24.6989, 26.8632)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nmcnh"]
+size = Vector3(1.70039, 37.1962, 63.8784)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_l8gqk"]
 size = Vector3(1.70039, 31.1782, 43.8086)
@@ -372,14 +390,20 @@ size = Vector3(31.0031, 52.4581, 38.6924)
 [sub_resource type="BoxShape3D" id="BoxShape3D_q7qvr"]
 size = Vector3(3.17315, 31, 35.1488)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ffyoa"]
+size = Vector3(1.70039, 45.0432, 124.619)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_ysbdl"]
 size = Vector3(3.96068, 59, 85.3735)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tym21"]
 size = Vector3(1.70039, 31, 32)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_nmcnh"]
-size = Vector3(1.70039, 49.8671, 58.2043)
+[sub_resource type="BoxShape3D" id="BoxShape3D_281vn"]
+size = Vector3(78.9341, 49.8671, 58.2043)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7ud2g"]
+size = Vector3(48.7353, 93.5131, 218.367)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x3v7n"]
 size = Vector3(1.70039, 31.1782, 10.8)
@@ -424,7 +448,10 @@ size = Vector3(1.70039, 19.1677, 25.2977)
 size = Vector3(1.70039, 19.1993, 25.2977)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ibw21"]
-size = Vector3(6.92393, 61.1885, 265.628)
+size = Vector3(88.0977, 61.1885, 265.716)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e6ell"]
+size = Vector3(85.1405, 61.1885, 278.107)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kpm8i"]
 size = Vector3(1.70039, 5.01789, 20.7455)
@@ -432,8 +459,11 @@ size = Vector3(1.70039, 5.01789, 20.7455)
 [sub_resource type="BoxShape3D" id="BoxShape3D_sm2ky"]
 size = Vector3(1.70039, 19.5422, 25.2977)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_la1dx"]
-size = Vector3(15.9771, 50.3644, 94.2959)
+[sub_resource type="BoxShape3D" id="BoxShape3D_w55cl"]
+size = Vector3(15.9771, 66.3565, 464.311)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kfmth"]
+size = Vector3(1.70039, 43.7637, 66.4222)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jrmbu"]
 size = Vector3(1.70039, 25.5141, 25.4656)
@@ -827,7 +857,7 @@ points = PackedVector3Array(0.275071, 0.788561, 0.0543024, -0.230968, 0.011294, 
 points = PackedVector3Array(-0.288765, -0.133697, -2.48097, 0.253946, 0.176332, 2.48097, 0.253946, -0.211151, 2.48097, 0.253946, 0.176332, -2.48097, -0.288765, 0.176332, 2.48097, -0.211151, 0.253946, -2.48097, 0.176332, -0.288765, -2.48097, -0.133697, -0.288765, 2.48097, 0.176332, 0.253946, 2.48097, -0.288765, -0.133697, 2.48097, -0.133697, -0.288765, -2.48097, -0.211151, 0.253946, 2.48097, 0.176332, 0.253946, -2.48097, 0.253946, -0.211151, -2.48097, 0.176332, -0.288765, 2.48097, -0.288765, 0.176332, -2.48097)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ytc1s"]
-height = 8.125
+height = 7.58447
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_nscnc"]
 height = 13.375
@@ -2873,10 +2903,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.5, 0)
 mesh = SubResource("PrismMesh_es6pr")
 
 [node name="BuildingBase2" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.30609, -106.91)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00192261, 4.36428, -107.378)
 material_override = ExtResource("9_mg1xl")
 use_collision = true
-size = Vector3(10, 18.6122, 19.8208)
+size = Vector3(10, 18.6122, 20.7556)
 
 [node name="BuildingBase16" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.6153, -106.91)
@@ -2885,16 +2915,16 @@ use_collision = true
 size = Vector3(10, 0.001, 19.8208)
 
 [node name="BuildingBase17" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 14.0564, -106.91)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 14.0564, -107.111)
 material_override = ExtResource("10_d5fwm")
 use_collision = true
-size = Vector3(1, 0.883313, 19.8208)
+size = Vector3(1, 0.883313, 20.2219)
 
 [node name="BuildingBase18" type="CSGBox3D" parent="LVL2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 14.0564, -106.91)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 14.0564, -107.1)
 material_override = ExtResource("10_d5fwm")
 use_collision = true
-size = Vector3(1, 0.883313, 19.8208)
+size = Vector3(1, 0.883313, 20.2004)
 
 [node name="BuildingBase9" type="CSGBox3D" parent="LVL2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.00001, 2.5, -305.91)
@@ -7543,7 +7573,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="Fences20/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.74083e-12, 0, 1, -1.62708, 1.35147, -193.953)
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.74083e-12, 0, 1, -1.62708, -4.49471, -193.953)
 shape = SubResource("BoxShape3D_mb0c3")
 script = ExtResource("12_mg1xl")
 nonstick = true
@@ -8828,6 +8858,12 @@ shape = SubResource("BoxShape3D_x22ri")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Fences91/Fences3/StaticBody3D"]
+transform = Transform3D(1, 0, -2.71427e-12, 0, 1, 0, -1.71951e-12, 0, 1, -98.9745, 18.5257, 25.2554)
+shape = SubResource("BoxShape3D_fy23f")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
 [node name="Pole3" type="MeshInstance3D" parent="Fences91/Fences3"]
 transform = Transform3D(9.05175e-08, 0, 0.690266, 0, 0.690266, 0, -0.690266, 0, 9.05175e-08, 2.25334, 1.83721, -0.150653)
 material_override = ExtResource("46_x46m3")
@@ -9395,8 +9431,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences51/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, -1.74794e-12, 0, 1, 0.0501953, 0.330077, -9.74643)
-shape = SubResource("BoxShape3D_xicfl")
+transform = Transform3D(1, 0, 0, 0, 1, 0, -1.71951e-12, 0, 1, 0.0501709, 0.330078, -7.74109)
+shape = SubResource("BoxShape3D_3xinm")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -9537,8 +9573,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences51/Fences2/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, -1.74794e-12, 0, 1, 0.0501953, 0.330077, -9.74643)
-shape = SubResource("BoxShape3D_xicfl")
+transform = Transform3D(1, 0, 0, 0, 1, 0, -1.71951e-12, 0, 1, 0.0501709, 0.330082, -7.71448)
+shape = SubResource("BoxShape3D_oi77n")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -9623,8 +9659,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences51/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 2.3823, -7.744)
-shape = SubResource("BoxShape3D_x46m3")
+transform = Transform3D(1, 0, -2.71427e-12, 0, 1, 0, -1.71951e-12, 0, 1, 0.0502319, 2.3823, -5.72302)
+shape = SubResource("BoxShape3D_3boaj")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -11959,8 +11995,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences90/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.98428e-12, 0, 1, 0, -1.76215e-12, 0, 1, -16.0698, 2.38231, 6.3949)
-shape = SubResource("BoxShape3D_3xinm")
+transform = Transform3D(1, 0, -2.97007e-12, 0, 1, 0, 3.97904e-13, 0, 1, -37.0708, 2.38231, 6.3949)
+shape = SubResource("BoxShape3D_2dtto")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -13183,6 +13219,12 @@ nonstick = true
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences22/Fences4/StaticBody3D"]
 transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.71951e-12, 0, 1, 0.0502472, -0.258598, -5.47559)
 shape = SubResource("BoxShape3D_6ju68")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Fences22/Fences4/StaticBody3D"]
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.71951e-12, 0, 1, 30.2299, 13.0185, 0.819214)
+shape = SubResource("BoxShape3D_mkylq")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -14913,8 +14955,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences86/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76925e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 5.97876, -9.47278)
-shape = SubResource("BoxShape3D_i14e2")
+transform = Transform3D(1, 0, -1.81899e-12, 0, 1, 0, -1.71951e-12, 0, 1, 0.0502319, 16.0457, 4.92004)
+shape = SubResource("BoxShape3D_nmcnh")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -31101,8 +31143,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences46/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.72138e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 2.3823, -7.744)
-shape = SubResource("BoxShape3D_x46m3")
+transform = Transform3D(1, 0, -2.74269e-12, 0, 1, 0, -1.71951e-12, 0, 1, 0.0502472, -4.5502, 41.9169)
+shape = SubResource("BoxShape3D_ffyoa")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -34785,14 +34827,14 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences25/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.71951e-12, 0, 1, 0.0502319, 22.3812, -14.1238)
-shape = SubResource("BoxShape3D_nmcnh")
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.71951e-12, 0, 1, 38.6671, 22.3812, -14.1238)
+shape = SubResource("BoxShape3D_281vn")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Fences25/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.71951e-12, 0, 1, -51.6385, 22.3812, -14.1238)
-shape = SubResource("BoxShape3D_nmcnh")
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.71951e-12, 0, 1, -79.9678, 44.2042, -92.0028)
+shape = SubResource("BoxShape3D_7ud2g")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -56841,8 +56883,14 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences54/Fences4/StaticBody3D"]
-transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.71951e-12, 0, 1, -2.56158, 28.0419, 34.5245)
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.71951e-12, 0, 1, -43.1485, 28.0419, 34.4807)
 shape = SubResource("BoxShape3D_ibw21")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Fences54/Fences4/StaticBody3D"]
+transform = Transform3D(1, 0, -1.76215e-12, 0, 1, 0, -1.71951e-12, 0, 1, -57.1222, 28.0419, 28.285)
+shape = SubResource("BoxShape3D_e6ell")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -58249,8 +58297,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences55/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.71427e-12, 0, 1, 0, -1.71951e-12, 0, 1, 7.18861, 11.9754, -7.74402)
-shape = SubResource("BoxShape3D_la1dx")
+transform = Transform3D(1, 0, -2.71427e-12, 0, 1, 0, -1.71951e-12, 0, 1, 7.18855, 19.9715, -192.751)
+shape = SubResource("BoxShape3D_w55cl")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -59403,6 +59451,18 @@ nonstick = true
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences4/Fences4/StaticBody3D"]
 transform = Transform3D(1, 0, -1.76925e-12, 0, 1, 0, -1.74083e-12, 0, 1, 0.0502319, 5.97876, -9.47278)
 shape = SubResource("BoxShape3D_i14e2")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Fences4/Fences4/StaticBody3D"]
+transform = Transform3D(-4.37096e-08, 0, -1, 0, 1, 0, 1, 0, -4.37132e-08, 1.29059, 19.3295, -5.73407)
+shape = SubResource("BoxShape3D_kfmth")
+script = ExtResource("12_mg1xl")
+nonstick = true
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Fences4/Fences4/StaticBody3D"]
+transform = Transform3D(-4.37096e-08, 0, -1, 0, 1, 0, 1, 0, -4.37132e-08, 1.29059, 19.3295, -85.9011)
+shape = SubResource("BoxShape3D_kfmth")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -63574,7 +63634,7 @@ script = ExtResource("12_mg1xl")
 shape = SubResource("ConvexPolygonShape3D_nm36y")
 
 [node name="Crate12" type="MeshInstance3D" parent="."]
-transform = Transform3D(-3.31751, 0, 0.436168, 0, 3.34607, 0, -0.436168, 0, -3.31751, -741.114, -2.0156, -121.985)
+transform = Transform3D(-3.31751, 0, 0.436168, 0, 3.34607, 0, -0.436168, 0, -3.31751, -741.129, -2.86358, -122.101)
 mesh = ExtResource("3_5bo6m")
 skeleton = NodePath("")
 surface_material_override/0 = ExtResource("59_v6um6")
@@ -63639,7 +63699,7 @@ script = ExtResource("12_mg1xl")
 shape = SubResource("ConvexPolygonShape3D_nm36y")
 
 [node name="Crate19" type="MeshInstance3D" parent="."]
-transform = Transform3D(-3.34533, 0, -0.0700766, 0, 3.34607, 0, 0.0700766, 0, -3.34533, -741.114, -2.0156, -118.472)
+transform = Transform3D(-3.34533, 0, -0.0700766, 0, 3.34607, 0, 0.0700766, 0, -3.34533, -741.114, -2.88514, -118.472)
 mesh = ExtResource("3_5bo6m")
 skeleton = NodePath("")
 surface_material_override/0 = ExtResource("59_v6um6")
@@ -64971,7 +65031,7 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="pipes_lowerHshape/Tubelong/StaticBody3D"]
-transform = Transform3D(0.6, -1.1309e-07, -4.94338e-15, -2.5377e-19, -2.62268e-08, 0.6, -1.1309e-07, -0.6, -2.62268e-08, 0, -3.8147e-06, 0.287499)
+transform = Transform3D(0.6, -1.1309e-07, -4.94338e-15, -2.55453e-19, -2.62268e-08, 0.6, -1.1309e-07, -0.6, -2.62268e-08, 0, 0, 0.125341)
 shape = SubResource("CylinderShape3D_ytc1s")
 script = ExtResource("12_mg1xl")
 nonstick = true
