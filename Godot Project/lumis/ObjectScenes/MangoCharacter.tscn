@@ -7,7 +7,7 @@
 [ext_resource type="Material" uid="uid://bn3ea0tykiugl" path="res://Textures/Other/MangoEye.tres" id="3_shwng"]
 [ext_resource type="AudioStream" uid="uid://b8liwhwx23ey7" path="res://Sounds/SFX/JUMPSFXtest.mp3" id="4_q3my7"]
 [ext_resource type="Texture2D" uid="uid://cq55itol8k2kx" path="res://Textures/Other/MangoEyes/Open1.png" id="5_gpb01"]
-[ext_resource type="Shader" uid="uid://bam1wmdhsxrli" path="res://other/MangoEyes.gdshader" id="6_s1ghw"]
+[ext_resource type="Shader" uid="uid://bam1wmdhsxrli" path="res://Other/MangoEyes.gdshader" id="6_s1ghw"]
 [ext_resource type="Texture2D" uid="uid://ch1gm7n2ddrco" path="res://Textures/Other/MangoShadow.png" id="8_vat0n"]
 [ext_resource type="AudioStream" uid="uid://je8ay2q7jwfl" path="res://Sounds/SFX/NEW Sprint.ogg" id="9_o87kt"]
 [ext_resource type="AudioStream" uid="uid://7gb86r008im3" path="res://Sounds/SFX/NEW Landing.ogg" id="10_v68b4"]
