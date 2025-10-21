@@ -354,11 +354,11 @@ size = Vector3(1.70039, 31.1782, 30)
 [sub_resource type="BoxShape3D" id="BoxShape3D_4u7j2"]
 size = Vector3(7.82012, 24.8591, 8.69271)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_2dtto"]
-size = Vector3(77.416, 31.1782, 46.0995)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_bqij6"]
-size = Vector3(3.23979, 31.1782, 36.5165)
+size = Vector3(82.2026, 31.1782, 46.0995)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2dtto"]
+size = Vector3(3.907, 32.7707, 36.5165)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6ju68"]
 size = Vector3(1.70039, 29.537, 22.0213)
@@ -11995,8 +11995,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences90/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.97007e-12, 0, 1, 0, 3.97904e-13, 0, 1, -37.0708, 2.38231, 6.3949)
-shape = SubResource("BoxShape3D_2dtto")
+transform = Transform3D(1, 0, -2.97007e-12, 0, 1, 0, 3.24007e-12, 0, 1, -39.4641, 2.38231, 6.3949)
+shape = SubResource("BoxShape3D_bqij6")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -12591,8 +12591,8 @@ script = ExtResource("12_mg1xl")
 nonstick = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fences40/Fences3/StaticBody3D"]
-transform = Transform3D(1, 0, -2.72848e-12, 0, 1, 0, -4.40536e-13, 0, 1, -0.719467, 2.38231, -13.8368)
-shape = SubResource("BoxShape3D_bqij6")
+transform = Transform3D(1, 0, -2.72848e-12, 0, 1, 0, -4.40536e-13, 0, 1, -1.05304, 1.58604, -13.8368)
+shape = SubResource("BoxShape3D_2dtto")
 script = ExtResource("12_mg1xl")
 nonstick = true
 
@@ -64177,6 +64177,11 @@ mesh = ExtResource("30_1rcvj")
 
 [node name="Roof4" type="MeshInstance3D" parent="."]
 transform = Transform3D(-5, 0, -1.00822e-06, 0, 5, 0, 4.37114e-07, 0, -11.5327, -773.823, 15.5387, -142.346)
+material_override = ExtResource("67_do6p4")
+mesh = ExtResource("64_pdtgc")
+
+[node name="Roof56" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5, 0, -1.00822e-06, 0, 5, 0, 4.37114e-07, 0, -11.5327, -773.823, 15.5387, -186.823)
 material_override = ExtResource("67_do6p4")
 mesh = ExtResource("64_pdtgc")
 
