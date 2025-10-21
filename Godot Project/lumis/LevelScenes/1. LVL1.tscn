@@ -1,7 +1,7 @@
 [gd_scene load_steps=452 format=4 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
-[ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
+[ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://other/BlackWorldEnvironment.tres" id="1_ir167"]
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_xlif7"]
 [ext_resource type="Script" uid="uid://cthhsvlwdylva" path="res://Scripts/object_properties.gd" id="2_4bvgn"]
 [ext_resource type="PackedScene" uid="uid://cdt72fkucpjaf" path="res://LevelScenes/1.5 City.tscn" id="2_gwmb0"]
@@ -107,7 +107,7 @@
 [ext_resource type="AudioStream" uid="uid://b6c7xcic46wkk" path="res://Sounds/SFX/1. Sewers/Environmental/General Ambience/Water Drips.ogg" id="110_uvlwu"]
 [ext_resource type="ArrayMesh" uid="uid://cbssl0vvvu7fp" path="res://Meshes/0Universal/LampHook.obj" id="112_k8pp5"]
 [ext_resource type="PackedScene" uid="uid://foy2w1ght5vg" path="res://ObjectScenes/safety_rail.tscn" id="115_vbkhu"]
-[ext_resource type="FontFile" uid="uid://8auu2xggxbyv" path="res://Other/Fonts/ComicRelief-Bold.ttf" id="123_8oyi1"]
+[ext_resource type="FontFile" uid="uid://8auu2xggxbyv" path="res://other/Fonts/ComicRelief-Bold.ttf" id="123_8oyi1"]
 [ext_resource type="AudioStream" uid="uid://byqfcv16md0bv" path="res://Sounds/Music/Final/Sewers.ogg" id="126_fof7x"]
 [ext_resource type="AudioStream" uid="uid://buoyui1n16jfb" path="res://Sounds/Music/Final/City.ogg" id="127_fof7x"]
 [ext_resource type="Material" uid="uid://cumiqyrjv44go" path="res://Textures/0Universal/ObjTextures/Wood/Wood.tres" id="128_y7vme"]
@@ -120,15 +120,15 @@
 [ext_resource type="Texture2D" uid="uid://c8h2bxwd2ikld" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_Glass_BaseColor.png" id="134_k8pp5"]
 [ext_resource type="Texture2D" uid="uid://druninruwjpwb" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_Glass_Emissive.png" id="135_8bbsk"]
 [ext_resource type="PackedScene" uid="uid://bq8grao5h2cy0" path="res://ObjectScenes/barrel.tscn" id="135_hj8bv"]
-[ext_resource type="FontFile" uid="uid://bat88j31g08ea" path="res://Other/Fonts/ComicRelief-Regular.ttf" id="135_qmb1d"]
+[ext_resource type="FontFile" uid="uid://bat88j31g08ea" path="res://other/Fonts/ComicRelief-Regular.ttf" id="135_qmb1d"]
 [ext_resource type="ArrayMesh" uid="uid://th1llbpyjtya" path="res://Meshes/1Sewers/BrokenGate.obj" id="135_v83d7"]
 [ext_resource type="Texture2D" uid="uid://dxhoy6fa6wsgy" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_CeilingLight_BaseColor.png" id="136_cg17g"]
 [ext_resource type="ArrayMesh" uid="uid://ditl4yd381xc2" path="res://Meshes/1Sewers/FenceMiddle.obj" id="136_gwmb0"]
 [ext_resource type="AudioStream" uid="uid://cwnrxxpl1w70v" path="res://Sounds/SFX/Escape.ogg" id="136_n7gex"]
 [ext_resource type="Texture2D" uid="uid://bt47tgy7f5i1x" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_CeilingLight_Metallic.png" id="137_clfdl"]
 [ext_resource type="Texture2D" uid="uid://cbf300ihkrf3j" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_CeilingLight_Roughness.png" id="138_pwcyy"]
-[ext_resource type="Script" uid="uid://bnvblhblunp67" path="res://Scripts/tram_animations.gd" id="147_md575"]
-[ext_resource type="AnimationLibrary" uid="uid://ddnh7r6jxr42n" path="res://Other/tram1_library.tres" id="148_nj68h"]
+[ext_resource type="Script" path="res://Scripts/tram_animations.gd" id="147_md575"]
+[ext_resource type="AnimationLibrary" uid="uid://ddnh7r6jxr42n" path="res://other/tram1_library.tres" id="148_nj68h"]
 [ext_resource type="ArrayMesh" uid="uid://b40wt16kor7oi" path="res://Meshes/0Universal/Tram.obj" id="148_pwcyy"]
 [ext_resource type="Texture2D" uid="uid://xcjc1pam0r88" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_BaseColor.png" id="149_3exgg"]
 [ext_resource type="Material" uid="uid://b2d78d5gpvkdk" path="res://Textures/0Universal/ObjTextures/Tram/TramTexture1.tres" id="149_md575"]
@@ -8144,7 +8144,7 @@ material_override = ExtResource("105_pwcyy")
 use_collision = true
 radius = 9.62
 height = 206.0
-sides = 32
+sides = 64
 script = ExtResource("2_4bvgn")
 
 [node name="Hole8" type="CSGBox3D" parent="ROOMS/Room14/BigAssPillar2"]
