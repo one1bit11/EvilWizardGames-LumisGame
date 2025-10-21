@@ -2,7 +2,7 @@
 
 [ext_resource type="Material" uid="uid://b54gkvgqk346p" path="res://Textures/Other/MangoSlime.tres" id="1_7452i"]
 [ext_resource type="Material" uid="uid://bn3ea0tykiugl" path="res://Textures/Other/MangoEye.tres" id="2_f2nv7"]
-[ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="2_qcaow"]
+[ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://other/BlackWorldEnvironment.tres" id="2_qcaow"]
 [ext_resource type="Texture2D" uid="uid://cq55itol8k2kx" path="res://Textures/Other/MangoEyes/Open1.png" id="3_13sd3"]
 [ext_resource type="Script" uid="uid://cthhsvlwdylva" path="res://Scripts/object_properties.gd" id="3_wgwho"]
 [ext_resource type="PackedScene" uid="uid://cnglve84q3h6n" path="res://ObjectScenes/CreateObj.tscn" id="5_yxqy2"]
@@ -30,7 +30,7 @@
 [ext_resource type="Material" uid="uid://stqurjxktqro" path="res://Textures/0Universal/ObjTextures/DoorFrameTexture/DoorFrame.tres" id="27_70yy0"]
 [ext_resource type="ArrayMesh" uid="uid://b7tkgpjprtpco" path="res://Meshes/1Sewers/Door Frame.obj" id="28_tkre2"]
 [ext_resource type="Texture2D" uid="uid://pcun4swklm10" path="res://Textures/0Universal/ObjTextures/DoorFrameTexture/Door Frame_Door_Frame_BaseColor.png" id="29_qx1n8"]
-[ext_resource type="Material" uid="uid://dmc7etf6fkm64" path="res://Textures/0Universal/MapTextures/BrickFloor/BrickFloor.tres" id="30_hfjfb"]
+[ext_resource type="Material" uid="uid://dmc7etf6fkm64" path="res://Textures/0Universal/MapTextures/BrickFloor/Demo Textures/BrickFloor.tres" id="30_hfjfb"]
 [ext_resource type="PackedScene" uid="uid://dfthhlmd0n758" path="res://ObjectScenes/LanternObj.tscn" id="31_hb84e"]
 [ext_resource type="Texture2D" uid="uid://ej14tnblvi55" path="res://Textures/0Universal/ObjTextures/LanternTexture/Lantern_Lamp_BaseColor.png" id="32_ohrxw"]
 [ext_resource type="Texture2D" uid="uid://d2yi8o5dtgx31" path="res://Textures/0Universal/ObjTextures/LanternTexture/Lantern_Lamp_Emissive.png" id="33_28qgy"]

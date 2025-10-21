@@ -1,7 +1,7 @@
 [gd_scene load_steps=445 format=4 uid="uid://kw6trwjmxryo"]
 
 [ext_resource type="Script" uid="uid://cb6nojrot3bxk" path="res://Scripts/LVL1_Test.gd" id="1_624ml"]
-[ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://Other/BlackWorldEnvironment.tres" id="1_ir167"]
+[ext_resource type="Environment" uid="uid://ddo0bs5jd836u" path="res://other/BlackWorldEnvironment.tres" id="1_ir167"]
 [ext_resource type="PackedScene" uid="uid://d141gk5umir7l" path="res://ObjectScenes/MangoCharacter.tscn" id="1_xlif7"]
 [ext_resource type="Script" uid="uid://cthhsvlwdylva" path="res://Scripts/object_properties.gd" id="2_4bvgn"]
 [ext_resource type="PackedScene" uid="uid://cdt72fkucpjaf" path="res://LevelScenes/1.5 City.tscn" id="2_gwmb0"]
@@ -89,7 +89,7 @@
 [ext_resource type="ArrayMesh" uid="uid://csfbv85femns7" path="res://Meshes/0Universal/Pipes/TUBEDECOR.obj" id="103_jfbmj"]
 [ext_resource type="Material" uid="uid://cqb4p11delyqg" path="res://Textures/Other/SolidColours/GoldAlt.tres" id="105_5ocs4"]
 [ext_resource type="ArrayMesh" uid="uid://cbm2hxg0lv81n" path="res://Meshes/0Universal/Pipes/HALF_TUBEINTERIOR.obj" id="105_md575"]
-[ext_resource type="Material" uid="uid://dmc7etf6fkm64" path="res://Textures/0Universal/MapTextures/BrickFloor/BrickFloor.tres" id="105_pwcyy"]
+[ext_resource type="Material" uid="uid://dmc7etf6fkm64" path="res://Textures/0Universal/MapTextures/BrickFloor/Demo Textures/BrickFloor.tres" id="105_pwcyy"]
 [ext_resource type="PackedScene" uid="uid://4yn57cxfo0yp" path="res://ObjectScenes/lantern_on_hook.tscn" id="105_tkodh"]
 [ext_resource type="ArrayMesh" uid="uid://c30lijpdad1gk" path="res://Meshes/0Universal/Pipes/4_JUNCTIONTHICK.obj" id="106_0ukuq"]
 [ext_resource type="ArrayMesh" uid="uid://ylnh01ysxcpw" path="res://Meshes/1Sewers/PillarBottom.obj" id="106_8sk1i"]
@@ -107,7 +107,7 @@
 [ext_resource type="AudioStream" uid="uid://b6c7xcic46wkk" path="res://Sounds/SFX/1. Sewers/Environmental/General Ambience/Water Drips.ogg" id="110_uvlwu"]
 [ext_resource type="ArrayMesh" uid="uid://cbssl0vvvu7fp" path="res://Meshes/0Universal/LampHook.obj" id="112_k8pp5"]
 [ext_resource type="PackedScene" uid="uid://foy2w1ght5vg" path="res://ObjectScenes/safety_rail.tscn" id="115_vbkhu"]
-[ext_resource type="FontFile" uid="uid://8auu2xggxbyv" path="res://Other/Fonts/ComicRelief-Bold.ttf" id="123_8oyi1"]
+[ext_resource type="FontFile" uid="uid://8auu2xggxbyv" path="res://other/Fonts/ComicRelief-Bold.ttf" id="123_8oyi1"]
 [ext_resource type="AudioStream" uid="uid://byqfcv16md0bv" path="res://Sounds/Music/Final/Sewers.ogg" id="126_fof7x"]
 [ext_resource type="AudioStream" uid="uid://buoyui1n16jfb" path="res://Sounds/Music/Final/City.ogg" id="127_fof7x"]
 [ext_resource type="Material" uid="uid://cumiqyrjv44go" path="res://Textures/0Universal/ObjTextures/Wood/Wood.tres" id="128_y7vme"]
@@ -120,15 +120,15 @@
 [ext_resource type="Texture2D" uid="uid://c8h2bxwd2ikld" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_Glass_BaseColor.png" id="134_k8pp5"]
 [ext_resource type="Texture2D" uid="uid://druninruwjpwb" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_Glass_Emissive.png" id="135_8bbsk"]
 [ext_resource type="PackedScene" uid="uid://bq8grao5h2cy0" path="res://ObjectScenes/barrel.tscn" id="135_hj8bv"]
-[ext_resource type="FontFile" uid="uid://bat88j31g08ea" path="res://Other/Fonts/ComicRelief-Regular.ttf" id="135_qmb1d"]
+[ext_resource type="FontFile" uid="uid://bat88j31g08ea" path="res://other/Fonts/ComicRelief-Regular.ttf" id="135_qmb1d"]
 [ext_resource type="ArrayMesh" uid="uid://th1llbpyjtya" path="res://Meshes/1Sewers/BrokenGate.obj" id="135_v83d7"]
 [ext_resource type="Texture2D" uid="uid://dxhoy6fa6wsgy" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_CeilingLight_BaseColor.png" id="136_cg17g"]
 [ext_resource type="ArrayMesh" uid="uid://ditl4yd381xc2" path="res://Meshes/1Sewers/FenceMiddle.obj" id="136_gwmb0"]
 [ext_resource type="AudioStream" uid="uid://cwnrxxpl1w70v" path="res://Sounds/SFX/Escape.ogg" id="136_n7gex"]
 [ext_resource type="Texture2D" uid="uid://bt47tgy7f5i1x" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_CeilingLight_Metallic.png" id="137_clfdl"]
 [ext_resource type="Texture2D" uid="uid://cbf300ihkrf3j" path="res://Textures/0Universal/ObjTextures/CeilingLights/CeilingLights_CeilingLight_Roughness.png" id="138_pwcyy"]
-[ext_resource type="Script" uid="uid://bnvblhblunp67" path="res://Scripts/tram_animations.gd" id="147_md575"]
-[ext_resource type="AnimationLibrary" uid="uid://ddnh7r6jxr42n" path="res://Other/tram1_library.tres" id="148_nj68h"]
+[ext_resource type="Script" path="res://Scripts/tram_animations.gd" id="147_md575"]
+[ext_resource type="AnimationLibrary" uid="uid://ddnh7r6jxr42n" path="res://other/tram1_library.tres" id="148_nj68h"]
 [ext_resource type="ArrayMesh" uid="uid://b40wt16kor7oi" path="res://Meshes/0Universal/Tram.obj" id="148_pwcyy"]
 [ext_resource type="Texture2D" uid="uid://xcjc1pam0r88" path="res://Textures/0Universal/ObjTextures/CreateTexture/crate_Crate_BaseColor.png" id="149_3exgg"]
 [ext_resource type="Material" uid="uid://b2d78d5gpvkdk" path="res://Textures/0Universal/ObjTextures/Tram/TramTexture1.tres" id="149_md575"]
@@ -6103,6 +6103,7 @@ script = ExtResource("2_4bvgn")
 [node name="Hole5" type="CSGBox3D" parent="ROOMS/Room4-5"]
 transform = Transform3D(1.31134e-07, 0, 1, 3.5527e-15, 1, 0, -1, 1.64192e-15, 1.31134e-07, -220.233, 5.75138, -67)
 material_override = SubResource("StandardMaterial3D_pqjif")
+use_collision = true
 size = Vector3(12, 2.51564, 12)
 script = ExtResource("2_4bvgn")
 nonstick = true
@@ -7385,7 +7386,7 @@ size = Vector3(12, 13.0607, 12)
 script = ExtResource("2_4bvgn")
 
 [node name="roof12" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
-transform = Transform3D(-3.0416e-15, -1.39565, -6.10059e-08, 1.83018e-07, -6.10059e-08, 1.39565, -1.39565, -2.16737e-22, 1.83018e-07, -8.67627, -0.367126, -43.5694)
+transform = Transform3D(-3.0416e-15, -1.39565, -6.10059e-08, 1.83018e-07, -6.10059e-08, 1.39565, -1.39565, -2.16737e-22, 1.83018e-07, -7.15346, -0.367126, -43.5694)
 size = Vector3(9.10266, 1.24149, 9.49266)
 script = ExtResource("2_4bvgn")
 nonstick = true
@@ -7396,16 +7397,10 @@ operation = 2
 size = Vector3(12, 29.3008, 12)
 script = ExtResource("2_4bvgn")
 
-[node name="Hole12" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
-transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -23.526, -3.05176e-05, -13.715)
-size = Vector3(12.4614, 0.001, 12)
-script = ExtResource("2_4bvgn")
-nonstick = true
-
 [node name="Hole13" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
-transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -18.6171, -3.05176e-05, 14.5)
+transform = Transform3D(-2.17934e-15, -1, -4.37114e-08, 1.31134e-07, -4.37114e-08, 1, -1, -1.55294e-22, 1.31134e-07, -20.2172, -3.05176e-05, 14.5)
 operation = 2
-size = Vector3(12, 14.2343, 12)
+size = Vector3(12, 17.4345, 12)
 script = ExtResource("2_4bvgn")
 
 [node name="Hole15" type="CSGBox3D" parent="ROOMS/Room11/Tunnel"]
@@ -7685,6 +7680,21 @@ skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/Do
 
 [node name="pipes_HplusOne" parent="ROOMS/Room11" instance=ExtResource("21_fil6b")]
 transform = Transform3D(1, 0, 0, 0, 1.30457, 0, 0, 0, 1, -509.794, 18.7535, -134.057)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="ROOMS/Room11"]
+transform = Transform3D(1.31134e-07, 0, 1, -3.55271e-15, 1, 0, -1, -1.55294e-22, 1.31134e-07, -478.913, 29.719, -142.503)
+material_override = ExtResource("3_gmyoy")
+use_collision = true
+size = Vector3(12.0044, 1.48633, 12.4895)
+script = ExtResource("2_4bvgn")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="ROOMS/Room11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -478.994, 31.6936, -115.004)
+material_override = ExtResource("3_gmyoy")
+size = Vector3(12.4391, 1, 13.0912)
+material = ExtResource("105_pwcyy")
+script = ExtResource("2_4bvgn")
+nonstick = true
 
 [node name="Room14" type="Node3D" parent="ROOMS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3529, -22, -7)
