@@ -192,10 +192,10 @@ func _get_move_input(delta):
 	##rotate(-dir.normalized(),rotVal)
 
 func _physics_process(delta: float) -> void:
-	if Input.is_key_pressed(KEY_0):
-		control_lock()
-	if Input.is_key_pressed(KEY_9):
-		control_unlock()
+	#if Input.is_key_pressed(KEY_0):
+		#control_lock()
+	#if Input.is_key_pressed(KEY_9):
+		#control_unlock()
 	
 	mangoShadow.global_position.x = global_position.x
 	mangoShadow.global_position.y = global_position.y
